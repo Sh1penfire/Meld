@@ -14,7 +14,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -28,6 +28,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect
@@ -49,7 +51,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -66,6 +68,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect
@@ -87,7 +91,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -104,6 +108,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect
@@ -125,7 +131,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -142,6 +148,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect
@@ -163,7 +171,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -180,6 +188,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect
@@ -201,7 +211,7 @@ weapons: [
 		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 3
+		reload: 10
 		mirror: false
 		alternate: false
 		continuous: true
@@ -218,6 +228,8 @@ weapons: [
 			type: PointBulletType
 			maxRange: 100
 			damage: 15
+			buildingDamageMultiplier: 100
+			pierceArmor: true
 			hitColor: fda981
 			trailEffect: {
 				type: ParticleEffect

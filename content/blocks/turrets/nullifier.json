@@ -47,6 +47,107 @@ shootType: {
 	}
 }
 
+destroyBullet: {
+	type: BulletType
+	speed: 0
+	lifetime: 0
+	splashDamage: 180
+	splashDamageRadius: 100
+	instantDespawn: true
+	fragBullets: 50
+	fragBullet: {
+		type: RailBulletType
+		pierceCap: 3
+		damage: 250
+	}
+}
+
+destroyEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: WaveEffect
+			lifetime: 14
+			sizeFrom: 4
+			sizeTo: 120
+			strokeFrom: 3
+			strokeTo: 1
+			colorFrom: f68021
+			colorTo: db661c
+		}
+		{
+			type: ParticleEffect
+			lifetime: 120
+			interp: pow3
+			baseLength: 10
+			length: 55
+			particles: 11
+			sizeFrom: 23
+			sizeTo: 0
+			colorFrom: 6e7080
+			colorTo: 565666
+		}
+		{
+			type: ParticleEffect
+			lifetime: 85
+			interp: pow5Out
+			sizeInterp: pow5In
+			baseLength: 14
+			length: 85
+			particles: 25
+			sizeFrom: 12
+			sizeTo: 0
+			colorFrom: 6e7080
+			colorTo: 565666
+		}
+		{
+			type: ParticleEffect
+			lifetime: 35
+			interp: pow2Out
+			sizeInterp: pow5In
+			baseLength: 24
+			length: 95
+			particles: 14
+			sizeFrom: 4
+			sizeTo: 0
+			colorFrom: ffffff
+			colorTo: ffb855
+		}
+		{
+			type: ParticleEffect
+			lifetime: 25
+			interp: pow2Out
+			sizeInterp: pow2In
+			baseLength: 2
+			length: 95
+			line: true
+			particles: 25
+			strokeFrom: 4
+			strokeTo: 0
+			lenFrom: 7
+			lenTo: 0
+			colorFrom: ffd2ae
+			colorTo: e58956
+		}
+		{
+			type: ParticleEffect
+			lifetime: 45
+			interp: pow2Out
+			sizeInterp: pow2In
+			baseLength: 2
+			length: 75
+			line: true
+			particles: 15
+			strokeFrom: 5
+			strokeTo: 0
+			lenFrom: 8
+			lenTo: 0
+			colorFrom: ffd2ae
+			colorTo: e58956
+		}
+	]
+}
+
 drawer: {
 	type: DrawTurret
 	parts: [

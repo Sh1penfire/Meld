@@ -6,6 +6,5 @@ requirements: [
 	meld-shard/4000
 	scrap/12000
 ]
-targetable: false
 buildVisibility: sandboxOnly
 category: effect
