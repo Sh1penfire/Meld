@@ -1,0 +1,29 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 1
+liquidCapacity: 50
+
+attribute: aether
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 150
+consumes: {
+	items: [
+		scrap/5
+	]
+	liquids: [
+		liquid-power/0.5
+	]
+}
+outputItem: graphite/3
+
+requirements: [
+ 	scrap/40
+]

@@ -1,0 +1,8 @@
+type: StaticWall
+variants: 0
+itemDrop: scrap
+playerUnmineable: true
+solid: true
+attributes: {
+	scrap: 1
+}

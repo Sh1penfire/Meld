@@ -1,0 +1,9 @@
+type: SwitchBlock
+
+targetable: false
+configurable: false
+
+buildVisibility: editorOnly
+category: logic
+
+requirements: []

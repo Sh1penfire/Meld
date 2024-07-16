@@ -1,0 +1,27 @@
+type: ForceProjector
+size: 3
+phaseUseTime: 540
+phaseRadiusBoost: 5
+radius: 56
+shieldHealth: 45
+health: 195
+
+consumes: {
+	liquids: [
+		liquid-progress/0.13333333
+	]
+  	items: {
+    		items: [
+      			meld-shard/1
+    		]
+    		optional: true
+  	}
+}
+
+requirements: [
+	meld-shard/30
+]
+
+squareSprite: false
+category: effect
+floating: true

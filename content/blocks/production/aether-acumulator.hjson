@@ -1,0 +1,50 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: production
+
+baseEfficiency: 0.1
+minEfficiency: 1
+liquidCapacity: 50
+
+attribute: aether
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 150
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: liquid-power
+		padding: 1.25
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 2
+		flameRadiusScl: 4
+		flameRadiusMag: 1
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+		layer: 30
+	}
+]
+
+outputLiquid: liquid-power/1
+
+requirements: [
+ 	scrap/40
+]

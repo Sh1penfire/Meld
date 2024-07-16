@@ -1,0 +1,6 @@
+type: OreBlock
+variants: 3
+itemDrop: scrap
+
+oreDefault: false
+needsSurface: false

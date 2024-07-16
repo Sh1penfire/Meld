@@ -1,0 +1,23 @@
+type: UnitFactory
+health: 300
+size: 3
+
+plans: [
+	{
+	unit: shark
+	requirements: [
+		silver/40
+		graphite/30
+    	]
+    	time: 450
+  	}
+]
+
+configurable: false
+category: units
+requirements: [
+ 	scrap/100
+	graphite/65
+	silver/40
+]
+

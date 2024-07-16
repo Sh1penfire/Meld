@@ -1,0 +1,102 @@
+type: ItemTurret
+size: 2
+health: 840
+range: 200
+reload: 25
+shootEffect: shootBig
+shootWarmupSpeed : 0.09
+minWarmup: 0.7
+
+recoil: 0.25
+
+requirements: [
+	graphite/35
+	scrap/45
+]
+
+shoot: {
+	type: ShootAlternate
+	spread: 3
+	shots: 2
+}
+
+inaccuracy: 15
+
+shootY: 7
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -plate
+			progress: warmup
+			mirror: true
+			under: false
+			moveX: 1
+			moveY: -1.55
+			moveRot: -15
+
+		},
+		{
+			name: clear
+			progress: warmup
+			y: -1.5
+			moveY: 1
+			children: [
+				{
+					type: RegionPart
+					suffix: -barrel
+					progress: recoil
+					mirror: false
+					under: true
+					moveY: -1.25
+				}
+			]
+		}
+
+	]
+}
+
+ammoTypes: {
+	scrap: {
+		type: FlakBulletType
+		speed: 5
+		damage: 15
+		lifetime: 40
+		width: 8
+		height: 10
+		splashDamage: 10
+		splashDamageRadius: 20
+		collidesGround: true
+		reloadMultiplier: 0.55
+		hitEffect: explosion
+		fragBullet: {
+			type: FlakBulletType
+			speed: 3
+			damage: 5
+			shrinkY: 1
+			lifetime: 20
+			splashDamage: 10
+			splashDamageRadius: 50
+			width: 5
+			height: 12
+			hitEffect: flakExplosion
+		}
+		fragBullets: 2
+	}
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+velocityRnd: 0.2
+recoil: 1.5
+inaccuracy: 2
+shootCone: 5
+category: turret
+research: scorch

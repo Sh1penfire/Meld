@@ -1,0 +1,25 @@
+type: BeamDrill
+size: 5
+category: production
+
+placeableLiquid: true
+
+drillTime: 240
+
+
+liquidCapacity: 300
+
+consumes: {
+	liquids: [
+		liquid-refined-power/0.3333333333
+	]
+}
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	scrap/40
+]

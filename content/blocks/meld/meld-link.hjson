@@ -1,0 +1,10 @@
+type: BeamNode
+size: 1
+
+placeableLiquid: true
+laserColor2: e5aed7
+
+requirements: [
+	meld-shard/5
+]
+category: power

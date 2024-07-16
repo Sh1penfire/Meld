@@ -1,0 +1,6 @@
+-Ammo capacity
+
+2101: bb1-scrap till bb3-scrap, bbp-scrap
+
+-Range
+0: bbp-scrap

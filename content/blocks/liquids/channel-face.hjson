@@ -1,0 +1,10 @@
+type: LiquidJunction
+size: 1
+enableDrawStatus: false
+solid: false
+placeableLiquid: true
+
+category: liquid
+requirements: [
+	scrap/2
+]

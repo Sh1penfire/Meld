@@ -1,0 +1,127 @@
+type: naval
+speed: 1.7
+
+health: 150
+aimDst: 10
+range: 50
+drag: 0.15
+accel: 0.4
+hitSize: 10
+lightRadius: 45
+lightOpacity: 0.25
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 8
+range: 100
+rotateSpeed: 3.5
+trailLength: 18
+trailScl : 1.2
+
+buildBeamOffset: 9
+rotateToBuilding: false
+buildRange: 120
+mineRange: 120
+mineTier: 3
+
+targetAir: false
+
+weapons: [
+	{
+		mirror: false
+		rotate: false
+		baseRotation: -180
+		shootCone: 180
+		x: 0
+		y: 4
+		reload: 45
+		recoil: 1.25
+		shootSound: mineDeploy
+		inaccuracy: 15
+		shoot: {
+			type: ShootSpread
+			spread: 4.5
+			shots: 3
+			shotDelay: 3
+		}
+		bullet: {
+			type: BasicBulletType
+			sprite: mine-bullet
+			layer: 10.1
+
+			speed: 0.85
+			drag: -0.03
+			keepVelocity: false
+			absorbable: false
+			hittable: false
+
+			homingPower: 0.16
+			homingDelay: 15
+
+			lifetime: 80
+			damage: 45
+			splashDamage: 15
+			splashDamageRadius: 25
+
+			width: 10
+			height: 10
+			shrinkX: 0
+			shrinkY: 0
+			hitSize: 6
+
+			weaveMag: 5
+			weaveScale: 4
+			hitShake: 5
+			hitEffect: flakExplosion
+			hitSound: explosion
+
+
+			collidesAir: false
+			collideFloor: true
+
+
+			trailLength: 8
+			trailWidth: 3.5
+		}
+	}
+	{
+		type: RepairBeamWeapon
+		name: bulbhead-healer
+		mirror: false
+		rotate: true
+		rotateSpeed: 9
+		x: 0
+		y: -4
+		shootY: 2.5
+		beamWidth: 0.4
+
+		repairSpeed: 1
+
+		reload: 20
+		targetUnits: false
+		targetBuildings: true
+		controllable: false
+		laserColor: ffd37f
+		healColor: ffd37f
+		bullet: {
+			type: BulletType
+			maxRange: 120
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 9
+		sides: 60
+		mirror: false
+		radius: 120
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+]

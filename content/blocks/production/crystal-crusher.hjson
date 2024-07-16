@@ -1,0 +1,17 @@
+type: WallCrafter
+size: 2
+category: production
+
+placeableLiquid: true
+
+drillTime: 240
+output: meld-shard
+attribute: crystal
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+requirements: [
+ 	scrap/40
+]

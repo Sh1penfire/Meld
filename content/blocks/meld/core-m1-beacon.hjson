@@ -1,0 +1,61 @@
+type: CoreBlock
+//health: 2000
+health: 1
+armor: 15
+size: 3
+requirements: [
+	meld-shard/600
+	scrap/4500
+]
+buildVisibility: sandboxOnly
+category: effect
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	type: MissileBulletType
+	lifetime: 50
+	spawnUnit: de-meld1
+}
+
+destroyEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 150
+			spin: 5
+			colorTo: ffffff00
+			particles: 5
+			sizeFrom: 4
+			sizeTo: 4
+			interp: pow4Out
+			length: 85
+			region: meld-sparkle
+		}
+		{
+			type: ParticleEffect
+			layer: 90
+			lifetime: 35
+			particles: 15
+			sizeFrom: 3
+			sizeTo: 0
+			baseLength: 12
+			length: 35
+			interp: pow2In
+			colorFrom: ffaaffff
+			colorTo: ffaaff00
+		}
+		{
+			type: ParticleEffect
+			lifetime: 20
+			particles: 6
+			sizeFrom: 4
+			sizeTo: 2
+			baseLength: 5
+			length: 35
+			line: true
+			colorFrom: f6e096
+			colorTo: f68021
+		}
+	]
+}

@@ -1,0 +1,12 @@
+type: LiquidRouter
+size: 1
+
+placeableLiquid: true
+
+liquidCapacity: 200
+liquidPressure: 50
+
+category: liquid
+requirements: [
+	scrap/5
+]

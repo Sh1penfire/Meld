@@ -1,0 +1,49 @@
+type: PowerTurret
+size: 1
+health: 840
+range: 240
+reload: 80
+shootSound: bang
+shootEffect: shootBig
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: ShapePart
+			sides: 3
+			progress: reload
+		}
+		{
+			type: RegionPart
+			name: duo
+			y: -5
+			rotation: 90
+			moveY: 10
+			yScl: -1
+			progress: {
+				type: reload
+				ops: [
+					{
+						op: delay
+						amount: 0.5
+					}
+					{
+						op: inv
+					}
+				]
+			}
+		}
+	]
+}
+
+shootType: {
+	lifetime: 0
+}
+
+requirements: [
+	coal/1
+]
+
+
+category: turret

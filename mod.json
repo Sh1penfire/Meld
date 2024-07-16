@@ -1,0 +1,8 @@
+{
+    "name": "meld",
+    "displayName": "Meld",
+    "author": "Sh1penfire",
+    "description": "Small sideproject to practise spriting, adds mixes of vanilla content",
+    "version": "1",
+    "minGameVersion": "146"
+}

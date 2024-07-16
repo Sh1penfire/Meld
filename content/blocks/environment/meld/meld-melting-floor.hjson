@@ -1,0 +1,4 @@
+type: Floor
+variants: 3
+isLiquid: true
+cacheLayer: water

@@ -1,0 +1,236 @@
+type: missile
+physics: false
+hittable: false
+useUnitCap: false
+lifetime: 100
+speed: 0
+singleTarget: false
+turnToTarget: false
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		shoot: {
+			firstShotDelay: 0.5
+		}
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		shoot: {
+			firstShotDelay: 1
+		}
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		shoot: {
+			firstShotDelay: 1.5
+		}
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		shoot: {
+			firstShotDelay: 2
+		}
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 3
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		shoot: {
+			firstShotDelay: 2.5
+		}
+		bullet: {
+			type: PointBulletType
+			maxRange: 100
+			damage: 15
+			hitColor: fda981
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: fda981
+			}
+		}
+	}
+]
