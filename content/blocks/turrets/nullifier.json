@@ -2,17 +2,18 @@ type: PowerTurret
 size: 4
 health: 840
 range: 100
-reload: 80
+reload: 180
 shootSound: bang
 shootEffect: shootBig
 rotateSpeed: 0
-reload: 120
+reload: 170
 recoil: 0
 shootCone: 180
 shootY: 0
 linearWarmup: true
 minWarmup: 1
 shootWarmupSpeed: 0.0016666666
+cooldownTime: 160
 
 shoot: {
 	type: ShootSpread
@@ -21,11 +22,11 @@ shoot: {
 
 shootType: {
 	type: BulletType
-
 	lifetime: 0
 	bulletInterval: 0
+	intervalRandomSpread: 0
 	intervalBullet: {
-		type: BulletType
+		type: MissileBulletType
 		spawnUnit: nullifier-lance
 	}
 
@@ -39,9 +40,9 @@ shootType: {
 		hittable: false
 		despawnEffect: none
 		fragBullets: 1
-		lifetime: 100
+		lifetime: 160
 		fragBullet: {
-			lifetime: 0
+			type: BulletType
 			killShooter: true
 		}
 	}
