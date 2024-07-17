@@ -1,5 +1,6 @@
 type: Duct
 size: 1
+bridgeReplacement: chute-bridge
 
 category: distribution
 requirements: [
