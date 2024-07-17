@@ -2,246 +2,226 @@ type: missile
 physics: false
 hittable: false
 useUnitCap: false
-lifetime: 100
+lifetime: 160
 speed: 0
 singleTarget: false
-turnToTarget: false
+faceTarget: false
+
+parts: [
+	{
+		type: HaloPart
+		layer: 110
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.5
+					end: 1
+				}
+				{
+					op: curve
+					interp: pow2In
+				}
+				{
+					op: absin
+					scl: 0.5
+					mag: 1
+				}
+			]
+		}
+		
+		haloRotation: 90
+		shapes: 2
+		triLength: 0
+		triLengthTo: 45
+		tri: true
+		radius: 16
+		haloRadius: 0
+		colorFrom: cbdbfc0
+		color: cbdbfca1
+	}
+	{
+		type: HaloPart
+		layer: 110
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.4
+					end: 0.8
+				}
+			]
+		}
+		
+		haloRotation: 90
+		shapes: 2
+		triLength: 0
+		triLengthTo: 30
+		tri: true
+		radius: 12
+		haloRadius: 0
+		colorFrom: ffffff
+		color: ffffff
+	}
+]
 
 weapons: [
+//Killing shot
 	{
 		x: 0
 		y: 0
 		shootY: 0
+		shoot: {
+			firstShotDelay: 155
+		}
 		rotate: true
 		rotateSpeed: 180
-		reload: 10
+		reload: 1000
 		mirror: false
 		alternate: false
-		continuous: true
-		alwaysContinuous: true
 		controllable: false
 		autoTarget: true
-		shootSound: none
 		targetInterval: 1
 		targetSwitchInterval: 1
 		bullet: {
 			type: PointBulletType
-			maxRange: 100
-			damage: 15
-			buildingDamageMultiplier: 100
-			pierceArmor: true
-			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
-			}
+			range: 100
+			damage: 21000
+			buildingDamageMultiplier: 133769
+			trailEffect: none
 		}
 	}
+//Laser beam
 	{
 		x: 0
 		y: 0
 		shootY: 0
-		rotate: true
-		rotateSpeed: 180
-		reload: 10
-		mirror: false
-		alternate: false
-		continuous: true
-		alwaysContinuous: true
-		controllable: false
-		autoTarget: true
-		shootSound: none
-		targetInterval: 1
-		targetSwitchInterval: 1
 		shoot: {
-			firstShotDelay: 0.5
-		}
-		bullet: {
-			type: PointBulletType
-			maxRange: 100
-			damage: 15
-			buildingDamageMultiplier: 100
-			pierceArmor: true
-			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
-			}
-		}
-	}
-	{
-		x: 0
-		y: 0
-		shootY: 0
-		rotate: true
-		rotateSpeed: 180
-		reload: 10
-		mirror: false
-		alternate: false
-		continuous: true
-		alwaysContinuous: true
-		controllable: false
-		autoTarget: true
-		shootSound: none
-		targetInterval: 1
-		targetSwitchInterval: 1
-		shoot: {
+			type: ShootBarrel
 			firstShotDelay: 1
+			shots: 110
+			shotDelay: 1
+			barrels: [
+				0, 0, 0,
+				0, 0.8, 0,
+				0, 1.6, 0,
+				0, 2.4, 0,
+				0, 3.2, 0,
+				0, 4, 0,
+				0, 4.8, 0
+				0, 5.6, 0
+				0, 6.4, 0
+				0, 7.2, 0
+			]
 		}
-		bullet: {
-			type: PointBulletType
-			maxRange: 100
-			damage: 15
-			buildingDamageMultiplier: 100
-			pierceArmor: true
-			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
-			}
-		}
-	}
-	{
-		x: 0
-		y: 0
-		shootY: 0
 		rotate: true
 		rotateSpeed: 180
-		reload: 10
+		shootCone: 1
+		reload: 120
 		mirror: false
 		alternate: false
-		continuous: true
-		alwaysContinuous: true
 		controllable: false
 		autoTarget: true
 		shootSound: none
 		targetInterval: 1
 		targetSwitchInterval: 1
-		shoot: {
-			firstShotDelay: 1.5
-		}
 		bullet: {
-			type: PointBulletType
+			shootEffect: none
+			smokeEffect: none
+			type: RailBulletType
+			lifetime: 1
 			maxRange: 100
-			damage: 15
+			damage: 1
 			buildingDamageMultiplier: 100
 			pierceArmor: true
+			pierceDamageFactor: 1
 			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
+			pointEffectSpace: 8
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 15
+						baseLength: 10
+						length: 15
+						line: true
+						lenFrom: 4
+						lenTo: 0
+						colorFrom: cbdbfc
+					}
+					{
+						type: WaveEffect
+						lifetime: 35
+						sizeFrom: 5
+						sizeTo: 5
+						strokeFrom: 3
+						strokeTo: 0
+						colorFrom: cbdbfc
+						colorTo: cbdbfc00
+					}
+				]
 			}
-		}
-	}
-	{
-		x: 0
-		y: 0
-		shootY: 0
-		rotate: true
-		rotateSpeed: 180
-		reload: 10
-		mirror: false
-		alternate: false
-		continuous: true
-		alwaysContinuous: true
-		controllable: false
-		autoTarget: true
-		shootSound: none
-		targetInterval: 1
-		targetSwitchInterval: 1
-		shoot: {
-			firstShotDelay: 2
-		}
-		bullet: {
-			type: PointBulletType
-			maxRange: 100
-			damage: 15
-			buildingDamageMultiplier: 100
-			pierceArmor: true
-			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
-			}
-		}
-	}
-	{
-		x: 0
-		y: 0
-		shootY: 0
-		rotate: true
-		rotateSpeed: 180
-		reload: 10
-		mirror: false
-		alternate: false
-		continuous: true
-		alwaysContinuous: true
-		controllable: false
-		autoTarget: true
-		shootSound: none
-		targetInterval: 1
-		targetSwitchInterval: 1
-		shoot: {
-			firstShotDelay: 2.5
-		}
-		bullet: {
-			type: PointBulletType
-			maxRange: 100
-			damage: 15
-			buildingDamageMultiplier: 100
-			pierceArmor: true
-			hitColor: fda981
-			trailEffect: {
-				type: ParticleEffect
-				lifetime: 15
-				baseLength: 3
-				length: 9
-				line: true
-				strokeFrom: 1.5
-				strokeTo: 0
-				lenFrom: 3
-				lenTo: 1
-				colorTo: fda981
+			//Laser beam
+			pointEffect: {
+				type: MultiEffect
+				effects: [
+				{
+					type: ParticleEffect
+					region: meld-nullifier-laser-beam
+					lifetime: 3
+					particles: 1
+					length: 0
+					cone: 0
+					sizeFrom: 4
+					sizeTo: 4
+				}
+				{
+					type: ParticleEffect
+					region: meld-nullifier-laser-beam-back
+					layer: 109
+					lifetime: 3
+					particles: 1
+					length: 0
+					cone: 0
+					sizeFrom: 4
+					sizeTo: 4
+				}
+				{
+					type: ParticleEffect
+					region: meld-nullifier-laser-beam-back
+					layer: 108.9
+					lifetime: 45
+					particles: 1
+					length: 0
+					cone: 0
+					sizeFrom: 2
+					sizeTo: 0
+					sizeInterp: pow5In
+					colorFrom: ffffff
+					colorTo: ffffff00
+				}
+				{
+					type: ParticleEffect
+					lifetime: 150
+					layer: 100
+					offset: 0
+					cone: 90
+					lifetime: 15
+					particles: 2
+					baseLength: -4
+					length: 45
+					sizeFrom: 3
+					sizeTo: 0
+					length: 9
+					colorFrom: fda98100
+					colorTo: fda98100
+					interp: pow3Out
+					sizeInterp: pow3In
+				}
+				]
 			}
 		}
 	}
