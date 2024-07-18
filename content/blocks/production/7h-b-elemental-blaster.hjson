@@ -10,9 +10,11 @@ drillTime: 240
 liquidCapacity: 300
 
 consumes: {
-	liquids: [
-		liquid-refined-power/0.3333333333
-	]
+	liquid: {
+		liquid: liquid-refined-power
+		amount: 0.3333333333
+		booster: false
+	}
 }
 
 ambientSound: drill

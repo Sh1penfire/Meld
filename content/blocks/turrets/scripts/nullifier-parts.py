@@ -1,6 +1,6 @@
 interpSpike = "circleIn"
-straightName = "meld-nullifier-spike-side"
-diagonalName = "meld-nullifier-spike-diagonal"
+straightName = "-spike-side"
+diagonalName = "-spike-diagonal"
 
 xy = ["y", "x"]
 d4c = [1, 1, -1, -1]
@@ -30,7 +30,7 @@ def straightPart(rotation):
     printIndented("{", indent)
     indent += 1
     
-    printIndented("name: " + straightName, indent)
+    printIndented("suffix: \"" + straightName + "\"", indent)
 
 
     sign = 1
@@ -59,7 +59,7 @@ def diagonalPart(rotation):
     printIndented("{", indent)
     indent += 1
     
-    printIndented("name: " + diagonalName + str(rotation + 1), indent)
+    printIndented("suffix: \"" + diagonalName + str(rotation + 1) + "\"", indent)
 
 
     xSign = d4c[rotation % 4]

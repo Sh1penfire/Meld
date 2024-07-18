@@ -8,7 +8,7 @@ health: 195
 
 consumes: {
 	liquids: [
-		liquid-progress/0.13333333
+		liquid-progress/1
 	]
   	items: {
     		items: [

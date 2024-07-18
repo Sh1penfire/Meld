@@ -47,5 +47,5 @@ drawer: [
 
 outputLiquid: {
 	liquid: liquid-progress
-	amount: 1
+	amount: 3
 }

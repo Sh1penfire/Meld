@@ -60,7 +60,7 @@ weapons: [
 			lifetime: 80
 			damage: 45
 			splashDamage: 15
-			splashDamageRadius: 25
+			splashDamageRadius: 15
 
 			width: 10
 			height: 10
@@ -113,7 +113,7 @@ parts: [
 	{
 		type: HoverPart
 		x: 0
-		y: 9
+		y: 0
 		sides: 60
 		mirror: false
 		radius: 120
@@ -126,7 +126,7 @@ parts: [
 	}
 	{
 		x: 0
-		y: 9
+		y: 0
 		type: ShapePart
 		circle: true
 		hollow: true

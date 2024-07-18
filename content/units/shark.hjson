@@ -5,7 +5,7 @@ speed: 2.5
 
 health: 210
 
-range: 50
+range: 80
 drag: 0.08
 accel: 0.1
 
@@ -29,10 +29,11 @@ weapons: [
 		rotateSpeed: 3.5
 		recoil: 1.25
 		shootSound: bang
-		inaccuracy: 35
+		inaccuracy: 25
 		velocityRnd: 0.05
 		bullet: {
 			type: MissileBulletType
+			sprite: missile-large
 			speed: 3.5
 
 			keepVelocity: false
@@ -48,8 +49,8 @@ weapons: [
 			weaveScale: 5
 			weaveMag: 1.5
 
-			width: 8
-			height: 8
+			width: 6
+			height: 10
 			shrinkX: 0
 			shrinkY: 0.2
 			hitShake: 3.5
@@ -59,6 +60,7 @@ weapons: [
 			trailEffect: {
 				type: ParticleEffect
 				lifetime: 15
+				particles: 2
 				baseLength: 3
 				length: 9
 				line: true
@@ -68,7 +70,7 @@ weapons: [
 				lenTo: 1
 				colorTo: a393feff
 			}
-			trailChance: 0.3
+			trailChance: 0.15
 
 			hitEffect: {
 				type: MultiEffect

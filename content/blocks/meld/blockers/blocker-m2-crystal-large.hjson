@@ -1,0 +1,15 @@
+type: Wall
+size: 2
+health: 10000
+armor: 500000
+targetable: false
+
+
+
+requirements: [
+	meld-shard/120
+]
+
+squareSprite: false
+category: effect
+floating: true
