@@ -14,7 +14,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 150
+craftTime: 8
 
 drawer: [
 	{
@@ -25,13 +25,23 @@ drawer: [
 	{
 		type: DrawLiquidTile
 		drawLiquid: liquid-power
-		padding: 1.25
+		padding: 1.5
+		layer: 29.7
 	}
 	{
 		type: DrawArcSmelt
 		flameRad: 2
 		flameRadiusScl: 4
 		flameRadiusMag: 1
+		layer: 29.8
+	}
+	{
+		type: DrawPistons
+		angleOffset: 45
+		layer: 29.9
+		sinMag: 2.25
+		sinScl: 12
+		lenOffset: 0.75
 	}
 	{
 		type: DrawRegion
@@ -42,6 +52,16 @@ drawer: [
 		layer: 30
 	}
 ]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
 
 outputLiquid: liquid-power/1
 
