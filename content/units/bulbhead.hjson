@@ -124,4 +124,15 @@ parts: [
 		layer: 122
 		color: ffd37f
 	}
+	{
+		x: 0
+		y: 9
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 118
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
 ]
