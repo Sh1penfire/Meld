@@ -33,14 +33,18 @@ shootType: {
 	absorbable: false
 	hittable: false
 	despawnEffect: none
+	collides: false
 	fragBullets: 1
 	fragBullet: {
 		type: BulletType
 		absorbable: false
 		hittable: false
+		collides: false
 		despawnEffect: none
 		fragBullets: 1
 		lifetime: 160
+		absorbable: false
+		hittable: false
 		fragBullet: {
 			type: BulletType
 			killShooter: true

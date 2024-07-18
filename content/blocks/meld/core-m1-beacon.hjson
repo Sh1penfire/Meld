@@ -20,6 +20,24 @@ destroyBullet: {
 destroyEffect: {
 	type: MultiEffect
 	effects: [
+//"DESTROID" text
+		{
+			type: ParticleEffect
+			region: meld-destroyed
+			layer: 130
+			lifetime: 95
+			cone: 0
+			particles: 1
+			length: 1
+			sizeFrom: 50
+			sizeTo: 100
+			colorFrom: ffffff
+			colorTo: ffffff00
+			sizeInterp: pow5Out
+			interp: pow5Out
+			spin: 0.2
+		}
+//Natural death effect
 		{
 			type: ParticleEffect
 			lifetime: 150

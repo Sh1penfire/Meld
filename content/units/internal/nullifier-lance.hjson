@@ -16,7 +16,7 @@ parts: [
 			ops: [
 				{
 					op: compress
-					start: 0.5
+					start: 0.2
 					end: 1
 				}
 				{
@@ -34,12 +34,12 @@ parts: [
 		haloRotation: 90
 		shapes: 2
 		triLength: 0
-		triLengthTo: 45
+		triLengthTo: 60
 		tri: true
-		radius: 16
+		radius: 18
 		haloRadius: 0
-		colorFrom: cbdbfc0
-		color: cbdbfca1
+		color: cbdbfc00
+		colorTo: cbdbfca2
 	}
 	{
 		type: HaloPart
@@ -49,8 +49,12 @@ parts: [
 			ops: [
 				{
 					op: compress
-					start: 0.4
-					end: 0.8
+					start: 0.2
+					end: 0.75
+				}
+				{
+					op: curve
+					interp: pow5In
 				}
 			]
 		}
@@ -58,16 +62,97 @@ parts: [
 		haloRotation: 90
 		shapes: 2
 		triLength: 0
-		triLengthTo: 30
+		triLengthTo: 45
 		tri: true
 		radius: 12
 		haloRadius: 0
-		colorFrom: ffffff
-		color: ffffff
+		color: ffffff00
+		colorTo: ffffff
 	}
 ]
 
 weapons: [
+//Beam hit effect
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		shoot: {
+			firstShotDelay: 1
+			shots: 68
+			shotDelay: 2.5
+		}
+		rotate: true
+		rotateSpeed: 180
+		shootCone: 1
+		reload: 120
+		mirror: false
+		alternate: false
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		
+		bullet: {
+			shootEffect: none
+			smokeEffect: none
+			type: RailBulletType
+			lifetime: 1
+			maxRange: 100
+			damage: 50
+			pierceArmor: true
+			pierceDamageFactor: 1
+			hitColor: fda981
+			pointEffectSpace: 8
+			pierceEffect: none
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 3
+						particles: 1
+						length: 0
+						sizeFrom: 2
+						sizeTo: 2
+						colorFrom: ffffff
+					}
+					{
+						type: ParticleEffect
+						layer: 100
+						lifetime: 3
+						particles: 1
+						length: 0
+						sizeFrom: 5
+						sizeTo: 2
+						colorFrom: cbdbfc
+					}
+					{
+						type: ParticleEffect
+						lifetime: 15
+						baseLength: 10
+						length: 45
+						line: true
+						lenFrom: 4
+						lenTo: 0
+						colorFrom: cbdbfc
+					}
+					{
+						type: ParticleEffect
+						lifetime: 45
+						particles: 1
+						baseLength: 10
+						length: 5
+						sizeFrom: 0
+						sizeTo: 4
+						colorFrom: cbdbfc
+						colorTo: cbdbfc00
+					}
+				]
+			}
+		}
+	}
 //Killing shot
 	{
 		x: 0
@@ -186,7 +271,7 @@ weapons: [
 		shoot: {
 			type: ShootBarrel
 			firstShotDelay: 1
-			shots: 110
+			shots: 170
 			shotDelay: 1
 			barrels: [
 				0, 0, 0,
@@ -224,31 +309,8 @@ weapons: [
 			pierceDamageFactor: 1
 			hitColor: fda981
 			pointEffectSpace: 8
-			hitEffect: {
-				type: MultiEffect
-				effects: [
-					{
-						type: ParticleEffect
-						lifetime: 15
-						baseLength: 10
-						length: 15
-						line: true
-						lenFrom: 4
-						lenTo: 0
-						colorFrom: cbdbfc
-					}
-					{
-						type: WaveEffect
-						lifetime: 35
-						sizeFrom: 5
-						sizeTo: 5
-						strokeFrom: 3
-						strokeTo: 0
-						colorFrom: cbdbfc
-						colorTo: cbdbfc00
-					}
-				]
-			}
+			hitEffect: none
+			pierceEffect: none
 			//Laser beam
 			pointEffect: {
 				type: MultiEffect
