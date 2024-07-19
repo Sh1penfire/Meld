@@ -10,8 +10,8 @@ minWarmup: 0.7
 recoil: 0.25
 
 requirements: [
-	graphite/35
-	scrap/45
+	ib-carbolith/35
+	ia-debris/45
 ]
 
 shoot: {
@@ -59,7 +59,7 @@ drawer: {
 }
 
 ammoTypes: {
-	scrap: {
+	ia-debris: {
 		type: FlakBulletType
 		speed: 5
 		damage: 15

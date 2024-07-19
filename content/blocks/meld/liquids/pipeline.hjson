@@ -10,5 +10,5 @@ liquidPressure: 50
 
 category: liquid
 requirements: [
-	scrap/5
+	ia-debris/5
 ]

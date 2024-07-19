@@ -66,5 +66,5 @@ craftEffect: {
 outputLiquid: liquid-power/1
 
 requirements: [
- 	scrap/40
+ 	ia-debris/40
 ]

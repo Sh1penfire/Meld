@@ -7,8 +7,8 @@ shootSound: bang
 shootEffect: shootBig
 
 requirements: [
-	graphite/40
-	silver/70
+	ib-carbolith/40
+	ic-silver/70
 ]
 
 ammoTypes: {

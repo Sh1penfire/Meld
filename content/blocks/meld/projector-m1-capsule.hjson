@@ -12,14 +12,14 @@ consumes: {
 	]
   	items: {
     		items: [
-      			meld-shard/1
+      			id-meld-shard/1
     		]
     		optional: true
   	}
 }
 
 requirements: [
-	meld-shard/30
+	id-meld-shard/30
 ]
 
 squareSprite: false

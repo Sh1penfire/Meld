@@ -3,5 +3,5 @@ size: 1
 
 category: distribution
 requirements: [
-	scrap/4
+	ia-debris/4
 ]

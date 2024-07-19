@@ -1,8 +1,8 @@
 type: StaticWall
 variants: 0
-itemDrop: scrap
+itemDrop: ia-debris
 playerUnmineable: true
 solid: true
 attributes: {
-	scrap: 1
+	ia-debris: 1
 }

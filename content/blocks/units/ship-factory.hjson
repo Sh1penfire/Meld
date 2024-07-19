@@ -6,8 +6,8 @@ plans: [
 	{
 	unit: shark
 	requirements: [
-		silver/40
-		graphite/30
+		ic-silver/40
+		ib-carbolith/30
     	]
     	time: 450
   	}
@@ -16,8 +16,8 @@ plans: [
 configurable: false
 category: units
 requirements: [
- 	scrap/100
-	graphite/65
-	silver/40
+ 	ia-debris/100
+	ib-carbolith/65
+	ic-silver/40
 ]
 

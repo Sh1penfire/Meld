@@ -4,5 +4,5 @@ bridgeReplacement: 4d-a3-chute-bridge
 
 category: distribution
 requirements: [
-	scrap/1
+	ia-debris/1
 ]

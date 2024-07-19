@@ -9,8 +9,8 @@ displayEfficiencyScale: 0.1888888888
 displayEfficiency: false
 
 requirements: [
-	scrap/200
-	meld-shard/150
+	ia-debris/200
+	id-meld-shard/150
 ]
 
 drawer: [

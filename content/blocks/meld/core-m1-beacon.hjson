@@ -4,8 +4,8 @@ health: 1
 armor: 15
 size: 3
 requirements: [
-	meld-shard/600
-	scrap/4500
+	id-meld-shard/600
+	ia-debris/4500
 ]
 buildVisibility: sandboxOnly
 category: effect

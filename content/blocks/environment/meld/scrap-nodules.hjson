@@ -1,6 +1,6 @@
 type: OreBlock
 variants: 3
-itemDrop: scrap
+itemDrop: ia-debris
 
 oreDefault: false
 needsSurface: false

@@ -34,5 +34,5 @@ outputLiquid: liquid-power/0
 
 category: liquid
 requirements: [
-	scrap/5
+	ia-debris/5
 ]

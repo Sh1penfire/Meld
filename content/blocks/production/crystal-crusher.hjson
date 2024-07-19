@@ -5,7 +5,7 @@ category: production
 placeableLiquid: true
 
 drillTime: 240
-output: meld-shard
+output: id-meld-shard
 attribute: crystal
 
 ambientSound: drill
@@ -13,5 +13,5 @@ ambientSoundVolume: 0.08
 
 squareSprite: false
 requirements: [
- 	scrap/40
+ 	ia-debris/40
 ]

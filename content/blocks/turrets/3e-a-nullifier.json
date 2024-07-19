@@ -256,9 +256,9 @@ drawer: {
 }
 
 requirements: [
-	scrap/350
-	silver/350
-	graphite/450
+	ia-debris/350
+	ic-silver/350
+	ib-carbolith/450
 ]
 
 consumes: {

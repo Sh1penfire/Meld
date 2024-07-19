@@ -6,5 +6,5 @@ placeableLiquid: true
 
 category: liquid
 requirements: [
-	scrap/2
+	ia-debris/2
 ]

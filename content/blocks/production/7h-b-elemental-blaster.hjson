@@ -23,5 +23,5 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 requirements: [
- 	scrap/40
+ 	ia-debris/40
 ]

@@ -7,7 +7,7 @@ targetable: false
 
 
 requirements: [
-	meld-shard/30
+	id-meld-shard/30
 ]
 
 squareSprite: false

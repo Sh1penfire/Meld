@@ -1,0 +1,5 @@
+type: StaticWall
+variants: 3
+itemDrop: ib-carbolith
+playerUnmineable: true
+solid: true

@@ -16,14 +16,14 @@ squareSprite: false
 craftTime: 150
 consumes: {
 	items: [
-		scrap/5
+		ia-debris/5
 	]
 	liquids: [
 		liquid-power/0.5
 	]
 }
-outputItem: graphite/3
+outputItem: ib-carbolith/3
 
 requirements: [
- 	scrap/40
+ 	ia-debris/40
 ]
