@@ -9,11 +9,6 @@ minWarmup: 0.7
 
 recoil: 0.25
 
-requirements: [
-	ib-carbolith/35
-	ia-debris/45
-]
-
 shoot: {
 	type: ShootAlternate
 	spread: 3
@@ -93,6 +88,12 @@ coolant: {
   allowLiquid: true
   amount: 0.1
 }
+
+requirements: [
+	ia-debris/45
+	ib-carbolith/35
+]
+
 
 velocityRnd: 0.2
 recoil: 1.5

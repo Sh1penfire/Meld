@@ -1,6 +1,7 @@
 type: Duct
 size: 1
 bridgeReplacement: 4d-a3-chute-bridge
+speed: 6
 
 category: distribution
 requirements: [

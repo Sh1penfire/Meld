@@ -257,8 +257,9 @@ drawer: {
 
 requirements: [
 	ia-debris/350
-	ic-silver/350
 	ib-carbolith/450
+	ic-silver/350
+    if-resonarum/150
 ]
 
 consumes: {

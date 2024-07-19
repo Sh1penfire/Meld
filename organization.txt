@@ -1,0 +1,59 @@
+-Crafters
+>1c
+
+-Walls
+>2w
+
+-Effect stuffs
+>3e
+
+-Distribution
+>4d
+
+-Fluids
+>5f
+
+-Power
+>6p
+
+-Drills/Vent harvesters
+>7h
+
+-Cores/Storage
+>8s
+
+-Turrets
+>9t
+
+-Constructors
+>10c
+
+-Payload
+>11p
+
+-Logic
+>12l
+
+-Meld
+>13m
+
+Within Meld
+
+-Cores
+>1c
+
+-Defense blocks
+>2b
+
+-Harvesters (Any source of material)
+>3h
+
+-Distribution
+>4d
+
+-Fluids
+>5f
+
+-Power
+>6p
+
