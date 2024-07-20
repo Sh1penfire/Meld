@@ -4,7 +4,8 @@ phaseUseTime: 540
 phaseRadiusBoost: 5
 radius: 56
 shieldHealth: 45
-health: 195
+health: 540
+armor: 3
 
 consumes: {
 	liquids: [
