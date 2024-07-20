@@ -7,8 +7,8 @@ range: 50
 drag: 0.15
 accel: 0.4
 hitSize: 10
-lightRadius: 45
-lightOpacity: 0.25
+lightRadius: 120
+lightOpacity: 1
 buildSpeed: 1
 mineTier: 2
 mineSpeed: 8
@@ -21,6 +21,7 @@ buildBeamOffset: 9
 rotateToBuilding: false
 buildRange: 120
 mineRange: 120
+fogRadius: 15
 mineTier: 3
 
 targetAir: false

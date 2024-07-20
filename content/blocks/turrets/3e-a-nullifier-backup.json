@@ -1,0 +1,46 @@
+type: PowerTurret
+size: 4
+health: 840
+range: 100
+reload: 180
+shootSound: bang
+shootEffect: shootBig
+rotateSpeed: 0
+reload: 60
+recoil: 0
+shootCone: 180
+shootY: 0
+linearWarmup: true
+alwaysShooting: true
+
+shoot: {
+	type: ShootSpread
+	shots: 1
+}
+
+shootType: {
+	type: BulletType
+	lifetime: 0
+	bulletInterval: 0
+	intervalRandomSpread: 0
+	intervalBullet: {
+		type: MissileBulletType
+		spawnUnit: nullifier-lance
+	}
+
+	absorbable: false
+	hittable: false
+	despawnEffect: none
+	collides: false
+	fragBullets: 1
+    killShooter: true
+}
+
+requirements: [
+	ia-debris/350
+	ib-carbolith/450
+	ic-silver/350
+    if-resonarum/150
+]
+
+category: turret

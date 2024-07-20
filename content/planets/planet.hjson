@@ -1,0 +1,27 @@
+generator: "PlanetGenerator"
+solarSystem: sun
+parent: sun
+orbitRadius: 25
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+hasAtmosphere: true
+bloom: false
+visible: true
+updateLighting: false
+defaultCore: 8s-a-core-raft
+sectorSize: 1
+
+accessible: true
+alwaysUnlocked: true
+itemWhitelist: [
+	ia-debris,
+	ib-carbolith,
+	ic-silver,
+	id-meld-shard,
+	ie-electrum-sheet,
+	if-resonarum
+]

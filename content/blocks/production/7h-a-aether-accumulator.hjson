@@ -26,19 +26,16 @@ drawer: [
 		type: DrawLiquidTile
 		drawLiquid: liquid-power
 		padding: 1.5
-		layer: 29.7
 	}
 	{
 		type: DrawArcSmelt
 		flameRad: 2
 		flameRadiusScl: 4
 		flameRadiusMag: 1
-		layer: 29.8
 	}
 	{
 		type: DrawPistons
 		angleOffset: 45
-		layer: 29.9
 		sinMag: 2.25
 		sinScl: 12
 		lenOffset: 0.75

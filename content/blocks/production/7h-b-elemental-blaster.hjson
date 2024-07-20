@@ -1,5 +1,5 @@
 type: BeamDrill
-size: 5
+size: 3
 category: production
 
 placeableLiquid: true
@@ -12,7 +12,7 @@ liquidCapacity: 300
 consumes: {
 	liquid: {
 		liquid: liquid-refined-power
-		amount: 0.3333333333
+		amount: 16.666666666
 		booster: false
 	}
 }

@@ -1,11 +1,9 @@
-type: Conduit
+type: LiquidRouter
 size: 1
 
 placeableLiquid: true
-leaks: false
 
-craftTime: 30
-liquidCapacity: 40
+liquidCapacity: 50
 liquidPressure: 50
 
 category: liquid

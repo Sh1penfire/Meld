@@ -49,7 +49,8 @@ def straightPart(rotation):
         
 
     #Should be 0 on the first spike
-    progress(rotation * 2 * spikeDelay, indent)
+    progress(rotation * 2 * spikeDelay, indent, "progress")
+    progress(rotation * 2 * spikeDelay, indent, "heatProgress")
 
     indent -= 1
     printIndented("}", indent)
@@ -72,15 +73,16 @@ def diagonalPart(rotation):
     printIndented("moveY: " + str(diagonalMove * ySign), indent)
 
     #Should be 0.1 on the first diagonal spike
-    progress((rotation * 2 + 1) * spikeDelay, indent)
+    progress((rotation * 2 + 1) * spikeDelay, indent, "progress")
+    progress((rotation * 2 + 1) * spikeDelay, indent, "heatProgress")
 
     indent -= 1
     printIndented("}", indent)
 
-def progress(timeOffset, prevIndent):
+def progress(timeOffset, prevIndent, progSuffix):
     indent = prevIndent
     
-    printIndented("progress: {", indent)
+    printIndented(progSuffix + ": {", indent)
     indent += 1
     printIndented("type: warmup", indent)
     printIndented("ops: [", indent)
