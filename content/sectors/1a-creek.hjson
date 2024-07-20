@@ -1,0 +1,5 @@
+sector: 2
+planet: swamp-planet
+attack: true
+alwaysUnlocked: true
+difficulty: 1

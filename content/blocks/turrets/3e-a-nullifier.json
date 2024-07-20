@@ -699,3 +699,8 @@ consumes: {
 }
 
 category: turret
+
+research: 8s-a-core-raft
+researchCost: [
+    if-resonarum/50
+]

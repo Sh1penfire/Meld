@@ -3,6 +3,7 @@ solarSystem: sun
 parent: sun
 orbitRadius: 25
 
+startSector: 5
 clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchToNumbered: false
@@ -14,6 +15,9 @@ visible: true
 updateLighting: false
 defaultCore: 8s-a-core-raft
 sectorSize: 1
+
+startSector: 2
+iconColor: f3c3e7
 
 accessible: true
 alwaysUnlocked: true

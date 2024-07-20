@@ -5,3 +5,8 @@ category: distribution
 requirements: [
 	ia-debris/4
 ]
+
+research: 4d-a1-chute
+researchCost: [
+	ia-debris/20
+]

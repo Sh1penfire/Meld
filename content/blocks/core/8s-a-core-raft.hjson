@@ -1,9 +1,21 @@
 type: CoreBlock
 health: 4000
 size: 3
+alwaysUnlocked: true
+
 unitType: bulbhead
 solid: false
-itemCapacity : 1000
 squareSprite: false
 buildVisibility: shown
+
+itemCapacity : 1000
+
+
+research: {
+	planet: swamp-planet
+	root: true
+	requiresUnlock: false
+	name: "Ikaru"
+}
+
 category: effect

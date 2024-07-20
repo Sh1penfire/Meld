@@ -8,3 +8,8 @@ category: liquid
 requirements: [
 	ia-debris/2
 ]
+
+research: 8s-a-core-raft
+researchCost: [
+    ia-debris/20
+]

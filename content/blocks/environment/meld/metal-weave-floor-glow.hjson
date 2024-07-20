@@ -1,0 +1,7 @@
+type: Floor
+variants: 0
+blendGroup: metal-weave-floor
+
+lightRadius: 85
+lightColor: cb8650
+emitLight: true

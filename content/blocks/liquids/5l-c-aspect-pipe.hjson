@@ -41,9 +41,15 @@ consumes: {
 	]
 }
 
-outputLiquid: liquid-refined-power/16.666666666
+outputLiquid: liquid-refined-power/1.6666666666
 
 category: liquid
 requirements: [
 	ia-debris/7
+]
+
+research: 5l-a-channel-face
+
+researchCost: [
+    ia-debris/15
 ]

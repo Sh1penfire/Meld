@@ -7,3 +7,8 @@ category: distribution
 requirements: [
 	ia-debris/1
 ]
+
+research: 8s-a-core-raft
+researchCost: [
+	ia-debris/5
+]

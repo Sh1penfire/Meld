@@ -12,7 +12,7 @@ liquidCapacity: 300
 consumes: {
 	liquid: {
 		liquid: liquid-refined-power
-		amount: 16.666666666
+		amount: 1.6666666666
 		booster: false
 	}
 }
@@ -24,4 +24,9 @@ squareSprite: false
 
 requirements: [
  	ia-debris/40
+]
+
+research: 8s-a-core-raft
+researchCost: [
+	ia-debris/13
 ]

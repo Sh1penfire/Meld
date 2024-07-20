@@ -9,6 +9,11 @@ minWarmup: 0.7
 
 recoil: 0.25
 
+velocityRnd: 0.2
+recoil: 1.5
+inaccuracy: 2
+shootCone: 5
+
 shoot: {
 	type: ShootAlternate
 	spread: 3
@@ -94,10 +99,10 @@ requirements: [
 	ib-carbolith/35
 ]
 
-
-velocityRnd: 0.2
-recoil: 1.5
-inaccuracy: 2
-shootCone: 5
 category: turret
-research: scorch
+
+research: 8s-a-core-raft
+researchCost: [
+    ia-debris/120
+    ib-carbolith/80
+]

@@ -1,14 +1,10 @@
 type: CoreBlock
-//health: 2000
-health: 1
+health: 200
 armor: 15
 size: 3
-requirements: [
-	id-meld-shard/600
-	ia-debris/4500
-]
-buildVisibility: sandboxOnly
-category: effect
+alwaysUnlocked: true
+
+buildVisibility: shown
 
 destroyBulletSameTeam: true
 destroyBullet: {
@@ -41,6 +37,7 @@ destroyEffect: {
 		{
 			type: ParticleEffect
 			lifetime: 150
+			region: meld-sparkle
 			spin: 5
 			colorTo: ffffff00
 			particles: 5
@@ -48,7 +45,6 @@ destroyEffect: {
 			sizeTo: 4
 			interp: pow4Out
 			length: 85
-			region: meld-sparkle
 		}
 		{
 			type: ParticleEffect
@@ -77,3 +73,9 @@ destroyEffect: {
 		}
 	]
 }
+
+requirements: [
+	id-meld-shard/600
+	ia-debris/4500
+]
+category: effect

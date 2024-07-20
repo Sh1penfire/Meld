@@ -4,8 +4,6 @@ health: 10000
 armor: 500000
 targetable: false
 
-
-
 requirements: [
 	id-meld-shard/120
 ]

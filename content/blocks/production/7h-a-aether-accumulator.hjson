@@ -65,3 +65,9 @@ outputLiquid: liquid-power/1
 requirements: [
  	ia-debris/40
 ]
+
+research: 8s-a-core-raft
+
+researchCost: [
+	ia-debris/17
+]

@@ -13,11 +13,25 @@ plans: [
   	}
 ]
 
+consumes: {
+	liquid: liquid-refined-power/3.3333333333333333
+}
+
 configurable: false
-category: units
+
 requirements: [
  	ia-debris/100
 	ib-carbolith/65
 	ic-silver/40
+]
+
+category: units
+
+research: 8s-a-core-raft
+
+researchCost: [
+	ia-debris/80
+	ib-carbolith/45
+	ic-silver/35
 ]
 

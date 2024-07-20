@@ -2,9 +2,10 @@ type: CoreBlock
 health: 600000
 armor: 300
 size: 5
+
 requirements: [
 	id-meld-shard/4000
 	ia-debris/12000
 ]
-buildVisibility: sandboxOnly
+
 category: effect
