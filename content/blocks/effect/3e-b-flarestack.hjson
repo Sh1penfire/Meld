@@ -1,0 +1,78 @@
+type: GenericCrafter
+size: 1
+
+placeableLiquid: true
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 3
+		flameRadiusScl: 1
+		flameRadiusMag: 5
+	}
+]
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 50
+			particles: 1
+			length: 0
+			sizeFrom: 3
+			sizeTo: 0
+			lightScl: 60
+			colorFrom: cb865000
+			colorTo: 935b29ff
+			clip: 180
+		}
+		{
+			type: ParticleEffect
+			lifetime: 50
+			particles: 1
+			length: 0
+			sizeFrom: 2
+			sizeTo: 0
+			lightScl: 60
+			colorFrom: cb865000
+			colorTo: 935b29ff
+			lightOpacity: 1
+			clip: 120
+		}
+		{
+			type: ParticleEffect
+			lifetime: 120
+			particles: 3
+			sizeFrom: 5
+			sizeTo: 0
+			colorFrom: cb865000
+			colorTo: 935b29ff
+		}
+	]
+
+}
+
+craftTime: 5
+
+consumes: {
+	liquids: [
+		la-aether/0.08333333333333333
+	]
+}
+
+
+category: effect
+requirements: [
+	ia-debris/10
+	ic-silver/15
+]
+
+research: 5l-a-channel-face
+
+researchCost: [
+	ia-debris/30
+	ic-silver/20
+]

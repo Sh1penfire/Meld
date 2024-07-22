@@ -1,0 +1,55 @@
+type: missile
+physics: false
+hittable: false
+targetable: false
+useUnitCap: false
+lifetime: 180
+speed: 0
+singleTarget: false
+faceTarget: false
+drawBody: false
+drawCell: false
+isEnemy: false
+
+deathExplosionEffect: none
+deathSound: release
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 300
+		reload: 180
+		effect: amplified
+		duration: -1
+		activeEffect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: WaveEffect
+					lifetime: 360
+					sizeFrom: 0
+					sizeTo: 300
+					strokeFrom: 3
+					strokeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed7
+					lightScl: 1
+					clip: 300
+				}
+				{
+					type: WaveEffect
+					lifetime: 360
+					sizeFrom: 300
+					sizeTo: 300
+					strokeFrom: 3
+					strokeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+					lightScl: 1
+					interp: pow5In
+					clip: 300
+				}
+			]
+		}
+	}
+]

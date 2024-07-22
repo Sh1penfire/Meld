@@ -1,0 +1,99 @@
+type: legs
+shadowElevation: 0.1
+speed: 0.7
+
+health: 600
+armor: 10
+
+range: 80
+drag: 0.12
+accel: 0.2
+
+hitSize: 16
+rotateSpeed: 6
+
+useEngineElevation: false
+faceTarget: true
+
+legCount: 4
+legLength: 15
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+weapons: [
+	{
+		name: "m-s1-kathid-crystal"
+		x: 0
+		y: 0
+		shootY: 10
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		recoil: 0
+		top: false
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 12
+			flareLength: 0
+			length: 35
+			width: 2.3
+			knockback: 1
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+		parts: [
+			{
+				type: RegionPart
+				name: "m-s1-kathid-crystal"
+				heatProgress: warmup
+			}
+		]
+	}
+	{
+		controllable: false
+		aiControllable: false
+		mirror: false
+		rotate: true
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 1.25
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+
+			rangeOverride: 45
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+				
+				]
+			}
+			speed: 0
+			splashDamageRadius: 60
+			instantDisappear: true
+			splashDamage: 120
+			killShooter: true
+			hittable: false
+		}
+	}
+]

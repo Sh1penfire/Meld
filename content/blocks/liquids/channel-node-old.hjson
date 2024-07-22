@@ -13,7 +13,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: liquid-power
+		drawLiquid: la-aether
 		alpha: 1
 	}
 	{
@@ -26,11 +26,11 @@ drawer: [
 
 consumes: {
 	liquids: [
-		liquid-power/0
+		la-aether/0
 	]
 }
 
-outputLiquid: liquid-power/0
+outputLiquid: la-aether/0
 
 category: liquid
 requirements: [

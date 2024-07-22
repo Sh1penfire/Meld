@@ -1,0 +1,14 @@
+speedMultiplier: 1.5
+healthMultiplier: 1.5
+reloadMultiplier: 2
+permanent: true
+effect: {
+	type: ParticleEffect
+	lifetime: 17
+	line: true
+	length: 12
+	strokeFrom: 3
+	strokeTo: 0
+	colorFrom: ef6bce
+	colorTo: ef6bce
+}

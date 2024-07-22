@@ -1,0 +1,14 @@
+sector: 5
+captureWave: 12
+planet: swamp-planet
+alwaysUnlocked: true
+difficulty: 2
+research: {
+	parent: 1a-creek
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 1a-creek
+		}
+	]
+}

@@ -2,6 +2,7 @@ type: ItemTurret
 size: 2
 health: 840
 range: 240
+fogRadiusMultiplier: 0.5
 reload: 80
 shootSound: bang
 shootEffect: shootBig
@@ -11,8 +12,9 @@ requirements: [
 	ic-silver/70
 ]
 
+ammoPerShot: 5
 ammoTypes: {
-	pyratite: {
+	ic-silver: {
 		type: ArtilleryBulletType
 		speed: 3.2
 		damage: 1
@@ -21,13 +23,15 @@ ammoTypes: {
 		height: 17
 		status: burning
 		statusDuration: 900
-		frontColor: ffb855
-		backColor: ffdd55
+		frontColor: ffffff
+		backColor: cbdbfc
 		splashDamage: 75
 		splashDamageRadius: 18
 		collidesTiles: false
 		makeFire: true
-		trailEffect: incendTrail
+        fragOnAbsorb: false
+        trailColor: cbdbfc
+        ammoMultiplier: 1
 		hitEffect: {
 			type: MultiEffect
 			effects: [
@@ -67,8 +71,8 @@ ammoTypes: {
 			shrinkY: 1
 			status: burning
 			statusDuration: 600
-			frontColor: ffb855
-			backColor: ffdd55
+			frontColor: ffffff
+			backColor: cbdbfc
 			splashDamage: 5
 			splashDamageRadius: 8
 			makeFire: true
@@ -78,6 +82,10 @@ ammoTypes: {
 			despawnEffect: none
 		}
 	}
+}
+
+consumes: {
+    liquid: lb-aspect/1.666666666666666666666666666
 }
 
 coolant: {
@@ -92,4 +100,14 @@ recoil: 1.5
 inaccuracy: 2
 shootCone: 5
 category: turret
-research: scorch
+
+research: {
+    parent: 9t-a-sunder
+    objectives: [
+		{
+			type: OnSector
+			preset: 2a-scrapyard
+		}
+    ]
+    
+}

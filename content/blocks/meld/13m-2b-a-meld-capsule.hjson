@@ -2,14 +2,14 @@ type: ForceProjector
 size: 3
 phaseUseTime: 540
 phaseRadiusBoost: 5
-radius: 56
+radius: 80
 shieldHealth: 45
 health: 540
 armor: 3
 
 consumes: {
 	liquids: [
-		liquid-progress/1
+		lz-meld/1
 	]
   	items: {
     		items: [

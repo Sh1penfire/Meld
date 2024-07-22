@@ -4,11 +4,13 @@ size: 3
 placeableLiquid: true
 category: production
 
-baseEfficiency: 0.1
-minEfficiency: 1
-liquidCapacity: 50
 
 attribute: aether
+baseEfficiency: 0
+minEfficiency: 8.9
+boostScale: 0.111111111111111111111111111111111111
+
+liquidCapacity: 50
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -24,7 +26,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: liquid-power
+		drawLiquid: la-aether
 		padding: 1.5
 	}
 	{
@@ -60,7 +62,7 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputLiquid: liquid-power/1
+outputLiquid: la-aether/1
 
 requirements: [
  	ia-debris/40

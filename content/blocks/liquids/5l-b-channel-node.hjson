@@ -6,6 +6,8 @@ placeableLiquid: true
 liquidCapacity: 50
 liquidPressure: 50
 
+solid: false
+
 category: liquid
 requirements: [
 	ia-debris/5

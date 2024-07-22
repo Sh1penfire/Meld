@@ -4,5 +4,5 @@ blendGroup: metal-weave-floor
 parent: metal-weave-floor
 
 attributes: {
-	aether: 0.1
+	aether: 1
 }

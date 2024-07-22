@@ -12,12 +12,6 @@ requirements: [
 ]
 
 outputLiquid: {
-	liquid: liquid-power
+	liquid: la-aether
 	amount: 1
-}
-
-consumes: {
-	liquids: [
-		liquid-power/0
-	]
 }

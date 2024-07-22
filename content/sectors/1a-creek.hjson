@@ -3,3 +3,4 @@ planet: swamp-planet
 attack: true
 alwaysUnlocked: true
 difficulty: 1
+research: 8s-a-core-raft

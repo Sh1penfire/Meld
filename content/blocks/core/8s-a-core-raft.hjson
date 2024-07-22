@@ -12,10 +12,7 @@ itemCapacity : 1000
 
 
 research: {
-	planet: swamp-planet
-	root: true
-	requiresUnlock: false
-	name: "Ikaru"
+	parent: swamp-planet
 }
 
 category: effect

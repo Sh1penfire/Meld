@@ -11,7 +11,7 @@ liquidCapacity: 300
 
 consumes: {
 	liquid: {
-		liquid: liquid-refined-power
+		liquid: lb-aspect
 		amount: 1.6666666666
 		booster: false
 	}

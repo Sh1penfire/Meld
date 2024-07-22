@@ -1,0 +1,3 @@
+type: StaticWall
+variants: 3
+solid: true

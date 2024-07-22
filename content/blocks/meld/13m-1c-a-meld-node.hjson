@@ -2,9 +2,6 @@ type: CoreBlock
 health: 200
 armor: 15
 size: 3
-alwaysUnlocked: true
-
-buildVisibility: shown
 
 destroyBulletSameTeam: true
 destroyBullet: {

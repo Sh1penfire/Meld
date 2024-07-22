@@ -694,7 +694,7 @@ requirements: [
 
 consumes: {
 	liquids: [
-		liquid-refined-power/1
+		lb-aspect/1
 	]
 }
 

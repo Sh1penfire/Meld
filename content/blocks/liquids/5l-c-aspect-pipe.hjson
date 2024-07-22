@@ -9,6 +9,9 @@ quickRotate: true
 craftTime: 30
 liquidCapacity: 100
 liquidPressure: 50
+
+solid: false
+
 drawer: [
 	{
 		type: DrawRegion
@@ -16,7 +19,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: liquid-refined-power
+		drawLiquid: lb-aspect
 		alpha: 1
 	}
 	{
@@ -37,11 +40,11 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		liquid-power/0.166666666
+		la-aether/0.166666666
 	]
 }
 
-outputLiquid: liquid-refined-power/1.6666666666
+outputLiquid: lb-aspect/1.6666666666
 
 category: liquid
 requirements: [

@@ -1,0 +1,87 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 60
+
+attribute: steam
+baseEfficiency: 0
+minEfficiency: 8.9
+minEfficiency: 1
+boostScale: 0.111111111111111111111111111111111111
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+liquidCapacity: 80
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: lb-aspect
+		padding: 1.5
+	}
+	{
+		type: DrawCircles
+		amount: 3
+		color: cbdbfc
+		radius: 10
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -mixer
+		spinSprite: true
+		rotateSpeed: 2.5
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+	}
+]
+
+consumes: {
+	items: [
+		ia-debris/20
+	]
+	liquids: [
+		lb-aspect/3.3333333333333333333333333333333
+	]
+}
+
+outputItem: ib-carbolith/10
+requirements: [
+ 	ia-debris/80
+	ic-silver/60
+]
+
+research: {
+	parent: 7h-a-aether-accumulator
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 1a-creek
+		}
+		{
+			type: OnSector
+			preset: 2a-scrapyard
+		}
+	]
+}
+
+researchCost: [
+	ia-debris/200
+	ic-silver/150
+]

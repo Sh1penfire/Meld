@@ -29,3 +29,10 @@ itemWhitelist: [
 	ie-electrum-sheet,
 	if-resonarum
 ]
+
+research: {
+	planet: swamp-planet
+	root: true
+	requiresUnlock: false
+	name: "Ikaru"
+}
