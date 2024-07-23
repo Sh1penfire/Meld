@@ -28,7 +28,8 @@ itemWhitelist: [
 	ic-silver,
 	id-meld-shard,
 	ie-electrum-sheet,
-	if-resonarum
+	if-resonarum,
+	iz-fragment
 ]
 
 mesh: [

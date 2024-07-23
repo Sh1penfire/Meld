@@ -29,59 +29,30 @@ targetAir: false
 weapons: [
 	{
 		mirror: false
-		rotate: false
-		baseRotation: -180
+		rotate: true
+		rotateSpeed: 180
 		shootCone: 180
 		x: 0
-		y: 4
-		reload: 45
+		y: 0
+		reload: 90
 		recoil: 1.25
 		shootSound: mineDeploy
-		inaccuracy: 15
-		shoot: {
-			type: ShootSpread
-			spread: 4.5
-			shots: 3
-			shotDelay: 3
-		}
 		bullet: {
-			type: BasicBulletType
-			sprite: mine-bullet
-			layer: 10.1
-
-			speed: 0.85
-			drag: -0.03
+			type: PointBulletType
+			speed: 1
+			damage: 0
+			lifetime: 192
+			trailEffect: explosion
 			keepVelocity: false
 			absorbable: false
 			hittable: false
-
-			homingPower: 0.16
-			homingDelay: 15
-
-			lifetime: 80
-			damage: 45
-			splashDamage: 15
-			splashDamageRadius: 15
-
-			width: 10
-			height: 10
-			shrinkX: 0
-			shrinkY: 0
-			hitSize: 6
-
-			weaveMag: 5
-			weaveScale: 4
-			hitShake: 5
-			hitEffect: flakExplosion
-			hitSound: explosion
-
-
-			collidesAir: false
-			collideFloor: true
-
-
-			trailLength: 8
-			trailWidth: 3.5
+			collides: false
+			rangeOverride: 192
+			fragBullets: 1
+			fragBullet: {
+				damage: 0
+				spawnUnit: bulbhead-sonar
+			}
 		}
 	}
 	{

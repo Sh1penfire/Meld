@@ -2,8 +2,8 @@ type: ItemTurret
 size: 2
 health: 840
 range: 200
-fogRadiusMultiplier: 0.5
-reload: 25
+fogRadiusMultiplier: 0.25
+reload: 45
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
@@ -70,20 +70,21 @@ ammoTypes: {
 		splashDamage: 10
 		splashDamageRadius: 20
 		collidesGround: true
-		reloadMultiplier: 0.55
 		hitEffect: explosion
         fragOnAbsorb: false
 		fragBullet: {
 			type: FlakBulletType
+            width: 0
+            height: 0
+            instantDisappear: true
 			speed: 3
 			damage: 1
-			shrinkY: 1
 			lifetime: 20
 			splashDamage: 25
 			splashDamageRadius: 50
 			width: 5
 			height: 12
-			hitEffect: hitBulletSmall
+			hitEffect: none
 		}
 		fragBullets: 2
 	}

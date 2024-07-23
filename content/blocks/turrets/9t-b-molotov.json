@@ -1,8 +1,8 @@
 type: ItemTurret
 size: 2
 health: 840
-range: 240
-fogRadiusMultiplier: 0.5
+range: 272
+fogRadiusMultiplier: 0.25
 reload: 80
 shootSound: bang
 shootEffect: shootBig
@@ -12,13 +12,13 @@ requirements: [
 	ic-silver/70
 ]
 
-ammoPerShot: 5
+ammoPerShot: 2
 ammoTypes: {
 	ic-silver: {
 		type: ArtilleryBulletType
 		speed: 3.2
 		damage: 1
-		lifetime: 75
+		lifetime: 85
 		width: 12
 		height: 17
 		status: burning
