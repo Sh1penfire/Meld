@@ -2,8 +2,8 @@ type: legs
 shadowElevation: 0.1
 speed: 0.7
 
-health: 600
-armor: 10
+health: 750
+armor: 35
 
 range: 80
 drag: 0.12

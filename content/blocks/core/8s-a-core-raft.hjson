@@ -15,4 +15,9 @@ research: {
 	parent: swamp-planet
 }
 
+requirements: [
+	ia-debris/400
+	ib-carbolith/200
+]
+
 category: effect
