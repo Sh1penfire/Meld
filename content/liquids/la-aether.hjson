@@ -1,3 +1,5 @@
 type: Liquid
 gas: true
 color: cb8650
+
+research: 8s-a-core-raft

@@ -1,0 +1,206 @@
+type: flying
+flying: true
+shadowElevation: 0.1
+speed: 0.5
+
+health: 750
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 16
+rotateSpeed: 6
+engineOffset: 13
+engineSize: 0
+
+drawCell: false
+targetAir: false
+
+faceTarget: true
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		mirror: false
+		rotate: false
+		shootSound: none
+		shootCone: 10
+		shootY: -13
+		shoot: {
+			type: ShootBarrel
+			barrels: [
+				0, 0, 180
+			]
+		}
+
+		bullet: {
+			killShooter: true
+			smokeEffect: none
+			hitEffect: none
+			despawnEffect: none
+			collides: false
+			collidesAir: false
+
+			instantDisappear: true
+			rangeOverride: 55
+			recoil: 1.5
+			shootEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 55
+						baseLength: -5
+						particles: 16
+						length: 35
+						sizeFrom: 12
+						sizeTo: 0
+						interp: pow5Out
+						colorFrom: e5aed700
+						colorTo: e5aed7
+					}
+					{
+						type: WaveEffect
+						lifetime: 8
+						sizeFrom: 5
+						sizeTo: 15
+						strokeFrom: 4
+						strokeTo: 0
+						colorFrom: e5aed7
+						colorTo: ffffff
+					}
+				]
+			}
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+
+			rangeOverride: 10
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 130
+						baseLength: 10
+						length: 35
+						particles: 11
+						sizeFrom: 2
+						sizeTo: 5
+						sizeInterp: pow5Out
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: ParticleEffect
+						lifetime: 12
+						baseLength: 10
+						length: 30
+						line: true
+						lenFrom: 3
+						lenTo: 0
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: ParticleEffect
+						lifetime: 25
+						baseLength: 10
+						particles: 8
+						length: 55
+						sizeFrom: 4
+						sizeTo: 0
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: WaveEffect
+						lifetime: 8
+						sizeFrom: 5
+						sizeTo: 45
+						strokeFrom: 4
+						strokeTo: 0
+						colorFrom: e5aed7
+						colorTo: ffffff
+					}
+				]
+			}
+			speed: 0
+			splashDamageRadius: 35
+			instantDisappear: true
+			splashDamage: 150
+			killShooter: true
+			hittable: false
+		}
+		parts: [
+			{
+				type: RegionPart
+				layerOffset: -0.1
+				name: meld-m-c1-gala-orb
+				progress: heat
+				color: ffffff
+				colorTo: ffffff00
+				outline: false
+			}
+		]
+	}
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 0
+		y: -12
+		rotateEffect: true
+		rotation: 180
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 35
+					baseLength: -5
+					particles: 3
+					length: 15
+					sizeFrom: 4
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 60
+					length: 25
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 4
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+]

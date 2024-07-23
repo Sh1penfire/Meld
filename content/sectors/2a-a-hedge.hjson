@@ -1,0 +1,13 @@
+sector: 44
+captureWave: 16
+planet: swamp-planet
+difficulty: 6
+research: {
+	parent: 2a-scrapyard
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2a-scrapyard
+		}
+	]
+}

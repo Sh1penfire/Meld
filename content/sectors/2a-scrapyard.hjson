@@ -1,7 +1,6 @@
-sector: 5
+sector: 46
 captureWave: 12
 planet: swamp-planet
-alwaysUnlocked: true
 difficulty: 2
 research: {
 	parent: 1a-creek

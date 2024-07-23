@@ -79,7 +79,7 @@ ammoTypes: {
 			damage: 1
 			shrinkY: 1
 			lifetime: 20
-			splashDamage: 10
+			splashDamage: 25
 			splashDamageRadius: 50
 			width: 5
 			height: 12

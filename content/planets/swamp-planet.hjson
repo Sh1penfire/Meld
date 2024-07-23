@@ -14,7 +14,8 @@ bloom: false
 visible: true
 updateLighting: false
 defaultCore: 8s-a-core-raft
-sectorSize: 1
+sectorSize: 2
+radius: 1.2
 
 startSector: 2
 iconColor: f3c3e7
@@ -28,6 +29,101 @@ itemWhitelist: [
 	id-meld-shard,
 	ie-electrum-sheet,
 	if-resonarum
+]
+
+mesh: [
+	{
+	//sand/desert
+		type: NoiseMesh
+		planet: swamp-planet
+		divisions: 5
+		radius: 0.9
+		color1: cba380
+		color2: a06a3b
+		octaves: 3
+		persistence: 1.4
+		mag: 2.35
+		scl: 14
+	}
+	{
+		//Carbon
+		type: NoiseMesh
+		planet: swamp-planet
+		divisions: 5
+		radius: 1
+		color1: 3c4448
+		color2: 282b34
+		octaves: 3
+		persistence: 1.4
+		mag: 1
+		scl: 1
+		seed: 2
+	}
+	{
+		//Resonarum
+		type: NoiseMesh
+		planet: swamp-planet
+		divisions: 5
+		radius: 0.9
+		color1: a7d2b4
+		color2: 4bb66b
+		octaves: 3
+		persistence: 1
+		mag: 1.8
+		scl: 1
+		seed: 2
+	}
+	{
+		//Meld stone
+		type: NoiseMesh
+		planet: swamp-planet
+		divisions: 5
+		radius: 1.1
+		color1: e5aed7
+		color2: d26ab1
+		octaves: 6
+		persistence: 0.4
+		mag: 0.3
+		scl: 7
+	}
+]
+cloudMesh: [
+ {
+   type: HexSkyMesh
+   planet: swamp-planet
+   speed: 0.8
+   radius: 0.1
+   divisions: 6
+   color: a43280b4
+   octaves: 3
+   persistence: 0.3
+   scl: 3
+   thresh: 0.6
+  }
+ {
+   type: HexSkyMesh
+   planet: swamp-planet
+   speed: 0.5
+   radius: 0.12
+   divisions: 6
+   color: e5aed7e3
+   octaves: 3
+   persistence: 0.3
+   scl: 3
+   thresh: 0.2
+  }
+ {
+   type: HexSkyMesh
+   planet: swamp-planet
+   speed: 1.2
+   radius: -0.1
+   divisions: 6
+   color: e5aed7e3
+   octaves: 3
+   persistence: 0.3
+   scl: 3
+   thresh: 0.4
+  }
 ]
 
 research: {

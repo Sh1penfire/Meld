@@ -1,33 +1,36 @@
 type: legs
 speed: 0.9
 
-health: 200
+health: 650
 
 drag: 0.12
 accel: 0.2
 range: 40
 
-hitSize: 16
+hitSize: 26
 rotateSpeed: 6
 faceTarget: false
 
 drawCell: false
 
-legCount: 4
-legLength: 10
+legCount: 8
+legLength: 20
 lockLegBase: true
 legContinuousMove: true
-legGroupSize: 1
+legGroupSize: 2
+legExtension: 4
+legLengthScl: 0.9
+legPairOffset: 5
 
-legMoveSpace: 2
+legMoveSpace: 3
 allowLegStep: true
 legPhysicsLayer: false
 
 weapons: [
 	{
 		name: "m-e1-craig-gun"
-		x: -3
-		y: 0
+		x: -6
+		y: -2
 		shootY: 5
 		rotateSpeed: 15
 		reload: 15
@@ -46,7 +49,6 @@ weapons: [
 			pierceDamageFactor: 1
 			damage: 5
 			length: 60
-			width: 1.5
 			knockback: 1
 			recoil: -0.5
 			smokeEffect: {
@@ -60,6 +62,37 @@ weapons: [
 				colorTo: f9e1f3
 				sizeInterp: pow5Out
 			}
+		}
+	}
+	{
+		name: "m-e2-braig-gun"
+		x: 6
+		y: -3
+		shootY: 5
+		rotateSpeed: 15
+		reload: 75
+		shootCone: 60
+		rotate: true
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: sentry
+		shootStatusDuration: 37.5
+		bullet: {
+			sprite: "shell"
+			speed: 4
+			width: 9
+			height: 12
+			damage: 15
+			splashDamage: 10
+			splashDamageRadius: 35
+			length: 60
+			knockback: 3
+			recoil: -0.5
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
 		}
 	}
 	{

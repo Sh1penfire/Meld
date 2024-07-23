@@ -95,7 +95,9 @@ weapons: [
 		shootY: 2.5
 		beamWidth: 0.4
 
-		repairSpeed: 1
+		repairSpeed: 2
+		targetInterval: 1
+		targetSwitchInterval: 1
 
 		reload: 20
 		targetUnits: false
