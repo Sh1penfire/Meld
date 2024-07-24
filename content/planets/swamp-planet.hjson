@@ -29,7 +29,8 @@ itemWhitelist: [
 	id-meld-shard,
 	ie-electrum-sheet,
 	if-resonarum,
-	iz-fragment
+	iz-a-fragment,
+	iz-b-technoscrap
 ]
 
 mesh: [

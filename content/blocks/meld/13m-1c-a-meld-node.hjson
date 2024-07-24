@@ -3,6 +3,8 @@ health: 200
 armor: 15
 size: 3
 
+squareSprite: false
+
 destroyBulletSameTeam: true
 destroyBullet: {
 	type: MissileBulletType

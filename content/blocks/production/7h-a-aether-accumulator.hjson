@@ -8,6 +8,7 @@ category: production
 attribute: aether
 baseEfficiency: 0
 minEfficiency: 8.9
+maxBoost: 2
 boostScale: 0.111111111111111111111111111111111111
 
 liquidCapacity: 50

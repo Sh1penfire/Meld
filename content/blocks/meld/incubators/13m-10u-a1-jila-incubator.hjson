@@ -1,0 +1,30 @@
+type: GenericCrafter
+
+health: 150
+armor: 4
+size: 3
+
+squareSprite: false
+
+craftTime: 360
+
+liquidCapacity: 120
+itemCapacity: 2
+
+consumes: {
+	items: [
+		iw-a-larva/1
+	]
+	liquids: [
+		la-aether/0.3333333333333333333333333333333
+	]
+}
+
+outputLiquid: lz-meld/0.3333333333333333333333333333333
+
+requirements: [
+	id-meld-shard/600
+	ia-debris/4500
+]
+
+category: units

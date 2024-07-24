@@ -9,7 +9,7 @@ range: 80
 drag: 0.12
 accel: 0.2
 
-hitSize: 16
+hitSize: 30
 rotateSpeed: 6
 
 useEngineElevation: false

@@ -25,13 +25,17 @@ ammoTypes: {
 		statusDuration: 900
 		frontColor: ffffff
 		backColor: cbdbfc
-		splashDamage: 75
+		splashDamage: 48
 		splashDamageRadius: 18
 		collidesTiles: false
 		makeFire: true
         fragOnAbsorb: false
         trailColor: cbdbfc
         ammoMultiplier: 1
+        fragBullets: 12
+        fragVelocityMin: 0.8
+        fragVelocityMax: 1
+        fragLifeMin: 0.6
 		hitEffect: {
 			type: MultiEffect
 			effects: [
@@ -59,14 +63,14 @@ ammoTypes: {
 		fragBullet: {
 			type: BasicBulletType
 			speed: 1.5
-			damage: 7
-			lifetime: 12
+			damage: 10
+			lifetime: 20
 			pierce: true
 			pierceCap: 2
 			pierceArmor: true
 			absorbable: false
-			width: 5
-			height: 8
+			width: 9
+			height: 13
 			shrinkX: 1
 			shrinkY: 1
 			status: burning

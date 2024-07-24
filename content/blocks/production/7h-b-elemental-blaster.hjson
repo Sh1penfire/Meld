@@ -6,6 +6,7 @@ placeableLiquid: true
 
 drillTime: 240
 
+tier: 2
 
 liquidCapacity: 300
 

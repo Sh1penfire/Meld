@@ -1,0 +1,18 @@
+sector: 18
+captureWave: 12
+planet: swamp-planet
+difficulty: 3
+research: {
+	parent: 2a-scrapyard
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-a-hedge
+		}
+		{
+			type: OnSector
+			preset: 2b-b-ruins
+		}
+	]
+}
+

@@ -8,6 +8,8 @@ minEfficiency: 9
 displayEfficiencyScale: 0.1888888888
 displayEfficiency: false
 
+squareSprite: false
+
 requirements: [
 	ia-debris/200
 	id-meld-shard/150

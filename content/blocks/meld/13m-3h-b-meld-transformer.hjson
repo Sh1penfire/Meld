@@ -1,0 +1,64 @@
+type: GenericCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+liquidCapacity: 100
+
+requirements: [
+	ia-debris/200
+	id-meld-shard/150
+]
+
+craftTime: 5
+
+squareSprite: false
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: lz-meld
+		alpha: 1
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+		suffix: -middle
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: la-aether
+		alpha: 0.2
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	liquid: lz-meld/1
+}
+
+outputLiquid: {
+	liquid: la-aether
+	amount: 1
+}
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	particles: 3
+	baseLength: 4
+	length: 12
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}

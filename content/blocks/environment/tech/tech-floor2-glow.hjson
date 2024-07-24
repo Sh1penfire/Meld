@@ -1,0 +1,11 @@
+type: Floor
+variants: 0
+
+
+lightRadius: 95
+lightColor: 2d9cf0b0
+emitLight: true
+
+attributes: {
+	decryption: 1
+}

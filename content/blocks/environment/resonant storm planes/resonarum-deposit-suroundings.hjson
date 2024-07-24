@@ -1,9 +1,12 @@
 type: SeaBush
 variants: 0
 solid: true
-itemDrop: if-resonarum
+
 breakable: false
 alwaysReplace: false
+
+itemDrop: if-resonarum
+
 lobesMin: 2
 lobesMax: 4
 sclMin: 60

@@ -10,7 +10,6 @@ itemCapacity: 60
 attribute: steam
 baseEfficiency: 0
 minEfficiency: 8.9
-minEfficiency: 1
 boostScale: 0.111111111111111111111111111111111111
 
 ambientSound: drill

@@ -7,6 +7,10 @@ rotateSpeed: 0
 reload: 180
 alwaysShooting: true
 
+range: 300
+
+squareSprite: false
+
 shootY: 0
 ammoTypes: {
 	lz-meld: {

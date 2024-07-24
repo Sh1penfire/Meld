@@ -1,0 +1,60 @@
+type: AttributeCrafter
+size: 1
+
+placeableLiquid: true
+category: effect
+
+attribute: decryption
+dumpExtraLiquid: true
+
+maxBoost: 5
+
+baseEfficiency: 0
+minEfficiency: 1
+liquidCapacity: 50
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawGlowRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		iz-b-technoscrap/1
+	]
+	liquids: [
+		lw-a-liquid-data/0.01
+	]
+}
+
+outputLiquids: [
+	lw-a-liquid-data/1
+	lw-b-null/0
+]
+
+requirements: [
+ 	ic-silver/45
+	iz-b-technoscrap/30
+]
+
+requirements: [
+ 	ia-debris/40
+]
+
+research: 3e-c-a-data-miner
+
+researchCost: [
+	ic-silver/240
+	iz-b-technoscrap/100
+]
