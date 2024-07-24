@@ -48,10 +48,6 @@ requirements: [
 	iz-b-technoscrap/30
 ]
 
-requirements: [
- 	ia-debris/40
-]
-
 research: 3e-c-a-data-miner
 
 researchCost: [
