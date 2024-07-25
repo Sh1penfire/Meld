@@ -11,6 +11,7 @@ minEfficiency: 1
 boostScale: 0.04
 
 liquidCapacity: 300
+scaleLiquidConsumption: true
 
 consumes: {
 	liquid: {

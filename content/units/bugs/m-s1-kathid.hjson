@@ -30,22 +30,23 @@ weapons: [
 		name: "m-s1-kathid-crystal"
 		x: 0
 		y: 0
-		shootY: 9.5
+		shootY: 8.5
 		mirror: false
 		alternate: false
 		continuous: true
 		alwaysContinuous: true
 		recoil: 0
+		shootCone: 10
 		top: false
 		shootStatus: sentry
 		shootStatusDuration: 5
 		shootSound: torch
 		bullet: {
 			type: ContinuousFlameBulletType
-			damage: 12
+			damage: 24
 			flareLength: 0
 			length: 65
-			width: 3.3
+			width: 4.3
 			knockback: 1
 			pierceCap: 1
 			colors: [

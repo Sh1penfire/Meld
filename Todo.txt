@@ -2,3 +2,8 @@
 -Resprite large meld crystal
 
 -Murcury + Silver over native gold deposits for Electrum processing?
+
+-Polish Graig's sprites
+	-Foot sprite
+	-Leg base required
+	-Cannon needs animation

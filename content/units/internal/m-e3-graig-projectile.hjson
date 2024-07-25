@@ -1,26 +1,18 @@
-type: flying
-flying: true
-shadowElevation: 0.1
-speed: 1.5
+type: missile
+template: MissileUnitType
 
-circleTarget: true
+speed: 2
 
-health: 240
+health: 630
+
 range: 80
 drag: 0.12
 accel: 0.2
+lifetime: 180
 
 hitSize: 16
-rotateSpeed: 2.5
-engineOffset: 10
-faceTarget: true
+rotateSpeed: 0
 
-allowLegStep: true
-legPhysicsLayer: false
-
-loopSound: missileTrail
-loopSoundVolume: 0.07
-createWreck: false
 drawCell: false
 
 weapons: [
@@ -107,13 +99,13 @@ weapons: [
 abilities: [
 	{
 		type: SpawnDeathAbility
-		amount: 1
-		unit: m-a1-jilla
+		amount: 2
+		unit: m-e1-craig
 	}
 	{
 		type: MoveEffectAbility
 		x: 0
-		y: -10
+		y: -10.5
 		rotateEffect: true
 		rotation: 180
 		effect: {
@@ -126,7 +118,7 @@ abilities: [
 					baseLength: -5
 					particles: 3
 					length: 35
-					sizeFrom: 5
+					sizeFrom: 8
 					sizeTo: 0
 					colorFrom: e5aed700
 					colorTo: e5aed7
@@ -151,8 +143,78 @@ abilities: [
 					line: true
 					strokeFrom: 2
 					strokeTo: 0
-					lenFrom: 4
+					lenFrom: 7
 					lenTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: 7
+		y: -11
+		rotateEffect: true
+		rotation: 215
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 15
+					lifetime: 25
+					baseLength: -5
+					particles: 3
+					length: 85
+					sizeFrom: 5
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 15
+					lifetime: 35
+					length: 105
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: -7
+		y: -11
+		rotateEffect: true
+		rotation: 135
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 15
+					lifetime: 25
+					baseLength: -5
+					particles: 3
+					length: 85
+					sizeFrom: 5
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 15
+					lifetime: 35
+					length: 105
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 5
 					colorFrom: e5aed7
 					colorTo: e5aed700
 				}

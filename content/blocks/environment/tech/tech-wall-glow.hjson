@@ -1,0 +1,11 @@
+type: Boulder
+variants: 0
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+itemDrop: iz-b-technoscrap
+
+emitLight: true
+lightColor: 9ccaed
