@@ -70,7 +70,7 @@ weapons: [
 		y: -3
 		shootY: 5
 		rotateSpeed: 15
-		reload: 75
+		reload: 90
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -78,17 +78,17 @@ weapons: [
 		parentizeEffects: false
 		shootSound: bang
 		shootStatus: sentry
-		shootStatusDuration: 37.5
+		shootStatusDuration: 45
 		bullet: {
 			sprite: "shell"
 			speed: 4
-			width: 9
-			height: 12
+			lifetime: 40
+			width: 11
+			height: 14
 			damage: 15
 			splashDamage: 10
-			splashDamageRadius: 35
-			length: 60
-			knockback: 3
+			splashDamageRadius: 25
+			knockback: 4
 			recoil: -0.5
 			trailEffect: smoke
 			shootEffect: shootBig

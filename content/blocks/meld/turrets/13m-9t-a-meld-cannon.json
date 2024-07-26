@@ -13,7 +13,7 @@ recoil: 3.5
 inaccuracy: 0
 shootCone: 5
 
-liquidCapacity: 50
+liquidCapacity: 150
 
 shootY: 8.5
 
@@ -98,6 +98,8 @@ ammoTypes: {
         collidesTiles: true
         collides: true
     
+        ammoMultiplier: 0.008
+    
         fragBullet: {
             speed: 3.5
             damage: 50
@@ -133,6 +135,13 @@ ammoTypes: {
             fragBullets: 2
         }
 	}
+}
+
+consumes: {
+    liquid: {
+        liquid: la-aether
+        amount: 0.01
+    }
 }
 
 coolant: {

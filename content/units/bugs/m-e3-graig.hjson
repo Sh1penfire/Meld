@@ -184,7 +184,7 @@ weapons: [
 		y: 0.75
 		shootY: 5
 		rotateSpeed: 15
-		reload: 75
+		reload: 90
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -195,16 +195,17 @@ weapons: [
 		autoTarget: true
 		targetInterval: 12
 		targetSwitchInterval: 20
-
 		bullet: {
 			sprite: "shell"
 			speed: 4
-			width: 9
-			height: 12
+			lifetime: 40
+			width: 11
+			height: 14
 			damage: 15
 			splashDamage: 10
-			splashDamageRadius: 35
-			knockback: 3
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.5
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion
@@ -216,7 +217,7 @@ weapons: [
 		y: 22.25
 		shootY: 5
 		rotateSpeed: 15
-		reload: 75
+		reload: 90
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -227,16 +228,17 @@ weapons: [
 		autoTarget: true
 		targetInterval: 12
 		targetSwitchInterval: 20
-
 		bullet: {
 			sprite: "shell"
 			speed: 4
-			width: 9
-			height: 12
+			lifetime: 40
+			width: 11
+			height: 14
 			damage: 15
 			splashDamage: 10
-			splashDamageRadius: 35
-			knockback: 3
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.5
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion
@@ -248,7 +250,7 @@ weapons: [
 		y: 25
 		shootY: 5
 		rotateSpeed: 15
-		reload: 75
+		reload: 90
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -259,16 +261,17 @@ weapons: [
 		autoTarget: true
 		targetInterval: 12
 		targetSwitchInterval: 20
-
 		bullet: {
 			sprite: "shell"
 			speed: 4
-			width: 9
-			height: 12
+			lifetime: 40
+			width: 11
+			height: 14
 			damage: 15
 			splashDamage: 10
-			splashDamageRadius: 35
-			knockback: 3
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.5
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion
@@ -280,7 +283,7 @@ weapons: [
 		y: -9.75
 		shootY: 5
 		rotateSpeed: 15
-		reload: 75
+		reload: 90
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -291,16 +294,17 @@ weapons: [
 		autoTarget: true
 		targetInterval: 12
 		targetSwitchInterval: 20
-
 		bullet: {
 			sprite: "shell"
 			speed: 4
-			width: 9
-			height: 12
+			lifetime: 40
+			width: 11
+			height: 14
 			damage: 15
 			splashDamage: 10
-			splashDamageRadius: 35
-			knockback: 3
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.5
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion

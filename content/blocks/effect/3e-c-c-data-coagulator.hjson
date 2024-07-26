@@ -14,12 +14,13 @@ minEfficiency: 4
 boostScale: 0.25
 
 liquidCapacity: 50
+itemCapacity: 60
 
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 15
+craftTime: 60
 
 drawer: [
 	{
@@ -33,7 +34,7 @@ drawer: [
 
 consumes: {
 	items: [
-		iz-b-technoscrap/5
+		iz-b-technoscrap/20
 	]
 	liquids: [
 		lw-a-liquid-data/10

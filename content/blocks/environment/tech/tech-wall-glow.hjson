@@ -1,5 +1,5 @@
-type: Boulder
-variants: 0
+type: Prop
+variants: 2
 solid: true
 
 breakable: false

@@ -9,17 +9,20 @@ drawer: [
 	}
 	{
 		type: DrawArcSmelt
-		flameRad: 3
-		flameRadiusScl: 1
-		flameRadiusMag: 5
+		flameRad: 1
+		flameRadiusScl: 5
+		flameRadiusMag: 0.5
 	}
 ]
+
+craftTime: 5
+
 craftEffect: {
 	type: MultiEffect
 	effects: [
 		{
 			type: ParticleEffect
-			lifetime: 50
+			lifetime: 15
 			particles: 1
 			length: 0
 			sizeFrom: 3
@@ -31,20 +34,20 @@ craftEffect: {
 		}
 		{
 			type: ParticleEffect
-			lifetime: 50
+			lifetime: 15
 			particles: 1
 			length: 0
 			sizeFrom: 2
-			sizeTo: 0
+			sizeTo: 2
 			lightScl: 60
-			colorFrom: cb865000
-			colorTo: 935b29ff
+			colorFrom: cb8650
+			colorTo: cb8650
 			lightOpacity: 1
-			clip: 120
+			clip: 240
 		}
 		{
 			type: ParticleEffect
-			lifetime: 120
+			lifetime: 25
 			particles: 3
 			sizeFrom: 5
 			sizeTo: 0
@@ -54,8 +57,6 @@ craftEffect: {
 	]
 
 }
-
-craftTime: 5
 
 consumes: {
 	liquids: [
