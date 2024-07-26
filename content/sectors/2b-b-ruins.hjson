@@ -8,11 +8,8 @@ research: {
 		{
 			type: SectorComplete
 			preset: 2b-a-hedge
-		}
-		{
-			type: OnSector
-			preset: 2b-b-ruins
-		}
+		},
+		soontm
 	]
 }
 

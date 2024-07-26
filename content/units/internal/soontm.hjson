@@ -1,0 +1,15 @@
+type: missile
+physics: false
+hittable: false
+targetable: false
+useUnitCap: false
+lifetime: 0
+speed: 0
+fogRadius: 0
+singleTarget: false
+faceTarget: false
+drawBody: false
+drawCell: false
+deathSound: none
+deathExplosionEffect: none
+internal: true
