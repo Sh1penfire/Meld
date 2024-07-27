@@ -110,3 +110,16 @@ parts: [
 		color: ffd37f
 	}
 ]
+
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 120
+		reload: 0
+		effect: overclock
+		duration: 5
+		activeEffect: none
+		applyEffect: none
+	}
+]

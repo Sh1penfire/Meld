@@ -8,7 +8,7 @@ solid: false
 squareSprite: false
 buildVisibility: shown
 
-itemCapacity : 1000
+itemCapacity : 750
 
 
 research: {

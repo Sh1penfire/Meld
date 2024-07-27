@@ -1,5 +1,4 @@
 sector: 18
-captureWave: 12
 planet: swamp-planet
 difficulty: 3
 research: {
@@ -8,8 +7,7 @@ research: {
 		{
 			type: SectorComplete
 			preset: 2b-a-hedge
-		},
-		soontm
+		}
 	]
 }
 
