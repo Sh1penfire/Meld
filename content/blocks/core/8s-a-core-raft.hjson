@@ -3,7 +3,7 @@ health: 4000
 size: 3
 alwaysUnlocked: true
 
-unitType: bulbhead
+unitType: u1-a-bulbhead
 solid: false
 squareSprite: false
 buildVisibility: shown

@@ -1,6 +1,6 @@
 type: CoreBlock
 health: 4000
 size: 3
-unitType: bulbhead
+unitType: u1-a-bulbhead
 solid: false
 itemCapacity : 1000
