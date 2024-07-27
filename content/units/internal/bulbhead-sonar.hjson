@@ -2,6 +2,8 @@ type: missile
 physics: false
 hittable: false
 targetable: false
+controllable: false
+flying: true
 useUnitCap: false
 lifetime: 180
 speed: 0
