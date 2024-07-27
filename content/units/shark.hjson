@@ -172,6 +172,3 @@ engines: [
 		rotation: 225
 	}
 ]
-
-research: 10c-a-ship-factory
-researchCostMultiplier: 0

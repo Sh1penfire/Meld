@@ -1,8 +1,8 @@
 type: flying
-preset: MissileUnitType
 physics: false
 hittable: false
 targetable: false
+playerControllable: false
 speed: 0
 fogRadius: 30
 lightRadius: 240

@@ -2,9 +2,10 @@ type: missile
 physics: false
 hittable: false
 targetable: false
-controllable: false
+playerControllable: false
 flying: true
 useUnitCap: false
+engineSize: 0
 lifetime: 180
 speed: 0
 fogRadius: 10

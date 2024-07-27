@@ -26,6 +26,8 @@ mineTier: 3
 
 targetAir: false
 
+alwaysUnlocked: true
+
 weapons: [
 	{
 		mirror: false
@@ -137,3 +139,5 @@ abilities: [
 		applyEffect: none
 	}
 ]
+
+research: 8s-a-core-raft

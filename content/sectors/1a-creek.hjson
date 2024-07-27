@@ -1,6 +1,5 @@
 sector: 2
 planet: swamp-planet
-attack: true
 alwaysUnlocked: true
 difficulty: 1
-research: 8s-a-core-raft
+research: swamp-planet

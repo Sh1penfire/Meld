@@ -5,7 +5,7 @@ targetable: false
 configurable: false
 privileged: true
 solid: true
-under: true
+underBullets: true
 
 buildVisibility: editorOnly
 category: logic

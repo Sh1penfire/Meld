@@ -3,4 +3,12 @@ gas: true
 color: a6d7fc
 lightColor: 31a2f966
 
-research: la-aether
+research: {
+	parent: la-aether
+	objectives: [
+		{
+			type: OnSector
+			preset: 2b-b-ruins
+		}
+	]
+}

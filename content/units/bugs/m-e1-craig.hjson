@@ -46,7 +46,6 @@ weapons: [
 			pierceDamageFactor: 1
 			damage: 5
 			length: 60
-			width: 1.5
 			knockback: 1
 			recoil: -0.5
 			smokeEffect: {

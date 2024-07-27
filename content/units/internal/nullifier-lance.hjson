@@ -7,6 +7,7 @@ lifetime: 160
 speed: 0
 singleTarget: false
 faceTarget: false
+playerControllable: false
 
 parts: [
 	{

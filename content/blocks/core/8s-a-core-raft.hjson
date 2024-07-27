@@ -1,7 +1,6 @@
 type: CoreBlock
 health: 4000
 size: 3
-alwaysUnlocked: true
 
 unitType: u1-a-bulbhead
 solid: false
@@ -11,14 +10,15 @@ buildVisibility: shown
 itemCapacity : 750
 unitCapModifier: 6
 
+alwaysUnlocked: true
 
-research: {
-	parent: swamp-planet
-}
+
+research: swamp-planet
 
 requirements: [
 	ia-debris/400
 	ib-carbolith/200
 ]
 
+researchCostMultiplier: 0
 category: effect
