@@ -3,7 +3,7 @@ hovering: true
 shadowElevation: 0.1
 speed: 2.5
 
-health: 210
+health: 320
 
 range: 80
 drag: 0.08

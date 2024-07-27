@@ -24,27 +24,29 @@ controller: HugAI
 
 weapons: [
 	{
+		name: m-a2-gilla-crystal
 		x: 0
 		y: 0
-		shootY: 17
+		shootY: 18
 		shootCone: 13
 		reload: 60
+		recoil: 0
 		mirror: false
 		alternate: false
 		continuous: true
 		alwaysContinuous: true
+		top: false
 		shootSound: torch
 		shootStatus: sentry
 		shootStatusDuration: 3
 		
 		bullet: {
 			type: ContinuousFlameBulletType
-			damage: 13
+			damage: 24
 			flareLength: 0
 			length: 40
-			rangeOverride: 60
-			width: 3.5
-			knockback: 1
+			width: 5.2
+			knockback: 5
 			pierceCap: 1
 			colors: [
 				f9e1f343,

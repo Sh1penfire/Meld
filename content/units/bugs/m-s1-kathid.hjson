@@ -5,7 +5,6 @@ speed: 0.7
 health: 750
 armor: 35
 
-range: 65
 drag: 0.12
 accel: 0.2
 
@@ -43,12 +42,12 @@ weapons: [
 		shootSound: torch
 		bullet: {
 			type: ContinuousFlameBulletType
-			damage: 24
-			flareLength: 0
-			length: 65
-			width: 4.3
+			damage: 13
+			flareLength: 12
+			length: 85
+			width: 1.7
 			knockback: 1
-			pierceCap: 1
+			pierceCap: 2
 			colors: [
 				f9e1f343,
 				f1ace994,
