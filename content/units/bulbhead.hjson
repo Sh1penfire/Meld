@@ -116,10 +116,24 @@ abilities: [
 	{
 		type: StatusFieldAbility
 		range: 120
-		reload: 0
+		reload: 15
 		effect: overclock
-		duration: 5
-		activeEffect: none
+		duration: 120
+		activeEffect: {
+			type: ParticleEffect
+			lifetime: 35
+			region: meld-diamond
+			colorFrom: ffd37f
+			colorTo: ffd37f
+			particles: 3
+			spin: 1
+			length: 120
+			sizeFrom: 0
+			sizeTo: 2
+			interp: one
+			sizeInterp: slope
+			lightScl: 0
+		}
 		applyEffect: none
 	}
 ]
