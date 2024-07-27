@@ -9,6 +9,7 @@ squareSprite: false
 buildVisibility: shown
 
 itemCapacity : 750
+unitCapModifier: 6
 
 
 research: {
