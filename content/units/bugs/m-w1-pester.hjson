@@ -1,11 +1,11 @@
 type: flying
 flying: true
 shadowElevation: 0.1
-speed: 2.5
+speed: 2.2
 
 health: 250
 
-drag: 0.04
+drag: 0.03
 accel: 0.05
 
 hitSize: 16
@@ -59,7 +59,7 @@ weapons: [
 			pierce: true
 			pierceBuilding: true
 			scaleLife: false
-			speed: 4
+			speed: 2.8
 			lifetime: 15
 			smokeEffect: none
 			recoil: 1.5

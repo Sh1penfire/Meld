@@ -1,7 +1,7 @@
 type: flying
 flying: true
 shadowElevation: 0.1
-speed: 0.5
+speed: 0.8
 
 health: 750
 

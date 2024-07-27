@@ -7,3 +7,5 @@
 	-Foot sprite
 	-Leg base required
 	-Cannon needs animation
+
+-Animate the Tech Beacons

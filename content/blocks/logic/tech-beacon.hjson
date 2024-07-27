@@ -1,0 +1,24 @@
+type: SwitchBlock
+size: 5
+
+targetable: false
+configurable: false
+privileged: true
+solid: true
+under: true
+
+buildVisibility: editorOnly
+category: logic
+
+liquidCapacity: 50
+consumes: {
+	liquids: [
+		lw-a-liquid-data/0
+	]
+}
+
+requirements: [
+	iz-b-technoscrap/230
+	iz-a-fragment/50
+	ia-debris/120
+]
