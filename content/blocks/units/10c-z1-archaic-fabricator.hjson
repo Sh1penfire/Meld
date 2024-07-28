@@ -1,0 +1,37 @@
+type: Constructor
+filter: [
+	2w-1a-silver-husk,
+	14p-1a-data-resonator,
+	14p-2a-targeting-matrix
+]
+health: 300
+size: 3
+
+consumes: {
+	liquid: lw-a-liquid-data/2
+}
+
+requirements: [
+	ib-carbolith/65
+	ic-silver/40
+	iz-b-technoscrap/80
+]
+
+category: units
+
+research: {
+	parent: 8s-a-core-raft
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+researchCost: [
+	ib-carbolith/2000
+	ic-silver/1200
+	iz-a-fragment/350
+	iz-b-technoscrap/850
+]
+

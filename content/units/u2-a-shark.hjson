@@ -3,15 +3,17 @@ hovering: true
 shadowElevation: 0.1
 speed: 2.5
 
-health: 210
+health: 320
 
 range: 80
 drag: 0.08
 accel: 0.1
 
 hitSize: 16
-lightRadius: 45
-lightOpacity: 0.25
+fogRadius: 24
+
+lightRadius: 85
+lightOpacity: 0.35
 range: 100
 rotateSpeed: 6
 

@@ -1,0 +1,14 @@
+type: Wall
+size: 2
+
+customShadow: true
+placeablePlayer: false
+
+requirements: [
+  iz-a-fragment/5
+  iz-b-technoscrap/20
+  ic-silver/15
+]
+
+research: 10c-z1-archaic-fabricator
+researchCostMultiplier: 0.25

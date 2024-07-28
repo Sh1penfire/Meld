@@ -1,0 +1,120 @@
+type: flying
+flying: true
+shadowElevation: 0.1
+speed: 2.5
+
+health: 210
+
+drag: 0.08
+accel: 0.1
+
+hitSize: 16
+
+fogRadius: 4
+lightRadius: 45
+lightOpacity: 1
+rotateSpeed: 6
+
+faceTarget: false
+
+weapons: [
+	{
+        type: PointDefenseWeapon
+		name: reef-blaster
+		mirror: false
+		rotate: true
+		x: 0
+		y: 1.5
+		reload: 15
+		rotateSpeed: 28.5
+		recoil: 1.25
+        targetInterval: 4
+        targetSwitchInterval: 4
+        shootSound: lasershoot
+		bullet: {
+            shootEffect: sparkShoot
+            hitEffect: pointHit
+            maxRange: 32
+            damage: 8
+		}
+	}
+	{
+		type: RepairBeamWeapon
+		mirror: false
+		rotate: false
+		shootCone: 15
+		x: 0
+		y: 4
+		shootY: 0
+		beamWidth: 0.4
+
+		repairSpeed: 0.15
+
+		reload: 20
+		targetUnits: false
+		targetBuildings: true
+        autoTarget: true
+        controllable: false
+		laserColor: ffd37f
+		healColor: ffd37f
+		bullet: {
+			type: BulletType
+			maxRange: 24
+            healAmount: 3
+		}
+	}
+]
+
+parts: [
+    {
+        type: ShapePart
+        radius: 32
+        circle: true
+        hollow: true
+        stroke: 1
+        color: ffd37f
+        layer: 110
+    }
+    {
+        type: HaloPart
+        haloRadius: 32
+        radius: 3
+        shapes: 2
+        triLength: 10
+        tri: true
+        color: ffd37f
+        layer: 110
+        haloRotateSpeed: 1.5
+    }
+    {
+        type: HaloPart
+        haloRadius: 32
+        radius: 3
+        shapes: 2
+        triLength: 10
+        tri: true
+        color: ffd37f
+        layer: 110
+        haloRotateSpeed: 1.5
+        shapeRotation: 180
+    }
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 0
+		y: -6.75
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+    {
+        type: RegenAbility
+        amount: 0.15
+    }
+]
+
+research: 10c-p2-drone-platform
+researchCostMultiplier: 0

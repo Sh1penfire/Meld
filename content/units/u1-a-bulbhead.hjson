@@ -1,7 +1,7 @@
 type: naval
 speed: 1.7
 
-health: 150
+health: 280
 aimDst: 10
 range: 50
 drag: 0.15
@@ -66,7 +66,7 @@ weapons: [
 		x: 0
 		y: -4
 		shootY: 2.5
-		beamWidth: 0.4
+		beamWidth: 0.5
 
 		repairSpeed: 2
 		targetInterval: 1

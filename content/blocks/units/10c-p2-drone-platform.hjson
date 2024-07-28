@@ -1,0 +1,45 @@
+type: UnitAssembler
+health: 300
+size: 3
+
+plans: [
+	{
+	type: AssemblerUnitPlan
+	unit: u3-b-reef
+	requirements: [
+		meld-14p-2a-targeting-matrix/1
+		meld-2w-1a-silver-husk/1
+    	]
+    	time: 1300
+  	}
+]
+
+consumes: {
+	liquid: lb-aspect/3.3333333333333333
+}
+
+configurable: false
+
+requirements: [
+ 	ia-debris/60
+	ib-carbolith/65
+	ic-silver/80
+]
+
+category: units
+
+research: {
+	parent: 10c-a-ship-factory
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+
+researchCost: [
+	ia-debris/1200
+	ib-carbolith/1300
+	iz-a-fragment/150
+]

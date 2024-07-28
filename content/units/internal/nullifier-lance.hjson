@@ -157,7 +157,7 @@ weapons: [
 			lifetime: 1
 			maxRange: 100
 			damage: 40
-            buildingDamageMultiplier: 0.25
+            		buildingDamageMultiplier: 0.25
 			knockback: 2.5
 			pierceArmor: true
 			pierceDamageFactor: 1

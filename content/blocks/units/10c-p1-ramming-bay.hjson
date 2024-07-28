@@ -1,0 +1,45 @@
+type: UnitAssembler
+health: 300
+size: 3
+
+plans: [
+	{
+	type: AssemblerUnitPlan
+	unit: u3-a-narwhal
+	requirements: [
+		meld-14p-1a-data-resonator/1
+		meld-2w-1a-silver-husk/1
+    	]
+    	time: 2100
+  	}
+]
+
+consumes: {
+	liquid: lb-aspect/3.3333333333333333
+}
+
+configurable: false
+
+requirements: [
+ 	ia-debris/100
+	ib-carbolith/65
+	ic-silver/40
+]
+
+category: units
+
+research: {
+	parent: 10c-a-ship-factory
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+
+researchCost: [
+	ia-debris/2000
+	ib-carbolith/1200
+	iz-a-fragment/150
+]
