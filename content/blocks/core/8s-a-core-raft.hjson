@@ -13,7 +13,7 @@ unitCapModifier: 6
 alwaysUnlocked: true
 
 
-research: swamp-planet
+research: stratum
 
 requirements: [
 	ia-debris/400

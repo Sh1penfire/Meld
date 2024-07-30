@@ -27,7 +27,7 @@ requirements: [
  	ia-debris/40
 ]
 
-research: 8s-a-core-raft
+research: 7h-a-aether-accumulator
 researchCost: [
 	ia-debris/13
 ]
