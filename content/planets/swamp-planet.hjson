@@ -1,7 +1,7 @@
 generator: "PlanetGenerator"
 solarSystem: sun
 parent: sun
-orbitRadius: 72.31
+orbitRadius: 25
 
 startSector: 5
 clearSectorOnLose: true
@@ -16,7 +16,6 @@ updateLighting: false
 defaultCore: 8s-a-core-raft
 sectorSize: 2
 radius: 1.2
-bloom: false
 
 startSector: 2
 iconColor: f3c3e7

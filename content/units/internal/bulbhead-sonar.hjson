@@ -51,7 +51,7 @@ abilities: [
 		type: StatusFieldAbility
 		range: 80
 		reload: 0
-		effect: rally
+		effect: overclock
 		duration: 90
 		activeEffect: none
 		applyEffect: none

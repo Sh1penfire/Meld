@@ -119,7 +119,7 @@ abilities: [
 		type: StatusFieldAbility
 		range: 120
 		reload: 15
-		effect: rally
+		effect: overclock
 		duration: 120
 		activeEffect: {
 			type: ParticleEffect
