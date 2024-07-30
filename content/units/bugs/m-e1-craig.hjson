@@ -61,39 +61,4 @@ weapons: [
 			}
 		}
 	}
-	{
-		controllable: false
-		aiControllable: false
-		mirror: false
-		rotate: true
-		x: 0
-		y: 0
-		reload: 60
-		shootCone: 180
-		recoil: 1.25
-		shootSound: bang
-		inaccuracy: 25
-		velocityRnd: 0.05
-		bullet: {
-			type: BulletType
-			collidesTiles: false
-			collides: false
-			collidesAir: true
-			hitSound: explosion
-
-			rangeOverride: 45
-			hitEffect: {
-				type: MultiEffect
-				effects: [
-				
-				]
-			}
-			speed: 0
-			splashDamageRadius: 60
-			instantDisappear: true
-			splashDamage: 120
-			killShooter: true
-			hittable: false
-		}
-	}
 ]

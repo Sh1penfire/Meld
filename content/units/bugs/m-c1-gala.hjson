@@ -18,6 +18,61 @@ targetAir: false
 
 faceTarget: true
 
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 120
+            baseLength: 10
+            length: 55
+            particles: 14
+            sizeFrom: 4
+            sizeTo: 0
+            interp: pow5In
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: ParticleEffect
+            lifetime: 75
+            baseLength: 2
+            length: 30
+            particles: 8
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: e5aed7
+            colorTo: e5aed7a3
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            particles: 8
+            length: 75
+            line: true
+            lenFrom: 5
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+            sizeInterp: pow5In
+        }
+        {
+            type: WaveEffect
+            lifetime: 13
+            sizeFrom: 5
+            sizeTo: 55
+            strokeFrom: 7
+            strokeTo: 0
+            colorFrom: e5aed7
+            colorTo: ffffff
+        }
+    ]
+}
+
 weapons: [
 	{
 		x: 0
@@ -97,57 +152,8 @@ weapons: [
 			hitSound: explosion
 
 			rangeOverride: 10
-			hitEffect: {
-				type: MultiEffect
-				effects: [
-					{
-						type: ParticleEffect
-						lifetime: 130
-						baseLength: 10
-						length: 35
-						particles: 11
-						sizeFrom: 2
-						sizeTo: 5
-						sizeInterp: pow5Out
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: ParticleEffect
-						lifetime: 12
-						baseLength: 10
-						length: 30
-						line: true
-						lenFrom: 3
-						lenTo: 0
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: ParticleEffect
-						lifetime: 25
-						baseLength: 10
-						particles: 8
-						length: 55
-						sizeFrom: 4
-						sizeTo: 0
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: WaveEffect
-						lifetime: 8
-						sizeFrom: 5
-						sizeTo: 45
-						strokeFrom: 4
-						strokeTo: 0
-						colorFrom: e5aed7
-						colorTo: ffffff
-					}
-				]
-			}
 			speed: 0
-			splashDamageRadius: 35
+			splashDamageRadius: 50
 			instantDisappear: true
 			splashDamage: 150
 			killShooter: true
