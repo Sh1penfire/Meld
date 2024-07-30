@@ -3,7 +3,7 @@ size: 2
 health: 840
 range: 200
 fogRadiusMultiplier: 0.25
-reload: 45
+reload: 40
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
@@ -17,11 +17,11 @@ shootCone: 5
 
 shoot: {
 	type: ShootAlternate
-	spread: 3
+	spread: 4
 	shots: 2
 }
 
-inaccuracy: 15
+inaccuracy: 8
 
 shootY: 7
 
@@ -65,13 +65,51 @@ ammoTypes: {
 		speed: 5
 		damage: 5
 		lifetime: 40
-		width: 8
-		height: 10
+		width: 10
+		height: 12
 		splashDamage: 10
 		splashDamageRadius: 20
 		collidesGround: true
-		hitEffect: explosion
+		hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: WaveEffect
+                    lifetime: 4
+                    sizeFrom: 5
+                    sizeTo: 20
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 10
+                    particles: 3
+                    length: 15
+                    sizeFrom: 3
+                    sizeTo: 0
+                    sizeInterp: pow2In
+                    colorFrom: 7f7f7f
+                    colorTo: 7f7f7f
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 8
+                    line: true
+                    particles: 4
+                    length: 24
+                    lenFrom: 4
+                    lenTo: 0
+                    strokeFrom: 2
+                    strokeTo: 2
+                    interp: pow2Out
+                    sizeInterp: pow2In
+                    colorFrom: f6e096
+                    colorTo: f6802a
+                }
+            ]
+        }
         fragOnAbsorb: false
+		fragBullets: 2
+        shrinkY: 0.2
 		fragBullet: {
 			type: FlakBulletType
             width: 0
@@ -85,8 +123,8 @@ ammoTypes: {
 			width: 5
 			height: 12
 			hitEffect: none
+            despawnEffect: none
 		}
-		fragBullets: 2
 	}
 }
 
