@@ -6,7 +6,6 @@ health: 450
 armor: 3
 
 effectChance: 0.05
-targetable: false
 baseColor: f0f5fe
 
 drawer: [

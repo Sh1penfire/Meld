@@ -53,8 +53,8 @@ weapons: [
 		reload: 20
 		targetUnits: false
 		targetBuildings: true
-        autoTarget: true
-        controllable: false
+        	autoTarget: true
+        	controllable: false
 		laserColor: ffd37f
 		healColor: ffd37f
 		bullet: {

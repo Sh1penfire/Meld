@@ -110,14 +110,15 @@ weapons: [
                 type: ParticleEffect
                 lifetime: 14
                 particles: 1
+		offset: 90
                 cone: 0
                 baseLength: -0.1
                 length: 0.1
                 line: true
-                strokeFrom: 1.5
-                strokeTo: 0
-                lenFrom: 2
-                lenTo: 2
+                strokeFrom: 2
+                strokeTo: 2
+                lenFrom: 2.5
+                lenTo: 0
                 colorFrom: cae4ec
                 colorTo: cae4ec00
             }
@@ -145,7 +146,7 @@ weapons: [
         bullet: {
             type: RailBulletType
             length: 60
-            damage: 0.5
+            damage: 5
             pierceDamageFactor: 1
             setDefaults: false
             despawnHit: false
@@ -163,7 +164,7 @@ weapons: [
                 baseLength: 2
                 length: -2
                 line: true
-                strokeFrom: 1.5
+                strokeFrom: 2.5
                 strokeTo: 0
                 lenFrom: 8
                 lenTo: 2
@@ -217,7 +218,7 @@ weapons: [
                 
                 homingPower: 10
                 homingRange: 2
-                fragBullets: 2
+                fragBullets: 1
                 fragRandomSpread: 0
                 
                 fragBullet: {
@@ -225,7 +226,7 @@ weapons: [
                     collidesTiles: false
                     speed: 5
                     drag: 0.4
-                    damage: 1
+                    damage: 0.25
                     pierce: true
                     lifetime: 12
                     width: 3
