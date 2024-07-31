@@ -5,9 +5,9 @@ customShadow: true
 placeablePlayer: false
 
 requirements: [
-  iz-a-fragment/5
-  iz-b-technoscrap/20
-  ic-silver/15
+  b0-b0-fragment/5
+  b0-a0-technoscrap/20
+  a2-a0-silver/15
 ]
 
 research: 10c-z1-archaic-fabricator

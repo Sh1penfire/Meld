@@ -36,13 +36,13 @@ outputLiquids: [
 ]
 
 requirements: [
- 	ib-carbolith/30
-	iz-b-technoscrap/25
+ 	a1-a0-carbolith/30
+	b0-a0-technoscrap/25
 ]
 
 research: 7h-d-techno-dredger
 
 researchCost: [
-	ib-carbolith/120
-	iz-b-technoscrap/85
+	a1-a0-carbolith/120
+	b0-a0-technoscrap/85
 ]

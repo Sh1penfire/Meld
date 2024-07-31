@@ -42,13 +42,13 @@ research: {
 }
 
 researchCost: [
-	ia-debris/2000
-	ic-silver/1200
-	iz-a-fragment/300
+	a0-a0-debris/2000
+	a2-a0-silver/1200
+	b0-b0-fragment/300
 ]
 
 requirements: [
-	ia-debris/15
-	ic-silver/8
+	a0-a0-debris/15
+	a2-a0-silver/8
 ]
 category: defense

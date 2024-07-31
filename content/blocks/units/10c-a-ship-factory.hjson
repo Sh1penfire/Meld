@@ -6,8 +6,8 @@ plans: [
 	{
 	unit: u2-a-shark
 	requirements: [
-		ic-silver/40
-		ib-carbolith/30
+		a2-a0-silver/40
+		a1-a0-carbolith/30
     	]
     	time: 1800
   	}
@@ -20,9 +20,9 @@ consumes: {
 configurable: false
 
 requirements: [
- 	ia-debris/100
-	ib-carbolith/65
-	ic-silver/40
+ 	a0-a0-debris/100
+	a1-a0-carbolith/65
+	a2-a0-silver/40
 ]
 
 category: units
@@ -30,8 +30,8 @@ category: units
 research: 8s-a-core-raft
 
 researchCost: [
-	ia-debris/80
-	ib-carbolith/45
-	ic-silver/35
+	a0-a0-debris/80
+	a1-a0-carbolith/45
+	a2-a0-silver/35
 ]
 

@@ -13,7 +13,7 @@ itemCapacity: 2
 
 consumes: {
 	items: [
-		iw-a-larva/1
+		a4-b0-larva/1
 	]
 	liquids: [
 		la-aether/0.3333333333333333333333333333333
@@ -23,8 +23,8 @@ consumes: {
 outputLiquid: lz-meld/0.3333333333333333333333333333333
 
 requirements: [
-	id-meld-shard/600
-	ia-debris/4500
+	a2-b0-meld-shard/600
+	a0-a0-debris/4500
 ]
 
 category: units

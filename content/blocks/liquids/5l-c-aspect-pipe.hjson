@@ -48,11 +48,11 @@ outputLiquid: lb-aspect/1.6666666666
 
 category: liquid
 requirements: [
-	ia-debris/7
+	a0-a0-debris/7
 ]
 
 research: 5l-a-channel-face
 
 researchCost: [
-    ia-debris/15
+    a0-a0-debris/15
 ]

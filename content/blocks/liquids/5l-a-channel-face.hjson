@@ -6,10 +6,10 @@ placeableLiquid: true
 
 category: liquid
 requirements: [
-	ia-debris/2
+	a0-a0-debris/2
 ]
 
-research: 8s-a-core-raft
+research: 7h-a-aether-accumulator
 researchCost: [
-    ia-debris/20
+    a0-a0-debris/20
 ]

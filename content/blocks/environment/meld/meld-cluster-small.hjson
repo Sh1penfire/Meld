@@ -3,6 +3,6 @@ variants: 2
 breakSound: rock-crush
 instantDeconstruct: false
 requirements: [
-	ia-debris/40
+	a0-a0-debris/40
 ]
 buildVisibility: sandboxOnly

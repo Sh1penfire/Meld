@@ -1,7 +1,7 @@
 generator: "PlanetGenerator"
 solarSystem: sun
 parent: sun
-orbitRadius: 25
+orbitRadius: 72.31
 
 startSector: 5
 clearSectorOnLose: true
@@ -16,6 +16,7 @@ updateLighting: false
 defaultCore: 8s-a-core-raft
 sectorSize: 2
 radius: 1.2
+bloom: false
 
 startSector: 2
 iconColor: f3c3e7
@@ -23,21 +24,21 @@ iconColor: f3c3e7
 accessible: true
 alwaysUnlocked: true
 itemWhitelist: [
-	ia-debris,
-	ib-carbolith,
-	ic-silver,
-	id-meld-shard,
-	ie-electrum-sheet,
-	if-resonarum,
-	iz-a-fragment,
-	iz-b-technoscrap
+	a0-a0-debris,
+	a1-a0-carbolith,
+	a2-a0-silver,
+	a2-b0-meld-shard,
+	a5-a0-electrum-sheet,
+	a4-a0-resonarum,
+	b0-b0-fragment,
+	b0-a0-technoscrap
 ]
 
 mesh: [
 	{
 	//sand/desert
 		type: NoiseMesh
-		planet: swamp-planet
+		planet: ikaru
 		divisions: 5
 		radius: 0.9
 		color1: cba380
@@ -50,7 +51,7 @@ mesh: [
 	{
 		//Carbon
 		type: NoiseMesh
-		planet: swamp-planet
+		planet: ikaru
 		divisions: 5
 		radius: 1
 		color1: 3c4448
@@ -64,7 +65,7 @@ mesh: [
 	{
 		//Resonarum
 		type: NoiseMesh
-		planet: swamp-planet
+		planet: ikaru
 		divisions: 5
 		radius: 0.9
 		color1: a7d2b4
@@ -78,7 +79,7 @@ mesh: [
 	{
 		//Meld stone
 		type: NoiseMesh
-		planet: swamp-planet
+		planet: ikaru
 		divisions: 5
 		radius: 1.1
 		color1: e5aed7
@@ -92,7 +93,7 @@ mesh: [
 cloudMesh: [
  {
    type: HexSkyMesh
-   planet: swamp-planet
+   planet: ikaru
    speed: 0.8
    radius: 0.1
    divisions: 6
@@ -104,7 +105,7 @@ cloudMesh: [
   }
  {
    type: HexSkyMesh
-   planet: swamp-planet
+   planet: ikaru
    speed: 0.5
    radius: 0.12
    divisions: 6
@@ -116,7 +117,7 @@ cloudMesh: [
   }
  {
    type: HexSkyMesh
-   planet: swamp-planet
+   planet: ikaru
    speed: 1.2
    radius: -0.1
    divisions: 6
@@ -129,7 +130,7 @@ cloudMesh: [
 ]
 
 research: {
-	planet: swamp-planet
+	planet: ikaru
 	root: true
 	requiresUnlock: false
 	name: "Ikaru"

@@ -1,5 +1,5 @@
 sector: 18
-planet: swamp-planet
+planet: ikaru
 difficulty: 3
 research: {
 	parent: 2a-scrapyard

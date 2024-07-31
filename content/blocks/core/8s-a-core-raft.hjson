@@ -13,11 +13,11 @@ unitCapModifier: 6
 alwaysUnlocked: true
 
 
-research: swamp-planet
+research: stratum
 
 requirements: [
-	ia-debris/400
-	ib-carbolith/200
+	a0-a0-debris/400
+	a1-a0-carbolith/200
 ]
 
 researchCostMultiplier: 0

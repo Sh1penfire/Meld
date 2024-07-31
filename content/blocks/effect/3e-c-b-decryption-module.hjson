@@ -31,7 +31,7 @@ drawer: [
 
 consumes: {
 	items: [
-		iz-b-technoscrap/1
+		b0-a0-technoscrap/1
 	]
 	liquids: [
 		lw-a-liquid-data/0.01
@@ -44,13 +44,13 @@ outputLiquids: [
 ]
 
 requirements: [
- 	ic-silver/45
-	iz-b-technoscrap/30
+ 	a2-a0-silver/45
+	b0-a0-technoscrap/30
 ]
 
 research: 3e-c-a-data-miner
 
 researchCost: [
-	ic-silver/240
-	iz-b-technoscrap/100
+	a2-a0-silver/240
+	b0-a0-technoscrap/100
 ]

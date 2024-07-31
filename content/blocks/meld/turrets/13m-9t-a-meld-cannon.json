@@ -152,8 +152,8 @@ coolant: {
 }
 
 requirements: [
-	ia-debris/45
-	ib-carbolith/35
+	a0-a0-debris/45
+	a1-a0-carbolith/35
 ]
 
 category: turret

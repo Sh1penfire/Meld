@@ -3,10 +3,10 @@ size: 1
 
 category: distribution
 requirements: [
-	ia-debris/4
+	a0-a0-debris/4
 ]
 
 research: 4d-a1-chute
 researchCost: [
-	ia-debris/20
+	a0-a0-debris/20
 ]

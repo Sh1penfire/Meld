@@ -67,13 +67,13 @@ consumes: {
 
 category: effect
 requirements: [
-	ia-debris/10
-	ic-silver/15
+	a0-a0-debris/10
+	a2-a0-silver/15
 ]
 
 research: 5l-a-channel-face
 
 researchCost: [
-	ia-debris/30
-	ic-silver/20
+	a0-a0-debris/30
+	a2-a0-silver/20
 ]

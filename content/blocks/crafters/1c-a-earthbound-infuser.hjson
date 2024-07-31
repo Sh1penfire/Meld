@@ -53,17 +53,17 @@ drawer: [
 
 consumes: {
 	items: [
-		ia-debris/20
+		a0-a0-debris/20
 	]
 	liquids: [
 		lb-aspect/3.3333333333333333333333333333333
 	]
 }
 
-outputItem: ib-carbolith/10
+outputItem: a1-a0-carbolith/10
 requirements: [
- 	ia-debris/80
-	ic-silver/60
+ 	a0-a0-debris/80
+	a2-a0-silver/60
 ]
 
 research: {
@@ -81,6 +81,6 @@ research: {
 }
 
 researchCost: [
-	ia-debris/200
-	ic-silver/150
+	a0-a0-debris/200
+	a2-a0-silver/150
 ]

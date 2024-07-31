@@ -10,10 +10,10 @@ solid: false
 
 category: liquid
 requirements: [
-	ia-debris/5
+	a0-a0-debris/5
 ]
 research: 5l-a-channel-face
 
 researchCost: [
-    ia-debris/5
+    a0-a0-debris/5
 ]

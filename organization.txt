@@ -1,59 +1,128 @@
+Category types
+
+# Untouched
+-Planets
+
+# Save-breaking
+-Blocks
+-Items
+-Liquids
+-Units
+
+# Changeable on the fly
+-Status effects
+-Sectors
+
+
+##Status effects
+&#-<status>
+
+really doesn't matter too much cause it's not like status effects will break often
+
+
+## Items/Liquids/Units
+
+Replace & with the letter
+&#-#&-<itemname>
+
+### Insertion rules
+
+Adding a new item, change number on left first, then letter
+Inserting a new item, change letter on right
+
+If letter doesn't work, use the closest halfway point in the number
+(Ex if stuck between a 2 and an 8, use a 5)
+
+---------------------------
+a0-a0-debris
+ <- a0-b0-example
+a1-a0-electrum
+---------------------------
+
+
+---------------------------
+a0-a0-debris
+ <- a0-a5-example
+a0-b0-carbolith
+---------------------------
+
+
+## Blocks
+
+Replace & with the letter & # with the number
+Ex: c-effect-a-1-nullifier
+
 -Crafters
->1c
+>a-crafter-&#-#&-<blockname>
 
 -Walls
->2w
+>b-wall-&#-#&-<blockname>
 
 -Effect stuffs
->3e
+>c-effect-&#-#&-<blockname>
 
 -Distribution
->4d
+>d-distribution-&#-#&-<blockname>
 
 -Fluids
->5f
+>e-fluids-&#-#&-<blockname>
 
 -Power
->6p
+>f-power-&#-#&-<blockname>
 
 -Drills/Vent harvesters
->7h
+>g-harvester-&#-#&-<blockname>
 
--Cores/Storage
->8s
+-Cores/Core upgraders
+>h-core-&#-#&-<blockname>
+
+-Storage
+>h-storage-&#-#&-<blockname>
 
 -Turrets
->9t
+>i-turret-&#-#&-<blockname>
 
 -Constructors
->10c
+>j-constructor-&#-#&-<blockname>
 
 -Payload
->11p
+>k-payload-&#-#&-<blockname>
 
 -Logic
->12l
+>l-logic-&#-#&-<blockname>
 
--Meld
->13m
+-Meld Constructs
+>m-construct-<extended block name>
 
-Within Meld
+-Parts
+-n-part-&#-#&-<blockname>
+
+
+### Within Meld
 
 -Cores
->1c
+<prefix>-a-core-&#-#&-<blockname>
 
 -Defense blocks
->2b
+<prefix>-b-defense-&#-#&-<blockname>
 
 -Harvesters (Any source of material)
->3h
+<prefix>-c-harvester-&#-#&-<blockname>
+
+-Crafters
+<prefix>-d-crafter-&#-#&-<blockname>
 
 -Distribution
->4d
+<prefix>-e-distribution-&#-#&-<blockname>
 
 -Fluids
->5f
+<prefix>-f-fluids-&#-#&-<blockname>
 
 -Power
->6p
+<prefix>-g-power-&#-#&-<blockname>
 
+-Units
+<prefix>-h-units-&#-#&-<blockname>
+
+-Payload
+<prefix>-i-payload-&#-#&-<blockname>

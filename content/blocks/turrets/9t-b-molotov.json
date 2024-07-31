@@ -8,13 +8,13 @@ shootSound: bang
 shootEffect: shootBig
 
 requirements: [
-	ib-carbolith/40
-	ic-silver/70
+	a1-a0-carbolith/40
+	a2-a0-silver/70
 ]
 
 ammoPerShot: 2
 ammoTypes: {
-	ic-silver: {
+	a2-a0-silver: {
 		type: ArtilleryBulletType
 		speed: 3.2
 		damage: 1

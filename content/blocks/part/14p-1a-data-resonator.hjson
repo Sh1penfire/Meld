@@ -5,9 +5,9 @@ customShadow: true
 placeablePlayer: false
 
 requirements: [
-  ib-carbolith/30
-  ic-silver/15
-  iz-b-technoscrap/20
+  a1-a0-carbolith/30
+  a2-a0-silver/15
+  b0-a0-technoscrap/20
 ]
 
 research: 10c-z1-archaic-fabricator

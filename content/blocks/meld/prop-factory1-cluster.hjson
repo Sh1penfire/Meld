@@ -7,8 +7,8 @@ solid: true
 liquidCapacity: 3600
 
 requirements: [
-	ia-debris/200
-	id-meld-shard/150
+	a0-a0-debris/200
+	a2-b0-meld-shard/150
 ]
 
 outputLiquid: {

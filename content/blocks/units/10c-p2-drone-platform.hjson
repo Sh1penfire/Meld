@@ -21,9 +21,9 @@ consumes: {
 configurable: false
 
 requirements: [
- 	ia-debris/60
-	ib-carbolith/65
-	ic-silver/80
+ 	a0-a0-debris/60
+	a1-a0-carbolith/65
+	a2-a0-silver/80
 ]
 
 category: units
@@ -39,7 +39,7 @@ research: {
 }
 
 researchCost: [
-	ia-debris/1200
-	ib-carbolith/1300
-	iz-a-fragment/150
+	a0-a0-debris/1200
+	a1-a0-carbolith/1300
+	b0-b0-fragment/150
 ]
