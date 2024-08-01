@@ -13,7 +13,7 @@ squareSprite: false
 
 shootY: 0
 ammoTypes: {
-	lz-meld: {
+	a0-5a-meld: {
 		type: MissileBulletType
 		spawnUnit: meld-amplifier-power
 		shootEffect: none

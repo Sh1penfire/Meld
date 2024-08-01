@@ -19,7 +19,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lb-aspect
+		drawLiquid: a0-0b-aspect
 		alpha: 1
 	}
 	{
@@ -40,11 +40,11 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		la-aether/0.166666666
+		a0-0a-aether/0.166666666
 	]
 }
 
-outputLiquid: lb-aspect/1.6666666666
+outputLiquid: a0-0b-aspect/1.6666666666
 
 category: liquid
 requirements: [

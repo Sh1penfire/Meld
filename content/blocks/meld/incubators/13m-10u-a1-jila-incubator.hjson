@@ -16,11 +16,11 @@ consumes: {
 		a4-b0-larva/1
 	]
 	liquids: [
-		la-aether/0.3333333333333333333333333333333
+		a0-0a-aether/0.3333333333333333333333333333333
 	]
 }
 
-outputLiquid: lz-meld/0.3333333333333333333333333333333
+outputLiquid: a0-5a-meld/0.3333333333333333333333333333333
 
 requirements: [
 	a2-b0-meld-shard/600

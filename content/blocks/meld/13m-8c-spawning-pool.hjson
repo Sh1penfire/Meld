@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: la-aether
+		drawLiquid: a0-0a-aether
 		alpha: 1
 		padding: 5.5
 	}
@@ -42,7 +42,7 @@ drawer: [
 ]
 
 consumes: {
-	liquid: la-aether/4
+	liquid: a0-0a-aether/4
 }
 
 outputItem: a4-b0-larva/3

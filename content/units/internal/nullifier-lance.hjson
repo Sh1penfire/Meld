@@ -9,6 +9,8 @@ singleTarget: false
 faceTarget: false
 playerControllable: false
 
+fogRadius: 12.5
+
 parts: [
 	{
 		type: RegionPart

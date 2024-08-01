@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lz-meld
+		drawLiquid: a0-5a-meld
 		alpha: 0.6
 		padding: 1.5
 	}
@@ -48,6 +48,6 @@ drawer: [
 ]
 
 outputLiquid: {
-	liquid: lz-meld
+	liquid: a0-5a-meld
 	amount: 3
 }

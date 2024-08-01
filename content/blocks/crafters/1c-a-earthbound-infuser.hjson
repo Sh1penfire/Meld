@@ -27,7 +27,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lb-aspect
+		drawLiquid: a0-0b-aspect
 		padding: 1.5
 	}
 	{
@@ -56,7 +56,7 @@ consumes: {
 		a0-a0-debris/20
 	]
 	liquids: [
-		lb-aspect/3.3333333333333333333333333333333
+		a0-0b-aspect/3.3333333333333333333333333333333
 	]
 }
 

@@ -31,8 +31,8 @@ drawer: [
 
 
 outputLiquids: [
-	lw-a-liquid-data/0.01
-	lw-b-null/0
+	a1-0a-liquid-data/0.01
+	a1-1a-null/0
 ]
 
 requirements: [

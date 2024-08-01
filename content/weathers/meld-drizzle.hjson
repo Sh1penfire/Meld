@@ -11,6 +11,5 @@ maxAlpha: 0.2
 density: 1200
 baseSpeed: 3.4
 opacityMultiplier: 0.55
-force: 0.1
 sound: wind
 soundVol: 0.3

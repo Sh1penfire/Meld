@@ -8,7 +8,7 @@ health: 300
 size: 3
 
 consumes: {
-	liquid: lw-a-liquid-data/2
+	liquid: a1-0a-liquid-data/2
 }
 
 requirements: [

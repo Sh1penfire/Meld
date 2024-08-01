@@ -9,7 +9,7 @@ armor: 3
 
 consumes: {
 	liquids: [
-		lz-meld/1
+		a0-5a-meld/1
 	]
   	items: {
     		items: [

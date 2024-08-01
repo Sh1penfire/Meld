@@ -15,7 +15,7 @@ scaleLiquidConsumption: true
 
 consumes: {
 	liquid: {
-		liquid: lb-aspect
+		liquid: a0-0b-aspect
 		amount: 6.66666666667
 		booster: false
 	}

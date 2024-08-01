@@ -323,7 +323,7 @@ weapons: [
 		alternate: false
 		parentizeEffects: false
 		shootSound: bang
-		shootStatus: sentry
+		shootStatus: wildlife-a1-sentry
 		shootStatusDuration: 240
 		predictTarget: false
 

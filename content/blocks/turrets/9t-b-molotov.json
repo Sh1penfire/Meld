@@ -89,7 +89,7 @@ ammoTypes: {
 }
 
 consumes: {
-    liquid: lb-aspect/1.666666666666666666666666666
+    liquid: a0-0b-aspect/1.666666666666666666666666666
 }
 
 coolant: {

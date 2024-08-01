@@ -12,7 +12,7 @@ liquidCapacity: 300
 
 consumes: {
 	liquid: {
-		liquid: lb-aspect
+		liquid: a0-0b-aspect
 		amount: 1.6666666666
 		booster: false
 	}

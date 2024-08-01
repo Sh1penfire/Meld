@@ -16,7 +16,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lb-aspect
+		drawLiquid: a0-0b-aspect
 	}
 	{
 		type: DrawDefault
@@ -24,7 +24,7 @@ drawer: [
 ]
 
 consumes: {
-	liquid: lb-aspect/0.33333333333333333333333333333333333333
+	liquid: a0-0b-aspect/0.33333333333333333333333333333333333333
 }
 
 hasPower: false

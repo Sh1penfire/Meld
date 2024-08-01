@@ -13,7 +13,7 @@ category: logic
 liquidCapacity: 50
 consumes: {
 	liquids: [
-		lw-a-liquid-data/0
+		a1-0a-liquid-data/0
 	]
 }
 

@@ -12,6 +12,6 @@ requirements: [
 ]
 
 outputLiquid: {
-	liquid: la-aether
+	liquid: a0-0a-aether
 	amount: 1
 }

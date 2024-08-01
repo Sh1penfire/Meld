@@ -694,7 +694,7 @@ requirements: [
 
 consumes: {
 	liquids: [
-		lb-aspect/1
+		a0-0b-aspect/1
 	]
 }
 

@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lz-meld
+		drawLiquid: a0-5a-meld
 		alpha: 1
 		padding: 1.5
 	}
@@ -33,7 +33,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: la-aether
+		drawLiquid: a0-0a-aether
 		alpha: 0.2
 		padding: 1.5
 	}
@@ -43,11 +43,11 @@ drawer: [
 ]
 
 consumes: {
-	liquid: lz-meld/1
+	liquid: a0-5a-meld/1
 }
 
 outputLiquid: {
-	liquid: la-aether
+	liquid: a0-0a-aether
 	amount: 1
 }
 

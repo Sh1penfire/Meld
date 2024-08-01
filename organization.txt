@@ -15,15 +15,16 @@ Category types
 
 
 ##Status effects
-&#-<status>
+t-&#-<status>
 
+(Replace t with team. Ex: strata-a0-rally)
 really doesn't matter too much cause it's not like status effects will break often
 
 
 ## Items/Liquids/Units
 
 Replace & with the letter
-&#-#&-<itemname>
+&#-#&-<name>
 
 ### Insertion rules
 

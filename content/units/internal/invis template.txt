@@ -1,9 +1,6 @@
-type: flying
-speed: 0
-
 flying: true
 engineSize: 0
-shadowElevation: -1
+shadowElevation: 0
 createWreck: false
 drawBody: false
 isEnemy: false
@@ -22,14 +19,12 @@ targetable: false
 
 drawMinimap: false
 
-//Shoudn't be able to die, but just in case
+fogRadius: 0
+lightRadius: 0
+
+//Same here
 deathSound: none
 deathExplosionEffect: none
 
 drawCell: false
 drawBody: false
-
-
-fogRadius: 30
-lightRadius: 240
-lightColor: ffffffa3

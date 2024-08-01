@@ -34,13 +34,13 @@ consumes: {
 		b0-a0-technoscrap/1
 	]
 	liquids: [
-		lw-a-liquid-data/0.01
+		a1-0a-liquid-data/0.01
 	]
 }
 
 outputLiquids: [
-	lw-a-liquid-data/1
-	lw-b-null/0
+	a1-0a-liquid-data/1
+	a1-1a-null/0
 ]
 
 requirements: [

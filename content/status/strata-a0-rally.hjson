@@ -1,14 +1,14 @@
 speedMultiplier: 1.25
 reloadMultiplier: 1.5
 damageMultiplier: 2
-effectChance: 0.1
+effectChance: 0.07
 parentizeEffect: true
 effect: {
 	type: ParticleEffect
 	lifetime: 60
 	region: meld-diamond
 	sizeFrom: 0
-	sizeTo: 4
+	sizeTo: 3
 	colorFrom: ffd37f
 	colorTo: ffd37f
 	length: 6
@@ -16,4 +16,19 @@ effect: {
 	spin: 4
 	particles: 1
 	sizeInterp: slope
+}
+applyEffect: {
+	type: ParticleEffect
+	lifetime: 65
+	region: meld-sparkle
+	sizeFrom: 4
+	sizeTo: 0
+	colorFrom: ffd37f
+	colorTo: ffd37f
+	length: 35
+	baseLength: 12
+	spin: 4
+	particles: 6
+	interp: pow10Out
+	sizeInterp: pow10In
 }

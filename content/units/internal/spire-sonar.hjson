@@ -21,8 +21,8 @@ targetable: false
 
 drawMinimap: false
 
-fogRadius: 10
-lightRadius: 80
+fogRadius: 15
+lightRadius: 130
 lightOpacity: 1
 
 deathSound: none
@@ -32,6 +32,20 @@ drawCell: false
 drawBody: false
 
 parts: [
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 130
+		stroke: 6
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
 	{
 		x: 0
 		y: 0
@@ -48,7 +62,7 @@ parts: [
 		circle: true
 		hollow: true
 		radius: 0
-		radiusTo: 80
+		radiusTo: 130
 		stroke: 6
 		strokeTo: 0
 		layer: 122
@@ -69,8 +83,8 @@ parts: [
 		}
 		circle: true
 		hollow: true
-		radius: 80
-		stroke: 4
+		radius: 130
+		stroke: 6
 		strokeTo: 0
 		layer: 122
 		color: ffd37f
@@ -80,7 +94,7 @@ parts: [
 abilities: [
 	{
 		type: StatusFieldAbility
-		range: 80
+		range: 130
 		reload: 0
 		effect: strata-a0-rally
 		duration: 15
