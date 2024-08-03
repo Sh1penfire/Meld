@@ -11,3 +11,5 @@
 -Animate the Tech Beacons
 
 -Next units
+
+-Put Sonar animatin on the unit it spawns so animations sync

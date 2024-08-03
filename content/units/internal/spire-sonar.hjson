@@ -1,7 +1,9 @@
 type: missile
 lifetime: 180
+health: 180
 speed: 0
-
+controller: BuilderAI
+defaultController: BuilderAI
 flying: false
 createWreck: false
 drawBody: false
@@ -21,7 +23,7 @@ targetable: false
 
 drawMinimap: false
 
-fogRadius: 15
+fogRadius: 16.5
 lightRadius: 130
 lightOpacity: 1
 
@@ -89,6 +91,56 @@ parts: [
 		layer: 122
 		color: ffd37f
 	}
+    {
+        type: ShapePart
+        x: 0
+        y: 0
+        circle: true
+        radius: 8
+        radiusTo: 0
+        layer: 110
+        color: ffd37f
+        colorTo: ffd37f00
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 9
+        radius: 4
+        radiusTo: 0
+        triLength: 14
+        triLengthTo: 0
+        shapes: 4
+        color: ffd37f
+        haloRotateSpeed: 1
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
 ]
 
 abilities: [
@@ -97,6 +149,15 @@ abilities: [
 		range: 130
 		reload: 0
 		effect: strata-a0-rally
+		duration: 15
+		activeEffect: none
+		applyEffect: none
+	}
+	{
+		type: StatusFieldAbility
+		range: 130
+		reload: 0
+		effect: interference-negative
 		duration: 15
 		activeEffect: none
 		applyEffect: none

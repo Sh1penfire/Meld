@@ -1,4 +1,7 @@
 type: tether
+
+health: 180
+
 speed: 0
 rotateSpeed: 0
 controller: BuilderAI
@@ -32,6 +35,7 @@ lightOpacity: 1
 deathSound: none
 deathExplosionEffect: none
 
+
 drawCell: false
 drawBody: false
 
@@ -41,19 +45,19 @@ parts: [
 		name: meld-3e-b-sonar-spire-top
         outline: false
 	}
-    {
-        type: ShapePart
-        circle: true
-        hollow: true
-        radius: 130
-        stroke: 2
-        strokeTo: 2
-        layer: 110
-        color: ffd37fff
-    }
 ]
 
 weapons: [
+    {
+        mirror: false
+        reload: 10
+        shootStatus: interference-positive
+        shootStatusDuration: 10
+        shoot: {
+            shots: 0
+        }
+        shootSound: none
+    } 
     {
         x: 0
         y: 0
@@ -125,6 +129,8 @@ weapons: [
             type: MissileBulletType
             spawnUnit: spire-sonar
         }
+        shootStatus: interference-negative
+        shootStatusDuration: 45
     }
 ]
 

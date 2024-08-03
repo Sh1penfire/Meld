@@ -21,7 +21,7 @@ t-&#-<status>
 really doesn't matter too much cause it's not like status effects will break often
 
 
-## Items/Liquids/Units
+## Items/Liquids
 
 Replace & with the letter
 &#-#&-<name>
@@ -46,6 +46,19 @@ a0-a0-debris
  <- a0-a5-example
 a0-b0-carbolith
 ---------------------------
+
+
+## Units
+
+Strata -> Fringe -> Meld
+a-strata -> b-fringe -> c-meld
+
+Replace & with the letter, team goes in the %
+%-&#-#&-<name>
+
+
+### Insertion rules
+same as items, just ignore the first team bit
 
 
 ## Blocks

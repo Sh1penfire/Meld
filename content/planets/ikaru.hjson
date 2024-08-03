@@ -21,6 +21,8 @@ bloom: false
 startSector: 2
 iconColor: f3c3e7
 
+launchMusic: stellar-walkways
+
 accessible: true
 alwaysUnlocked: true
 itemWhitelist: [
