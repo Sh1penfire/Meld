@@ -185,5 +185,6 @@ abilities: [
 ]
 
 immunities: [
-    strata-a0-rally
+    strata-a0-rally,
+    interference-positive
 ]

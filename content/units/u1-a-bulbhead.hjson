@@ -1,11 +1,11 @@
 type: naval
-speed: 1.7
+speed: 2.55
 
 health: 280
 aimDst: 10
 range: 50
 drag: 0.15
-accel: 0.4
+accel: 0.8
 hitSize: 10
 lightRadius: 120
 lightOpacity: 1
@@ -36,9 +36,9 @@ weapons: [
 		shootCone: 180
 		x: 0
 		y: 0
-		reload: 90
+		reload: 120
 		recoil: 1.25
-		shootSound: mineDeploy
+		shootSound: none
 		bullet: {
 			type: PointBulletType
 			speed: 1
@@ -50,6 +50,7 @@ weapons: [
 			hittable: false
 			collides: false
 			rangeOverride: 192
+			hitSound: none
 			fragBullets: 1
 			fragBullet: {
 				damage: 0
@@ -138,6 +139,10 @@ abilities: [
 		}
 		applyEffect: none
 	}
+]
+
+immunities: [
+	strata-a0-rally
 ]
 
 research: 8s-a-core-raft

@@ -157,6 +157,15 @@ abilities: [
 		type: StatusFieldAbility
 		range: 130
 		reload: 0
+		effect: interference-positive
+		duration: 15
+		activeEffect: none
+		applyEffect: none
+	}
+	{
+		type: StatusFieldAbility
+		range: 130
+		reload: 0
 		effect: interference-negative
 		duration: 15
 		activeEffect: none
