@@ -40,7 +40,7 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		valid/0
+		z-1-valid/0
 	]
 }
 

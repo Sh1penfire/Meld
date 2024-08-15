@@ -57,6 +57,11 @@ destroyBullet: {
 	splashDamage: 180
 	splashDamageRadius: 100
 	instantDisappear: true
+	hitEffect: none
+	despawnEffect: none
+	hittable: false
+	absorbable: false
+	collides: false
 	fragBullets: 50
 	fragBullet: {
 		type: RailBulletType

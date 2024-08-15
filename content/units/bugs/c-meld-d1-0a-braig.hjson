@@ -102,6 +102,6 @@ abilities: [
 	{
 		type: SpawnDeathAbility
 		amount: 2
-		unit: m-e1-craig
+		unit: c-meld-d0-0a-craig
 	}
 ]

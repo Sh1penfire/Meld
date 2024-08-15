@@ -108,7 +108,7 @@ abilities: [
 	{
 		type: SpawnDeathAbility
 		amount: 1
-		unit: m-a1-jilla
+		unit: c-meld-c0-0a-jilla
 	}
 	{
 		type: MoveEffectAbility

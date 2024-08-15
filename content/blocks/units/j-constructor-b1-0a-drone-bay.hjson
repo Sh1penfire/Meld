@@ -5,12 +5,12 @@ size: 3
 plans: [
 	{
 	type: AssemblerUnitPlan
-	unit: u3-a-narwhal
+	unit: a-fringe-c0-1a-reef
 	requirements: [
-		meld-14p-1a-data-resonator/1
-		meld-2w-1a-silver-husk/1
+		meld-p-part-a0-1a-targeting-matrix/1
+		meld-b-wall-a0-0a-silver-husk/1
     	]
-    	time: 2100
+    	time: 1300
   	}
 ]
 
@@ -21,9 +21,9 @@ consumes: {
 configurable: false
 
 requirements: [
- 	a0-a0-debris/100
+ 	a0-a0-debris/60
 	a1-a0-carbolith/65
-	a2-a0-silver/40
+	a2-a0-silver/80
 ]
 
 category: units
@@ -39,7 +39,7 @@ research: {
 }
 
 researchCost: [
-	a0-a0-debris/2000
-	a1-a0-carbolith/1200
+	a0-a0-debris/1200
+	a1-a0-carbolith/1300
 	b0-b0-fragment/150
 ]

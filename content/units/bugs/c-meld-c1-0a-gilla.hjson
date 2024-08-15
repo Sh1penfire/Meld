@@ -7,16 +7,17 @@ drag: 0.12
 accel: 0.2
 
 hitSize: 20
-rotateSpeed: 4.5
+rotateSpeed: 6.5
 faceTarget: true
 
-legCount: 5
+legCount: 6
 legLength: 20
 legGroupSize: 1
 legSpeed: 1
-legFowardScl: 4
+legForwardScl: 4
 legBaseOffset: -4
 legContinuousMove: true
+legMoveSpace: 0.8
 
 drawCell: false
 
@@ -42,6 +43,7 @@ weapons: [
 		
 		bullet: {
 			type: ContinuousFlameBulletType
+			recoil: -0.01
 			damage: 24
 			flareLength: 0
 			length: 40

@@ -2,7 +2,7 @@ type: CoreBlock
 health: 4000
 size: 3
 
-unitType: u1-a-bulbhead
+unitType: a-fringe-a0-0a-bulbhead
 solid: false
 squareSprite: false
 buildVisibility: shown

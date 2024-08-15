@@ -50,8 +50,8 @@ a0-b0-carbolith
 
 ## Units
 
-Strata -> Fringe -> Meld
-a-strata -> b-fringe -> c-meld
+Fringe Strata-> -> Meld
+a-fringe -> b-strata -> c-meld
 
 Replace & with the letter, team goes in the %
 %-&#-#&-<name>
@@ -76,10 +76,10 @@ Ex: c-effect-a-1-nullifier
 >c-effect-&#-#&-<blockname>
 
 -Distribution
->d-distribution-&#-#&-<blockname>
+>d-distrib-&#-#&-<blockname>
 
 -Fluids
->e-fluids-&#-#&-<blockname>
+>e-fluid-&#-#&-<blockname>
 
 -Power
 >f-power-&#-#&-<blockname>
@@ -108,8 +108,14 @@ Ex: c-effect-a-1-nullifier
 -Meld Constructs
 >m-construct-<extended block name>
 
+-Strata tech
+>n-strata-<extended block name>
+
+-Special
+>o-special-&#-#&-<blockname>
+
 -Parts
--n-part-&#-#&-<blockname>
+>p-part-&#-#&-<blockname>
 
 
 ### Within Meld

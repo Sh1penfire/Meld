@@ -1,8 +1,8 @@
 type: Constructor
 filter: [
-	2w-1a-silver-husk,
-	14p-1a-data-resonator,
-	14p-2a-targeting-matrix
+	b-wall-a0-0a-silver-husk,
+	p-part-a0-0a-data-resonator,
+	p-part-a0-1a-targeting-matrix
 ]
 health: 300
 size: 3
