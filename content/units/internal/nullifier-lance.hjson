@@ -3,11 +3,13 @@ physics: false
 hittable: false
 targetable: false
 useUnitCap: false
-lifetime: 160
+lifetime: 170
 speed: 0
 singleTarget: false
 faceTarget: false
 playerControllable: false
+
+fogRadius: 12.5
 
 parts: [
 	{

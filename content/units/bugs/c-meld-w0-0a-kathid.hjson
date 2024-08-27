@@ -1,0 +1,67 @@
+type: legs
+shadowElevation: 0.1
+speed: 0.7
+
+health: 750
+armor: 35
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 16
+rotateSpeed: 3.5
+
+useEngineElevation: false
+faceTarget: true
+
+legCount: 4
+legLength: 15
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+weapons: [
+	{
+		name: "m-s1-kathid-crystal"
+		x: 0
+		y: 0
+		shootY: 8.5
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		recoil: 0
+		shootCone: 10
+		top: false
+		shootStatus: wildlife-a1-sentry
+		shootStatusDuration: 5
+		shootSound: torch
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 13
+			flareLength: 12
+			length: 85
+			width: 1.7
+			knockback: 1
+			pierceCap: 2
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+		parts: [
+			{
+				type: RegionPart
+				name: "m-s1-kathid-crystal"
+				heatProgress: warmup
+			}
+		]
+	}
+]

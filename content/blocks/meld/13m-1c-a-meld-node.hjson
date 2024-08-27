@@ -74,7 +74,7 @@ destroyEffect: {
 }
 
 requirements: [
-	id-meld-shard/600
-	ia-debris/4500
+	a2-b0-meld-shard/600
+	a0-a0-debris/4500
 ]
 category: effect

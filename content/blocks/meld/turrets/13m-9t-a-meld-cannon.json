@@ -77,7 +77,7 @@ shootEffect: {
 
 
 ammoTypes: {
-	la-aether: {
+	a0-0a-aether: {
         type: ArtilleryBulletType
         damage: 180
         lifetime: 60
@@ -124,7 +124,7 @@ ammoTypes: {
 
             fragBullet: {
                 type: LiquidBulletType
-                liquid: la-aether
+                liquid: a0-0a-aether
                 speed: 3
                 damage: 1
                 lifetime: 20
@@ -139,7 +139,7 @@ ammoTypes: {
 
 consumes: {
     liquid: {
-        liquid: la-aether
+        liquid: a0-0a-aether
         amount: 0.01
     }
 }
@@ -152,8 +152,8 @@ coolant: {
 }
 
 requirements: [
-	ia-debris/45
-	ib-carbolith/35
+	a0-a0-debris/45
+	a1-a0-carbolith/35
 ]
 
 category: turret

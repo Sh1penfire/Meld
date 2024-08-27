@@ -2,7 +2,7 @@
     "name": "meld",
     "displayName": "[[]#ea9ad6]Meld[[]]",
     "author": "Sh1penfire",
-    "description": "Trudge through Ikaru, home to the [[]#ea9ad6]Meld[[]]. Salvage the remains of previous incursions to fight off the wildlife.\n\nPlay as a naval core unit, using sonar pulses to scout out targets for your turrets and rally your units.\n\n[[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[]\n\n[accent[]]Please check releases and use the <Gameplay Test> version. Thanks~[]",
+    "description": "Trudge through Ikaru, home to the [[]#ea9ad6]Meld[[]]. Salvage the remains of previous incursions to fight off the wildlife.\n\nPlay as a naval core unit, using sonar pulses to scout out targets for your turrets and rally your units.\n\n[[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[]\n\n[accent[]]Please check releases and use the latest <Gameplay Test> version. Thanks~[]",
     "version": "1",
     "minGameVersion": "146"
 }

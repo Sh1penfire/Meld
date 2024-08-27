@@ -1,5 +1,5 @@
 sector: 2
-planet: swamp-planet
+planet: ikaru
 alwaysUnlocked: true
 difficulty: 1
-research: swamp-planet
+research: ikaru

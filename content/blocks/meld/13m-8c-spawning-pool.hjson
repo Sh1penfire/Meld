@@ -7,8 +7,8 @@ solid: true
 liquidCapacity: 100
 
 requirements: [
-	ia-debris/200
-	id-meld-shard/150
+	a0-a0-debris/200
+	a2-b0-meld-shard/150
 ]
 
 craftTime: 720
@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: la-aether
+		drawLiquid: a0-0a-aether
 		alpha: 1
 		padding: 5.5
 	}
@@ -42,10 +42,10 @@ drawer: [
 ]
 
 consumes: {
-	liquid: la-aether/4
+	liquid: a0-0a-aether/4
 }
 
-outputItem: iw-a-larva/3
+outputItem: a4-b0-larva/3
 
 craftEffect: {
 	type: ParticleEffect

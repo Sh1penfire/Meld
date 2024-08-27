@@ -1,6 +1,6 @@
 sector: 46
 captureWave: 12
-planet: swamp-planet
+planet: ikaru
 difficulty: 2
 research: {
 	parent: 1a-creek

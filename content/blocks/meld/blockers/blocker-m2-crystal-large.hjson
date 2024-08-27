@@ -10,7 +10,7 @@ hasPower: false
 hasItems: false
 
 requirements: [
-	id-meld-shard/120
+	a2-b0-meld-shard/120
 ]
 
 squareSprite: false

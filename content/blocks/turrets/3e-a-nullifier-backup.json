@@ -37,10 +37,10 @@ shootType: {
 }
 
 requirements: [
-	ia-debris/350
-	ib-carbolith/450
-	ic-silver/350
-    if-resonarum/150
+	a0-a0-debris/350
+	a1-a0-carbolith/450
+	a2-a0-silver/350
+    a4-a0-resonarum/150
 ]
 
 category: turret

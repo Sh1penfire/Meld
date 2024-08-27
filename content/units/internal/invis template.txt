@@ -1,0 +1,30 @@
+flying: true
+engineSize: 0
+shadowElevation: 0
+createWreck: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+
+//More niche changes can be made to theese
+hoverable: false
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 0
+lightRadius: 0
+
+//Same here
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false

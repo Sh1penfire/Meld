@@ -1,0 +1,24 @@
+type: CoreBlock
+health: 4000
+size: 3
+
+unitType: a-fringe-a0-0a-bulbhead
+solid: false
+squareSprite: false
+buildVisibility: shown
+
+itemCapacity : 750
+unitCapModifier: 6
+
+alwaysUnlocked: true
+
+
+research: stratum
+
+requirements: [
+	a0-a0-debris/400
+	a1-a0-carbolith/200
+]
+
+researchCostMultiplier: 0
+category: effect

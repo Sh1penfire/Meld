@@ -1,0 +1,14 @@
+type: Duct
+size: 1
+bridgeReplacement: d-distrib-a2-0a-chute-bridge
+speed: 6
+
+category: distribution
+requirements: [
+	a0-a0-debris/1
+]
+
+research: 8s-a-core-raft
+researchCost: [
+	a0-a0-debris/5
+]

@@ -9,18 +9,18 @@ armor: 3
 
 consumes: {
 	liquids: [
-		lz-meld/1
+		a0-5a-meld/1
 	]
   	items: {
     		items: [
-      			id-meld-shard/1
+      			a2-b0-meld-shard/1
     		]
     		optional: true
   	}
 }
 
 requirements: [
-	id-meld-shard/30
+	a2-b0-meld-shard/30
 ]
 
 squareSprite: false

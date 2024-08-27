@@ -1,6 +1,6 @@
 sector: 44
 captureWave: 16
-planet: swamp-planet
+planet: ikaru
 difficulty: 5
 research: {
 	parent: 2a-scrapyard

@@ -1,25 +1,43 @@
 type: missile
-physics: false
-hittable: false
-targetable: false
-useUnitCap: false
 lifetime: 180
-speed: 0
-singleTarget: false
-faceTarget: false
-drawBody: false
-drawCell: false
-isEnemy: false
 
-deathExplosionEffect: none
+speed: 0
+flying: true
+engineSize: 0
+shadowElevation: 0
+createWreck: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+
+//More niche changes can be made to theese
+hoverable: false
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 0
+
+//Same here
 deathSound: release
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
 
 abilities: [
 	{
 		type: StatusFieldAbility
 		range: 300
 		reload: 180
-		effect: amplified
+		effect: wildlife-a0-amplified
 		duration: -1
 		activeEffect: {
 			type: MultiEffect

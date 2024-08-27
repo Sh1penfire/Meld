@@ -1,0 +1,58 @@
+type: GenericCrafter
+size: 1
+
+placeableLiquid: true
+liquidOutputDirections: [0]
+rotate: true
+quickRotate: true
+
+craftTime: 30
+liquidCapacity: 100
+liquidPressure: 50
+
+solid: false
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 31
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: lc-nectar
+		alpha: 1
+	}
+	{
+		type: DrawSideRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	baseLength: 3
+	length: 15
+	sizeFrom: 2
+	sizeTo: 0
+	colorFrom: 935b2900
+	colorTo: cb8650ff
+}
+
+consumes: {
+	liquids: [
+		z-1-valid/0
+	]
+}
+
+outputLiquid: lc-nectar/0.333333333333333333333
+
+category: liquid
+requirements: [
+	a0-a0-debris/7
+]
+
+research: 5l-a-channel-face
+
+researchCost: [
+    a0-a0-debris/15
+]

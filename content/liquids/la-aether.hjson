@@ -1,6 +1,0 @@
-type: Liquid
-gas: true
-color: cb8650
-alwaysUnlocked: true
-
-research: 8s-a-core-raft

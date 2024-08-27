@@ -1,0 +1,33 @@
+type: BeamDrill
+size: 3
+category: production
+
+placeableLiquid: true
+
+drillTime: 240
+
+tier: 2
+
+liquidCapacity: 300
+
+consumes: {
+	liquid: {
+		liquid: a0-0b-aspect
+		amount: 1.6666666666
+		booster: false
+	}
+}
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	a0-a0-debris/40
+]
+
+research: 7h-a-aether-accumulator
+researchCost: [
+	a0-a0-debris/13
+]

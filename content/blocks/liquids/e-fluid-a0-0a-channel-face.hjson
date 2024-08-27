@@ -1,0 +1,15 @@
+type: LiquidJunction
+size: 1
+enableDrawStatus: false
+solid: false
+placeableLiquid: true
+
+category: liquid
+requirements: [
+	a0-a0-debris/2
+]
+
+research: 7h-a-aether-accumulator
+researchCost: [
+    a0-a0-debris/20
+]

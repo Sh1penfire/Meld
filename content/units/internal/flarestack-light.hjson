@@ -1,0 +1,190 @@
+type: tether
+
+health: 180
+
+speed: 0
+rotateSpeed: 0
+controller: BuilderAI
+defaultController: BuilderAI
+drag: 1000
+engineSize: 0
+shadowElevation: 0
+createWreck: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+
+//More niche changes can be made to theese
+hoverable: false
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 0
+lightRadius: 130
+lightOpacity: 1
+
+//Same here
+deathSound: none
+deathExplosionEffect: none
+
+
+drawCell: false
+drawBody: false
+
+parts: [
+	{
+		type: RegionPart
+		name: meld-3e-b-sonar-spire-top
+        outline: false
+	}
+]
+
+weapons: [
+    {
+        mirror: false
+        reload: 10
+        shootStatus: interference-positive
+        shootStatusDuration: 10
+        shoot: {
+            shots: 0
+        }
+        shootSound: none
+    } 
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        mirror: false
+        reload: 360
+        aiControllable: false
+        alwaysShooting: true
+        shootSound: sonar
+        parts: [
+            {
+                type: ShapePart
+                circle: true
+                hollow: true
+                radius: 130
+                radiusTo: 0
+                layer: 110
+                stroke: 6
+                strokeTo: 10
+                color: ffd37f00
+                colorTo: ffd37fff
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: inv
+                        }
+                        {
+                            op: delay
+                            amount: 0.5
+                        }
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: ShapePart
+                circle: true
+                hollow: true
+                radius: 130
+                radiusTo: 0
+                layer: 110
+                stroke: 6
+                strokeTo: 12
+                color: ffd37f00
+                colorTo: ffd37fff
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: inv
+                        }
+                        {
+                            op: delay
+                            amount: 0.5
+                        }
+                        {
+                            op: curve
+                            interp: pow10In
+                        }
+                    ]
+                }
+            }
+        ]
+        bullet: {
+            type: MissileBulletType
+            spawnUnit: spire-sonar
+        }
+        shootStatus: interference-negative
+        shootStatusDuration: 45
+    }
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+        interval: 5
+        x: 0
+        y: 0
+        minVelocity: 0
+		effect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    sizeFrom: 3
+                    sizeTo: 0
+                    lightScl: 0
+                    colorFrom: cb865000
+                    colorTo: 935b29ff
+                    clip: 180
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    sizeFrom: 2
+                    sizeTo: 2
+                    lightScl: 0
+                    colorFrom: cb8650
+                    colorTo: cb8650
+                    lightOpacity: 1
+                    clip: 240
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    particles: 3
+                    sizeFrom: 5
+                    sizeTo: 0
+                    lightScl: 0
+                    colorFrom: cb865000
+                    colorTo: 935b29ff
+                }
+            ]
+        }
+	}
+]
+
+immunities: [
+    strata-a0-rally,
+    interference-positive
+]
