@@ -1,0 +1,463 @@
+type: ItemTurret
+size: 4
+health: 840
+range: 210
+fogRadiusMultiplier: 0.25
+reload: 100
+shootEffect: shootBig
+shootWarmupSpeed : 0.09
+minWarmup: 0.7
+
+recoil: 0.25
+
+velocityRnd: 0.2
+recoil: 1.5
+inaccuracy: 2
+shootCone: 5
+
+ammoPerShot: 10
+
+shoot: {
+	type: ShootSpread
+	shots: 1
+	firstShotDelay: 60
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -jaw-l
+			x: -4.5
+			y: 2
+			moveRot: -180
+			progress: {
+				type: charge
+				ops: [
+					{
+						op: compress
+						start: 0
+						end: 0.5
+					}
+				]
+			}
+		}
+		{
+			type: RegionPart
+			suffix: -jaw-r
+			x: 4.5
+			y: 2
+			moveRot: 180
+			progress: {
+				type: charge
+				ops: [
+					{
+						op: compress
+						start: 0
+						end: 0.5
+					}
+				]
+			}
+		}
+        {
+            type: RegionPart
+            name: meld-sawblade-large-r
+            //starting position (9,-4) - bottom left corner offset from circle center (-7.5, -7.5)
+            x: -6.46586
+            y: -11.96586
+            rotation: 180
+            moves: [
+                {
+                    x: 21.9317121995
+                    //x is minus cause the cos wave is inverted
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                            {
+                                op: add
+                                amount: -0.1827
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                                //Shifts the wave into a regular cos
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 21.9317121995
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                            {
+                                op: add
+                                amount: -0.25
+                            }
+                            {
+                                op: add
+                                amount: -0.1827
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                                //Shifts the wave into a regular cos
+                            }
+                        ]
+                    }
+                }
+                {
+                    rot: 180
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                        ]
+                    }
+                }
+                {
+                    gx: -1
+                    gy: -1
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                            }
+                        ]
+                    }
+                }
+                {
+                    rot: 3600
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.5
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            name: meld-sawblade-large-l
+            //starting position (9,-4) - bottom left corner offset from circle center (-7.5, -7.5)
+            x: 6.46586
+            y: -11.96586
+            rotation: 180
+            moves: [
+                {
+                    x: -21.9317121995
+                    //x is minus cause the cos wave is inverted
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                            {
+                                op: add
+                                amount: -0.1827
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                                //Shifts the wave into a regular cos
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 21.9317121995
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                            {
+                                op: add
+                                amount: -0.25
+                            }
+                            {
+                                op: add
+                                amount: -0.1827
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                                //Shifts the wave into a regular cos
+                            }
+                        ]
+                    }
+                }
+                {
+                    rot: -180
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                        ]
+                    }
+                }
+                {
+                    gx: -1
+                    gy: -1
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: reverse
+                            }
+                        ]
+                    }
+                }
+                {
+                    rot: 3600
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.5
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: -body
+        }
+        {
+            type: RegionPart
+            suffix: -plate
+            mirror: true
+            progress: warmup
+        }
+	]
+}
+
+ammoTypes: {
+	a4-a0-resonarum: {
+		type: BasicBulletType
+		damage: 320
+		sprite: meld-sawblade-large
+		frontColor: 85c799
+		backColor: 4bb66b
+		pierce: true
+		pierceCap: 5
+		pierceDamageFactor: 0.05
+		speed: 6
+		lifetime: 42
+		knockback: 12.5
+		spin: 15
+		width: 20
+		height: 20
+		hitSize: 10.75
+		shrinkX: 0
+		shrinkY: 0
+		ammoMultiplier: 1
+		hitEffect: {
+			type: ParticleEffect
+			lifetime: 15
+			line: true
+			lenTo: 8
+			strokeFrom: 2
+			strokeTo: 0.5
+			interp: pow5Out
+			sizeInterp: pow5Out
+			baseRotation: 25
+			cone: 35
+			colorFrom: 85c799
+			colorTo: 4bb66b
+		}
+		despawnEffect: none
+		intervalBullet: {
+			type: BasicBulletType
+			damage: 5
+			speed: 1.2
+			drag: 0.05
+			lifetime: 85
+			sprite: meld-sparkle
+			frontColor: 85c799
+			spin: 300
+            width: 12
+			height: 12
+			pierce: true
+			shrinkX: 1
+			shrinkY: 1
+			status: lacerated
+			statusDuration: 15
+			hitEffect: none
+			despawnEffect: none
+		}
+		fragBullet: {
+			type: BasicBulletType
+			damage: 15
+			speed: 2.2
+			drag: 0.05
+			lifetime: 65
+			sprite: meld-sparkle
+			frontColor: 85c799
+			spin: 25
+			width: 18
+			height: 18
+			pierce: true
+			shrinkX: 1
+			shrinkY: 1
+			status: lacerated
+			statusDuration: 15
+			hitEffect: none
+			despawnEffect: none
+		}
+		fragBullets: 7
+		bulletInterval: 3
+		intervalBullets: 2
+		setDefaults: false
+		despawnHit: false
+		trailChance: 0.15
+		status: lacerated
+		shrinkX: 1
+		shrinkY: 1
+		shrinkInterp: pow10Out
+		trailEffect: {
+			type: MultiEffect
+			effects: [
+				{
+                    type: ParticleEffect
+                    sizeFrom: 3
+                    sizeTo: 8
+                    particles: 2
+                    lenFrom: 2
+                    lenTo: 5
+                    colorFrom: 85c799
+                    colorTo: 4bb66b00
+				}
+				{
+                    type: ParticleEffect
+                    sizeFrom: 2
+                    sizeTo: 4
+                    particles: 2
+                    lenFrom: 3
+                    lenTo: 6
+                    baseLen: 6
+                    lifetime: 85
+                    colorFrom: 85c7997b
+                    colorTo: 4bb66b00
+				}
+			]
+		}
+        trailChance: 0.85
+	}
+}
+
+consumes: {
+    liquid: a0-0b-aspect/3.33333333333
+}
+
+requirements: [
+	a0-a0-debris/350
+	a1-a0-carbolith/450
+	a2-a0-silver/350
+    a4-a0-resonarum/150
+]
+
+category: turret
