@@ -347,7 +347,7 @@ ammoTypes: {
 		pierceDamageFactor: 0.05
 		speed: 6
 		lifetime: 42
-		knockback: 12.5
+		knockback: 50
 		spin: 15
 		width: 20
 		height: 20
