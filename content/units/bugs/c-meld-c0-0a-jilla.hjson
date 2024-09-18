@@ -16,7 +16,7 @@ segmentMag: 0.5
 drawCell: false
 drawBody: false
 
-defaultController: HugAI
+controller: HugAI
 
 weapons: [
 	{

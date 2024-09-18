@@ -1,0 +1,14 @@
+type: flying
+createScorch: false
+useUnitCap: false
+canDrown: false
+hittable: false
+physics: false
+targetable: false
+deathSound: none
+
+//Flagging this as a scrap boulder bud
+ammoCapacity: 2101
+
+//This sets range if the weapons are empty
+mineRange: 0

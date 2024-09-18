@@ -156,7 +156,7 @@ weapons: [
 			{
 				type: RegionPart
 				layerOffset: -0.1
-				name: meld-m-c1-gala-orb
+				name: meld-c-meld-f2-0a-gala-orb
 				progress: heat
 				color: ffffff
 				colorTo: ffffff00

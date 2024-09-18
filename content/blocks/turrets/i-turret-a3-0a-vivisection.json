@@ -1,9 +1,9 @@
 type: ItemTurret
 size: 4
 health: 840
-range: 210
+range: 252
 fogRadiusMultiplier: 0.25
-reload: 100
+reload: 120
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
@@ -15,7 +15,8 @@ recoil: 1.5
 inaccuracy: 2
 shootCone: 5
 
-ammoPerShot: 10
+ammoPerShot: 12
+shootY: 8
 
 shoot: {
 	type: ShootSpread
@@ -173,13 +174,13 @@ drawer: {
                     }
                 }
                 {
-                    rot: 3600
+                    rot: 1080
                     progress: {
                         type: charge
                         ops: [
                             {
                                 op: compress
-                                start: 0.5
+                                start: 0.6
                                 end: 1
                             }
                             {
@@ -304,7 +305,54 @@ drawer: {
                     }
                 }
                 {
-                    rot: 3600
+                    rot: 1080
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.6
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            name: meld-sawblade-large-glow
+            x: 0
+            y: 8
+            blending: additive
+            color: 11111100
+            colorTo: 6ed88e
+            outline: false
+            progress: {
+                type: charge
+                ops: [
+                    {
+                        op: compress
+                        start: 0.5
+                        end: 1
+                    }
+                    {
+                        op: curve
+                        interp: pow2Out
+                    }
+                    {
+                        op: curve
+                        interp: slope
+                    }
+                ]
+            }
+            moves: [
+                {
+                    rot: 1080
                     progress: {
                         type: charge
                         ops: [
@@ -325,12 +373,93 @@ drawer: {
         {
             type: RegionPart
             suffix: -body
+            children: [
+                {
+                    type: RegionPart
+                    suffix: -body-glow
+                    blending: additive
+                    outline: false
+                    color: 11111100
+                    colorTo: 6ed88e
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.5
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+                {
+                    type: RegionPart
+                    suffix: -body-glow
+                    blending: additive
+                    outline: false
+                    color: 11111100
+                    colorTo: 6ed88e
+                    progress: heat
+                }
+            ]
+            moves: [
+                {
+                    y: 0.75
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.75
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                }
+            ]
         }
         {
             type: RegionPart
             suffix: -plate
             mirror: true
             progress: warmup
+            moveX: 0.5
+            moveY: -0.5
+            moveRot: 10
+            moves: [
+                {
+                    x: 1.25
+                    y: -1.25
+                    rot: 15
+                    progress: recoil
+                }
+                {
+                    rot: 25
+                    x: -0.75
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.5
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                }
+            ]
         }
 	]
 }
@@ -345,10 +474,10 @@ ammoTypes: {
 		pierce: true
 		pierceCap: 5
 		pierceDamageFactor: 0.05
-		speed: 6
-		lifetime: 42
+		speed: 5
+		lifetime: 52
 		knockback: 50
-		spin: 15
+		spin: 300
 		width: 20
 		height: 20
 		hitSize: 10.75
@@ -373,28 +502,52 @@ ammoTypes: {
 		intervalBullet: {
 			type: BasicBulletType
 			damage: 5
-			speed: 1.2
-			drag: 0.05
+			speed: 1.5
+			drag: 0.03
 			lifetime: 85
+            homingPower: 0.05
 			sprite: meld-sparkle
 			frontColor: 85c799
-			spin: 300
+			spin: 60
             width: 12
 			height: 12
 			pierce: true
 			shrinkX: 1
 			shrinkY: 1
+            shrinkInterp: pow5Out
 			status: lacerated
 			statusDuration: 15
 			hitEffect: none
 			despawnEffect: none
+            intervalBullet: {
+                splashDamage: 5
+                splashDamageRadius: 8
+                instantDisappear: true
+                hittable: false
+                hitEffect: {
+                    type: ParticleEffect
+                    lifetime: 85
+                    sizeFrom: 1
+                    sizeTo: 2
+                    particles: 4
+                    lenFrom: 1
+                    lenTo: 3
+                    colorFrom: 85c7997b
+                    colorTo: 4bb66b00
+				}
+                despawnEffect: none
+                status: lacerated
+                statusDuration: 20
+            }
+            bulletInterval: 6
 		}
 		fragBullet: {
 			type: BasicBulletType
 			damage: 15
-			speed: 2.2
+			speed: 4.2
 			drag: 0.05
 			lifetime: 65
+            homingPower: 0.05
 			sprite: meld-sparkle
 			frontColor: 85c799
 			spin: 25
@@ -407,14 +560,42 @@ ammoTypes: {
 			statusDuration: 15
 			hitEffect: none
 			despawnEffect: none
+            knockback: 2
+            intervalBullet: {
+                splashDamage: 5
+                splashDamageRadius: 8
+                instantDisappear: true
+                hittable: false
+                hitEffect: {
+                    type: ParticleEffect
+                    lifetime: 85
+                    particles: 3
+                    sizeFrom: 2
+                    sizeTo: 4
+                    particles: 4
+                    lenFrom: 1
+                    lenTo: 3
+                    colorFrom: 85c7997b
+                    colorTo: 4bb66b00
+				}
+                despawnEffect: none
+                status: lacerated
+                statusDuration: 20
+            }
+            bulletInterval: 6
 		}
 		fragBullets: 7
-		bulletInterval: 3
-		intervalBullets: 2
+		bulletInterval: 5
+		intervalBullets: 3
+        intervalRandomSpread: 60
+        fragRandomSpread: 90
+        fragAngle: 180
+        intervalSpread: 10
 		setDefaults: false
 		despawnHit: false
 		trailChance: 0.15
 		status: lacerated
+        statusDuration: 120
 		shrinkX: 1
 		shrinkY: 1
 		shrinkInterp: pow10Out
@@ -423,23 +604,26 @@ ammoTypes: {
 			effects: [
 				{
                     type: ParticleEffect
+                    lifetime: 25
+                    particles: 3
                     sizeFrom: 3
                     sizeTo: 8
                     particles: 2
-                    lenFrom: 2
-                    lenTo: 5
+                    lenFrom: 6
+                    lenTo: 14
+                    cone: 45
+                    offset: 90
                     colorFrom: 85c799
                     colorTo: 4bb66b00
 				}
 				{
                     type: ParticleEffect
+                    lifetime: 45
                     sizeFrom: 2
                     sizeTo: 4
-                    particles: 2
-                    lenFrom: 3
-                    lenTo: 6
-                    baseLen: 6
-                    lifetime: 85
+                    particles: 4
+                    lenFrom: 2
+                    lenTo: 4
                     colorFrom: 85c7997b
                     colorTo: 4bb66b00
 				}
@@ -454,10 +638,10 @@ consumes: {
 }
 
 requirements: [
-	a0-a0-debris/350
-	a1-a0-carbolith/450
-	a2-a0-silver/350
-    a4-a0-resonarum/150
+	a0-a0-debris/280
+	a1-a0-carbolith/350
+	a2-a0-silver/180
+    a4-a0-resonarum/60
 ]
 
 category: turret
