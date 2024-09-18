@@ -467,7 +467,7 @@ drawer: {
 ammoTypes: {
 	a4-a0-resonarum: {
 		type: BasicBulletType
-		damage: 320
+		damage: 160
 		sprite: meld-sawblade-large
 		frontColor: 85c799
 		backColor: 4bb66b
@@ -539,7 +539,7 @@ ammoTypes: {
                 status: lacerated
                 statusDuration: 20
             }
-            bulletInterval: 6
+            bulletInterval: 4
 		}
 		fragBullet: {
 			type: BasicBulletType
@@ -582,7 +582,7 @@ ammoTypes: {
                 status: lacerated
                 statusDuration: 20
             }
-            bulletInterval: 6
+            bulletInterval: 4
 		}
 		fragBullets: 7
 		bulletInterval: 5

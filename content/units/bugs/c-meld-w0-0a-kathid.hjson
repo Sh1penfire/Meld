@@ -26,7 +26,6 @@ legPhysicsLayer: false
 
 weapons: [
 	{
-		name: "m-s1-kathid-crystal"
 		x: 0
 		y: 0
 		shootY: 8.5
@@ -36,7 +35,6 @@ weapons: [
 		alwaysContinuous: true
 		recoil: 0
 		shootCone: 10
-		top: false
 		shootStatus: wildlife-a1-sentry
 		shootStatusDuration: 5
 		shootSound: torch
@@ -59,9 +57,17 @@ weapons: [
 		parts: [
 			{
 				type: RegionPart
-				name: "m-s1-kathid-crystal"
-				heatProgress: warmup
+				name: "kathid-crystal-heat"
+				progress: warmup
+				color: 11111100
+				colorTo: 111111
+				blending: additive
+				outline: false
 			}
 		]
 	}
+]
+
+immunities: [
+	lacerated
 ]

@@ -2,6 +2,7 @@ type: DuctBridge
 size: 1
 range: 2
 
+solid: false
 category: distribution
 requirements: [
 	a0-a0-debris/6
