@@ -1,4 +1,4 @@
-type: GenericCrafter
+type: AttributeCrafter
 size: 3
 
 placeableLiquid: true

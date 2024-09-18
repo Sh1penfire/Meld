@@ -77,10 +77,12 @@ weapons: [
 		shootStatus: wildlife-a1-sentry
 		shootStatusDuration: 150
 		shoot: {
+			type: ShootSpread
 			shots: 5
 			shotDelay: 7
-			spread: 0
+			spread: 1
 		}
+		inaccuracy: 5
 		bullet: {
 			sprite: "meld-clump"
 			pierce: true
