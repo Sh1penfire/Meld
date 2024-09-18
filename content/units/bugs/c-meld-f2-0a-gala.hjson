@@ -92,18 +92,6 @@ weapons: [
 				type: MultiEffect
 				effects: [
 					{
-						type: ParticleEffect
-						lifetime: 55
-						baseLength: -5
-						particles: 16
-						length: 35
-						sizeFrom: 12
-						sizeTo: 0
-						interp: pow5Out
-						colorFrom: e5aed700
-						colorTo: e5aed7
-					}
-					{
 						type: WaveEffect
 						lifetime: 8
 						sizeFrom: 5

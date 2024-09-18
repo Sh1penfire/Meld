@@ -28,7 +28,7 @@ legPhysicsLayer: false
 
 weapons: [
 	{
-		name: "m-e1-craig-gun"
+		name: "craig-gun"
 		x: -6
 		y: -2
 		shootY: 5
@@ -40,9 +40,6 @@ weapons: [
 		shootStatusDuration: 7.5
 		mirror: false
 		alternate: false
-		shoot: {
-			type: ShootAlternate
-		}
 		parentizeEffects: false
 		bullet: {
 			type: RailBulletType
@@ -50,7 +47,7 @@ weapons: [
 			damage: 5
 			length: 60
 			knockback: 1
-			recoil: -0.5
+			recoil: -0.1
 			smokeEffect: {
 				type: ParticleEffect
 				region: "meld-globule"
@@ -65,12 +62,12 @@ weapons: [
 		}
 	}
 	{
-		name: "m-e2-braig-gun"
+		name: "braig-cannon"
 		x: 6
 		y: -3
 		shootY: 5
 		rotateSpeed: 15
-		reload: 90
+		reload: 600
 		shootCone: 60
 		rotate: true
 		mirror: false
@@ -78,18 +75,23 @@ weapons: [
 		parentizeEffects: false
 		shootSound: bang
 		shootStatus: wildlife-a1-sentry
-		shootStatusDuration: 45
+		shootStatusDuration: 300
+		shoot: {
+			shots: 6
+			shotDelay: 7
+			spread: 0
+		}
 		bullet: {
-			sprite: "shell"
+			sprite: "meld-clump"
 			speed: 4
-			lifetime: 40
+			lifetime: 55
 			width: 11
 			height: 14
 			damage: 15
 			splashDamage: 10
 			splashDamageRadius: 25
 			knockback: 4
-			recoil: -0.5
+			recoil: -0.125
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion

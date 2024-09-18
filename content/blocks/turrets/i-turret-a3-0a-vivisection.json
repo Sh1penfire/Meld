@@ -327,7 +327,7 @@ drawer: {
             type: RegionPart
             name: meld-sawblade-large-glow
             x: 0
-            y: 8
+            y: 9
             blending: additive
             color: 11111100
             colorTo: 6ed88e
@@ -358,7 +358,7 @@ drawer: {
                         ops: [
                             {
                                 op: compress
-                                start: 0.5
+                                start: 0.6
                                 end: 1
                             }
                             {
