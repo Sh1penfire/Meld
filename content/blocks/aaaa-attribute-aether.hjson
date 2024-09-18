@@ -1,0 +1,5 @@
+type: AttributeCrafter
+hidden: true
+buildablePlayer: false
+
+attribute: aether
