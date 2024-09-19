@@ -2,7 +2,7 @@ type: PowerTurret
 size: 4
 health: 840
 range: 100
-reload: 180
+reload: 0
 shootSound: bang
 shootEffect: shootBig
 rotateSpeed: 0
@@ -36,11 +36,6 @@ shootType: {
     killShooter: true
 }
 
-requirements: [
-	a0-a0-debris/350
-	a1-a0-carbolith/450
-	a2-a0-silver/350
-    a4-a0-resonarum/150
-]
+buildVisibility: sandboxOnly
 
-category: turret
+category: effect

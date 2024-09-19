@@ -703,7 +703,7 @@ consumes: {
 	]
 }
 
-category: turret
+category: effect
 
 research: 8s-a-core-raft
 researchCost: [

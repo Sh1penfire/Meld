@@ -13,3 +13,4 @@ baseSpeed: 3.4
 opacityMultiplier: 0.55
 sound: wind
 soundVol: 0.3
+force: 0
