@@ -1,6 +1,6 @@
 type: ItemTurret
 size: 4
-health: 840
+health: 1640
 range: 252
 fogRadiusMultiplier: 0.25
 reload: 120
@@ -639,9 +639,29 @@ consumes: {
 
 requirements: [
 	a0-a0-debris/280
-	a1-a0-carbolith/350
-	a2-a0-silver/180
-    a4-a0-resonarum/60
+	a1-a0-carbolith/160
+	a2-a0-silver/230
+	a4-a0-resonarum/60
 ]
 
+
+
 category: turret
+
+research: {
+    parent: i-turret-a1-0a-molotov
+    objectives: [
+		{
+			type: OnSector
+			preset: 2a-scrapyard
+		}
+    ]
+    
+}
+
+researchCost: [
+	a0-a0-debris/1400
+	a1-a0-carbolith/600
+	a2-a0-silver/1600
+	a4-a0-resonarum/750
+]

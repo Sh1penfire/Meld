@@ -14,7 +14,7 @@ fogRadius: 12.5
 parts: [
 	{
 		type: RegionPart
-		name: meld-3e-a-nullifier-center
+		name: meld-c-effect-a0-0a-nullifier-center
 	}
 	{
 		type: HaloPart
@@ -86,22 +86,23 @@ weapons: [
 		y: 0
 		shootY: 0
 		shoot: {
-			firstShotDelay: 155
+			firstShotDelay: 150
 		}
 		rotate: true
 		rotateSpeed: 180
-		reload: 1000
+		reload: 1
 		mirror: false
 		alternate: false
 		controllable: false
 		autoTarget: true
 		targetInterval: 1
 		targetSwitchInterval: 1
-		bullet: {
-			type: PointBulletType
-			range: 100
-			damage: 21000
-			buildingDamageMultiplier: 133769
+        shootSound: laser
+        bullet: {
+            type: PointBulletType
+            range: 100
+            damage: 21000000
+            buildingDamageMultiplier: 133769
             trailSpacing: 2
             trailEffect: {
                 type: ParticleEffect
@@ -115,9 +116,59 @@ weapons: [
                 colorFrom: ffffff
                 colorTo: ffffff00
             }
-			shootEffect: none
-			}
-		}
+            shootEffect: none
+            pierceArmor: true
+            fragBullets: 1
+            fragbullet: {
+                pierceArmor: true
+                splashDamage: 21000000
+                splashDamageRadius: 30
+                buildingDamageMultiplier: 133769
+                instantDisappear: true
+                hitEffect: {
+                    type: MultiEffect
+                    effects: [
+                        {
+                            type: ParticleEffect
+                            sizeFrom: 8
+                            sizeTo: 0
+                            len: 16
+                            particles: 15
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc
+                        }
+                        {
+                            type: ParticleEffect
+                            sizeFrom: 5
+                            sizeTo: 0
+                            len: 16
+                            particles: 15
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 15
+                            sizeFrom: 4
+                            sizeTo: 34
+                            strokeFrom: 2.5
+                            strokeTo: 1
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc00
+                        }
+                    ]
+                }
+                despawnEffect: none
+                collides: false
+                absorbable: false
+                hittable: false
+            }
+        }
+    }
 //Laser beam/unit damage
 	{
 		x: 0

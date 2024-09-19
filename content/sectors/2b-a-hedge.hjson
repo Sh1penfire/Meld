@@ -3,7 +3,7 @@ captureWave: 16
 planet: ikaru
 difficulty: 5
 research: {
-	parent: 2a-scrapyard
+	parent: 1a-creek
 	objectives: [
 		{
 			type: SectorComplete

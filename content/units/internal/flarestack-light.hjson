@@ -42,7 +42,7 @@ drawBody: false
 parts: [
 	{
 		type: RegionPart
-		name: meld-3e-b-sonar-spire-top
+		name: meld-c-effect-a1-0a-sonar-spire-top
         outline: false
 	}
 ]

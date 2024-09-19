@@ -69,7 +69,7 @@ requirements: [
 ]
 
 research: {
-	parent: 7h-b-elemental-blaster
+	parent: g-harvester-1a-a0-elemental-blaster
 	objectives: [
 		{
 			type: OnSector

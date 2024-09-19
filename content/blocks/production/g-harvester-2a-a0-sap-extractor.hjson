@@ -51,7 +51,15 @@ requirements: [
 	a0-a0-debris/7
 ]
 
-research: 5l-a-channel-face
+research: e-fluid-a0-0a-channel-face
+
+research: {
+	parent: 2b-b-ruins
+	objectives: [
+		soontm
+	]
+}
+
 
 researchCost: [
     a0-a0-debris/15

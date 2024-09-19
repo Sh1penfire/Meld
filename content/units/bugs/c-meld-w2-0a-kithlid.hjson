@@ -65,12 +65,12 @@ weapons: [
 abilities: [
 	{
 		type: SpawnDeathAbility
-		amount: 2
+		amount: 3
 		unit: c-meld-c1-0a-gilla
 	}
 	{
 		type: SpawnDeathAbility
-		amount: 1
+		amount: 2
 		unit: c-meld-d1-0a-braig
 	}
 ]

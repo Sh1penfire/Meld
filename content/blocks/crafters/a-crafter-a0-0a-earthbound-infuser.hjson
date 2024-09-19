@@ -67,7 +67,7 @@ requirements: [
 ]
 
 research: {
-	parent: 7h-a-aether-accumulator
+	parent: g-harvester-0a-a0-aether-accumulator
 	objectives: [
 		{
 			type: SectorComplete
