@@ -23,11 +23,11 @@ deathExplosionEffect: {
     effects: [
         {
             type: ParticleEffect
-            lifetime: 120
-            baseLength: 10
-            length: 55
-            particles: 14
-            sizeFrom: 4
+            lifetime: 85
+            baseLength: 7
+            length: 35
+            particles: 8
+            sizeFrom: 3
             sizeTo: 0
             interp: pow5In
             sizeInterp: pow5Out
@@ -36,11 +36,11 @@ deathExplosionEffect: {
         }
         {
             type: ParticleEffect
-            lifetime: 75
+            lifetime: 55
             baseLength: 2
-            length: 30
-            particles: 8
-            sizeFrom: 7
+            length: 25
+            particles: 5
+            sizeFrom: 5
             sizeTo: 0
             interp: pow5Out
             sizeInterp: pow5In
@@ -48,23 +48,10 @@ deathExplosionEffect: {
             colorTo: e5aed7a3
         }
         {
-            type: ParticleEffect
-            lifetime: 35
-            baseLength: 10
-            particles: 8
-            length: 75
-            line: true
-            lenFrom: 5
-            lenTo: 0
-            colorFrom: e5aed7
-            colorTo: e5aed700
-            sizeInterp: pow5In
-        }
-        {
             type: WaveEffect
             lifetime: 13
             sizeFrom: 5
-            sizeTo: 55
+            sizeTo: 35
             strokeFrom: 7
             strokeTo: 0
             colorFrom: e5aed7
@@ -96,25 +83,14 @@ weapons: [
 			despawnEffect: none
 			collides: false
 			collidesAir: false
-
+			splashDamage: 30
+			splashDamageRadius: 15
 			instantDisappear: true
 			rangeOverride: 55
 			recoil: 1.5
 			shootEffect: {
 				type: MultiEffect
 				effects: [
-					{
-						type: ParticleEffect
-						lifetime: 55
-						baseLength: -5
-						particles: 16
-						length: 35
-						sizeFrom: 12
-						sizeTo: 0
-						interp: pow5Out
-						colorFrom: e5aed700
-						colorTo: e5aed7
-					}
 					{
 						type: WaveEffect
 						lifetime: 8
@@ -153,17 +129,22 @@ weapons: [
 
 			rangeOverride: 10
 			speed: 0
-			splashDamageRadius: 50
+			splashDamageRadius: 25
 			instantDisappear: true
 			splashDamage: 150
 			killShooter: true
 			hittable: false
+			fragBullets: 3
+			fragBullet: {
+				type: MissileBulletType
+				spawnUnit: blob
+			}
 		}
 		parts: [
 			{
 				type: RegionPart
 				layerOffset: -0.1
-				name: meld-m-c1-gala-orb
+				name: meld-c-meld-f2-0a-gala-orb
 				progress: heat
 				color: ffffff
 				colorTo: ffffff00

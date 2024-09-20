@@ -20,7 +20,7 @@ requirements: [
 category: units
 
 research: {
-	parent: 8s-a-core-raft
+	parent: h-core-a0-0a-raft
 	objectives: [
 		{
 			type: SectorComplete

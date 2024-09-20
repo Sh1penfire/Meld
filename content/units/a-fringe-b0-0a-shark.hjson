@@ -33,6 +33,17 @@ weapons: [
 		shootSound: bang
 		inaccuracy: 25
 		velocityRnd: 0.05
+		parts: [
+			{
+				type: RegionPart
+				suffix: -glow
+				color: 665c9f00
+				colorTo: bf92f9
+				outline: false
+				blending: additive
+				progress: warmup
+			}
+		]
 		bullet: {
 			type: MissileBulletType
 			sprite: missile-large
@@ -175,5 +186,5 @@ engines: [
 	}
 ]
 
-research: 10c-a-ship-factory
+research: j-constructor-c0-0a-ship-factory
 researchCostMultiplier: 0

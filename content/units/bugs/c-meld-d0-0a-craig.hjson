@@ -25,7 +25,7 @@ legPhysicsLayer: false
 
 weapons: [
 	{
-		name: "m-e1-craig-gun"
+		name: "craig-gun"
 		x: -3
 		y: 0
 		shootY: 5
@@ -37,9 +37,6 @@ weapons: [
 		shootStatusDuration: 7.5
 		mirror: false
 		alternate: false
-		shoot: {
-			type: ShootAlternate
-		}
 		parentizeEffects: false
 		bullet: {
 			type: RailBulletType
@@ -47,7 +44,7 @@ weapons: [
 			damage: 5
 			length: 60
 			knockback: 1
-			recoil: -0.5
+			recoil: -0.1
 			smokeEffect: {
 				type: ParticleEffect
 				region: "meld-globule"

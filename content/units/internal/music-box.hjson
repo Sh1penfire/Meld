@@ -1,0 +1,36 @@
+type: flying
+flying: false
+speed: 0
+engineSize: 0
+shadowElevation: 0
+createWreck: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+allowedInPayloads: false
+physics: false
+bounded: false
+playerControllable: false
+loopSound: stellar-walkways
+
+//More niche changes can be made to theese
+hoverable: false
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 0
+lightRadius: 0
+
+//Same here
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+immunities: [
+	meld-strata-a0-rally
+]

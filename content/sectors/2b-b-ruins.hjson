@@ -2,7 +2,7 @@ sector: 18
 planet: ikaru
 difficulty: 3
 research: {
-	parent: 2a-scrapyard
+	parent: 2b-a-hedge
 	objectives: [
 		{
 			type: SectorComplete

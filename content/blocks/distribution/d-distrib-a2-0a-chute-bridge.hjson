@@ -2,12 +2,13 @@ type: DuctBridge
 size: 1
 range: 2
 
+solid: false
 category: distribution
 requirements: [
 	a0-a0-debris/6
 ]
 
-research: 4d-a2-chute-router
+research: d-distrib-a1-0a-chute-router
 researchCost: [
 	a0-a0-debris/25
 ]

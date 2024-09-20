@@ -2,6 +2,7 @@ type: SteamVent
 variants: 0
 blendGroup: soft-sand
 parent: soft-sand
+
 attributes: {
 	aether: 1
 }

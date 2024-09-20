@@ -90,7 +90,7 @@ weapons: [
 		parts: [
 			{
 				type: RegionPart
-				name: meld-m-w1-pester-gel
+				name: meld-c-meld-f0-0a-pester-gel
 				progress: smoothReload
 				color: ffffff
 				colorTo: ffffff00
@@ -98,7 +98,7 @@ weapons: [
 			}
 			{
 				type: RegionPart
-				name: meld-m-w1-pester-barrel
+				name: meld-c-meld-f0-0a-pester-barrel
 				progress: recoil
 				moveY: -3
 				layerOffset: -0.1
@@ -126,7 +126,7 @@ weapons: [
 					baseLength: 0
 					particles: 35
 					length: 60
-					sizeFrom: 4
+					sizeFrom: 3.5
 					sizeTo: 0
 					colorFrom: feafea
 					colorTo: d26ab100

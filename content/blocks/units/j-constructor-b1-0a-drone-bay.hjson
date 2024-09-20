@@ -29,7 +29,7 @@ requirements: [
 category: units
 
 research: {
-	parent: 10c-a-ship-factory
+	parent: j-constructor-c0-0a-ship-factory
 	objectives: [
 		{
 			type: SectorComplete

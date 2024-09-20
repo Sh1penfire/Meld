@@ -1,0 +1,10 @@
+sector: 19
+planet: ikaru
+difficulty: 10
+research: {
+	parent: 2b-b-ruins
+	objectives: [
+		soontm
+	]
+}
+

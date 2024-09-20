@@ -16,13 +16,13 @@ segmentMag: 0.5
 drawCell: false
 drawBody: false
 
-defaultController: HugAI
+controller: HugAI
 
 weapons: [
 	{
 		x: 0
 		y: 0
-		shootY: 7
+		shootY: 8
 		shootCone: 180
 		reload: 60
 		mirror: false
@@ -33,7 +33,6 @@ weapons: [
 		
 		bullet: {
 			type: ContinuousFlameBulletType
-			layer: 30
 			damage: 8
 			flareLength: 0
 			length: 8

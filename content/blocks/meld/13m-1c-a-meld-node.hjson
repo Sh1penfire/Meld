@@ -5,13 +5,6 @@ size: 3
 
 squareSprite: false
 
-destroyBulletSameTeam: true
-destroyBullet: {
-	type: MissileBulletType
-	lifetime: 50
-	spawnUnit: de-meld1
-}
-
 destroyEffect: {
 	type: MultiEffect
 	effects: [
