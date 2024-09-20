@@ -1,4 +1,6 @@
-type: hover
+type: flying
+flying: false
+speed: 0
 engineSize: 0
 shadowElevation: 0
 createWreck: false
@@ -9,8 +11,8 @@ createWreck: false
 allowedInPayloads: false
 physics: false
 bounded: false
-hidden: true
 playerControllable: false
+loopSound: stellar-walkways
 
 //More niche changes can be made to theese
 hoverable: false
@@ -28,3 +30,7 @@ deathExplosionEffect: none
 
 drawCell: false
 drawBody: false
+
+immunities: [
+	meld-strata-a0-rally
+]
