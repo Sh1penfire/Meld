@@ -108,8 +108,8 @@ Ex: c-effect-a-1-nullifier
 -Meld Constructs
 >m-construct-<extended block name>
 
--Strata tech
->n-strata-<extended block name>
+-Fringe tech
+>n-fringe-<extended block name>
 
 -Special
 >o-special-&#-#&-<blockname>
