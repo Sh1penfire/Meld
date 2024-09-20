@@ -1,4 +1,4 @@
-type: hover
+flying: true
 engineSize: 0
 shadowElevation: 0
 createWreck: false

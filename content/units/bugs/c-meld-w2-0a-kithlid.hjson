@@ -74,7 +74,3 @@ abilities: [
 		unit: c-meld-d1-0a-braig
 	}
 ]
-
-immunities: [
-	lacerated
-]
