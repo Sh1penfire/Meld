@@ -1,0 +1,68 @@
+type: missile
+health: 100
+lifetime: 180
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 10
+lightRadius: 80
+lightOpacity: 1
+shadowElevation: 0
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+weapons: [
+	{
+		reload: 0
+		alwaysShooting: true
+		aiControllable: false
+		shootSound: release
+		shootStatus: disarmed
+		shootStatusDuration: 200
+		bullet: {
+			collides: false
+			hittable: false
+			absorbable: false
+			instantDisappear: true
+			shootEffect: none
+			hitSound: none
+		}
+	}
+]
+
+abilities: [
+	{
+		type: ForceFieldAbility
+		radius: 50
+        regen: 2.2
+        cooldown: 200
+        max: 200
+	}
+]
+
+immunities: [
+	wildlife-a0-amplified
+]
