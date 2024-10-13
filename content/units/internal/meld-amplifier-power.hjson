@@ -2,28 +2,26 @@ type: missile
 lifetime: 180
 
 speed: 0
-flying: true
-engineSize: 0
-shadowElevation: 0
-createWreck: false
+
+flying: false
 drawBody: false
 isEnemy: false
 useUnitCap: false
 createWreck: false
+createScorch: false
 allowedInPayloads: false
 physics: false
 bounded: false
 hidden: true
 playerControllable: false
+canDrown: false
 
-//More niche changes can be made to theese
 hoverable: false
+hovering: true
 
 targetable: false
 
 drawMinimap: false
-
-fogRadius: 0
 
 //Same here
 deathSound: release

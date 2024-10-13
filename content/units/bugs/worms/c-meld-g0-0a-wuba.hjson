@@ -1,0 +1,55 @@
+type: crawl
+speed: 1.5
+
+health: 320
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 10
+rotateSpeed: 3.5
+faceTarget: false
+omniMovement: false
+
+segments: 3
+segmentMag: 1.5
+segmentMaxRot: 40
+segmentScl: 7
+drawCell: false
+drawBody: false
+
+targetAir: false
+controller: HugAI
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		shootCone: 180
+		reload: 120
+		rotate: false
+		mirror: false
+		alternate: false
+		
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+			killShooter: true
+
+			rangeOverride: 10
+			speed: 0
+			instantDisappear: true
+			hittable: false
+			fragBullets: 1
+			fragBullet: {
+				type: MissileBulletType
+				spawnUnit: wuba-exploding
+			}
+		}
+	}
+]
