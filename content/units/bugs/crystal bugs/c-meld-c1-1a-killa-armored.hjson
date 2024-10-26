@@ -1,0 +1,61 @@
+type: tank
+speed: 0.9
+
+health: 460
+armor: 20
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 20
+rotateSpeed: 6.5
+faceTarget: true
+
+legCount: 8
+legLength: 5
+legGroupSize: 1
+legSpeed: 0.4
+legForwardScl: 4
+legBaseOffset: -4
+legMoveSpace: 0.8
+
+drawCell: false
+
+controller: HugAI
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 14
+		shootCone: 13
+		reload: 75
+		recoil: 0
+		mirror: false
+		alternate: false
+		top: false
+		shootSound: glorp
+		shootStatus: stunned
+		shootStatusDuration: 60
+		
+		bullet: {
+			type: BasicBulletType
+			speed: 3.85
+			lifetime: 75
+			sprite: glob
+			recoil: 3.5
+			damage: 15
+			width: 5.2
+			knockback: 17.5
+			hitSound: splat
+		}
+	}
+]
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-c1-1a-killa
+	}
+]

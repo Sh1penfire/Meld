@@ -5,7 +5,7 @@ size: 3
 plans: [
 	{
 	type: AssemblerUnitPlan
-	unit: a-fringe-c0-0a-narwhal
+	unit: a-strata-c0-0a-narwhal
 	requirements: [
 		meld-p-part-a0-0a-data-resonator/1
 		meld-b-wall-a0-0a-silver-husk/1

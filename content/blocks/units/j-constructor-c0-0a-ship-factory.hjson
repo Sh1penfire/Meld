@@ -4,7 +4,7 @@ size: 3
 
 plans: [
 	{
-	unit: a-fringe-b0-0a-shark
+	unit: a-strata-b0-0a-shark
 	requirements: [
 		a2-a0-silver/40
 		a1-a0-carbolith/30
