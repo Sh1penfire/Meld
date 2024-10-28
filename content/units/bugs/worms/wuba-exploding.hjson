@@ -88,7 +88,6 @@ weapons: [
             hittable: false
             instantDisappear: true
 		smokeEffect: none
-		shake: 1.5
             shootEffect: {
                 type: MultiEffect
                 effects: [

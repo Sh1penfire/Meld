@@ -1,6 +1,5 @@
 type: LiquidTurret
-health: 600000
-armor: 300
+health: 600
 size: 3
 
 rotateSpeed: 0
@@ -16,7 +15,7 @@ squareSprite: false
 
 shootY: 0
 ammoTypes: {
-	a0-5a-meld: {
+	a0-0b-aspect: {
 		type: MissileBulletType
 		spawnUnit: anchor-power
 		shootEffect: none

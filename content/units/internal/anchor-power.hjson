@@ -62,6 +62,36 @@ parts: [
 	}
 ]
 
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootCone: 180
+		rotate: false
+		alternate: false
+		mirror: false
+		shootSound: none
+		reload: 5
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		bullet: {
+			instantDisappear: true
+			collides: false
+			absorbable: false
+			hittable: false
+			hitEffect: none
+			despawnEffect: none
+			shootEffect: none
+			smokeEffect: none
+			splashDamage: 0
+			splashDamageRadius: 80
+			status: strata-b0-anchored
+			statusDuration: 8
+		}
+	}
+]
+
 abilities: [
 	{
 		type: StatusFieldAbility
