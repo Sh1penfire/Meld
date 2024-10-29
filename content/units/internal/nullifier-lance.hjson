@@ -119,7 +119,7 @@ weapons: [
             shootEffect: none
             pierceArmor: true
             fragBullets: 1
-            fragbullet: {
+            fragBullet: {
                 pierceArmor: true
                 splashDamage: 21000000
                 splashDamageRadius: 30

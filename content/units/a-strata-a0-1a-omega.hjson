@@ -2,13 +2,13 @@ type: mech
 speed: 1.35
 strafePenalty: 0
 
-health: 280
+health: 420
 aimDst: 10
 range: 50
 drag: 0.8
 accel: 1.1
-hitSize: 10
-lightRadius: 60
+hitSize: 16
+lightRadius: 80
 lightOpacity: 0.9
 buildSpeed: 1
 mineTier: 2
@@ -19,9 +19,9 @@ rotateSpeed: 3.85
 
 buildBeamOffset: 6.75
 rotateToBuilding: true
-buildRange: 60
-mineRange: 60
-fogRadius: 7.5
+buildRange: 80
+mineRange: 80
+fogRadius: 10
 mineTier: 3
 
 targetAir: false
@@ -30,37 +30,59 @@ alwaysUnlocked: true
 
 weapons: [
 	{
+		name: omega-launcher
 		mirror: true
 		alternate: false
-		rotate: false
-		shootCone: 45
-		x: 7.5
-		y: 9.75
+		rotate: true
+		rotationLimit: 60
+		baseRotation: -15
+		rotateSpeed: 1.5
+		top: false
+		shootCone: 25
+		x: 11
+		y: 3
 		
-		reload: 120
+		reload: 75
 		recoil: 1.25
 		shootSound: none
 		inaccuracy: 3
-		shoot: {
-			shots: 2
-			spread: 15
-		}
+		shootStatus: omega-overdrive
+		shootStatusDuration: 35
+		shootSound: pipe-launcher
 		bullet: {
-			speed: 3.5
-			lifetime: 14
+			sprite: shell
+			scaleLife: true
+			speed: 4.5
+			lifetime: 45
 			shrinkY: 0.8
+			width: 16
+			height: 14
 			damage: 55
-			fragRandomSpread: 35
-			fragBullets: 12
+			drag: 0.06
+			fragBullets: 8
+			fragRandomSpread: 25
+			fragLifeMin: 0.5
+			fragLifeMin: 1
+			fragVelocityMin: 0.7
+			fragVelocityMax: 1
+			rangeOverride: 168
+			recoil: 3
+			keepVelocity: false
+			hitSound: explosion
 			fragBullet: {
-				type: MissileBulletType
-				sprite: missile-large
-				speed: 1.85
-				damage: 5
+				speed: 15.85
+				lifetime: 15
+				width: 4
+				height: 8
+				damage: 10
 				status: impaled
-				statusDuration: 15
+				statusDuration: 5
 				pierce: true
-				homingPower: 0.08
+				pierceCap: 2
+				homingPower: 0.04
+				knockback: 10
+				drag: 0.12
+				buildingDamageMultiplier: 0
 			}
 		}
 	}
@@ -73,7 +95,7 @@ parts: [
 		y: 0
 		sides: 60
 		mirror: false
-		radius: 120
+		radius: 80
 		phase: 420
 		stroke: 3
 		circles: 2
@@ -87,7 +109,7 @@ parts: [
 		type: ShapePart
 		circle: true
 		hollow: true
-		radius: 118
+		radius: 78
 		stroke: 4
 		layer: 122
 		color: ffd37f
@@ -98,7 +120,7 @@ parts: [
 abilities: [
 	{
 		type: StatusFieldAbility
-		range: 60
+		range: 80
 		reload: 15
 		effect: strata-a0-rally
 		duration: 120

@@ -10,7 +10,6 @@ applyEffect: {
 		{
 			type: WaveEffect
 			lifetime: 60
-			region: circle
 			sizeFrom: 45
 			sizeTo: 15
 			strokeFrom: 0
@@ -18,12 +17,10 @@ applyEffect: {
 			colorFrom: f27121
 			colorTo: f2712100
 			interp: pow5Out
-			sizeInterp: pow10In
 		}
 		{
 			type: WaveEffect
 			lifetime: 85
-			region: circle
 			sizeFrom: 60
 			sizeTo: 35
 			strokeFrom: 8
@@ -31,7 +28,6 @@ applyEffect: {
 			colorFrom: f2712100
 			colorTo: f27121
 			interp: pow10Out
-			sizeInterp: pow10In
 		}
 		{
 			type: ParticleEffect

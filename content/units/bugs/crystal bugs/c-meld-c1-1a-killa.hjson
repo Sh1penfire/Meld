@@ -34,11 +34,6 @@ weapons: [
 		linearWarmup: true
 		shootWarmupSpeed: 0.025
 		minWarmup: 1
-		shootStatus: {
-			name: killa-enabled
-			hidden: true
-			speedMultiplier: 12
-		}
 		bullet: {
 			type: ContinuousFlameBulletType
 			damage: 8
