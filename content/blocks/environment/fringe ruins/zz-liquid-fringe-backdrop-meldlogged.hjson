@@ -1,0 +1,12 @@
+type: Floor
+variants: 0
+walkSound: splash
+walkSoundVolume: 0.02
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.6
+drownTime: 160
+cacheLayer: water
+isLiquid: true
+emitLight: true
+lightColor: ca3fba11
+lightRadius: 15

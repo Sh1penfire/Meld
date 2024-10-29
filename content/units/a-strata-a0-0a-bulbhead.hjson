@@ -26,8 +26,6 @@ mineTier: 3
 
 targetAir: false
 
-alwaysUnlocked: true
-
 weapons: [
 	{
 		mirror: false

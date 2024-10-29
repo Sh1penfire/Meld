@@ -1,11 +1,10 @@
 type: Floor
 variants: 3
 walkSound: splash
-walkSoundVolume: 0.02
-walkSoundPitchMin: 0.4
-walkSoundPitchMax: 0.6
+walkSoundVolume: 0.015
+walkSoundPitchMin: 0.2
+walkSoundPitchMax: 0.4
 drownTime: 160
-solid: false
 cacheLayer: water
 isLiquid: true
 supportsOverlay: true

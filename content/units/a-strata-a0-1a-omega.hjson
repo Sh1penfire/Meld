@@ -1,0 +1,128 @@
+type: mech
+speed: 1.35
+strafePenalty: 0
+
+health: 280
+aimDst: 10
+range: 50
+drag: 0.8
+accel: 1.1
+hitSize: 10
+lightRadius: 60
+lightOpacity: 0.9
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 16
+itemCapacity: 80
+range: 100
+rotateSpeed: 3.85
+
+buildBeamOffset: 6.75
+rotateToBuilding: true
+buildRange: 60
+mineRange: 60
+fogRadius: 7.5
+mineTier: 3
+
+targetAir: false
+
+alwaysUnlocked: true
+
+weapons: [
+	{
+		mirror: true
+		alternate: false
+		rotate: false
+		shootCone: 45
+		x: 7.5
+		y: 9.75
+		
+		reload: 120
+		recoil: 1.25
+		shootSound: none
+		inaccuracy: 3
+		shoot: {
+			shots: 2
+			spread: 15
+		}
+		bullet: {
+			speed: 3.5
+			lifetime: 14
+			shrinkY: 0.8
+			damage: 55
+			fragRandomSpread: 35
+			fragBullets: 12
+			fragBullet: {
+				type: MissileBulletType
+				sprite: missile-large
+				speed: 1.85
+				damage: 5
+				status: impaled
+				statusDuration: 15
+				pierce: true
+				homingPower: 0.08
+			}
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 120
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 118
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 60
+		reload: 15
+		effect: strata-a0-rally
+		duration: 120
+		activeEffect: {
+			type: ParticleEffect
+			lifetime: 35
+			region: meld-diamond
+			colorFrom: ffd37f
+			colorTo: ffd37f
+			particles: 3
+			spin: 1
+			length: 120
+			sizeFrom: 0
+			sizeTo: 2
+			interp: one
+			sizeInterp: slope
+			lightScl: 0
+		}
+		applyEffect: none
+	}
+]
+
+immunities: [
+	strata-a0-rally
+]
+
+research: h-core-a0-0a-raft
