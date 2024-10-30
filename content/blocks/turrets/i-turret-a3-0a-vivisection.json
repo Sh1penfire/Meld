@@ -24,6 +24,8 @@ shoot: {
 	firstShotDelay: 60
 }
 
+shootSound: saw-whizz
+
 drawer: {
 	type: DrawTurret
 	parts: [
@@ -498,6 +500,10 @@ ammoTypes: {
 			colorFrom: 85c799
 			colorTo: 4bb66b
 		}
+        chargeEffect: {
+            type: SoundEffect
+            sound: saw-charge
+        }
 		despawnEffect: none
 		intervalBullet: {
 			type: BasicBulletType
@@ -630,6 +636,7 @@ ammoTypes: {
 			]
 		}
         trailChance: 0.85
+        hitSound: saw-hit
 	}
 }
 
