@@ -39,13 +39,12 @@ weapons: [
         rotate: true
         rotationLimit: 60
         baseRotation: -15
-        rotateSpeed: 1.5
+        rotateSpeed: 2.5
         shootCone: 25
         reload: 75
-        recoil: 1.25
         shoot: {
             firstShotDelay: 25
-            shots: 30
+            shots: 35
             shotDelay: 2
         }
         shootSound: none
@@ -73,19 +72,18 @@ weapons: [
     {
         x: 11
         y: 3
-        shootY: 4
+        shootY: 5
         mirror: true
         alternate: false
         rotate: true
         rotationLimit: 60
         baseRotation: -15
-        rotateSpeed: 1.5
+        rotateSpeed: 2.5
         shootCone: 25
         reload: 75
-        recoil: 1.25
         shoot: {
             firstShotDelay: 25
-            shots: 35
+            shots: 25
             shotDelay: 1
         }
         shootSound: none
@@ -98,10 +96,10 @@ weapons: [
             hitEffect: none
             shootEffect: {
                 type: ParticleEffect
-                lifetime: 12
+                lifetime: 15
                 sizeFrom: 5
                 sizeTo: 0
-                length: 16
+                length: 21
                 particles: 2
                 cone: 4
                 sizeInterp: pow5In
@@ -121,15 +119,16 @@ weapons: [
         rotate: true
         rotationLimit: 60
         baseRotation: -15
-        rotateSpeed: 1.5
+        rotateSpeed: 2.5
         shootCone: 25
         reload: 75
-        recoil: 1.25
         shoot: {
             firstShotDelay: 25
             shots: 50
             spread: 1
         }
+        shootSound: none
+        
         bullet: {
             type: RailBulletType
             damage: 0
@@ -151,11 +150,11 @@ weapons: [
 		rotate: true
 		rotationLimit: 60
 		baseRotation: -15
-		rotateSpeed: 1.5
+		rotateSpeed: 2.5
 		top: true
 		shootCone: 25
 		reload: 75
-		recoil: 1.25
+		recoil: 6.25
         shoot: {
             firstShotDelay: 25
             shots: 3
