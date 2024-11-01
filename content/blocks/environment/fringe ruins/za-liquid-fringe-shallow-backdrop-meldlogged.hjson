@@ -4,9 +4,8 @@ walkSound: splash
 walkSoundVolume: 0.02
 walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
-speedMultiplier: 0.7
-drownTime: 60
-status: blackout
+speedMultiplier: 0.85
+drownTime: 95
 cacheLayer: water
 isLiquid: true
 emitLight: true

@@ -1,0 +1,80 @@
+type: flying
+speed: 0
+
+//no.
+drag: 20000000
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 25
+lightRadius: 200
+lightOpacity: 1
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+hitSize: -1
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 200
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 198
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 200
+		reload: 0
+		effect: strata-a0-rally
+		duration: 15
+		activeEffect: none
+		applyEffect: none
+	}
+]
+
+immunities: [
+	strata-a0-rally
+]

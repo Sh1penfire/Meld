@@ -6,6 +6,3 @@ breakable: false
 alwaysReplace: false
 
 itemDrop: b0-a0-technoscrap
-
-emitLight: true
-lightColor: 9ccaed

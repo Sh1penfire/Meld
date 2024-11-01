@@ -1,0 +1,7 @@
+type: WobbleProp
+variants: 4
+
+instantDeconstruct: false
+requirements: [
+	a0-a0-debris/5
+]

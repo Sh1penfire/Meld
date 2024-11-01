@@ -13,7 +13,7 @@ hasAtmosphere: true
 bloom: false
 visible: true
 updateLighting: false
-defaultCore: h-core-a0-0a-raft
+defaultCore: h-core-a0-0b-raft
 sectorSize: 2
 radius: 1.2
 bloom: false

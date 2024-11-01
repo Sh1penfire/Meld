@@ -1,0 +1,8 @@
+type: Prop
+solid: true
+variants: 2
+
+instantDeconstruct: false
+requirements: [
+	a0-a0-debris/12
+]

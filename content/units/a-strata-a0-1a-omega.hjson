@@ -26,6 +26,8 @@ mineTier: 3
 
 targetAir: false
 
+useUnitCap: false
+
 alwaysUnlocked: true
 
 weapons: [
@@ -125,7 +127,7 @@ weapons: [
         shoot: {
             firstShotDelay: 25
             shots: 50
-            spread: 1
+            shootSpread: 1
         }
         shootSound: none
         
@@ -384,6 +386,29 @@ abilities: [
 		}
 		applyEffect: none
 	}
+    {
+        type: ShieldRegenFieldAbility
+        range: 0
+        amount: 4
+        max: 120
+        reload: 5
+        activeEffect: none
+        parentizeEffects: true
+        applyEffect: {
+            type: ParticleEffect
+            lifetime: 45
+            region: circle
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: ffd37f00
+            colorTo: ffd37f
+            length: -35
+            baseLength: 35
+            particles: 5
+            interp: pow10In
+            sizeInterp: pow10In
+        }
+    }
 ]
 
 immunities: [
