@@ -23,9 +23,9 @@ targetable: false
 
 drawMinimap: false
 
-fogRadius: 25
-lightRadius: 200
-lightOpacity: 1
+fogRadius: 46
+lightRadius: 368
+lightOpacity: 0.5
 
 deathSound: none
 deathExplosionEffect: none
@@ -42,10 +42,10 @@ parts: [
 		y: 0
 		sides: 60
 		mirror: false
-		radius: 200
+		radius: 368
 		phase: 420
 		stroke: 3
-		circles: 2
+		circles: 4
 		minStroke: 0.5
 		layer: 122
 		color: ffd37f
@@ -56,7 +56,7 @@ parts: [
 		type: ShapePart
 		circle: true
 		hollow: true
-		radius: 198
+		radius: 366
 		stroke: 4
 		layer: 122
 		color: ffd37f

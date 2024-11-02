@@ -4,10 +4,15 @@ walkSound: splash
 walkSoundVolume: 0.02
 walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
+
 speedMultiplier: 0.7
 drownTime: 60
+
 status: blackout
+
 cacheLayer: water
+placeableOn: false
+
 isLiquid: true
 emitLight: true
 lightColor: ca3fba11

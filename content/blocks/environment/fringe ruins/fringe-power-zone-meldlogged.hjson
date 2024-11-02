@@ -60,3 +60,7 @@ effect: {
 		}
 	]
 }
+
+attributes: {
+	aether: 1
+}
