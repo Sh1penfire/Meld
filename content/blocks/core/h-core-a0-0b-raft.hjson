@@ -2,8 +2,6 @@ type: CoreBlock
 health: 4000
 size: 3
 
-placeablePlayer: false
-
 unitType: a-strata-a0-0a-bulbhead
 solid: false
 squareSprite: false

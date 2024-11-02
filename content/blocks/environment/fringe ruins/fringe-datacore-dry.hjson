@@ -1,0 +1,8 @@
+type: Floor
+variants: 0
+
+blendGroup: fringe-plating-dry
+
+emitLight: true
+lightColor: 62b2ef35
+lightRadius: 20

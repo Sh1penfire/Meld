@@ -1,0 +1,57 @@
+type: LiquidRouter
+size: 1
+
+placeableLiquid: true
+category: effect
+
+attribute: beacon-slot
+dumpExtraLiquid: true
+
+hasLiquids: true
+
+solid: true
+
+maxBoost: 1
+
+baseEfficiency: 0
+minEfficiency: 1
+liquidCapacity: 50
+
+ambientSound: glow
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a1-0a-liquid-data
+	}
+	{
+		type: DrawLiquidRegion
+		drawLiquid: z0-0a-lumeniz
+	}
+]
+
+
+consumes: {
+	liquids: [
+		a1-0a-liquid-data/0
+	]
+}
+
+outputLiquids: [
+	z0-0a-lumeniz/1
+	a1-1a-null/0
+]
+
+category: liquid
+
+requirements: [
+	a0-a0-debris/2
+	b0-a0-technoscrap/5
+]
