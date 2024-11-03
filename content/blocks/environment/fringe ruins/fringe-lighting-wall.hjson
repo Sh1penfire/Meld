@@ -8,4 +8,5 @@ alwaysReplace: false
 itemDrop: b0-a0-technoscrap
 
 emitLight: true
-lightColor: 9ccaed
+lightColor: 9ccaed8e
+lightRadius: 32

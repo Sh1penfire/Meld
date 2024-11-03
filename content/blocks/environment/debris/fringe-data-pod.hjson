@@ -1,9 +1,12 @@
 type: Prop
 solid: true
-variants: 2
+variants: 0
 
 instantDeconstruct: false
+
 requirements: [
 	a0-a0-debris/12
-	b0-a0-technoscrap/15
 ]
+
+emitLight: true
+lightColor: 9ccaed

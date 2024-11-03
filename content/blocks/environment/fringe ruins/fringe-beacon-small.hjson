@@ -1,4 +1,4 @@
-type: LiquidRouter
+type: AttributeCrafter
 size: 1
 
 placeableLiquid: true
@@ -21,22 +21,53 @@ ambientSound: glow
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 60
+craftTime: 5
 
 drawer: [
 	{
 		type: DrawRegion
+		suffix: -bottom
 	}
 	{
 		type: DrawLiquidTile
 		drawLiquid: a1-0a-liquid-data
 	}
 	{
-		type: DrawLiquidRegion
-		drawLiquid: z0-0a-lumeniz
+		type: DrawRegion
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 1
+		flameRadiusScl: 5
+		flameRadiusMag: 0.5
+		flameColor: 547dc0
+		flameMidColor: 9ccaed
+		particleRad: -7
 	}
 ]
 
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 35
+			particles: 3
+			baseLength: 35
+			length: -35
+			sizeFrom: 3
+			sizeTo: 0
+			lightScl: 3.5
+			colorFrom: 547dc000
+			colorTo: 547dc0ff
+			clip: 35
+			interp: pow5In
+			sizeInterp: pow2In
+			layer: 29
+		}
+	]
+
+}
 
 consumes: {
 	liquids: [
@@ -45,7 +76,7 @@ consumes: {
 }
 
 outputLiquids: [
-	z0-0a-lumeniz/1
+	a1-0a-liquid-data/0.1
 	a1-1a-null/0
 ]
 
