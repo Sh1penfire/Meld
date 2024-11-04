@@ -6,6 +6,7 @@ unitType: observer
 solid: false
 squareSprite: false
 buildVisibility: shown
+placeableDeep: true
 
 itemCapacity: 350
 unitCapModifier: 0

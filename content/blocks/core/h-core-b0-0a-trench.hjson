@@ -6,6 +6,7 @@ unitType: a-strata-a0-1a-omega
 solid: false
 squareSprite: false
 buildVisibility: shown
+placeableLiquid: false
 
 itemCapacity : 750
 unitCapModifier: 0

@@ -6,6 +6,7 @@ unitType: a-strata-a0-0a-bulbhead
 solid: false
 squareSprite: false
 buildVisibility: shown
+placeableDeep: true
 
 itemCapacity : 750
 unitCapModifier: 6
