@@ -6,7 +6,3 @@ blendGroup: fringe-plating-dry
 emitLight: true
 lightColor: 9ccaed4c
 lightRadius: 20
-
-attributes: {
-	beacon-slot: 1
-}

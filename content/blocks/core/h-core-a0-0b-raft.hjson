@@ -8,7 +8,7 @@ squareSprite: false
 buildVisibility: shown
 placeableDeep: true
 
-itemCapacity : 750
+itemCapacity : 900
 unitCapModifier: 6
 
 alwaysUnlocked: true

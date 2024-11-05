@@ -1,0 +1,12 @@
+type: AttributeCrafter
+
+attribute: killswitch
+minEfficiency: 1
+
+targetable: false
+category: logic
+displayEfficiency: false
+
+requirements: [
+	b0-a0-technoscrap/50
+]

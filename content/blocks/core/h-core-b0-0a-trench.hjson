@@ -8,7 +8,7 @@ squareSprite: false
 buildVisibility: shown
 placeableLiquid: false
 
-itemCapacity : 750
+itemCapacity : 0
 unitCapModifier: 0
 
 alwaysUnlocked: true

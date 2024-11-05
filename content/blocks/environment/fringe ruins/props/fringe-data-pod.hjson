@@ -2,6 +2,8 @@ type: Prop
 solid: true
 variants: 0
 
+customShadow: true
+
 instantDeconstruct: false
 
 requirements: [

@@ -8,7 +8,7 @@ squareSprite: false
 buildVisibility: shown
 placeableDeep: true
 
-itemCapacity: 350
+itemCapacity: 450
 unitCapModifier: 0
 lightRadius: 8
 
