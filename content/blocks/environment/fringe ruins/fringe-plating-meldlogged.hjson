@@ -8,5 +8,5 @@ cacheLayer: water
 isLiquid: true
 
 emitLight: true
-lightColor: d26ab11b
+lightColor: d26ab11c
 lightRadius: 20

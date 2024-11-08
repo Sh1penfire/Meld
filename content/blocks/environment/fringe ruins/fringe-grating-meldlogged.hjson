@@ -9,5 +9,5 @@ isLiquid: true
 blendGroup: fringe-plating-meldlogged
 
 emitLight: true
-lightColor: d26ab11b
-lightRadius: 20
+lightColor: f292d338
+lightRadius: 32

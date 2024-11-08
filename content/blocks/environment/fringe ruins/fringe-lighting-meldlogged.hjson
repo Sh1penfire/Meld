@@ -7,3 +7,8 @@ walkSoundPitchMax: 0.6
 cacheLayer: water
 isLiquid: true
 blendGroup: fringe-plating-meldlogged
+
+
+emitLight: true
+lightColor: f6b6e26d
+lightRadius: 42
