@@ -1,0 +1,30 @@
+type: Wall
+size: 2
+health: 480
+targetable: false
+baseColor: f9e1f3
+hasPower: false
+hasItems: false
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 2
+	fragBullet: {
+		spawnUnit: c-meld-c0-0a-jilla
+	}
+}
+
+requirements: [
+	a2-b0-meld-shard/30
+]
+
+squareSprite: false
+placeableDeep: true
+category: effect
+floating: true
