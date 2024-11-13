@@ -125,9 +125,10 @@ weapons: [
         shootCone: 25
         reload: 75
         shoot: {
+            type: ShootSpread
             firstShotDelay: 25
             shots: 50
-            shootSpread: 1
+            spread: 1
         }
         shootSound: none
         
@@ -135,6 +136,7 @@ weapons: [
             type: RailBulletType
             damage: 0
             knockback: 2
+            length: 25
             trailEffect: none
             shootEffect: none
             pierceEffect: none
@@ -158,8 +160,10 @@ weapons: [
 		reload: 75
 		recoil: 6.25
         shoot: {
+            type: ShootSpread
             firstShotDelay: 25
-            shots: 3
+            shots: 5
+            spread: 7
         }
         
 		inaccuracy: 7
@@ -243,9 +247,9 @@ weapons: [
 
 		bullet: {
 			sprite: shell
-			scaleLife: true
+			scaleLife: false
 			speed: 4.5
-			lifetime: 45
+			lifetime: 15
 			shrinkY: 0.8
 			width: 16
 			height: 14
@@ -253,8 +257,7 @@ weapons: [
 			drag: 0.06
 			fragBullets: 8
 			fragRandomSpread: 25
-			fragLifeMin: 0.5
-			fragLifeMin: 1
+			fragLifeMin: 0
 			fragVelocityMin: 0.7
 			fragVelocityMax: 1
 			rangeOverride: 168
@@ -313,8 +316,8 @@ weapons: [
                 ]
             }
 			fragBullet: {
-				speed: 15.85
-				lifetime: 15
+				speed: 12.85
+				lifetime: 35
 				width: 4
 				height: 8
 				damage: 1
@@ -324,7 +327,7 @@ weapons: [
 				pierceCap: 2
 				homingPower: 0.04
 				knockback: 10
-				drag: 0.12
+				drag: 0.07
 				buildingDamageMultiplier: 0
                 keepVelocity: false
                 impact: true
