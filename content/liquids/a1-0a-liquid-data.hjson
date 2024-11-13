@@ -4,7 +4,7 @@ color: a6d7fc
 lightColor: 31a2f966
 
 research: {
-	parent: b0-a0-technoscrap
+	parent: b0-0a-technoscrap
 	objectives: [
 		{
 			type: OnSector

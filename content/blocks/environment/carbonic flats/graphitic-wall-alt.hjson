@@ -1,5 +1,5 @@
 type: StaticWall
 variants: 3
-itemDrop: a1-a0-carbolith
+itemDrop: a1-0a-carbolith
 playerUnmineable: true
 solid: true

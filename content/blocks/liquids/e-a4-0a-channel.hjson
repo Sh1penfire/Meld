@@ -1,0 +1,39 @@
+type: Conduit
+size: 1
+
+health: 20
+
+placeableLiquid: true
+
+liquidCapacity: 20
+liquidPressure: 10
+
+category: liquid
+
+destroyBullet: {
+	type: BulletType
+	speed: 0
+	lifetime: 10
+	splashDamage: 25
+	splashDamageRadius: 12
+	instantDisappear: false
+	hitEffect: none
+	despawnEffect: none
+	hittable: false
+	absorbable: false
+	collides: false
+	fragBullets: 4
+	fragBullet: {
+		type: RailBulletType
+		length: 8
+		pierceCap: 1
+		damage: 40
+	}
+	fragSpread: 90
+	fragRandomSpread: 0
+}
+
+
+requirements: [
+	a0-0a-debris/5
+]

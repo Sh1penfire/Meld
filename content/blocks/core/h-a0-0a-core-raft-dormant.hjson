@@ -1,0 +1,26 @@
+type: CoreBlock
+health: 1200
+size: 3
+
+unitType: observer
+solid: false
+squareSprite: false
+buildVisibility: shown
+placeableDeep: true
+
+itemCapacity: 450
+unitCapModifier: 0
+lightRadius: 8
+
+alwaysUnlocked: true
+
+research: stratum
+
+requirements: [
+	a0-0a-debris/450
+	b0-0a-technoscrap/250
+	a1-0a-carbolith/350
+]
+
+researchCostMultiplier: 0
+category: effect

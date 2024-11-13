@@ -21,7 +21,7 @@ destroyBullet: {
 }
 
 requirements: [
-	a2-b0-meld-shard/30
+	e0-0a-meld-shard/30
 ]
 
 squareSprite: false

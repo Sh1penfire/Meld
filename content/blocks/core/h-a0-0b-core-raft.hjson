@@ -1,0 +1,26 @@
+type: CoreBlock
+health: 4000
+size: 3
+
+unitType: a-strata-a0-0a-bulbhead
+solid: false
+squareSprite: false
+buildVisibility: shown
+placeableDeep: true
+
+itemCapacity : 900
+unitCapModifier: 6
+
+alwaysUnlocked: true
+
+
+research: stratum
+
+requirements: [
+	a0-0a-debris/600
+	a1-0a-carbolith/350
+	a5-0a-electrum-sheet/350
+]
+
+researchCostMultiplier: 0
+category: effect

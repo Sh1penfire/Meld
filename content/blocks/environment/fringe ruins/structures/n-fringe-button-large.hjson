@@ -7,6 +7,6 @@ buildVisibility: editorOnly
 category: logic
 
 requirements: [
-	a2-a0-silver/35
-	b0-a0-technoscrap/75
+	a2-0a-silver/35
+	b0-0a-technoscrap/75
 ]

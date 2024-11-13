@@ -7,8 +7,8 @@ solid: true
 liquidCapacity: 100
 
 requirements: [
-	a0-a0-debris/200
-	a2-b0-meld-shard/150
+	a0-0a-debris/200
+	e0-0a-meld-shard/150
 ]
 
 craftTime: 720
@@ -45,7 +45,7 @@ consumes: {
 	liquid: a0-0a-aether/4
 }
 
-outputItem: a4-b0-larva/3
+outputItem: h1-0a-larva/3
 
 craftEffect: {
 	type: ParticleEffect

@@ -1,0 +1,40 @@
+type: LiquidTurret
+health: 600
+size: 3
+
+rotateSpeed: 0
+reload: 180
+recoil: 0
+alwaysShooting: true
+outlineIcon: false
+
+range: 80
+fogRadiusMultiplier: 0
+
+squareSprite: false
+
+shootY: 0
+ammoTypes: {
+	a0-0b-aspect: {
+		type: MissileBulletType
+		spawnUnit: anchor-power
+		shootEffect: none
+	}
+}
+
+loopSound: spellLoop
+loopSoundVolume: 0.5
+
+drawer: {
+	type: DrawTurret
+	parts: [
+
+	]
+}
+
+requirements: [
+	a0-0a-debris/80
+	a1-0a-carbolith/120
+]
+
+category: effect

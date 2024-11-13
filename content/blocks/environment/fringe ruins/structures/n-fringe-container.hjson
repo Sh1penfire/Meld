@@ -14,7 +14,7 @@ alwaysUnlocked: true
 research: stratum
 
 requirements: [
-	b0-a0-technoscrap/140
+	b0-0a-technoscrap/140
 ]
 
 researchCostMultiplier: 0

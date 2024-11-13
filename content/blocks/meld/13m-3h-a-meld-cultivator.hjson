@@ -11,8 +11,8 @@ displayEfficiency: false
 squareSprite: false
 
 requirements: [
-	a0-a0-debris/200
-	a2-b0-meld-shard/150
+	a0-0a-debris/200
+	e0-0a-meld-shard/150
 ]
 
 drawer: [

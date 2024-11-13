@@ -5,7 +5,7 @@ solid: true
 breakable: false
 alwaysReplace: false
 
-itemDrop: b0-a0-technoscrap
+itemDrop: b0-0a-technoscrap
 
 emitLight: true
 lightColor: 9ccaed8e

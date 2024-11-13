@@ -35,14 +35,14 @@ If letter doesn't work, use the closest halfway point in the number
 (Ex if stuck between a 2 and an 8, use a 5)
 
 ---------------------------
-a0-a0-debris
+a0-0a-debris
  <- a0-b0-example
 a1-a0-electrum
 ---------------------------
 
 
 ---------------------------
-a0-a0-debris
+a0-0a-debris
  <- a0-a5-example
 a0-b0-carbolith
 ---------------------------
@@ -67,82 +67,82 @@ Replace & with the letter & # with the number
 Ex: c-effect-a-1-nullifier
 
 -Crafters
->a-crafter-&#-#&-<blockname>
+>a-&#-#&-<blockname>
 
 -Walls
->b-wall-&#-#&-<blockname>
+>b-&#-#&-<blockname>
 
 -Effect stuffs
->c-effect-&#-#&-<blockname>
+>c-&#-#&-<blockname>
 
 -Distribution
->d-distrib-&#-#&-<blockname>
+>d-&#-#&-<blockname>
 
 -Fluids
->e-fluid-&#-#&-<blockname>
+>e-&#-#&-<blockname>
 
 -Power
->f-power-&#-#&-<blockname>
+>f-&#-#&-<blockname>
 
 -Drills/Vent harvesters
->g-harvester-&#-#&-<blockname>
+>g-&#-#&-<blockname>
 
 -Cores/Core upgraders
->h-core-&#-#&-<blockname>
+>h-&#-#&-<blockname>
 
 -Storage
->h-storage-&#-#&-<blockname>
+>h-&#-#&-<blockname>
 
 -Turrets
->i-turret-&#-#&-<blockname>
+>i-&#-#&-<blockname>
 
 -Constructors
->j-constructor-&#-#&-<blockname>
+>j-&#-#&-<blockname>
 
 -Payload
->k-payload-&#-#&-<blockname>
+>k-&#-#&-<blockname>
 
 -Logic
->l-logic-&#-#&-<blockname>
+>l-&#-#&-<blockname>
 
 -Meld Constructs
->m-construct-<extended block name>
+>m-<extended block name>
 
 -Fringe tech
->n-fringe-<extended block name>
+>n-<extended block name>
 
 -Special
->o-special-&#-#&-<blockname>
+>o-&#-#&-<blockname>
 
 -Parts
->p-part-&#-#&-<blockname>
+>p-&#-#&-<blockname>
 
 
 ### Within Meld
 
 -Cores
-<prefix>-a-core-&#-#&-<blockname>
+<prefix>-a-&#-#&-<blockname>
 
 -Defense blocks
-<prefix>-b-defense-&#-#&-<blockname>
+<prefix>-b-&#-#&-<blockname>
 
 -Harvesters (Any source of material)
-<prefix>-c-harvester-&#-#&-<blockname>
+<prefix>-c-&#-#&-<blockname>
 
 -Crafters
-<prefix>-d-crafter-&#-#&-<blockname>
+<prefix>-d-&#-#&-<blockname>
 
 -Distribution
-<prefix>-e-distribution-&#-#&-<blockname>
+<prefix>-e-&#-#&-<blockname>
 
 -Fluids
-<prefix>-f-fluids-&#-#&-<blockname>
+<prefix>-f-&#-#&-<blockname>
 
 -Power
-<prefix>-g-power-&#-#&-<blockname>
+<prefix>-g-&#-#&-<blockname>
 
 -Units
-<prefix>-h-units-&#-#&-<blockname>
+<prefix>-h-&#-#&-<blockname>
 
 -Payload
-<prefix>-i-payload-&#-#&-<blockname>
+<prefix>-i-&#-#&-<blockname>

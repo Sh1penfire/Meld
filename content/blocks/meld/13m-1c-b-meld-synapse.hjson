@@ -4,8 +4,8 @@ armor: 300
 size: 5
 
 requirements: [
-	a2-b0-meld-shard/4000
-	a0-a0-debris/12000
+	e0-0a-meld-shard/4000
+	a0-0a-debris/12000
 ]
 
 category: effect

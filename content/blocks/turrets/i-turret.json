@@ -1,0 +1,59 @@
+type: ItemTurret
+size: 2
+health: 840
+range: 272
+fogRadiusMultiplier: 0.25
+reload: 80
+shootSound: bang
+shootEffect: shootBig
+
+requirements: [
+	a1-0a-carbolith/40
+	a2-0a-silver/70
+]
+
+ammoPerShot: 2
+ammoTypes: {
+	a2-0a-silver: {
+		type: ArtilleryBulletType
+		lifetime: 60
+		absorbable: false
+		fragBullets: 1
+		fragBullet: {
+			speed: 0
+			lifetime: 10
+			absorbable: true
+			hitEffect: none
+			despawnEffect: none
+			fragOnAbsorb: false
+			fragBullets: 10
+			fragBullet: {
+				speed: 5
+			}
+		}
+	}
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+targetAir: false
+recoil: 1.5
+inaccuracy: 2
+shootCone: 5
+category: turret
+
+research: {
+    parent: i-turret-a0-0a-sunder
+    objectives: [
+		{
+			type: OnSector
+			preset: 2a-scrapyard
+		}
+    ]
+    
+}

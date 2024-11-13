@@ -5,6 +5,6 @@ placeableLiquid: true
 laserColor2: e5aed7
 
 requirements: [
-	a2-b0-meld-shard/5
+	e0-0a-meld-shard/5
 ]
 category: power

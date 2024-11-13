@@ -1,0 +1,16 @@
+type: Unloader
+size: 1
+
+solid: false
+category: distribution
+
+requirements: [
+	a0-0a-debris/8
+	a1-0a-carbolith/4
+]
+
+research: d-distrib-a1-0a-chute-router
+
+researchCost: [
+	a0-0a-debris/25
+]
