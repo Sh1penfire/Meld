@@ -34,6 +34,7 @@ weapons: [
 		linearWarmup: true
 		shootWarmupSpeed: 0.025
 		minWarmup: 1
+		shootStatus: killa-enabled
 		bullet: {
 			type: ContinuousFlameBulletType
 			damage: 8
