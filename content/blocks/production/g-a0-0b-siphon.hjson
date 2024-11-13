@@ -30,12 +30,12 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		z-2-deposit/0,
-		ld-mercury/0
+		zzzz-2-deposit/0,
+		b1-0a-mercury/0
 	]
 }
 
-outputLiquid: ld-mercury/0
+outputLiquid: b1-0a-mercury/0
 
 requirements: [
  	a0-0a-debris/40

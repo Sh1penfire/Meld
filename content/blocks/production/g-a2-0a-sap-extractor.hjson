@@ -19,7 +19,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: lc-nectar
+		drawLiquid: b0-0a-nectar
 		alpha: 1
 	}
 	{
@@ -40,11 +40,11 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		z-1-valid/0
+		zzzz-1-valid/0
 	]
 }
 
-outputLiquid: lc-nectar/0.333333333333333333333
+outputLiquid: b0-0a-nectar/0.333333333333333333333
 
 category: liquid
 requirements: [
