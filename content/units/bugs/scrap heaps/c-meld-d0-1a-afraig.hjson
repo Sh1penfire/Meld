@@ -16,10 +16,11 @@ drawCell: false
 
 legCount: 4
 legLength: 16
-legForwardScl: 2.5
+legForwardScl: 1.25
 legMaxLength: 2.2
 legBaseOffset: 2.5
 baseLegStraightness: 0.35
+legStraightness: 0.15
 legContinuousMove: true
 lockLegBase: true
 legGroupSize: 2
@@ -32,7 +33,7 @@ weapons: [
 	{
 		name: "afraig-spurter"
 		x: 1.25
-		y: -3.5
+		y: -4.5
 		shootY: 4.5
 		rotateSpeed: 15
 		reload: 20
