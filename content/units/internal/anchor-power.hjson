@@ -20,6 +20,7 @@ hoverable: false
 hovering: true
 
 targetable: false
+hittable: false
 
 drawMinimap: false
 
@@ -98,7 +99,7 @@ abilities: [
 		range: 80
 		reload: 1
 		effect: strata-b1-rebound
-		duration: 60
+		duration: 90
 		activeEffect: none
 	}
 	{

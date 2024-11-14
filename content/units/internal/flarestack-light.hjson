@@ -10,7 +10,6 @@ drag: 1000
 engineSize: 0
 shadowElevation: 0
 createWreck: false
-drawBody: false
 isEnemy: false
 useUnitCap: false
 createWreck: false
@@ -22,8 +21,7 @@ playerControllable: false
 
 //More niche changes can be made to theese
 hoverable: false
-
-targetable: false
+hittable: false
 
 drawMinimap: false
 
@@ -37,7 +35,6 @@ deathExplosionEffect: none
 
 
 drawCell: false
-drawBody: false
 
 parts: [
 	{
