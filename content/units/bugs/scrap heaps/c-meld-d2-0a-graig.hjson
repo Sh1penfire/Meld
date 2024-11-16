@@ -28,8 +28,8 @@ outlineColor: 282b34
 weapons: [
 	{
 		name: "craig-gun"
-		x: -13.5
-		y: 23
+		x: -22.5
+		y: 7.5
 		shootY: 5
 		rotateSpeed: 15
 		reload: 15

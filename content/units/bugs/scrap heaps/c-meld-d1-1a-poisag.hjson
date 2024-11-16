@@ -83,8 +83,13 @@ weapons: [
 abilities: [
 	{
 		type: SpawnDeathAbility
-		amount: 3
+		amount: 1
 		unit: c-meld-d0-0a-craig
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: c-meld-d0-1a-afraig
 	}
 	{
 		type: SpawnDeathAbility
