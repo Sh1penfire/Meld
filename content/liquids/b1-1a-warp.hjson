@@ -1,3 +1,6 @@
 type: Liquid
 gas: true
 color: b460e2
+explosiveness: 15
+temperature: 1.2
+alwaysUnlocked: true

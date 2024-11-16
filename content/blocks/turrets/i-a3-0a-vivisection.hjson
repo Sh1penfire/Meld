@@ -645,8 +645,8 @@ consumes: {
 }
 
 requirements: [
-	a0-0a-debris/280
-	a1-0a-carbolith/160
+	a0-0a-debris/160
+	a1-0a-carbolith/280
 	a2-0a-silver/230
 	a4-0a-resonarum/60
 ]

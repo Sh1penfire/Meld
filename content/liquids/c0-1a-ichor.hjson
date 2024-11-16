@@ -1,5 +1,7 @@
 type: Liquid
-gas: true
-color: e4aad5
+color: 948a00
+viscosity: 0.8
+temperature: 1.25
+heatCapacity: 0.85
 
 research: a1-0a-liquid-data

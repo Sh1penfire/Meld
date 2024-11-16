@@ -1,7 +1,7 @@
 type: legs
 speed: 1
 
-health: 530
+health: 750
 
 drag: 0.12
 accel: 0.2

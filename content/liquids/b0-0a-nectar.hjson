@@ -1,4 +1,5 @@
 type: Liquid
-color: b89f47
+color: 55391b
 viscosity: 0.95
-temperature: 0.35
+temperature: 0.25
+heatCapacity: 1

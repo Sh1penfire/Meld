@@ -1,24 +1,22 @@
 type: ItemTurret
-size: 2
-health: 840
+size: 3
+health: 1160
 range: 200
 fogRadiusMultiplier: 0.25
-reload: 30
+reload: 85
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
 
 recoil: 0.25
 
-velocityRnd: 0.2
 recoil: 1.5
-inaccuracy: 2
+inaccuracy: 7
 shootCone: 5
 
 shoot: {
-	type: ShootAlternate
-	spread: 4
-	shots: 2
+	shots: 3
+    shotDelay: 8
 }
 
 inaccuracy: 8
@@ -59,15 +57,13 @@ drawer: {
 }
 
 ammoTypes: {
-	a0-0a-debris: {
-		type: FlakBulletType
-		speed: 6
-		damage: 2
-		lifetime: 34
-		width: 8
-		height: 12
-		splashDamage: 10
-		splashDamageRadius: 20
+	a1-0a-carbolith: {
+		type: BasicBulletType
+		speed: 4.5
+		damage: 20
+		lifetime: 44
+		width: 12
+		height: 15
 		knockback: 1
 		collidesGround: true
 		hitEffect: {
@@ -107,26 +103,24 @@ ammoTypes: {
                 }
             ]
         }
-        despawnEffect: none
-        fragOnAbsorb: false
 		fragBullets: 2
         shrinkY: 0.2
 		fragBullet: {
-			type: FlakBulletType
-            width: 0
-            height: 0
-            instantDisappear: true
-			speed: 3
-			damage: 0
-			splashDamage: 10
-			splashDamageRadius: 25
-			width: 5
-			height: 12
+			type: LightningBulletType
+            absorbable: false
+            lightningLength: 9
+            lightning: 2
+			damage: 5
 			hitEffect: none
             despawnEffect: none
 		}
-        ammoMultiplier: 3
+        ammoMultiplier: 1
 	}
+}
+
+
+consumes: {
+    power: 3.33333333333
 }
 
 coolant: {
@@ -137,8 +131,9 @@ coolant: {
 }
 
 requirements: [
-	a0-0a-debris/45
-	a1-0a-carbolith/35
+	a0-0a-debris/35
+	a1-0a-carbolith/75
+	a5-0a-electrum-sheet/25
 ]
 
 category: turret

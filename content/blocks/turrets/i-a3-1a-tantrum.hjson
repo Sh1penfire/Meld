@@ -1,0 +1,395 @@
+type: ItemTurret
+size: 5
+health: 2100
+range: 230
+fogRadiusMultiplier: 0.25
+reload: 85
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 55
+            region: meld-swirl
+            colorFrom: 8872da00
+            colorTo: 3b2970
+            sizeFrom: 6
+            sizeTo: 0
+            length: 35
+            particles: 15
+            interp: pow5Out
+            sizeInterp: pow5In
+            layer: 70
+            spin: 35
+            cone: 90
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            colorFrom: 8872da00
+            colorTo: 3b2970
+            sizeFrom: 4
+            sizeTo: 0
+            length: 130
+            particles: 25
+            interp: pow5Out
+            sizeInterp: pow5In
+            layer: 70
+            cone: 25
+        }
+    ]
+}
+
+recoil: 0.25
+
+recoil: 1.5
+inaccuracy: 2
+shootCone: 25
+
+ammoPerShot: 12
+shootY: 8
+
+targetAir: false
+
+shoot: {
+    type: ShootMulti
+    source: {
+        type: ShootBarrel
+        shots: 3
+        barrels: [
+            -12,0,60,
+            0,12,0,
+            12,0,-60
+        ]
+    }
+	dest: [
+        {
+            
+        }
+        {
+            type: ShootHelix
+            shots: 1
+            scl: 30
+            mag: 5
+        }
+    ]
+}
+
+shootSound: mediumCannon
+
+drawer: {
+	type: DrawTurret
+}
+
+ammoTypes: {
+	a2-0a-silver: {
+		type: BulletType
+		damage: 0
+		pierce: true
+        absorbable: false
+        hittable: false
+        removeAfterPierce: false
+        collidesAir: false
+		speed: 11.5
+        drag: 0.07
+		lifetime: 30
+		width: 80
+		height: 80
+		hitSize: 10.75
+		bulletInterval: 8
+		intervalBullets: 1
+        intervalRandomSpread: 0
+		ammoMultiplier: 1
+        trailChance: 0.15
+        trailEffect: {
+            type: ParticleEffect
+            lifetime: 45
+            colorFrom: 8872da00
+            colorTo: 3b2970
+            sizeFrom: 10
+            sizeTo: 0
+            length: 35
+            particles: 3
+            interp: pow5Out
+            sizeInterp: pow5In
+            layer: 109.8
+        }
+        intervalBullet: {
+            instantDisappear: true
+            hitEffect: none
+            despawnEffect: none
+            despawnHit: true
+            spawnBullets: [
+                {
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 0.5
+                    fragAngle: 90
+                    instantDisappear: true
+                    hitEffect: none
+                    despawnHit: true
+                    collides: false
+                    fragBullet: {
+                        type: BulletType
+                        speed: 0.9
+                        drag: 0.01
+                        lifetime: 17
+                        pierce: true
+                        collidesAir: false
+                        absorbable: false
+                        hittable: false
+                        despawnEffect: none
+                        intervalRandomSpread: 15
+                        bulletInterval: 4
+                        intervalAngle: -90
+                        intervalBullet: {
+                            type: BulletType
+                            speed: 3.5
+                            lifetime: 20
+                            pierce: true
+                            collidesAir: false
+                            absorbable: false
+                            hittable: false
+                            knockback: 5
+                            impact: true
+                            hitEffect: {
+                                type: MultiEffect
+                                effects: [
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 65
+                                        particles: 3
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        spin: 45
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 25
+                                        particles: 2
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        cone: 50
+                                        spin: 35
+                                    }
+                                ]
+                            }
+                            despawnEffect: none
+                            despawnHit: true
+                            intervalRandomSpread: 15
+                            bulletInterval: 4
+                            intervalBullet:{
+                                type: RailBulletType
+                                pierce: true
+                                collidesAir: false
+                                damage: 0.1
+                                knockback: 3.25
+                                length: 15
+                                trailEffect: none
+                                shootEffect: none
+                                pierceEffect: none
+                                status: impaled
+                                statusDuration: 15
+                                endEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 45
+                                    line: true
+                                    strokeFrom: 2.5
+                                    length: 35
+                                    lenTo: 0
+                                    particles: 3
+                                    interp: pow2In
+                                    sizeInterp: pow2Out
+                                    colorFrom: 8872da
+                                    colorTo: 8872da00
+                                    cone: 120
+                                }
+                                hitEffect: none
+                                despawnEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 25
+                                    colorFrom: 8872da00
+                                    colorTo: 3b2970
+                                    sizeFrom: 4
+                                    sizeTo: 0
+                                    length: 65
+                                    particles: 4
+                                    interp: pow5Out
+                                    sizeInterp: pow5In
+                                    layer: 69.9
+                                    cone: 80
+                                }
+                            }
+                        }
+                    }
+                }
+                {
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 0.5
+                    fragAngle: -90
+                    instantDisappear: true
+                    hitEffect: none
+                    despawnHit: true
+                    collides: false
+                    fragBullet: {
+                        type: BulletType
+                        speed: 0.9
+                        drag: 0.01
+                        lifetime: 17
+                        pierce: true
+                        collidesAir: false
+                        absorbable: false
+                        hittable: false
+                        despawnEffect: none
+                        intervalRandomSpread: 15
+                        bulletInterval: 4
+                        intervalAngle: 90
+                        intervalBullet: {
+                            type: BulletType
+                            speed: 3.5
+                            lifetime: 20
+                            pierce: true
+                            collidesAir: false
+                            absorbable: false
+                            hittable: false
+                            knockback: 5
+                            impact: true
+                            hitEffect: {
+                                type: MultiEffect
+                                effects: [
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 65
+                                        particles: 3
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        spin: 45
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 25
+                                        particles: 2
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        cone: 50
+                                        spin: 35
+                                    }
+                                ]
+                            }
+                            despawnEffect: none
+                            despawnHit: true
+                            intervalRandomSpread: 15
+                            bulletInterval: 4
+                            intervalBullet:{
+                                type: RailBulletType
+                                pierce: true
+                                collidesAir: false
+                                damage: 0.1
+                                knockback: 3.25
+                                length: 15
+                                trailEffect: none
+                                shootEffect: none
+                                pierceEffect: none
+                                status: impaled
+                                statusDuration: 15
+                                endEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 45
+                                    line: true
+                                    strokeFrom: 2.5
+                                    length: 35
+                                    lenTo: 0
+                                    particles: 3
+                                    interp: pow2In
+                                    sizeInterp: pow2Out
+                                    colorFrom: 8872da
+                                    colorTo: 8872da00
+                                    cone: 120
+                                }
+                                hitEffect: none
+                                despawnEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 25
+                                    colorFrom: 8872da00
+                                    colorTo: 3b2970
+                                    sizeFrom: 4
+                                    sizeTo: 0
+                                    length: 65
+                                    particles: 4
+                                    interp: pow5Out
+                                    sizeInterp: pow5In
+                                    layer: 69.9
+                                    cone: 80
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+	}
+}
+
+consumes: {
+    liquids: [
+        a0-0b-aspect/3.33333333333
+        b1-0a-rift/1
+    ]
+}
+
+requirements: [
+	a0-0a-debris/120
+	a1-0a-carbolith/240
+	a5-0a-electrum-sheet/85
+]
+
+
+
+category: turret
+
+research: {
+    parent: i-turret-a1-0a-molotov
+    objectives: [
+		{
+			type: OnSector
+			preset: 2a-scrapyard
+		}
+    ]
+    
+}
+
+researchCost: [
+	a0-0a-debris/1400
+	a1-0a-carbolith/600
+	a2-0a-silver/1600
+	a5-0a-electrum-sheet/130
+]

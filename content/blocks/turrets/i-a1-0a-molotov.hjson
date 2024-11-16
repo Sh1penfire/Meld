@@ -3,7 +3,7 @@ size: 2
 health: 840
 range: 272
 fogRadiusMultiplier: 0.25
-reload: 80
+reload: 100
 shootSound: bang
 shootEffect: shootBig
 
@@ -16,26 +16,41 @@ ammoPerShot: 2
 ammoTypes: {
 	a2-0a-silver: {
 		type: ArtilleryBulletType
-		speed: 3.2
+		speed: 3.5
 		damage: 1
-		lifetime: 85
+		lifetime: 90
 		width: 12
 		height: 17
 		status: burning
-		statusDuration: 900
+		statusDuration: 300
 		frontColor: ffffff
 		backColor: cbdbfc
 		splashDamage: 48
-		splashDamageRadius: 18
+		splashDamageRadius: 14
 		collidesTiles: false
 		makeFire: true
+		hitShake: 2.5
         fragOnAbsorb: false
         trailColor: cbdbfc
         ammoMultiplier: 1
         fragBullets: 12
         fragVelocityMin: 0.8
         fragVelocityMax: 1
-        fragLifeMin: 0.6
+        fragLifeMin: 0.2
+	fragRandomSpread: 80
+		trailEffect: {
+			type: MultiEffect
+			effects: [
+				artilleryTrail,
+				{
+					type: ParticleEffect
+					lifetime: 12
+					length: 15
+					colorFrom: 7f7f7fff
+					colorTo: 3f3f3fff
+				}
+			]
+		}
 		hitEffect: {
 			type: MultiEffect
 			effects: [
@@ -62,7 +77,7 @@ ammoTypes: {
 		}
 		fragBullet: {
 			type: BasicBulletType
-			speed: 1.5
+			speed: 2.5
 			damage: 10
 			lifetime: 20
 			pierce: true
@@ -74,7 +89,7 @@ ammoTypes: {
 			shrinkX: 1
 			shrinkY: 1
 			status: burning
-			statusDuration: 600
+			statusDuration: 120
 			frontColor: ffffff
 			backColor: cbdbfc
 			splashDamage: 5
