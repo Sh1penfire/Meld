@@ -1,5 +1,8 @@
 type: ForceProjector
 size: 3
+
+customShadow: true
+
 phaseUseTime: 540
 phaseRadiusBoost: 5
 radius: 80
