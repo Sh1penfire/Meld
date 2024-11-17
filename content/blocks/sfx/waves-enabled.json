@@ -1,0 +1,31 @@
+type: PowerTurret
+size: 1
+health: 840
+range: 6000
+rotateSpeed: 36000
+fogRadiusMultiplier: 0
+reload: 0
+shootSound: bang
+shootEffect: shootBig
+targetGround: false
+targetAir: false
+
+requirements: [
+]
+
+ammoPerShot: 0
+
+shootType: {
+	type: PointBulletType
+	damage: 0
+	absorbable: false
+	trailEffect: none
+	killShooter: true
+	hitEffect: explosion
+	fragBullets: 1
+	fragBullet: {
+		spawnUnit: rapid-enemy-mobalization
+	}
+}
+
+category: turret
