@@ -11,7 +11,7 @@ minEfficiency: 8.9
 maxBoost: 2
 boostScale: 0.111111111111111111111111111111111111
 
-liquidCapacity: 50
+liquidCapacity: 300
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -41,7 +41,17 @@ drawer: [
 		angleOffset: 45
 		sinMag: 2.25
 		sinScl: 12
-		lenOffset: 0.75
+		lenOffset: 0.35
+		sides: 2
+	}
+	{
+		type: DrawPistons
+		suffix: -piston-d
+		angleOffset: -45
+		sinMag: 2.25
+		sinScl: 12
+		lenOffset: 0.35
+		sides: 2
 	}
 	{
 		type: DrawRegion

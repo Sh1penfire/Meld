@@ -1,6 +1,8 @@
 type: LiquidRouter
 size: 1
 
+health: 60
+
 placeableLiquid: true
 
 liquidCapacity: 50

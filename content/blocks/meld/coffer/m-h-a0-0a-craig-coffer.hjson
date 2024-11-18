@@ -1,10 +1,8 @@
-type: Wall
+type: LiquidTurret
 size: 2
 health: 480
-targetable: false
+targetable: true
 baseColor: f9e1f3
-hasPower: false
-hasItems: false
 
 destroyBulletSameTeam: true
 destroyBullet: {
@@ -20,11 +18,43 @@ destroyBullet: {
 	}
 }
 
+loopSound: none
+shootSound: pew
+
+shootCone: 15
+
+reload: 5
+recoil: 1.5
+rotateSpeed: 6
+range: 35
+shootY: 5
+
+shootEffect: shootSmall
+
+ammoTypes: {
+	a0-5a-meld: {
+		type: RailBulletType
+		pierceDamageFactor: 1
+		damage: 5
+		length: 60
+		knockback: 1.5
+		smokeEffect: {
+			type: ParticleEffect
+			region: "meld-globule"
+			particles: 2
+			length: 35
+			sizeFrom: 5
+			sizeTo: 0
+			colorFrom: f9e1f300
+			colorTo: f9e1f3
+			sizeInterp: pow5Out
+		}
+	}
+}
+
 requirements: [
-	e0-0a-meld-shard/30
 ]
 
 squareSprite: false
-placeableDeep: true
 category: effect
 floating: true

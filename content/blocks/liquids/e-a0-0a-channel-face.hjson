@@ -1,5 +1,8 @@
 type: LiquidJunction
 size: 1
+
+health: 80
+
 enableDrawStatus: false
 solid: false
 placeableLiquid: true
