@@ -362,7 +362,7 @@ ammoTypes: {
 consumes: {
     liquids: [
         a0-0b-aspect/3.33333333333
-        b1-0a-rift/1
+        c0-0a-rift/1
     ]
 }
 

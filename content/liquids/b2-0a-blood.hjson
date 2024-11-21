@@ -1,0 +1,24 @@
+type: CellLiquid
+color: 7d312f
+
+explosiveness: 0.42
+viscosity: 1.01
+temperature: 153.885
+heatCapacity: 5
+capPuddles: false
+
+spreadTarget: b0-0a-nectar
+
+moveThroughBlocks: true
+incinerable: false
+blockReactive: false
+canStayOn: [
+	a0-5a-meld
+	b0-0a-nectar
+	d0-1a-ichor
+]
+
+colorFrom: 602d2b
+colorTo: d78b65
+
+research: a1-0a-liquid-data

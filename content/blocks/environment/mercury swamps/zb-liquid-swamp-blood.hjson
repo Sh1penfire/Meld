@@ -8,6 +8,13 @@ walkSoundPitchMax: 0.6
 speedMultiplier: 0.7
 
 cacheLayer: mud
-drownTime: 60
+drownTime: 195
+
+status: mangrove-a1-infested
+statusDuration: 5
+
+emitLight: true
+lightColor: e5320b12
+lightRadius: 14
 
 isLiquid: true
