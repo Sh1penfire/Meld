@@ -1,5 +1,25 @@
-type: Liquid
-color: 55391b
+type: CellLiquid
+
 viscosity: 0.95
 temperature: 0.25
 heatCapacity: 1
+
+spreadTarget: b1-0a-mercury
+
+maxSpread: 0.02
+spreadConversion: 0.15
+spreadDamage: 0
+removeScaling: 0.5
+
+effect: mangrove-a0-refreshed
+
+color: 55391b
+
+colorFrom: 7d642c
+colorTo: b89f47
+
+canStayOn: [
+	b0-0a-nectar
+	d0-1a-ichor
+	b3-0a-ooze
+]

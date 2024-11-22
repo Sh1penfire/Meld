@@ -137,10 +137,17 @@ abilities: [
 		}
 		applyEffect: none
 	}
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
 ]
 
 immunities: [
 	strata-a0-rally
+	mangrove-d0-mercury-poisoning
 ]
 
 research: h-a0-0a-core-raft

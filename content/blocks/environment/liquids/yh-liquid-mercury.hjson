@@ -5,16 +5,12 @@ walkSoundVolume: 0.02
 walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
 
-speedMultiplier: 0.7
+speedMultiplier: 1
 
 cacheLayer: mud
-drownTime: 195
 
-status: mangrove-a1-infested
+liquidDrop: b1-0a-mercury
+
 statusDuration: 5
-
-emitLight: true
-lightColor: e5320b12
-lightRadius: 14
 
 isLiquid: true

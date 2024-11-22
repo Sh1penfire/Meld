@@ -1,0 +1,26 @@
+type: CellLiquid
+
+explosiveness: 0.15
+flammability: 0.15
+temperature: 0.00
+
+spreadTarget: b2-0a-blood
+
+maxSpread: 0.12
+spreadConversion: 1
+spreadDamage: 5
+removeScaling: 1
+
+color: 55391b
+
+colorFrom: 663931
+colorTo: 45283c
+
+color: 43201e
+
+canStayOn: [
+	a0-5a-meld
+	b0-0a-nectar
+	d0-1a-ichor
+	b3-0a-ooze
+]

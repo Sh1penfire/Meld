@@ -370,29 +370,29 @@ parts: [
 
 
 abilities: [
-	{
-		type: StatusFieldAbility
-		range: 80
-		reload: 15
-		effect: strata-a0-rally
-		duration: 120
-		activeEffect: {
-			type: ParticleEffect
-			lifetime: 35
-			region: meld-diamond
-			colorFrom: ffd37f
-			colorTo: ffd37f
-			particles: 3
-			spin: 1
-			length: 120
-			sizeFrom: 0
-			sizeTo: 2
-			interp: one
-			sizeInterp: slope
-			lightScl: 0
-		}
-		applyEffect: none
-	}
+    {
+        type: StatusFieldAbility
+        range: 80
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
     {
         type: ShieldRegenFieldAbility
         range: 0
@@ -416,10 +416,17 @@ abilities: [
             sizeInterp: pow10In
         }
     }
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
 ]
 
 immunities: [
 	strata-a0-rally
+	mangrove-d0-mercury-poisoning
 ]
 
 research: h-a0-0a-core-raft

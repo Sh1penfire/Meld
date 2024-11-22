@@ -1,0 +1,14 @@
+type: WobbleProp
+variants: 3
+solid: true
+destructible: true
+breakable: false
+targetable: false
+solid: true
+
+placeableLiquid: true
+
+alwaysReplace: false
+customShadow: true
+drawTeamOverlay: false
+buildVisibility: sandboxOnly

@@ -186,5 +186,9 @@ engines: [
 	}
 ]
 
+immunities: [
+	mangrove-d0-mercury-poisoning
+]
+
 research: j-constructor-c0-0a-ship-factory
 researchCostMultiplier: 0
