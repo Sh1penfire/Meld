@@ -7,6 +7,10 @@ walkSoundPitchMax: 0.6
 
 speedMultiplier: 1
 
+attributes: {
+	nectar: 1
+}
+
 cacheLayer: mud
 
 liquidDrop: b0-0a-nectar

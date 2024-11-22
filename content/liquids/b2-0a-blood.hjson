@@ -19,7 +19,6 @@ spreadTarget: b0-0a-nectar
 
 moveThroughBlocks: true
 incinerable: false
-blockReactive: false
 canStayOn: [
 	a0-5a-meld
 	b0-0a-nectar

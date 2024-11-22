@@ -1,10 +1,15 @@
-type: GenericCrafter
+type: AttributeCrafter
 size: 1
 
 placeableLiquid: true
 liquidOutputDirections: [0]
 rotate: true
 quickRotate: true
+
+attribute: nectar
+baseEfficiency: 0
+minEfficiency: 0.01
+maxBoost: 2
 
 craftTime: 30
 liquidCapacity: 100
@@ -14,13 +19,12 @@ solid: false
 
 drawer: [
 	{
-		type: DrawRegion
-		layer: 31
-	}
-	{
 		type: DrawLiquidTile
 		drawLiquid: b0-0a-nectar
 		alpha: 1
+	}
+	{
+		type: DrawRegion
 	}
 	{
 		type: DrawSideRegion
@@ -46,7 +50,7 @@ consumes: {
 
 outputLiquid: b0-0a-nectar/0.333333333333333333333
 
-category: liquid
+category: production
 requirements: [
 	a0-0a-debris/7
 ]

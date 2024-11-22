@@ -7,9 +7,17 @@ walkSoundPitchMax: 0.6
 
 speedMultiplier: 1
 
+attributes: {
+	nectar: 2
+}
+
 cacheLayer: mud
+drownTime: 270
 
 liquidDrop: b1-0a-mercury
+
+status: mangrove-d0-mercury-poisoning
+statusDuration: 5
 
 statusDuration: 5
 
