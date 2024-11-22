@@ -7,10 +7,6 @@ walkSoundPitchMax: 0.6
 
 speedMultiplier: 0.7
 
-attributes: {
-	nectar: 0
-}
-
 cacheLayer: mud
 drownTime: 195
 
