@@ -1,6 +1,7 @@
 type: AttributeCrafter
 size: 1
 
+floating: true
 placeableLiquid: true
 liquidOutputDirections: [0]
 rotate: true
