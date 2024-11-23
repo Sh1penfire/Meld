@@ -2,7 +2,6 @@ type: Liquid
 
 temperature: 0.45
 
-effect: mangrove-d0-mercury-poisoning
 color: 89828c
 
 canStayOn: [

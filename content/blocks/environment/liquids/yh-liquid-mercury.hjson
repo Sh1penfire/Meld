@@ -16,9 +16,6 @@ drownTime: 270
 
 liquidDrop: b1-0a-mercury
 
-status: mangrove-d0-mercury-poisoning
-statusDuration: 5
-
 statusDuration: 5
 
 isLiquid: true

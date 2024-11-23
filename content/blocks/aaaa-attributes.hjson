@@ -1,0 +1,10 @@
+type: Floor
+variants: 0
+buildVisibility: debugOnly
+inEditor: false
+
+attributes: {
+	aether: 0
+	nectar: 0
+	killswitch: 0
+}

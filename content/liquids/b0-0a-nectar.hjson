@@ -19,7 +19,7 @@ colorFrom: 7d642c
 colorTo: b89f47
 
 canStayOn: [
-	b0-0a-nectar
+	b1-0a-mercury
 	d0-1a-ichor
 	b3-0a-ooze
 ]
