@@ -1,0 +1,34 @@
+type: ConsumeGenerator
+size: 3
+
+health: 540
+
+liquidCapacity: 100
+powerProduction: 0.1
+
+placeableLiquid: true
+floating: true
+
+category: liquid
+
+explodeOnFull: true
+
+requirements: [
+	a0-0a-debris/2
+]
+
+consumes: {
+	items: [
+		f2-0a-elderflesh/1
+	]
+	liquids: [
+		b1-0a-mercury/0.5
+		b2-0a-blood/0.5
+	]
+}
+
+outputLiquid: b2-0a-blood/0.25
+
+researchCost: [
+    a0-0a-debris/20
+]

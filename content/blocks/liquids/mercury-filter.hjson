@@ -1,0 +1,36 @@
+type: AttributeCrafter
+size: 2
+
+attribute: filtration
+
+health: 240
+
+solid: true
+placeableLiquid: true
+floating: true
+
+attribute: filtration
+baseEfficiency: 0
+minEfficiency: 1
+
+category: liquid
+
+requirements: [
+	a0-0a-debris/2
+]
+
+consumes: {
+	liquids: [
+		b1-0a-mercury/0
+		b2-0a-blood/0.25
+		b0-0a-nectar/0.25
+	]
+}
+
+outputLiquids: [
+	b1-0a-mercury/0
+]
+
+researchCost: [
+    a0-0a-debris/20
+]

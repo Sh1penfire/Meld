@@ -1,0 +1,35 @@
+type: GenericCrafter
+size: 1
+
+health: 40
+
+liquidCapacity: 40
+
+placeableLiquid: true
+floating: true
+
+category: liquid
+
+requirements: [
+	a0-0a-debris/2
+]
+
+consumes: {
+	liquids: [
+		b0-0a-nectar/0
+		b1-0a-mercury/0
+		b2-0a-blood/0
+		b3-0a-ooze/0
+	]
+}
+
+outputLiquids: [
+	b0-0a-nectar/0
+	b1-0a-mercury/0
+	b2-0a-blood/0
+	b3-0a-ooze/0
+]
+
+researchCost: [
+    a0-0a-debris/20
+]

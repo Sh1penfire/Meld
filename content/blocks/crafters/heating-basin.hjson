@@ -1,0 +1,56 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 50
+
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 0.00000001
+boostScale: 0.111111111111111111111111111111111111
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+dumpExtraLiquid: true
+
+craftTime: 15
+itemCapacity: 60
+liquidCapacity: 230
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a1-0a-carbolith/2
+	]
+	liquids: [
+		b0-0a-nectar/1
+	]
+}
+
+outputLiquids: [
+	b1-0a-mercury/1
+]
+
+outputItems: [
+	a0-0a-debris/6
+]
+
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

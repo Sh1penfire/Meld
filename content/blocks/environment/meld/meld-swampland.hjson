@@ -9,6 +9,7 @@ cacheLayer: water
 isLiquid: true
 supportsOverlay: true
 
+liquidDrop: a0-5a-meld
 
 emitLight: true
 lightColor: d26ab11b

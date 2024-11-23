@@ -1,0 +1,27 @@
+type: Pump
+size: 3
+
+health: 540
+
+solid: true
+placeableLiquid: true
+floating: true
+
+category: liquid
+
+requirements: [
+	a0-0a-debris/2
+]
+
+consumes: {
+	items: [
+		a0-0a-debris/1
+	]
+	liquids: [
+		a0-0b-aspect/3.3333333333333333333333333333333
+	]
+}
+
+researchCost: [
+    a0-0a-debris/20
+]

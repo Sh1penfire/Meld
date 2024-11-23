@@ -7,4 +7,7 @@ walkSoundPitchMax: 0.4
 drownTime: 160
 cacheLayer: water
 isLiquid: true
+
+liquidDrop: a0-5a-meld
+
 supportsOverlay: true

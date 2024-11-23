@@ -1,0 +1,58 @@
+type: RegenProjector
+size: 1
+range: 2
+healPercent: 0.35
+health: 340
+armor: 0
+
+liquidCapacity: 100
+
+effectChance: 0.05
+baseColor: f0f5fe
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: "-bottom"
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a0-0b-aspect
+	}
+	{
+		type: DrawDefault
+	}
+]
+
+consumes: {
+	liquids: [
+		b2-0a-blood/0.5
+	]
+}
+
+hasPower: false
+hasItems: false
+
+
+research: {
+	parent: h-a0-0a-core-raft
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+
+researchCost: [
+	a0-0a-debris/2000
+	a2-0a-silver/1200
+	b0-1a-fragment/300
+]
+
+requirements: [
+	a0-0a-debris/15
+	f2-0a-elderflesh/8
+]
+category: defense

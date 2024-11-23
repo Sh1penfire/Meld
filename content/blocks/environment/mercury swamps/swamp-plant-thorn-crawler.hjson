@@ -124,7 +124,7 @@ ammoTypes: {
 
 targetable: false
 
-itemDrop: f0-0a-elderflesh
+itemDrop: f2-0a-elderflesh
 
 placeableLiquid: true
 
