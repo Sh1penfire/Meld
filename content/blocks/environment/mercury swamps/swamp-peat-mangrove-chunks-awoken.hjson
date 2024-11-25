@@ -1,0 +1,4 @@
+type: Floor
+variants: 3
+itemDrop: f2-1a-blossoming-elderflesh
+blendGroup: swamp-peat

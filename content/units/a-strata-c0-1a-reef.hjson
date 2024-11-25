@@ -1,23 +1,79 @@
-type: flying
+type: missile
+lifetime: 3600
 flying: true
 shadowElevation: 0.1
 speed: 2.5
 
 health: 210
 
-drag: 0.08
+drag: 0.12
 accel: 0.1
 
 hitSize: 16
 
-fogRadius: 4
+mineSpeed: 4
+mineTier: 3
+itemCapacity: 10
+
+fogRadius: 0
 lightRadius: 45
 lightOpacity: 1
 rotateSpeed: 6
 
 faceTarget: false
+controller: MinerAI
+defaultController: MinerAI
+
+mineItems: [
+	f1-0a-compacted-masses
+	f2-0a-elderflesh
+	f2-1a-blossoming-elderflesh
+]
 
 weapons: [
+//Death explosion to spawn next unit
+    {
+        x: 0
+        y: 0
+        mirror: false
+        shootCone: 180
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        bullet: {
+            spawnUnit: a-strata-c0-1b-bloodied-reef
+        }
+    }
+//Blood particles
+	{
+		x: 0
+		y: 0
+		shootY: 0
+        mirror: false
+		alwaysShooting: true
+		reload: 3610
+		shoot: {
+			firstShotDelay: 2700
+            shotDelay: 15
+            shots: 120
+		}
+        shootSound: none
+		bullet: {
+			instantDisappear: true
+			hitEffect: none
+			shootEffect: {
+				region: meld-b2-0a-blood
+                length: 0
+                baseLength: 35
+                sizeFrom: 3
+                sizeTo: 5
+                colorFrom: ffffff00
+                colorTo: ffffff
+                interp: slope
+                useRotation: false
+			}
+		}
+	}
 	{
         type: PointDefenseWeapon
 		name: reef-blaster
@@ -38,37 +94,105 @@ weapons: [
             damage: 8
 		}
 	}
-	{
-		type: RepairBeamWeapon
-		mirror: false
-		rotate: false
-		shootCone: 15
-		x: 0
-		y: 4
-		shootY: 0
-		beamWidth: 0.4
-
-		repairSpeed: 0.15
-
-		reload: 20
-		targetUnits: false
-		targetBuildings: true
-        	autoTarget: true
-        	controllable: false
-		laserColor: ffd37f
-		healColor: ffd37f
-		bullet: {
-			type: BulletType
-			maxRange: 24
-            healAmount: 3
-		}
-	}
 ]
 
 parts: [
+//Circles which colapse inwards
     {
         type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.9
+				end: 1
+			}
+			{
+				op: curve
+				interp: pow10In
+			}
+		]
+	}
         radius: 32
+	radiusTo: 4
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.95
+				end: 1
+			}
+			{
+				op: curve
+				interp: pow10In
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.98
+				end: 1
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
+	strokeFrom: 0
+	strokeTo: 5
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+//Circle + halo
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
         circle: true
         hollow: true
         stroke: 1
@@ -77,7 +201,21 @@ parts: [
     }
     {
         type: HaloPart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
         haloRadius: 32
+	haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -88,7 +226,21 @@ parts: [
     }
     {
         type: HaloPart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
         haloRadius: 32
+	haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -98,6 +250,35 @@ parts: [
         haloRotateSpeed: 1.5
         shapeRotation: 180
     }
+//Flare
+	{
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd37f
+                rotation: 45
+                rotMove: 125
+                followRotation: false
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.9
+					end: 1
+				}
+				{
+					op: curve
+					interp: pow5Out
+				}
+				{
+					op: curve
+					interp: sine
+				}
+			]
+		}
+	}
 ]
 
 abilities: [
@@ -116,5 +297,5 @@ abilities: [
     }
 ]
 
-research: j-constructor-b1-0a-drone-bay
+research: j-b1-0a-drone-bay
 researchCostMultiplier: 0

@@ -26,14 +26,21 @@ launchMusic: stellar-walkways
 accessible: true
 alwaysUnlocked: true
 itemWhitelist: [
-	a0-0a-debris,
-	a1-0a-carbolith,
-	a2-0a-silver,
-	e0-0a-meld-shard,
-	a5-0a-electrum-sheet,
-	a4-0a-resonarum,
-	b0-1a-fragment,
+	a0-0a-debris
+	a1-0a-carbolith
+	a2-0a-silver
+	e0-0a-meld-shard
+	a5-0a-electrum-sheet
+	a4-0a-resonarum
+	b0-1a-fragment
 	b0-0a-technoscrap
+	c0-0a-industrial-rubble
+	d0-0a-industrial-rubble-cracked
+	f0-0a-bramble-vine
+	f2-0a-elderflesh
+	f2-1a-blossoming-elderflesh
+	f3-0a-coagulated-vigor
+	f5-0a-homunculus-chunk
 ]
 
 mesh: [

@@ -22,7 +22,6 @@ rotateToBuilding: false
 buildRange: 120
 mineRange: 120
 fogRadius: 15
-mineTier: 3
 
 targetAir: false
 

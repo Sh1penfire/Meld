@@ -1,0 +1,47 @@
+type: UnitAssembler
+health: 300
+size: 3
+areaSize: 5
+dronesCreated: 4
+droneConstructTime: 60
+
+plans: [
+	{
+	type: AssemblerUnitPlan
+	unit: a-strata-c0-1a-reef
+	requirements: [
+		meld-p-a0-1a-targeting-matrix/1
+		meld-b-a0-0a-silver-husk/1
+    	]
+    	time: 1300
+  	}
+]
+
+consumes: {
+	liquid: a0-0b-aspect/3.3333333333333333
+}
+
+configurable: false
+
+requirements: [
+ 	a0-0a-debris/60
+	a1-0a-carbolith/65
+	a2-0a-silver/80
+]
+
+category: units
+
+research: {
+	parent: j-constructor-c0-0a-ship-factory
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+
+researchCost: [
+	a0-0a-debris/1200
+	a1-0a-carbolith/1300
+]
