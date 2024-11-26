@@ -16,10 +16,13 @@ requirements: [
 
 consumes: {
 	liquids: [
-		b0-0a-nectar/0
-		b1-0a-mercury/0
-		b2-0a-blood/0
-		b3-0a-ooze/0
+		b0-0a-nectar/0.1
+		b1-0a-mercury/0.1
+		b2-0a-blood/0.1
+		b3-0a-ooze/0.1
+	]
+	items: [
+		a0-0a-debris/1
 	]
 }
 
