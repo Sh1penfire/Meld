@@ -1,0 +1,150 @@
+type: missile
+lifetime: 180
+
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+hittable: false
+
+drawMinimap: false
+
+
+//Same here
+deathSound: release
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 40
+		stroke: 3
+		strokeTo: 0
+		layer: 110
+		color: e3e3e3
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 40
+		radiusTo: 40
+		stroke: 6
+		strokeTo: 0
+		layer: 110
+		color: e3e3e3
+	}
+]
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootCone: 180
+		rotate: false
+		alternate: false
+		mirror: false
+		shootSound: none
+		reload: 5
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		bullet: {
+			instantDisappear: true
+			collides: false
+			absorbable: false
+			hittable: false
+			hitEffect: none
+			despawnEffect: none
+			shootEffect: none
+			smokeEffect: none
+			despawnHit: true
+			puddles: 2
+			puddleRange: 40
+			puddleAmount: 5
+			puddleLiquid: b1-0a-mercury
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootCone: 180
+		rotate: false
+		alternate: false
+		mirror: false
+		shootSound: none
+		reload: 5
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		bullet: {
+			instantDisappear: true
+			collides: false
+			absorbable: false
+			hittable: false
+			hitEffect: none
+			despawnEffect: none
+			shootEffect: none
+			smokeEffect: none
+			splashDamage: 0
+			splashDamageRadius: 40
+			status: mangrove-d0-mercury-poisoning
+			statusDuration: 8
+		}
+	}
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 40
+		reload: 1
+		effect: mangrove-d0-mercury-poisoning
+		duration: 5
+		activeEffect: none
+	}
+]
+
+immunities: [
+	blackout
+	disolving
+	grace
+	interference-negative
+	interference-positive
+	mangrove-a0-refreshed
+	mangrove-a1-infested
+	mangrove-b0-shattered-flame
+	mangrove-d0-mercury-poisoning
+	strata-a0-rally
+	strata-b0-anchored
+	strata-b1-rebound
+	wildlife-a0-amplified
+	wildlife-a1-sentry
+]
