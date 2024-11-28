@@ -1,5 +1,5 @@
 speedMultiplier: 0.3
-dragMultiplier: 3
+dragMultiplier: 4
 healthMultiplier: 1.5
 effectChance: 0
 parentizeApplyEffect: true

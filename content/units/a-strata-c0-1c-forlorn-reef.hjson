@@ -4,7 +4,7 @@ flying: true
 shadowElevation: 0.1
 speed: 4.5
 
-health: 210
+health: 120
 
 drag: 0.12
 accel: 0.1

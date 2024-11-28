@@ -4,7 +4,7 @@ flying: true
 shadowElevation: 0.1
 speed: 2.5
 
-health: 210
+health: 250
 
 drag: 0.12
 accel: 0.1
@@ -295,6 +295,10 @@ abilities: [
         type: RegenAbility
         amount: 0.15
     }
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
 ]
 
 research: j-b1-0a-drone-bay

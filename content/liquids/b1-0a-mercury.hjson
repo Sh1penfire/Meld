@@ -4,6 +4,8 @@ temperature: 0.45
 
 color: 89828c
 
+effect: mangrove-d1-slippery
+
 canStayOn: [
 	b0-0a-nectar
 	d0-1a-ichor
