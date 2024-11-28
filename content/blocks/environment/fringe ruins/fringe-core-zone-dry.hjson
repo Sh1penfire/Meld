@@ -63,3 +63,4 @@ effect: {
 }
 
 isLiquid: true
+liquidDrop: z0-1a-waste

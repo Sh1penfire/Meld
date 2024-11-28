@@ -1,0 +1,7 @@
+type: Liquid
+color: 948a00
+viscosity: 0.45
+temperature: 0.8
+heatCapacity: 0
+
+research: a1-0a-liquid-data
