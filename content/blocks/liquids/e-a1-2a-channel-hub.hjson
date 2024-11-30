@@ -2,6 +2,7 @@ type: LiquidRouter
 size: 4
 
 health: 720
+armor: 5
 
 placeableLiquid: true
 
