@@ -1,0 +1,25 @@
+type: LiquidRouter
+size: 4
+
+health: 720
+
+placeableLiquid: true
+
+liquidCapacity: 5000
+liquidPressure: 1
+
+solid: false
+
+category: liquid
+
+requirements: [
+	a0-0a-debris/550
+	a1-0a-carbolith/250
+	b0-0a-technoscrap/250
+]
+
+research: e-fluid-a1-0a-channel-node
+
+researchCost: [
+    a0-0a-debris/5
+]

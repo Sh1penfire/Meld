@@ -23,7 +23,7 @@ buildRange: 120
 mineRange: 120
 fogRadius: 15
 
-targetAir: false
+hovering: true
 
 weapons: [
 	{

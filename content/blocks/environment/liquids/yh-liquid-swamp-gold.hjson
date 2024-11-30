@@ -1,0 +1,20 @@
+type: Floor
+variants: 3
+walkSound: splash
+walkSoundVolume: 0.02
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.6
+
+dragMultiplier: 1.1
+
+speedMultiplier: 1
+
+attributes: {
+	gold: 0.25
+}
+
+cacheLayer: mud
+
+liquidDrop: z1-0a-cold-waste
+
+isLiquid: true

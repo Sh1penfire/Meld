@@ -32,6 +32,19 @@ mineItems: [
 ]
 
 weapons: [
+//Death explosion to spawn next unit
+    {
+        x: 0
+        y: 0
+        mirror: false
+        shootCone: 180
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        bullet: {
+            spawnUnit: a-strata-c0-1d-shambling-reef
+        }
+    }
 //Death explosion to spawn puddles
     {
         x: 0
@@ -46,9 +59,9 @@ weapons: [
             collides: false
             absorbable: false
             hittable: false
-            fragBullets: 15
+            fragBullets: 7
             fragLifeMin: 0.6
-            puddles: 12
+            puddles: 5
             puddleRange: 9
             puddleAmount: 3.5
             puddleLiquid: b2-0a-blood

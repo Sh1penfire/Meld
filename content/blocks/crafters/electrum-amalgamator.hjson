@@ -1,0 +1,42 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 60
+
+attribute: gold
+baseEfficiency: 0
+minEfficiency: 1
+maxBoost: 3
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+liquidCapacity: 80
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a2-0a-silver/5
+	]
+	liquids: [
+		a0-0b-aspect/3.3333333333333333333333333333333
+		b1-0a-mercury/5
+	]
+}
+
+outputItem: a5-0a-electrum-sheet/1
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]

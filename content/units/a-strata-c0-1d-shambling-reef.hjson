@@ -2,18 +2,18 @@ type: missile
 lifetime: 900
 flying: true
 shadowElevation: 0.1
-speed: 3.2
+speed: 4.5
 
-health: 210
+health: 120
 
 drag: 0.12
 accel: 0.1
 
 hitSize: 16
 
-mineSpeed: 8
-mineTier: 3
-itemCapacity: 15
+mineSpeed: 10
+mineTier: 5
+itemCapacity: 45
 
 fogRadius: 0
 lightRadius: 45
@@ -32,20 +32,7 @@ mineItems: [
 ]
 
 weapons: [
-//Death explosion to spawn next unit
-    {
-        x: 0
-        y: 0
-        mirror: false
-        shootCone: 180
-        controllable: false
-        aiControllable: false
-        shootOnDeath: true
-        bullet: {
-            spawnUnit: a-strata-c0-1c-forlorn-reef
-        }
-    }
-//Death explosion
+//Death explosion to spawn puddles
     {
         x: 0
         y: 0
@@ -61,13 +48,14 @@ weapons: [
             hittable: false
             fragBullets: 15
             fragLifeMin: 0.6
-            puddles: 4
-            puddleRange: 4
-            puddleAmount: 2.5
+            puddles: 12
+            puddleRange: 12
+            puddleAmount: 5.5
             puddleLiquid: b2-0a-blood
-            fragBullets: 9
+            fragBullets: 25
             fragBullet: {
                 sprite: meld-thorn
+                lifetime: 85
                 width: 3
                 height: 9
                 status: mangrove-a1-infested
@@ -82,16 +70,16 @@ weapons: [
 		y: 0
 		shootY: 0
 		alwaysShooting: true
-		reload: 3610
-		shoot: {
-			firstShotDelay: 0
-            shotDelay: 15
-            shots: 120
-		}
+		reload: 15
         shootSound: none
 		bullet: {
 			instantDisappear: true
 			hitEffect: none
+            despawnHit: true
+            puddles: 1
+            puddleRange: 3
+            puddleAmount: 1.5
+            puddleLiquid: b2-0a-blood
 			shootEffect: {
 				region: meld-b2-0a-blood
                 length: 0
