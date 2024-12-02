@@ -9,14 +9,15 @@ applyEffect: {
 	effects: [
 		{
 			type: WaveEffect
-			lifetime: 60
+			lifetime: 25
 			sizeFrom: 45
-			sizeTo: 15
+			sizeTo: 5
 			strokeFrom: 0
 			strokeTo: 5
-			colorFrom: f27121
-			colorTo: f2712100
-			interp: pow5Out
+			colorFrom: c2540f00
+			colorTo: c2540f
+			interp: pow2Out
+			layer: 109
 		}
 		{
 			type: WaveEffect
@@ -48,13 +49,13 @@ applyEffect: {
 			lifetime: 60
 			region: meld-anchor
 			sizeFrom: 3.5
-			sizeTo: 10
+			sizeTo: 12
 			colorFrom: f27121
 			colorTo: f2712100
 			length: 0
 			baseLength: 0
 			particles: 1
-			interp: pow10In
+			interp: pow5In
 			sizeInterp: pow2Out
 		}
 	]

@@ -11,20 +11,75 @@ accel: 0.2
 hitSize: 58
 rotateSpeed: 2.1
 
-useEngineElevation: false
 faceTarget: true
 
 aimDst: 1
-legCount: 4
-legLength: 15
+legCount: 6
+legLength: 65
+legMinlength: 0.75
+legMaxLength: 1.25
 lockLegBase: true
 legContinuousMove: true
-legGroupSize: 2
+legGroupSize: 1
+legFowardScl: 3
+legBaseOffset: 15
+legMoveSpace: 0.65
+legSpeed: 0.005
+drownTimeMultiplier: 5
 
-legMoveSpace: 2
 allowLegStep: true
 
 singleTarget: true
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 130
+            baseLength: 10
+            length: 35
+            particles: 11
+            sizeFrom: 2
+            sizeTo: 5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 12
+            baseLength: 10
+            length: 30
+            line: true
+            lenFrom: 3
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 8
+            length: 55
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 8
+            sizeFrom: 5
+            sizeTo: 45
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: e5aed7
+            colorTo: ffffff
+        }
+    ]
+}
 
 weapons: [
     //continuous flame
@@ -424,24 +479,35 @@ weapons: [
 ]
 
 abilities: [
-	{
-		type: SpawnDeathAbility
-		amount: 20
-		unit: c-meld-c0-0a-jilla
-	}
-	{
-		type: SpawnDeathAbility
-		amount: 3
-		unit: c-meld-c1-0a-gilla
-	}
-	{
-		type: SpawnDeathAbility
-		amount: 2
-		unit: c-meld-d1-0a-braig
-	}
+    {
+        type: SpawnDeathAbility
+        amount: 20
+        unit: c-meld-c0-0a-jilla
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 15
+        unit: c-meld-d0-0a-craig
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 8
+        unit: c-meld-c1-0a-gilla
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 5
+        unit: c-meld-d1-0a-braig
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        unit: kithlid-amplifier-death
+    }
 ]
 
 immunities: [
+    blackout
 	lacerated
 	mangrove-d0-mercury-poisoning
 ]

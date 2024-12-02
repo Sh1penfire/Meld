@@ -2,3 +2,5 @@ type: Floor
 variants: 3
 cacheLayer: water
 isLiquid: true
+
+liquidDrop: a0-5a-meld

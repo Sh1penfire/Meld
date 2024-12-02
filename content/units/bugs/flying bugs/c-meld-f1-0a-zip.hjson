@@ -23,6 +23,56 @@ loopSoundVolume: 0.07
 createWreck: false
 drawCell: false
 
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 130
+            baseLength: 10
+            length: 35
+            particles: 11
+            sizeFrom: 2
+            sizeTo: 5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 12
+            baseLength: 10
+            length: 30
+            line: true
+            lenFrom: 3
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 8
+            length: 55
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 8
+            sizeFrom: 5
+            sizeTo: 45
+            strokeFrom: 4
+            strokeTo: 8
+            colorFrom: e5aed7
+            colorTo: ffffff00
+        }
+    ]
+}
+
 weapons: [
 	{
 		shootOnDeath: true
@@ -45,55 +95,7 @@ weapons: [
 			hitSound: explosion
 
 			rangeOverride: 10
-			hitEffect: {
-				type: MultiEffect
-				effects: [
-					{
-						type: ParticleEffect
-						lifetime: 130
-						baseLength: 10
-						length: 35
-						particles: 11
-						sizeFrom: 2
-						sizeTo: 5
-						sizeInterp: pow5Out
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: ParticleEffect
-						lifetime: 12
-						baseLength: 10
-						length: 30
-						line: true
-						lenFrom: 3
-						lenTo: 0
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: ParticleEffect
-						lifetime: 25
-						baseLength: 10
-						particles: 8
-						length: 55
-						sizeFrom: 4
-						sizeTo: 0
-						colorFrom: e5aed7
-						colorTo: e5aed700
-					}
-					{
-						type: WaveEffect
-						lifetime: 8
-						sizeFrom: 5
-						sizeTo: 45
-						strokeFrom: 4
-						strokeTo: 0
-						colorFrom: e5aed7
-						colorTo: ffffff
-					}
-				]
-			}
+			hitEffect: none
 			speed: 0
 			splashDamageRadius: 35
 			instantDisappear: true

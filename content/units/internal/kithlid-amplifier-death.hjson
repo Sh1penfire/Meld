@@ -1,0 +1,133 @@
+type: missile
+lifetime: 60
+
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+//Same here
+deathSound: release
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 60
+		stroke: 6
+		strokeTo: 0
+		color: e5aed7
+        layer: 110
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow5Out
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 60
+		stroke: 6
+		strokeTo: 0
+		color: e5aed7
+        layer: 110
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow5In
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 60
+		stroke: 4
+		strokeTo: 0
+		color: e5aed7
+        layer: 110
+	}
+]
+
+weapons: [
+	{
+		reload: 0
+		alwaysShooting: true
+		aiControllable: false
+		shootSound: release
+		shootStatus: disarmed
+		shootStatusDuration: 200
+		bullet: {
+			collides: false
+			hittable: false
+			absorbable: false
+			instantDisappear: true
+			shootEffect: none
+			hitSound: none
+		}
+	}
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 60
+		reload: 0
+		effect: wildlife-a0-amplified
+		duration: -1
+		activeEffect: none
+	}
+    {
+		type: StatusFieldAbility
+		range: 60
+		reload: 0
+		effect: grace
+		duration: 1
+		activeEffect: none
+    }
+]
+
+immunities: [
+	wildlife-a0-amplified
+]
