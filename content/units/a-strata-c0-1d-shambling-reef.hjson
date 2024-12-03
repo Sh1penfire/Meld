@@ -23,7 +23,7 @@ rotateSpeed: 6
 faceTarget: false
 controller: MinerAI
 defaultController: MinerAI
-controllable: false
+playerControllable: false
 
 mineItems: [
 	f1-0a-compacted-masses

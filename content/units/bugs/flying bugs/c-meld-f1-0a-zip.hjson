@@ -30,43 +30,74 @@ deathExplosionEffect: {
             type: ParticleEffect
             lifetime: 130
             baseLength: 10
-            length: 35
-            particles: 11
-            sizeFrom: 2
-            sizeTo: 5
-            sizeInterp: pow5Out
-            colorFrom: e5aed7
+            length: 65
+            particles: 7
+            sizeFrom: 15
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow10In
+            colorFrom: e5aed768
             colorTo: e5aed700
         }
         {
             type: ParticleEffect
             lifetime: 12
             baseLength: 10
-            length: 30
+            particles: 15
+            length: 45
             line: true
-            lenFrom: 3
-            lenTo: 0
+            lenFrom: 5
+            lenTo: 2
+            interp: pow2Out
             colorFrom: e5aed7
-            colorTo: e5aed700
+            colorTo: e5aed7
         }
         {
             type: ParticleEffect
-            lifetime: 25
+            lifetime: 75
             baseLength: 10
             particles: 8
             length: 55
             sizeFrom: 4
             sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
             colorFrom: e5aed7
-            colorTo: e5aed700
+            colorTo: e5aed7
+        }
+        {
+            type: ParticleEffect
+            lifetime: 85
+            baseLength: 3
+            length: 125
+            line: true
+            strokeFrom: 2
+            strokeTo: 0
+            lenFrom: 4
+            lenTo: 0
+            interp: pow2Out
+            sizeInterp: pow5In
+            colorFrom: e5aed7
+            colorTo: e5aed7d5
         }
         {
             type: WaveEffect
-            lifetime: 8
+            lifetime: 12
+            sizeFrom: 8
+            sizeTo: 55
+            strokeFrom: 5
+            strokeTo: 2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: WaveEffect
+            lifetime: 14
             sizeFrom: 5
             sizeTo: 45
             strokeFrom: 4
             strokeTo: 8
+            interp: pow5Out
             colorFrom: e5aed7
             colorTo: ffffff00
         }

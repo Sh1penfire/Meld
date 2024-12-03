@@ -6,6 +6,8 @@ parent: fringe-plating-dry
 allowCorePlacement: true
 effectSpacing: 240
 
+liquidDrop: z0-1a-waste
+
 effect: {
 	type: MultiEffect
 	effects: [

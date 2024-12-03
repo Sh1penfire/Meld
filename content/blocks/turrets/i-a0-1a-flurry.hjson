@@ -59,11 +59,15 @@ drawer: {
 ammoTypes: {
 	a1-0a-carbolith: {
 		type: BasicBulletType
+        sprite: meld-electrode
+        frontColor: ebf6ff
+        backColor: a9d8ff
+        lightColor: a9d8ff4b
 		speed: 6
 		damage: 20
 		lifetime: 33
-		width: 8
-		height: 12
+		width: 6
+		height: 9
 		knockback: 1
 		collidesGround: true
 		despawnEffect: none
@@ -137,7 +141,7 @@ ammoTypes: {
             type: LightningBulletType
             absorbable: false
             lightningLength: 9
-            damage: 5
+            damage: 12
             hitEffect: none
             despawnEffect: none
             lightningType: {

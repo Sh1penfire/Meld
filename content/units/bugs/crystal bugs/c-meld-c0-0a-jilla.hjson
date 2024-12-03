@@ -18,6 +18,70 @@ drawBody: false
 
 controller: HugAI
 
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-c-meld-c0-0a-jilla-segment1
+            layer: 65
+            lifetime: 180
+            length: 450
+            baseLength: 4
+            particles: 1
+            sizeFrom: 10
+            sizeTo: 10
+            spin: 21
+            colorFrom: ffffff
+            colorTo: ffffff00
+            lightColor: ffffff00
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 12
+            sizeFrom: 2
+            sizeTo: 20
+            strokeFrom: 1
+            strokeTo: 4
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 3
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
 weapons: [
 	{
 		x: 0

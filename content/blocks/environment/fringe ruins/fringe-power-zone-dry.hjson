@@ -6,6 +6,8 @@ parent: fringe-plating-dry
 allowCorePlacement: true
 effectSpacing: 240
 
+liquidDrop: z0-1a-waste
+
 emitLight: true
 lightColor: 9ccaed4c
 lightRadius: 20

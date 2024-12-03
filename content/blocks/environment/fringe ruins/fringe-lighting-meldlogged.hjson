@@ -8,6 +8,7 @@ cacheLayer: water
 isLiquid: true
 blendGroup: fringe-plating-meldlogged
 
+liquidDrop: z0-1a-waste
 
 emitLight: true
 lightColor: f6b6e26d

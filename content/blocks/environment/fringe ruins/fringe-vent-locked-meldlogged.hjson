@@ -8,6 +8,8 @@ isLiquid: true
 cacheLayer: water
 effectSpacing: 240
 
+liquidDrop: z0-1a-waste
+
 effect: {
 	type: MultiEffect
 	effects: [

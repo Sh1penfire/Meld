@@ -1,0 +1,146 @@
+type: legs
+speed: 0.7
+
+health: 1800
+armor: 12
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 45
+rotateSpeed: 5.25
+faceTarget: true
+
+drawCell: false
+
+legCount: 4
+legLength: 30
+legGroupSize: 1
+legLengthScl: 0.9
+legBaseOffset: 20
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+outlineColor: 282b34
+
+weapons: [
+	{
+		x: 16.25
+		y: 4.25
+		shootY: 11
+		reload: 125
+		shootCone: 15
+        
+		rotate: true
+		rotateSpeed: 1.5
+        rotationLimit: 60
+        recoil: 6.5
+        
+		mirror: true
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: stunned
+		shootStatusDuration: 24
+        
+		layerOffset: -0.01
+		predictTarget: false
+        
+        parts: [
+            {
+                type: RegionPart
+                name: meld-globkin-gun-blob
+                y: 10
+                moves: [
+                    {
+                        gx: -1
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: compress
+                                    start: 0.0
+                                    end: 0.5
+                                }
+                                {
+                                    op: curve
+                                    interp: pow10In
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        gy: -1
+                        y: -6
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: compress
+                                    start: 0.0
+                                    end: 0.65
+                                }
+                                {
+                                    op: curve
+                                    interp: pow5Out
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+            {
+                type: RegionPart
+                name: meld-globkin-gun
+            }
+        ]
+
+		bullet: {
+			type: BulletType
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+            
+            fragBullets: 6
+            fragRandomSpread: 45
+            recoil: 4.5
+            fragMinVelocity: 0.7
+            fragMinLife: 0.8
+            fragBullet: {
+                type: ArtilleryBulletType
+                damage: 0
+                collides: true
+                speed: 4.7
+                lifetime: 52
+                knockback: 12
+                width: 10
+                height: 13
+                fragBullets: 1
+                status: stunned
+                statusDuration: 12
+                fragBullet: {
+                    spawnUnit: blob
+                }
+                keepVelocity: false
+            }
+            keepVelocity: false
+			rangeOverride: 95
+		}
+	}
+]
+
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 4
+		unit: c-meld-d1-0a-braig
+	}
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

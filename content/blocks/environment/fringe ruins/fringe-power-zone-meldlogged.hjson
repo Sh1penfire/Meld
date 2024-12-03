@@ -8,6 +8,12 @@ isLiquid: true
 cacheLayer: water
 effectSpacing: 240
 
+liquidDrop: z0-1a-waste
+
+emitLight: true
+lightColor: f6b6e28d
+lightRadius: 85
+
 effect: {
 	type: MultiEffect
 	effects: [

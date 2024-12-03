@@ -166,7 +166,7 @@ parts: [
 	}
         radius: 32
 	radiusTo: 4
-	strokeFrom: 0
+	stroke: 0
 	strokeTo: 5
         circle: true
         hollow: true

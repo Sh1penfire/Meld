@@ -8,6 +8,9 @@ speedMultiplier: 0.85
 drownTime: 95
 cacheLayer: water
 isLiquid: true
+
+liquidDrop: z0-1a-waste
+
 emitLight: true
 lightColor: ca3fba11
 lightRadius: 15

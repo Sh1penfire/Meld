@@ -20,7 +20,6 @@ spreadTarget: b0-0a-nectar
 moveThroughBlocks: true
 incinerable: false
 canStayOn: [
-	a0-5a-meld
 	b0-0a-nectar
 	d0-1a-ichor
 	b3-0a-ooze
