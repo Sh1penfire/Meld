@@ -130,6 +130,14 @@ abilities: [
 		duration: 5
 		activeEffect: none
 	}
+	{
+		type: StatusFieldAbility
+		range: 40
+		reload: 1
+		effect: mangrove-d1-slippery
+		duration: 10
+		activeEffect: none
+	}
 ]
 
 immunities: [

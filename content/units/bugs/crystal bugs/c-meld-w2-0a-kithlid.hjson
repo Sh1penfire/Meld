@@ -101,7 +101,7 @@ weapons: [
             optimalLifeFract: 0.25
             lifetime: 240
 			flareColor: d22fee
-			damage: 13
+			damage: 18
 			flareLength: 42
 			flareWidth: 6.2
 			length: 160

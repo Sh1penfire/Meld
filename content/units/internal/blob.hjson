@@ -3,7 +3,7 @@ segments: 0
 flying: false
 
 loopSound: none
-speed: 0.1
+speed: 0.35
 useUnitCap: false
 isEnemy: false
 defaultController: HugAI
