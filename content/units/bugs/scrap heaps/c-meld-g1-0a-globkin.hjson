@@ -13,7 +13,7 @@ faceTarget: true
 
 drawCell: false
 
-legCount: 4
+legCount: 6
 legLength: 30
 legGroupSize: 2
 legLengthScl: 0.9
