@@ -15,12 +15,15 @@ solid: false
 drawer: [
 	{
 		type: DrawRegion
-		layer: 31
+		suffix: -bottom
 	}
 	{
 		type: DrawLiquidTile
 		drawLiquid: a0-0b-aspect
 		alpha: 1
+	}
+	{
+		type: DrawRegion
 	}
 	{
 		type: DrawSideRegion

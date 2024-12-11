@@ -4,7 +4,7 @@ size: 3
 health: 540
 
 liquidCapacity: 100
-powerProduction: 0.1
+powerProduction: 2
 
 placeableLiquid: true
 floating: true

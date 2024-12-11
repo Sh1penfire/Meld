@@ -1,0 +1,77 @@
+type: GenericCrafter
+size: 1
+
+health: 40
+
+liquidCapacity: 40
+
+placeableLiquid: true
+floating: true
+solid: false
+
+category: liquid
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b0-0a-nectar
+		alpha: 1
+		padRight: 4
+		padBottom: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		alpha: 1
+		padLeft: 4
+		padBottom: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b2-0a-blood
+		alpha: 1
+		padRight: 4
+		padTop: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b3-0a-ooze
+		alpha: 1
+		padLeft: 4
+		padTop: 4
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+requirements: [
+	a0-0a-debris/2
+]
+
+consumes: {
+	liquids: [
+		b0-0a-nectar/0.1
+		b1-0a-mercury/0.1
+		b2-0a-blood/0.1
+		b3-0a-ooze/0.1
+	]
+	items: [
+		a0-0a-debris/1
+	]
+}
+
+outputLiquids: [
+	b0-0a-nectar/0
+	b1-0a-mercury/0
+	b2-0a-blood/0
+	b3-0a-ooze/0
+]
+
+researchCost: [
+    a0-0a-debris/20
+]

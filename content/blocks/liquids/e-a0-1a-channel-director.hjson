@@ -9,6 +9,7 @@ liquidCapacity: 30
 liquidPressure: 0.5
 
 category: liquid
+botColor: 2f2d39
 
 destroyBullet: {
 	type: BulletType

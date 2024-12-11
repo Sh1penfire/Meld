@@ -1,0 +1,115 @@
+type: AttributeCrafter
+size: 2
+
+attribute: filtration
+
+health: 620
+
+solid: true
+placeableLiquid: true
+floating: true
+
+attribute: filtration
+baseEfficiency: 0
+minEfficiency: 1
+liquidCapacity: 120
+
+category: liquid
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -base-1
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b2-0a-blood
+	}
+	{
+		type: DrawRegion
+		suffix: -base-2
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b0-0a-nectar
+		padRight: 6
+		padLeft: 6
+	}
+	{
+		type: DrawRegion
+		suffix: -base-3
+	}
+	{
+		type: DrawRegion
+		suffix: -bars
+		rotateSpeed: 2.5
+	}
+	{
+		type: DrawRegion
+		suffix: -bars
+		rotateSpeed: -2.5
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		padTop: 5.5
+		padBottom: 5.5
+	}
+	{
+		type: DrawParticles
+		particles: 4
+		alpha: 0.75
+		particleLife: 45
+		rotateScl: 0.5
+		color: 89828c
+	}
+	{
+		type: DrawParticles
+		particles: 12
+		alpha: 0.35
+		particleLife: 85
+		rotateScl: 7.5
+		reverse: true
+		color: 89828c
+	}
+	{
+		type: DrawPistons
+		suffix: -piston
+		sinMag: 2.0
+		sinScl: 2.25
+		sides: 2
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	liquids: [
+		a0-0b-aspect/1.6666666666
+		b1-0a-mercury/0
+		b2-0a-blood/1.50
+		b0-0a-nectar/0.25
+	]
+}
+
+outputLiquids: [
+	b1-0a-mercury/0.25
+]
+
+outputItems: [
+	a0-0a-debris/2
+	f1-1a-starving-masses/3
+]
+
+requirements: [
+	a0-0a-debris/85
+	a2-0a-silver/35
+	f0-0a-bramble-vine/15
+	f1-0a-compacted-masses/75
+]
+
+
+researchCost: [
+    a0-0a-debris/20
+]
