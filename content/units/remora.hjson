@@ -1,0 +1,190 @@
+type: hover
+hovering: true
+shadowElevation: 0.1
+speed: 2.5
+
+health: 720
+armor: 2
+
+drag: 0.12
+accel: 0.25
+
+hitSize: 21
+fogRadius: 14
+
+lightRadius: 85
+lightOpacity: 0.35
+range: 100
+rotateSpeed: 6
+
+useEngineElevation: false
+faceTarget: false
+
+weapons: [
+    //main weapon
+	{
+		name: remora-launcher
+        X:8
+        y: -0.5
+        shootY: 4
+		mirror: true
+		alternate: true
+		rotate: true
+		rotateSpeed: 7.5
+		top: true
+		shootCone: 25
+		reload: 45
+		recoil: 4.25
+        shoot: {
+            type: ShootSpread
+            shots: 1
+        }
+        
+		inaccuracy: 7
+        velocityRnd: 0.1
+		shootSound: saw-hit
+        parentizeEffects: false
+
+		parts: [
+		{
+                type: RegionPart
+                suffix: -spear
+                mirror: false
+                outline: false
+                moveX: 0
+                growX: -4
+		moveY: -2
+                color: ffffff
+                colorTo: ffffff00
+		layerOffset: 0.01
+		outlineLayerOffset: 0.01
+                growProgress: {
+                    type: reload
+                    ops: [
+			{
+				op: compress
+				start: 0
+				end: 0.8
+			}
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+			{
+				op: compress
+				start: 0
+				end: 0.8
+			}
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+		moves: [
+			{
+				y: 1.5
+				progress: {
+				type: reload
+		                ops: [
+					{
+						op: curve
+						interp: reverse
+					}
+					{
+						op: compress
+						start: 0.5
+						end: 0.95
+					}
+        	        	        {
+        		                	op: curve
+	                	        	interp: pow5In
+                        		}
+        	        	        {
+        		                	op: curve
+	                	        	interp: bounce
+                        		}
+	                    	]
+				}
+			}
+		]
+			}
+            {
+                type: RegionPart
+                suffix: ""
+		layerOffset: 0.01
+		outlineLayerOffset: 0.01
+            }
+            {
+                type: RegionPart
+                suffix: -slider
+                mirror: false
+                outline: false
+                moveY: 4
+                color: ffffff
+                colorTo: ffffff00
+		layerOffset: 0.01
+		outlineLayerOffset: 0.01
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+		]				
+
+		bullet: {
+			sprite: meld-remora-spear
+			scaleLife: false
+			homingPower: 0.05
+			speed: 6
+			lifetime: 45
+			width: 10
+			height: 28
+            		frontColor: bf92f9
+            		backColor: 6656bd
+			damage: 0
+			keepVelocity: false
+			hitSound: bang
+            		trailWidth: 2
+            		trailLength: 7
+            		trailColor: 6656bd
+			fragBullets: 3
+			fragRandomSpread: 25
+			fragVelocityMin: 0.7
+			fragVelocityMax: 1
+            		fragOnAbsorb: false
+			knockback: -18
+			impact: true
+			status: impaled
+			statusDuration: 24
+			fragBullet: {
+				type: SapBulletType
+				damage: 6
+				sapStrength: 1
+				length: 15
+				pierce: true
+				keepVelocity: false
+				knockback: 0
+				color: bf92f9
+				status: none
+			}
+			rangeOverride: 240
+		}
+	}
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+]
+
+research: h-a0-0a-core-raft
