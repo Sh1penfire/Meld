@@ -10,7 +10,6 @@ allowLaunchToNumbered: false
 allowLaunchLoadout: false
 allowSectorInvasion: false
 hasAtmosphere: true
-bloom: false
 visible: true
 updateLighting: false
 defaultCore: h-a0-0a-core-raft-dormant
