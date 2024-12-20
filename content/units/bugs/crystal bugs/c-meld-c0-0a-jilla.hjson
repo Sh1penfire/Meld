@@ -114,3 +114,7 @@ weapons: [
 		}
 	}
 ]
+
+immunities: [
+    aspect-burn
+]

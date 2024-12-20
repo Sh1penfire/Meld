@@ -21,11 +21,11 @@ ammoTypes: {
 		lifetime: 90
 		width: 12
 		height: 17
-		status: burning
+		status: aspect-burn
 		statusDuration: 300
 		frontColor: ffffff
 		backColor: cbdbfc
-		splashDamage: 48
+		splashDamage: 35
 		splashDamageRadius: 14
 		collidesTiles: false
 		makeFire: true
@@ -78,7 +78,7 @@ ammoTypes: {
 		fragBullet: {
 			type: BasicBulletType
 			speed: 2.5
-			damage: 10
+			damage: 6
 			lifetime: 20
 			pierce: true
 			pierceCap: 2

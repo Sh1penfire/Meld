@@ -1,0 +1,38 @@
+type: ConsumeGenerator
+size: 5
+
+health: 540
+
+itemCapacity: 20
+liquidCapacity: 100
+powerProduction: 2
+
+placeableLiquid: true
+floating: true
+
+category: liquid
+
+itemDuration: 120
+
+explodeOnFull: true
+
+requirements: [
+	a0-0a-debris/2
+]
+
+
+
+consumes: {
+	items: [
+		f1-1a-starving-masses/10
+	]
+	liquids: [
+		b1-0a-mercury/0.25
+	]
+}
+
+outputLiquid: b2-0a-blood/0.25
+
+researchCost: [
+    a0-0a-debris/20
+]

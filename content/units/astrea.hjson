@@ -37,7 +37,7 @@ weapons: [
 		rotateSpeed: 4.5
 		top: true
 		shootCone: 25
-		reload: 120
+		reload: 145
 		recoil: 6.25
         shoot: {
             type: ShootSpread
@@ -139,7 +139,7 @@ weapons: [
 			height: 16
             frontColor: cae4ec
             backColor: 83a5be
-			damage: 85
+			damage: 95
 			keepVelocity: false
 			hitSound: bang
             trailWidth: 2.2
@@ -151,7 +151,8 @@ weapons: [
 			fragVelocityMin: 0.7
 			fragVelocityMax: 1
             pierce: true
-            pierceCap: 2
+            pierceCap: 5
+			knockback: 5
             pierceArmor: true
             fragOnHit: false
 			fragBullet: {

@@ -2,7 +2,6 @@ type: Wall
 size: 2
 health: 480
 targetable: false
-baseColor: f9e1f3
 hasPower: false
 hasItems: false
 
@@ -25,6 +24,5 @@ requirements: [
 ]
 
 squareSprite: false
-placeableDeep: true
 category: effect
 floating: true

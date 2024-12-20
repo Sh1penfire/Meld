@@ -6,12 +6,6 @@ category: effect
 
 dumpExtraLiquid: true
 
-maxBoost: 5
-
-baseEfficiency: 0
-minEfficiency: 4
-boostScale: 0.25
-
 liquidCapacity: 50
 itemCapacity: 60
 

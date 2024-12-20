@@ -1,0 +1,72 @@
+damage: 0.05
+healthMultiplier: 0.5
+effectChance: 0.25
+parentizeApplyEffect: true
+
+effect: {
+    type: ParticleEffect
+    lifetime: 65
+    line: true
+    length: 4
+    sizeFrom: 2.5
+    sizeTo: 1.5
+    colorFrom: 7f7f7fff
+    colorTo: cbdbfc
+    length: 3
+    particles: 2
+}
+
+applyEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: WaveEffect
+			lifetime: 25
+			sizeFrom: 12
+			sizeTo: 32
+			strokeFrom: 5
+			strokeTo: 0
+            colorFrom: 7f7f7f00
+            colorTo: cbdbfc
+			interp: pow2Out
+			layer: 109
+		}
+		{
+			type: WaveEffect
+			lifetime: 85
+			sizeFrom: 25
+			sizeTo: 6
+			strokeFrom: 8
+			strokeTo: 0
+            colorFrom: 7f7f7f00
+            colorTo: cbdbfc
+			interp: pow10Out
+		}
+		{
+			type: ParticleEffect
+			lifetime: 65
+			region: particle
+			sizeFrom: 2.5
+			sizeTo: 0
+            colorFrom: 7f7f7fff
+            colorTo: 3f3f3fff
+			length: 55
+			particles: 15
+			sizeInterp: pow2In
+            followParent: false
+		}
+		{
+			type: ParticleEffect
+			lifetime: 45
+			region: particle
+			sizeFrom: 7.5
+			sizeTo: 0
+            colorFrom: ffffff
+            colorTo: cbdbfc
+			length: 75
+			particles: 15
+			sizeInterp: pow2In
+            followParent: false
+		}
+	]
+}

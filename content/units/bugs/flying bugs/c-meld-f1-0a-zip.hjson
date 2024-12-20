@@ -193,3 +193,7 @@ abilities: [
 		}
 	}
 ]
+
+immunities: [
+    aspect-burn
+]

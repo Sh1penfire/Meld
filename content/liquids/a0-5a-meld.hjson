@@ -3,4 +3,6 @@ gas: true
 color: e4aad5
 alwaysUnlocked: true
 
+temperature: 0.65
+
 research: ikaru

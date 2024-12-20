@@ -6,8 +6,8 @@ heatCapacity: 1
 
 spreadTarget: b1-0a-mercury
 
-maxSpread: 0.02
-spreadConversion: 0.15
+maxSpread: 0.5
+spreadConversion: 0.85
 spreadDamage: 0
 removeScaling: 0.5
 

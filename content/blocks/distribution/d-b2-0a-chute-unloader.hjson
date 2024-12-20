@@ -1,12 +1,14 @@
 type: Unloader
 size: 1
 
+speed: 4
+
 solid: false
 category: distribution
 
 requirements: [
-	a0-0a-debris/8
-	a1-0a-carbolith/4
+	a0-0a-debris/12
+	b0-0a-technoscrap/20
 ]
 
 research: d-distrib-a1-0a-chute-router

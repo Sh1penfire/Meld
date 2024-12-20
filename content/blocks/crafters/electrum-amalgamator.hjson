@@ -16,7 +16,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 60
+craftTime: 120
 liquidCapacity: 80
 
 drawer: [
@@ -27,6 +27,7 @@ drawer: [
 
 consumes: {
 	items: [
+		a0-0a-debris/2
 		a2-0a-silver/5
 	]
 	liquids: [
@@ -35,7 +36,7 @@ consumes: {
 	]
 }
 
-outputItem: a5-0a-electrum-sheet/1
+outputItem: a5-0a-electrum-sheet/8
 requirements: [
  	a0-0a-debris/80
 	a2-0a-silver/60

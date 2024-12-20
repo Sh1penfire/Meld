@@ -254,3 +254,7 @@ abilities: [
 		unit: c-meld-d0-0a-craig
 	}
 ]
+
+immunities: [
+    aspect-burn
+]

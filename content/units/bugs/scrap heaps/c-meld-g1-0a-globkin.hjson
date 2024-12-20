@@ -204,8 +204,6 @@ weapons: [
             fragBullets: 6
             fragRandomSpread: 45
             recoil: 4.5
-            fragMinVelocity: 0.7
-            fragMinLife: 0.8
             fragBullet: {
                 type: ArtilleryBulletType
                 damage: 0
@@ -235,10 +233,7 @@ weapons: [
                     
                     fragRandomSpread: 45
                     recoil: 4.5
-                    fragMinVelocity: 0.7
-                    fragMinLife: 0.8
                     fragBullets: 12
-                    fragLifeMin: 0.7
                     fragBullet: {
                         status: stunned
                         statusDuration: 5
@@ -256,7 +251,7 @@ weapons: [
                         splashDamage: 12
                         splashDamageRadius: 25
                         status: stunned
-                        statusDuratoin: 6
+                        statusDuration: 35
                         knockback: 5.5
                         trailEffect: smoke
                         shootEffect: shootBig

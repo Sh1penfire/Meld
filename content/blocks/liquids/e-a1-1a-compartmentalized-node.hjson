@@ -50,7 +50,9 @@ drawer: [
 ]
 
 requirements: [
-	a0-0a-debris/2
+	a0-0a-debris/6
+	a2-0a-silver/4
+	f1-1a-starving-masses/6
 ]
 
 consumes: {

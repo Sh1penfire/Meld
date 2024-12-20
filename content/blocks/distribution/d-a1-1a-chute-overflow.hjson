@@ -3,7 +3,7 @@ size: 1
 
 category: distribution
 requirements: [
-	a0-0a-debris/6
+	a0-0a-debris/7
 ]
 
 research: d-distrib-a0-0a-chute

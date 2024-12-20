@@ -110,7 +110,6 @@ ammoTypes: {
             fragBullet: {
                 type: LiquidBulletType
                 liquid: b1-0a-mercury
-                amount: 0.5
                 pierce: true
                 pierceCap: 2
             }

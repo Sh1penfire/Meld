@@ -30,6 +30,208 @@ useUnitCap: false
 alwaysUnlocked: true
 
 weapons: [
+    //Damaging part of omega when launched backwards (parts 1-4 based on speed)
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 8
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: ffffff00
+                colorTo: ffffff
+            }
+        ]
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 9
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 11
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 13
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 26
+            damage: 25
+            knockback: -75
+            keepVelocity: true
+            //Basically just a modified shoot effect, cause it looks alright and saves me time
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 11
+                        interp: pow3
+                        baseLength: 10
+                        length: 35
+                        particles: 4
+                        sizeFrom: 8
+                        sizeTo: 0
+                        cone: 25
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 58
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 6
+                        interp: pow5Out
+                        sizeInterp: pow3
+                        baseLength: 10
+                        length: 35
+                        particles: 2
+                        sizeFrom: 5
+                        sizeTo: 0
+                        cone: 35
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 58
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 12
+                        sizeInterp: pow5In
+                        baseLength: 2
+                        length: 24
+                        line: true
+                        particles: 25
+                        strokeFrom: 2.5
+                        strokeTo: 0
+                        lenFrom: 4
+                        lenTo: 0
+                        cone: 35
+                        colorFrom: ffd2ae
+                        colorTo: e58956
+                        layer: 59
+                        followParent: false
+                    }
+                ]
+            }
+            impact: true
+            collidesAir: false
+        }
+    }
     //Creates the smoke from the end of the gun
     {
         x: 11
@@ -283,6 +485,7 @@ weapons: [
                         cone: 25
                         colorFrom: 6e7080
                         colorTo: 565666
+                        layer: 109
                         followParent: false
                     }
                     {
@@ -298,6 +501,7 @@ weapons: [
                         cone: 35
                         colorFrom: 6e7080
                         colorTo: 565666
+                        layer: 109
                         followParent: false
                     }
                     {
