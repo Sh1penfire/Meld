@@ -40,32 +40,146 @@ parts: [
     {
         type: RegionPart
         name: meld-scorcher-nest-crystal
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.6
+                    end: 1
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+        color: ffffff
+        colorTo: ffffff00
+        outline: false
+    }
+    {
+        type: RegionPart
+        name: meld-scorcher-nest-mount-glow
+        blending: additive
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.07
+                    end: 0.85
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        color: ef85e3e300
+        colorTo: d22fee
+        outline: false
+    }
+    {
+        type: RegionPart
+        name: meld-scorcher-nest-crystal-shine
+        blending: additive
+        heatProgress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.1
+                    end: 0.75
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow3In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0
+                    end: 0.85
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        color: ffffff
+        colorTo: ffffff00
         outline: false
     }
 ]
 
 weapons: [
+    {
+        reload: 270
+        shootStatus: disarmed
+        shootStatusDuration: 30
+        alwaysShooting: true
+        shootSound: none
+        bullet: {
+            shootEffect: none
+            despawnEffect: none
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+        }
+    }
 	{
-		x: -7
-		y: -7
+		x: -8
+		y: -8
 		mirror: false
 		alternate: false
         rotate: true
         rotateSpeed: 2.5
 		reload: 14
 		shootCone: 180
-        
-		shootY: 3
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
 		continuous: true
 		alwaysContinuous: true
         controllable: false
         autoTarget: true
         targetSwitchInterval: 5
 		shootSound: torch
-		
+        
 		bullet: {
 			type: ContinuousFlameBulletType
-            lifetime: 85
+            lifetime: 25
 			damage: 35
 			flareLength: 0
 			length: 75
@@ -73,36 +187,38 @@ weapons: [
 			knockback: 1
 			pierceCap: 3
 			flareLength: 8
+            //Meld flame colours
 			colors: [
 				f9e1f343,
-				f1ace994,
-				ef85e3a9,
-				ee5de9e3,
-				d22fee
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
 			]
 		}
 	}
 	{
-		x: 7
-		y: -7
+		x: 8
+		y: -8
 		mirror: false
 		alternate: false
         rotate: true
         rotateSpeed: 2.5
 		reload: 14
 		shootCone: 180
-        
-		shootY: 3
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
 		continuous: true
 		alwaysContinuous: true
         controllable: false
         autoTarget: true
         targetSwitchInterval: 5
 		shootSound: torch
-		
+        
 		bullet: {
 			type: ContinuousFlameBulletType
-            lifetime: 85
+            lifetime: 25
 			damage: 35
 			flareLength: 0
 			length: 75
@@ -110,36 +226,38 @@ weapons: [
 			knockback: 1
 			pierceCap: 3
 			flareLength: 8
+            //Meld flame colours
 			colors: [
 				f9e1f343,
-				f1ace994,
-				ef85e3a9,
-				ee5de9e3,
-				d22fee
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
 			]
 		}
 	}
 	{
-		x: 7
-		y: 7
+		x: 8
+		y: 8
 		mirror: false
 		alternate: false
         rotate: true
         rotateSpeed: 2.5
 		reload: 14
 		shootCone: 180
-        
-		shootY: 3
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
 		continuous: true
 		alwaysContinuous: true
         controllable: false
         autoTarget: true
         targetSwitchInterval: 5
 		shootSound: torch
-		
+        
 		bullet: {
 			type: ContinuousFlameBulletType
-            lifetime: 85
+            lifetime: 25
 			damage: 35
 			flareLength: 0
 			length: 75
@@ -147,36 +265,38 @@ weapons: [
 			knockback: 1
 			pierceCap: 3
 			flareLength: 8
+            //Meld flame colours
 			colors: [
 				f9e1f343,
-				f1ace994,
-				ef85e3a9,
-				ee5de9e3,
-				d22fee
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
 			]
 		}
 	}
 	{
-		x: -7
-		y: 7
+		x: -8
+		y: 8
 		mirror: false
 		alternate: false
         rotate: true
         rotateSpeed: 2.5
 		reload: 14
 		shootCone: 180
-        
-		shootY: 3
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
 		continuous: true
 		alwaysContinuous: true
         controllable: false
         autoTarget: true
         targetSwitchInterval: 5
 		shootSound: torch
-		
+        
 		bullet: {
 			type: ContinuousFlameBulletType
-            lifetime: 85
+            lifetime: 25
 			damage: 35
 			flareLength: 0
 			length: 75
@@ -184,12 +304,13 @@ weapons: [
 			knockback: 1
 			pierceCap: 3
 			flareLength: 8
+            //Meld flame colours
 			colors: [
 				f9e1f343,
-				f1ace994,
-				ef85e3a9,
-				ee5de9e3,
-				d22fee
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
 			]
 		}
 	}

@@ -22,13 +22,33 @@ shootY: 0
 loopSound: none
 shootSound: mediumCannon
 
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 12
+    fragLifeMin: 0.2
+	fragBullet: {
+        lifetime: 12
+        absorbable: false
+        collides: false
+        hittable: false
+        hitEffect: false
+        despawnEffect: false
+		despawnUnit: c-meld-c0-1a-scorcher
+	}
+}
+
 shoot: {
     firstShotDelay: 60
 }
 
 drawer: {
 	type: DrawTurret
-    shadowLayer: 0
 	parts: [
 		{
 			type: RegionPart

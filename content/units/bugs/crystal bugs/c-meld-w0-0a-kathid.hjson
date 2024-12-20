@@ -46,12 +46,13 @@ weapons: [
 			width: 1.7
 			knockback: 1
 			pierceCap: 2
+            //Meld flame colours
 			colors: [
 				f9e1f343,
-				f1ace994,
-				ef85e3a9,
-				ee5de9e3,
-				d22fee
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
 			]
 		}
 		parts: [

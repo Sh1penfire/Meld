@@ -500,10 +500,6 @@ ammoTypes: {
 			colorFrom: 85c799
 			colorTo: 4bb66b
 		}
-        chargeEffect: {
-            type: SoundEffect
-            sound: saw-charge
-        }
 		despawnEffect: none
 		intervalBullet: {
 			type: BasicBulletType

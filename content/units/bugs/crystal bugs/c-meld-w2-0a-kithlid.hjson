@@ -16,12 +16,10 @@ faceTarget: true
 aimDst: 1
 legCount: 6
 legLength: 65
-legMinlength: 0.75
 legMaxLength: 1.25
 lockLegBase: true
 legContinuousMove: true
 legGroupSize: 1
-legFowardScl: 3
 legBaseOffset: 15
 legMoveSpace: 0.65
 legSpeed: 0.005
@@ -107,6 +105,7 @@ weapons: [
 			length: 160
 			width: 6.7
 			knockback: 4.5
+            //Meld flame colours
 			colors: [
 				f9e1f343,
 				ee5de9a9,
@@ -417,7 +416,7 @@ weapons: [
         top: true
         x: 18.25
         y: -20.5
-        controllableAI: false
+        aiControllable: false
         controllable: false
         autoTarget: true
         rotate: true
