@@ -4,18 +4,12 @@ walkSound: splash
 walkSoundVolume: 0.02
 walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
-
-speedMultiplier: 0.35
-drownTime: 60
-
-status: blackout
+cacheLayer: water
+isLiquid: true
+blendGroup: fringe-plating-meldlogged
 
 liquidDrop: z0-1a-waste
 
-cacheLayer: water
-placeableOn: false
-
-isLiquid: true
 emitLight: true
-lightColor: ca3fba11
-lightRadius: 15
+lightColor: f6b6e24d
+lightRadius: 11

@@ -1,7 +1,7 @@
 type: naval
 speed: 2.55
 
-health: 280
+health: 290
 aimDst: 10
 range: 50
 drag: 0.15
@@ -22,8 +22,6 @@ rotateToBuilding: false
 buildRange: 120
 mineRange: 120
 fogRadius: 15
-
-hovering: true
 
 weapons: [
 	{
@@ -135,6 +133,10 @@ abilities: [
 			lightScl: 0
 		}
 		applyEffect: none
+	}
+	{
+		type: RegenAbility
+		amount: 0.35
 	}
     {
         type: LiquidRegenAbility

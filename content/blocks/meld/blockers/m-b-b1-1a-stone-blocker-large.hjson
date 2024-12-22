@@ -1,0 +1,16 @@
+type: Wall
+size: 2
+range: 2
+health: 1200
+armor: 500000
+targetable: false
+baseColor: f9e1f3
+
+requirements: [
+	a1-0a-carbolith/40
+]
+
+customShadow: true
+squareSprite: false
+category: effect
+floating: true

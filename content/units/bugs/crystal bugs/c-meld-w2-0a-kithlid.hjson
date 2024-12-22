@@ -114,6 +114,17 @@ weapons: [
 				ffffff
 			]
 		}
+        parts: [
+            {
+                type: RegionPart
+                name: meld-kithlid-crystal-shine
+                progress: recoil
+                blending: additive
+                outline: false
+                color: ffffff00
+                colorTo: ffffff82
+            }
+        ]
 	}
 	{
 		x: 0

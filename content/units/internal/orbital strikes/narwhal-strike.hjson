@@ -1,0 +1,553 @@
+type: missile
+lifetime: 1
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 0
+lightRadius: 0
+lightOpacity: 0
+
+drawCell: false
+drawBody: false
+aimDst: 0
+
+deathExplosionEffect: [
+    {
+        type: WaveEffect
+        lifetime: 64
+        strokeFrom: 0
+        strokeTo: 1
+        sizeFrom: 60
+        sizeTo: 60
+        interp: slope
+        colorFrom: cae4ec
+        layer: 170
+    }
+    {
+    type: RadialEffect
+    rotationOffset: 45
+        effect: {
+            lifetime: 80
+            particles: 1
+            cone: 0
+            line: true
+            strokeFrom: 4
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 24
+            length: 0.1
+            baseLength: 60
+            randLength: false
+            colorFrom: cae4ec
+            sizeInterp: pow5In
+            layer: 170
+        }
+    }
+]
+
+weapons: [
+    {
+        name: remora-launcher-spear
+        rotate: true
+        mirror: false
+        rotateSpeed: 0
+        baseRotation: 225
+        shootCone: 360
+        shootOnDeath: true
+        aiControllable: false
+        x: -180
+        y: 180
+        shootY: 0
+        inaccuracy: 0
+        bullet: {
+            parts: [
+                {
+                    type: RegionPart
+                    name: meld-narwhal-launcher-payload
+                    outline: false
+                    moves: [
+                        {
+                            gx: 35
+                            gy: 35
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow5Out
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                        {
+                            rot: 240
+                            progress: life
+                        }
+                    ]
+                    progress: {
+                        type: life
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.75
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                    color: ffffff00
+                    colorTo: ffffff
+                    layer: 170
+                }
+                {
+                    type: RegionPart
+                    name: meld-narwhal-launcher-payload
+                    outline: false
+                    moves: [
+                        {
+                            gx: 35
+                            gy: 35
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow5Out
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                        {
+                            rot: 240
+                            progress: life
+                        }
+                    ]
+                    progress: {
+                        type: life
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.35
+                            }
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                    color: ffffff00
+                    colorTo: ffffff
+                    layer: 129
+                }
+            ]
+            lifetime: 64
+            speed: 4
+            
+            hitEffect: none
+            despawnEffect: none
+            shootEffect: [
+                {
+                        type: ParticleEffect
+                        region: particle
+                        lifetime: 120
+                        sizeFrom: 24
+                        sizeTo: 0
+                        length: 65
+                        colorFrom: a4328025
+                        colorTo: 7f7f7f1b
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        layer: 170
+                        cone: 25
+                }
+                {
+                        type: ParticleEffect
+                        region: particle
+                        lifetime: 96
+                        sizeFrom: 17
+                        sizeTo: 0
+                        length: 45
+                        colorFrom: a4328013
+                        colorTo: 7f7f7f3b
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        layer: 170
+                        cone: 45
+                }
+                {
+                        type: ParticleEffect
+                        region: particle
+                        lifetime: 75
+                        sizeFrom: 35
+                        sizeTo: 0
+                        length: 65
+                        colorFrom: a432800a
+                        colorTo: bfbfbf37
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        layer: 170
+                        cone: 85
+                }
+            ]
+            
+            absorbable: false
+            hittable: false
+            collides: false
+            
+            fragBullets: 1
+            fragBullet: {
+                type: BulletType
+                speed: 0
+                damage: 25
+                
+                lifetime: 60
+                
+                parts: [
+                    {
+                        type: RegionPart
+                        name: meld-narwhal-launcher-payload
+                        outline: false
+                    }
+                ]
+                
+                hittable: false
+                collides: false
+                absorbable: true
+                
+                fragBullets: 1
+                
+                fragOnHit: false
+                fragOnAbsorb: false
+                
+                setDefaults: false
+                despawnHit: false
+                
+                despawnEffect: none
+                hitEffect: none
+                
+                spawnBullets: [
+                    {
+                        type: BulletType
+                        lifetime: 8
+                        speed: 0
+                        
+                        absorbable: true
+                        despawnEffect: none
+                        hitEffect: none
+                        
+                        hittable: false
+                        collides: false
+                        fragOnAbsorb: false
+                        fragBullets: 1
+                        fragBullet: {
+                            instantDisappear: true
+                            hittable: false
+                            absorbable: false
+                            collides: false
+                            
+                            despawnEffect: {
+                                type: WaveEffect
+                                lifetime: 32
+                                strokeFrom: 15
+                                strokeTo: 1
+                                sizeFrom: 8
+                                sizeTo: 60
+                                interp: pow5Out
+                                colorFrom: cae4ec34
+                                colorTo: cae4ec00
+                            }
+                        }
+                    }
+                ]
+                fragBullet: {
+                    speed: 0
+                    hittable: true
+                    absorbable: false
+                    collides: false
+
+                    lifetime: 30
+                    fragOnAbsorb: false
+                    bulletInterval: 8
+                    intervalBullet: {
+                        type: BulletType
+                        damage: 0
+                        collidesTiles: false
+                        lifetime: 2
+                        hitEffect: none
+                        despawnEffect: none
+                        pierce: true
+                        fragOnAbsorb: false
+
+                        homingPower: 10
+                        homingRange: 2
+                        fragBullets: 1
+                        fragLifeMin: 0.75
+                        fragLifeMax: 1.25
+                        fragRandomSpread: 0
+
+                        fragBullet: {
+                            type: BasicBulletType
+                            lifetime: 45
+                            damage: 0.25
+
+                            splashDamage: 65
+                            splashDamageRadius: 25
+
+                            collidesAir: false
+
+                            speed: 1.5
+                            drag: -0.027
+                            homingPower: 0.25
+
+                            pierce: false
+                            weaveMag: 4.5
+                            weaveScale: 75
+
+                            width: 12
+                            height: 16
+
+                            trailChance: 0.08
+                            trailEffect: {
+                                type: ParticleEffect
+                                lifetime: 35
+                                baseRotation: 180
+                                cone: 35
+                                particles: 2
+                                length: 3
+                                colorFrom: cae4ec
+                                colorTo: cae4ec
+                            }
+
+                            shrinkX: 1
+                            shrinkY: 1
+                            trailLength: 5
+                            trailWidth: 1.75
+                            trailSinScl: 35
+                            trailInterp: reverse
+
+                            frontColor: cae4ec
+                            backColor: cae4ec
+                            trailColor: cae4ec
+                            hitEffect: [
+                                {
+                                    type: ParticleEffect
+                                    lifetime: 17
+                                    line: true
+                                    particles: 8
+                                    lenFrom: 4
+                                    lenTo: 2
+                                    length: 85
+                                    strokeFrom: 2
+                                    strokeTo: 0.5
+                                    interp: pow2Out
+                                    sizeInterp: pow2In
+                                    colorFrom: cae4ec
+                                    colorTo: cae4ec00
+                                }
+                                {
+                                    type: ParticleEffect
+                                    lifetime: 22
+                                    line: true
+                                    particles: 12
+                                    lenFrom: 4
+                                    lenTo: 2
+                                    length: 35
+                                    strokeFrom: 3
+                                    strokeTo: 1
+                                    interp: pow2Out
+                                    sizeInterp: pow2In
+                                    colorFrom: cae4ec
+                                    colorTo: cae4ec00
+                                }
+                                {
+                                    type: ParticleEffect
+                                    lifetime: 32
+                                    line: true
+                                    particles: 12
+                                    lenFrom: 4
+                                    lenTo: 2
+                                    length: 24
+                                    strokeFrom: 1
+                                    strokeTo: 2
+                                    interp: pow2Out
+                                    sizeInterp: pow2In
+                                    colorFrom: cae4ec
+                                    colorTo: cae4ec00
+                                }
+                                {
+                                    type: WaveEffect
+                                    lifetime: 14
+                                    sizeFrom: 0
+                                    sizeTo: 25
+                                    colorFrom: ffffff
+                                    colorTo: ffffff
+                                    strokeFrom: 3
+                                    strokeTo: 0
+                                }
+                                {
+                                    type: WaveEffect
+                                    lifetime: 7
+                                    sizeFrom: 0
+                                    sizeTo: 28
+                                    colorFrom: ffffff
+                                    colorTo: ffffff00
+                                    strokeFrom: 1
+                                    strokeTo: 5
+                                }
+                            ]
+
+                            despawnEffect: none
+
+                            fragBullets: 3
+                            fragBullet: {
+                                type: BasicBulletType
+                                lifetime: 25
+                                damage: 0.25
+
+                                splashDamage: 35
+                                splashDamageRadius: 25
+
+                                collidesAir: false
+
+                                speed: 3.5
+                                homingPower: 0.5
+
+                                pierce: false
+                                weaveMag: 7.5
+                                weaveScale: 35
+
+                                width: 8
+                                height: 12
+
+                                trailChance: 0.08
+                                trailEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 35
+                                    baseRotation: 180
+                                    cone: 35
+                                    particles: 2
+                                    length: 3
+                                    colorFrom: cae4ec
+                                    colorTo: cae4ec
+                                }
+
+                                shrinkX: 1
+                                shrinkY: 1
+                                trailLength: 5
+                                trailWidth: 1.75
+                                trailSinScl: 35
+                                trailInterp: reverse
+
+                                frontColor: cae4ec
+                                backColor: cae4ec
+                                trailColor: cae4ec
+                                hitEffect: [
+                                    {
+                                        type: ParticleEffect
+                                        lifetime: 17
+                                        line: true
+                                        particles: 2
+                                        lenFrom: 4
+                                        lenTo: 2
+                                        length: 85
+                                        strokeFrom: 2
+                                        strokeTo: 0.5
+                                        interp: pow2Out
+                                        sizeInterp: pow2In
+                                        colorFrom: cae4ec
+                                        colorTo: cae4ec00
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        lifetime: 22
+                                        line: true
+                                        particles: 5
+                                        lenFrom: 4
+                                        lenTo: 2
+                                        length: 35
+                                        strokeFrom: 3
+                                        strokeTo: 1
+                                        interp: pow2Out
+                                        sizeInterp: pow2In
+                                        colorFrom: cae4ec
+                                        colorTo: cae4ec00
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        lifetime: 32
+                                        line: true
+                                        particles: 4
+                                        lenFrom: 4
+                                        lenTo: 2
+                                        length: 24
+                                        strokeFrom: 1
+                                        strokeTo: 2
+                                        interp: pow2Out
+                                        sizeInterp: pow2In
+                                        colorFrom: cae4ec
+                                        colorTo: cae4ec00
+                                    }
+                                    {
+                                        type: WaveEffect
+                                        lifetime: 14
+                                        sizeFrom: 0
+                                        sizeTo: 8
+                                        colorFrom: ffffff
+                                        colorTo: ffffff
+                                        strokeFrom: 3
+                                        strokeTo: 0
+                                    }
+                                    {
+                                        type: WaveEffect
+                                        lifetime: 7
+                                        sizeFrom: 0
+                                        sizeTo: 12
+                                        colorFrom: ffffff
+                                        colorTo: ffffff00
+                                        strokeFrom: 1
+                                        strokeTo: 5
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
