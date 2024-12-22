@@ -1,0 +1,60 @@
+type: SteamVent
+variants: 0
+blendGroup: carbonic-plates
+parent: carbonic-plates
+
+effectSpacing: 15
+
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 125
+            sizeInterp: slope
+            length: 25
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: fcf69cb1
+            colorTo: 948a0000
+            layer: 61.7
+            spin: 12
+            baseRotation: 32.5
+        }
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 65
+            baseLength: 4
+            sizeFrom: 4
+            sizeTo: 8
+            colorFrom: fcf69cb1
+            colorTo: 948a0000
+            layer: 61.8
+            cone: 45
+            baseRotation: 30
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 65
+            baseLength: 4
+            sizeFrom: 4
+            sizeTo: 8
+            colorFrom: fcf69cb1
+            colorTo: 948a0000
+            layer: 61.9
+            cone: 35
+            baseRotation: 30
+        }
+    ]
+}
+attributes: {
+	steam: 1
+	heat: 1
+	ichor: 1
+}
