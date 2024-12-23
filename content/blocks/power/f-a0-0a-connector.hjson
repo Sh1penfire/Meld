@@ -1,0 +1,21 @@
+type: PowerNode
+size: 1
+
+laserRange: 5
+maxNodes: 4
+
+fogRadius: 1
+
+laserColor2: e5aed7
+
+consumes: {
+    power: 0.15
+}
+
+requirements: [
+    a1-1a-compacted-brick/25
+    a1-2a-stony-gloop/25
+	a5-0a-electrum-sheet/5
+]
+
+category: power

@@ -1,0 +1,16 @@
+type: BeamNode
+size: 5
+range: 50
+
+fogRadius: 3
+
+laserColor2: e5aed7
+
+
+requirements: [
+    a1-0a-carbolith/500
+    a4-0a-resonarum/450
+	a5-0a-electrum-sheet/600
+]
+
+category: power

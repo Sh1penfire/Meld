@@ -5,12 +5,12 @@ health: 540
 
 itemCapacity: 20
 liquidCapacity: 100
-powerProduction: 2
+powerProduction: 4
 
 placeableLiquid: true
 floating: true
 
-category: liquid
+category: power
 
 itemDuration: 120
 
@@ -31,7 +31,7 @@ consumes: {
 	]
 }
 
-outputLiquid: b2-0a-blood/0.25
+outputLiquid: b2-0a-blood/1
 
 researchCost: [
     a0-0a-debris/20

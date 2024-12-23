@@ -18,7 +18,7 @@ squareSprite: false
 
 dumpExtraLiquid: true
 
-craftTime: 15
+craftTime: 12
 itemCapacity: 60
 liquidCapacity: 230
 

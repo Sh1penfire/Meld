@@ -57,4 +57,5 @@ attributes: {
 	steam: 1
 	heat: 1
 	ichor: 1
+	ichor-vent: 1
 }

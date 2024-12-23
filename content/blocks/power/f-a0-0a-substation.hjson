@@ -1,0 +1,25 @@
+type: PowerNode
+size: 3
+
+laserRange: 25
+maxNodes: 3
+
+fogRadius: 2
+
+laserColor2: e5aed7
+
+consumesPower: true
+outputsPower: true
+
+consumes: {
+    power: 0.5
+    powerBuffered: 300
+}
+
+requirements: [
+    a2-0a-silver/25
+    a4-0a-resonarum/5
+	a5-0a-electrum-sheet/30
+]
+
+category: power
