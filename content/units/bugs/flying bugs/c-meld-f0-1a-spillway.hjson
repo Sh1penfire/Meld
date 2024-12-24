@@ -1,0 +1,285 @@
+type: flying
+flying: true
+shadowElevation: 0.1
+speed: 1.8
+
+health: 620
+
+drag: 0.08
+accel: 0.15
+
+hitSize: 21
+rotateSpeed: 5.5
+engineOffset: 13
+engineSize: 0
+crashDamageMultiplier: 2
+maxRange: 145
+range: 240
+
+faceTarget: true
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 85
+            baseLength: 10
+            length: 35
+            particles: 11
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            baseLength: 2
+            length: 12
+            particles: 4
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: e5aed7
+            colorTo: e5aed7a3
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 55
+            line: true
+            lenFrom: 5
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+            sizeInterp: pow5In
+        }
+        {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 5
+            sizeTo: 35
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: e5aed7
+            colorTo: ffffff
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: spillway-weapon
+		x: 0
+		y: 0
+		top: false
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		shootCone: 180
+		reload: 180
+		recoil: 0
+		inaccuracy: 5
+		shootSound: flame
+		shootStatus: unmoving
+		shootStatusDuration: 45
+		linearWarmup: true
+		shootWarmupSpeed: 0.01
+		minWarmup: 1
+		
+		shoot: {
+			firstShotDelay: 25
+		}
+		parts: [
+			{
+				type: RegionPart
+				name: meld-spillway-side
+				mirror: true
+				moveRot: -30
+				progress: {
+					type: warmup
+					ops: [
+						{
+							op: curve
+							interp: pow5Out
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: meld-spillway-projectile
+				moveY: 10
+				layer: 114
+				color: ffffff00
+				colorTo: ffffff
+				outline: false
+				progress: {
+					type: charge
+					ops: [
+						{
+							op: curve
+							interp: pow5In
+						}
+					]
+				}
+			}
+		]
+
+		
+
+		bullet: {
+			spawnUnit: spillway-projectile
+			rangeOverride: 200
+			recoil: 5
+			killShooter: true
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+
+			rangeOverride: 10
+			hitEffect: none
+			speed: 0
+			splashDamageRadius: 25
+			instantDisappear: true
+			splashDamage: 35
+			killShooter: true
+			hittable: false
+		}
+	}
+]
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: c-meld-d0-0a-craig
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-g0-0a-wuba
+	}
+	{
+		type: MoveEffectAbility
+		x: 10
+		y: -9
+		rotateEffect: true
+		rotation: 225
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: 0
+					particles: 2
+					length: 15
+					sizeFrom: 3
+					sizeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: -5
+					particles: 3
+					length: 15
+					sizeFrom: 4
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 25
+					length: 25
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 4
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: -10
+		y: -9
+		rotateEffect: true
+		rotation: 135
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: 0
+					particles: 2
+					length: 15
+					sizeFrom: 3
+					sizeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: -5
+					particles: 3
+					length: 15
+					sizeFrom: 4
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 25
+					length: 25
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 4
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+]
+
+immunities: [
+    aspect-burn
+]
