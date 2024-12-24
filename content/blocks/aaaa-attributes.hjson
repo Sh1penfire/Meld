@@ -5,6 +5,7 @@ inEditor: false
 
 attributes: {
 	aether: 0
+	deposit: 0
 	nectar: 0
 	killswitch: 0
 	ichor: 0

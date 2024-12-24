@@ -1,0 +1,12 @@
+type: SteamVent
+variants: 0
+blendGroup: carbonic-mercury-suroundings
+parent: carbonic-mercury-suroundings
+
+effectSpacing: 15
+
+effect: none
+
+attributes: {
+	deposit: 1
+}

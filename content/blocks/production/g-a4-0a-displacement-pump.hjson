@@ -7,7 +7,7 @@ solid: true
 placeableLiquid: true
 floating: true
 
-category: liquid
+category: production
 
 requirements: [
 	a0-0a-debris/2
