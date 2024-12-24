@@ -15,7 +15,7 @@ boostScale: 0.111111111111111111111111111111111111
 
 liquidCapacity: 300
 
-liquidOutputDirections: [0, 2, 1, 3]
+liquidOutputDirections: [3, 1, 0, 2]
 rotate: true
 quickRotate: true
 placeableLiquid: true
@@ -26,50 +26,76 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 craftTime: 24
+regionrotated1: 3
 
 drawer: [
-	{
-		type: DrawRegion
-		suffix: -bottom
-		layer: 29
-	}
-	{
-		type: DrawLiquidTile
-		drawLiquid: a0-0a-aether
-		padding: 1.5
-	}
-	{
-		type: DrawArcSmelt
-		flameRad: 2
-		flameRadiusScl: 4
-		flameRadiusMag: 1
-	}
-	{
-		type: DrawPistons
-		angleOffset: 45
-		sinMag: 2.25
-		sinScl: 12
-		lenOffset: 0.35
-		sides: 2
-	}
-	{
-		type: DrawPistons
-		suffix: -piston-d
-		angleOffset: -45
-		sinMag: 2.25
-		sinScl: 12
-		lenOffset: 0.35
-		sides: 2
-	}
-	{
-		type: DrawRegion
-	}
-	{
-		type: DrawRegion
-		suffix: -top
-		layer: 30
-	}
+    {
+        type: DrawRegion
+        suffix: -bottom1
+        layer: 29
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: d0-1a-ichor
+        padding: 1.5
+    }
+    {
+        type: DrawRegion
+        suffix: -bottom2
+    }
+
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padRight: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padLeft: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padRight: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padRight: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padLeft: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padRight: 17.75
+    }
+
+    {
+        type: DrawRegion
+    }
+    {
+        type: DrawRegion
+        suffix: -tops
+    }
+    {
+        type: DrawSideRegion
+    }
+    {
+        type: DrawLiquidOutputs
+    }
 ]
+
 
 craftEffect: {
 	type: ParticleEffect

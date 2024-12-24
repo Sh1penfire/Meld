@@ -1,0 +1,26 @@
+type: Wall
+size: 1
+health: 250
+armor: 3
+
+research: {
+	parent: h-a0-0a-core-raft
+	objectives: [
+		{
+			type: SectorComplete
+			preset: 2b-b-ruins
+		}
+	]
+}
+
+researchCost: [
+	a0-0a-debris/2000
+	a2-0a-silver/1200
+	b0-1a-fragment/300
+]
+
+requirements: [
+	a1-1a-compacted-brick/18
+	a1-2a-stony-gloop/18
+]
+category: defense
