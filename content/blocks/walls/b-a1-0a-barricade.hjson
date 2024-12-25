@@ -1,7 +1,7 @@
 type: Wall
 size: 1
-health: 250
-armor: 3
+health: 120
+armor: 45
 
 research: {
 	parent: h-a0-0a-core-raft

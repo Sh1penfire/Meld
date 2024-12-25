@@ -14,7 +14,7 @@ engineOffset: 13
 engineSize: 0
 crashDamageMultiplier: 2
 maxRange: 145
-range: 240
+range: 150
 
 faceTarget: true
 deathExplosionEffect: {

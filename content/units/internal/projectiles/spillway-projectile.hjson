@@ -35,6 +35,11 @@ weapons: [
 		alwaysShooting: true
 		bullet: {
 			killShooter: true
+			instantDisappear: true
+			despawnEffect: none
+			absorbable: false
+			hittable: false
+			collides: false
 		}
 	}
 	{
