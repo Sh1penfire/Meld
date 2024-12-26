@@ -1,0 +1,71 @@
+type: SteamVent
+variants: 0
+
+blendGroup: fringe-plating-dry
+parent: fringe-plating-dry
+allowCorePlacement: true
+effectSpacing: 240
+
+liquidDrop: z0-1a-waste
+
+effect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 220
+			region: meld-meld-core-zone-decal1
+			particles: 1
+			color: 74768183
+			colorTo: 35343800
+			sizeFrom: 24
+			sizeTo: 30
+			interp: pow4In
+			sizeInterp: pow5Out
+			length: 0
+			baseLength: 0
+		}
+		{
+			type: ParticleEffect
+			lifetime: 180
+			region: meld-meld-core-zone-decal2
+			particles: 1
+			color: 74768183
+			colorTo: 35343800
+			sizeFrom: 24
+			sizeTo: 30
+			interp: pow4In
+			sizeInterp: pow5Out
+			length: 0
+			baseLength: 0
+		}
+		{
+			type: ParticleEffect
+			lifetime: 140
+			region: meld-meld-core-zone-decal3
+			particles: 1
+			color: 74768183
+			colorTo: 35343800
+			sizeFrom: 24
+			sizeTo: 30
+			interp: pow4In
+			sizeInterp: pow5Out
+			length: 0
+			baseLength: 0
+		}
+		{
+			type: WaveEffect
+			lifetime: 60
+			sizeFrom: 25
+			sizeTo: 75
+			strokeFrom: 7
+			strokeTo: 3
+			colorFrom: 4d4f5b
+			colorTo: 35343800
+			sizeInterp: pow2Out
+		}
+	]
+}
+
+isLiquid: true
+liquidDrop: z0-1a-waste

@@ -1,0 +1,27 @@
+type: BaseShield
+size: 1
+range: 1
+sides: 8
+radius: 12
+
+health: 3500
+
+hasLiquids: true
+liquidCapacity: 600
+
+targetable: false
+drawTeamOverlay: false
+
+consumes: {
+	liquids: [
+		a1-0a-liquid-data/1
+	]
+}
+
+requirements: [
+	b0-1a-fragment/30
+]
+
+squareSprite: false
+category: effect
+floating: true
