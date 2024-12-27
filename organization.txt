@@ -117,13 +117,44 @@ Ex: c-effect-a-1-nullifier
 -Parts
 >p-&#-#&-<blockname>
 
+##Within Fringe
+
+-Cores/Containers
+<prefix>-a-&#-#&-<blockname>
+
+-Defense/Turret blocks
+<prefix>-b-a0-0a
+
+-Harvesters (Any source of material)
+<prefix>-c-&#-#&-<blockname>
+
+-Crafters
+<prefix>-d-&#-#&-<blockname>
+
+-Fluids
+<prefix>-f-&#-#&-<blockname>
+
+-Power
+<prefix>-g-&#-#&-<blockname>
+
+-Units
+<prefix>-h-&#-#&-<blockname>
+
+-Payload
+<prefix>-i-&#-#&-<blockname>
+
+-Effect (Unique)
+<prefix>-j-&#-#&-<blockname>
+
+-Logic
+<prefix>-k-&#-#&-<blockname>
 
 ### Within Meld
 
 -Cores
 <prefix>-a-&#-#&-<blockname>
 
--Defense blocks
+-Defense/Turret blocks
 <prefix>-b-&#-#&-<blockname>
 
 -Harvesters (Any source of material)
@@ -146,3 +177,6 @@ Ex: c-effect-a-1-nullifier
 
 -Payload
 <prefix>-i-&#-#&-<blockname>
+
+-Effect
+<prefix>-j-&#-#&-<blockname>
