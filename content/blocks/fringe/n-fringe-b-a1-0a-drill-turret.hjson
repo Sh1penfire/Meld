@@ -1,0 +1,229 @@
+type: LiquidTurret
+health: 820
+size: 3
+
+rotateSpeed: 2.5
+reload: 280
+recoil: 0.5
+
+range: 100
+fogRadiusMultiplier: 0
+
+squareSprite: false
+
+shootCone: 12
+shootY: 8
+velocityRnd: 0.3
+
+liquidCapacity: 80
+
+chargeSound: laserbig
+moveWhileCharging: false
+
+shoot: {
+    type: ShootBarrel
+    firstShotDelay: 1
+    shots: 120
+    shotDelay: 1
+    barrels: [
+        0, 0, 0,
+        0, 0.8, 0,
+        0, 1.6, 0,
+        0, 2.4, 0,
+        0, 3.2, 0,
+        0, 4, 0,
+        0, 4.8, 0
+        0, 5.6, 0
+        0, 6.4, 0
+        0, 7.2, 0
+    ]
+}
+inaccuracy: 0
+
+loopSound: none
+shootEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 3
+        particles: 1
+        length: 12
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 0.5
+        colorFrom: ffffff
+    }
+    {
+        type: ParticleEffect
+        layer: 100
+        lifetime: 3
+        particles: 1
+        length: 14
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 1
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 15
+        baseLength: 10
+        length: 45
+        cone: 35
+        line: true
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 45
+        particles: 1
+        baseLength: 10
+        length: 5
+        cone: 35
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: cbdbfc
+        colorTo: cbdbfc00
+    }
+]
+
+ammoTypes: {
+    a0-0b-aspect: {
+        smokeEffect: none
+        type: RailBulletType
+        lifetime: 1
+        maxRange: 100
+        damage: 40
+        buildingDamageMultiplier: 0.25
+        knockback: 2.5
+        pierceArmor: true
+        pierceDamageFactor: 1
+        hitColor: fda981
+        pointEffectSpace: 7.75
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 3
+                    particles: 1
+                    length: 0
+                    sizeFrom: 2
+                    sizeTo: 2
+                    colorFrom: ffffff
+                }
+                {
+                    type: ParticleEffect
+                    layer: 100
+                    lifetime: 3
+                    particles: 1
+                    length: 0
+                    sizeFrom: 5
+                    sizeTo: 2
+                    colorFrom: cbdbfc
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    baseLength: 10
+                    length: 45
+                    line: true
+                    lenFrom: 4
+                    lenTo: 0
+                    colorFrom: cbdbfc
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    particles: 1
+                    baseLength: 10
+                    length: 5
+                    sizeFrom: 0
+                    sizeTo: 4
+                    colorFrom: cbdbfc
+                    colorTo: cbdbfc00
+                }
+            ]
+        }
+        pierceEffect: none
+        collidesTeam: true
+        healAmount: 180
+        //Laser beam
+        pointEffect: {
+            type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    baseLength: 12
+                    particles: 1
+                    length: 25
+                    line: true
+                    lenFrom: 4
+                    lenTo: 0
+                    colorFrom: cbdbfca0
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    region: meld-nullifier-laser-beam
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    cone: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    interp: pow5Out
+                    sizeInterp: pow10In
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    region: meld-nullifier-laser-beam-back
+                    layer: 109
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    cone: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    interp: pow5Out
+                    sizeInterp: pow10In
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 150
+                    layer: 100
+                    offset: 0
+                    cone: 90
+                    lifetime: 15
+                    particles: 2
+                    baseLength: -4
+                    length: 45
+                    sizeFrom: 3
+                    sizeTo: 0
+                    length: 9
+                    colorFrom: fda98100
+                    colorTo: fda98100
+                    interp: pow3Out
+                    sizeInterp: pow3In
+                }
+            ]
+        }
+    }
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+	]
+}
+
+requirements: [
+	a0-0a-debris/80
+	a1-0a-carbolith/120
+]
+
+category: effect

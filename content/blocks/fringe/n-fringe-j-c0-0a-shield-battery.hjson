@@ -4,7 +4,7 @@ size: 4
 placeableLiquid: true
 category: effect
 
-liquidCapacity: 600
+liquidCapacity: 4800
 itemCapacity: 25
 
 ambientSound: drill
@@ -130,7 +130,7 @@ consumes: {
 }
 
 outputLiquids: [
-	a1-0a-liquid-data/10
+	a1-0a-liquid-data/20
 ]
 
 requirements: [
