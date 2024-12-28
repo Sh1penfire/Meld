@@ -6,13 +6,13 @@ rotateSpeed: 2.5
 reload: 280
 recoil: 0.5
 
-range: 100
+range: 160
 fogRadiusMultiplier: 0
 
 squareSprite: false
 
-shootCone: 12
-shootY: 8
+shootCone: 1
+shootY: 10
 velocityRnd: 0.3
 
 liquidCapacity: 80
@@ -22,7 +22,7 @@ moveWhileCharging: false
 
 shoot: {
     type: ShootBarrel
-    firstShotDelay: 1
+    firstShotDelay: 30
     shots: 120
     shotDelay: 1
     barrels: [
@@ -39,6 +39,8 @@ shoot: {
     ]
 }
 inaccuracy: 0
+
+
 
 loopSound: none
 shootEffect: [
@@ -93,7 +95,7 @@ ammoTypes: {
         smokeEffect: none
         type: RailBulletType
         lifetime: 1
-        maxRange: 100
+        length: 150
         damage: 40
         buildingDamageMultiplier: 0.25
         knockback: 2.5
@@ -101,6 +103,56 @@ ammoTypes: {
         pierceDamageFactor: 1
         hitColor: fda981
         pointEffectSpace: 7.75
+        chargeEffect: [
+            {
+                type: ParticleEffect
+                lifetime: 15
+                baseLength: 12
+                particles: 1
+                length: 75
+                randLength: false
+                cone: 0
+                line: true
+                lenFrom: 0
+                lenTo: 150
+                strokeFrom: 5
+                strokeTo: 1
+                colorFrom: cbdbfc
+                colorTo: ffffff00
+            }
+            {
+                type: ParticleEffect
+                lifetime: 15
+                baseLength: 12
+                particles: 12
+                length: 75
+                cone: 0
+                line: true
+                lenFrom: 0
+                lenTo: 25
+                colorFrom: ffffff00
+                colorTo: cbdbfc
+            }
+            {
+                type: ParticleEffect
+                lifetime: 30
+                baseLength: 12
+                particles: 1
+                length: -75
+                baseLength: 75
+                randLength: false
+                cone: 0
+                line: true
+                lenFrom: 150
+                lenTo: 150
+                strokeFrom: 0
+                strokeTo: 8
+                colorFrom: ffffff00
+                colorTo: cbdbfc
+                interp: pow5In
+                sizeInterp: pow10In
+            }
+        ]
         hitEffect: {
             type: MultiEffect
             effects: [
@@ -147,8 +199,6 @@ ammoTypes: {
             ]
         }
         pierceEffect: none
-        collidesTeam: true
-        healAmount: 180
         //Laser beam
         pointEffect: {
             type: MultiEffect
@@ -168,7 +218,7 @@ ammoTypes: {
                 {
                     type: ParticleEffect
                     region: meld-nullifier-laser-beam
-                    lifetime: 15
+                    lifetime: 30
                     particles: 1
                     length: 0
                     cone: 0

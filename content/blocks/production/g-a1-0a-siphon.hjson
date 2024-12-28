@@ -73,14 +73,8 @@ requirements: [
 
 research: h-a0-0a-core-raft
 
-research: {
-	parent: 2b-b-ruins
-	objectives: [
-		soontm
-	]
-}
-
-
+research: pressure-control
 researchCost: [
-	a0-0a-debris/17
+ 	a0-0a-debris/240
+	a1-0a-carbolith/450
 ]

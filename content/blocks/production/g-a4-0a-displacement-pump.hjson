@@ -10,7 +10,9 @@ floating: true
 category: production
 
 requirements: [
-	a0-0a-debris/2
+	a0-0a-debris/35
+	a1-1a-compacted-brick/85
+	a1-2a-stony-gloop/35
 ]
 
 consumes: {
@@ -22,6 +24,9 @@ consumes: {
 	]
 }
 
+research: fluid-extraction
 researchCost: [
-    a0-0a-debris/20
+	a0-0a-debris/750
+	a1-1a-compacted-brick/850
+	a1-2a-stony-gloop/250
 ]

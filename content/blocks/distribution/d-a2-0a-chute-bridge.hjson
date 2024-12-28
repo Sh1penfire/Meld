@@ -8,7 +8,7 @@ requirements: [
 	a0-0a-debris/6
 ]
 
-research: d-distrib-a1-0a-chute-router
+research: item-logistics
 researchCost: [
 	a0-0a-debris/25
 ]

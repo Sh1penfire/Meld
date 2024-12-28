@@ -42,3 +42,9 @@ requirements: [
 	a0-0a-debris/5
 	a1-0a-carbolith/2
 ]
+
+research: liquid-logistics
+researchCost: [
+	a0-0a-debris/5
+	a1-0a-carbolith/8
+]

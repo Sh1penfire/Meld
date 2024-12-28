@@ -14,8 +14,8 @@ category: liquid
 requirements: [
 	a0-0a-debris/5
 ]
-research: e-fluid-a0-0a-channel-face
 
+research: liquid-logistics
 researchCost: [
-    a0-0a-debris/5
+	a0-0a-debris/25
 ]

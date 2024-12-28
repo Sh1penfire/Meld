@@ -1,0 +1,21 @@
+type: StorageBlock
+health: 350
+size: 1
+
+solid: true
+itemCapacity: 15
+
+squareSprite: false
+targetable: false
+
+
+alwaysUnlocked: true
+
+research: stratum
+
+requirements: [
+	b0-0a-technoscrap/35
+]
+
+researchCostMultiplier: 0
+category: effect

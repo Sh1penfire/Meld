@@ -12,7 +12,7 @@ requirements: [
 	a0-0a-debris/2
 ]
 
-research: g-harvester-a0-0a-aether-accumulator
+research: liquid-logistics
 researchCost: [
-    a0-0a-debris/20
+	a0-0a-debris/10
 ]

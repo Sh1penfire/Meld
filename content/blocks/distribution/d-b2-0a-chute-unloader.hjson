@@ -11,8 +11,8 @@ requirements: [
 	b0-0a-technoscrap/20
 ]
 
-research: d-distrib-a1-0a-chute-router
-
+research: storage-hubs
 researchCost: [
-	a0-0a-debris/25
+	a0-0a-debris/100
+	b0-0a-technoscrap/80
 ]

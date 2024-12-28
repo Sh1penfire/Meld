@@ -8,7 +8,7 @@ requirements: [
 	a0-0a-debris/1
 ]
 
-research: h-a0-0a-core-raft
+research: item-logistics
 researchCost: [
 	a0-0a-debris/5
 ]

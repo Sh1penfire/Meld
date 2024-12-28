@@ -3,4 +3,5 @@ gas: true
 color: b460e2
 explosiveness: 15
 temperature: 1.2
-alwaysUnlocked: true
+
+research: c0-0a-rift

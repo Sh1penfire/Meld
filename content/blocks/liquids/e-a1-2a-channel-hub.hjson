@@ -19,8 +19,9 @@ requirements: [
 	b0-0a-technoscrap/250
 ]
 
-research: e-fluid-a1-0a-channel-node
-
+research: pressure-control
 researchCost: [
-    a0-0a-debris/5
+	a0-0a-debris/250
+	a1-0a-carbolith/200
+	b0-0a-technoscrap/600
 ]
