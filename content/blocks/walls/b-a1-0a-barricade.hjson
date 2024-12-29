@@ -6,10 +6,6 @@ armor: 45
 research: {
 	parent: h-a0-0a-core-raft
 	objectives: [
-		{
-			type: SectorComplete
-			preset: 2b-b-ruins
-		}
 	]
 }
 

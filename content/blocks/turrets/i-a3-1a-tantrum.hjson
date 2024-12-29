@@ -379,10 +379,6 @@ category: turret
 research: {
     parent: i-turret-a1-0a-molotov
     objectives: [
-		{
-			type: OnSector
-			preset: 2a-scrapyard
-		}
     ]
     
 }

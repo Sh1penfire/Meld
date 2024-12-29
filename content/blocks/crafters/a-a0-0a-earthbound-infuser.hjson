@@ -69,14 +69,6 @@ requirements: [
 research: {
 	parent: g-harvester-a0-0a-aether-accumulator
 	objectives: [
-		{
-			type: SectorComplete
-			preset: 1a-creek
-		}
-		{
-			type: OnSector
-			preset: 2a-scrapyard
-		}
 	]
 }
 

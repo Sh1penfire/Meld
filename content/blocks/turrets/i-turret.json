@@ -46,14 +46,3 @@ recoil: 1.5
 inaccuracy: 2
 shootCone: 5
 category: turret
-
-research: {
-    parent: i-turret-a0-0a-sunder
-    objectives: [
-		{
-			type: OnSector
-			preset: 2a-scrapyard
-		}
-    ]
-    
-}

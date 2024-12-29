@@ -143,7 +143,7 @@ requirements: [
 
 category: turret
 
-research: h-a0-0a-core-raft
+research: stratum
 researchCost: [
     a0-0a-debris/120
     a1-0a-carbolith/80

@@ -1,2 +1,7 @@
 show: false
-research: item-logistics
+research: {
+	parent: item-logistics
+	objectives: [
+		storage-hubs
+	]
+}

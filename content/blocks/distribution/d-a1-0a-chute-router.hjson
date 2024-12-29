@@ -6,7 +6,7 @@ requirements: [
 	a0-0a-debris/4
 ]
 
-research: item-logistics
+research: d-a0-0a-chute
 researchCost: [
 	a0-0a-debris/20
 ]

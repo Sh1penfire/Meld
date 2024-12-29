@@ -123,10 +123,6 @@ category: turret
 research: {
     parent: i-turret-a0-0a-sunder
     objectives: [
-		{
-			type: OnSector
-			preset: 2a-scrapyard
-		}
     ]
     
 }

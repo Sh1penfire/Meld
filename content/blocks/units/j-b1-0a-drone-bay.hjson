@@ -32,12 +32,8 @@ requirements: [
 category: units
 
 research: {
-	parent: j-constructor-c0-0a-ship-factory
+	parent: j-c0-0a-ship-factory
 	objectives: [
-		{
-			type: SectorComplete
-			preset: 2b-b-ruins
-		}
 	]
 }
 

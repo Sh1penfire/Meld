@@ -1,2 +1,7 @@
 show: false
-research: pressure-control
+research: {
+	parent: pressure-control
+	objectives: [
+		fluid-extraction
+	]
+}

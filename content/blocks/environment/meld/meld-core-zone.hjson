@@ -5,7 +5,10 @@ blendGroup: meld-crystal-floor
 parent: meld-crystal-floor
 allowCorePlacement: true
 isLiquid: true
+liquidDrop: a0-5a-meld
+
 effectSpacing: 240
+
 
 effect: {
 	type: MultiEffect

@@ -1,9 +1,10 @@
 show: false
+research: ikaru
 
 research: {
-	parent: stratum
+	parent: a-1a-resurgence
 	objectives: [
-		liquid-logistics
+		beginnings
 	]
 }
 
@@ -28,7 +29,7 @@ applyEffect: [
             {
                 type: ParticleEffect
                 lifetime: 240
-                region: meld-liquid-logistics
+                region: meld-beginnings
                 particles: 1
                 length: 0
                 sizeFrom: 0
@@ -66,7 +67,7 @@ applyEffect: [
         type: ParticleEffect
         layer: 119
         lifetime: 60
-        region: meld-e-a0-0a-channel-face
+        region: meld-d-a0-0a-chute-top-4
         particles: 6
         length: -85
         baseLength: 85
@@ -81,7 +82,7 @@ applyEffect: [
         type: ParticleEffect
         layer: 119
         lifetime: 78
-        region: meld-e-a1-0a-channel-node
+        region: meld-d-a0-0a-chute-top-0
         particles: 12
         length: -85
         baseLength: 85
@@ -97,7 +98,7 @@ applyEffect: [
         type: ParticleEffect
         layer: 119
         lifetime: 96
-        region: meld-e-a2-0a-aspect-outlet-preview
+        region: meld-d-a2-0a-chute-bridge-bridge
         particles: 8
         length: -85
         baseLength: 85

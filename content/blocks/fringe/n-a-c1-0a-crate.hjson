@@ -8,14 +8,10 @@ itemCapacity: 15
 squareSprite: false
 targetable: false
 
-
-alwaysUnlocked: true
-
-research: stratum
+research: fringe
 
 requirements: [
 	b0-0a-technoscrap/35
 ]
 
-researchCostMultiplier: 0
 category: effect

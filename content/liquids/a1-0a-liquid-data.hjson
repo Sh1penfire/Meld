@@ -6,9 +6,5 @@ lightColor: 31a2f966
 research: {
 	parent: b0-0a-technoscrap
 	objectives: [
-		{
-			type: OnSector
-			preset: 2b-b-ruins
-		}
 	]
 }

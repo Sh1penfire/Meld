@@ -1,16 +1,14 @@
-type: Conduit
-size: 1
+type: Wall
+solid: true
+variants: 0
 
-health: 20
+instantDeconstruct: false
 
-placeableLiquid: true
+requirements: [
+	a0-0a-debris/12
+]
 
-liquidCapacity: 30
-liquidPressure: 0.5
-
-category: liquid
-botColor: 2f2d39
-
+destroyBulletSameTeam: false
 destroyBullet: {
 	type: BulletType
 	speed: 0
@@ -37,14 +35,6 @@ destroyBullet: {
 	}
 }
 
-
-requirements: [
-	a0-0a-debris/5
-	a1-0a-carbolith/2
-]
-
-research: e-a0-0a-channel-face
-researchCost: [
-	a0-0a-debris/5
-	a1-0a-carbolith/8
-]
+requirements: []
+emitLight: true
+lightColor: 9ccaed

@@ -54,7 +54,7 @@ requirements: [
 	a0-0a-debris/7
 ]
 
-research: liquid-logistics
+research: e-a1-0a-channel-node
 researchCost: [
 	a0-0a-debris/35
 ]

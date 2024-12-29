@@ -152,6 +152,25 @@ ammoTypes: {
                 interp: pow5In
                 sizeInterp: pow10In
             }
+            {
+                type: ParticleEffect
+                lifetime: 45
+                baseLength: 12
+                particles: 1
+                length: -1
+                baseLength: 1
+                randLength: false
+                cone: 0
+                line: true
+                lenFrom: 150
+                lenTo: 150
+                strokeFrom: 0
+                strokeTo: 16
+                colorFrom: ffffffa1
+                colorTo: cbdbfc00
+                interp: pow2In
+                sizeInterp: pow10In
+            }
         ]
         hitEffect: {
             type: MultiEffect

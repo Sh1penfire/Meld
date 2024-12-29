@@ -69,12 +69,8 @@ requirements: [
 ]
 
 research: {
-	parent: g-harvester-a1-0a-elemental-blaster
+	parent: g-b0-0a-elemental-blaster
 	objectives: [
-		{
-			type: OnSector
-			preset: 2b-b-ruins
-		}
 	]
 }
 
