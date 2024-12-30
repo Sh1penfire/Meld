@@ -154,5 +154,5 @@ immunities: [
 	strata-b0-anchored
 	strata-b1-rebound
 	wildlife-a0-amplified
-	wildlife-a1-sentry
+	wildlife-b0-sentry
 ]

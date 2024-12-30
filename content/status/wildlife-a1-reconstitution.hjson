@@ -1,0 +1,38 @@
+healtHmultiplier: 1.5
+damage: -0.5
+dragMultiplier: 2
+speedMultiplier: 0.85
+
+permanent: true
+parentizeEffect: true
+
+effect: [
+	{
+	type: ParticleEffect
+	lifetime: 60
+	particles: 3
+	length: -45
+	baseLength: 45
+	sizeFrom: 0
+	sizeTo: 8
+	colorFrom: eed1faa2
+	colorTo: ae197f00
+	lightOpacity: 1
+	lightScl: 4
+	sizeInterp: pow10In
+	interp: pow2In
+	}
+	{
+	type: ParticleEffect
+	lifetime: 45
+	particles: 3
+	length: 8
+	sizeFrom: 0
+	sizeTo: 1
+	colorFrom: eed1fa
+	colorTo: ae197f00
+	lightOpacity: 1
+	lightScl: 4
+	sizeInterp: slope
+	}
+]

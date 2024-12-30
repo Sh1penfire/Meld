@@ -100,7 +100,7 @@ weapons: [
                 outline: false
             }
         ]
-        	shootStatus: wildlife-a1-sentry
+        	shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 4
 		bullet: {
 			type: ContinuousFlameBulletType

@@ -27,6 +27,8 @@ alwaysUnlocked: true
 itemWhitelist: [
 	a0-0a-debris
 	a1-0a-carbolith
+	a1-1a-compacted-brick
+	a1-2a-stony-gloop
 	a2-0a-silver
 	e0-0a-meld-shard
 	a5-0a-electrum-sheet
@@ -36,6 +38,8 @@ itemWhitelist: [
 	c0-0a-industrial-rubble
 	d0-0a-industrial-rubble-cracked
 	f0-0a-bramble-vine
+	f1-0a-compacted-masses
+	f1-1a-starving-masses
 	f2-0a-elderflesh
 	f2-1a-blossoming-elderflesh
 	f3-0a-coagulated-vigor

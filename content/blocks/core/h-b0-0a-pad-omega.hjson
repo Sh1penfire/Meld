@@ -20,5 +20,6 @@ requirements: [
 	b0-0a-technoscrap/250
 ]
 
+buildCostMultiplier: 0.1
 researchCostMultiplier: 0
 category: effect

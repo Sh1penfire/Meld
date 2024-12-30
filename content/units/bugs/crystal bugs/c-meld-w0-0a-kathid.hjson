@@ -35,7 +35,7 @@ weapons: [
 		alwaysContinuous: true
 		recoil: 0
 		shootCone: 10
-		shootStatus: wildlife-a1-sentry
+		shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 5
 		shootSound: torch
 		bullet: {

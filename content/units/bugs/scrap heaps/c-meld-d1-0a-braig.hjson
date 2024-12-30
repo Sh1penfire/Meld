@@ -77,7 +77,7 @@ weapons: [
 		reload: 15
 		shootCone: 60
 		rotate: true
-		shootStatus: wildlife-a1-sentry
+		shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 7.5
 		mirror: false
 		alternate: false
@@ -115,7 +115,7 @@ weapons: [
 		alternate: false
 		parentizeEffects: false
 		shootSound: bang
-		shootStatus: wildlife-a1-sentry
+		shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 180
 		shoot: {
 			type: ShootSpread

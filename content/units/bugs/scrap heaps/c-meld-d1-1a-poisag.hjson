@@ -41,7 +41,7 @@ weapons: [
 		top: false
 		parentizeEffects: false
 		shootSound: bang
-		shootStatus: wildlife-a1-sentry
+		shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 180
 		layerOffset: -0.01
 		shoot: {

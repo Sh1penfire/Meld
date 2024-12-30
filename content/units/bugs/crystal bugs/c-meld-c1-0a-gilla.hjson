@@ -87,7 +87,7 @@ weapons: [
 		alwaysContinuous: true
 		top: false
 		shootSound: torch
-		shootStatus: wildlife-a1-sentry
+		shootStatus: wildlife-b0-sentry
 		shootStatusDuration: 3
 		
 		bullet: {

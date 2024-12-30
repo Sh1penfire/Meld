@@ -1,5 +1,5 @@
 type: legs
-speed: 0.7
+speed: 0.55
 
 health: 360
 armor: 20
@@ -11,8 +11,8 @@ hitSize: 20
 rotateSpeed: 6.5
 faceTarget: true
 
-legCount: 8
-legLength: 5
+legCount: 4
+legLength: 8
 legGroupSize: 1
 legSpeed: 0.4
 legForwardScl: 4
@@ -29,7 +29,7 @@ weapons: [
 		y: 0
 		shootY: 14
 		shootCone: 13
-		reload: 75
+		reload: 120
 		recoil: 0
 		mirror: false
 		alternate: false
@@ -41,9 +41,9 @@ weapons: [
 		bullet: {
 			type: BasicBulletType
 			speed: 3.85
-			lifetime: 75
+			lifetime: 45
 			sprite: glob
-			recoil: 4.5
+			recoil: 3.5
 			damage: 8
 			width: 5.2
 			knockback: 17.5
