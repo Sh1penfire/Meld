@@ -37,4 +37,8 @@ requirements: [
 	a1-0a-carbolith/120
 ]
 
+research: {
+	parent: pressurized-dispersion
+}
+
 category: effect

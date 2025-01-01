@@ -67,7 +67,7 @@ requirements: [
 ]
 
 research: {
-	parent: g-harvester-a0-0a-aether-accumulator
+	parent: fissure-tapping
 	objectives: [
 	]
 }

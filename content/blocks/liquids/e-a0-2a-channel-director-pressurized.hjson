@@ -5,10 +5,11 @@ health: 45
 
 placeableLiquid: true
 
-liquidCapacity: 40
+liquidCapacity: 80
 liquidPressure: 2
 
 category: liquid
+botColor: 2f2d39
 
 destroyBullet: {
 	type: BulletType

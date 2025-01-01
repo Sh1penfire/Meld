@@ -1,8 +1,11 @@
 type: ItemTurret
 size: 2
 health: 840
+
+liquidCapacity: 200
 range: 272
 fogRadiusMultiplier: 0.25
+
 reload: 100
 shootSound: bang
 shootEffect: shootBig
@@ -121,8 +124,9 @@ shootCone: 5
 category: turret
 
 research: {
-    parent: i-turret-a0-0a-sunder
+    parent: i-a0-0a-sunder
     objectives: [
+	aspect-channeling
     ]
     
 }

@@ -22,7 +22,9 @@ requirements: [
 	a2-0a-silver/15
 ]
 
-research: e-fluid-a0-0a-channel-face
+research: {
+	parent: aspect-channeling
+}
 
 researchCost: [
 	a0-0a-debris/30

@@ -109,6 +109,9 @@ requirements: [
 	f1-0a-compacted-masses/75
 ]
 
+research: {
+	parent: e-a1-1a-compartmentalized-node
+}
 
 researchCost: [
     a0-0a-debris/20

@@ -705,7 +705,10 @@ consumes: {
 
 category: effect
 
-research: h-a0-0a-core-raft
+research: {
+	parent: aspect-channeling
+}
+
 researchCost: [
     a4-0a-resonarum/50
 ]

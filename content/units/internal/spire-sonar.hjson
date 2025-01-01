@@ -23,8 +23,9 @@ targetable: false
 
 drawMinimap: false
 
-fogRadius: 16.5
-lightRadius: 130
+fogRadius: 28.5
+lightRadius: 220
+clip: 220
 lightOpacity: 1
 
 deathSound: none
@@ -42,7 +43,7 @@ parts: [
 		circle: true
 		hollow: true
 		radius: 0
-		radiusTo: 130
+		radiusTo: 220
 		stroke: 6
 		strokeTo: 0
 		layer: 122
@@ -64,7 +65,7 @@ parts: [
 		circle: true
 		hollow: true
 		radius: 0
-		radiusTo: 130
+		radiusTo: 220
 		stroke: 6
 		strokeTo: 0
 		layer: 122
@@ -85,7 +86,7 @@ parts: [
 		}
 		circle: true
 		hollow: true
-		radius: 130
+		radius: 220
 		stroke: 6
 		strokeTo: 0
 		layer: 122
@@ -146,7 +147,7 @@ parts: [
 abilities: [
 	{
 		type: StatusFieldAbility
-		range: 130
+		range: 220
 		reload: 0
 		effect: strata-a0-rally
 		duration: 15
@@ -155,7 +156,7 @@ abilities: [
 	}
 	{
 		type: StatusFieldAbility
-		range: 130
+		range: 220
 		reload: 0
 		effect: interference-positive
 		duration: 15
@@ -164,11 +165,29 @@ abilities: [
 	}
 	{
 		type: StatusFieldAbility
-		range: 130
+		range: 220
 		reload: 0
 		effect: interference-negative
 		duration: 15
 		activeEffect: none
 		applyEffect: none
 	}
+]
+
+
+immunities: [
+	blackout
+	disolving
+	grace
+	interference-negative
+	interference-positive
+	mangrove-a0-refreshed
+	mangrove-a1-infested
+	mangrove-b0-shattered-flame
+	mangrove-d0-mercury-poisoning
+	strata-a0-rally
+	strata-b0-anchored
+	strata-b1-rebound
+	wildlife-a0-amplified
+	wildlife-b0-sentry
 ]

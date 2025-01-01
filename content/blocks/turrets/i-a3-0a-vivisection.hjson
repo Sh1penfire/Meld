@@ -2,8 +2,12 @@ type: ItemTurret
 size: 4
 health: 1640
 range: 252
+
+liquidCapacity: 400
+
 fogRadiusMultiplier: 0.25
 reload: 120
+
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
@@ -652,7 +656,7 @@ requirements: [
 category: turret
 
 research: {
-    parent: i-turret-a1-0a-molotov
+    parent: i-a1-0a-molotov
     objectives: [
     ]
     

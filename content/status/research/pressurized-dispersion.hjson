@@ -1,0 +1,7 @@
+show: false
+research: {
+	parent: pressure-control
+	objectives: [
+		pressurized-dispersion
+	]
+}

@@ -4,4 +4,9 @@ viscosity: 0.45
 temperature: 1.25
 heatCapacity: 0.85
 
-research: a0-0a-aether
+research: {
+	parent:	a0-0a-aether
+	objectives: [
+		meld-d0-1a-ichor
+	]
+}

@@ -13,7 +13,22 @@ effect:{
             region: meld-swirl
             lifetime: 125
             sizeInterp: slope
-            length: 25
+            length: 55
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: fcf69cb1
+            colorTo: 948a0000
+            layer: 61.7
+            spin: 12
+            baseRotation: 32.5
+        }
+        {
+            type: ParticleEffect
+            region: meld-sparkle
+            lifetime: 125
+            sizeInterp: slope
+            length: 65
             baseLength: 4
             sizeFrom: 1
             sizeTo: 3

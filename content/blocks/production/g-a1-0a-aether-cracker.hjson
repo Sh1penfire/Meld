@@ -124,10 +124,16 @@ outputLiquids: [
 ]
 
 requirements: [
- 	a0-0a-debris/40
+ 	a0-0a-debris/60
 ]
 
-research: h-a0-0a-core-raft
+research: {
+	parent: a-a0-0a-earthbound-infuser
+	objectives: [
+		d0-1a-ichor
+		c0-0a-rift
+	]
+}
 
 researchCost: [
 	a0-0a-debris/17

@@ -53,15 +53,15 @@ outputLiquid: b0-0a-nectar/0.1666666666666667
 
 category: production
 requirements: [
-	a0-0a-debris/7
+	a0-0a-debris/12
 ]
 
 research: e-fluid-a0-0a-channel-face
 
 research: {
-	parent: 2b-b-ruins
+	parent: fissure-tapping
 	objectives: [
-		soontm
+		b0-0a-nectar
 	]
 }
 

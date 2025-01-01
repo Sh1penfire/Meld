@@ -12,7 +12,7 @@ research: {
 researchCost: [
 	a0-0a-debris/2000
 	a2-0a-silver/1200
-	b0-1a-fragment/300
+	b1-0a-fragment/300
 ]
 
 requirements: [

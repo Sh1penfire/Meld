@@ -5,7 +5,7 @@ health: 20
 
 placeableLiquid: true
 
-liquidCapacity: 80
+liquidCapacity: 120
 liquidPressure: 5
 
 category: liquid

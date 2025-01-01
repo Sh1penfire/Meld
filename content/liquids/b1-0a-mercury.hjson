@@ -14,4 +14,9 @@ canStayOn: [
 	z0-1a-waste
 ]
 
-research: f0-0a-bramble-vine
+research: {
+	parent: f0-0a-bramble-vine
+	objectives: [
+		mangrove-d1-slippery
+	]
+}

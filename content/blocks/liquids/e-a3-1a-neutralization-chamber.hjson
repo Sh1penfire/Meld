@@ -4,7 +4,7 @@ size: 3
 health: 540
 
 liquidCapacity: 100
-powerProduction: 2
+powerProduction: 1
 
 placeableLiquid: true
 floating: true
@@ -14,7 +14,10 @@ category: liquid
 explodeOnFull: true
 
 requirements: [
-	a0-0a-debris/2
+	a1-1a-compacted-brick/60
+	a1-2a-stony-gloop/180
+	a2-0a-silver/85
+	f3-0a-coagulated-vigor/5
 ]
 
 consumes: {
@@ -28,6 +31,10 @@ consumes: {
 }
 
 outputLiquid: b2-0a-blood/0.25
+
+research: {
+	parent: f-d0-0a-purification-chamber
+}
 
 researchCost: [
     a0-0a-debris/20

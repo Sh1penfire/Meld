@@ -1,9 +1,14 @@
 type: ItemTurret
 size: 5
 health: 2100
+
+liquidCapacity: 400
+
 range: 220
 fogRadiusMultiplier: 0.25
+
 reload: 85
+
 shootEffect: {
     type: MultiEffect
     effects: [
@@ -70,7 +75,7 @@ shoot: {
             type: ShootHelix
             shots: 1
             scl: 20
-            mag: 8
+            mag: 3
         }
     ]
 }
@@ -83,20 +88,20 @@ drawer: {
 
 ammoTypes: {
 	a2-0a-silver: {
-		type: BulletType
+        type: BulletType
 		damage: 0
 		pierce: true
         absorbable: false
         hittable: false
         removeAfterPierce: false
         collidesAir: false
-		speed: 11.5
-        drag: 0.07
-		lifetime: 20
+		speed: 7.5
+        drag: 0.05
+		lifetime: 30
 		width: 80
 		height: 80
 		hitSize: 10.75
-		bulletInterval: 8
+		bulletInterval: 13
 		intervalBullets: 1
         intervalRandomSpread: 0
 		ammoMultiplier: 1
@@ -114,6 +119,7 @@ ammoTypes: {
             sizeInterp: pow5In
             layer: 109.8
         }
+        despawnEffect: none
         intervalBullet: {
             instantDisappear: true
             hitEffect: none
@@ -131,7 +137,7 @@ ammoTypes: {
                     collides: false
                     fragBullet: {
                         type: BulletType
-                        speed: 0.9
+                        speed: 1.1
                         drag: 0.01
                         lifetime: 17
                         pierce: true
@@ -196,7 +202,7 @@ ammoTypes: {
                                 type: RailBulletType
                                 pierce: true
                                 collidesAir: false
-                                damage: 0.1
+                                damage: 0.01
                                 knockback: 3.25
                                 length: 15
                                 trailEffect: none
@@ -248,7 +254,7 @@ ammoTypes: {
                     collides: false
                     fragBullet: {
                         type: BulletType
-                        speed: 0.9
+                        speed: 1.1
                         drag: 0.01
                         lifetime: 17
                         pierce: true
@@ -313,7 +319,7 @@ ammoTypes: {
                                 type: RailBulletType
                                 pierce: true
                                 collidesAir: false
-                                damage: 0.1
+                                damage: 0.01
                                 knockback: 3.25
                                 length: 15
                                 trailEffect: none
@@ -367,9 +373,9 @@ consumes: {
 }
 
 requirements: [
-	a0-0a-debris/120
 	a1-0a-carbolith/240
-	a5-0a-electrum-sheet/85
+	a2-0a-silver/40
+	a5-0a-electrum-sheet/240
 ]
 
 
@@ -377,7 +383,7 @@ requirements: [
 category: turret
 
 research: {
-    parent: i-turret-a1-0a-molotov
+    parent: i-a0-0a-molotov
     objectives: [
     ]
     

@@ -74,6 +74,10 @@ outputLiquids: [
 	b3-0a-ooze/0
 ]
 
+research: {
+	parent: murk-handling
+}
+
 researchCost: [
     a0-0a-debris/20
 ]

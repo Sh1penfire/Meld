@@ -65,8 +65,12 @@ outputItem: a1-1a-compacted-brick/10
 
 requirements: [
  	a0-0a-debris/80
-	a2-0a-silver/60
+	a1-0a-carbolith/45
 ]
+
+research: {
+	parent: building-foundations
+}
 
 researchCost: [
 	a0-0a-debris/200

@@ -187,12 +187,15 @@ coolant: {
 requirements: [
 	a0-0a-debris/35
 	a1-0a-carbolith/75
-	a5-0a-electrum-sheet/25
+	a5-0a-electrum-sheet/40
 ]
 
 category: turret
 
-research: h-a0-0a-core-raft
+research: {
+	parent: i-a0-0a-sunder
+}
+
 researchCost: [
     a0-0a-debris/120
     a1-0a-carbolith/80

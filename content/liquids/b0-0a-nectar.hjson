@@ -25,4 +25,9 @@ canStayOn: [
 	z0-1a-waste
 ]
 
-research: a1-0a-carbolith
+research: {
+	parent:	a1-0a-carbolith
+	objectives: [
+		b0-0a-nectar
+	]
+}

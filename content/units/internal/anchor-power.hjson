@@ -1,5 +1,5 @@
 type: missile
-lifetime: 180
+lifetime: 182
 
 speed: 0
 
@@ -29,6 +29,7 @@ drawMinimap: false
 deathSound: release
 deathExplosionEffect: none
 
+fogRadius: 10
 drawCell: false
 drawBody: false
 
@@ -110,4 +111,21 @@ abilities: [
 		duration: 5
 		activeEffect: none
 	}
+]
+
+immunities: [
+	blackout
+	disolving
+	grace
+	interference-negative
+	interference-positive
+	mangrove-a0-refreshed
+	mangrove-a1-infested
+	mangrove-b0-shattered-flame
+	mangrove-d0-mercury-poisoning
+	strata-a0-rally
+	strata-b0-anchored
+	strata-b1-rebound
+	wildlife-a0-amplified
+	wildlife-b0-sentry
 ]

@@ -6,7 +6,7 @@ armor: 5
 
 placeableLiquid: true
 
-liquidCapacity: 5000
+liquidCapacity: 8000
 liquidPressure: 1
 
 solid: false

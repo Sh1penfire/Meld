@@ -19,6 +19,6 @@ consumes: {
 
 requirements: [
 	b0-0a-technoscrap/230
-	b0-1a-fragment/50
+	b1-0a-fragment/50
 	a0-0a-debris/120
 ]

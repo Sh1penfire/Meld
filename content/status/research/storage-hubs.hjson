@@ -1,4 +1,10 @@
 show: false
+
+researchRequirements: [
+	b0-0a-technoscrap/600
+	b1-0a-fragment/150
+]
+
 research: {
 	parent: item-logistics
 	objectives: [

@@ -21,4 +21,8 @@ requirements: [
 	a5-0a-electrum-sheet/30
 ]
 
+research: {
+	parent: f-a0-0a-connector
+}
+
 category: power

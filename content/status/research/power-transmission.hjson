@@ -1,0 +1,7 @@
+show: false
+research: {
+	parent: aspect-channeling
+	objectives: [
+		power-transmission
+	]
+}

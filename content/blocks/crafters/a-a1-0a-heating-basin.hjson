@@ -50,6 +50,13 @@ requirements: [
 	a2-0a-silver/60
 ]
 
+research: {
+	parent: mercurial-extraction
+	objectives: [
+		b0-0a-nectar
+	]
+}
+
 researchCost: [
 	a0-0a-debris/200
 	a2-0a-silver/150

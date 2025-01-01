@@ -32,6 +32,10 @@ drawer: {
 	]
 }
 
+consumes: {
+	liquid: a0-0b-aspect/0.33333333333333333333333333333333333333
+}
+
 requirements: [
 	a0-0a-debris/80
 	a1-0a-carbolith/120

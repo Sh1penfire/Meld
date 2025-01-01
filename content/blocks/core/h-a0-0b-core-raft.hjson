@@ -11,10 +11,12 @@ placeableDeep: true
 itemCapacity : 900
 unitCapModifier: 6
 
-alwaysUnlocked: true
-
-
-research: h-a0-0a-core-raft-dormant
+research: {
+	parent: h-a0-0a-core-raft-dormant
+	objectives: [
+		
+	]
+}
 
 requirements: [
 	a0-0a-debris/600

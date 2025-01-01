@@ -35,6 +35,7 @@ weapons: [
         x: 0
         y: 0
         shootY: 0
+        display: false
         shoot: {
             type: ShootBarrel
             barrels: [
@@ -62,6 +63,7 @@ weapons: [
             impact: true
             collidesAir: false
         }
+        cooldownTime: 40
         parts: [
             {
                 progress: {
@@ -86,6 +88,7 @@ weapons: [
         x: 0
         y: 0
         shootY: 0
+        display: false
         shoot: {
             type: ShootBarrel
             barrels: [
@@ -150,6 +153,7 @@ weapons: [
         x: 0
         y: 0
         shootY: 0
+        display: false
         shoot: {
             type: ShootBarrel
             barrels: [
@@ -231,6 +235,26 @@ weapons: [
             impact: true
             collidesAir: false
         }
+        cooldownTime: 60
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: e6b47f00
+                colorTo: c93f1d
+            }
+        ]
     }
     //Creates the smoke from the end of the gun
     {
@@ -245,6 +269,7 @@ weapons: [
         rotateSpeed: 2.5
         shootCone: 25
         reload: 75
+        display: false
         shoot: {
             firstShotDelay: 25
             shots: 35
@@ -285,6 +310,7 @@ weapons: [
         rotateSpeed: 2.5
         shootCone: 25
         reload: 75
+        display: false
         shoot: {
             firstShotDelay: 25
             shots: 25

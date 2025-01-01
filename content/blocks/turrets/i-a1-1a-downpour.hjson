@@ -1,6 +1,9 @@
 type: ItemTurret
 size: 5
 health: 2830
+
+liquidCapacity: 500
+
 range: 250
 fogRadiusMultiplier: 0.25
 
@@ -10,11 +13,6 @@ shootWarmupSpeed: 0.02
 
 shootSound: bang
 shootEffect: shootBig
-
-requirements: [
-	a1-0a-carbolith/40
-	a2-0a-silver/70
-]
 
 maxAmmo : 100
 
@@ -171,9 +169,16 @@ recoil: 1.5
 shootCone: 5
 category: turret
 
+requirements: [
+	a1-1a-compacted-brick/240
+	a1-2a-stony-gloop/240
+	a2-0a-silver/260
+	a4-0a-resonarum/35
+]
+
 research: {
-    parent: i-turret-a0-0a-sunder
+    parent: i-a0-0a-molotov
     objectives: [
+	pressurized-dispersion
     ]
-    
 }

@@ -20,7 +20,7 @@ consumes: {
 }
 
 requirements: [
-	b0-1a-fragment/30
+	b1-0a-fragment/30
 ]
 
 squareSprite: false

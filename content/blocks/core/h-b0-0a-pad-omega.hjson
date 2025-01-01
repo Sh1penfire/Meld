@@ -13,7 +13,7 @@ unitCapModifier: 0
 
 alwaysUnlocked: true
 firstTier: true
-research: stratum
+research: h-a0-0a-core-raft-dormant
 
 requirements: [
 	a0-0a-debris/125

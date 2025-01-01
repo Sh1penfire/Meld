@@ -14,7 +14,9 @@ lightRadius: 8
 
 alwaysUnlocked: true
 
-research: stratum
+research: {
+	parent: stratum
+}
 
 requirements: [
 	a0-0a-debris/450

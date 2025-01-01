@@ -3,7 +3,7 @@ shadowElevation: 0.1
 speed: 0.7
 
 health: 8400
-armor: 50
+armor: 75
 
 drag: 0.12
 accel: 0.2

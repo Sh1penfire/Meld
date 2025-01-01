@@ -47,7 +47,7 @@ consumes: {
 	]
 }
 
-outputItem: b0-1a-fragment/2
+outputItem: b1-0a-fragment/2
 
 requirements: [
  	a0-0a-debris/30

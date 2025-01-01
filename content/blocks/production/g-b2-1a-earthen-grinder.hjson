@@ -28,7 +28,10 @@ requirements: [
  	a0-0a-debris/40
 ]
 
-research: g-harvester-a0-0a-aether-accumulator
+research: {
+	parent: building-foundations
+}
+
 researchCost: [
 	a0-0a-debris/13
 ]
