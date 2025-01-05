@@ -13,7 +13,7 @@ buildSpeed: 1
 mineTier: 2
 mineSpeed: 8
 range: 100
-rotateSpeed: 5.5
+rotateSpeed: 7
 trailLength: 18
 trailScl : 1.2
 

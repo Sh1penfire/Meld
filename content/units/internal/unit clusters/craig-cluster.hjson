@@ -30,6 +30,11 @@ weapons: [
 		shootSound: none
 		bullet: {
 			type: BulletType
+			spawnBullets: [
+				{
+					spawnUnit: c-meld-d0-1a-afraig
+				}
+			]
 			instantDisappear: true
 			killShooter: true
 			fragBullets: 3

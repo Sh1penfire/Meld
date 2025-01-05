@@ -214,7 +214,7 @@ ammoTypes: {
 consumes: {
     liquid: {
         liquid: d0-1a-ichor
-        amount: 0.01
+        amount: 1
     }
 }
 

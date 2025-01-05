@@ -1,7 +1,7 @@
 type: CellLiquid
 
 explosiveness: 0.15
-flammability: 0.15
+flammability: 0.7
 temperature: 0.00
 
 spreadTarget: b2-0a-blood

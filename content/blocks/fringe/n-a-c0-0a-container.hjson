@@ -3,7 +3,7 @@ health: 350
 size: 2
 
 solid: true
-itemCapacity: 80
+itemCapacity: 120
 
 squareSprite: false
 targetable: false

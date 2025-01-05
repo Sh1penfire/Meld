@@ -4,6 +4,8 @@ configurable: false
 variants: 0
 solid: true
 
+
+targetable: false
 liquidCapacity: 3600
 
 requirements: [

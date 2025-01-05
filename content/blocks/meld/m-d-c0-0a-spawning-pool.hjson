@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0a-aether
+		drawLiquid: d0-1a-ichor
 		alpha: 1
 		padding: 5.5
 	}
@@ -42,10 +42,10 @@ drawer: [
 ]
 
 consumes: {
-	liquid: a0-0a-aether/4
+	liquid: d0-1a-ichor/4
 }
 
-outputItem: h1-0a-larva/3
+outputItem: h1-0a-larva/8
 
 craftEffect: {
 	type: ParticleEffect

@@ -6,7 +6,6 @@ solid: true
 itemCapacity: 120
 
 squareSprite: false
-targetable: false
 coreMerge: false
 
 research: storage-hubs

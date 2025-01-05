@@ -1,0 +1,94 @@
+type: GenericCrafter
+size: 3
+
+placeableLiquid: true
+category: effect
+
+liquidCapacity: 50
+itemCapacity: 60
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+updateEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 85
+        baseLength: 10
+        length: 35
+        particles: 4
+	sizeTo: 0
+        colorFrom: f2d58500
+        colorTo: 89828ca0
+	interp: pow2In
+	sizeInterp: pow3In
+    }
+]
+updateEffectChance: 0.15
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		alpha: 0.75
+	}
+	{
+		type: DrawRegion
+		suffix: -sweeper
+		rotateSpeed: -5
+		spinSprite: true
+	}
+	{
+		type: DrawRegion
+		suffix: -grating-bottom
+	}
+	{
+		type: DrawParticles
+		particleLife: 150
+		particleRad: 10
+		reverse: true
+		rotScl: 1
+		color: f2d585a1
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		alpha: 0.35
+	}
+	{
+		type: DrawRegion
+		suffix: -grating-top
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		d0-0a-industrial-rubble-cracked/4
+	]
+	liquids: [
+		b1-0a-mercury/1
+	]
+}
+
+outputItems: [
+	a2-0a-silver/3
+	a5-0a-electrum-sheet/1
+	f1-1a-starving-masses/2
+]
+
+requirements: [
+ 	a0-0a-debris/85
+	a1-0a-carbolith/45
+	b0-0a-technoscrap/350
+]

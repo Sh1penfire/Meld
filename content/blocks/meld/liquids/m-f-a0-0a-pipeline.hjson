@@ -4,8 +4,8 @@ size: 1
 placeableLiquid: true
 leaks: false
 
-liquidCapacity: 40
-liquidPressure: 50
+liquidCapacity: 120
+liquidPressure: 5
 
 category: liquid
 requirements: [

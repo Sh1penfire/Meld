@@ -56,8 +56,6 @@ requirements: [
 	a0-0a-debris/12
 ]
 
-research: e-fluid-a0-0a-channel-face
-
 research: {
 	parent: fissure-tapping
 	objectives: [
