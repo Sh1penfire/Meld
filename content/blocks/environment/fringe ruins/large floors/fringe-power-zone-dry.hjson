@@ -3,7 +3,6 @@ variants: 0
 
 blendGroup: fringe-plating-dry
 parent: fringe-plating-dry
-allowCorePlacement: true
 effectSpacing: 240
 
 liquidDrop: z0-1a-waste
