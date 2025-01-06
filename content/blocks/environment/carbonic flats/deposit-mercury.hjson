@@ -1,0 +1,5 @@
+type: OverlayFloor
+variants: 2
+
+oreDefault: false
+needsSurface: false

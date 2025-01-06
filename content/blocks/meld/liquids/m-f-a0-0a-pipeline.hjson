@@ -1,0 +1,13 @@
+type: Conduit
+size: 1
+
+placeableLiquid: true
+leaks: false
+
+liquidCapacity: 120
+liquidPressure: 5
+
+category: liquid
+requirements: [
+	a0-0a-debris/5
+]

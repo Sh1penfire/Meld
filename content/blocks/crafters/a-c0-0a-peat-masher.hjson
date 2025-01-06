@@ -1,0 +1,64 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 50
+
+attribute: heat
+baseEfficiency: 1
+minEfficiency: 0
+boostScale: 0.111111111111111111111111111111111111
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 240
+itemCapacity: 30
+liquidCapacity: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		f1-0a-compacted-masses/4
+	]
+	liquids: [
+		b1-0a-mercury/0.5
+		a0-0b-aspect/1.66666666
+	]
+}
+
+outputLiquids: [
+	b1-0a-mercury/0.5
+	a0-0b-aspect/0
+]
+
+outputItems: [
+	f0-0a-bramble-vine/3
+	f1-1a-starving-masses/3
+]
+
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]
+
+research: {
+	parent: mercurial-extraction
+	objectives: [
+	
+	]
+}
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

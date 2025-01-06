@@ -1,0 +1,144 @@
+type: GenericCrafter
+size: 5
+
+placeableLiquid: true
+category: effect
+
+liquidCapacity: 50
+itemCapacity: 250
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+updateEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 15
+        baseLength: 10
+        length: 15
+        line: true
+        lenFrom: 3
+        lenTo: 0
+        stroke: 2
+        particles: 4
+        colorFrom: f2d585ff
+        colorTo: f2d58500
+    }
+    {
+        type: WaveEffect
+        lifetime: 5
+        sizeFrom: 1
+        sizeTo: 4
+        strokeFrom: 1
+        strokeTo: 1.5
+        colorFrom: f2d585b2
+        colorTo: f2d58500
+    }
+]
+updateEffectChance: 0.15
+
+craftEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: WaveEffect
+            lifetime: 14
+            sizeFrom: 3
+            sizeTo: 5
+            strokeFrom: 3
+            strokeTo: 1
+            colorFrom: faddc2
+            colorTo: db661c00
+        }
+        {
+            type: ParticleEffect
+            lifetime: 85
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 8
+            particles: 12
+            sizeFrom: 0
+            sizeTo: 3
+            colorFrom: f68021
+            colorTo: db661c00
+        }
+    ]
+}
+
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawCircles
+		amount: 4
+		color: f2d585
+		radius: 13
+		timeScl: 50
+		radiusOffset: 5
+		strokeMax: 1.3
+		strokeMin: 0.3
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a0-0b-aspect
+		padding: 3
+	}
+	{
+		type: DrawArcSmelt
+		circleSpace: 1.5
+		flameRad: 3
+		flameRadiusScl: 5
+		flameRadiusMag: 1
+		particleRad: 16
+		particleLife: 60
+	}
+	{
+		type: DrawRegion
+		suffix: -rotator1
+		spinSprite: true
+		rotateSpeed: 5.5
+	}
+	{
+		type: DrawRegion
+		suffix: -rotator2
+		spinSprite: true
+		rotateSpeed: 8
+	}
+	{
+		type: DrawRegion
+		suffix: -rotator2
+		spinSprite: true
+		rotateSpeed: 12
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		d0-0a-industrial-rubble-cracked/5
+	]
+	liquids: [
+		a0-0b-aspect/1.6666666666
+	]
+}
+
+outputItems: [
+	a0-0a-debris/10
+	a1-0a-carbolith/1
+	a2-0a-silver/3
+]
+
+requirements: [
+ 	a0-0a-debris/50
+	a2-0a-silver/85
+	b0-0a-technoscrap/350
+]

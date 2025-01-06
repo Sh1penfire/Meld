@@ -1,0 +1,6 @@
+speedMultiplier: 1.5
+damageMultiplier: 2
+reloadMultiplier: 2
+healthMultiplier: 3
+
+effectChance: 0

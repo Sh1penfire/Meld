@@ -10,10 +10,9 @@ allowLaunchToNumbered: false
 allowLaunchLoadout: false
 allowSectorInvasion: false
 hasAtmosphere: true
-bloom: false
 visible: true
 updateLighting: false
-defaultCore: h-core-a0-0a-raft
+defaultCore: h-a0-0a-core-raft-dormant
 sectorSize: 2
 radius: 1.2
 bloom: false
@@ -26,14 +25,25 @@ launchMusic: stellar-walkways
 accessible: true
 alwaysUnlocked: true
 itemWhitelist: [
-	a0-a0-debris,
-	a1-a0-carbolith,
-	a2-a0-silver,
-	a2-b0-meld-shard,
-	a5-a0-electrum-sheet,
-	a4-a0-resonarum,
-	b0-b0-fragment,
-	b0-a0-technoscrap
+	a0-0a-debris
+	a1-0a-carbolith
+	a1-1a-compacted-brick
+	a1-2a-stony-gloop
+	a2-0a-silver
+	e0-0a-meld-shard
+	a5-0a-electrum-sheet
+	a4-0a-resonarum
+	b1-0a-fragment
+	b0-0a-technoscrap
+	c0-0a-industrial-rubble
+	d0-0a-industrial-rubble-cracked
+	f0-0a-bramble-vine
+	f1-0a-compacted-masses
+	f1-1a-starving-masses
+	f2-0a-elderflesh
+	f2-1a-blossoming-elderflesh
+	f3-0a-coagulated-vigor
+	f5-0a-homunculus-chunk
 ]
 
 mesh: [

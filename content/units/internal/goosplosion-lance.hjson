@@ -1,0 +1,350 @@
+type: missile
+physics: false
+hittable: false
+targetable: false
+useUnitCap: false
+lifetime: 170
+speed: 0
+singleTarget: false
+faceTarget: false
+playerControllable: false
+
+fogRadius: 12.5
+
+parts: [
+	{
+		type: RegionPart
+		name: meld-c-a0-0a-nullifier-center
+	}
+	{
+		type: HaloPart
+		layer: 110
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.2
+					end: 1
+				}
+				{
+					op: curve
+					interp: pow2In
+				}
+				{
+					op: absin
+					scl: 0.5
+					mag: 1
+				}
+			]
+		}
+		
+		haloRotation: 90
+		shapes: 2
+		triLength: 0
+		triLengthTo: 60
+		tri: true
+		radius: 18
+		haloRadius: 0
+		color: cbdbfc00
+		colorTo: cbdbfca2
+	}
+	{
+		type: HaloPart
+		layer: 110
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.2
+					end: 0.75
+				}
+				{
+					op: curve
+					interp: pow5In
+				}
+			]
+		}
+		
+		haloRotation: 90
+		shapes: 2
+		triLength: 0
+		triLengthTo: 45
+		tri: true
+		radius: 12
+		haloRadius: 0
+		color: ffffff00
+		colorTo: ffffff
+	}
+]
+
+weapons: [
+//Killing shot
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		shoot: {
+			firstShotDelay: 150
+		}
+		rotate: true
+		rotateSpeed: 180
+		reload: 1
+		mirror: false
+		alternate: false
+		controllable: false
+		autoTarget: true
+		targetInterval: 1
+		targetSwitchInterval: 1
+        shootSound: laser
+        bullet: {
+            type: PointBulletType
+            range: 100
+            damage: 21000000
+            buildingDamageMultiplier: 133769
+            trailSpacing: 2
+            trailEffect: {
+                type: ParticleEffect
+                region: meld-nullifier-laser-beam-large
+                lifetime: 180
+                particles: 1
+                length: 0
+                cone: 0
+                sizeFrom: 8
+                sizeTo: 8
+                colorFrom: ffffff
+                colorTo: ffffff00
+            }
+            shootEffect: none
+            pierceArmor: true
+            fragBullets: 1
+            fragBullet: {
+                pierceArmor: true
+                splashDamage: 21000000
+                splashDamageRadius: 30
+                buildingDamageMultiplier: 133769
+                instantDisappear: true
+                hitEffect: {
+                    type: MultiEffect
+                    effects: [
+                        {
+                            type: ParticleEffect
+                            sizeFrom: 8
+                            sizeTo: 0
+                            len: 16
+                            particles: 15
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc
+                        }
+                        {
+                            type: ParticleEffect
+                            sizeFrom: 5
+                            sizeTo: 0
+                            len: 16
+                            particles: 15
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 15
+                            sizeFrom: 4
+                            sizeTo: 34
+                            strokeFrom: 2.5
+                            strokeTo: 1
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc00
+                        }
+                    ]
+                }
+                despawnEffect: none
+                collides: false
+                absorbable: false
+                hittable: false
+            }
+        }
+    }
+//Laser beam/unit damage
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		shoot: {
+			type: ShootBarrel
+			firstShotDelay: 1
+			shots: 10
+			shotDelay: 1
+			barrels: [
+				0, 0, 0,
+				0, 0.8, 0,
+				0, 1.6, 0,
+				0, 2.4, 0,
+				0, 3.2, 0,
+				0, 4, 0,
+				0, 4.8, 0
+				0, 5.6, 0
+				0, 6.4, 0
+				0, 7.2, 0
+			]
+		}
+		rotate: true
+		rotateSpeed: 180
+		shootCone: 1
+		reload: 10
+		mirror: false
+		alternate: false
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		bullet: {
+			shootEffect: none
+			smokeEffect: none
+			type: RailBulletType
+			lifetime: 1
+			maxRange: 100
+			damage: 40
+            		buildingDamageMultiplier: 0.25
+			knockback: 2.5
+			pierceArmor: true
+			pierceDamageFactor: 1
+			hitColor: fda981
+			pointEffectSpace: 7.75
+			hitEffect: none
+			pierceEffect: none
+			//Laser beam
+			pointEffect: {
+				type: MultiEffect
+				effects: [
+				{
+					type: ParticleEffect
+					region: meld-nullifier-laser-beam
+					lifetime: 3
+					particles: 1
+					length: 0
+					cone: 0
+					sizeFrom: 4
+					sizeTo: 4
+				}
+				{
+					type: ParticleEffect
+					region: meld-nullifier-laser-beam-back
+					layer: 109
+					lifetime: 3
+					particles: 1
+					length: 0
+					cone: 0
+					sizeFrom: 4
+					sizeTo: 4
+				}
+				{
+					type: ParticleEffect
+					lifetime: 150
+					layer: 100
+					offset: 0
+					cone: 90
+					lifetime: 15
+					particles: 2
+					baseLength: -4
+					length: 45
+					sizeFrom: 3
+					sizeTo: 0
+					length: 9
+					colorFrom: fda98100
+					colorTo: fda98100
+					interp: pow3Out
+					sizeInterp: pow3In
+				}
+				]
+			}
+		}
+	}
+//Building damaging pat of beam/ beam hit effect
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		shoot: {
+			firstShotDelay: 1
+			shots: 68
+			shotDelay: 2.5
+		}
+		rotate: true
+		rotateSpeed: 180
+		shootCone: 1
+		reload: 120
+		mirror: false
+		alternate: false
+		controllable: false
+		autoTarget: true
+		shootSound: none
+		targetInterval: 1
+		targetSwitchInterval: 1
+		
+		bullet: {
+			shootEffect: none
+			smokeEffect: none
+			type: RailBulletType
+			lifetime: 1
+			maxRange: 100
+			damage: 1
+			buildingDamageMultiplier: 250
+			pierceArmor: true
+			pierceDamageFactor: 1
+			hitColor: fda981
+			pointEffectSpace: 8
+			pierceEffect: none
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 3
+						particles: 1
+						length: 0
+						sizeFrom: 2
+						sizeTo: 2
+						colorFrom: ffffff
+					}
+					{
+						type: ParticleEffect
+						layer: 100
+						lifetime: 3
+						particles: 1
+						length: 0
+						sizeFrom: 5
+						sizeTo: 2
+						colorFrom: cbdbfc
+					}
+					{
+						type: ParticleEffect
+						lifetime: 15
+						baseLength: 10
+						length: 45
+						line: true
+						lenFrom: 4
+						lenTo: 0
+						colorFrom: cbdbfc
+					}
+					{
+						type: ParticleEffect
+						lifetime: 45
+						particles: 1
+						baseLength: 10
+						length: 5
+						sizeFrom: 0
+						sizeTo: 4
+						colorFrom: cbdbfc
+						colorTo: cbdbfc00
+					}
+				]
+			}
+		}
+	}
+]

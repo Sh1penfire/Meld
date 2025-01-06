@@ -1,9 +1,9 @@
 type: Liquid
 gas: true
 color: cbdbfc
-explosiveness: 15
-flammability: 6
-temperature: 2
+explosiveness: 2
+flammability: 10
+temperature: 3
 alwaysUnlocked: true
 
 research: a0-0a-aether

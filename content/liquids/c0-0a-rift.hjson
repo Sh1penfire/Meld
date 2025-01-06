@@ -1,0 +1,10 @@
+type: Liquid
+gas: true
+color: 3b2970
+
+research: {
+	parent:	a0-0a-aether
+	objectives: [
+		c0-0a-rift
+	]
+}

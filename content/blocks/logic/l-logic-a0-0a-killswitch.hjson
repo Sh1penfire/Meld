@@ -1,0 +1,23 @@
+type: AttributeCrafter
+
+attribute: killswitch
+
+dumpExtraLiquid: true
+baseEfficiency: 0
+minEfficiency: 1
+
+targetable: false
+category: logic
+displayEfficiency: false
+
+outputsLiquid: false
+
+liquidCapacity: 10
+itemCapacity: 60
+liquidCapacity: 60
+
+craftTime: 360
+
+requirements: [
+	b0-0a-technoscrap/50
+]

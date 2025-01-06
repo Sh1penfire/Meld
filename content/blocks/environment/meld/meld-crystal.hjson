@@ -1,8 +1,0 @@
-type: Prop
-variants: 3
-breakSound: splash
-instantDeconstruct: false
-requirements: [
-	a2-b0-meld-shard/40
-]
-buildVisibility: sandboxOnly

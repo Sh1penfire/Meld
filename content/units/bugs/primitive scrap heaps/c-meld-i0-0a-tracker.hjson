@@ -1,0 +1,258 @@
+type: legs
+speed: 0.9
+
+health: 1280
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 16
+rotateSpeed: 1.2
+faceTarget: false
+
+drawCell: false
+drawBody: false
+
+legCount: 4
+legLength: 10
+legBaseOffset: -1
+legContinuousMove: true
+legGroupSize: 1
+
+legMoveSpace: 2
+allowLegStep: true
+legPhysicsLayer: false
+
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 12
+            sizeFrom: 2
+            sizeTo: 12
+            strokeFrom: 1
+            strokeTo: 3
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: "tracker-encampment"
+		x: -3
+		y: 0
+		shootY: 5
+		rotateSpeed: 4
+		reload: 600
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 320
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+        parts: [
+            {
+                type: RegionPart
+                suffix: -under
+                mirror: false
+                under: true
+                outline: false
+            }
+            {
+                type: RegionPart
+                suffix: -projectile-undeveloped
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: compress
+                            start: 0
+                            end: 0.5
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                    ]
+                }
+                y: -4
+                moves: [
+                    {
+                        y: 4.5
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: curve
+                                    interp: reverse
+                                }
+                                {
+                                    op: curve
+                                    interp: pow2Out
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        gx: -1
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: curve
+                                    interp: pow2In
+                                }
+                            ]
+                        }
+                    }
+                ]
+                mirror: false
+                under: true
+                outline: false
+                color: ffffff00
+                colorTo: ffffff
+            }
+            {
+                type: RegionPart
+                suffix: -projectile
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: compress
+                            start: 0.4
+                            end: 1
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                    ]
+                }
+                y: -4
+                moves: [
+                    {
+                        y: 4.5
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: curve
+                                    interp: reverse
+                                }
+                                {
+                                    op: curve
+                                    interp: pow2Out
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        gx: -1
+                        progress: {
+                            type: reload
+                            ops: [
+                                {
+                                    op: curve
+                                    interp: pow2In
+                                }
+                            ]
+                        }
+                    }
+                ]
+                mirror: false
+                under: true
+                outline: false
+                color: ffffff00
+                colorTo: ffffff
+            }
+        ]
+        shootSound: mediumCannon
+		bullet: {
+			spawnUnit: tracker-projectile
+            speed: 1.2
+            rangeOverride: 360
+            recoil: 7.5
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 25
+                        cone: 8
+                        particles: 25
+                        colorFrom: cb8650
+                        colorTo: cb865000
+                        length: 55
+                        sizeFrom: 7
+                        sizeTo: 0
+                        interp: pow5Out
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 45
+                        cone: 5
+                        particles: 12
+                        colorFrom: cb8650
+                        colorTo: cb865000
+                        length: 55
+                        sizeFrom: 12
+                        sizeTo: 0
+                        interp: pow5Out
+                    }
+                ]
+            }
+		}
+	}
+]
+
+immunities: [
+    aspect-burn
+]

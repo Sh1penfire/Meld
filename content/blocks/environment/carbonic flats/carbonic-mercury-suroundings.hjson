@@ -1,0 +1,6 @@
+type: Floor
+variants: 0
+
+attributes: {
+	deposit: 1
+}

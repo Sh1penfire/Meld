@@ -1,0 +1,8 @@
+type: Prop
+variants: 0
+solid: false
+
+customShadow: true
+
+breakable: false
+alwaysReplace: false

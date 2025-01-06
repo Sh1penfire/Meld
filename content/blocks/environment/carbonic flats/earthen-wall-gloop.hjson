@@ -1,0 +1,9 @@
+type: StaticWall
+variants: 2
+
+
+itemDrop: a1-2a-stony-gloop
+
+attributes: {
+	gloop: 3.5
+}

@@ -1,0 +1,35 @@
+type: CellLiquid
+
+explosiveness: 0.42
+viscosity: 1.01
+temperature: 153.885
+heatCapacity: 5
+
+effect: mangrove-a1-infested
+
+capPuddles: false
+
+maxSpread: 0.1
+spreadConversion: 0.35
+spreadDamage: 0.45
+removeScaling: 1
+
+spreadTarget: b0-0a-nectar
+
+
+moveThroughBlocks: true
+incinerable: false
+canStayOn: [
+	b0-0a-nectar
+	d0-1a-ichor
+	b3-0a-ooze
+	z0-1a-waste
+	a0-5a-meld
+]
+
+color: 7d312f
+
+colorFrom: 602d2b
+colorTo: d78b65
+
+research: f2-0a-elderflesh

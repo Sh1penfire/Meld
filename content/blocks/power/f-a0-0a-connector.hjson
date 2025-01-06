@@ -1,0 +1,31 @@
+type: PowerNode
+health: 60
+armor: 15
+
+size: 1
+
+laserRange: 5
+maxNodes: 8
+
+fogRadius: 1
+
+laserColor2: e5aed7
+
+consumesPower: true
+outputsPower: true
+
+consumes: {
+    power: 0.1666666666
+}
+
+requirements: [
+	a1-1a-compacted-brick/25
+	a1-2a-stony-gloop/25
+	a5-0a-electrum-sheet/5
+]
+
+research: {
+	parent: power-transmission
+}
+
+category: power

@@ -1,0 +1,64 @@
+type: GenericCrafter
+size: 2
+
+placeableLiquid: true
+category: effect
+
+dumpExtraLiquid: true
+
+liquidCapacity: 50
+itemCapacity: 60
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -ring
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -ring-glow1
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -ring-glow2
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a1-0a-liquid-data
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		b0-0a-technoscrap/20
+	]
+	liquids: [
+		a1-0a-liquid-data/10
+	]
+}
+
+outputItem: b1-0a-fragment/2
+
+requirements: [
+ 	a0-0a-debris/30
+	a2-0a-silver/60
+	b0-0a-technoscrap/120
+]
+
+research: c-effect-a2-0a-data-miner
+
+researchCost: [
+	a0-0a-debris/300
+	a2-0a-silver/150
+	b0-0a-technoscrap/450
+]

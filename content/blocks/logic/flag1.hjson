@@ -1,0 +1,7 @@
+type: SwitchBlock
+
+targetable: false
+
+category: logic
+
+requirements: []

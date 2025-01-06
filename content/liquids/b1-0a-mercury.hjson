@@ -1,0 +1,22 @@
+type: Liquid
+
+temperature: 0.45
+
+color: 89828c
+
+effect: mangrove-d1-slippery
+
+canStayOn: [
+	b0-0a-nectar
+	d0-1a-ichor
+	b3-0a-ooze
+	b2-0a-blood
+	z0-1a-waste
+]
+
+research: {
+	parent: f0-0a-bramble-vine
+	objectives: [
+		mangrove-d1-slippery
+	]
+}

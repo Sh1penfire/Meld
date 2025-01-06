@@ -1,0 +1,322 @@
+type: missile
+lifetime: 300
+health: 180
+
+speed: 0
+rotateSpeed: 0
+controller: HugAI
+defaultController: HugAI
+
+engineSize: 0
+shadowElevation: 0
+createWreck: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+
+//More niche changes can be made to theese
+hoverable: false
+hittable: false
+
+drawMinimap: false
+
+fogRadius: 0
+lightRadius: 130
+lightOpacity: 1
+
+//Same here
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+    {
+        type: RegionPart
+        name: meld-scorcher-nest-crystal
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.6
+                    end: 1
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+        color: ffffff
+        colorTo: ffffff00
+        outline: false
+    }
+    {
+        type: RegionPart
+        name: meld-scorcher-nest-mount-glow
+        blending: additive
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.07
+                    end: 0.85
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        color: ef85e3e300
+        colorTo: d22fee
+        outline: false
+    }
+    {
+        type: RegionPart
+        name: meld-scorcher-nest-crystal-shine
+        blending: additive
+        heatProgress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.1
+                    end: 0.75
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow3In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0
+                    end: 0.85
+                }
+                {
+                    op: curve
+                    interp: reverse
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+                {
+                    op: curve
+                    interp: slope
+                }
+            ]
+        }
+        color: ffffff
+        colorTo: ffffff00
+        outline: false
+    }
+]
+
+weapons: [
+    {
+        reload: 270
+        shootStatus: disarmed
+        shootStatusDuration: 30
+        alwaysShooting: true
+        shootSound: none
+        bullet: {
+            shootEffect: none
+            despawnEffect: none
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+        }
+    }
+	{
+		x: -8
+		y: -8
+		mirror: false
+		alternate: false
+        rotate: true
+        rotateSpeed: 2.5
+		reload: 14
+		shootCone: 180
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
+		continuous: true
+		alwaysContinuous: true
+        controllable: false
+        autoTarget: true
+        targetSwitchInterval: 5
+		shootSound: torch
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 25
+			damage: 35
+			flareLength: 0
+			length: 75
+			width: 1.5
+			knockback: 1
+			pierceCap: 3
+			flareLength: 8
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+	}
+	{
+		x: 8
+		y: -8
+		mirror: false
+		alternate: false
+        rotate: true
+        rotateSpeed: 2.5
+		reload: 14
+		shootCone: 180
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
+		continuous: true
+		alwaysContinuous: true
+        controllable: false
+        autoTarget: true
+        targetSwitchInterval: 5
+		shootSound: torch
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 25
+			damage: 35
+			flareLength: 0
+			length: 75
+			width: 1.5
+			knockback: 1
+			pierceCap: 3
+			flareLength: 8
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+	}
+	{
+		x: 8
+		y: 8
+		mirror: false
+		alternate: false
+        rotate: true
+        rotateSpeed: 2.5
+		reload: 14
+		shootCone: 180
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
+		continuous: true
+		alwaysContinuous: true
+        controllable: false
+        autoTarget: true
+        targetSwitchInterval: 5
+		shootSound: torch
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 25
+			damage: 35
+			flareLength: 0
+			length: 75
+			width: 1.5
+			knockback: 1
+			pierceCap: 3
+			flareLength: 8
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+	}
+	{
+		x: -8
+		y: 8
+		mirror: false
+		alternate: false
+        rotate: true
+        rotateSpeed: 2.5
+		reload: 14
+		shootCone: 180
+        recoil: 0
+        minWarmup: 0.25
+		shootY: 0
+		continuous: true
+		alwaysContinuous: true
+        controllable: false
+        autoTarget: true
+        targetSwitchInterval: 5
+		shootSound: torch
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 25
+			damage: 35
+			flareLength: 0
+			length: 75
+			width: 1.5
+			knockback: 1
+			pierceCap: 3
+			flareLength: 8
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+	}
+]
+
+immunities: [
+    strata-a0-rally,
+    interference-positive
+]

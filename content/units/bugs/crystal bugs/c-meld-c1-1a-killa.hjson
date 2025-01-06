@@ -1,0 +1,147 @@
+type: crawl
+speed: 0.3
+
+health: 340
+
+drag: 0.05
+accel: 0.2
+drownTimeMultiplier: 0.25
+
+hitSize: 20
+rotateSpeed: 4.55
+omniMovement: false
+faceTarget: true
+
+drawCell: false
+
+controller: HugAI
+
+weapons: [
+	{
+		x: 6
+		y: -4.75
+		baseRotation: 225
+		reload: 60
+		mirror: true
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		alwaysShooting: true
+		controllable: false
+		aiControllable: false
+		top: false
+		shootSound: torch
+		linearWarmup: true
+		shootWarmupSpeed: 0.025
+		minWarmup: 1
+		shootStatus: killa-enabled
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 8
+			flareLength: 0
+			length: 16
+			rangeOverride: 80
+			width: 1.5
+			knockback: 2.5
+			pierceCap: 1
+			recoil: -0.075
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 12.75
+		mirror: false
+		recoil: 0
+		mirror: true
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		alwaysShooting: true
+		controllable: false
+		aiControllable: false
+		shootSound: torch
+
+		linearWarmup: true
+		shootWarmupSpeed: 0.025
+		minWarmup: 1
+		alwaysShooting: true
+		controllable: false
+		aiControllable: false
+		parts: [
+			{
+				type: RegionPart
+				name: meld-killa-shine
+				outline: true
+				progress: warmup
+				heatProgress: warmup
+				heatColor: fbe4f562
+				color: ffffff00
+				colorTo: ffffff15
+			}
+			{
+				type: RegionPart
+				name: meld-killa-wing
+				mirror: true
+				y: 1
+				moveX: 9
+				moveY: 0
+				moveRot: 15
+				progress: warmup
+				layerOffset: -0.01
+			}
+			{
+				type: RegionPart
+				name: meld-killa-thruster
+				mirror: true
+				y: -3.5
+				moveX: 6
+				moveY: -1
+				progress: warmup
+				layerOffset: -0.01
+			}
+		]
+	
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 9
+			flareLength: 0
+			length: 10
+			rangeOverride: 40
+			width: 1.5
+			knockback: 1.5
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+	}
+]
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-c0-0a-jilla
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-d0-0a-craig
+	}
+]
+
+immunities: [
+    aspect-burn
+]

@@ -1,0 +1,62 @@
+speedMultiplier: 0.3
+dragMultiplier: 4
+healthMultiplier: 1.5
+effectChance: 0
+parentizeApplyEffect: true
+
+applyEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: WaveEffect
+			lifetime: 25
+			sizeFrom: 45
+			sizeTo: 5
+			strokeFrom: 0
+			strokeTo: 5
+			colorFrom: c2540f00
+			colorTo: c2540f
+			interp: pow2Out
+			layer: 109
+		}
+		{
+			type: WaveEffect
+			lifetime: 85
+			sizeFrom: 60
+			sizeTo: 35
+			strokeFrom: 8
+			strokeTo: 0
+			colorFrom: f2712100
+			colorTo: f27121
+			interp: pow10Out
+		}
+		{
+			type: ParticleEffect
+			lifetime: 135
+			region: circle
+			sizeFrom: 2.5
+			sizeTo: 0
+			colorFrom: f27121
+			colorTo: f2712100
+			length: -35
+			baseLength: 35
+			particles: 15
+			interp: pow10Out
+			sizeInterp: pow10In
+		}
+		{
+			type: ParticleEffect
+			lifetime: 60
+			region: meld-anchor
+			sizeFrom: 3.5
+			sizeTo: 12
+			colorFrom: f27121
+			colorTo: f2712100
+			length: 0
+			baseLength: 0
+			particles: 1
+			interp: pow5In
+			sizeInterp: pow2Out
+		}
+	]
+}

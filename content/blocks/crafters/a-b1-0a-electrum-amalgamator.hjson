@@ -1,0 +1,51 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 60
+liquidCapacity: 500
+
+attribute: gold
+baseEfficiency: 0
+minEfficiency: 1
+maxBoost: 3
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 120
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a0-0a-debris/2
+		a2-0a-silver/5
+	]
+	liquids: [
+		a0-0b-aspect/3.3333333333333333333333333333333
+		b1-0a-mercury/5
+	]
+}
+
+outputItem: a5-0a-electrum-sheet/8
+outputLiquid: d0-1a-ichor/0.5
+
+research: {
+	parent: a-a1-0a-heating-basin
+	objectives: [
+	]
+}
+
+requirements: [
+ 	a0-0a-debris/80
+	a1-0a-carbolith/85
+]

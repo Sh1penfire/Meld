@@ -1,0 +1,64 @@
+type: crawl
+lifetime: 180
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 10
+lightRadius: 80
+lightOpacity: 1
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+	
+]
+
+weapons: [
+	{
+		reload: 0
+		alwaysShooting: true
+		aiControllable: false
+		shootSound: rapid-enemy-mobalization
+		soundPitchMin: 1
+		soundPitchMax: 1
+		shootStatus: disarmed
+		shootStatusDuration: 200
+		bullet: {
+			collides: false
+			hittable: false
+			absorbable: false
+			instantDisappear: true
+			shootEffect: none
+			hitSound: none
+			killShooter: true
+		}
+	}
+]
+
+immunities: [
+	strata-a0-rally
+	strata-b0-anchored
+]

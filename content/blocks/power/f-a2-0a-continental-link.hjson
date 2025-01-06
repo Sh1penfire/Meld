@@ -1,0 +1,23 @@
+type: BeamNode
+health: 1200
+armor: 25
+size: 5
+range: 50
+
+fogRadius: 3
+
+laserColor2: e5aed7
+
+
+requirements: [
+	a1-1a-compacted-brick/800
+	a1-2a-stony-gloop/650
+    	a4-0a-resonarum/450
+	a5-0a-electrum-sheet/800
+]
+
+research: {
+	parent: f-a0-0a-connector
+}
+
+category: power

@@ -1,0 +1,6 @@
+type: Floor
+variants: 4
+
+attributes: {
+	heat: 0.25
+}

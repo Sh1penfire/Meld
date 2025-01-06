@@ -1,0 +1,179 @@
+type: crawl
+segments: 0
+flying: false
+
+loopSound: none
+speed: 0.1
+useUnitCap: false
+isEnemy: false
+defaultController: HugAI
+
+health: 120
+
+drag: 3
+
+hitSize: 12
+rotateSpeed: 0
+
+drawCell: false
+
+deathExplosionEffect: none
+deathSound: splash
+loopSound: spray
+
+weapons: [
+    {
+        x: 0
+        y: 0
+        alwaysShooting: true
+        shoot: {
+            firstShotDelay: 240
+        }
+        parts: [
+            {
+                type: RegionPart
+                name: meld-wuba-exploding-glow
+                outline: false
+                color: e5aed700
+                colorTo: e5aed7
+                blending: additive
+                moves: [
+                    {
+                        gx: 1.1
+                        gy: 1.1
+                        progress: {
+                            type: charge
+                            ops: [
+                                {
+                                    op: compress
+                                    start: 0.3
+                                    end: 1
+                                }
+                                {
+                                    op: curve
+                                    interp: pow5In
+                                }
+                                {
+                                    op: curve
+                                    interp: sine
+                                }
+                            ]
+                        }
+                    }
+                ]
+                progress: {
+                    type: charge
+                    ops: [
+                        {
+                            op: compress
+                            start: 0.2
+                            end: 0.9
+                        }
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+        ]
+        reload: 150
+        shootSound: titanExplosion
+        bullet: {
+            killShooter: true
+            splashDamage: 1200
+            splashDamageRadius: 45
+            collides: false
+            absorbable: false
+            hittable: false
+            instantDisappear: true
+		smokeEffect: none
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 150
+                        baseLength: 10
+                        length: 75
+                        particles: 17
+                        sizeFrom: 6
+                        sizeTo: 0
+                        interp: pow5In
+                        sizeInterp: pow5Out
+                        colorFrom: e5aed7
+                        colorTo: e5aed7
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 95
+                        baseLength: 2
+                        length: 45
+                        particles: 10
+                        sizeFrom: 9
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        colorFrom: e5aed7
+                        colorTo: e5aed7a3
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 40
+                        baseLength: 10
+                        particles: 9
+                        length: 105
+                        line: true
+                        lenFrom: 6
+                        lenTo: 0
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                        sizeInterp: pow5In
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 13
+                        sizeFrom: 5
+                        sizeTo: 55
+                        strokeFrom: 7
+                        strokeTo: 0
+                        colorFrom: e5aed7
+                        colorTo: ffffff
+                    }
+                ]
+            }
+        }
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        alwaysShooting: true
+        reload: 5
+        shoot: {
+            shots: 10
+            shotDelay: 30
+        }
+        shootSound: none
+        bullet: {
+            instantDisappear: true
+            collides: false
+            hittable: false
+            absorbable: false
+            despawnEffect: none
+            smokeEffect: none
+            shootEffect: {
+                type: ParticleEffect
+                lifetime: 15
+                baseLength: 6
+                particles: 2
+                length: 15
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                sizeInterp: pow5In
+            }
+        }
+    }
+]

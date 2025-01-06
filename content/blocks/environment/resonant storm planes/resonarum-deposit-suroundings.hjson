@@ -5,7 +5,7 @@ solid: true
 breakable: false
 alwaysReplace: false
 
-itemDrop: a4-a0-resonarum
+itemDrop: a4-0a-resonarum
 
 lobesMin: 2
 lobesMax: 4

@@ -1,0 +1,114 @@
+type: legs
+speed: 0.9
+
+health: 200
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 16
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 4
+legLength: 10
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 1
+
+legMoveSpace: 2
+allowLegStep: true
+legPhysicsLayer: false
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 12
+            sizeFrom: 2
+            sizeTo: 12
+            strokeFrom: 1
+            strokeTo: 3
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: "craig-gun"
+		x: -3
+		y: 0
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+]
+
+immunities: [
+    aspect-burn
+]

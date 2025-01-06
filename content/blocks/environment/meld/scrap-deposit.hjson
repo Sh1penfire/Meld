@@ -1,8 +1,0 @@
-type: StaticWall
-variants: 0
-itemDrop: a0-a0-debris
-playerUnmineable: true
-solid: true
-attributes: {
-	a0-a0-debris: 1
-}

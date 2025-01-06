@@ -1,0 +1,62 @@
+type: Pump
+size: 3
+
+health: 540
+armor: 12
+
+itemCapacity: 2
+liquidCapacity: 180
+liquidPressure: 0.75
+pumpAmount: 0.16666666666
+consumeTime: 60
+
+solid: true
+placeableLiquid: true
+floating: true
+
+category: production
+
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawPumpLiquid
+	}
+	{
+		type: DrawDefault
+	}
+	{
+		type: DrawPistons
+		sinMag: 2.75
+		lenOffset: -2
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+	}
+]
+
+consumes: {
+	items: [
+		a0-0a-debris/1
+	]
+	liquids: [
+		a0-0b-aspect/3.3333333333333333333333333333333
+	]
+}
+
+requirements: [
+	a0-0a-debris/35
+	a1-1a-compacted-brick/85
+	a1-2a-stony-gloop/35
+]
+
+research: fluid-extraction
+researchCost: [
+	a0-0a-debris/750
+	a1-1a-compacted-brick/850
+	a1-2a-stony-gloop/250
+]

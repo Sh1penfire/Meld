@@ -1,0 +1,37 @@
+type: UnitFactory
+health: 300
+size: 3
+
+plans: [
+	{
+	unit: a-strata-b0-0a-shark
+	requirements: [
+		a2-0a-silver/40
+		a1-0a-carbolith/30
+    	]
+    	time: 1800
+  	}
+]
+
+consumes: {
+	liquid: a0-0b-aspect/3.3333333333333333
+}
+
+configurable: false
+
+requirements: [
+ 	a0-0a-debris/100
+	a1-0a-carbolith/65
+	a2-0a-silver/40
+]
+
+category: units
+
+research: h-a0-0a-core-raft
+
+researchCost: [
+	a0-0a-debris/80
+	a1-0a-carbolith/45
+	a2-0a-silver/35
+]
+

@@ -1,0 +1,37 @@
+type: WallCrafter
+size: 3
+category: production
+
+placeableLiquid: true
+
+drillTime: 60
+
+attribute: gloop
+
+liquidCapacity: 300
+
+consumes: {
+	liquids: [
+		c0-0a-rift/1
+		b0-0a-nectar/1
+	]
+}
+
+output: a1-2a-stony-gloop
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	a0-0a-debris/40
+]
+
+research: {
+	parent: building-foundations
+}
+
+researchCost: [
+	a0-0a-debris/13
+]

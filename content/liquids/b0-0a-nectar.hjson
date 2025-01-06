@@ -1,0 +1,33 @@
+type: CellLiquid
+
+viscosity: 0.95
+temperature: 0.25
+heatCapacity: 1
+
+spreadTarget: b1-0a-mercury
+
+maxSpread: 0.5
+spreadConversion: 0.85
+spreadDamage: 0
+removeScaling: 0.5
+
+effect: mangrove-a0-refreshed
+
+color: 55391b
+
+colorFrom: 7d642c
+colorTo: b89f47
+
+canStayOn: [
+	b1-0a-mercury
+	d0-1a-ichor
+	b3-0a-ooze
+	z0-1a-waste
+]
+
+research: {
+	parent:	a1-0a-carbolith
+	objectives: [
+		b0-0a-nectar
+	]
+}

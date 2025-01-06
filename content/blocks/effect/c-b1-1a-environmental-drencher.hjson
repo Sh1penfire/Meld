@@ -1,0 +1,425 @@
+type: LiquidTurret
+health: 600
+size: 5
+
+rotateSpeed: 3.5
+reload: 180
+recoil: 0.5
+alwaysShooting: true
+
+range: 90
+fogRadiusMultiplier: 0
+
+squareSprite: false
+targetGround: false
+targetAir: false
+targetHealing: true
+
+rotateSpeed: 0
+shootCone: 180
+shootY: 0
+velocityRnd: 0.1
+
+liquidCapacity: 360
+
+
+shoot: {
+    type: ShootMulti
+    source: {
+        type: ShootSpread
+            firstShotDelay: 60
+            spread: 12
+            shots: 6
+            shotDelay: 12
+    }
+    dest: [
+        {
+            type: ShootSpread
+            shots: 5
+            spread: 72
+        }
+    ]
+
+}
+inaccuracy: 3
+
+ammoTypes: {
+    b0-0a-nectar: {
+        type: ArtilleryBulletType
+        scaleLife: false
+        damage: 0
+        healAmount: 1
+        collidesTeam: true
+        trailEffect: none
+        shrinkY: 0.7
+        shrinkX: 0.8
+        width: 5
+        height: 8
+        backColor: 55391b
+        speed: 2.5
+        lifetime: 35
+        despawnHit: true
+        puddles: 3
+        puddleRange: 8
+        puddleLiquid: b0-0a-nectar
+        puddleAmount: 5
+        ammoMultiplier: 0.003
+        despawnEffect: none
+        fragBullets: 3
+        hitSound: splash
+        fragBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 0.5
+            drag: 0.03
+            liquid: b0-0a-nectar
+            orbSize: 1.5
+            puddleSize: 2
+            healAmount: 5
+            collidesTeam: true
+            layer: 99.99
+        }
+        bulletInterval: 5
+        intervalRandomSpread: 8
+        intervalBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 1.2
+            drag: 0.03
+            liquid: b0-0a-nectar
+            orbSize: 1.5
+            puddleSize: 0.5
+            healAmount: 5
+            collidesTeam: true
+            despawnHit: true
+            layer: 99.99
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: 55391b
+                    colorTo: 55391b60
+                    layer: 60
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 55391b
+                    colorTo: 55391ba0
+                    layer: 60
+                }
+            ]
+        }
+    }
+    b1-0a-mercury: {
+        type: ArtilleryBulletType
+        scaleLife: false
+        damage: 0
+        collidesTeam: true
+        trailEffect: none
+        shrinkY: 0.7
+        shrinkX: 0.8
+        width: 5
+        height: 8
+        backColor: 89828c
+        speed: 2.5
+        lifetime: 35
+        despawnHit: true
+        puddles: 3
+        puddleRange: 8
+        puddleLiquid: b1-0a-mercury
+        puddleAmount: 5
+        ammoMultiplier: 0.003
+        despawnEffect: none
+        fragBullets: 3
+        hitSound: splash
+        fragBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 0.5
+            drag: 0.03
+            liquid: b1-0a-mercury
+            orbSize: 1.5
+            puddleSize: 4
+            collidesTeam: true
+            layer: 99.99
+        }
+        bulletInterval: 5
+        intervalRandomSpread: 8
+        intervalBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 1.2
+            drag: 0.03
+            liquid: b1-0a-mercury
+            orbSize: 1.5
+            puddleSize: 2
+            collidesTeam: true
+            despawnHit: true
+            layer: 99.99
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: 89828c
+                    colorTo: 89828c60
+                    layer: 60
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 89828c
+                    colorTo: 89828ca0
+                    layer: 60
+                }
+            ]
+        }
+    }
+    b2-0a-blood: {
+        type: ArtilleryBulletType
+        scaleLife: false
+        damage: 0
+        collidesTeam: true
+        trailEffect: none
+        shrinkY: 0.7
+        shrinkX: 0.8
+        width: 5
+        height: 8
+        backColor: 7d312f
+        speed: 2.5
+        lifetime: 35
+        despawnHit: true
+        puddles: 3
+        puddleRange: 8
+        puddleLiquid: b2-0a-blood
+        puddleAmount: 5
+        ammoMultiplier: 0.003
+        despawnEffect: none
+        fragBullets: 3
+        hitSound: splash
+        fragBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 0.5
+            drag: 0.03
+            liquid: b2-0a-blood
+            orbSize: 1.5
+            puddleSize: 2
+            collidesTeam: true
+            layer: 99.99
+        }
+        bulletInterval: 5
+        intervalRandomSpread: 8
+        intervalBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 1.2
+            drag: 0.03
+            liquid: b2-0a-blood
+            orbSize: 1.5
+            puddleSize: 0.5
+            collidesTeam: true
+            despawnHit: true
+            layer: 99.99
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: 7d312f1b
+                    colorTo: 7d312f60
+                    layer: 60
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 7d312f1b
+                    colorTo: 7d312f60
+                    layer: 60
+                }
+            ]
+        }
+    }
+    b3-0a-ooze: {
+        type: ArtilleryBulletType
+        scaleLife: false
+        damage: 0
+        collidesTeam: true
+        trailEffect: none
+        shrinkY: 0.7
+        shrinkX: 0.8
+        width: 5
+        height: 8
+        backColor: 43201e
+        speed: 2.5
+        lifetime: 35
+        despawnHit: true
+        puddles: 3
+        puddleRange: 8
+        puddleLiquid: b3-0a-ooze
+        puddleAmount: 5
+        ammoMultiplier: 0.003
+        despawnEffect: none
+        fragBullets: 3
+        hitSound: splash
+        fragBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 0.5
+            drag: 0.03
+            liquid: b3-0a-ooze
+            orbSize: 1.5
+            puddleSize: 4
+            collidesTeam: true
+            layer: 99.99
+        }
+        bulletInterval: 5
+        intervalRandomSpread: 8
+        intervalBullet: {
+            type: LiquidBulletType
+            lifetime: 15
+            speed: 1.2
+            drag: 0.03
+            liquid: b3-0a-ooze
+            orbSize: 1.5
+            puddleSize: 2
+            collidesTeam: true
+            despawnHit: true
+            layer: 99.99
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: 43201e
+                    colorTo: 43201e60
+                    layer: 60
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: 43201e
+                    colorTo: 43201ea0
+                    layer: 60
+                }
+            ]
+        }
+    }
+}
+
+loopSound: none
+
+drawer: {
+	type: DrawTurret
+	parts: [
+        {
+            type: RegionPart
+            outline: false
+            suffix: -piston
+            moveY: -2.5
+            progress: {
+                type: charge
+                ops: [
+                    {
+                        op: inv
+                    }
+                    {
+                        op: curve
+                        interp: pow3In
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: curve
+                        interp: sineOut
+                    }
+                    {
+                        op: mul
+                        amount: 1.5
+                    }
+                    {
+                        op: clamp
+                    }
+                ]
+            }
+        }
+        {
+            type: RegionPart
+            outline: false
+            suffix: -door-top
+        }
+        {
+            type: RegionPart
+            under: true
+            mirror: true
+            suffix: -plate
+            x: 2.5
+            y: 1.5
+            moves: [
+                {
+                    rot: 90
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: delay
+                                amount: 0.25
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sineOut
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+	]
+}
+
+requirements: [
+	a0-0a-debris/80
+	a1-0a-carbolith/120
+]
+
+category: effect

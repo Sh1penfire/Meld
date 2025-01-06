@@ -1,0 +1,104 @@
+type: legs
+speed: 0.9
+
+health: 650
+armor: 20
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 30
+rotateSpeed: 6
+faceTarget: true
+
+drawCell: false
+
+legCount: 6
+legLength: 26
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+legExtension: 4
+legLengthScl: 0.9
+legPairOffset: 5
+
+legMoveSpace: 2.5
+allowLegStep: true
+legPhysicsLayer: false
+
+weapons: [
+	{
+		name: "poisag-launcher"
+		x: 0
+		y: 15
+		shootY: 5
+		reload: 360
+		shootCone: 180
+		rotate: false
+		mirror: false
+		alternate: false
+		top: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		layerOffset: -0.01
+		shoot: {
+			type: ShootSpread
+			shots: 2
+			shotDelay: 35
+			spread: 5
+		}
+		inaccuracy: 5
+		bullet: {
+			type: FlakBulletType
+			explodeRange: 50
+			explodeDelay: 1
+			sprite: "meld-clump"
+			collidesGround: true
+			speed: 5
+			lifetime: 60
+			width: 11
+			height: 14
+			damage: 115
+			splashDamage: 45
+			splashDamageRadius: 25
+			knockback: 12
+			recoil: -0.125
+			shootEffect: shootBig
+			hitEffect: explosion
+			homingPower: 0.225
+			homingRange: 120
+			buildingDamageMultiplier: 0.25
+			fragBullets: 1
+			fragBullet: {
+				spawnUnit: poisag-projector
+			}
+		}
+	}
+]
+
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-d0-0a-craig
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: c-meld-d0-1a-afraig
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-c0-0a-jilla
+	}
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

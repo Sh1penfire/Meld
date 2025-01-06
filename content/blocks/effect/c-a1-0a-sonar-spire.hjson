@@ -1,0 +1,32 @@
+type: UnitCargoLoader
+size: 2
+
+placeableLiquid: true
+itemCapacity: 0
+
+unitType: flarestack-light
+
+buildTime: 300
+polyColor: 00000000
+
+consumes: {
+	liquids: [
+		a0-0b-aspect/3.33333333333333333
+	]
+}
+
+
+category: effect
+requirements: [
+	a0-0a-debris/10
+	a2-0a-silver/15
+]
+
+research: {
+	parent: aspect-channeling
+}
+
+researchCost: [
+	a0-0a-debris/30
+	a2-0a-silver/20
+]

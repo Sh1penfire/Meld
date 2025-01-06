@@ -1,0 +1,58 @@
+type: SteamVent
+variants: 0
+blendGroup: metal-weave-floor
+parent: metal-weave-floor
+
+effectSpacing: 15
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 125
+            sizeInterp: slope
+            length: 25
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            layer: 61.7
+            spin: 12
+            baseRotation: 32.5
+        }
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 65
+            baseLength: 4
+            sizeFrom: 4
+            sizeTo: 8
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            layer: 61.8
+            cone: 45
+            baseRotation: 30
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 65
+            baseLength: 4
+            sizeFrom: 4
+            sizeTo: 8
+            colorFrom: cb8650b1
+            colorTo: 935b2900
+            layer: 61.9
+            cone: 35
+            baseRotation: 30
+        }
+    ]
+}
+
+attributes: {
+	aether: 1
+}

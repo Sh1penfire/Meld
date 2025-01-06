@@ -6,6 +6,9 @@ walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
 cacheLayer: water
 isLiquid: true
+
+liquidDrop: z0-1a-waste
+
 supportsOverlay: true
 
 emitLight: true

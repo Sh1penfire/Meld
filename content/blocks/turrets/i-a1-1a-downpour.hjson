@@ -1,0 +1,184 @@
+type: ItemTurret
+size: 5
+health: 2830
+
+liquidCapacity: 500
+
+range: 250
+fogRadiusMultiplier: 0.25
+
+reload: 360
+
+shootWarmupSpeed: 0.02
+
+shootSound: bang
+shootEffect: shootBig
+
+maxAmmo : 100
+
+shoot: {
+    type: ShootBarrel
+    shots: 30
+    shotDelay: 4
+    barrels: [
+        0, 1, 0
+        8, 1, 8
+        -8, 1,-8
+    ]
+}
+
+inaccuracy: 2
+
+ammoPerShot: 40
+ammoTypes: {
+	a2-0a-silver: {
+        sprite: meld-thorn
+		speed: 8.5
+		damage: 45
+        
+        pierceArmor: true
+        
+		lifetime: 28
+		width: 4
+		height: 12
+        
+		frontColor: ffffff
+		backColor: cbdbfc
+        
+		splashDamage: 35
+		splashDamageRadius: 14
+        
+		hitShake: 2.5
+        
+        fragOnAbsorb: false
+        trailColor: cbdbfc
+        ammoMultiplier: 1
+        
+        collidesAir: false
+        
+        
+        fragBullets: 3
+        fragVelocityMin: 0.8
+        fragVelocityMax: 1
+        fragLifeMin: 0.2
+        fragRandomSpread: 80
+		trailEffect: {
+			type: MultiEffect
+			effects: [
+				artilleryTrail,
+				{
+					type: ParticleEffect
+					lifetime: 12
+					length: 15
+					colorFrom: 7f7f7fff
+					colorTo: 3f3f3fff
+				}
+			]
+		}
+		hitEffect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					lifetime: 8
+					particles: 9
+					length: 35
+					sizeFrom: 7.5
+					colorFrom: 7f7f7fff
+					colorTo: 3f3f3fff
+				},
+				{
+					type: ParticleEffect
+					lifetime: 15
+					particles: 4
+					length: 15
+					sizeFrom: 4.5
+					colorFrom: ffb855
+					colorTo: db661c
+				},
+				blastExplosion
+			]
+		}
+        
+		fragBullet: {
+			type: BasicBulletType
+            sprite: meld-thorn
+            
+			speed: 5.5
+			damage: 6
+			lifetime: 35
+            knockback: 0.5
+            
+			pierce: true
+			pierceCap: 2
+			pierceArmor: true
+			absorbable: false
+			width: 4
+			height: 8
+			shrinkX: 1
+			shrinkY: 1
+			status: mangrove-d0-mercury-poisoning
+			statusDuration: 120
+			frontColor: ffffff
+			backColor: cbdbfc
+			splashDamage: 5
+			splashDamageRadius: 8
+			collidesAir: false
+			despawnHit: false
+			hitEffect: none
+			despawnEffect: none
+            
+            spawnBullets: [
+                {
+                    instantDisappear: true
+                    
+                    fragBullets: 3
+                    fragRandomSpread: 15
+                    fragBullet: {
+                        type: LiquidBulletType
+                        liquid: b1-0a-mercury
+                        status: mangrove-d1-slippery
+                        statusDuration: 25
+                        orbSize: 2
+                        damage: 0
+                        knockback: 1
+                        pierce: true
+                        pierceCap: 2
+                        collidesAir: false
+                    }
+                }
+            ]
+
+            puddles: 1
+            puddleRange: 3
+            puddleAmount: 2
+            puddleLiquid: b1-0a-mercury
+		}
+	}
+}
+
+consumes: {
+    liquids: [
+        a0-0b-aspect/1.666666666666666666666666666
+        b1-0a-mercury/2
+    ]
+}
+
+targetAir: false
+recoil: 1.5
+shootCone: 5
+category: turret
+
+requirements: [
+	a1-1a-compacted-brick/240
+	a1-2a-stony-gloop/240
+	a2-0a-silver/260
+	a4-0a-resonarum/35
+]
+
+research: {
+    parent: i-a0-0a-molotov
+    objectives: [
+	pressurized-dispersion
+    ]
+}

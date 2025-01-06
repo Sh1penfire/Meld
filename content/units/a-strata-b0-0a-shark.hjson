@@ -1,0 +1,194 @@
+type: hover
+hovering: true
+shadowElevation: 0.1
+speed: 2.5
+
+health: 320
+
+range: 80
+drag: 0.08
+accel: 0.1
+
+hitSize: 16
+fogRadius: 24
+
+lightRadius: 85
+lightOpacity: 0.35
+range: 100
+rotateSpeed: 6
+
+useEngineElevation: false
+faceTarget: false
+
+weapons: [
+	{
+		name: shark-mount
+		mirror: false
+		rotate: true
+		x: 0
+		y: -2
+		reload: 60
+		rotateSpeed: 3.5
+		recoil: 1.25
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		parts: [
+			{
+				type: RegionPart
+				suffix: -glow
+				color: 665c9f00
+				colorTo: bf92f9
+				outline: false
+				blending: additive
+				progress: warmup
+			}
+		]
+		bullet: {
+			type: MissileBulletType
+			sprite: missile-large
+			speed: 3.5
+
+			keepVelocity: false
+			scaleLife: false
+
+			lifetime: 50
+			damage: 1
+			splashDamage: 45
+			splashDamageRadius: 15
+
+			homingDelay: 5
+			homingPower: 0.045
+			weaveScale: 5
+			weaveMag: 1.5
+
+			width: 6
+			height: 10
+			shrinkX: 0
+			shrinkY: 0.2
+			hitShake: 3.5
+			frontColor: ffffff
+			backColor: a393feff
+			trailColor: a393feff
+			trailEffect: {
+				type: ParticleEffect
+				lifetime: 15
+				particles: 2
+				baseLength: 3
+				length: 9
+				line: true
+				strokeFrom: 1.5
+				strokeTo: 0
+				lenFrom: 3
+				lenTo: 1
+				colorTo: a393feff
+			}
+			trailChance: 0.15
+
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 15
+						baseLength: 10
+						length: 15
+						line: true
+						lenFrom: 4
+						lenTo: 0
+						colorFrom: a393feff
+						colorTo: 665c9fff
+					}
+					{
+						type: WaveEffect
+						lifetime: 5
+						sizeFrom: 5
+						sizeTo: 15
+						strokeFrom: 3
+						strokeTo: 1
+						colorFrom: a393feff
+						colorTo: 665c9fff
+					}
+				]
+			}
+			despawnEffect: none
+			hitSound: explosion
+			trailLength: 8
+			trailWidth: 2
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 5
+		y: -4
+		sides: 4
+		mirror: true
+		radius: 6
+		phase: 100
+		stroke: 2
+		circles: 3
+		layerOffset: -0.001
+		minStroke: 0.5
+		color: bf92f9
+	}
+	{
+		type: HoverPart
+		x: 4
+		y: 5
+		sides: 4
+		mirror: true
+		radius: 6
+		phase: 100
+		stroke: 2
+		circles: 3
+		layerOffset: -0.001
+		minStroke: 0.5
+		color: bf92f9
+	}
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 8
+		y: -7.75
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+	{
+		type: MoveEffectAbility
+		x: -8
+		y: -7.75
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+]
+
+engines: [
+	{
+		x: 8
+		y: -7.75
+		radius: 2.2
+		rotation: 315
+	}
+	{
+		x: -8
+		y: -7.75
+		radius: 2.2
+		rotation: 225
+	}
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+]
+
+research: j-constructor-c0-0a-ship-factory
+researchCostMultiplier: 0

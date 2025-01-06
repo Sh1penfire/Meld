@@ -1,0 +1,24 @@
+type: Floor
+variants: 0
+walkSound: splash
+walkSoundVolume: 0.02
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.6
+
+dragMultiplier: 0.8
+
+speedMultiplier: 1
+
+attributes: {
+	nectar: 2
+}
+
+cacheLayer: mud
+drownTime: 270
+
+liquidDrop: b1-0a-mercury
+
+status: mangrove-d1-slippery
+statusDuration: 5
+
+isLiquid: true

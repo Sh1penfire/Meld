@@ -1,0 +1,135 @@
+type: LiquidTurret
+
+rotateSpeed: 1.2
+shootCone: 15
+
+reload: 60
+
+shoot: {
+	type: ShootMulti
+	source: {
+		type: ShootBarrel
+		barrels: [
+			0, 0, 0
+			0, 0, 40
+			0, 0, 80
+			0, 0, 20
+			0, 0, 60
+			0, 0, 100
+		]
+		shots: 2
+		shotDelay: 8
+	}
+	dest: [
+		{
+			type: ShootSpread
+			shots: 3
+			spread: 120
+		}
+	]
+}
+
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: "-base-shadow"
+            drawPlan: false
+            layer: 11
+        }
+        {
+            type: DrawTurret
+        }
+    ]
+}
+
+destroyBullet: {
+		instantDisappear: true
+		collides: false
+		absorbable: false
+		hittable: false
+        puddles: 1
+        puddleRange: 2
+        puddleAmount: 0.05
+        puddleLiquid: b0-0a-nectar
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 12
+        fragBullet: {
+            lifetime: 12
+            width: 3
+            height: 5
+            shrinkY: 1
+            lightRadius: 0
+            despawnHit: true
+            puddles: 1
+            puddleRange: 12
+            puddleAmount: 2.5
+            puddleLiquid: b3-0a-ooze
+            hitEffect: none
+            despawnEffect: none
+        }
+}
+
+ammoTypes: {
+	b1-0a-mercury: {
+		instantDisappear: true
+		collides: false
+		absorbable: false
+		hittable: false
+		fragRandomSpread: 45
+		fragLifeMin: 0.6
+		fragBullets: 8
+        hitEffect: none
+        
+		fragBullet: {
+			damage: 15
+			speed: 8
+			lifetime: 15
+
+			sprite: meld-thorn
+			width: 2
+			height: 6
+
+			knockback: 5
+			status: mangrove-d0-mercury-poisoning
+
+            setDefaults: false
+            despawnHit: false
+            hitEffect: none
+            despawnEffect: none
+            
+			shrinkY: 0.2
+			shrinkX: 1
+			pierce: true
+			homingPower: 0.01
+			killShooter: true
+            fragBullets: 3
+            fragRandomSpread: 15
+            fragBullet: {
+                type: LiquidBulletType
+                liquid: b1-0a-mercury
+                pierce: true
+                pierceCap: 2
+            }
+            puddles: 1
+            puddleRange: 3
+            puddleAmount: 2
+            puddleLiquid: b1-0a-mercury
+		}
+	}
+}
+
+targetable: false
+
+itemDrop: f2-0a-elderflesh
+
+placeableLiquid: true
+
+alwaysReplace: false
+customShadow: true
+drawTeamOverlay: false
+buildVisibility: sandboxOnly
+
+category: effect

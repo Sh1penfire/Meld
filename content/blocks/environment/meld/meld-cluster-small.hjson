@@ -1,8 +1,0 @@
-type: WobbleProp
-variants: 2
-breakSound: rock-crush
-instantDeconstruct: false
-requirements: [
-	a0-a0-debris/40
-]
-buildVisibility: sandboxOnly

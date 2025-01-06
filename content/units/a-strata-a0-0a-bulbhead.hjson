@@ -1,0 +1,154 @@
+type: naval
+speed: 2.55
+
+health: 290
+aimDst: 10
+range: 50
+drag: 0.15
+accel: 0.8
+hitSize: 10
+lightRadius: 120
+lightOpacity: 1
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 8
+range: 100
+rotateSpeed: 7
+trailLength: 18
+trailScl : 1.2
+
+buildBeamOffset: 9
+rotateToBuilding: false
+buildRange: 120
+mineRange: 120
+fogRadius: 15
+
+weapons: [
+	{
+		mirror: false
+		rotate: true
+		rotateSpeed: 180
+		shootCone: 180
+		x: 0
+		y: 0
+		reload: 120
+		recoil: 1.25
+		shootSound: none
+		bullet: {
+			type: PointBulletType
+			speed: 1
+			damage: 0
+			lifetime: 192
+			trailEffect: explosion
+			keepVelocity: false
+			absorbable: false
+			hittable: false
+			collides: false
+			rangeOverride: 192
+			hitSound: none
+			fragBullets: 1
+			fragBullet: {
+				damage: 0
+				spawnUnit: bulbhead-sonar
+			}
+		}
+	}
+	{
+		type: RepairBeamWeapon
+		name: bulbhead-healer
+		mirror: false
+		rotate: true
+		rotateSpeed: 9
+		x: 0
+		y: -4
+		shootY: 2.5
+		beamWidth: 0.5
+
+		repairSpeed: 2
+		targetInterval: 1
+		targetSwitchInterval: 1
+
+		reload: 20
+		targetUnits: false
+		targetBuildings: true
+		controllable: false
+		laserColor: ffd37f
+		healColor: ffd37f
+		bullet: {
+			type: BulletType
+			maxRange: 120
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 120
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 118
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 120
+		reload: 15
+		effect: strata-a0-rally
+		duration: 120
+		activeEffect: {
+			type: ParticleEffect
+			lifetime: 35
+			region: meld-diamond
+			colorFrom: ffd37f
+			colorTo: ffd37f
+			particles: 3
+			spin: 1
+			length: 120
+			sizeFrom: 0
+			sizeTo: 2
+			interp: one
+			sizeInterp: slope
+			lightScl: 0
+		}
+		applyEffect: none
+	}
+	{
+		type: RegenAbility
+		amount: 0.35
+	}
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]
+
+research: h-a0-0a-core-raft

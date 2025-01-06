@@ -1,0 +1,596 @@
+type: ItemTurret
+
+health: 450
+armor: 25
+size: 3
+
+reload: 900
+alwaysShooting: true
+targetGround: false
+targetAir: false
+rotateSpeed: 0
+
+squareSprite: false
+
+shootY: 0
+elevation: 0
+
+recoil: 0
+
+ammoPerShot: 3
+ammoTypes: {
+	h1-0a-larva: {
+		ammoMultiplier: 1
+		spawnUnit: craig-cluster
+	}
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+        //larva
+        {
+            type: RegionPart
+            suffix: -mid
+            outline: true
+            
+            moves: [
+                {
+                    gy: -1
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.9
+                                end: 1
+                            }
+                            {
+                                op: curve
+                                interp: pow2Out
+                            }
+                        ]
+                    }
+                }
+                {
+                    gy: -1
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: inv
+                            }
+                            {
+                                op: compress
+                                start: 0.4
+                                end: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        //Shells
+        {
+            type: RegionPart
+            suffix: -shell
+            x: -4
+            y: -4
+            growX: -1
+            growY: -1
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0
+                        end: 0.6
+                    }
+                ]
+            }
+            moves: [
+                {
+                    x: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: add
+                                amount: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: -shell
+            x: -4
+            y: -4
+            growX: -1
+            growY: -1
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0
+                        end: 0.6
+                    }
+                ]
+            }
+            moves: [
+                {
+                    x: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: add
+                                amount: 0.65
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: add
+                                amount: 0.65
+                            }
+                            {
+                                op: add
+                                amount: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: -shell
+            x: -4
+            y: -4
+            growX: -1
+            growY: -1
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0
+                        end: 0.6
+                    }
+                ]
+            }
+            moves: [
+                {
+                    x: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: add
+                                amount: 0.15
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 8
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.6
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                            {
+                                op: mul
+                                amount: 8
+                            }
+                            {
+                                op: add
+                                amount: 0.15
+                            }
+                            {
+                                op: add
+                                amount: 0.5
+                            }
+                            {
+                                op: curve
+                                interp: sine
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        //tops
+        {
+            type: RegionPart
+            suffix: -top1
+            rotation: -90
+            x: -12
+            moveX: 12
+            growY: -1
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: inv
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+        }
+        {
+            type: RegionPart
+            suffix: -top2
+            rotation: -90
+            x: 12
+            moveX: -12
+            growY: -1
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: inv
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+        }
+        {
+            type: RegionPart
+            suffix: -top1
+            y: -12
+            moveY: 12
+            growY: -1
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: inv
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+        }
+        {
+            type: RegionPart
+            suffix: -top2
+            y: 12
+            moveY: -12
+            growY: -1
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 0.8
+                    }
+                    {
+                        op: slope
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: clamp
+                    }
+                    {
+                        op: inv
+                    }
+                    {
+                        op: curve
+                        interp: sine
+                    }
+                ]
+            }
+        }
+        //top of the block
+        {
+            type: RegionPart
+            suffix: -rim
+        }
+    ]
+}
+
+destroyBulletSameTeam: true
+destroyBullet: {
+    spawnBullets: [
+        {
+            instantDisappear: true
+            despawnEffect: none
+            hittable: false
+            collides: false
+            absorbable: false
+            fragBullets: 3
+            fragBullet: {
+                spawnUnit: c-meld-d0-1a-afraig
+            }
+        }
+    ]
+    instantDisappear: true
+    despawnEffect: none
+    hittable: false
+    collides: false
+    absorbable: false
+    fragBullets: 2
+    fragBullet: {
+        spawnUnit: c-meld-d0-0a-craig
+    }
+}
+
+consumes: {
+	liquids: [
+		d0-1a-ichor/0.5
+	]
+}
+
+requirements: [
+	e0-0a-meld-shard/600
+	a0-0a-debris/4500
+]
+
+category: units

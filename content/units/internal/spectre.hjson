@@ -1,0 +1,80 @@
+type: crawl
+speed: 1.2
+
+hitSize: 12
+
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createScorch: false
+allowedInPayloads: false
+hidden: false
+playerControllable: false
+
+canDrown: false
+hovering: true
+
+fogRadius: 10
+lightRadius: 80
+lightOpacity: 1
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+
+segments: 3
+segmentMag: 0.5
+drawCell: false
+drawBody: false
+
+weapons: [
+	{
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 12
+		shootCone: 180
+		recoil: 0
+		shoot: {
+			shots: 2
+		}
+		inaccuracy: 180
+		shootSound: none
+		bullet: {
+			type: LiquidBulletType
+			speed: 0.35
+			liquid: a1-0a-liquid-data
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shoot: {
+			shots: 12
+		}
+		inaccuracy: 180
+		shootSound: data-aquire
+		bullet: {
+			type: LiquidBulletType
+			speed: 0.35
+			liquid: a1-0a-liquid-data
+		}
+	}
+]
+
+immunities: [
+	strata-a0-rally
+]

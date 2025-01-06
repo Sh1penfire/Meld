@@ -1,0 +1,22 @@
+damage: -0.45
+
+reloadMultiplier: 2
+
+healthMultiplier: 1.15
+
+effect: {
+    type: ParticleEffect
+    region: meld-swirl
+    lifetime: 85
+    interp: pow5Out
+    sizeInterp: slope
+    length: 35
+    baseLength: 5
+    sizeFrom: 2
+    sizeTo: 5
+    colorFrom: b89f47d1
+    colorTo: 67301900
+    spin: 12
+}
+
+effectChance: 0.15

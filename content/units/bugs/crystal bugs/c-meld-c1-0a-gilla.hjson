@@ -1,0 +1,209 @@
+type: legs
+speed: 1
+
+health: 750
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 20
+rotateSpeed: 6.5
+faceTarget: true
+
+legCount: 6
+legLength: 20
+legGroupSize: 1
+legSpeed: 1
+legForwardScl: 4
+legBaseOffset: -4
+legContinuousMove: true
+legMoveSpace: 0.8
+
+drawCell: false
+
+controller: HugAI
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 95
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: WaveEffect
+            lifetime: 12
+            sizeFrom: 2
+            sizeTo: 20
+            strokeFrom: 1
+            strokeTo: 4
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 3
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: gilla-crystal
+		x: 0
+		y: 0
+		shootY: 18
+		shootCone: 13
+		reload: 60
+		recoil: 0
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		top: false
+		shootSound: torch
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 3
+		
+		bullet: {
+			type: ContinuousFlameBulletType
+			recoil: -0.01
+			damage: 24
+			flareLength: 0
+			length: 40
+			width: 5.2
+			knockback: 5
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragLifeMin: 0.5
+			rangeOverride: 10
+			speed: 0
+            fragBullets: 12
+            fragBullet: {
+                sprite: "meld-husk2-broken"
+                speed: 6.5
+                drag: 0.008
+                lifetime: 65
+                width: 9.5
+                height: 9.5
+                damage: 7
+                knockback: 0.5
+                spin: 6.5
+                despawnEffect: none
+                hitEffect: none
+                shrinkX: 1
+                shrinkY: 1
+            }
+			instantDisappear: true
+			splashDamage: 0
+			hittable: false
+            hitEffect: none
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragBullets: 12
+            fragLifeMin: 0.5
+			rangeOverride: 10
+			speed: 0
+            fragBullet: {
+                sprite: "meld-husk2"
+                speed: 4.5
+                drag: 0.008
+                lifetime: 85
+                width: 10
+                height: 10
+                damage: 4
+                knockback: 0.5
+                spin: 12.5
+                despawnEffect: none
+                hitEffect: none
+                shrinkX: 1
+                shrinkY: 1
+                weaveScale: 85
+                weaveMag: 2
+            }
+			instantDisappear: true
+			splashDamage: 0
+			hittable: false
+            hitEffect: none
+		}
+	}
+]
+
+immunities: [
+    aspect-burn
+]

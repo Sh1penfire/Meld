@@ -1,0 +1,130 @@
+type: legs
+speed: 0.4
+
+health: 160
+
+drag: 0.08
+accel: 0.15
+range: 40
+
+hitSize: 12
+rotateSpeed: 12
+faceTarget: true
+
+legCount: 4
+legLength: 10
+legMaxLength: 1.2
+legGroupSize: 2
+legSpeed: 1
+legForwardScl: 2
+legBaseOffset: -1
+legContinuousMove: true
+legMoveSpace: 0.8
+
+drawCell: false
+
+controller: HugAI
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 95
+            baseLength: 5
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 1.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: WaveEffect
+            lifetime: 6
+            sizeFrom: 2
+            sizeTo: 10
+            strokeFrom: 1
+            strokeTo: 4
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 1
+            sizeTo: 3
+            strokeFrom: 2
+            strokeTo: 0.4
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: scorcher-crystal
+		x: 0
+		y: 0
+		mirror: false
+		alternate: false
+        	rotate: false
+		reload: 14
+		shootCone: 15
+        	recoil: 0
+        
+		shootY: 8
+		continuous: true
+		alwaysContinuous: true
+		shootSound: torch
+		
+        parts: [
+            {
+                type: RegionPart
+                name: meld-scorcher-mount-crystal-shine
+                progress: warmup
+                color: ffffff00
+                colorTo: ffffff
+                outline: false
+            }
+        ]
+        	shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 4
+		bullet: {
+			type: ContinuousFlameBulletType
+        	    	lifetime: 85
+			damage: 13
+			length: 35
+			width: 3.5
+			knockback: 3
+			pierceCap: 3
+			flareLength: 8
+			recoil: -0.05
+			rangeOverride: 55
+            		//Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+	}
+]
+
+immunities: [
+    aspect-burn
+]

@@ -1,0 +1,523 @@
+type: legs
+shadowElevation: 0.1
+speed: 0.7
+
+health: 8400
+armor: 75
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 58
+rotateSpeed: 2.1
+
+faceTarget: true
+
+aimDst: 1
+legCount: 6
+legLength: 65
+legMaxLength: 1.25
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 1
+legBaseOffset: 15
+legMoveSpace: 0.65
+legSpeed: 0.005
+drownTimeMultiplier: 5
+
+allowLegStep: true
+
+singleTarget: true
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 130
+            baseLength: 10
+            length: 35
+            particles: 11
+            sizeFrom: 2
+            sizeTo: 5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 12
+            baseLength: 10
+            length: 30
+            line: true
+            lenFrom: 3
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 8
+            length: 55
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 8
+            sizeFrom: 5
+            sizeTo: 45
+            strokeFrom: 4
+            strokeTo: 0
+            colorFrom: e5aed7
+            colorTo: ffffff
+        }
+    ]
+}
+
+weapons: [
+    //continuous flame
+	{
+		x: 0
+		y: 0
+		shootY: 35.25
+		mirror: false
+		alternate: false
+		continuous: true
+        reload: 120
+		recoil: 0
+		shootCone: 25
+		shootStatus: slow
+		shootStatusDuration: 120
+		shootSound: torch
+		bullet: {
+			type: ContinuousFlameBulletType
+            optimalLifeFract: 0.25
+            lifetime: 240
+			flareColor: d22fee
+			damage: 18
+			flareLength: 42
+			flareWidth: 6.2
+			length: 160
+			width: 6.7
+			knockback: 4.5
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+        parts: [
+            {
+                type: RegionPart
+                name: meld-kithlid-crystal-shine
+                progress: recoil
+                blending: additive
+                outline: false
+                color: ffffff00
+                colorTo: ffffff82
+            }
+        ]
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 35.25
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		shootCone: 25
+		reload: 360
+		recoil: 0
+		inaccuracy: 12
+		shoot: {
+			shots: 24
+            shotDelay: 10
+		}
+		shootSound: flame
+
+		bullet: {
+            type: BulletType
+			damage: 1.5
+			buildingDamageMultiplier: 0.01
+			pierce: true
+			pierceBuilding: true
+			scaleLife: false
+			speed: 3.2
+			lifetime: 46
+			smokeEffect: none
+			lightRadius: 0
+			despawnEffect: none
+			knockback: 4.5
+            rangeOverride: 160
+			shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        cone: 25
+                        lifetime: 104
+                        baseLength: 4
+                        particles: 6
+                        length: 25
+                        sizeFrom: 6.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab100
+                        interp: pow5Out
+                        sizeInterp: pow2In
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        region: meld-swirl
+                        cone: 45
+                        lifetime: 104
+                        baseLength: 4
+                        particles: 4
+                        length: 55
+                        sizeFrom: 6.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab100
+                        interp: pow5Out
+                        sizeInterp: pow2In
+                        spin: 15
+                        followParent: false
+                    }
+                ]
+            }
+		}
+	}
+	{
+		x: 0
+		y: 0
+		shootY: 35.25
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		shootCone: 25
+		reload: 360
+		recoil: 0
+		inaccuracy: 12
+		shoot: {
+			shots: 24
+            shotDelay: 5
+            firstShotDelay: 120
+		}
+		shootSound: flame
+        
+		bullet: {
+            type: BasicBulletType
+            sprite: meld-swirl
+            shrinkX: 1
+            shrinkY: 1
+            width: 24
+            height: 24
+            frontColor: e5aed7
+            damage: 0
+            pierce: true
+            pierceBuilding: true
+            scaleLife: false
+            speed: 4.2
+            lifetime: 14
+            smokeEffect: none
+            lightRadius: 0
+            despawnEffect: none
+            knockback: 12.5
+            spin: 2.5
+            intervalRandomSpread: 35
+            impact: true
+            bulletInterval: 5
+            recoil: 0.25
+            intervalBullet: {
+                type: BasicBulletType
+                sprite: meld-swirl
+                shrinkX: 1
+                shrinkY: 1
+                width: 8
+                height: 8
+                frontColor: e5aed7
+                damage: 1.5
+                buildingDamageMultiplier: 0.01
+                pierce: true
+                pierceBuilding: true
+                scaleLife: false
+                speed: 3.2
+                lifetime: 46
+                smokeEffect: none
+                lightRadius: 0
+                despawnEffect: none
+                knockback: 8.5
+                spin: 2.5
+                impact: true
+            }
+            rangeOverride: 160
+            chargeEffect: {
+                type: SeqEffect
+                effects: [
+                    {
+                        lifetime: 90
+                    }
+                    {
+                        type: ParticleEffect
+                        region: meld-sparkle
+                        lifetime: 30
+                        particles: 1
+                        length: 0
+                        spin: 5
+                        interp: pow5In
+                        colorFrom: d26ab100
+                        colorTo: ffffff
+                    }
+                ]
+            }
+			shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        region: meld-sparkle
+                        cone: 5
+                        lifetime: 85
+                        baseLength: 0
+                        particles: 3
+                        length: 155
+                        sizeFrom: 3.5
+                        sizeTo: 0
+                        colorFrom: ffffff
+                        colorTo: d26ab100
+                        interp: pow10Out
+                        sizeInterp: pow2In
+                        spin: 35
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        region: meld-sparkle
+                        cone: 8
+                        lifetime: 75
+                        baseLength: 4
+                        particles: 6
+                        length: 135
+                        sizeFrom: 6.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab100
+                        interp: pow5Out
+                        sizeInterp: pow2In
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        region: meld-swirl
+                        cone: 20
+                        lifetime: 104
+                        baseLength: 4
+                        particles: 4
+                        length: 135
+                        sizeFrom: 6.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab100
+                        interp: pow5Out
+                        sizeInterp: pow2In
+                        spin: 15
+                        followParent: false
+                    }
+                ]
+            }
+		}
+	}
+	{
+		x: 0
+		y: 0
+        shootY: 36.25
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		shootCone: 25
+		reload: 360
+		recoil: 0
+		inaccuracy: 35
+		shoot: {
+			shots: 13
+            shotDelay: 8
+            firstShotDelay: 120
+		}
+        
+		bullet: {
+            type: BasicBulletType
+            sprite: meld-sparkle
+            damage: 45
+            lifetime: 85
+            speed: 12.2
+            drag: 0.03
+            shrinkX: 1
+            shrinkY: 1
+            width: 24
+            height: 24
+            frontColor: e5aed7
+            trailColor: e5aed7
+            trailLength: 12
+            pierce: true
+            smokeEffect: none
+            lightRadius: 0
+            despawnEffect: none
+            knockback: 12.5
+            impact: true
+            homingPower: 0.02
+            spin: 2.5
+            rangeOverride: 160
+        }
+    }
+	{
+		x: 0
+		y: 0
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		shootCone: 25
+		reload: 360
+		recoil: 0
+		inaccuracy: 35
+		shoot: {
+            type: ShootBarrel
+            barrels: [0, 36.25, -180]
+			shots: 24
+            firstShotDelay: 120
+		}
+        
+		bullet: {
+            type: BasicBulletType
+            sprite: meld-sparkle
+            damage: 25
+            lifetime: 100
+            speed: 7.2
+            shrinkX: 1
+            shrinkY: 1
+            width: 16
+            height: 16
+            frontColor: e5aed7
+            trailColor: e5aed7
+            trailLength: 12
+            pierce: true
+            smokeEffect: none
+            lightRadius: 0
+            despawnEffect: none
+            knockback: 12.5
+            impact: true
+            weaveMag: 5
+            weaveScale: 15
+            homingPower: 0.05
+            spin: 2.5
+            rangeOverride: 160
+        }
+    }
+    //protrusions which fire jillas
+    {
+        alternate: true
+        top: true
+        x: 18.25
+        y: -20.5
+        aiControllable: false
+        controllable: false
+        autoTarget: true
+        rotate: true
+        rotationLimit: 50
+        shootCone: 360
+        recoil: 0
+        reload: 60
+        shoot: {
+            type: ShootBarrel
+            barrels: [0, 0, 292.5]
+        }
+        predictTarget: false
+        parts:[
+            {
+                type: RegionPart
+                name: meld-kithlid-launcher-crystal
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                        {
+                            op: curve
+                            interp: bounce
+                        }
+                    ]
+                }
+                x: -5
+                y: 5
+                moveX: 5
+                moveY: -5
+                moves: [
+                    {
+                        progress: recoil
+                        mx: -1
+                        my: 1
+                    }
+                ]
+            }
+            {
+                type: RegionPart
+                name: meld-kithlid-launcher
+                progress: recoil
+                moveX: -1
+                moveY: 1
+            }
+        ]
+        bullet: {
+            rangeOverride: 240
+            spawnUnit: kithlid-projectile
+        }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 20
+        unit: c-meld-c0-0a-jilla
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 15
+        unit: c-meld-d0-0a-craig
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 8
+        unit: c-meld-c1-0a-gilla
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 5
+        unit: c-meld-d1-0a-braig
+    }
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        unit: kithlid-amplifier-death
+    }
+]
+
+immunities: [
+    blackout
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

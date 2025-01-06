@@ -1,0 +1,136 @@
+type: hover
+
+flying: true
+
+speed: 3.5
+
+health: 340
+
+range: 80
+drag: 0.12
+accel: 0.2
+lifetime: 240
+
+hitSize: 18
+rotateSpeed: 3.5
+
+drawCell: false
+controller: HugAI
+
+deathExplosionEffect: none
+weapons: [
+	{
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		alwaysShooting: true
+		bullet: {
+			killShooter: true
+			instantDisappear: true
+			despawnEffect: none
+			absorbable: false
+			hittable: false
+			collides: false
+		}
+	}
+	{
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+
+			rangeOverride: 10
+			hitEffect: {
+				type: MultiEffect
+				effects: [
+					{
+						type: ParticleEffect
+						lifetime: 130
+						baseLength: 10
+						length: 35
+						particles: 11
+						sizeFrom: 2
+						sizeTo: 5
+						sizeInterp: pow5Out
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: ParticleEffect
+						lifetime: 12
+						baseLength: 10
+						length: 30
+						line: true
+						lenFrom: 3
+						lenTo: 0
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: ParticleEffect
+						lifetime: 25
+						baseLength: 10
+						particles: 8
+						length: 55
+						sizeFrom: 4
+						sizeTo: 0
+						colorFrom: e5aed7
+						colorTo: e5aed700
+					}
+					{
+						type: WaveEffect
+						lifetime: 8
+						sizeFrom: 5
+						sizeTo: 45
+						strokeFrom: 4
+						strokeTo: 0
+						colorFrom: e5aed7
+						colorTo: ffffff
+					}
+				]
+			}
+			speed: 0
+			splashDamageRadius: 35
+			instantDisappear: true
+			splashDamage: 120
+			killShooter: true
+			hittable: false
+		}
+	}
+]
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: c-meld-g0-0a-wuba
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: c-meld-d0-0a-craig
+	}
+]

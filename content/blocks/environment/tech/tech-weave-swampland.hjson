@@ -8,3 +8,5 @@ solid: false
 cacheLayer: water
 isLiquid: true
 supportsOverlay: true
+
+liquidDrop: z0-1a-waste

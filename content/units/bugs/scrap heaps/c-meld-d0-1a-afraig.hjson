@@ -1,0 +1,171 @@
+type: legs
+speed: 1.4
+
+health: 160
+armor: 25
+
+drag: 0.14
+accel: 0.24
+range: 40
+
+hitSize: 19
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 4
+legLength: 16
+legForwardScl: 1.25
+legMaxLength: 2.2
+legBaseOffset: 2.5
+baseLegStraightness: 0.35
+legStraightness: 0.15
+legContinuousMove: true
+lockLegBase: true
+legGroupSize: 2
+
+legMoveSpace: 1.5
+allowLegStep: true
+legPhysicsLayer: false
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 55
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            baseLength: 10
+            particles: 2
+            length: 35
+            sizeFrom: 3.5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: 9ab3dba3
+            colorTo: 9ab3db25
+        }
+        {
+            type: WaveEffect
+            lifetime: 16
+            sizeFrom: 2
+            sizeTo: 12
+            strokeFrom: 1
+            strokeTo: 3
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 11
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: "afraig-spurter"
+		x: 1.25
+		y: -4.5
+		shootY: 4.5
+		rotateSpeed: 15
+		reload: 20
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 8.5
+		mirror: false
+		alternate: false
+		shoot: {
+			shots: 2
+			shotDelay: 7
+		}
+        shootSound: flame
+		bullet: {
+			type: BulletType
+            keepVelocity: false
+			damage: 9
+            speed: 3
+            lifetime: 15
+            knockback: 1
+			pierce: true
+			smokeEffect: none
+			recoil: -0.5
+			lightRadius: 0
+			despawnEffect: none
+            hitEffect: {
+                type: ParticleEffect
+                lifetime: 24
+                particles: 3
+                baseLength: 2
+                length: 12
+                line: true
+                strokeFrom: 1.75
+                strokeTo: 0
+                lenFrom: 3
+                lenTo: 1
+                colorFrom: feafea
+                colorTo: d26ab100
+            }
+            parentizeEffects: false
+			shootEffect:{
+                type: MultiEffect
+                effects: [
+                    {
+                            type: ParticleEffect
+                            cone: 5
+                            lifetime: 15
+                            baseLength: 0
+                            particles: 14
+                            length: 45
+                            sizeFrom: 0
+                            sizeTo: 4.2
+                            colorFrom: feafea
+                            colorTo: d26ab100
+                            interp: pow3Out
+                            sizeInterp: pow2In
+                            followParent: false
+                    }
+                    {
+                            type: ParticleEffect
+                            cone: 5
+                            lifetime: 24
+                            baseLength: 0
+                            particles: 12
+                            length: 55
+                            sizeFrom: 3.3
+                            sizeTo: 0
+                            colorFrom: feafea
+                            colorTo: d26ab100
+                            interp: pow3Out
+                            sizeInterp: pow2Out
+                            followParent: false
+                    }
+                ]
+            }
+		}
+	}
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

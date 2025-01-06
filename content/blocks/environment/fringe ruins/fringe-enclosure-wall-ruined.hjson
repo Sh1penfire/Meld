@@ -1,0 +1,8 @@
+type: Prop
+variants: 2
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+itemDrop: b0-0a-technoscrap

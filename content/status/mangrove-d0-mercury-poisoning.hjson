@@ -1,0 +1,8 @@
+damage: 6
+
+damageMultiplier: 0.85
+reloadMultiplier: 0.8
+speedMultiplier: 0.85
+healthMultiplier: 0.8
+
+effectChance: 0

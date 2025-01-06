@@ -1,2 +1,6 @@
 type: StaticWall
 variants: 2
+
+attributes: {
+	gloop: 1
+}

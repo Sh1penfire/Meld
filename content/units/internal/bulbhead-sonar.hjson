@@ -16,6 +16,7 @@ playerControllable: false
 canDrown: false
 
 hoverable: false
+hovering: true
 
 targetable: false
 

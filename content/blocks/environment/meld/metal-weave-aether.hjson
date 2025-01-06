@@ -1,8 +1,0 @@
-type: SteamVent
-variants: 0
-blendGroup: metal-weave-floor
-parent: metal-weave-floor
-
-attributes: {
-	aether: 1
-}
