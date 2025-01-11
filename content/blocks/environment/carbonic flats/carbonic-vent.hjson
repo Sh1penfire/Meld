@@ -56,5 +56,5 @@ effect:{
 
 attributes: {
 	steam: 1
-	heat: 1
+	heat: 0.11111111
 }

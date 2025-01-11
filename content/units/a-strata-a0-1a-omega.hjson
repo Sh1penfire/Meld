@@ -267,7 +267,7 @@ weapons: [
         rotationLimit: 60
         baseRotation: -15
         rotateSpeed: 2.5
-        shootCone: 25
+        shootCone: 15
         reload: 75
         display: false
         shoot: {
@@ -308,7 +308,7 @@ weapons: [
         rotationLimit: 60
         baseRotation: -15
         rotateSpeed: 2.5
-        shootCone: 25
+        shootCone: 15
         reload: 75
         display: false
         shoot: {
@@ -351,7 +351,7 @@ weapons: [
         rotationLimit: 60
         baseRotation: -15
         rotateSpeed: 2.5
-        shootCone: 25
+        shootCone: 15
         reload: 75
         shoot: {
             type: ShootSpread
@@ -388,7 +388,7 @@ weapons: [
 	baseRotation: -15
 	rotateSpeed: 2.5
 	top: true
-	shootCone: 25
+	shootCone: 15
 	reload: 75
 	recoil: 6.25
         shoot: {

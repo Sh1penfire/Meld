@@ -10,7 +10,6 @@ itemCapacity: 50
 attribute: heat
 baseEfficiency: 0
 minEfficiency: 0.00000001
-boostScale: 0.111111111111111111111111111111111111
 
 ambientSound: drill
 ambientSoundVolume: 0.08

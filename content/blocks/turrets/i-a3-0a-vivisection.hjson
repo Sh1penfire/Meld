@@ -610,13 +610,30 @@ ammoTypes: {
 			effects: [
 				{
                     type: ParticleEffect
+                    region: "meld-sparkle"
+                    lifetime: 25
+                    particles: 3
+                    sizeFrom: 8
+                    sizeTo: 0
+                    particles: 2
+                    baseLength: 6
+                    length: 14
+                    cone: 45
+                    offset: 90
+                    colorFrom: 4bb66b00
+                    colorTo: 85c799
+                    spin: 60
+				}
+				{
+                    type: ParticleEffect
+                    region: "particle"
                     lifetime: 25
                     particles: 3
                     sizeFrom: 3
                     sizeTo: 8
                     particles: 2
-                    lenFrom: 6
-                    lenTo: 14
+                    baseLength: 6
+                    length: 14
                     cone: 45
                     offset: 90
                     colorFrom: 85c799
@@ -624,12 +641,13 @@ ammoTypes: {
 				}
 				{
                     type: ParticleEffect
+                    region: "particle"
                     lifetime: 45
                     sizeFrom: 2
                     sizeTo: 4
                     particles: 4
-                    lenFrom: 2
-                    lenTo: 4
+                    baseLength: 2
+                    length: 4
                     colorFrom: 85c7997b
                     colorTo: 4bb66b00
 				}

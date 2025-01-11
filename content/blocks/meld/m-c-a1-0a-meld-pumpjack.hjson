@@ -3,10 +3,14 @@ size: 3
 configurable: false
 variants: 0
 solid: true
+
 attribute: ichor-vent
 minEfficiency: 9
-displayEfficiencyScale: 0.1888888888
+baseEfficiency: 0
+boostScale: 0.111111111111111111111111111111111111
 displayEfficiency: false
+
+liquidCapacity: 200
 
 squareSprite: false
 
@@ -49,5 +53,5 @@ drawer: [
 
 outputLiquid: {
 	liquid: d0-1a-ichor
-	amount: 3
+	amount: 2
 }

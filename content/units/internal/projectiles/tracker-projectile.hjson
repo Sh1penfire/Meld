@@ -99,11 +99,6 @@ weapons: [
 
 abilities: [
 	{
-		type: SpawnDeathAbility
-		amount: 1
-		unit: c-meld-c0-0a-jilla
-	}
-	{
 		type: MoveEffectAbility
 		x: 0
 		y: -6
