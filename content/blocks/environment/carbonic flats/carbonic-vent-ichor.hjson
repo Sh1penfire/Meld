@@ -70,7 +70,7 @@ effect:{
 }
 attributes: {
 	steam: 1
-	heat: 1
+	heat: 0.11111111
 	ichor: 1
 	ichor-vent: 1
 }

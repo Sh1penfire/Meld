@@ -584,7 +584,7 @@ destroyBullet: {
 
 consumes: {
 	liquids: [
-		d0-1a-ichor/0.5
+		d0-1a-ichor/1
 	]
 }
 

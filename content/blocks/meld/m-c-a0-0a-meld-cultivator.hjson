@@ -3,11 +3,14 @@ size: 3
 configurable: false
 variants: 0
 solid: true
+
 attribute: steam
 minEfficiency: 9
-displayEfficiencyScale: 0.1888888888
+baseEfficiency: 0
+boostScale: 0.111111111111111111111111111111111111
 displayEfficiency: false
 
+liquidCapacity: 200
 squareSprite: false
 
 requirements: [

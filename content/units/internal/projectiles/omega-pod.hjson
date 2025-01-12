@@ -1,0 +1,109 @@
+type: missile
+template: MissileUnitType
+
+speed: 7.2
+
+health: 340
+
+range: 80
+drag: 0.12
+accel: 0.2
+lifetime: 34
+
+hitSize: 12
+rotateSpeed: 1.2
+
+drawCell: false
+fogRadius: 0
+deathExplosionEffect: none
+deathSound: largeExplosion
+weapons: [
+	{
+		mirror: false
+		rotate: false
+        alwaysShooting: true
+		x: 0
+		y: 0
+		reload: 0
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 0
+		bullet: {
+			type: RailBulletType
+            damage: 250
+            length: 25
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            setDefaults: false
+            despawnHit: false
+            fragBullets: 1
+            fragBullet: {
+                killShooter: true
+                splashDamage: 45
+                splashDamageRadius: 35
+            }
+			
+			hittable: false
+		}
+	}
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 0
+		y: -6
+		rotateEffect: true
+		rotation: 180
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 25
+					lifetime: 25
+					baseLength: -5
+					particles: 3
+					length: 45
+					sizeFrom: 5
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 25
+					lifetime: 45
+					length: 65
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			
+				{
+					type: ParticleEffect
+					lifetime: 25
+					baseLength: 3
+					length: 15
+					line: true
+					strokeFrom: 2
+					strokeTo: 0
+					lenFrom: 4
+					lenTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]

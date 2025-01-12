@@ -42,7 +42,7 @@ drawer: [
 ]
 
 consumes: {
-	liquid: d0-1a-ichor/4
+	liquid: d0-1a-ichor/6
 }
 
 outputItem: h1-0a-larva/8

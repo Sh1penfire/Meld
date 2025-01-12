@@ -1,0 +1,249 @@
+health: 5000
+armor: 12
+speed: 1
+drag: 0.7
+accel: 2
+hitSize: 16
+lightRadius: 85
+lightOpacity: 0.315
+boostMultiplier: 1.25
+range: 235
+canDrown: false
+canBoost: true
+buildSpeed: 10
+mineSpeed: 10
+mineTier: 4
+itemCapacity: 70
+faceTarget: true
+rotateSpeed: 5
+lowAltitude: true
+omniMovement: true
+
+fogRadius: 30
+
+weapons: [
+    //Fragmentary artillery
+    {
+        name: aged-charger
+        reload: 150
+        alternate: true
+        mirror: false
+        rotate: false
+        ejectEffect: casing2
+        top: false
+        shootSound: pipe-launcher
+        x: -12.5
+        y: 0
+        rotate: false
+        shoot: {
+            type: ShootSpread
+            shots: 3
+            spread: 2
+            shotDelay: 8.5
+        }
+        otherSide: 1
+        inaccuracy: 7.5
+        bullet: {
+            type: ArtilleryBulletType
+            damage: 35
+            speed: 6.5
+            drag: 0.001
+            lifetime: 37
+            damage: 240
+            width: 12
+            height: 24
+            hitShake: 3.5
+            hitEffect: none
+            collides: true
+            collidesAir: true
+            collidesTiles: true
+            despawnEffect: explosion
+            fragVelocityMin: 0.6
+            fragBullets: 25
+            fragRandomSpread: 45
+            keepVelocity: false
+            hitSound: explosion
+            fragBullet: {
+                type: BasicBulletType
+                damage: 15
+                speed: 3
+                frontColor: eeb393
+                backColor: a97567
+                statusDuration: 120
+                buildingDamageMultiplier: 0.05
+                pierce: true
+                pierceCap: 5
+                drag: 0.03
+                despawnEffect: none
+                hitSound: none
+                lifetime: 40
+                shrinkY: 1
+                knockback: -0.15
+                hitSound: none
+                keepVelocity: false
+            }
+        }
+    }
+    //Bullet shotgun spray
+    {
+        name: none
+        reload: 85
+        recoil: 0.1
+        alternate: true
+        mirror: false
+        rotate: false
+        ejectEffect: casing2
+        top: true
+        shootSound: shootAltLong
+        x: 10
+        y: 0.5
+        flipSprite: true
+        otherSide: 0
+        bullet: {
+            spawnBullets: [
+                {
+                    instantDisappear: true
+                    absorbable: false
+                    collides: false
+                    hittable: false
+                    reflectable: false
+                    fragBullets: 5
+                    fragLifeMin: 0.8
+                    fragRandomSpread: 6
+                    fragBullet: {
+                        type: BasicBulletType
+                        damage: 120
+                        lifetime: 30
+                        speed: 10
+                        knockback: 12
+                        impulse: true
+                        splashDamage: 35
+                        splashDamageRadius: 8.5
+                        frontColor: eeb393
+                        backColor: a97567
+                        hitEffect: explosion
+                        despawnEffect: pulverizeRed
+                        width: 10
+                        height: 24
+                        keepVelocity: false
+                    }
+                }
+            ]
+            instantDisappear: true
+            absorbable: false
+            collides: false
+            hittable: false
+            reflectable: false
+            fragBullets: 24
+            fragLifeMin: 0.2
+            fragRandomSpread: 25
+            fragSpread: 2
+            fragBullet: {
+                type: BasicBulletType
+                damage: 15
+                lifetime: 25
+                speed: 9
+                knockback: 4
+                impulse: true
+                splashDamage: 8.5
+                splashDamageRadius: 8.5
+                pierce: true
+                frontColor: eeb393
+                backColor: a97567
+                hitEffect: pulverizeRed
+                despawnEffect: pulverizeRed
+                drag: -0.001
+                width: 3
+                height: 6
+                keepVelocity: false
+            }
+            rangeOverride: 240
+        }
+    }
+    //bullet hell
+    {
+        name: none
+        reload: 480
+        mirror: false
+        top: false
+        shootSound: shoot
+        shootShake: 0.5
+        x: 0
+        y: -12.5
+        rotate: false
+        shootCone: 360
+        shoot: {
+            shots: 3
+            shotDelay: 25
+        }
+        shootSound: missileLaunch
+        bullet: {
+            spawnUnit: omega-pod
+        }
+    }
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 240
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 236
+		stroke: 8
+		layer: 122
+		color: ffd37f
+	}
+]
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 240
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]
