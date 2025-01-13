@@ -18,9 +18,10 @@ liquidCapacity: 150
 
 shootY: 8.5
 
-
 loopSound: none
 shootSound: mediumCannon
+
+squareSprite: false
 
 destroyBulletSameTeam: true
 destroyBullet: {

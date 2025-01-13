@@ -381,31 +381,31 @@ weapons: [
         x: 11
         y: 3
         shootY: 4
-	mirror: true
-	alternate: false
-	rotate: true
-	rotationLimit: 60
-	baseRotation: -15
-	rotateSpeed: 2.5
-	top: true
-	shootCone: 15
-	reload: 75
-	recoil: 6.25
+        mirror: true
+        alternate: false
+        rotate: true
+        rotationLimit: 60
+        baseRotation: -15
+        rotateSpeed: 2.5
+        top: true
+        shootCone: 15
+        reload: 75
+        recoil: 6.25
         shoot: {
             type: ShootSpread
             firstShotDelay: 25
             shots: 5
             spread: 7
         }
-        
-	inaccuracy: 7
+
+        inaccuracy: 7
         velocityRnd: 0.1
-	shootStatus: omega-overdrive
-	shootStatusDuration: 55
-	shootSound: pipe-launcher
+        shootStatus: omega-overdrive
+        shootStatusDuration: 55
+        shootSound: pipe-launcher
         parentizeEffects: false
 
-	parts: [
+        parts: [
             {
                 type: RegionPart
                 suffix: -back
@@ -424,7 +424,7 @@ weapons: [
                     interp: pow5In
                 }
             }
-	{
+            {
                 type: RegionPart
                 suffix: -capsule
                 mirror: false
@@ -451,7 +451,7 @@ weapons: [
                         }
                     ]
                 }
-			}
+            }
             {
                 type: RegionPart
                 suffix: -door
@@ -475,7 +475,7 @@ weapons: [
                 type: RegionPart
                 suffix: ""
             }
-		]				
+        ]
 
 		bullet: {
 			sprite: shell

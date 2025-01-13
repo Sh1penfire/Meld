@@ -1,0 +1,124 @@
+type: missile
+template: MissileUnitType
+
+speed: 3.6
+
+health: 340
+
+range: 80
+drag: 0.12
+accel: 0.2
+lifetime: 68
+
+hitSize: 12
+rotateSpeed: 1.2
+
+drawCell: false
+fogRadius: 0
+deathExplosionEffect: none
+deathSound: largeExplosion
+
+outlineColor: ffffff00
+weapons: [
+	{
+		mirror: false
+		rotate: false
+        alwaysShooting: true
+		x: 0
+		y: 0
+		reload: 0
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 0
+		bullet: {
+			type: RailBulletType
+            damage: 250
+            length: 4
+			collidesTiles: false
+            absorbable: false
+			hittable: false
+            reflectable: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            setDefaults: false
+            despawnHit: false
+            knockback: 250
+            impact: true
+            fragBullets: 1
+            fragBullet: {
+                instantDisappear: true
+                despawnEffect: none
+                killShooter: true
+                splashDamage: 45
+                splashDamageRadius: 35
+            }
+		}
+	}
+    {
+        mirror: false
+        shootCone: 360
+        aiControllable: false
+        shootOnDeath: true
+        x: 0
+        y: 0
+        shootSound: none
+        shoot: {
+            type: ShootSpread
+            shots: 12
+            spread: 1
+        }
+        inaccuracy: 15
+        velocityRnd: 0.2
+        bullet: {
+            sprite: "meld-thorn"
+            speed: 6
+            lifetime: 15
+            damage: 15
+            
+            shrinkX: 1
+            shrinkY: 1
+            
+            knockback: 4
+            impact: true
+        }
+    }
+    {
+        mirror: false
+        shootCone: 360
+        aiControllable: false
+        shootOnDeath: true
+        x: 0
+        y: 0
+        shootSound: none
+        shoot: {
+        
+            type: ShootSpread
+            shots: 12
+            spread: 60
+        }
+        inaccuracy: 65
+        velocityRnd: 0.2
+        bullet: {
+            sprite: "meld-thorn"
+            speed: 3
+            lifetime: 25
+            damage: 15
+            
+            width: 3
+            height: 8
+            
+            knockback: 3
+            impact: true
+            
+            shrinkX: 1
+            shrinkY: 1
+        }
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]

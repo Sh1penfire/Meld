@@ -2,4 +2,10 @@ sector: 2
 planet: ikaru
 alwaysUnlocked: true
 difficulty: 1
-research: ikaru
+
+research: {
+	planet: ikaru
+	root: true
+	requiresUnlock: false
+	name: "Ikaru Sectors"
+}
