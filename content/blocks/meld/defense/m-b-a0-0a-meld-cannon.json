@@ -20,6 +20,8 @@ shootY: 8.5
 loopSound: none
 shootSound: mediumCannon
 
+squareSprite: false
+
 drawer: {
 	type: DrawTurret
 	parts: [

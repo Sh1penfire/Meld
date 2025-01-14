@@ -137,11 +137,11 @@ weapons: [
 			splashDamageRadius: 25
 			knockback: 4
 			recoil: -0.125
-			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion
 		}
 	}
+    //Death giblits
 	{
 		controllable: false
 		aiControllable: false
@@ -153,7 +153,7 @@ weapons: [
 		reload: 60
 		shootCone: 180
 		recoil: 0
-		shootSound: bang
+		shootSound: none
 		inaccuracy: 25
 		velocityRnd: 0.05
 		cooldownTime: 60000
@@ -178,7 +178,6 @@ weapons: [
                 splashDamage: 12
                 splashDamageRadius: 25
                 knockback: 2.5
-                trailEffect: smoke
                 shootEffect: shootBig
                 hitEffect: explosion
             }

@@ -108,6 +108,7 @@ weapons: [
 			]
 		}
 	}
+    //Death giblits
 	{
 		controllable: false
 		aiControllable: false
@@ -119,7 +120,7 @@ weapons: [
 		reload: 60
 		shootCone: 180
 		recoil: 0
-		shootSound: bang
+		shootSound: none
 		inaccuracy: 25
 		velocityRnd: 0.05
 		cooldownTime: 60000
@@ -165,7 +166,7 @@ weapons: [
 		reload: 60
 		shootCone: 180
 		recoil: 0
-		shootSound: bang
+		shootSound: none
 		inaccuracy: 25
 		velocityRnd: 0.05
 		cooldownTime: 60000

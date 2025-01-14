@@ -16,6 +16,8 @@ drawCell: false
 
 controller: HugAI
 
+deathExplosionEffect: none
+
 weapons: [
 	{
 		x: 6
@@ -125,6 +127,218 @@ weapons: [
 				ee5de9e3,
 				d22fee
 			]
+		}
+	}
+    //Death giblets
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragBullets: 6
+            fragLifeMin: 0.5
+            fragSpread: 60
+            fragRandomSpread: 25
+            fragBullet: {
+                sprite: "meld-chunk2"
+                speed: 5
+                drag: 0.008
+                lifetime: 45
+                width: 8
+                height: 8
+                shrinkX: 0.2
+                shrinkY: 0.2
+                damage: 3
+                splashDamage: 2
+                splashDamageRadius: 25
+                knockback: 2.5
+                shootEffect: shootBig
+                hitEffect: none
+            }
+
+			rangeOverride: 10
+			speed: 0
+			splashDamageRadius: 35
+			instantDisappear: true
+			splashDamage: 120
+			hittable: false
+            hitEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 155
+                        baseLength: 10
+                        length: 65
+                        particles: 8
+                        sizeFrom: 3
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 85
+                        baseLength: 10
+                        particles: 24
+                        length: 120
+                        sizeFrom: 2.5
+                        sizeTo: 0
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                        interp: pow2Out
+                        sizeInterp: pow2In
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 55
+                        baseLength: 10
+                        particles: 9
+                        line: true
+                        strokeFrom: 1.2
+                        strokeTo: 0.5
+                        lenFrom: 7
+                        lenTo: 4
+                        length: 104
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 25
+                        sizeFrom: 7
+                        sizeTo: 75
+                        strokeFrom: 2
+                        strokeTo: 0.4
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                        interp: pow2Out
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 15
+                        sizeFrom: 0
+                        sizeTo: 75
+                        strokeFrom: 4
+                        strokeTo: 24
+                        colorFrom: e5aed7
+                        colorTo: ffffff00
+                        interp: pow3Out
+                    }
+                ]
+            }
+		}
+    }
+    {
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragLifeMin: 0.5
+			rangeOverride: 10
+			speed: 0
+            fragBullets: 15
+            fragBullet: {
+                sprite: "meld-husk2-broken"
+                speed: 6.5
+                drag: 0.008
+                lifetime: 65
+                width: 9.5
+                height: 9.5
+                damage: 7
+                knockback: 0.5
+                spin: 6.5
+                despawnEffect: none
+                hitEffect: none
+                shrinkX: 1
+                shrinkY: 1
+            }
+			instantDisappear: true
+			splashDamage: 0
+			hittable: false
+            hitEffect: none
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragBullets: 8
+            fragLifeMin: 0.5
+			rangeOverride: 10
+			speed: 0
+            fragBullet: {
+                sprite: "meld-husk2"
+                speed: 4.5
+                drag: 0.008
+                lifetime: 85
+                width: 10
+                height: 10
+                damage: 4
+                knockback: 0.5
+                spin: 12.5
+                despawnEffect: none
+                hitEffect: none
+                shrinkX: 1
+                shrinkY: 1
+                weaveScale: 85
+                weaveMag: 2
+            }
+			instantDisappear: true
+			splashDamage: 0
+			hittable: false
+            hitEffect: none
 		}
 	}
 ]

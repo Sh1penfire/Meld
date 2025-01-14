@@ -1,0 +1,349 @@
+type: mech
+
+health: 950
+armor: 12
+speed: 1
+drag: 0.7
+accel: 2
+hitSize: 16
+lightRadius: 85
+lightOpacity: 0.315
+boostMultiplier: 1.25
+range: 235
+canDrown: false
+
+buildRange: 240
+mineRange: 240
+
+buildSpeed: 10
+mineSpeed: 10
+mineTier: 4
+itemCapacity: 70
+faceTarget: true
+rotateSpeed: 5
+lowAltitude: true
+omniMovement: true
+
+fogRadius: 30
+
+weapons: [
+    //Bullet shotgun spray
+    {
+        name: enforcer-blaster
+        reload: 85
+        
+        x: 14
+        y: 1.5
+        shootY: 8
+        
+        recoil: 4.6
+        
+        alternate: false
+        mirror: true
+        rotate: true
+        rotationLimit: 45
+        rotateSpeed: 4
+        shootCone: 35
+        
+        ejectEffect: casing2
+        top: true
+        shootSound: shootAltLong
+        
+        predictTarget: false
+        
+        parts: [
+            {
+                type: RegionPart
+                suffix: -back
+            }
+            {
+                type: RegionPart
+                suffix: -barrel
+                progress: reload
+                moveY: -5
+            }
+            {
+                type: RegionPart
+                suffix: -frame
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: compress
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                moveY: -7
+            }
+            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd2ae
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow5In
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -capsule
+                mirror: false
+                outline: false
+                moveX: 4
+                growX: 0
+                color: ffffff
+                colorTo: ffffff00
+                growProgress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -door
+                mirror: false
+                outline: false
+                y: -4
+                moveY: 4
+                color: ffffff00
+                colorTo: ffffff
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+        ]
+        
+        bullet: {
+            speed: 0
+            //big bullets
+            spawnBullets: [
+                {
+                    instantDisappear: true
+                    absorbable: false
+                    collides: false
+                    hittable: false
+                    reflectable: false
+                    fragBullets: 5
+                    fragLifeMin: 0.8
+                    fragRandomSpread: 6
+                    fragBullet: {
+                        type: BasicBulletType
+                        damage: 65
+                        lifetime: 30
+                        speed: 10
+                        knockback: 12
+                        impact: true
+                        splashDamage: 35
+                        splashDamageRadius: 8.5
+                        frontColor: eeb393
+                        backColor: a97567
+                        hitEffect: explosion
+                        despawnEffect: pulverizeRed
+                        width: 10
+                        height: 24
+                        keepVelocity: false
+                    }
+                }
+            ]
+            //small bullets
+            instantDisappear: true
+            absorbable: false
+            collides: false
+            hittable: false
+            reflectable: false
+            fragBullets: 2
+            fragLifeMin: 0.2
+            fragRandomSpread: 3
+            fragSpread: 75
+            fragAngle: 37.5
+            hitEffect: none
+            despawnEffect: none
+            fragBullet: {
+                instantDisappear: true
+                absorbable: false
+                collides: false
+                hittable: false
+                reflectable: false
+                fragBullets: 24
+                fragLifeMin: 0.2
+                fragRandomSpread: 12
+                fragSpread: 1
+                hitEffect: none
+                despawnEffect: none
+                fragBullet: {
+                    type: BasicBulletType
+                    damage: 5
+                    lifetime: 30
+                    speed: 6
+                    knockback: 4
+                    impact: true
+                    splashDamage: 2.5
+                    splashDamageRadius: 8.5
+                    pierce: true
+                    pierceCap: 4
+                    frontColor: eeb393
+                    backColor: a97567
+                    hitEffect: pulverizeRed
+                    despawnEffect: pulverizeRed
+                    drag: -0.001
+                    width: 3
+                    height: 6
+                    keepVelocity: false
+                }
+            }
+            rangeOverride: 240
+        }
+    }
+    //kinetic missile launcher
+    {
+        name: none
+        reload: 120
+        mirror: false
+        top: false
+        shake: 0.5
+        x: 0
+        y: -10.5
+        rotate: true
+        shootCone: 15
+        shoot: {
+            shots: 1
+            shotDelay: 5
+        }
+        
+        predictTarget: false
+        
+        parts: [
+            {
+                name: "meld-enforcer-missile"
+                colorTo: ffffff00
+                color: ffffff
+                mixColor: ffffff00
+                mixColorTo: ffd37f
+                
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                    ]
+                }
+                
+                outline: true
+            }
+            {
+                name: "meld-enforcer-launcher"
+            }
+            {
+                name: "meld-enforcer-launcher-blade"
+                progress: reload
+                mirror: true
+                moveRot: -18
+                moveY: -1
+            }
+        ]
+        
+        shootSound: missileLarge
+        bullet: {
+            spawnUnit: enforcer-missile
+            speed: 3.2
+        }
+    }
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 240
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 236
+		stroke: 8
+		layer: 122
+		color: ffd37f
+	}
+]
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 240
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]

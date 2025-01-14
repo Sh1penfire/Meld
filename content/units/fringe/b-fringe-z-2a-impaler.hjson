@@ -66,11 +66,11 @@ weapons: [
     //Autoturret spawners
     {
         name: impaler-thorax
-        reload: 480
+        reload: 320
         mirror: false
         top: false
         shootSound: shoot
-        shootShake: 0.5
+        shake: 0.5
         recoil: -4
         x: 0
         y: 0
@@ -79,12 +79,11 @@ weapons: [
         shootCone: 360
         shoot: {
             type: ShootBarrel
-            shots: 3
+            shots: 2
             shotDelay: 12
             barrels: [
-                0, 0, 0
-                5, 0, 0,
-                -5, 0, 0
+                8, 0, 0,
+                -8, 0, 0
             ]
         }
         shootSound: pipe-launcher

@@ -1,0 +1,4 @@
+damage: 0.85
+healthMultiplier: 0.5
+damageMultiplier: 0.35
+reloadMultiplier: 20

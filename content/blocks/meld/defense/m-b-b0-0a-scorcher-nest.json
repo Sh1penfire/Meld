@@ -18,6 +18,7 @@ liquidCapacity: 150
 
 shootY: 0
 
+squareSprite: false
 
 loopSound: none
 shootSound: mediumCannon

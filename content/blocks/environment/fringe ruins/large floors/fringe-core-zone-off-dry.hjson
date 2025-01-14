@@ -16,7 +16,7 @@ effect: {
 			lifetime: 220
 			region: meld-meld-core-zone-decal1
 			particles: 1
-			color: 74768183
+			colorFrom: 74768183
 			colorTo: 35343800
 			sizeFrom: 24
 			sizeTo: 30
@@ -30,7 +30,7 @@ effect: {
 			lifetime: 180
 			region: meld-meld-core-zone-decal2
 			particles: 1
-			color: 74768183
+			colorFrom: 74768183
 			colorTo: 35343800
 			sizeFrom: 24
 			sizeTo: 30
@@ -44,7 +44,7 @@ effect: {
 			lifetime: 140
 			region: meld-meld-core-zone-decal3
 			particles: 1
-			color: 74768183
+			colorFrom: 74768183
 			colorTo: 35343800
 			sizeFrom: 24
 			sizeTo: 30

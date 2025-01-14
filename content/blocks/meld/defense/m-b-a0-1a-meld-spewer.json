@@ -23,6 +23,8 @@ shootSound: mediumCannon
 
 targetAir: false
 
+squareSprite: false
+
 drawer: {
 	type: DrawTurret
 	parts: [
