@@ -62,7 +62,7 @@ effect: {
 			strokeTo: 3
 			colorFrom: 6d4068
 			colorTo: 331e3100
-			sizeInterp: pow2Out
+			interp: pow2Out
 		}
 	]
 }

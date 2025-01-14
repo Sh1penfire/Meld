@@ -1,8 +1,6 @@
 type: AttributeCrafter
 size: 3
 
-outputDirections: [0, 1]
-
 placeableLiquid: true
 category: production
 
@@ -26,7 +24,6 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 craftTime: 24
-regionrotated1: 3
 
 drawer: [
     {

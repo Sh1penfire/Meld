@@ -70,7 +70,7 @@ weapons: [
         mirror: false
         top: false
         shootSound: shoot
-        shootShake: 0.5
+        shake: 0.5
         recoil: -4
         x: 0
         y: 0

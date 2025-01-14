@@ -20,6 +20,8 @@ lightRadius: 45
 lightOpacity: 1
 rotateSpeed: 6
 
+drawCell: false
+
 faceTarget: false
 controller: MinerAI
 defaultController: MinerAI
@@ -178,7 +180,6 @@ parts: [
 	}
         radius: 32
 	radiusTo: 4
-	strokeFrom: 0
 	strokeTo: 5
         circle: true
         hollow: true

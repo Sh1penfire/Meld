@@ -56,37 +56,37 @@ weapons: [
                 type: RegionPart
                 name: meld-globkin-gun-blob
                 y: 4
-		growX: -1
-		color: ffffff
-		colorTo: ffffff00
-		progress: {
-			type: reload
-			ops: [
-				{
-					op: curve
-					interp: pow5Out
-				}
-				{
-					op: curve
-					interp: slope
-				}
-				{
-					op: curve
-					interp: sine
-				}
-			]
-		}
-		growProgress: {
-			type: reload
-			ops: [{
-				op: add
-				amount: 1
-			}]
-		}
+                growX: -1
+                color: ffffff
+                colorTo: ffffff00
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                        {
+                            op: curve
+                            interp: slope
+                        }
+                        {
+                            op: curve
+                            interp: sine
+                        }
+                    ]
+                }
+                growProgress: {
+                    type: reload
+                    ops: [{
+                        op: add
+                        amount: 1
+                    }]
+                }
                 moves: [
                     {
                         y: 6
-			gx: 1
+                        gx: 1
                         progress: {
                             type: charge
                             ops: [
@@ -94,9 +94,9 @@ weapons: [
                                     op: curve
                                     interp: pow5In
                                 }
-				{
-					op: inv
-				}
+                                {
+                                    op: inv
+                                }
                             ]
                         }
                     }

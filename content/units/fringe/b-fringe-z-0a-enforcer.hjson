@@ -231,7 +231,7 @@ weapons: [
         reload: 120
         mirror: false
         top: false
-        shootShake: 0.5
+        shake: 0.5
         x: 0
         y: -10.5
         rotate: true
