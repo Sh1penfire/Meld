@@ -1,25 +1,27 @@
 > sonar.ogg
-Used in most of the mod's sonars
 -Clipped start slightly
 
 https://freesound.org/people/Benboncan/sounds/72218/
 Author: Benboncan
-
-
-> clink.ogg
-Used to make most clinking sounds in the mod
-https://pixabay.com/sound-effects/box-of-ammo-64427/
-
-
-> saw-charge.ogg, saw-whiz.ogg, saw-hit.ogg
--unmodified
-Used for Vivisection's shooting and projectile sounds
-
-Author: Twcach
-
 
 > pipe-launcher.ogg
 -reverbed, then sent through bass & trebble to dampen
 
 Author: CeebFrack
 https://freesound.org/people/CeebFrack/sounds/108794/
+
+> saw-hit, saw-launch, saw-whizz
+-Unchanged
+
+Author: twcach
+
+
+> shatter.ogg
+
+Author: C_Rogers
+https://freesound.org/people/C_Rogers/sounds/203380/
+
+> deep-shatter.ogg
+
+Author: C_Rogers
+https://freesound.org/people/C_Rogers/sounds/203370/

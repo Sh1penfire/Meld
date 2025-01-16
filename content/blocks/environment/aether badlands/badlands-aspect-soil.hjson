@@ -1,0 +1,6 @@
+type: Floor
+variants: 3
+
+attributes: {
+	soil: 0.25
+}

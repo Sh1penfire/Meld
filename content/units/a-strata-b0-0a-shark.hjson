@@ -55,7 +55,7 @@ weapons: [
 			lifetime: 50
 			damage: 1
 			splashDamage: 45
-			splashDamageRadius: 15
+			splashDamageRadius: 25
 
 			homingDelay: 5
 			homingPower: 0.045

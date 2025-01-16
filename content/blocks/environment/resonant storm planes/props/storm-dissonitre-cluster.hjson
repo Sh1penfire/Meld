@@ -1,0 +1,46 @@
+type: AttributeCrafter
+size: 1
+configurable: false
+
+breakSound: shatter-deep
+
+buildCostMultiplier: 0
+
+solid: true
+
+attribute: dissonate-frags
+baseEfficiency: 0
+minEfficiency: 1
+
+customShadow: true
+squareSprite: false
+
+targetable: false
+liquidCapacity: 30
+
+drawer: [
+	{
+		type: DrawDefault
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow-heat
+	}
+]
+
+requirements: [
+	a4-1a-dissonitre/300
+]
+
+consumes: {
+	liquid: a0-0a-aether/0
+}
+
+outputLiquid: {
+	liquid: a0-0a-aether
+	amount: 0.083333333
+}

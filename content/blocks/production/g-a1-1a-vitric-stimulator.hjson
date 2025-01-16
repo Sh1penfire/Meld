@@ -1,0 +1,135 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: production
+
+
+attribute: rift
+baseEfficiency: 0
+minEfficiency: 8.9
+maxBoost: 2
+boostScale: 0.111111111111111111111111111111111111
+
+liquidCapacity: 300
+itemCapacity: 60
+
+rotate: true
+quickRotate: true
+placeableLiquid: true
+floating: true
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 120
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom1
+        layer: 29
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: d0-1a-ichor
+        padding: 1.5
+    }
+    {
+        type: DrawRegion
+        suffix: -bottom2
+    }
+
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padRight: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padLeft: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padRight: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padRight: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: c0-0a-rift
+        padLeft: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padRight: 17.75
+    }
+
+    {
+        type: DrawRegion
+    }
+    {
+        type: DrawRegion
+        suffix: -tops
+    }
+    {
+        type: DrawSideRegion
+    }
+    {
+        type: DrawLiquidOutputs
+    }
+]
+
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+consumes: {
+	power: 4
+	items: [
+		a4-0a-resonarum/8
+		a3-0a-vitric-mesh/2
+	]
+}
+
+outputItem: a3-1a-shiny-globule/16
+
+outputLiquids: [
+	c0-0a-rift/1
+]
+
+requirements: [
+ 	a0-0a-debris/60
+]
+
+research: {
+	parent: a-a0-0a-earthbound-infuser
+	objectives: [
+		d0-1a-ichor
+		c0-0a-rift
+	]
+}
+
+researchCost: [
+	a0-0a-debris/17
+]

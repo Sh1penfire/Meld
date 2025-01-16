@@ -1,0 +1,8 @@
+type: SteamVent
+variants: 0
+blendGroup: badlands-soft-sand
+parent: badlands-soft-sand
+
+attributes: {
+	aether: 1
+}

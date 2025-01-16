@@ -1,0 +1,55 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 20
+
+attribute: soil
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.2
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 240
+liquidCapacity: 240
+itemCapacity: 120
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a4-1a-dissonitre/12
+		a4-2a-riplom/60
+	]
+	liquids: [
+		c0-0a-rift/2
+	]
+}
+
+outputLiquids: [
+	a0-0a-aether/2
+]
+
+outputItems: [
+	a3-0a-vitric-mesh/24
+]
+
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

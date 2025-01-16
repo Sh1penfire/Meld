@@ -11,4 +11,5 @@ attributes: {
 	ichor: 0
 	ichor-vent: 0
 	gloop: 0
+	dissonate-frags: 0
 }

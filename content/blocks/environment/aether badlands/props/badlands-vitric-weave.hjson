@@ -1,0 +1,13 @@
+type: Prop
+variants: 1
+breakSound: shatter
+instantDeconstruct: false
+
+buildCostMultiplier: 0
+
+requirements: [
+	a4-1a-dissonitre/20
+	a3-0a-vitric-mesh/40
+]
+
+buildVisibility: sandboxOnly

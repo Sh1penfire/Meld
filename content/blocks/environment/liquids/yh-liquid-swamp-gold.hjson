@@ -10,7 +10,7 @@ dragMultiplier: 1.1
 speedMultiplier: 1
 
 attributes: {
-	gold: 0.25
+	gold: 0.05555555555
 }
 
 cacheLayer: mud
