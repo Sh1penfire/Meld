@@ -373,8 +373,7 @@ consumes: {
 }
 
 requirements: [
-	a1-0a-carbolith/75
-	a2-0a-silver/40
+	a2-0a-silver/240
 	a2-1a-electrum-sheet/240
 	a3-0a-vitric-mesh/180
 ]

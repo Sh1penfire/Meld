@@ -1,0 +1,216 @@
+type: mech
+speed: 2.25
+strafePenalty: 0.2
+
+health: 250
+armor: 2
+
+aimDst: 10
+range: 50
+drag: 0.45
+accel: 1.4
+hitSize: 16
+
+lightRadius: 120
+lightOpacity: 0.65
+
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 12
+itemCapacity: 45
+range: 100
+rotateSpeed: 6.5
+
+buildBeamOffset: 6.75
+rotateToBuilding: true
+buildRange: 120
+mineRange: 120
+fogRadius: 15
+
+targetAir: false
+
+useUnitCap: false
+
+alwaysUnlocked: true
+
+weapons: [
+    //main weapon
+	{
+		rotate: false
+        mirror: false
+        minShootWarmup: 0.98
+        warmupSpeed: 1
+        reload: 180
+        shootCone: 5
+        shootStatus: stunned
+        shootStatusDuration: 10
+        bullet: {
+            instantDisappear: true
+            hittable: false
+            absorbable: false
+            recoil: -15
+        }
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 120
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 118
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 120
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+	{
+		type: MoveEffectAbility
+		x: 10
+		y: -9
+		rotateEffect: true
+		rotation: 225
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: 0
+					particles: 2
+					length: 15
+					sizeFrom: 3
+					sizeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: -5
+					particles: 3
+					length: 15
+					sizeFrom: 4
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 25
+					length: 25
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 4
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+	{
+		type: MoveEffectAbility
+		x: -10
+		y: -9
+		rotateEffect: true
+		rotation: 135
+		effect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: 0
+					particles: 2
+					length: 15
+					sizeFrom: 3
+					sizeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 15
+					baseLength: -5
+					particles: 3
+					length: 15
+					sizeFrom: 4
+					sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+				}
+				{
+					type: ParticleEffect
+					cone: 45
+					lifetime: 25
+					length: 25
+					particles: 2
+					sizeFrom: 0
+					sizeTo: 4
+					colorFrom: e5aed7
+					colorTo: e5aed700
+				}
+			]
+		}
+	}
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]
+
+research: h-a0-0a-core-raft

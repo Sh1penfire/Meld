@@ -21,7 +21,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 120
+craftTime: 60
 
 drawer: [
     {
@@ -103,16 +103,19 @@ craftEffect: {
 }
 
 consumes: {
-	power: 4
 	items: [
-		a3-0a-vitric-mesh/2
+		a4-0a-resonarum/1
+		a4-2a-riplom/3
 	]
 }
 
-outputItem: a3-1a-shiny-globule/16
 
 outputLiquids: [
-	c0-0a-rift/1.5
+	c0-0a-rift/1
+]
+
+outputItems: [
+	a4-3a-riploko/4
 ]
 
 requirements: [

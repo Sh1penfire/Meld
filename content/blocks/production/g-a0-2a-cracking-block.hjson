@@ -16,7 +16,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 20
+craftTime: 60
 
 drawer: [
 	{
@@ -72,17 +72,17 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputLiquid: a0-0a-aether/0.5
-
-requirements: [
- 	a0-0a-debris/40
-]
-
 consumes: {
 	items: [
 		a4-1a-dissonitre/1
 	]
 }
+
+outputLiquid: a0-0a-aether/0.5
+
+requirements: [
+ 	a0-0a-debris/40
+]
 
 research: liquid-logistics
 

@@ -1,0 +1,29 @@
+type: StackConveyor
+size: 1
+health: 40
+
+speed: 0.1
+itemCapacity: 5
+
+outputRouter: false
+hasPower: true
+consumesPower: true
+conductivePower: true
+
+category: distribution
+
+baseEfficiency: 1
+consumes: {
+	power: 0.01
+}
+
+requirements: [
+	a2-1a-electrum-sheet/1
+	a3-0a-vitric-mesh/1
+]
+
+research: item-logistics
+
+researchCost: [
+	a0-0a-debris/5
+]

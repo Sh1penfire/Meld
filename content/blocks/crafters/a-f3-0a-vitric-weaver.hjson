@@ -12,6 +12,10 @@ baseEfficiency: 0
 minEfficiency: 1
 boostScale: 0.2
 
+liquidOutputDirections: [0]
+rotate: true
+quickRotate: true
+
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
@@ -32,12 +36,12 @@ consumes: {
 		a4-2a-riplom/60
 	]
 	liquids: [
-		c0-0a-rift/2
+		c0-0a-rift/4
 	]
 }
 
 outputLiquids: [
-	a0-0a-aether/2
+	a0-0a-aether/4
 ]
 
 outputItems: [
