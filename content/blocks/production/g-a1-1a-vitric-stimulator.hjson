@@ -103,7 +103,7 @@ craftEffect: {
 }
 
 consumes: {
-	power: 4
+	power: 2
 	items: [
 		a3-0a-vitric-mesh/2
 	]

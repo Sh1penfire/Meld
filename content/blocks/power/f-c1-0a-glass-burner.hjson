@@ -3,16 +3,16 @@ size: 3
 
 health: 540
 
-itemCapacity: 4
+itemCapacity: 12
 liquidCapacity: 100
-powerProduction: 2
+
 
 placeableLiquid: true
 floating: true
 
 category: power
 
-itemDuration: 120
+itemDuration: 15
 
 requirements: [
 	a0-0a-debris/120
@@ -23,12 +23,14 @@ requirements: [
 
 consumes: {
 	items: [
-		a3-0a-vitric-mesh/1
-		a4-2a-riplom/2
+		a3-0a-vitric-mesh/2
+		a4-2a-riplom/4
 	]
 }
 
 outputLiquid: c0-0a-rift/0.25
+
+powerProduction: 2
 
 research: {
 	parent: murk-handling
