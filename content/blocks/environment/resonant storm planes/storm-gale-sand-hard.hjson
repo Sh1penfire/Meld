@@ -1,0 +1,5 @@
+type: Floor
+variants: 3
+
+itemDrop: a4-2a-riplom
+playerUnmineable: true

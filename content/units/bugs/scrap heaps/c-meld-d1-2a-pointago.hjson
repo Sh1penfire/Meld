@@ -71,7 +71,40 @@ deathExplosionEffect: {
 }
 
 weapons: [
-    //Self boost
+    //Special status effect surge
+    {
+		x: -7
+		y: -4
+		shootY: 5
+		reload: 7200
+		shootCone: 360
+        
+		rotate: true
+		rotateSpeed: 0
+        shootWarmupSpeed: 0.01
+        minWarmup: 0.8
+        
+		mirror: false
+		alternate: false
+		shootSound: none
+		shootStatus: shattered
+		shootStatusDuration: 60
+		inaccuracy: 1
+        display: false
+        
+		bullet: {
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+            hitEffect: none
+            despawnEffect: none
+            splashDamage: 250
+            splashDamageRadius: 12
+            rangeOverride: 250
+		}
+    }
+    //Self boost visual + actual surge
     {
 		name: "pointago-booster"
 		x: -7
@@ -525,5 +558,6 @@ abilities: [
 ]
 
 immunities: [
-    aspect-burn
+	aspect-burn
+	shattered
 ]

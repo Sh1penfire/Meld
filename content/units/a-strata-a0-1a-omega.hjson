@@ -624,7 +624,7 @@ abilities: [
     }
     {
         type: ShieldRegenFieldAbility
-        range: 0
+        range: -7
         amount: 4
         max: 120
         reload: 5
@@ -656,6 +656,8 @@ abilities: [
 immunities: [
 	strata-a0-rally
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: h-a0-0a-core-raft

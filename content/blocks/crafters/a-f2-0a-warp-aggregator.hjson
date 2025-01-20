@@ -1,0 +1,63 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 20
+
+attribute: rift
+baseEfficiency: 0
+minEfficiency: 8.9
+maxBoost: 2
+boostScale: 0.111111111111111111111111111111111111
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 15
+liquidCapacity: 240
+
+liquidOutputDirections: [3, 1]
+itemCapacity: 60
+rotate: true
+quickRotate: true
+placeableLiquid: true
+floating: true
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a3-1a-shiny-globule/20
+	]
+	liquids: [
+		a0-0a-aether/0.5
+	]
+}
+
+outputLiquids: [
+	c0-0a-rift/0.75
+	c1-1a-warp/0.25
+]
+
+outputItems: [
+	a3-0a-vitric-mesh/1
+	a4-1a-dissonitre/2
+]
+
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

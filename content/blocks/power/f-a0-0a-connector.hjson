@@ -15,13 +15,13 @@ consumesPower: true
 outputsPower: true
 
 consumes: {
-    power: 0.1666666666
+    power: 0.01666666666
 }
 
 requirements: [
 	a1-1a-compacted-brick/25
 	a1-2a-stony-gloop/25
-	a5-0a-electrum-sheet/5
+	a2-1a-electrum-sheet/5
 ]
 
 research: {

@@ -1,0 +1,128 @@
+type: Prop
+variants: 2
+breakSound: shatter
+instantDeconstruct: false
+
+buildCostMultiplier: 0
+
+requirements: [
+	a4-1a-dissonitre/20
+	a3-0a-vitric-mesh/40
+]
+
+breakEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 1
+        region: meld-glass-rod
+        length: 36
+        lightOpacity: 0
+        spin: 0.1
+        sizeFrom: 5.25
+        sizeTo: 0
+        layer: 41
+        colorFrom: ffffff
+        colorTo: ffffff
+        interp: pow10Out
+        sizeInterp: pow10In
+        offset: 25
+    }
+    {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 1
+        region: meld-glass-rod
+        length: 36
+        lightOpacity: 0
+        spin: 0.1
+        sizeFrom: 5.25
+        sizeTo: 0
+        layer: 41
+        colorFrom: ffffff
+        colorTo: ffffff
+        interp: pow10Out
+        sizeInterp: pow10In
+        offset: 125
+    }
+    {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 1
+        region: meld-glass-rod
+        length: 36
+        lightOpacity: 0
+        spin: 0.1
+        sizeFrom: 5.25
+        sizeTo: 0
+        layer: 41
+        colorFrom: ffffff
+        colorTo: ffffff
+        interp: pow10Out
+        sizeInterp: pow10In
+        offset: 65
+    }
+    {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 1
+        region: meld-mesh-fragment1
+        length: 36
+        lightOpacity: 0
+        spin: 0.1
+        sizeFrom: 4.625
+        sizeTo: 0
+        layer: 41
+        colorFrom: ffffff
+        colorTo: ffffff
+        interp: pow10Out
+        sizeInterp: pow10In
+        offset: 125
+    }
+    {
+        type: ParticleEffect
+        lifetime: 160
+        particles: 1
+        region: meld-mesh-fragment2
+        length: 36
+        lightOpacity: 0
+        spin: 0.1
+        sizeFrom: 3.5
+        sizeTo: 0
+        layer: 41
+        colorFrom: ffffff
+        colorTo: ffffff
+        interp: pow10Out
+        sizeInterp: pow10In
+        offset: 65
+    }
+    {
+        type: ParticleEffect
+        lifetime: 75
+        particles: 3
+        region: meld-diamond
+        length: 9
+        spin: 0.1
+        sizeFrom: 2.5
+        sizeTo: 0.2
+        colorFrom: cb8650
+        colorTo: cb865000
+        interp: pow3Out
+        sizeInterp: pow2In
+    }
+    {
+        type: ParticleEffect
+        lifetime: 25
+        particles: 3
+        length: 24
+        line: true
+        lightOpacity: 0
+        lenFrom: 3
+        lenTo: 0.1
+        colorFrom: fddfc9
+        colorTo: e8996400
+        sizeInterp: pow2In
+    }
+]
+
+buildVisibility: sandboxOnly

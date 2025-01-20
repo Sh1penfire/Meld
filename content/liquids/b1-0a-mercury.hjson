@@ -1,6 +1,7 @@
 type: Liquid
 
-temperature: 0.45
+temperature: 0.2
+heatCapacity: 1
 
 color: 89828c
 

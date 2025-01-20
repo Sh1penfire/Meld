@@ -1,0 +1,31 @@
+type: LightBlock
+size: 1
+
+placeableLiquid: true
+category: effect
+
+squareSprite: false
+
+liquidCapacity: 15
+hasPower: false
+hasLiquids: true
+
+consumes: {
+	liquids: [
+		a0-0a-aether/0.1666666666666667
+	]
+}
+
+outputItems: [
+	a4-1a-dissonitre/1
+]
+
+requirements: [
+ 	a3-0a-vitric-mesh/4
+	a2-0a-silver/2
+]
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

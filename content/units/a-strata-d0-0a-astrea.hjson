@@ -139,7 +139,7 @@ weapons: [
             height: 16
             frontColor: cae4ec
             backColor: 83a5be
-            damage: 95
+            damage: 65
             keepVelocity: false
             hitSound: bang
             trailWidth: 2.2
@@ -151,7 +151,7 @@ weapons: [
             fragVelocityMin: 0.7
             fragVelocityMax: 1
             pierce: true
-            pierceCap: 5
+            pierceCap: 2
             knockback: 5
             pierceArmor: true
             fragOnHit: false
@@ -178,6 +178,8 @@ weapons: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: h-a0-0a-core-raft

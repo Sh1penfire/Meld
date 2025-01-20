@@ -1,0 +1,37 @@
+type: WallCrafter
+size: 3
+category: production
+
+placeableLiquid: true
+
+drillTime: 30
+
+attribute: electrum
+
+liquidCapacity: 300
+
+consumes: {
+	liquids: [
+		a0-0b-aspect/1.6666666666
+	]
+}
+
+output: a2-1a-electrum-sheet
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	a0-0a-debris/40
+	a2-0a-silver/25
+]
+
+research: {
+	parent: building-foundations
+}
+
+researchCost: [
+	a0-0a-debris/13
+]

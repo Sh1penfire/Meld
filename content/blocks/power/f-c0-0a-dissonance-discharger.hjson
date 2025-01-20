@@ -1,0 +1,42 @@
+type: ConsumeGenerator
+size: 3
+
+health: 540
+
+itemCapacity: 2
+liquidCapacity: 100
+
+
+placeableLiquid: true
+floating: true
+
+category: power
+
+itemDuration: 60
+
+explodeOnFull: true
+
+consumes: {
+	items: [
+		a4-0a-resonarum/2
+		a4-1a-dissonitre/1
+	]
+}
+
+outputLiquid: a0-0b-aspect/6.666666666666667
+
+powerProduction: 4
+
+requirements: [
+	a0-0a-debris/120
+	a2-0a-silver/80
+	a2-1a-electrum-sheet/75
+]
+
+research: {
+	parent: murk-handling
+}
+
+researchCost: [
+    a0-0a-debris/20
+]

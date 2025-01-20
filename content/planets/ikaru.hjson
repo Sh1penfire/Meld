@@ -31,10 +31,14 @@ itemWhitelist: [
 	a1-2a-stony-gloop
 	a2-0a-silver
 	e0-0a-meld-shard
-	a5-0a-electrum-sheet
+	a2-1a-electrum-sheet
 	a4-0a-resonarum
+	a4-1a-dissonitre
 	b1-0a-fragment
 	b0-0a-technoscrap
+	b0-1a-grating-chunk
+	b1-0a-fragment
+	b1-1a-memory-shard
 	c0-0a-industrial-rubble
 	d0-0a-industrial-rubble-cracked
 	f0-0a-bramble-vine

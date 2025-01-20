@@ -40,7 +40,6 @@ destroyBullet: {
 
 requirements: [
 	a0-0a-debris/5
-	a1-0a-carbolith/2
 ]
 
 research: e-a0-0a-channel-face

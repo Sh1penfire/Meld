@@ -1,0 +1,7 @@
+type: StaticWall
+variants: 3
+itemDrop: a2-1a-electrum-sheet
+
+attributes: {
+	electrum: 1
+}

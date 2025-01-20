@@ -1,0 +1,198 @@
+type: SteamVent
+variants: 0
+blendGroup: storm-gale-shale
+parent: storm-gale-shale
+
+effectSpacing: 10
+
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 125
+            sizeInterp: slope
+            length: 25
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: 8872dab1
+            colorTo: 3b297000
+            layer: 61.7
+            spin: 12
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 95
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 8872daa1
+            colorTo: 3b297000
+            layer: 61.8
+            cone: 25
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 85
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 8872da71
+            colorTo: 3b297000
+            layer: 61.9
+            cone: 15
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        
+        //
+        {
+            type: ParticleEffect
+            lifetime: 190
+            sizeInterp: slope
+            length: 45
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 6
+            colorFrom: 8872daa1
+            colorTo: 3b297000
+            layer: 61.8
+            cone: 25
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+        }
+        
+        //Bottom vent
+        {
+            type: ParticleEffect
+            lifetime: 155
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 3
+            sizeTo: 6
+            colorFrom: 8872da71
+            colorTo: 3b297000
+            layer: 61.9
+            cone: 15
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+        }
+        
+        {
+            type: ParticleEffect
+            region: "particle"
+            lifetime: 240
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            particles: 8
+            layer: 61.8
+            cone: 25
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+            sizeInterp: slope
+        }
+        
+        //Top left vent
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 8872daa1
+            colorTo: 3b297000
+            layer: 61.8
+            cone: 15
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 145
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 8872da71
+            colorTo: 3b297000
+            layer: 61.9
+            cone: 5
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
+        
+        
+        {
+            type: ParticleEffect
+            region: "particle"
+            lifetime: 240
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            particles: 3
+            layer: 61.8
+            cone: 15
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+            sizeInterp: slope
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: cb8650b1
+            colorTo: 935b2900
+            particles: 1
+            layer: 61.9
+            cone: 5
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
+    ]
+}
+
+//For those wondering how to calculate the offsets- https://www.desmos.com/calculator/gctm4wksxx
+
+
+
+attributes: {
+	heat: 0.11111111
+	rift: 1
+}

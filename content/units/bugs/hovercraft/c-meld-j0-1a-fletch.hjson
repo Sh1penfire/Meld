@@ -3,7 +3,7 @@ hovering: true
 
 speed: 2.25
 
-health: 320
+health: 290
 
 range: 80
 drag: 0.08
@@ -190,6 +190,9 @@ abilities: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
+	aspect-burn
+	shattered
+	lacerated
 ]
 
 research: j-constructor-c0-0a-ship-factory

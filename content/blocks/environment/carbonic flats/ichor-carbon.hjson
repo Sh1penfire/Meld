@@ -2,5 +2,6 @@ type: Floor
 variants: 3
 
 attributes: {
+	ichor: 0.25
 	heat: 0.25
 }

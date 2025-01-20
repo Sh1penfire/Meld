@@ -1,0 +1,50 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 60
+liquidCapacity: 500
+
+attribute: soil
+baseEfficiency: 0
+minEfficiency: 0.01
+maxBoost: 2.25
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		a2-1a-electrum-sheet/4
+	]
+	liquids: [
+		a0-0b-aspect/3.3333333333333333333333333333333
+	]
+}
+
+outputItems: [
+		a0-0a-debris/2
+]
+
+research: {
+	parent: a-a1-0a-heating-basin
+	objectives: [
+	]
+}
+
+requirements: [
+	a2-0a-silver/85
+	a4-0a-resonarum/60
+]

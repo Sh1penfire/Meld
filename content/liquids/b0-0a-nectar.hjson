@@ -1,8 +1,8 @@
 type: CellLiquid
 
 viscosity: 0.95
-temperature: 0.25
-heatCapacity: 1
+temperature: 0.15
+heatCapacity: 2
 
 spreadTarget: b1-0a-mercury
 

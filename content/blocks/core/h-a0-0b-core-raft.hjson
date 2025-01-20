@@ -21,7 +21,7 @@ research: {
 requirements: [
 	a0-0a-debris/600
 	a1-0a-carbolith/350
-	a5-0a-electrum-sheet/350
+	a2-1a-electrum-sheet/350
 ]
 
 researchCostMultiplier: 0

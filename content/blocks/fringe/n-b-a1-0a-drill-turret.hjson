@@ -15,7 +15,7 @@ shootCone: 1
 shootY: 10
 velocityRnd: 0.3
 
-liquidCapacity: 80
+liquidCapacity: 5
 
 chargeSound: laserbig
 moveWhileCharging: false

@@ -254,5 +254,6 @@ weapons: [
 ]
 
 immunities: [
-    aspect-burn
+	aspect-burn
+	shattered
 ]

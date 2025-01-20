@@ -177,17 +177,21 @@ consumes: {
     power: 3.33333333333
 }
 
+coolantMultiplier: 2
+
 coolant: {
   type: ConsumeCoolant
   allowGas: true
   allowLiquid: true
-  amount: 0.1
+  maxTemp: 0.20
+  amount: 0.15
 }
+
 
 requirements: [
 	a0-0a-debris/35
 	a1-0a-carbolith/75
-	a5-0a-electrum-sheet/40
+	a2-1a-electrum-sheet/40
 ]
 
 category: turret

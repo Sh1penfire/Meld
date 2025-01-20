@@ -373,9 +373,9 @@ consumes: {
 }
 
 requirements: [
-	a1-0a-carbolith/240
-	a2-0a-silver/40
-	a5-0a-electrum-sheet/240
+	a2-0a-silver/240
+	a2-1a-electrum-sheet/240
+	a3-0a-vitric-mesh/180
 ]
 
 
@@ -393,5 +393,5 @@ researchCost: [
 	a0-0a-debris/1400
 	a1-0a-carbolith/600
 	a2-0a-silver/1600
-	a5-0a-electrum-sheet/130
+	a2-1a-electrum-sheet/130
 ]

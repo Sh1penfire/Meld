@@ -1,0 +1,735 @@
+type: hover
+speed: 1.55
+strafePenalty: 0
+
+health: 420
+aimDst: 10
+range: 50
+drag: 0.8
+accel: 1.1
+hitSize: 16
+lightRadius: 80
+lightOpacity: 0.9
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 16
+itemCapacity: 120
+range: 100
+rotateSpeed: 3.85
+
+buildBeamOffset: 6.75
+rotateToBuilding: true
+buildRange: 80
+mineRange: 80
+fogRadius: 10
+
+targetAir: false
+
+useUnitCap: false
+
+alwaysUnlocked: true
+
+weapons: [
+//Grator
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        display: false
+        recoil: 0
+        rotate: false
+        shootCone: 180
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 0
+        alwaysShooting: true
+        reload: 60
+        shootSound: cheest-greater
+        soundPitchMin: 1
+        bullet: {
+            type: BulletType
+            damage: 0
+            knockback: -0
+            keepVelocity: true
+            shootEffect: none
+            collides: true
+            despawnEffect: none
+            trailEffect: unitLandSmall
+            trailChance: 0.89
+            setDefaults: false
+            fragBullets: 5
+            fragRandomSpread: 0
+            fragSpread: 60
+            fragBullet: {
+                type: BulletType
+                lieftime: 6000
+                homingDelay: 1
+                homingPower: 50
+                weaveMag: 10
+                weaveScale: 100000
+                trailEffect: unitLandSmall
+                trailChance: 0.89
+                hitSound: cheest
+                pierce: true
+                bulletInterval: 30
+                intervalBullet: {
+                    type: BulletType
+                    lieftime: 6000
+                    homingDelay: 1
+                    homingPower: 50
+                    weaveMag: 10
+                    weaveScale: 100000
+                    trailEffect: unitLandSmall
+                    trailChance: 0.89
+                    hitSound: cheest
+                    pierce: true
+                }
+            }
+        }
+        shootEffect: unitLandSmall
+        
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: ffffff00
+                colorTo: ffffff
+            }
+        ]
+    }
+    //Damaging part of omega when launched backwards (parts 1-4 based on speed)
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        display: false
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 8
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+        cooldownTime: 40
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: ffffff00
+                colorTo: ffffff
+            }
+        ]
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        display: false
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 9
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 11
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 12
+            damage: 25
+            knockback: -25
+            keepVelocity: true
+            shootEffect: none
+            impact: true
+            collidesAir: false
+        }
+    }
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        display: false
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, 180,
+                0, 0, 155,
+                0, 0, 215
+            ]
+            shots: 9
+            shotDelay: 1
+        }
+        recoil: 0
+        rotate: false
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 13
+        alwaysShooting: true
+        reload: 3
+        bullet: {
+            type: RailBulletType
+            length: 26
+            damage: 25
+            knockback: -75
+            keepVelocity: true
+            //Basically just a modified shoot effect, cause it looks alright and saves me time
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 11
+                        interp: pow3
+                        baseLength: 10
+                        length: 35
+                        particles: 4
+                        sizeFrom: 8
+                        sizeTo: 0
+                        cone: 25
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 58
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 6
+                        interp: pow5Out
+                        sizeInterp: pow3
+                        baseLength: 10
+                        length: 35
+                        particles: 2
+                        sizeFrom: 5
+                        sizeTo: 0
+                        cone: 35
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 58
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 12
+                        sizeInterp: pow5In
+                        baseLength: 2
+                        length: 24
+                        line: true
+                        particles: 25
+                        strokeFrom: 2.5
+                        strokeTo: 0
+                        lenFrom: 4
+                        lenTo: 0
+                        cone: 35
+                        colorFrom: ffd2ae
+                        colorTo: e58956
+                        layer: 59
+                        followParent: false
+                    }
+                ]
+            }
+            impact: true
+            collidesAir: false
+        }
+        cooldownTime: 60
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: e6b47f00
+                colorTo: c93f1d
+            }
+        ]
+    }
+    //Creates the smoke from the end of the gun
+    {
+        x: 11
+        y: 3
+        shootY: 4
+        mirror: true
+        alternate: false
+        rotate: true
+        baseRotation: -90
+        rotateSpeed: 0
+        shootCone: 15
+        reload: 75
+        display: false
+        shoot: {
+            firstShotDelay: 25
+            shots: 35
+            shotDelay: 2
+        }
+        shootSound: none
+        
+        parentizeEffects: false
+        bullet: {
+            instantDisappear: true
+            collides: false
+            hittable: false
+            hitEffect: none
+            rangeOverride: 168
+            shootEffect: {
+                type: ParticleEffect
+                sizeFrom: 1
+                sizeTo: 4
+                length: 12
+                particles: 4
+                cone: 12
+                colorFrom: 6e7080
+                colorTo: 56566600
+                followParent: false
+            }
+        }
+    }
+    //Dito, but goes further and shorter lifetime
+    {
+        x: 11
+        y: 3
+        shootY: 5
+        mirror: true
+        alternate: false
+        rotate: true
+        baseRotation: -90
+        rotateSpeed: 0
+        shootCone: 15
+        reload: 75
+        display: false
+        shoot: {
+            firstShotDelay: 25
+            shots: 25
+            shotDelay: 1
+        }
+        shootSound: none
+        
+        parentizeEffects: false
+        bullet: {
+            instantDisappear: true
+            collides: false
+            hittable: false
+            hitEffect: none
+            rangeOverride: 168
+            shootEffect: {
+                type: ParticleEffect
+                lifetime: 15
+                sizeFrom: 5
+                sizeTo: 0
+                length: 21
+                particles: 2
+                cone: 4
+                sizeInterp: pow5In
+                colorFrom: 6e7080
+                colorTo: 565666
+                followParent: false
+            }
+        }
+    }
+    //Knockback
+    {
+        x: 11
+        y: 3
+        shootY: 4
+        mirror: true
+        alternate: false
+        rotate: true
+        baseRotation: -90
+        rotateSpeed: 0
+        shootCone: 15
+        reload: 75
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 25
+            shots: 50
+            spread: 1
+        }
+        shootSound: none
+        
+        bullet: {
+            type: RailBulletType
+            damage: 0.1
+            knockback: 1.25
+            length: 65
+            trailEffect: none
+            shootEffect: none
+            pierceEffect: none
+            hitEffect: none
+            status: impaled
+            statusDuration: 15
+            rangeOverride: 168
+        }
+    }
+    //main weapon
+	{
+		name: omega-launcher
+        x: 11
+        y: 3
+        shootY: 4
+        mirror: true
+        alternate: false
+        rotate: true
+        baseRotation: -90
+        rotateSpeed: 0
+        top: true
+        shootCone: 15
+        reload: 75
+        recoil: 6.25
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 25
+            shots: 5
+            spread: 7
+        }
+
+        inaccuracy: 7
+        velocityRnd: 0.1
+        shootStatus: omega-overdrive
+        shootStatusDuration: 55
+        shootSound: pipe-launcher
+        parentizeEffects: false
+
+        parts: [
+            {
+                type: RegionPart
+                suffix: -back
+            }
+            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd2ae
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow5In
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -capsule
+                mirror: false
+                outline: false
+                moveX: 4
+                growX: 0
+                color: ffffff
+                colorTo: ffffff00
+                growProgress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -door
+                mirror: false
+                outline: false
+                y: -4
+                moveY: 4
+                color: ffffff00
+                colorTo: ffffff
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+        ]
+
+		bullet: {
+			sprite: shell
+			scaleLife: false
+			speed: 4.5
+			lifetime: 15
+			shrinkY: 0.8
+			width: 16
+			height: 14
+			damage: 55
+			drag: 0.06
+			fragBullets: 8
+			fragRandomSpread: 25
+			fragLifeMin: 0
+			fragVelocityMin: 0.7
+			fragVelocityMax: 1
+			rangeOverride: 168
+			recoil: 3
+			keepVelocity: false
+			hitSound: explosion
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 65
+                        interp: pow3
+                        baseLength: 10
+                        length: 55
+                        particles: 11
+                        sizeFrom: 8
+                        sizeTo: 0
+                        cone: 25
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 109
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 35
+                        interp: pow5Out
+                        sizeInterp: pow3
+                        baseLength: 10
+                        length: 55
+                        particles: 11
+                        sizeFrom: 5
+                        sizeTo: 0
+                        cone: 35
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 109
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 45
+                        sizeInterp: pow5In
+                        baseLength: 2
+                        length: 125
+                        line: true
+                        particles: 25
+                        strokeFrom: 2.5
+                        strokeTo: 0
+                        lenFrom: 4
+                        lenTo: 0
+                        cone: 35
+                        colorFrom: ffd2ae
+                        colorTo: e58956
+                        followParent: false
+                    }
+                ]
+            }
+			fragBullet: {
+				speed: 12.85
+				lifetime: 65
+				width: 4
+				height: 8
+				damage: 1
+				status: impaled
+				statusDuration: 10
+				pierce: true
+				pierceCap: 5
+				homingPower: 0.04
+				knockback: 6
+				drag: 0.07
+                keepVelocity: false
+                impact: true
+			}
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 80
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 78
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 80
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+    {
+        type: ShieldRegenFieldAbility
+        range: -7
+        amount: 4
+        max: 120
+        reload: 5
+        activeEffect: none
+        parentizeEffects: true
+        applyEffect: {
+            type: ParticleEffect
+            lifetime: 45
+            region: circle
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: ffd37f00
+            colorTo: ffd37f
+            length: -35
+            baseLength: 35
+            particles: 5
+            interp: pow10In
+            sizeInterp: pow10In
+        }
+    }
+    {
+        type: LiquidRegenAbility
+        liquid: b0-0a-nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+]
+
+research: h-a0-0a-core-raft

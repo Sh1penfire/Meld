@@ -10,8 +10,8 @@ liquidCapacity: 500
 
 attribute: gold
 baseEfficiency: 0
-minEfficiency: 1
-maxBoost: 3
+minEfficiency: 0.05
+maxBoost: 2
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -36,8 +36,8 @@ consumes: {
 	]
 }
 
-outputItem: a5-0a-electrum-sheet/8
-outputLiquid: d0-1a-ichor/0.5
+outputItem: a2-1a-electrum-sheet/8
+outputLiquid: d0-1a-ichor/2
 
 research: {
 	parent: a-a1-0a-heating-basin
