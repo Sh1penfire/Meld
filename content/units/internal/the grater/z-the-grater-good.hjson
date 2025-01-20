@@ -1,4 +1,4 @@
-type: mech
+type: hover
 speed: 1.55
 strafePenalty: 0
 
@@ -30,6 +30,84 @@ useUnitCap: false
 alwaysUnlocked: true
 
 weapons: [
+//Grator
+    {
+        x: 0
+        y: 0
+        shootY: 0
+        display: false
+        recoil: 0
+        rotate: false
+        shootCone: 180
+        controllable: false
+        useAttackRange: false
+        minShootVelocity: 0
+        alwaysShooting: true
+        reload: 60
+        shootSound: cheest-greater
+        soundPitchMin: 1
+        bullet: {
+            type: BulletType
+            damage: 0
+            knockback: -0
+            keepVelocity: true
+            shootEffect: none
+            collides: true
+            despawnEffect: none
+            trailEffect: unitLandSmall
+            trailChance: 0.89
+            setDefaults: false
+            fragBullets: 5
+            fragRandomSpread: 0
+            fragSpread: 60
+            fragBullet: {
+                type: BulletType
+                lieftime: 6000
+                homingDelay: 1
+                homingPower: 50
+                weaveMag: 10
+                weaveScale: 100000
+                trailEffect: unitLandSmall
+                trailChance: 0.89
+                hitSound: cheest
+                pierce: true
+                bulletInterval: 30
+                intervalBullet: {
+                    type: BulletType
+                    lieftime: 6000
+                    homingDelay: 1
+                    homingPower: 50
+                    weaveMag: 10
+                    weaveScale: 100000
+                    trailEffect: unitLandSmall
+                    trailChance: 0.89
+                    hitSound: cheest
+                    pierce: true
+                }
+            }
+        }
+        shootEffect: unitLandSmall
+        
+        parts: [
+            {
+                progress: {
+                    type: heat
+                    ops: [
+                        {
+                            op: clamp
+                            start: 0
+                            end: 0.5
+                        }
+                    ]
+                }
+                name: meld-a-strata-a0-1a-omega-dash-glow
+                outline: false
+                blending: additive
+                color: ffffff00
+                colorTo: ffffff
+            }
+        ]
+    }
     //Damaging part of omega when launched backwards (parts 1-4 based on speed)
     {
         x: 0
@@ -264,9 +342,8 @@ weapons: [
         mirror: true
         alternate: false
         rotate: true
-        rotationLimit: 60
-        baseRotation: -15
-        rotateSpeed: 2.5
+        baseRotation: -90
+        rotateSpeed: 0
         shootCone: 15
         reload: 75
         display: false
@@ -305,9 +382,8 @@ weapons: [
         mirror: true
         alternate: false
         rotate: true
-        rotationLimit: 60
-        baseRotation: -15
-        rotateSpeed: 2.5
+        baseRotation: -90
+        rotateSpeed: 0
         shootCone: 15
         reload: 75
         display: false
@@ -348,9 +424,8 @@ weapons: [
         mirror: true
         alternate: false
         rotate: true
-        rotationLimit: 60
-        baseRotation: -15
-        rotateSpeed: 2.5
+        baseRotation: -90
+        rotateSpeed: 0
         shootCone: 15
         reload: 75
         shoot: {
@@ -384,9 +459,8 @@ weapons: [
         mirror: true
         alternate: false
         rotate: true
-        rotationLimit: 60
-        baseRotation: -15
-        rotateSpeed: 2.5
+        baseRotation: -90
+        rotateSpeed: 0
         top: true
         shootCone: 15
         reload: 75
@@ -656,8 +730,6 @@ abilities: [
 immunities: [
 	strata-a0-rally
 	mangrove-d0-mercury-poisoning
-	shattered
-	lacerated
 ]
 
 research: h-a0-0a-core-raft

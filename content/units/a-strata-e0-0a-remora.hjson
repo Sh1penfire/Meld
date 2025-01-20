@@ -320,6 +320,8 @@ engines: [
 ]
 immunities: [
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: h-a0-0a-core-raft

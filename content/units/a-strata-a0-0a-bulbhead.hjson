@@ -149,6 +149,8 @@ abilities: [
 immunities: [
 	strata-a0-rally
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: h-a0-0a-core-raft

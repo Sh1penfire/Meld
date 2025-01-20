@@ -133,8 +133,10 @@ coolant: {
   type: ConsumeCoolant
   allowGas: true
   allowLiquid: true
+  maxTemp: 0.20
   amount: 0.1
 }
+
 
 requirements: [
 	a0-0a-debris/45

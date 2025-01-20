@@ -78,7 +78,7 @@ consumes: {
 	]
 }
 
-outputLiquid: a0-0a-aether/0.5
+outputLiquid: a0-0a-aether/0.3333333333333334
 
 requirements: [
  	a0-0a-debris/40

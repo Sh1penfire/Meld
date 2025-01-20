@@ -1,0 +1,57 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 20
+
+attribute: soil
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.2
+
+liquidOutputDirections: [0]
+rotate: true
+quickRotate: true
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 120
+liquidCapacity: 240
+itemCapacity: 120
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	power: 8
+	items: [
+		a3-1a-shiny-globule/20
+		a4-2a-riplom/8
+	]
+}
+
+outputLiquids: [
+	a0-0a-aether/3
+]
+
+outputItems: [
+	a3-0a-vitric-mesh/24
+]
+
+requirements: [
+ 	a0-0a-debris/80
+	a2-0a-silver/60
+]
+
+researchCost: [
+	a0-0a-debris/200
+	a2-0a-silver/150
+]

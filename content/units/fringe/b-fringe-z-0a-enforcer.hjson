@@ -34,7 +34,7 @@ weapons: [
         
         x: 14
         y: 1.5
-        shootY: 8
+        shootY: 4
         
         recoil: 4.6
         
@@ -146,6 +146,7 @@ weapons: [
         
         bullet: {
             speed: 0
+            keepVelocity: false
             //big bullets
             spawnBullets: [
                 {
@@ -172,7 +173,6 @@ weapons: [
                         despawnEffect: pulverizeRed
                         width: 10
                         height: 24
-                        keepVelocity: false
                     }
                 }
             ]
@@ -219,7 +219,6 @@ weapons: [
                     drag: -0.001
                     width: 3
                     height: 6
-                    keepVelocity: false
                 }
             }
             rangeOverride: 240
@@ -346,4 +345,6 @@ abilities: [
 immunities: [
 	strata-a0-rally
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]

@@ -54,7 +54,7 @@ weapons: [
 
 			lifetime: 50
 			damage: 1
-			splashDamage: 45
+			splashDamage: 25
 			splashDamageRadius: 25
 
 			homingDelay: 5
@@ -115,6 +115,24 @@ weapons: [
 			hitSound: explosion
 			trailLength: 8
 			trailWidth: 2
+            
+            setDefaults: false
+            despawnHit: false
+            
+            fragBullets: 3
+            fragSpread: 15
+            fragRandomSpread: 0
+            fragBullet: {
+				type: SapBulletType
+				damage: 5
+				sapStrength: 1
+				length: 15
+				pierce: true
+				keepVelocity: false
+				knockback: -1
+				color: bf92f9
+                status: none
+			}
 		}
 	}
 ]
@@ -188,6 +206,8 @@ engines: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: j-constructor-c0-0a-ship-factory

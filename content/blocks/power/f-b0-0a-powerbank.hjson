@@ -6,7 +6,7 @@ health: 1200
 fogRadius: 0
 
 consumes: {
-	powerBuffered: 8000
+	powerBuffered: 16000
 }
 
 drawer: [

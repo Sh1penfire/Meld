@@ -383,6 +383,8 @@ engines: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
 ]
 
 research: j-constructor-b0-0a-ramming-bay

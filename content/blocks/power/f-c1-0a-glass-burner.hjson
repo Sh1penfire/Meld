@@ -12,7 +12,7 @@ floating: true
 
 category: power
 
-itemDuration: 15
+itemDuration: 60
 
 requirements: [
 	a0-0a-debris/120

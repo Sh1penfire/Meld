@@ -190,6 +190,9 @@ abilities: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
+	aspect-burn
+	shattered
+	lacerated
 ]
 
 research: j-constructor-c0-0a-ship-factory
