@@ -32,9 +32,13 @@ itemWhitelist: [
 	a2-0a-silver
 	e0-0a-meld-shard
 	a2-1a-electrum-sheet
+	a3-0a-vitric-mesh
+	a3-1a-shiny-globule
+	a3-2a-stormstruck-shell
 	a4-0a-resonarum
 	a4-1a-dissonitre
-	b1-0a-fragment
+	a4-2a-riplom
+	a4-3a-riploko
 	b0-0a-technoscrap
 	b0-1a-grating-chunk
 	b1-0a-fragment

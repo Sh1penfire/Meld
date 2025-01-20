@@ -1,6 +1,7 @@
 type: mech
 speed: 2.25
 strafePenalty: 0.2
+shadowElevation: 0.1
 
 health: 250
 armor: 2
@@ -34,6 +35,28 @@ useUnitCap: false
 alwaysUnlocked: true
 
 weapons: [
+    //Trails
+    {
+        x: 10
+        y: -9
+        alternate: false
+        mirror: true
+        
+        alwaysShooting: true
+        continuous: true
+        alwaysContinuous: true
+        shootSound: none
+        bullet: {
+            type: BulletType
+            collides: false
+            hittable: false
+            reflectable: false
+            absorbable: false
+            trailLength: 16
+            trailWidth: 3
+            despawnEffect: none
+        }
+    }
     //main weapon
 	{
         x: 0
@@ -54,10 +77,14 @@ weapons: [
             hittable: false
             absorbable: false
             recoil: -12
+            shootEffect: none
+            despawnEffect: none
         }
 	}
     //Mines
 	{
+        x: 0
+        y: 0
         rotate: false
         mirror: false
         minWarmup: 0.8
@@ -123,6 +150,8 @@ weapons: [
 		}
 	}
 	{
+        x: 0
+        y: 0
         rotate: false
         mirror: false
         minWarmup: 0.8
@@ -343,6 +372,21 @@ abilities: [
 				}
 			]
 		}
+	}
+]
+
+engines: [
+	{
+		x: 10
+		y: -9
+		radius: 2.2
+		rotation: 315
+	}
+	{
+		x: -10
+		y: -9
+		radius: 2.2
+		rotation: 225
 	}
 ]
 
