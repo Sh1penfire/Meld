@@ -7,8 +7,12 @@ radius: 12
 health: 800
 
 hasItems: false
+hasPower: false
 hasLiquids: true
 liquidCapacity: 600
+
+buildVisibility: sandboxOnly
+buildCostMultiplier: 0
 
 targetable: false
 drawTeamOverlay: false
@@ -20,7 +24,7 @@ consumes: {
 }
 
 requirements: [
-	b1-0a-fragment/30
+	b1-0a-fragment/0
 ]
 
 squareSprite: false
