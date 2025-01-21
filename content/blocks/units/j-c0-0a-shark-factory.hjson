@@ -1,6 +1,10 @@
 type: UnitFactory
-health: 300
-size: 3
+health: 720
+size: 5
+
+liquidCapacity: 200
+
+hasPower: false
 
 plans: [
 	{
@@ -9,20 +13,20 @@ plans: [
 		a2-0a-silver/40
 		a1-0a-carbolith/30
     	]
-    	time: 1800
+    	time: 300
   	}
 ]
 
 consumes: {
-	liquid: a0-0b-aspect/3.3333333333333333
+	liquid: a0-0b-aspect/20
 }
 
 configurable: false
 
 requirements: [
- 	a0-0a-debris/100
-	a1-0a-carbolith/65
-	a2-0a-silver/40
+ 	a0-0a-debris/500
+	a1-0a-carbolith/200
+	a2-0a-silver/120
 ]
 
 category: units
