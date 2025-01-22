@@ -4,9 +4,10 @@ shadowElevation: 0.1
 speed: 4.5
 
 health: 540
+armor: 12
 
 drag: 0.015
-accel: 0.04
+accel: 0.05
 
 maxRange: 16
 range: 8
@@ -22,6 +23,7 @@ useEngineElevation: false
 faceTarget: false
 
 weapons: [
+    //Primed activation
     {
         x: 0
         y: 0
@@ -79,6 +81,7 @@ weapons: [
             }
         }
     }
+    //Kinetic barriers
     {
         x: 0
         y: 0
@@ -135,6 +138,7 @@ weapons: [
             smokeEffect: none
         }
     }
+    //Payload launcher visuals
     {
         mirror: false
         rotate: false
@@ -145,6 +149,9 @@ weapons: [
         reload: 480
         inaccuracy: 0
         shootY: 0
+        
+        minWarmup: 0.8
+        shootWarmupSpeed: 0.05
         bullet: {
             rangeOverride: 240
             instantDisappear: true
@@ -154,6 +161,7 @@ weapons: [
             despawnEffect: none
         }
         parts: [
+            //Launcher parts themselves
             {
                 type: RegionPart  
                 name: meld-narwhal-launcher-payload
@@ -166,8 +174,154 @@ weapons: [
                 type: RegionPart
                 name: meld-narwhal-launcher-mouth
             }
+            //Reload indicator (circle)
+            {
+                type: ShapePart
+                radius: 0
+                radiusTo: 240
+                circle: true
+                hollow: true
+                stroke: 0
+                strokeTo: 5
+                color: cae4ec
+                colorTo: cae4ec00
+                progress: {
+                    type: warmup
+                    ops: [
+                        {
+                            op: compress
+                            start: 0
+                            end: 0.7
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: reload
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow5Out
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+                layer: 110
+            }
+            //Reload inducator (flare)
+            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 45
+                stroke: 3
+                color1: 83a5be
+                color2: cae4ec
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: compress
+                            start: 0.8
+                            end: 1
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: warmup
+                            }
+                        }
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                        {
+                            op: compress
+                            start: 0
+                            end: 0.9
+                        }
+                    ]
+                }
+                layer: 110
+            }
+            //Range indicator
+            {
+                type: ShapePart
+                radius: 240
+                radiusTo: 240
+                circle: true
+                hollow: true
+                stroke: 0
+                strokeTo: 1
+                color: cae4ec00
+                colorTo: cae4ec
+                progress: {
+                    type: warmup
+                    ops: [
+                        {
+                            op: compress
+                            start: 0
+                            end: 0.7
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                    ]
+                }
+                layer: 110
+            }
+            //Passive range indicator, shrinks when shooting
+            {
+                type: HaloPart
+                    progress: {
+                    type: warmup
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: reload
+                                
+                            }
+                        }
+                    ]
+                }
+                haloRadius: 240
+                haloRadiusTo: 120
+                radius: 6
+                radiusTo: 0
+                shapes: 3
+                triLength: 10
+                tri: true
+                color: cae4ec
+                haloRotateSpeed: 0.25
+                shapeMoveRot: 180
+                shapeRotation: 180
+                layer: 110
+            }
+            //Passive range indicator 2, shrinks when shooting
         ]
     }
+    //Payload launcher
     {
         mirror: false
         rotate: true
@@ -180,6 +334,9 @@ weapons: [
         inaccuracy: 0
         useAttackRange: false
         shootY: 0
+        
+        minWarmup: 0.8
+        shootWarmupSpeed: 0.05
         bullet: {
             type: PointBulletType
             lifetime: 240

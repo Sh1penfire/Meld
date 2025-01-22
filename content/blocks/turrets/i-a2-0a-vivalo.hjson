@@ -259,16 +259,16 @@ ammoTypes: {
         }
         status: lacerated
         statusDuration: 5
-        fragBullets: 1
+        fragBullets: 2
         fragRandomSpread: 35
         fragMinVelocity: 0.9
         //Frag Bullet
         fragBullet: {
 			type: BasicBulletType
 			damage: 8
-			speed: 8.2
+			speed: 9.2
 			drag: 0.03
-			lifetime: 35
+			lifetime: 12
             homingPower: 0.02
 			sprite: meld-sparkle
 			frontColor: 85c799
@@ -283,6 +283,7 @@ ammoTypes: {
 			hitEffect: none
 			despawnEffect: none
             knockback: 2
+            impact: true
             intervalBullet: {
                 splashDamage: 2
                 splashDamageRadius: 8
@@ -304,7 +305,7 @@ ammoTypes: {
                 status: lacerated
                 statusDuration: 5
             }
-            bulletInterval: 4
+            bulletInterval: 3
 		}
     }
     //Dissonitre ammo
@@ -479,6 +480,7 @@ ammoTypes: {
 			hitEffect: none
 			despawnEffect: none
             knockback: 5
+            impact: true
 		}
     }
     //Vitric Mesh ammo
@@ -627,6 +629,7 @@ ammoTypes: {
 			hitEffect: none
 			despawnEffect: none
             knockback: 5
+            impact: true
 		}
     }
 }

@@ -4,17 +4,20 @@ size: 5
 
 plans: [
 	{
-	unit: a-strata-e0-0a-remora
+	unit: a-strata-d0-0a-astrea
 	requirements: [
-		a2-1a-electrum-sheet/40
-		a3-0a-vitric-mesh/30
+		a0-0a-debris/75
+		a2-1a-electrum-sheet/50
     	]
-    	time: 720
+    	time: 540
   	}
 ]
 
 consumes: {
-	liquid: a0-0b-aspect/10
+	liquids: [
+		a0-0b-aspect/10
+		b1-0a-mercury/2
+	]
 }
 
 configurable: false

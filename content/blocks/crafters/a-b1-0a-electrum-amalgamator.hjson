@@ -13,6 +13,8 @@ baseEfficiency: 0
 minEfficiency: 0.05
 maxBoost: 2
 
+scaleLiquidConsumption: true
+
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
