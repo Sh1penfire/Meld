@@ -21,6 +21,12 @@ hovering: true
 
 targetable: false
 
+buildSpeed: 0.25
+buildRange: 368
+buildSpeed: 0.5
+
+mineSpeed: 0
+
 drawMinimap: false
 
 fogRadius: 46
@@ -66,7 +72,7 @@ parts: [
 abilities: [
 	{
 		type: StatusFieldAbility
-		range: 200
+		range: 368
 		reload: 0
 		effect: strata-a0-rally
 		duration: 15

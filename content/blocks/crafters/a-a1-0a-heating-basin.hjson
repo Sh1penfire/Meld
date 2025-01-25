@@ -29,19 +29,19 @@ drawer: [
 
 consumes: {
 	items: [
-		a1-0a-carbolith/2
+		a1-0a-carbolith/1
 	]
 	liquids: [
-		b0-0a-nectar/1
+		b0-0a-nectar/1.5
 	]
 }
 
 outputLiquids: [
-	b1-0a-mercury/1
+	b1-0a-mercury/1.5
 ]
 
 outputItems: [
-	a0-0a-debris/6
+	a0-0a-debris/3
 ]
 
 requirements: [

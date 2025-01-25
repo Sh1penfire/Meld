@@ -15,13 +15,11 @@ category: liquid
 
 requirements: [
 	a0-0a-debris/550
-	a1-0a-carbolith/250
 	b0-0a-technoscrap/250
 ]
 
 research: pressure-control
 researchCost: [
 	a0-0a-debris/250
-	a1-0a-carbolith/200
 	b0-0a-technoscrap/600
 ]

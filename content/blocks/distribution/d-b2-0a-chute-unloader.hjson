@@ -1,7 +1,7 @@
 type: Unloader
 size: 1
 
-speed: 8
+speed: 4
 
 solid: false
 category: distribution

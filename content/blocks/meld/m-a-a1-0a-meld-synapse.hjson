@@ -5,7 +5,7 @@ size: 5
 
 requirements: [
 	e0-0a-meld-shard/4000
-	a0-0a-debris/12000
+	e1-0a-larval-plating/12000
 ]
 
 category: effect

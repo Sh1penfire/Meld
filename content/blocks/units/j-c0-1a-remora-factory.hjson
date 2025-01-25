@@ -1,0 +1,40 @@
+type: UnitFactory
+health: 1100
+size: 5
+
+liquidCapacity: 200
+
+plans: [
+	{
+	unit: a-strata-e0-0a-remora
+	requirements: [
+		a0-0a-debris/120
+		a2-1a-electrum-sheet/40
+		a3-0a-vitric-mesh/30
+    	]
+    	time: 480
+  	}
+]
+
+consumes: {
+	liquid: a0-0b-aspect/20
+}
+
+configurable: false
+
+requirements: [
+ 	a0-0a-debris/180
+	a2-0a-silver/120
+	a2-1a-electrum-sheet/210
+]
+
+category: units
+
+research: h-a0-0a-core-raft
+
+researchCost: [
+	a0-0a-debris/80
+	a1-0a-carbolith/45
+	a2-0a-silver/35
+]
+

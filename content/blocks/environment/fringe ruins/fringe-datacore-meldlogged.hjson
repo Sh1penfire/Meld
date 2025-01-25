@@ -13,3 +13,8 @@ liquidDrop: z0-1a-waste
 emitLight: true
 lightColor: 62b2ef35
 lightRadius: 20
+
+
+attributes: {
+	data: 0.20
+}

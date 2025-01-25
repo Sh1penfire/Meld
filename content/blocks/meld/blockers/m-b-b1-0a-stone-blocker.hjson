@@ -5,7 +5,7 @@ health: 400
 armor: 500000
 
 requirements: [
-	a1-0a-carbolith/10
+	e2-0a-stony-particulate/24
 ]
 
 customShadow: true

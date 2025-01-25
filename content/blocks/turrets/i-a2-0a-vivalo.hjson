@@ -1,61 +1,129 @@
 type: ItemTurret
 size: 3
 health: 650
-range: 140
+range: 160
 fogRadiusMultiplier: 0.25
-reload: 120
-shootEffect: shootBig
-shootWarmupSpeed : 0.09
+reload: 240
+
+shootWarmupSpeed : 0.15
 minWarmup: 0.7
 
-recoil: 0.25
+shootEffect: none
 
-recoil: 1.5
+recoil: 0
 inaccuracy: 7
 shootCone: 5
 
+rotateSpeed: 12
+
+chargeSound: pulverise
+shootSound: spray
+moveWhileCharging: true
+
+maxAmmo: 40
+
 shoot: {
-	shots: 1
+	shots: 6
+    shotDelay: 8
+    firstShotDelay: 30
 }
 
 inaccuracy: 0
 
-shootY: 7
+shootY: 9
 
 drawer: {
 	type: DrawTurret
 	parts: [
 		{
-			type: RegionPart
-			suffix: -plate
+            suffix: -drum
 			progress: warmup
-			mirror: true
-			under: false
-			moveX: 1
-			moveY: -1.55
-			moveRot: -15
-
-		},
-		{
-			name: clear
-			progress: warmup
-			y: -1.5
-			moveY: 1
-			children: [
-				{
-					type: RegionPart
-					suffix: -barrel
-					progress: recoil
-					mirror: false
-					under: true
-					moveY: -1.25
-				}
-			]
+			moveY: -1.25
+            moves: [
+                {
+                    x: -4
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: add
+                                other: {
+                                    type: recoil
+                                }
+                            }
+                            {
+                                op: compress
+                                start: 0
+                                end: 0.5
+                            }
+                        ]
+                    }
+                }
+            ]
 		}
+		{
+            suffix: -accelerator
+            x: -5
+            y: -4.25
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: compress
+                        start: 0.5
+                        end: 1
+                    }
+                    {
+                        op: curve
+                        interp: pow5In
+                    }
+                ]
+            }
+			moveRot: 1800
+            moves: [
+                {
+                    rot: -720
+                    progress: {
+                        type: recoil
+                        ops: [
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+            ]
+		}
+        {
+            type: RegionPart
+            suffix: "-barrel"
+            moveY: -4
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: add
+                        other: {
+                            type: recoil
+                        }
+                    }
+                    {
+                        op: compress
+                        start: 0.5
+                        end: 1
+                    }
+                    {
+                        op: curve
+                        interp: pow5In
+                    }
+                ]
+            }
+        }
 	]
 }
 
-ammoPerShot: 4
+ammoPerShot: 10
 
 ammoTypes: {
 	a4-0a-resonarum: {
@@ -67,8 +135,8 @@ ammoTypes: {
         
         type: RailBulletType
         lifetime: 10
-        length: 70
-        damage: 60
+        length: 151
+        damage: 65
         
         pierceDamageFactor: 1
         pierceArmor: true
@@ -84,13 +152,13 @@ ammoTypes: {
         pointEffect: [
             {
                 type: ParticleEffect
-                lifetime: 35
+                lifetime: 25
                 particles: 1
                 cone: 0
-                baseLength: 2
-                length: -2
+                baseLength: -2
+                length: 4
                 line: true
-                strokeFrom: 4.5
+                strokeFrom: 2.5
                 strokeTo: 0
                 lenFrom: 8
                 lenTo: 2
@@ -99,7 +167,7 @@ ammoTypes: {
             }
             {
                 type: ParticleEffect
-                lifetime: 25
+                lifetime: 45
                 particles: 2
                 cone: 15
                 baseLength: 2
@@ -115,7 +183,7 @@ ammoTypes: {
             {
                 type: ParticleEffect
                 region: "meld-sparkle"
-                lifetime: 25
+                lifetime: 20
                 particles: 3
                 sizeFrom: 8
                 sizeTo: 0
@@ -137,7 +205,7 @@ ammoTypes: {
                 sizeTo: 8
                 particles: 2
                 baseLength: 6
-                length: 14
+                length: 25
                 cone: 45
                 offset: 90
                 colorFrom: 85c799
@@ -151,7 +219,7 @@ ammoTypes: {
                 sizeTo: 4
                 particles: 4
                 baseLength: 2
-                length: 4
+                length: 11
                 colorFrom: 85c7997b
                 colorTo: 4bb66b00
             }
@@ -191,16 +259,16 @@ ammoTypes: {
         }
         status: lacerated
         statusDuration: 5
-        fragBullets: 3
+        fragBullets: 2
         fragRandomSpread: 35
         fragMinVelocity: 0.9
         //Frag Bullet
         fragBullet: {
 			type: BasicBulletType
 			damage: 8
-			speed: 8.2
+			speed: 9.2
 			drag: 0.03
-			lifetime: 35
+			lifetime: 12
             homingPower: 0.02
 			sprite: meld-sparkle
 			frontColor: 85c799
@@ -215,6 +283,7 @@ ammoTypes: {
 			hitEffect: none
 			despawnEffect: none
             knockback: 2
+            impact: true
             intervalBullet: {
                 splashDamage: 2
                 splashDamageRadius: 8
@@ -236,95 +305,12 @@ ammoTypes: {
                 status: lacerated
                 statusDuration: 5
             }
-            bulletInterval: 4
+            bulletInterval: 3
 		}
-        //Secondary bullet
-        intervalBullet: {
-            type: BulletType
-
-            type: RailBulletType
-            lifetime: 10
-            length: 140
-            damage: 60
-
-            pierceDamageFactor: 0.25
-            pierceArmor: true
-
-            setDefaults: false
-            despawnHit: false
-
-            hitShake: 0.5
-
-            hittable: false
-            absorbable: false
-
-            pointEffect: [
-                {
-                    type: ParticleEffect
-                    lifetime: 12
-                    particles: 1
-                    cone: 0
-                    baseLength: 2
-                    length: 0
-                    line: true
-                    strokeFrom: 4.5
-                    strokeTo: 0
-                    lenFrom: 8
-                    lenTo: 8
-                    colorFrom: 91dda8
-                    colorTo: 91dda800
-                }
-                {
-                    type: ParticleEffect
-                    lifetime: 22
-                    particles: 1
-                    cone: 0
-                    baseLength: 2
-                    length: -2
-                    line: true
-                    strokeFrom: 1.5
-                    strokeTo: 0
-                    lenFrom: 8
-                    lenTo: 2
-                    colorFrom: 91dda8
-                    colorTo: 91dda800
-                }
-                {
-                    type: ParticleEffect
-                    region: "particle"
-                    lifetime: 25
-                    particles: 3
-                    sizeFrom: 3
-                    sizeTo: 4
-                    particles: 2
-                    baseLength: 6
-                    length: 14
-                    cone: 45
-                    offset: 90
-                    colorFrom: 85c799
-                    colorTo: 4bb66b00
-                }
-                {
-                    type: ParticleEffect
-                    region: "particle"
-                    lifetime: 45
-                    sizeFrom: 0
-                    sizeTo: 2
-                    particles: 3
-                    baseLength: 2
-                    length: 4
-                    colorFrom: 85c7997b
-                    colorTo: 4bb66b00
-                }
-            ]
-            pointEffectSpace: 8
-            hitEffect: none
-            pierceEffect: none
-        }
     }
     //Dissonitre ammo
 	a4-1a-dissonitre: {
-        ammoMultiplier: 1
+        ammoMultiplier: 4
         //Primary Bullet
         
         bulletInterval: 60
@@ -332,10 +318,9 @@ ammoTypes: {
         
         type: RailBulletType
         lifetime: 10
-        length: 180
-        rangeChange: 40
-        damage: 45
-        
+        length: 220
+        rangeChange: 60
+        damage: 15
         
         
         pierceDamageFactor: 1
@@ -479,7 +464,7 @@ ammoTypes: {
         //Frag Bullet
         fragBullet: {
 			type: BasicBulletType
-			damage: 12
+			damage: 4
 			speed: 9.2
 			drag: 0.03
 			lifetime: 25
@@ -495,6 +480,156 @@ ammoTypes: {
 			hitEffect: none
 			despawnEffect: none
             knockback: 5
+            impact: true
+		}
+    }
+    //Vitric Mesh ammo
+	a3-0a-vitric-mesh: {
+        ammoMultiplier: 2
+        reloadMultiplier: 2
+        //Primary Bullet
+        
+        bulletInterval: 60
+        intervalRandomSpread: 0
+        
+        type: RailBulletType
+        lifetime: 10
+        length: 205
+        rangeChange: 45
+        damage: 8.5
+        
+        
+        pierceDamageFactor: 0.025
+        pierceArmor: true
+        
+        setDefaults: false
+        despawnHit: false
+
+        hitShake: 0.5
+
+        hittable: false
+        absorbable: false
+
+        pointEffect: [
+            {
+                type: ParticleEffect
+                lifetime: 35
+                particles: 1
+                cone: 0
+                baseLength: 2
+                length: -2
+                line: true
+                strokeFrom: 1.5
+                strokeTo: 0
+                lenFrom: 8
+                lenTo: 2
+                colorFrom: e89964
+                colorTo: e8996400
+            }
+            {
+                type: ParticleEffect
+                lifetime: 25
+                particles: 2
+                cone: 15
+                baseLength: 2
+                length: 5
+                line: true
+                strokeFrom: 0.5
+                strokeTo: 0.2
+                lenFrom: 2
+                lenTo: 0
+                colorFrom: e89964
+                colorTo: e8996400
+            }
+            {
+                type: ParticleEffect
+                region: "meld-sparkle"
+                lifetime: 35
+                sizeFrom: 4
+                sizeTo: 0
+                particles: 2
+                baseLength: 6
+                length: 30
+                cone: 15
+                offset: 90
+                colorFrom: e8996400
+                colorTo: bf6436
+                spin: 60
+            }
+            {
+                type: ParticleEffect
+                region: "meld-sparkle"
+                lifetime: 20
+                sizeFrom: 4
+                sizeTo: 0
+                particles: 3
+                baseLength: 6
+                length: 35
+                cone: 7.5
+                offset: 90
+                colorFrom: e8996400
+                colorTo: bf6436
+                spin: 60
+            }
+        ]
+        pointEffectSpace: 8
+        hitEffect: none
+        pierceEffect: none
+        endEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 8
+                    line: true
+                    baseRotation: 180
+                    cone: 35
+                    particles: 2
+                    lenFrom: 4
+                    lenTo: 2
+                    strokeFrom: 1
+                    strokeTo: 1
+                    interp: pow5Out
+                    colorFrom: e89964
+                    colorTo: bf6436
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 4
+                    sizeFrom: 0
+                    sizeTo: 5
+                    colorFrom: ffffff
+                    colorTo: ffffff
+                    strokeFrom: 1
+                    strokeTo: 0
+                }
+            ]
+        }
+        status: shattered
+        statusDuration: 30
+        fragBullets: 2
+        fragRandomSpread: 35
+        fragMinVelocity: 0.9
+        //Frag Bullet
+        fragBullet: {
+			type: BasicBulletType
+			damage: 3
+			speed: 9.2
+			drag: 0.03
+			lifetime: 25
+			sprite: meld-clump
+			frontColor: e89964
+			width: 6
+			height: 18
+			pierce: true
+			shrinkX: 1
+			shrinkY: 1
+			status: shattered
+			statusDuration: 12
+			hitEffect: none
+			despawnEffect: none
+            knockback: 5
+            impact: true
 		}
     }
 }
@@ -504,14 +639,14 @@ consumes: {
     power: 1.5
 }
 
-coolantMultiplier: 2.5
+coolantMultiplier: 1.5
 
 coolant: {
   type: ConsumeCoolant
   allowGas: true
   allowLiquid: true
   maxTemp: 0.20
-  amount: 0.3
+  amount: 0.5
 }
 
 
@@ -522,7 +657,7 @@ research: {
 }
 
 requirements: [
+    a0-0a-debris/20
+    a2-1a-electrum-sheet/45
     a3-0a-vitric-mesh/12
-    a2-0a-silver/60
-    a2-1a-electrum-sheet/35
 ]

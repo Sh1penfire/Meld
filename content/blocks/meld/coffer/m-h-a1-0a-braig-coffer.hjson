@@ -1,0 +1,72 @@
+type: LiquidTurret
+size: 3
+health: 950
+targetable: true
+baseColor: f9e1f3
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 2
+	fragBullet: {
+		spawnUnit: c-meld-d1-0a-braig
+	}
+}
+
+loopSound: none
+shootSound: bang
+
+shootCone: 15
+
+reload: 360
+recoil: 3
+rotateSpeed: 5
+range: 220
+shootY: 5
+
+moveWhileCharging: false
+predictTarget: false
+
+inaccuracy: 5
+shoot: {
+    firstShotDelay: 35
+    shotDelay: 5
+    shots: 8
+}
+
+shootEffect: shootSmall
+
+ammoTypes: {
+	a0-5a-meld: {
+        ammoMultiplier: 0.25
+        sprite: "meld-clump"
+        pierce: true
+        pierceCap: 2
+        speed: 4
+        lifetime: 55
+        width: 5
+        height: 14
+        damage: 10
+        splashDamage: 25
+        splashDamageRadius: 25
+        knockback: 4
+        shootEffect: shootBig
+        hitEffect: explosion
+	}
+}
+
+requirements: [
+	e0-0a-meld-shard/120
+	e1-0a-larval-plating/85
+	e1-1a-metalic-chunk/210
+	e1-2a-metalic-globule/65
+]
+
+squareSprite: false
+category: effect
+floating: true

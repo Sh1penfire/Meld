@@ -46,8 +46,8 @@ outputItems: [
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	a0-0a-debris/65
+	a1-0a-carbolith/45
 ]
 
 research: {

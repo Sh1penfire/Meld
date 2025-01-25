@@ -12,8 +12,8 @@ destroyEffect: {
 		{
 			type: ParticleEffect
 			region: meld-destroyed
-			layer: 130
-			lifetime: 95
+			layer: 170
+			lifetime: 180
 			cone: 0
 			particles: 1
 			length: 1
@@ -68,6 +68,6 @@ destroyEffect: {
 
 requirements: [
 	e0-0a-meld-shard/600
-	a0-0a-debris/4500
+	e1-0a-larval-plating/4500
 ]
 category: effect

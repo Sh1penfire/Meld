@@ -35,7 +35,7 @@ drawer: {
 
 requirements: [
 	e0-0a-meld-shard/2500
-	a0-0a-debris/3000
+	e1-0a-larval-plating/3000
 ]
 
 category: effect

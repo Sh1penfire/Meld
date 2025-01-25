@@ -9,42 +9,6 @@ fogRadiusMultiplier: 0.25
 
 reload: 85
 
-shootEffect: {
-    type: MultiEffect
-    effects: [
-        {
-            type: ParticleEffect
-            lifetime: 55
-            region: meld-swirl
-            colorFrom: 8872da00
-            colorTo: 3b2970
-            sizeFrom: 6
-            sizeTo: 0
-            length: 35
-            particles: 15
-            interp: pow5Out
-            sizeInterp: pow5In
-            layer: 70
-            spin: 35
-            cone: 90
-        }
-        {
-            type: ParticleEffect
-            lifetime: 25
-            colorFrom: 8872da00
-            colorTo: 3b2970
-            sizeFrom: 4
-            sizeTo: 0
-            length: 130
-            particles: 25
-            interp: pow5Out
-            sizeInterp: pow5In
-            layer: 70
-            cone: 25
-        }
-    ]
-}
-
 recoil: 0.25
 
 recoil: 1.5
@@ -373,9 +337,9 @@ consumes: {
 }
 
 requirements: [
-	a2-0a-silver/240
-	a2-1a-electrum-sheet/240
-	a3-0a-vitric-mesh/180
+	a0-0a-debris/250
+	a2-0a-silver/180
+	a2-1a-electrum-sheet/120
 ]
 
 

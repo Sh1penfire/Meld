@@ -178,21 +178,21 @@ parts: [
 //Circle + halo
     {
         type: ShapePart
-	progress: {
-		type: life
-		ops: [
-			{
-				op: curve
-				interp: pow5In
-			}
-			{
-				op: curve
-				interp: sine
-			}
-		]
-	}
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
         radius: 32
-	radiusTo: 4
+	   radiusTo: 4
         circle: true
         hollow: true
         stroke: 1
@@ -201,21 +201,21 @@ parts: [
     }
     {
         type: HaloPart
-	progress: {
-		type: life
-		ops: [
-			{
-				op: curve
-				interp: pow5In
-			}
-			{
-				op: curve
-				interp: sine
-			}
-		]
-	}
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
         haloRadius: 32
-	haloRadiusTo: 4
+        haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -226,21 +226,21 @@ parts: [
     }
     {
         type: HaloPart
-	progress: {
-		type: life
-		ops: [
-			{
-				op: curve
-				interp: pow5In
-			}
-			{
-				op: curve
-				interp: sine
-			}
-		]
-	}
+            progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
         haloRadius: 32
-	haloRadiusTo: 4
+        haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -250,7 +250,7 @@ parts: [
         haloRotateSpeed: 1.5
         shapeRotation: 180
     }
-//Flare
+    //Flare
 	{
                 type: FlarePart
                 radius: 0

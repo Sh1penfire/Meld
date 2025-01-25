@@ -1,12 +1,16 @@
-type: GenericCrafter
+type: AttributeCrafter
 size: 2
+
+baseEfficiency: 0
+minEfficiency: 0.00000000000001
+attribute: data-power
 
 placeableLiquid: true
 category: effect
 
 dumpExtraLiquid: true
 
-liquidCapacity: 50
+liquidCapacity: 600
 itemCapacity: 60
 
 ambientSound: drill
@@ -48,11 +52,16 @@ consumes: {
 }
 
 outputItem: b1-0a-fragment/2
+outputLiquids: [
+		a1-1a-null/0
+		a1-0a-liquid-data/0
+]
 
 requirements: [
  	a0-0a-debris/30
 	a2-0a-silver/60
 	b0-0a-technoscrap/120
+	b0-1a-grating-chunk/75
 ]
 
 research: c-effect-a2-0a-data-miner

@@ -13,6 +13,8 @@ baseEfficiency: 0
 minEfficiency: 0.05
 maxBoost: 2
 
+scaleLiquidConsumption: true
+
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
@@ -27,8 +29,8 @@ drawer: [
 
 consumes: {
 	items: [
-		a0-0a-debris/2
-		a2-0a-silver/5
+		a0-0a-debris/4
+		a2-0a-silver/10
 	]
 	liquids: [
 		a0-0b-aspect/3.3333333333333333333333333333333
@@ -36,7 +38,7 @@ consumes: {
 	]
 }
 
-outputItem: a2-1a-electrum-sheet/8
+outputItem: a2-1a-electrum-sheet/16
 outputLiquid: d0-1a-ichor/2
 
 research: {

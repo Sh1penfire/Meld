@@ -12,6 +12,8 @@ baseEfficiency: 0
 minEfficiency: 1
 boostScale: 0.2
 
+scaleLiquidConsumption: true
+
 liquidOutputDirections: [0]
 rotate: true
 quickRotate: true

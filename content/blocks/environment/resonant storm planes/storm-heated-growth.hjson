@@ -58,7 +58,7 @@ effect:{
             offsetY: -4
         }
         
-        //
+        //Top right vent
         {
             type: ParticleEffect
             lifetime: 190

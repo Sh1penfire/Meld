@@ -60,7 +60,7 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputItem: b0-0a-technoscrap/1
+outputItem: b0-0a-technoscrap/2
 
 requirements: [
  	a0-0a-debris/120

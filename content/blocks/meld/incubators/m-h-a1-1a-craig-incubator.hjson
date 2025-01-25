@@ -590,7 +590,7 @@ consumes: {
 
 requirements: [
 	e0-0a-meld-shard/600
-	a0-0a-debris/4500
+	e1-0a-larval-plating/4500
 ]
 
 category: units
