@@ -173,8 +173,10 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/80
-	a1-0a-carbolith/120
+	a0-0a-debris/150
+	b0-0a-technoscrap/80
+	b2-0a-bioscrap-graft/60
+	b0-1a-grating-chunk/35
 ]
 
 category: effect

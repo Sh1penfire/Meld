@@ -1,6 +1,8 @@
 type: AttributeCrafter
 size: 5
 
+armor: 12
+
 placeableLiquid: true
 category: crafting
 
@@ -39,11 +41,13 @@ consumes: {
 
 outputLiquids: [
 	b1-0a-mercury/12
+	b3-0a-ooze/0.5
 ]
 
 requirements: [
  	a0-0a-debris/80
-	a2-0a-silver/60
+	a1-1a-compacted-brick/120
+	a1-2a-stony-gloop/120
 ]
 
 research: {

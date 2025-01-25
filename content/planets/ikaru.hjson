@@ -30,7 +30,6 @@ itemWhitelist: [
 	a1-1a-compacted-brick
 	a1-2a-stony-gloop
 	a2-0a-silver
-	e0-0a-meld-shard
 	a2-1a-electrum-sheet
 	a3-0a-vitric-mesh
 	a3-1a-shiny-globule
@@ -45,6 +44,11 @@ itemWhitelist: [
 	b1-1a-memory-shard
 	c0-0a-industrial-rubble
 	d0-0a-industrial-rubble-cracked
+	e0-0a-meld-shard
+	e1-0a-larval-plating
+	e1-1a-metalic-chunk
+	e1-2a-metalic-globule
+	e2-0a-stony-particulate
 	f0-0a-bramble-vine
 	f1-0a-compacted-masses
 	f1-1a-starving-masses

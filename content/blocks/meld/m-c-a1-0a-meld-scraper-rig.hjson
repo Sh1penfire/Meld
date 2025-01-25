@@ -1,0 +1,56 @@
+type: AttributeCrafter
+size: 5
+configurable: false
+variants: 0
+solid: true
+
+attribute: ichor
+minEfficiency: 1
+baseEfficiency: 0
+maxBoost: 10
+
+liquidCapacity: 200
+
+squareSprite: false
+
+requirements: [
+	e1-0a-larval-plating/350
+	e0-0a-meld-shard/150
+]
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -base
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: d0-1a-ichor
+		alpha: 0.6
+		padding: 1.5
+	}
+	{
+		type: DrawCells
+		range: 10
+		color: 9e2e7b
+		particleColorFrom: 892a6b
+		particleColorTo: e5aed7
+		particles: 15
+	}
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -gum
+	}
+	{
+		type: DrawRegion
+		layer: 31
+		suffix: -top
+	}
+]
+
+outputLiquid: {
+	liquid: d0-1a-ichor
+	amount: 1
+}

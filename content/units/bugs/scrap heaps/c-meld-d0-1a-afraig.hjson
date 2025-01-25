@@ -48,36 +48,36 @@ deathExplosionEffect: {
 }
 
 weapons: [
-	{
-		name: "afraig-spurter"
-		x: 1.25
-		y: -4.5
-		shootY: 4.5
-		rotateSpeed: 15
-		reload: 20
-		shootCone: 60
-		rotate: true
-		shootStatus: wildlife-b0-sentry
-		shootStatusDuration: 8.5
-		mirror: false
-		alternate: false
-		shoot: {
-			shots: 2
-			shotDelay: 7
-		}
+    {
+        name: "afraig-spurter"
+        x: 1.25
+        y: -4.5
+        shootY: 4.5
+        rotateSpeed: 15
+        reload: 20
+        shootCone: 60
+        rotate: true
+        shootStatus: wildlife-b0-sentry
+        shootStatusDuration: 8.5
+        mirror: false
+        alternate: false
+        shoot: {
+            shots: 2
+            shotDelay: 7
+        }
         shootSound: flame
-		bullet: {
-			type: BulletType
+        bullet: {
+            type: BulletType
             keepVelocity: false
-			damage: 9
+            damage: 9
             speed: 3
             lifetime: 15
             knockback: 1
-			pierce: true
-			smokeEffect: none
-			recoil: -0.5
-			lightRadius: 0
-			despawnEffect: none
+            pierce: true
+            smokeEffect: none
+            recoil: -0.5
+            lightRadius: 0
+            despawnEffect: none
             hitEffect: {
                 type: ParticleEffect
                 lifetime: 24
@@ -92,7 +92,7 @@ weapons: [
                 colorFrom: feafea
                 colorTo: d26ab100
             }
-			shootEffect:{
+            shootEffect:{
                 type: MultiEffect
                 effects: [
                     {
@@ -127,30 +127,30 @@ weapons: [
                     }
                 ]
             }
-		}
-	}
+        }
+    }
     //Death giblits
-	{
-		controllable: false
-		aiControllable: false
-		shootOnDeath: true
-		mirror: false
-		rotate: false
-		x: 0
-		y: 0
-		reload: 60
-		shootCone: 180
-		recoil: 0
-		shootSound: none
-		inaccuracy: 25
-		velocityRnd: 0.05
-		cooldownTime: 60000
-		bullet: {
-			type: BulletType
-			collidesTiles: false
-			collides: false
-			collidesAir: true
-			hitSound: explosion
+    {
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        mirror: false
+        rotate: false
+        x: 0
+        y: 0
+        reload: 60
+        shootCone: 180
+        recoil: 0
+        shootSound: none
+        inaccuracy: 25
+        velocityRnd: 0.05
+        cooldownTime: 60000
+        bullet: {
+            type: BulletType
+            collidesTiles: false
+            collides: false
+            collidesAir: true
+            hitSound: explosion
             fragBullets: 6
             fragLifeMin: 0.5
             fragSpread: 60
@@ -172,12 +172,12 @@ weapons: [
                 hitEffect: none
             }
 
-			rangeOverride: 10
-			speed: 0
-			splashDamageRadius: 35
-			instantDisappear: true
-			splashDamage: 15
-			hittable: false
+            rangeOverride: 10
+            speed: 0
+            splashDamageRadius: 35
+            instantDisappear: true
+            splashDamage: 15
+            hittable: false
             hitEffect: {
                 type: MultiEffect
                 effects: [
@@ -228,30 +228,30 @@ weapons: [
                     }
                 ]
             }
-		}
+        }
     }
-	{
-		controllable: false
-		aiControllable: false
-		shootOnDeath: true
-		mirror: false
-		rotate: false
-		x: 0
-		y: 0
-		reload: 60
-		shootCone: 180
-		recoil: 0
-		shootSound: none
-		inaccuracy: 25
-		velocityRnd: 0.05
-		cooldownTime: 60000
-		bullet: {
-			type: BulletType
-			collides: false
+    {
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        mirror: false
+        rotate: false
+        x: 0
+        y: 0
+        reload: 60
+        shootCone: 180
+        recoil: 0
+        shootSound: none
+        inaccuracy: 25
+        velocityRnd: 0.05
+        cooldownTime: 60000
+        bullet: {
+            type: BulletType
+            collides: false
             hittable: false
             absorbable: false
-            
-			hitSound: none
+
+            hitSound: none
             fragBullets: 4
             fragLifeMin: 0.5
             fragSpread: 90
@@ -303,14 +303,14 @@ weapons: [
                 ]
             }
 
-			rangeOverride: 10
-			speed: 0
-			instantDisappear: true
-			splashDamage: 0
-            
+            rangeOverride: 10
+            speed: 0
+            instantDisappear: true
+            splashDamage: 0
+
             hitEffect: none
-		}
-	}
+        }
+    }
 ]
 
 immunities: [

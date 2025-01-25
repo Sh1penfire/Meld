@@ -1,0 +1,49 @@
+healthMultiplier: 0.85
+effectChance: 0
+parentizeApplyEffect: true
+
+
+applyEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: SeqEffect
+            layer: 170
+            effects: [
+                {
+                    type: WaveEffect
+                    lifetime: 15
+                    sizeFrom: 8
+                    sizeTo: 16
+                    strokeFrom: 0
+                    strokeTo: 3
+                    colorFrom: f2712100
+                    colorTo: f27121
+                    interp: pow2Out
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 60
+                    sizeFrom: 16
+                    sizeTo: 16
+                    strokeFrom: 3
+                    strokeTo: 1
+                    colorFrom: f27121
+                    colorTo: f27121
+                    interp: pow2Out
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 15
+                    sizeFrom: 16
+                    sizeTo: 8
+                    strokeFrom: 1
+                    strokeTo: 0
+                    colorFrom: f27121
+                    colorTo: f2712100
+                    interp: pow2In
+                }
+            ]
+        }
+    ]
+}

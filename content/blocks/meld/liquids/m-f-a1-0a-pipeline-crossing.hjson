@@ -5,5 +5,5 @@ placeableLiquid: true
 
 category: liquid
 requirements: [
-	a0-0a-debris/5
+	e1-0a-larval-plating/5
 ]

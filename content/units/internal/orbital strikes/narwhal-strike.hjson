@@ -264,7 +264,7 @@ weapons: [
                         strokeTo: 3
                         color: cae4ec
                         colorTo: 83a5be00
-                        layer: 110
+                        layer: 170
                     }
                     {
                         type: ShapePart
@@ -285,7 +285,7 @@ weapons: [
                         strokeTo: 3
                         color: cae4ec00
                         colorTo: 83a5be
-                        layer: 110
+                        layer: 170
                     }
                 ]
                 

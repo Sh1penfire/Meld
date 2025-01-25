@@ -15,7 +15,6 @@ drownTime: 120
 liquidDrop: a0-5a-meld
 
 cacheLayer: water
-placeableOn: false
 emitLight: true
 lightColor: ca3fba11
 lightRadius: 15

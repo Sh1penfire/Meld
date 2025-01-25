@@ -293,6 +293,7 @@ drawer: {
 requirements: [
 	a0-0a-debris/80
 	a1-0a-carbolith/120
+	b0-1a-grating-chunk/45
 ]
 
-category: effect
+category: turret

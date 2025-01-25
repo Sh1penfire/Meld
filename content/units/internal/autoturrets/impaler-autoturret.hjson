@@ -10,6 +10,7 @@ speed: 0
 health: 240
 
 useUnitCap: false
+isCounted: false
 
 drag: 0.12
 accel: 0.2
@@ -211,5 +212,9 @@ weapons: [
 ]
 
 immunities: [
-    aspect-burn
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
+	aspect-burn
 ]

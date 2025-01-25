@@ -82,6 +82,7 @@ outputLiquid: a0-0a-aether/0.3333333333333334
 
 requirements: [
  	a0-0a-debris/40
+	a4-1a-dissonitre/10
 ]
 
 research: liquid-logistics

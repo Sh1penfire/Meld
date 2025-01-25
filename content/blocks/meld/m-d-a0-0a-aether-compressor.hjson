@@ -7,7 +7,7 @@ solid: true
 liquidCapacity: 100
 
 requirements: [
-	a0-0a-debris/200
+	e1-0a-larval-plating/200
 	e0-0a-meld-shard/150
 ]
 
@@ -50,7 +50,7 @@ drawer: [
 ]
 
 consumes: {
-	liquid: a0-5a-meld/1
+	liquid: a0-5a-meld/2
 }
 
 outputLiquid: {

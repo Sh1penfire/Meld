@@ -1,0 +1,177 @@
+type: missile
+lifetime: 300
+speed: 0
+
+controller: BuilderAI
+buildSpeed: 0.5
+buildRange: 120
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+fogRadius: 15
+lightRadius: 120
+lightOpacity: 1
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+    //Sonar part
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 120
+		stroke: 8
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow5In
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 118
+		stroke: 4
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+    
+    //Body of the overseer
+    {
+        type: ShapePart
+        x: 0
+        y: 0
+        circle: true
+        radius: 5
+        radiusTo: 0
+        layer: 110
+        color: ffd37f
+        colorTo: ffd37f00
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 6
+        radius: 4
+        radiusTo: 0
+        triLength: 14
+        triLengthTo: 0
+        shapes: 4
+        color: ffd37f
+        haloRotateSpeed: 1
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+]
+
+weapons: [
+	{
+        x: 0
+        y: 0
+        shootY: 0
+		reload: 0
+		alwaysShooting: true
+		aiControllable: false
+		shootSound: sonar
+		shootStatus: disarmed
+		shootStatusDuration: 800
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                4,4, 0,
+                4,-4, 0,
+                -4,-4, 0,
+                -4,4, 0
+            ]
+            shots: 4
+        }
+		bullet: {
+			collides: false
+			hittable: false
+			absorbable: false
+			instantDisappear: true
+			shootEffect: none
+			hitSound: none
+            spawnUnit: overseer-assistant
+		}
+	}
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 120
+		reload: 0
+		effect: strata-a0-rally
+		duration: 15
+		activeEffect: none
+		applyEffect: none
+	}
+]
+
+immunities: [
+	strata-a0-rally
+]

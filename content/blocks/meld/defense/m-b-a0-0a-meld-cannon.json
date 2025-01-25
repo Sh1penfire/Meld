@@ -154,7 +154,7 @@ coolant: {
 }
 
 requirements: [
-	a0-0a-debris/45
+	e1-0a-larval-plating/45
 	a1-0a-carbolith/35
 ]
 

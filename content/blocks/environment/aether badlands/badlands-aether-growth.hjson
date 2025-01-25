@@ -3,6 +3,191 @@ variants: 0
 blendGroup: badlands-soft-sand
 parent: badlands-soft-sand
 
+effect:{
+    type: MultiEffect
+    effects: [
+        //Top right vent
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 125
+            sizeInterp: slope
+            length: 25
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: cb8650a1
+            colorTo: 67301900
+            layer: 61.7
+            spin: 12
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 95
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 935b29a1
+            colorTo: 67301900
+            layer: 61.8
+            cone: 25
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 85
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            layer: 61.9
+            cone: 15
+            baseRotation: 55
+            offsetX: 3
+            offsetY: -4
+        }
+        
+        //Bottom vent
+        {
+            type: ParticleEffect
+            lifetime: 190
+            sizeInterp: slope
+            length: 65
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 5
+            colorFrom: 935b295a
+            colorTo: 67301900
+            layer: 61.7
+            cone: 20
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+        }
+        
+        {
+            type: ParticleEffect
+            region: "particle"
+            lifetime: 180
+            sizeInterp: slope
+            length: 180
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: e9a572b1
+            colorTo: cb865000
+            particles: 8
+            layer: 61.8
+            cone: 15
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+            sizeInterp: slope
+        }
+        {
+            type: ParticleEffect
+            lifetime: 125
+            sizeInterp: slope
+            length: 85
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            layer: 61.9
+            cone: 6
+            baseRotation: 25
+            offsetX: -3
+            offsetY: -4.8
+        }
+        
+        
+        //Top left vent
+        {
+            type: ParticleEffect
+            lifetime: 240
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 2.5
+            sizeTo: 3.5
+            colorFrom: 935b29a1
+            colorTo: 67301900
+            particles: 5
+            layer: 61.6
+            cone: 20
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+            sizeInterp: slope
+        }
+        {
+            type: ParticleEffect
+            region: "particle"
+            lifetime: 240
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: e9a572b1
+            colorTo: cb865000
+            particles: 3
+            layer: 61.7
+            cone: 15
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+            sizeInterp: slope
+        }
+        {
+            type: ParticleEffect
+            lifetime: 195
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 0
+            sizeTo: 3.5
+            colorFrom: e9a572b1
+            colorTo: cb865000
+            particles: 1
+            layer: 61.8
+            cone: 5
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
+	//Smog which covers the base of the vent
+        {
+            type: ParticleEffect
+            lifetime: 130
+            length: 15
+            baseLength: 4
+            sizeFrom: 3.5
+            sizeTo: 1.5
+            colorFrom: 935b29a1
+            colorTo: 67301900
+            particles: 3
+            layer: 61.9
+            cone: 55
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+            sizeInterp: slope
+        }
+    ]
+}
+
 attributes: {
 	aether: 1
 }

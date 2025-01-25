@@ -316,7 +316,7 @@ weapons: [
                 haloRotateSpeed: 0.25
                 shapeMoveRot: 180
                 shapeRotation: 180
-                layer: 110
+                layer: 170
             }
             //Passive range indicator 2, shrinks when shooting
         ]
@@ -411,7 +411,7 @@ weapons: [
                 effect: {
                     type: SeqEffect
                     followParent: false
-                    layer: 110
+                    layer: 170
                     effects: [
                             {
                                 lifetime: 115

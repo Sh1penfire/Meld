@@ -1,0 +1,139 @@
+type: LiquidTurret
+size: 4
+health: 1280
+range: 320
+
+shootWarmupSpeed : 0.09
+
+reload: 360
+rotateSpeed: 3
+shootCone: 180
+
+recoil: 0.25
+
+recoil: 0
+inaccuracy: 0
+
+liquidCapacity: 150
+
+shootY: 0
+
+squareSprite: false
+
+loopSound: none
+shootSound: mediumCannon
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 4
+    fragLifeMin: 0.2
+	fragBullet: {
+        lifetime: 12
+        absorbable: false
+        collides: false
+        hittable: false
+        hitEffect: false
+        despawnEffect: false
+		despawnUnit: c-meld-d0-1a-afraig
+	}
+}
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+
+
+
+ammoTypes: {
+    d0-1a-ichor: {
+        
+        speed: 4 
+        homingPower: 0.15
+        homingRange: 320
+        lifetime: 80
+    
+        trailChance: 0.5
+        trailEffect: explosion
+    
+        fragSpread: 45
+        fragRandomSpread: 15
+        fragBullets: 3
+        fragAngle: 180
+        fragVelocityMin: 1
+        
+
+        //Burrowing splurger after impact
+        fragBullet: {
+            lifetime: 15
+            speed: 4
+            collidesAir: false
+            collideTerrain: true
+            collidesTiles: true
+            fragBullets: 1
+
+            //Delay before a splurger spawns on a location
+            fragBullet: {
+                lifetime: 60
+                collides: false
+                speed: 0
+                fragBullets: 1
+                fragBullet: {
+                    spawnUnit: splurger
+                }
+            }
+        }
+    }
+}
+
+consumes: {
+    liquid: {
+        liquid: d0-1a-ichor
+        amount: 0.01
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+requirements: [
+	e1-0a-larval-plating/45
+	a1-0a-carbolith/35
+]
+
+category: turret

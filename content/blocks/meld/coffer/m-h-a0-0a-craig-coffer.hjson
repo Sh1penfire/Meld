@@ -12,7 +12,7 @@ destroyBullet: {
 	hittable: false
 	hitEffect: false
 	despawnEffect: false
-	fragBullets: 2
+	fragBullets: 3
 	fragBullet: {
 		spawnUnit: c-meld-d0-0a-craig
 	}
@@ -26,7 +26,7 @@ shootCone: 15
 reload: 5
 recoil: 1.5
 rotateSpeed: 6
-range: 35
+range: 60
 shootY: 5
 
 shootEffect: shootSmall
@@ -53,6 +53,9 @@ ammoTypes: {
 }
 
 requirements: [
+	e0-0a-meld-shard/65
+	e1-1a-metalic-chunk/25
+	e1-2a-metalic-globule/45
 ]
 
 squareSprite: false

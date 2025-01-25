@@ -1,0 +1,44 @@
+type: missile
+physics: false
+hittable: false
+targetable: false
+useUnitCap: false
+createScorch: false
+deathSound: none
+deathExplosionEffect: none
+drawBody: false
+drawCell: false
+shadowElevation: 0
+
+lifetime: 100
+speed: 0
+
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 0
+		rotate: true
+		rotateSpeed: 180
+		reload: 0
+		mirror: false
+		alternate: false
+		controllable: false
+		alwaysShooting: true
+		targetSwitchInterval: 1
+		shootSound: none
+		bullet: {
+			type: BulletType
+			instantDisappear: true
+			killShooter: true
+			fragBullets: 2
+			fragBullet: {
+				spawnUnit: c-meld-c1-0a-gilla
+			}
+			hitEffect: none
+			shootEffect: none
+			smokeEffect: none
+		}
+	}
+]
