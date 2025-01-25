@@ -3,7 +3,6 @@ variants: 0
 
 blendGroup: fringe-plating-meldlogged
 parent: fringe-plating-meldlogged
-allowCorePlacement: true
 isLiquid: true
 cacheLayer: water
 effectSpacing: 240
