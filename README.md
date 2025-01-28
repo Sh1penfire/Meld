@@ -29,7 +29,7 @@ Meld is **currently** a unique blend of: <br />
  - Tower defense-like design for enemy units (I love it when an enemy unit can just walk up to my tower and disable it, so now there's a unit that shoots force projectors. lmao.) <br />
  - A yeetening of tiers (good riddance!) <br />
  - units designed to fill niches instead of fill reconstructor space. <br />
- - 5. second. units. <br />
+ - 5\. second. units. <br />
  - Proper integration of status effects, knockback and drag into the moment-to-moment gameplay <br />
  - Purposeful design involving armor for both buildings and units <br />
  - Instakills <br />
