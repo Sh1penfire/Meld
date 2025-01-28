@@ -23,6 +23,7 @@ This isn't a very formal mod. It's a goofy experience which makes me want to che
 The gamelpay style has pretty much solidified during the course of its months long development time.
 
 Meld is **currently** a unique blend of:
+
 -Pure PVE-focused design
 -Tower defense-like design for enemy units (I love it when an enemy unit can just walk up to my tower and disable it, so now there's a unit that shoots force projectors. lmao.)
 -A yeetening of tiers (good riddance!)
