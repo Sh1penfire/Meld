@@ -422,6 +422,7 @@ weapons: [
 			width: 5
 			height: 24
 			knockback: 25
+            impact: true
 			trailEffect: smoke
 			shootEffect: shootBig
 			hitEffect: explosion

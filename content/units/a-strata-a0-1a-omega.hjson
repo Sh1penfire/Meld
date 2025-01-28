@@ -487,11 +487,13 @@ weapons: [
 			height: 14
 			damage: 55
 			drag: 0.06
+            
 			fragBullets: 8
 			fragRandomSpread: 25
 			fragLifeMin: 0
 			fragVelocityMin: 0.7
 			fragVelocityMax: 1
+            
 			rangeOverride: 168
 			recoil: 3
 			keepVelocity: false
@@ -623,6 +625,60 @@ abilities: [
         applyEffect: none
     }
     {
+        type: ForceFieldAbility
+        sides: 8
+        max: 1000
+        radius: 36
+        regen: 0
+        cooldown: 240
+    }
+    {
+        type: ShieldRegenFieldAbility
+        range: -7
+        amount: 8
+        max: 1000
+        reload: 50
+        activeEffect: none
+        parentizeEffects: true
+        applyEffect: {
+            type: ParticleEffect
+            lifetime: 50
+            region: circle
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: ffd37f00
+            colorTo: ffd37f
+            length: -35
+            baseLength: 35
+            particles: 5
+            interp: pow10In
+            sizeInterp: pow10In
+        }
+    }
+    {
+        type: ShieldRegenFieldAbility
+        range: -7
+        amount: 4
+        max: 750
+        reload: 10
+        activeEffect: none
+        parentizeEffects: true
+        applyEffect: {
+            type: ParticleEffect
+            lifetime: 20
+            region: circle
+            sizeFrom: 3.5
+            sizeTo: 0
+            colorFrom: ffd37f00
+            colorTo: ffd37f
+            length: -45
+            baseLength: 45
+            particles: 6
+            interp: pow10In
+            sizeInterp: pow10In
+        }
+    }
+    {
         type: ShieldRegenFieldAbility
         range: -7
         amount: 4
@@ -632,15 +688,15 @@ abilities: [
         parentizeEffects: true
         applyEffect: {
             type: ParticleEffect
-            lifetime: 45
+            lifetime: 35
             region: circle
-            sizeFrom: 2.5
+            sizeFrom: 4.5
             sizeTo: 0
             colorFrom: ffd37f00
             colorTo: ffd37f
-            length: -35
-            baseLength: 35
-            particles: 5
+            length: -55
+            baseLength: 55
+            particles: 7
             interp: pow10In
             sizeInterp: pow10In
         }

@@ -145,7 +145,7 @@ requirements: [
 
 category: turret
 
-research: stratum
+research: strata
 researchCost: [
     a0-0a-debris/120
     a1-0a-carbolith/80

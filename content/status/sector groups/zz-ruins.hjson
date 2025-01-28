@@ -1,0 +1,9 @@
+show: false
+alwaysUnlocked: true
+
+research: {
+	planet: ikaru
+	root: true
+	requiresUnlock: false
+	name: "Ikaru Sectors"
+}

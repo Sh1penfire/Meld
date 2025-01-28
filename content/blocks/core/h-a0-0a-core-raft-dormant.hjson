@@ -15,7 +15,7 @@ lightRadius: 8
 alwaysUnlocked: true
 
 research: {
-	parent: stratum
+	parent: strata
 }
 
 requirements: [

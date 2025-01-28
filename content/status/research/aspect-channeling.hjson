@@ -1,6 +1,6 @@
 show: false
 research: {
-	parent: stratum
+	parent: strata
 	objectives: [
 		aspect-channeling
 	]

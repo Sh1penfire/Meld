@@ -16,5 +16,5 @@ liquidDrop: a0-5a-meld
 
 cacheLayer: water
 emitLight: true
-lightColor: ca3fba11
+lightColor: ca3fba1b
 lightRadius: 15

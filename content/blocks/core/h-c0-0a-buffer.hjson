@@ -3,7 +3,7 @@ health: 320
 size: 2
 
 solid: true
-itemCapacity: 120
+itemCapacity: 200
 
 squareSprite: false
 coreMerge: false

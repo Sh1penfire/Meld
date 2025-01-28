@@ -1,0 +1,151 @@
+type: flying
+flying: true
+speed: 8.5
+strafePenalty: 1
+
+health: 430
+armor: -5
+
+drag: 0.45
+accel: 0.12
+
+hitSize: 21
+fogRadius: 14
+
+lightRadius: 85
+lightOpacity: 0.35
+range: 120
+rotateSpeed: 6
+
+useEngineElevation: false
+faceTarget: true
+
+weapons: [
+    //Reload decrease and speed down when moving
+    {
+        alwaysShooting: true
+        aiControllable: false
+        controllable: false
+        shootCone: 0
+        reload: 5
+        reload: 5
+        shootSound: none
+        shootStatus: dragonfly-flight
+        shootStatusDuration: 120
+        minShootVelocity: 1
+        bullet: {
+            instantDisappear: true
+            hittable: false
+            absorbable: false
+            despawnEffect: none
+        }
+    }
+    //Main weapon
+    {
+		name: "pointago-sniper"
+        x: 0
+        y: 3
+        mirror: false
+        rotate: true
+        rotateSpeed: 3
+        rotationLimit: 60
+        shootCone: 45
+        
+        reload: 60
+        shootStatus: dragonfly-seige
+        shootStatusDuration: 60
+        
+        shoot: {
+            shots: 4
+            shotDelay: 25
+        }
+        inaccuracy: 5
+        bullet: {
+			damage: 1
+			speed: 8
+			lifetime: 30
+            
+			pierce: true
+			pierceCap: 2
+            removeAfterPierce: true
+			width: 3
+			height: 24
+			knockback: 5
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+            fragBullets: 5
+            fragRandomSpread: 0
+            fragOnAbsorb: false
+            fragBullet: {
+                type: RailBulletType
+                damage: 3
+                pierceDamageFactor: 1
+                length: 5
+                hitEffect: none
+                trailEffect: none
+            }
+		}
+        parts: [
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+    }
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 9.75
+		y: -11.25
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+	{
+		type: MoveEffectAbility
+		x: -9.75
+		y: -11.25
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+]
+
+engines: [
+	{
+		x: 9.75
+		y: -11.25
+		radius: 2.2
+		rotation: 315
+	}
+	{
+		x: -9.75
+		y: -11.25
+		radius: 2.2
+		rotation: 225
+	}
+]
+immunities: [
+	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
+]
+
+research: h-a0-0a-core-raft

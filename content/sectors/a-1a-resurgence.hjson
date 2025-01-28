@@ -3,9 +3,4 @@ planet: ikaru
 alwaysUnlocked: true
 difficulty: 1
 
-research: {
-	planet: ikaru
-	root: true
-	requiresUnlock: false
-	name: "Ikaru Sectors"
-}
+research: zz-ruins

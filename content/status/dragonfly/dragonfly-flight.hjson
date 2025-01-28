@@ -1,0 +1,7 @@
+reloadMultiplier: 0.15
+speedMultiplier: 0.5
+dragMultiplier: 0.35
+healthMultiplier: 0.25
+
+effect: smoke
+effectChance: 0.25

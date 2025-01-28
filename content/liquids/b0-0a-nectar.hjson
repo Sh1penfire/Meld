@@ -26,7 +26,7 @@ canStayOn: [
 ]
 
 research: {
-	parent:	a1-0a-carbolith
+	parent:	a0-0a-debris
 	objectives: [
 		b0-0a-nectar
 	]

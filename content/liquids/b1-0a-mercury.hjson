@@ -16,7 +16,7 @@ canStayOn: [
 ]
 
 research: {
-	parent: f0-0a-bramble-vine
+	parent: b0-0a-nectar
 	objectives: [
 		mangrove-d1-slippery
 	]

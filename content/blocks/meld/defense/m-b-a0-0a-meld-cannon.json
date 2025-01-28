@@ -79,29 +79,31 @@ shootEffect: {
 
 
 ammoTypes: {
-	a0-0a-aether: {
+    a0-0a-aether: {
         type: ArtilleryBulletType
         damage: 180
         lifetime: 60
         speed: 3.5
         width: 24
         height: 30
-        fragLifeMin: 0.4
-        fragVelocityMin: 0.5
-        fragBullets: 15
-    
+
         frontColor: cb8650
         backColor: 935b29
         hitEffect: blastExplosion
         hitSound: bang
         hitShake: 2.5
-    
+
         collidesGround: true
         collidesTiles: true
         collides: true
-    
+
         ammoMultiplier: 0.008
-    
+
+        fragLifeMin: 0.4
+        fragVelocityMin: 0.5
+        fragBullets: 15
+        fragRandomSpread: 5
+        fragSpread: 20
         fragBullet: {
             speed: 3.5
             damage: 50
@@ -123,6 +125,7 @@ ammoTypes: {
             hitEffect: explosion
             hitSound: explosion
             hitShake: 0.5
+            fragBullets: 2
 
             fragBullet: {
                 type: LiquidBulletType
@@ -134,9 +137,8 @@ ammoTypes: {
                 splashDamageRadius: 50
                 hitEffect: none
             }
-            fragBullets: 2
         }
-	}
+    }
 }
 
 consumes: {

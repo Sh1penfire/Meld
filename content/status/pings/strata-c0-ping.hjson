@@ -20,6 +20,7 @@ applyEffect: {
                     colorFrom: f2712100
                     colorTo: f27121
                     interp: pow2Out
+                    lightInterp: one
                 }
                 {
                     type: WaveEffect
@@ -31,6 +32,7 @@ applyEffect: {
                     colorFrom: f27121
                     colorTo: f27121
                     interp: pow2Out
+                    lightInterp: one
                 }
                 {
                     type: WaveEffect
@@ -42,6 +44,7 @@ applyEffect: {
                     colorFrom: f27121
                     colorTo: f2712100
                     interp: pow2In
+                    lightInterp: one
                 }
             ]
         }

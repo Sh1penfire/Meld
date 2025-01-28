@@ -1,10 +1,9 @@
 show: false
-research: ikaru
 
 research: {
-	parent: a-1a-resurgence
+	parent: zz-ruins
 	objectives: [
-		beginnings
+		zz-beginnings
 	]
 }
 
@@ -29,7 +28,7 @@ applyEffect: [
             {
                 type: ParticleEffect
                 lifetime: 240
-                region: meld-beginnings
+                region: meld-zz-beginnings
                 particles: 1
                 length: 0
                 sizeFrom: 0

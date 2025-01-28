@@ -14,6 +14,7 @@ faceTarget: false
 drawCell: false
 drawBody: false
 
+range: 300
 legCount: 4
 legLength: 10
 legBaseOffset: -1

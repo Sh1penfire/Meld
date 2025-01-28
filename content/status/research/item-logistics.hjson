@@ -1,8 +1,8 @@
 show: false
-research: stratum
+research: strata
 
 research: {
-	parent: stratum
+	parent: strata
 	objectives: [
 		item-logistics
 	]
