@@ -25,21 +25,21 @@ This isn't a very formal mod. It's a goofy experience which makes me want to che
 The gamelpay style has pretty much solidified during the course of its months long development time.
 
 Meld is **currently** a unique blend of: <br />
--Pure PVE-focused design <br />
--Tower defense-like design for enemy units (I love it when an enemy unit can just walk up to my tower and disable it, so now there's a unit that shoots force projectors. lmao.) <br />
--A yeetening of tiers (good riddance!) <br />
--units designed to fill niches instead of fill reconstructor space. <br />
--5. second. units. <br />
--Proper integration of status effects, knockback and drag into the moment-to-moment gameplay <br />
--Purposeful design involving armor for both buildings and units <br />
--Instakills <br />
--Balance tipped towards player expression and strategy rather than keeping things fair <br />
--Unique cross-biome progression <br />
--Core units with stupidly powerful guns/abilities called Commanders <br />
--Environmental props that give resources <br />
--Refrences to other games I've played and enjoyed <br />
--Fishes. A lot of fishes. Don't forget the bugs. <br />
--Lots more that sleep-deprived me decided not to put on here for fear of making this section too lengthy. Go play the mod ya goob.
+ - Pure PVE-focused design <br />
+ - Tower defense-like design for enemy units (I love it when an enemy unit can just walk up to my tower and disable it, so now there's a unit that shoots force projectors. lmao.) <br />
+ - A yeetening of tiers (good riddance!) <br />
+ - units designed to fill niches instead of fill reconstructor space. <br />
+ - 5. second. units. <br />
+ - Proper integration of status effects, knockback and drag into the moment-to-moment gameplay <br />
+ - Purposeful design involving armor for both buildings and units <br />
+ - Instakills <br />
+ - Balance tipped towards player expression and strategy rather than keeping things fair <br />
+ - Unique cross-biome progression <br />
+ - Core units with stupidly powerful guns/abilities called Commanders <br />
+ - Environmental props that give resources <br />
+ - Refrences to other games I've played and enjoyed <br />
+ - Fishes. A lot of fishes. Don't forget the bugs. <br />
+ - Lots more that sleep-deprived me decided not to put on here for fear of making this section too lengthy. Go play the mod ya goob.
 
 
 This is **all in the mod, right now**, and is **available to be played, r i g h t  n o w**.
