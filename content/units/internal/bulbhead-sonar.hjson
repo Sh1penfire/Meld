@@ -1,8 +1,12 @@
 type: missile
-lifetime: 180
+shadowElevation: 0.0
+
+lifetime: 360
 speed: 0
 
-flying: false
+engineSize: 0
+
+flying: true
 drawBody: false
 isEnemy: false
 useUnitCap: false
@@ -15,10 +19,12 @@ hidden: true
 playerControllable: false
 canDrown: false
 
-hoverable: false
+hoverable: true
 hovering: true
 
-targetable: false
+faceTarget: false
+targetable: true
+health: 120
 
 drawMinimap: false
 
@@ -33,6 +39,85 @@ drawCell: false
 drawBody: false
 
 parts: [
+    //Body of the overseer
+    {
+        type: ShapePart
+        x: 0
+        y: 0
+        circle: true
+        radius: 4
+        radiusTo: 0
+        layer: 110
+        color: ffd37f
+        colorTo: ffd37f00
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 8
+        radius: 4
+        radiusTo: 0
+        triLength: 8
+        triLengthTo: 0
+        shapes: 3
+        color: ffd37f
+        haloRotateSpeed: 2
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.5
+                    end: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 14
+        radius: 4
+        radiusTo: 0
+        triLength: 6
+        triLengthTo: 0
+        shapes: 3
+        color: ffd37f
+        haloRotateSpeed: 1
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    //Sonar pulses
 	{
 		x: 0
 		y: 0
@@ -56,10 +141,24 @@ parts: [
 			ops: [
 				{
 					op: curve
-					interp: pow5Out
+					interp: pow10Out
 				}
 			]
 		}
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 80
+		stroke: 8
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
 		circle: true
 		hollow: true
 		radius: 0
@@ -78,7 +177,7 @@ parts: [
 			ops: [
 				{
 					op: curve
-					interp: pow5In
+					interp: pow10In
 				}
 			]
 		}
@@ -94,12 +193,35 @@ parts: [
 
 weapons: [
 	{
-		reload: 0
+		type: RepairBeamWeapon
+		mirror: false
+		rotate: true
+		rotateSpeed: 180
+		x: 0
+		y: 0
+		shootY: 2.5
+		beamWidth: 0.5
+
+		repairSpeed: 2
+		targetInterval: 1
+		targetSwitchInterval: 1
+
+		reload: 20
+		targetUnits: false
+		targetBuildings: true
+		controllable: false
+		laserColor: ffd37f
+		healColor: ffd37f
+		bullet: {
+			type: BulletType
+			maxRange: 80
+		}
+	}
+	{
+		reload: 400
 		alwaysShooting: true
 		aiControllable: false
 		shootSound: sonar
-		shootStatus: disarmed
-		shootStatusDuration: 200
 		bullet: {
 			collides: false
 			hittable: false

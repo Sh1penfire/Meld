@@ -28,7 +28,7 @@ applyEffect: [
             {
                 type: ParticleEffect
                 lifetime: 240
-                region: meld-barrens
+                region: meld-zz-barrens
                 particles: 1
                 length: 0
                 sizeFrom: 0

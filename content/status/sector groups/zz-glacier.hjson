@@ -28,7 +28,7 @@ applyEffect: [
             {
                 type: ParticleEffect
                 lifetime: 240
-                region: meld-glacier
+                region: meld-zz-glacier
                 particles: 1
                 length: 0
                 sizeFrom: 0
