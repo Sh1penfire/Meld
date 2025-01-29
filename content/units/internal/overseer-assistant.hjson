@@ -22,7 +22,8 @@ canDrown: false
 hoverable: false
 hovering: true
 
-targetable: false
+targetable: true
+health: 120
 
 drawMinimap: false
 
