@@ -1,20 +1,24 @@
-type: WallCrafter
+type: BeamDrill
 size: 3
 category: production
 
-drillTime: 30
+placeableLiquid: true
 
-attribute: electrum
+drillTime: 120
+
+tier: 3
 
 liquidCapacity: 300
 
 consumes: {
-	liquids: [
-		a0-0b-aspect/1.6666666666
-	]
+	liquid: {
+		liquid: a0-0b-aspect
+		amount: 3.3333333333
+		booster: true
+	}
+	power: 1
 }
 
-output: a2-1a-electrum-sheet
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -23,13 +27,10 @@ squareSprite: false
 
 requirements: [
  	a0-0a-debris/40
-	a2-0a-silver/25
 ]
 
-research: {
-	parent: building-foundations
-}
-
+research: g-b0-0a-elemental-blaster
 researchCost: [
 	a0-0a-debris/13
+	b1-0a-fragment/1000
 ]

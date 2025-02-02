@@ -23,7 +23,7 @@ itemCapacity: 2
 ammoTypes: {
 	h1-0a-larva: {
 		ammoMultiplier: 1
-		spawnUnit: jilla-cluster
+		spawnUnit: killa-cluster
 	}
 }
 

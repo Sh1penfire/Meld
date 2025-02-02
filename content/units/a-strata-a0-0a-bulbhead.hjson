@@ -34,23 +34,217 @@ weapons: [
 		reload: 120
 		recoil: 1.25
 		shootSound: none
+        minWarmup: 1
+        linearWarmup: true
+        shootWarmupSpeed: 0.0444444444444444
+        parts: [
+            {
+                type: ShapePart
+                circle: true
+                hollow: true
+                radius: 120
+                radiusTo: 0
+                layer: 110
+                stroke: 6
+                strokeTo: 10
+                color: ffd37f00
+                colorTo: ffd37fff
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: warmup
+                            }
+                        }
+                        {
+                            op: compress
+                            start: 0.1
+                            end: 0.9
+                        }
+                        {
+                            op: curve
+                            interp: pow2In
+                        }
+                    ]
+                }
+            }
+            {
+                type: ShapePart
+                circle: true
+                hollow: true
+                radius: 45
+                radiusTo: 0
+                layer: 110
+                stroke: 6
+                strokeTo: 10
+                color: ffd37f00
+                colorTo: ffd37fff
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: warmup
+                            }
+                        }
+                        {
+                            op: compress
+                            start: 0.2
+                            end: 0.9
+                        }
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: ShapePart
+                circle: true
+                hollow: true
+                radius: 45
+                radiusTo: 0
+                layer: 110
+                stroke: 6
+                strokeTo: 12
+                color: ffd37f00
+                colorTo: ffd37fff
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: reverse
+                        }
+                        {
+                            op: mul
+                            other: {
+                                type: warmup
+                            }
+                        }
+                        {
+                            op: curve
+                            interp: pow10In
+                        }
+                    ]
+                }
+            }
+        ]
 		bullet: {
-			type: PointBulletType
-			speed: 1
+			type: BulletType
+			speed: 4
 			damage: 0
-			lifetime: 192
+			lifetime: 48
 			trailEffect: explosion
 			keepVelocity: false
 			absorbable: false
 			hittable: false
 			collides: false
+            scaleLife: true
 			rangeOverride: 192
 			hitSound: none
 			fragBullets: 1
+            shootEffect: {
+                type: ParticleEffect
+                lifetime: 55
+                region: meld-diamond
+                sizeFrom: 4
+                sizeTo: 0
+                colorFrom: ffd37f
+                colorTo: ffd37f00
+                length: 85
+                baseLength: 6
+                spin: 7
+                particles: 12
+                cone: 35
+                interp: pow2Out
+                sizeInterp: pow2In
+            }
 			fragBullet: {
 				damage: 0
 				spawnUnit: bulbhead-sonar
 			}
+            trailEffect: {
+                type: ParticleEffect
+                lifetime: 25
+                region: meld-diamond
+                sizeFrom: 3
+                sizeTo: 0
+                colorFrom: ffd37f
+                colorTo: ffd37f00
+                length: 12
+                baseLength: 2
+                spin: 4
+                particles: 2
+                sizeInterp: pow2In
+            }
+            trailChance: 1
+            parts: [
+                {
+                    type: ShapePart
+                    circle: true
+                    hollow: true
+                    radius: 8
+                    radiusTo: 0
+                    layer: 110
+                    stroke: 6
+                    strokeTo: 2
+                    color: ffd37f
+                    colorTo: ffd37f00
+                    progress: {
+                        type: life
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.2
+                                end: 0.9
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+                {
+                    type: ShapePart
+                    circle: true
+                    hollow: true
+                    radius: 8
+                    radiusTo: 0
+                    layer: 170
+                    stroke: 6
+                    strokeTo: 2
+                    color: ffd37f7a
+                    colorTo: ffd37f00
+                    progress: {
+                        type: life
+                        ops: [
+                            {
+                                op: compress
+                                start: 0.2
+                                end: 0.9
+                            }
+                            {
+                                op: curve
+                                interp: pow5In
+                            }
+                        ]
+                    }
+                }
+            ]
 		}
 	}
 	{
