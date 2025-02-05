@@ -6,6 +6,8 @@ heatCapacity: 2
 
 spreadTarget: b1-0a-mercury
 
+capPuddles: false
+
 maxSpread: 0.5
 spreadConversion: 0.85
 spreadDamage: 0
@@ -17,6 +19,9 @@ color: 55391b
 
 colorFrom: 7d642c
 colorTo: b89f47
+
+moveThroughBlocks: true
+incinerable: false
 
 canStayOn: [
 	b1-0a-mercury

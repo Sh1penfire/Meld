@@ -16,9 +16,9 @@ removeScaling: 1
 
 spreadTarget: b0-0a-nectar
 
-
 moveThroughBlocks: true
 incinerable: false
+
 canStayOn: [
 	b0-0a-nectar
 	d0-1a-ichor

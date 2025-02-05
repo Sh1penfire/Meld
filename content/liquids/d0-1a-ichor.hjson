@@ -4,6 +4,12 @@ viscosity: 0.45
 temperature: 1.25
 heatCapacity: 0.85
 
+canStayOn: [
+	b0-0a-nectar
+	d0-1a-ichor
+	z0-1a-waste
+]
+
 research: {
 	parent:	a0-0a-aether
 	objectives: [

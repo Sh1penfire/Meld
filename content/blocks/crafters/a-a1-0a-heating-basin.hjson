@@ -17,13 +17,61 @@ squareSprite: false
 
 dumpExtraLiquid: true
 
-craftTime: 12
+craftTime: 30
 itemCapacity: 60
-liquidCapacity: 230
+liquidCapacity: 30
 
 drawer: [
 	{
 		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	//Rightmost mercury fixture
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		padLeft: 21.25
+		padBottom: 10.25
+		padRight: 1.75
+		padTop: 10.25
+	}
+	//Pipe with mercury
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		padLeft: 2.25
+		padBottom: 8.75
+		padRight: 11.25
+		padTop: 13.25
+	}
+
+	{
+		type: DrawLiquidTile
+		drawLiquid: b1-0a-mercury
+		padLeft: 10.25
+		padBottom: 21.25
+		padRight: 10.25
+		padTop: 1.75
+	}
+
+	{
+		type: DrawLiquidTile
+		drawLiquid: b0-0a-nectar
+		padLeft: 4.5
+		padBottom: 4.5
+		padTop: 16.75
+		padRight: 16.75
+	}
+	{
+		type: DrawRegion
+		suffix: -piping
+	}
+	{
+		type: DrawRegion
+		suffix: -towers
 	}
 ]
 
@@ -32,12 +80,12 @@ consumes: {
 		a1-0a-carbolith/1
 	]
 	liquids: [
-		b0-0a-nectar/1.5
+		b0-0a-nectar/1
 	]
 }
 
 outputLiquids: [
-	b1-0a-mercury/1.5
+	b1-0a-mercury/1
 ]
 
 outputItems: [
@@ -46,7 +94,6 @@ outputItems: [
 
 requirements: [
  	a0-0a-debris/80
-	a2-0a-silver/60
 ]
 
 research: {
@@ -58,5 +105,5 @@ research: {
 
 researchCost: [
 	a0-0a-debris/200
-	a2-0a-silver/150
+	a1-0a-carbolith/300
 ]
