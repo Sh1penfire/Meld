@@ -22,6 +22,18 @@ craftTime: 60
 drawer: [
 	{
 		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a0-0b-aspect
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawFade
 	}
 ]
 

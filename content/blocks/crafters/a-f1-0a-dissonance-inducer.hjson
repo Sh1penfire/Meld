@@ -22,6 +22,14 @@ itemCapacity: 60
 drawer: [
 	{
 		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a0-0a-aether
+	}
+	{
+		type: DrawRegion
 	}
 ]
 
