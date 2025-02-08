@@ -2,7 +2,7 @@ type: WallCrafter
 size: 3
 category: production
 
-drillTime: 30
+drillTime: 60
 
 attribute: electrum
 
@@ -10,7 +10,7 @@ liquidCapacity: 300
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/1.6666666666
+		a0-0b-aspect/0.8333333333333333
 	]
 }
 

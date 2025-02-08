@@ -11,6 +11,10 @@ supportsOverlay: true
 
 liquidDrop: a0-5a-meld
 
+attributes: {
+	meld: 1
+}
+
 emitLight: true
 lightColor: d26ab12b
 lightRadius: 20

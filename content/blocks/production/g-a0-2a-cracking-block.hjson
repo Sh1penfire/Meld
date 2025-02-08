@@ -10,7 +10,7 @@ baseEfficiency: 0
 minEfficiency: 1
 maxBoost: 1
 
-liquidCapacity: 300
+liquidCapacity: 20
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -31,34 +31,27 @@ drawer: [
 	}
 	{
 		type: DrawArcSmelt
-		flameRad: 2
-		flameRadiusScl: 4
-		flameRadiusMag: 1
+		drawCenter: false
 	}
 	{
-		type: DrawPistons
-		angleOffset: 45
-		sinMag: 2.25
-		sinScl: 12
-		lenOffset: 0.35
-		sides: 2
+		type: DrawParticles
+		y: 4
+		particles: 6
+		color: e899646a
+		particleSize: 2
 	}
 	{
-		type: DrawPistons
-		suffix: -piston-d
-		angleOffset: -45
-		sinMag: 2.25
-		sinScl: 12
-		lenOffset: 0.35
-		sides: 2
+		type: DrawParticles
+		y: -4
+		particles: 6
+		color: e899646a
+		particleSize: 2
 	}
+    	{
+        	type: DrawGlowRegion
+    	}
 	{
 		type: DrawRegion
-	}
-	{
-		type: DrawRegion
-		suffix: -top
-		layer: 30
 	}
 ]
 
@@ -81,7 +74,7 @@ consumes: {
 outputLiquid: a0-0a-aether/0.3333333333333334
 
 requirements: [
- 	a0-0a-debris/40
+ 	a0-0a-debris/15
 	a4-1a-dissonitre/10
 ]
 

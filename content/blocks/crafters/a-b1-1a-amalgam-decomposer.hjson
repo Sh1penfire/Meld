@@ -22,12 +22,29 @@ craftTime: 60
 drawer: [
 	{
 		type: DrawRegion
+		suffix: "-bottom"
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: a0-0b-aspect
+		padTop: 14.25
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: d0-1a-ichor
+		padBottom: 8.25
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawGlowRegion
 	}
 ]
 
 consumes: {
 	items: [
-		a2-1a-electrum-sheet/4
+		a2-1a-electrum-sheet/8
 	]
 	liquids: [
 		a0-0b-aspect/3.3333333333333333333333333333333
@@ -35,8 +52,10 @@ consumes: {
 }
 
 outputItems: [
-		a0-0a-debris/2
+		a0-0a-debris/4
 ]
+
+outputLiquid: d0-1a-ichor/1
 
 research: {
 	parent: a-a1-0a-heating-basin
@@ -45,6 +64,7 @@ research: {
 }
 
 requirements: [
+	a0-0a-debris/25
 	a2-0a-silver/85
-	a4-0a-resonarum/60
+	a4-1a-dissonitre/60
 ]

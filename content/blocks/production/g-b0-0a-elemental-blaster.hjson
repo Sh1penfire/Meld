@@ -4,11 +4,13 @@ category: production
 
 placeableLiquid: true
 
-drillTime: 240
+drillTime: 90
 
 tier: 2
 
 liquidCapacity: 300
+
+optionalBoostIntensity: 1
 
 consumes: {
 	liquid: {
@@ -18,6 +20,9 @@ consumes: {
 	}
 }
 
+drillMultipliers: {
+	a2-1a-electrum-sheet: 2
+}
 
 ambientSound: drill
 ambientSoundVolume: 0.08
