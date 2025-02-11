@@ -1,0 +1,82 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: production
+
+attribute: meld
+baseEfficiency: 0
+minEfficiency: 1
+maxBoost: 10
+boostScale: 0.04
+
+scaleLiquidConsumption: true
+
+liquidCapacity: 300
+itemCapacity: 20
+
+placeableLiquid: true
+floating: true
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom
+        layer: 29
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: d0-1a-ichor
+        padding: 1.5
+    }
+    {
+        type: DrawRegion
+    }
+]
+
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+consumes: {
+	power: 0.25
+	liquid: d0-1a-ichor/1
+}
+
+
+outputLiquids: [
+	a0-5a-meld/1
+]
+
+outputItems: [
+	a0-0a-debris/1
+]
+
+requirements: [
+ 	a0-0a-debris/60
+]
+
+research: {
+	parent: a-a0-0a-earthbound-infuser
+	objectives: [
+		d0-1a-ichor
+		c0-0a-rift
+	]
+}
+
+researchCost: [
+	a0-0a-debris/17
+]

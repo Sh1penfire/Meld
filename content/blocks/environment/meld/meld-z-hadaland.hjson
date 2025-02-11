@@ -14,6 +14,10 @@ drownTime: 120
 
 liquidDrop: a0-5a-meld
 
+attributes: {
+	meld: 4
+}
+
 cacheLayer: water
 emitLight: true
 lightColor: ca3fba1b

@@ -1,5 +1,5 @@
 type: AttributeCrafter
-health: 1200
+health: 2400
 armor: 8
 
 size: 5
@@ -13,7 +13,7 @@ baseEfficiency: 0
 boostScale: 0.04
 displayEfficiency: false
 
-liquidCapacity: 600
+liquidCapacity: 6000
 squareSprite: false
 
 requirements: [
@@ -37,6 +37,7 @@ drawer: [
 	{
 		type: DrawRegion
         suffix: top-base
+        
 	}
 	{
 		type: DrawRegion

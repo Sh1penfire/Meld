@@ -12,6 +12,7 @@ attribute: soil
 baseEfficiency: 0
 minEfficiency: 0.01
 maxBoost: 2.25
+boostScale: 0.4
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -44,7 +45,7 @@ drawer: [
 
 consumes: {
 	items: [
-		a2-1a-electrum-sheet/8
+		a2-1a-electrum-sheet/20
 	]
 	liquids: [
 		a0-0b-aspect/3.3333333333333333333333333333333
@@ -52,10 +53,10 @@ consumes: {
 }
 
 outputItems: [
-		a0-0a-debris/4
+		a0-0a-debris/10
 ]
 
-outputLiquid: d0-1a-ichor/1
+outputLiquid: d0-1a-ichor/2
 
 research: {
 	parent: a-a1-0a-heating-basin

@@ -10,19 +10,34 @@ tier: 2
 
 liquidCapacity: 300
 
-optionalBoostIntensity: 1
+optionalBoostIntensity: 2
 
 consumes: {
 	liquid: {
 		liquid: a0-0b-aspect
 		amount: 1.6666666666
-		booster: false
+        optional: false
 	}
+    liquids: {
+		liquids: [
+            a0-5a-meld/1
+        ]
+		booster: true
+        optional: true
+    }
 }
 
 drillMultipliers: {
 	a2-1a-electrum-sheet: 2
 }
+
+sparkColor: 8cc7ee
+heatColor: e88b64
+boostHeatColor: ecb6eb
+
+sparks: 24
+sparkLife: 15
+sparkSpread: 25
 
 ambientSound: drill
 ambientSoundVolume: 0.08

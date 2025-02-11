@@ -9,6 +9,10 @@ isLiquid: true
 
 liquidDrop: a0-5a-meld
 
+attributes: {
+	meld: 2
+}
+
 supportsOverlay: true
 
 drownTime: 160

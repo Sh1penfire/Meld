@@ -53,14 +53,14 @@ drawer: [
 
 consumes: {
 	items: [
-		a0-0a-debris/20
+		a0-0a-debris/10
 	]
 	liquids: [
 		a0-0b-aspect/3.3333333333333333333333333333333
 	]
 }
 
-outputItem: a1-0a-carbolith/10
+outputItem: a1-0a-carbolith/5
 requirements: [
  	a0-0a-debris/80
 	a2-0a-silver/60

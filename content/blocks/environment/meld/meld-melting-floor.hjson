@@ -4,3 +4,7 @@ isLiquid: true
 cacheLayer: water
 
 liquidDrop: a0-5a-meld
+
+attributes: {
+	meld: 0.25
+}
