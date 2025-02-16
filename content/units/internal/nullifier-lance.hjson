@@ -90,7 +90,7 @@ weapons: [
 		}
 		rotate: true
 		rotateSpeed: 180
-		reload: 1
+		reload: 5
 		mirror: false
 		alternate: false
 		controllable: false
@@ -132,33 +132,74 @@ weapons: [
                             type: ParticleEffect
                             sizeFrom: 8
                             sizeTo: 0
-                            len: 16
+                            length: 34
                             particles: 15
                             interp: pow5Out
                             sizeInterp: pow5In
                             colorFrom: cbdbfc
                             colorTo: cbdbfc
+                            interp: pow5Out
+                            sizeInterp: pow5In
                         }
                         {
                             type: ParticleEffect
                             sizeFrom: 5
                             sizeTo: 0
-                            len: 16
+                            length: 32
                             particles: 15
                             interp: pow5Out
                             sizeInterp: pow5In
                             colorFrom: cbdbfc
                             colorTo: cbdbfc
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                        }
+                        {
+                            type: ParticleEffect
+                            lifetime: 65
+                            sizeFrom: 5
+                            sizeTo: 0
+                            length: 45
+                            particles: 15
+                            interp: pow5Out
+                            sizeInterp: pow5In
+                            colorFrom: cbdbfc
+                            colorTo: cbdbfc
+                            interp: pow5Out
+                            sizeInterp: pow5In
                         }
                         {
                             type: WaveEffect
-                            lifetime: 15
-                            sizeFrom: 4
-                            sizeTo: 34
+                            lifetime: 90
+                            sizeFrom: 9
+                            sizeTo: 76
                             strokeFrom: 2.5
                             strokeTo: 1
                             colorFrom: cbdbfc
                             colorTo: cbdbfc00
+                            interp: pow10Out
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 45
+                            sizeFrom: 9
+                            sizeTo: 76
+                            strokeFrom: 2
+                            strokeTo: 23
+                            colorFrom: cbdbfc45
+                            colorTo: cbdbfc00
+                            interp: pow10Out
+                        }
+                        {
+                            type: ParticleEffect
+                            lifetime: 35
+                            baseLength: 10
+                            length: 65
+                            line: true
+                            particles: 12
+                            lenFrom: 4
+                            lenTo: 0
+                            colorFrom: cbdbfc
                         }
                     ]
                 }

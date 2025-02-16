@@ -1,0 +1,310 @@
+type: missile
+lifetime: 180
+
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+//Same here
+deathSound: release
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+clipSize: 300
+
+weapons: [
+    {
+        x: 0
+        y: 0
+        alwaysShooting: true
+        shootCone: 180
+        reload: 30
+        shootSound: none
+        shoot: {
+            type: ShootSpread
+            shots: 8
+            spread: 1
+            shotDelay: 8
+        }
+        shootEffect: none
+        smokeEffect: none
+        bullet: {
+            shootEffect: none
+            smokeEffect: none
+            
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+            
+            splashDamageRadius: 150
+            splashDamage: 0
+            status: disolving
+            statusDuration: 20
+            
+            hitEffect: false
+            despawnEffect: false
+            
+            fragBullets: 45
+            fragRandomSpread: 1
+            fragSpread: 8
+            
+            fragVelocityMin: 1
+            fragBullet: {
+                //I have paranoia
+                type: RailBulletType
+                length: 150
+                collides: false
+                absorbable: false
+                hittable: false
+                instantDisappear: true
+                
+                damage: 0.01
+                buildingDamageMultiplier: 400
+                pierce: true
+                pierceBuilding: true
+                
+                pierceEffect: {
+                    type: ParticleEffect
+                    lifetime: 65
+                    particles: 6
+                    length: 16
+                    sizeFrom: 1.5
+                    sizeTo: 0
+                    colorFrom: e5aed7
+                    colorTo: e5aed700
+                }
+                hitEffect: none
+                despawnEffect: none
+            }
+        }
+    }
+]
+
+parts: [
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 6
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10Out
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 8
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 6
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+        clip: 150
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10In
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 150
+		stroke: 4
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+]
+
+abilities: [
+    //Flame-like particles
+    {
+        type: MoveEffectAbility
+        minVelocity: 0
+        effect: {
+                type: ParticleEffect
+                lifetime: 95
+                particles: 6
+                length: 14
+                sizeFrom: 1.5
+                sizeTo: 0
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5In
+            }
+    }
+	{
+		type: StatusFieldAbility
+		range: 150
+		reload: 12
+		effect: wildlife-a1-reconstitution
+		duration: 20
+		activeEffect: [
+            {
+                type: ParticleEffect
+                lifetime: 45
+                baseLength: 6
+                particles: 2
+                length: 150
+                sizeFrom: 0
+                sizeTo: 4
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+            }
+            {
+                type: ParticleEffect
+                lifetime: 45
+                baseLength: 6
+                particles: 2
+                baseLength: 45
+                length: 65
+                sizeFrom: 0
+                sizeTo: 4
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+            }
+		]
+	}
+	{
+		type: StatusFieldAbility
+		range: 125
+		reload: 4
+		effect: wildlife-a1-reconstitution
+		duration: 20
+		activeEffect: [
+            {
+                type: ParticleEffect
+                lifetime: 95
+                baseLength: 6
+                particles: 6
+                length: 125
+                sizeFrom: 0
+                sizeTo: 4
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+            }
+            {
+                type: ParticleEffect
+                lifetime: 85
+                baseLength: 6
+                particles: 6
+                baseLength: 45
+                length: 85
+                sizeFrom: 0
+                sizeTo: 4
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+            }
+		]
+	}
+    //Rim particle effects
+	{
+		type: StatusFieldAbility
+		range: 125
+		reload: 2
+		effect: wildlife-a1-reconstitution
+		duration: 20
+		activeEffect: [
+            {
+                clip: 150
+                type: ParticleEffect
+                lifetime: 45
+                baseLength: 6
+                particles: 12
+                baseLength: 150
+                length: -4
+                sizeFrom: 0
+                sizeTo: 7
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+                randLength: false
+            }
+            {
+                clip: 150
+                type: ParticleEffect
+                lifetime: 45
+                baseLength: 6
+                particles: 12
+                baseLength: 150
+                length: -4
+                sizeFrom: 0
+                sizeTo: 7
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+                randLength: false
+            }
+		]
+	}
+]

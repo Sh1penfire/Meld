@@ -40,7 +40,7 @@ ammoTypes: {
         fragVelocityMin: 0.8
         fragVelocityMax: 1
         fragLifeMin: 0.2
-	fragRandomSpread: 80
+    	fragRandomSpread: 80
 		trailEffect: {
 			type: MultiEffect
 			effects: [
