@@ -1,7 +1,7 @@
 type: mech
 speed: 0.85
 
-health: 900
+health: 1250
 armor: 25
 drag: 0.7
 accel: 2
@@ -32,124 +32,51 @@ legPhysicsLayer: false
 weapons: [
     //Resonarum sprayers
     {
-        name: enforcer-blaster
+        name: keeper-reso-cannon
         reload: 60
         shoot: {
             type: ShootSpread
-            spread: 2
+            spread: 0
             shots: 15
             shotDelay: 2
         }
         
-        x: 14
-        y: 1.5
-        shootY: 6
+        x: 16
+        y: 2.5
+        shootY: 8
         
         recoil: 0
         
         alternate: true
         mirror: true
         rotate: true
-        rotationLimit: 45
+        rotationLimit: 75
         rotateSpeed: 4
         shootCone: 35
         
         ejectEffect: casing2
         top: true
-        shootSound: spray
+        shootSound: shatter
         
         predictTarget: false
         
         parts: [
             {
                 type: RegionPart
-                suffix: -back
+                suffix: -tank
             }
             {
                 type: RegionPart
                 suffix: -barrel
+                moveY: -1
+                growX: -0.5
                 progress: reload
-                moveY: -5
-            }
-            {
-                type: RegionPart
-                suffix: -frame
-                progress: {
-                    type: reload
-                    ops: [
-                        {
-                            op: compress
-                            start: 0
-                            end: 0.5
-                        }
-                    ]
-                }
-                moveY: -7
-            }
-            {
-                type: FlarePart
-                radius: 0
-                radiusTo: 15
-                stroke: 2
-                color1: ffd2ae
-                rotation: 45
-                rotMove: 75
-                followRotation: false
-                progress: {
-                    type: charge
-                    interp: pow5In
-                }
-            }
-            {
-                type: RegionPart
-                suffix: -capsule
-                mirror: false
-                outline: false
-                moveX: 4
-                growX: 0
-                color: ffffff
-                colorTo: ffffff00
-                growProgress: {
-                    type: reload
-                    ops: [
-                        {
-                            op: curve
-                            interp: pow5Out
-                        }
-                    ]
-                }
-                progress: {
-                    type: reload
-                    ops: [
-                        {
-                            op: curve
-                            interp: pow5Out
-                        }
-                    ]
-                }
-            }
-            {
-                type: RegionPart
-                suffix: -door
-                mirror: false
-                outline: false
-                y: -4
-                moveY: 4
-                color: ffffff00
-                colorTo: ffffff
-                progress: {
-                    type: recoil
-                    ops: [
-                        {
-                            op: curve
-                            interp: pow5In
-                        }
-                    ]
-                }
+                growProgress: reload
             }
             {
                 type: RegionPart
                 suffix: ""
+                outline: false
             }
         ]
         
@@ -437,8 +364,8 @@ weapons: [
                                     ]
                                 }
                                 
-                                xScale: 0.75
-                                yScale: 0.75
+                                xScl: 0.75
+                                yScl: 0.75
                                 
                                 growX: -0.75
                                 growY: -0.75
@@ -555,8 +482,8 @@ weapons: [
                                     ]
                                 }
                                 
-                                xScale: 0.75
-                                yScale: 0.75
+                                xScl: 0.75
+                                yScl: 0.75
                                 
                                 growX: -0.75
                                 growY: -0.75
@@ -730,6 +657,10 @@ weapons: [
 ]
 
 abilities: [
+	{
+		type: RegenAbility
+		amount: 0.05
+	}
     {
         type: LiquidRegenAbility
         liquid: b0-0a-nectar

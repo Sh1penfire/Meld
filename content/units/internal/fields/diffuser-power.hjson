@@ -2,6 +2,7 @@ type: missile
 lifetime: 180
 
 speed: 0
+fogRadius: 5
 
 flying: false
 drawBody: false
@@ -142,7 +143,7 @@ abilities: [
 
 immunities: [
 	blackout
-	disolving
+	dissolving
 	grace
 	interference-negative
 	interference-positive

@@ -56,7 +56,7 @@ parts: [
         circle: true
         hollow: true
         stroke: 3
-        color: cae4ec
+        color: cae4ec5b
         colorTo: 83a5be00
         layer: 110
     }
@@ -108,6 +108,8 @@ weapons: [
                 0,3,0,
                 3,0,0
             ]
+            firstShotDelay: 30
+            shotDelay: 10
         }
         
         parts: [
@@ -185,7 +187,7 @@ weapons: [
         
         bullet: {
             sprite: meld-thorn
-            damage: 28
+            damage: 18
             speed: 8
             lifetime: 25
             scaleLife: false
@@ -195,7 +197,6 @@ weapons: [
             frontColor: cae4ec
             backColor: 83a5be
             keepVelocity: false
-            hitSound: bang
             trailWidth: 1.2
             trailLength: 7
             trailColor: 83a5be

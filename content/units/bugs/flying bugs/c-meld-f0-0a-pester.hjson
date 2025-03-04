@@ -119,6 +119,8 @@ weapons: [
 			recoil: 1.5
 			lightRadius: 0
 			despawnEffect: none
+            		status: dissolving
+            		statusDuration: 15
 			shootEffect: {
 					type: ParticleEffect
 					cone: 5

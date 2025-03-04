@@ -77,6 +77,8 @@ weapons: [
             smokeEffect: none
             recoil: -0.5
             lightRadius: 0
+            status: dissolving
+            statusDuration: 15
             despawnEffect: none
             hitEffect: {
                 type: ParticleEffect

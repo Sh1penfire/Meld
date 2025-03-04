@@ -59,7 +59,7 @@ weapons: [
             
             splashDamageRadius: 150
             splashDamage: 0
-            status: disolving
+            status: dissolving
             statusDuration: 20
             
             hitEffect: false

@@ -57,7 +57,7 @@ weapons: [
         bullet: {
             type: ShrapnelBulletType
             length: 80
-            damage: 125
+            damage: 85
             width: 12
             pierceArmor: true
             toColor: cae4ec
@@ -66,7 +66,7 @@ weapons: [
     //Autoturret spawners
     {
         name: impaler-thorax
-        reload: 320
+        reload: 720
         mirror: false
         top: false
         shootSound: shoot
@@ -74,7 +74,7 @@ weapons: [
         recoil: -4
         x: 0
         y: 0
-        shootY: -18.5
+        shootY: -20.5
         rotate: false
         shootCone: 360
         shoot: {
