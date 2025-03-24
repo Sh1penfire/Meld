@@ -19,6 +19,6 @@ drownTime: 270
 liquidDrop: b1-0a-mercury
 
 status: mangrove-d1-slippery
-statusDuration: 5
+statusDuration: 60
 
 isLiquid: true

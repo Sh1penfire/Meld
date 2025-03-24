@@ -169,6 +169,61 @@ weapons: [
 			hittable: false
 		}
 	}
+	{
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 6
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		bullet: {
+			type: BulletType
+			collides: false
+			collidesAir: false
+			collidesTiles: true
+			hitSound: none
+
+			rangeOverride: 10
+			hitEffect: none
+			speed: 0
+			splashDamageRadius: 25
+			instantDisappear: true
+			splashDamage: 1
+			hittable: false
+            smokeEffect: none
+            shootEffect: none
+            despawnEffect: none
+            hitEffect: [
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 45
+                    length: 35
+                    sizeFrom: 2
+                    sizeTo: 3.5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+                }
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 35
+                    length: 65
+                    sizeFrom: 1
+                    sizeTo: 2.5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+                }
+            ]
+		}
+	}
 ]
 
 abilities: [

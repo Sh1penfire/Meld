@@ -145,8 +145,7 @@ weapons: [
         ]
         
         bullet: {
-            speed: 0
-            keepVelocity: false
+            speed: 6
             //big bullets
             spawnBullets: [
                 {
@@ -158,6 +157,7 @@ weapons: [
                     fragBullets: 5
                     fragLifeMin: 0.8
                     fragRandomSpread: 6
+                    speed: 10
                     fragBullet: {
                         type: BasicBulletType
                         damage: 65
