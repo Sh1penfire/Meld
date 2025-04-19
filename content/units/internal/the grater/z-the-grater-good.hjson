@@ -51,7 +51,7 @@ weapons: [
             damage: 0
             knockback: -0
             keepVelocity: true
-            shootEffect: none
+            shootEffect: unitLandSmall
             collides: true
             despawnEffect: none
             trailEffect: unitLandSmall
@@ -62,7 +62,7 @@ weapons: [
             fragSpread: 60
             fragBullet: {
                 type: BulletType
-                lieftime: 6000
+                lifetime: 600
                 homingDelay: 1
                 homingPower: 50
                 weaveMag: 10
@@ -74,7 +74,7 @@ weapons: [
                 bulletInterval: 30
                 intervalBullet: {
                     type: BulletType
-                    lieftime: 6000
+                    lifetime: 600
                     homingDelay: 1
                     homingPower: 50
                     weaveMag: 10
@@ -86,7 +86,6 @@ weapons: [
                 }
             }
         }
-        shootEffect: unitLandSmall
         
         parts: [
             {

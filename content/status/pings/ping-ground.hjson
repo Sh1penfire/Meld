@@ -4,7 +4,7 @@ effect: {
     lifetime: 180
     type: ParticleEffect
     region: meld-sparkle
-    color: f27121
+    colorFrom: f27121
     colorTo: f2712100
     
     length: 8

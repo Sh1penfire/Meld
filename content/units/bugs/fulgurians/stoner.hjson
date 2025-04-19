@@ -1,0 +1,380 @@
+type: legs
+speed: 0.8
+
+health: 4200
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 36
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 6
+legLength: 40
+
+legBaseOffset: 12
+
+lockLegBase: false
+legContinuousMove: true
+legGroupSize: 2
+legExtension: 2
+legLengthScl: 0.9
+legPairOffset: 5
+legMinLength: 0.5
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+aimDst: 0
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 75
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 1.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            baseLength: 10
+            particles: 2
+            length: 14
+            sizeFrom: 1.5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 1
+            sizeTo: 8
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+    //Weapon which roots the unit
+    {
+        alternate: false
+        mirror: false
+        rotate: true
+        x: 0
+        rotateSpeed: 0.5
+        reload: 5
+        shootCone: 180
+        shootStatus: rooted
+        shootStatusDuration: 180
+        shootSound: none
+        shoot: {
+            type: ShootAlternate
+            spread: 12
+        }
+        shootY: 5
+        bullet: {
+            speed: 0
+            instantDisappear: true
+            despawnEffect: none
+            shootEffect: none
+            rangeOverride: 260
+        }
+    }
+    //Actual weapon!
+    {
+        name: stoner-cannon
+        rotateSpeed: 0.5
+        x: 0
+        mirror: false
+        reload: 300
+        rotate: true
+        shootCone: 180
+        minWarmup: 1
+        linearWarmup: true
+        shootWarmupSpeed: 0.01
+        perdictTarget: false
+        y: -5
+        recoil: 0
+        shootStatus: burning
+        shootStatusDuration: 300
+        parts: [
+            {
+                type: ShapePart
+                x: -5
+                moveX: 5
+                progress: warmup
+            }
+        ]
+        shoot: {
+            shots: 1
+            shotDelay: 10
+        }
+		shootY: 8
+        //Should oneshot shark, astrea and narwhal, but not remora
+        bullet: {
+            sprite: shell
+            speed: 4
+            lifetime: 70
+            damage: 240
+            splashDamage: 350
+            splashDamageRadius: 32
+            knockback: 45
+            rangeOverride: 280
+            frontColor: ffffff
+            backColor: cbdbfc
+            collidesTiles: false
+            collidesAir: false
+            scaleLife: true
+            shrinkY: 0.8
+            width: 24
+            height: 42
+            hitSound: titanExplosion
+            status: aspect-burn
+            statusDuration: 300
+            hitEffect: [
+                {
+                    type: ParticleEffect
+                    lifetime: 8
+                    particles: 9
+                    length: 35
+                    sizeFrom: 7.5
+                    colorFrom: 7f7f7fff
+                    colorTo: 3f3f3fff
+                },
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    particles: 4
+                    length: 15
+                    sizeFrom: 4.5
+                    colorFrom: ffb855
+                    colorTo: db661c
+                },
+                blastExplosion
+            ]
+            fragBullets: 8
+            fragRandomSpread: 15
+            fragSpread: 3
+            fragLifeMin: 0.5
+            fragOnAbsorb: false
+            fragBullet: {
+                damage: 35
+                pierce: true
+                pierceBuilding: true
+                pierceArmor: true
+                speed: 6
+                drag: 0.02
+                hitEffect: none
+                despawnEffect: explosion
+                bulletInterval: 12
+                intervalBullet: {
+                    type: FireBulletType
+                }
+                fragOnAbsorb: false
+                fragBullets: 4
+                fragOnHit: false
+                fragBullet: {
+                    type: FireBulletType
+                }
+            }
+            spawnBullets: [
+                {
+                    despawnEffect: none
+                    hitEffect: none
+                    instantDisappear: true
+                    fragBullets: 12
+                    fragLifeMin: 0.8
+                    fragVelocityMin: 0.8
+                    fragRandomSpread: 12
+                    fragSpread: 3
+                    fragBullet: {
+                        type: FireBulletType
+                    }
+                }
+            ]
+        }
+        parts: [
+            {
+                type: RegionPart
+                suffix: -barrel
+                layerOffset: 0.01
+                moveY: -7
+                progress: reload
+            }
+            {
+                type: RegionPart
+                suffix: -frame
+                layerOffset: 0.01
+                moveY: -7
+                progress: {
+                    type: warmup
+                }
+            }
+            {
+                type: RegionPart
+                layerOffset: 0.01
+            }
+        ]
+    }
+    //Weapon which disarms the unit when it's moving
+    {
+        reload: 60
+        minShootVelocity: 0.5
+        shootCone: 180
+        shootStatus: disarmed
+        shootStatusDuration: 20
+        alwaysShooting: true
+        controllable: false
+        bullet: {
+            instantDisappear: true
+            despawnEffect: none
+            shootEffect: none
+            smokeEffect: none
+        }
+    }
+    //Truss guns
+    {
+		name: "inator-gun"
+		x: 22
+		y: -8
+		shootY: 4
+		rotateSpeed: 4.5
+		reload: 100
+		shootCone: 60
+		rotate: true
+		mirror: true
+        top: true
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+        controllable: false
+        autoTarget: true
+		inaccuracy: 1
+        shoot: {
+            shots: 5
+            shotDelay: 5
+        }
+		bullet: {
+			sprite: "meld-clump"
+			damage: 8
+			speed: 4
+			lifetime: 30
+            
+			pierce: true
+			pierceCap: 2
+			width: 5
+			height: 10
+			knockback: 3
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+        parts: [
+            {
+                suffix: ""
+                progress: reload
+            }
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+	}
+    {
+		name: "inator-gun"
+		x: 22
+		y:6
+		shootY: 4
+		rotateSpeed: 4.5
+		reload: 100
+		shootCone: 60
+		rotate: true
+		mirror: true
+        top: true
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+        controllable: false
+        autoTarget: true
+		inaccuracy: 1
+        shoot: {
+            shots: 5
+            shotDelay: 5
+        }
+		bullet: {
+			sprite: "meld-clump"
+			damage: 8
+			speed: 4
+			lifetime: 30
+            
+			pierce: true
+			pierceCap: 2
+			width: 5
+			height: 10
+			knockback: 3
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+        parts: [
+            {
+                suffix: ""
+                progress: reload
+            }
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+	}
+]
+
+
+immunities: [
+	wildlife-a1-reconstitution
+    mangrove-d0-mercury-poisoning
+	lacerated
+]

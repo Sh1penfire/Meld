@@ -55,15 +55,12 @@ ammoTypes: {
         type: BulletType
 		damage: 0
 		pierce: true
-        absorbable: false
         hittable: false
         removeAfterPierce: false
         collidesAir: false
 		speed: 7.5
         drag: 0.05
 		lifetime: 30
-		width: 80
-		height: 80
 		hitSize: 10.75
 		bulletInterval: 13
 		intervalBullets: 1
@@ -106,7 +103,6 @@ ammoTypes: {
                         lifetime: 17
                         pierce: true
                         collidesAir: false
-                        absorbable: false
                         hittable: false
                         despawnEffect: none
                         intervalRandomSpread: 15
@@ -118,7 +114,6 @@ ammoTypes: {
                             lifetime: 20
                             pierce: true
                             collidesAir: false
-                            absorbable: false
                             hittable: false
                             knockback: 5
                             impact: true
@@ -223,7 +218,6 @@ ammoTypes: {
                         lifetime: 17
                         pierce: true
                         collidesAir: false
-                        absorbable: false
                         hittable: false
                         despawnEffect: none
                         intervalRandomSpread: 15
@@ -235,7 +229,6 @@ ammoTypes: {
                             lifetime: 20
                             pierce: true
                             collidesAir: false
-                            absorbable: false
                             hittable: false
                             knockback: 5
                             impact: true

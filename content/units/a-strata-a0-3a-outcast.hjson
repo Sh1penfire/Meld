@@ -283,7 +283,7 @@ abilities: [
 		y: -9
 		rotateEffect: true
 		rotation: 225
-        minVelocioty: 0
+        minVelocity: 0
 		effect: {
 			type: MultiEffect
 			effects: [
@@ -331,7 +331,7 @@ abilities: [
 		y: -9
 		rotateEffect: true
 		rotation: 135
-        minVelocioty: 0
+        minVelocity: 0
 		effect: {
 			type: MultiEffect
 			effects: [

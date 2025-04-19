@@ -132,7 +132,7 @@ weapons: [
                             type: ParticleEffect
                             sizeFrom: 8
                             sizeTo: 0
-                            len: 16
+                            length: 16
                             particles: 15
                             interp: pow5Out
                             sizeInterp: pow5In
@@ -143,7 +143,7 @@ weapons: [
                             type: ParticleEffect
                             sizeFrom: 5
                             sizeTo: 0
-                            len: 16
+                            length: 16
                             particles: 15
                             interp: pow5Out
                             sizeInterp: pow5In

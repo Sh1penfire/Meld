@@ -1,7 +1,6 @@
 type: Wall
 size: 2
 health: 480
-targetable: true
 hasPower: false
 hasItems: false
 

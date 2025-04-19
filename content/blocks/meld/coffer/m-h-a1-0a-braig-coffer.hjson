@@ -1,8 +1,6 @@
 type: LiquidTurret
 size: 3
 health: 950
-targetable: true
-baseColor: f9e1f3
 
 destroyBulletSameTeam: true
 destroyBullet: {

@@ -1,0 +1,184 @@
+type: legs
+shadowElevation: 0.1
+speed: 3.2
+
+health: 650
+
+drag: 0.03
+accel: 0.03
+
+hitSize: 16
+rotateSpeed: 4.5
+engineOffset: 13
+engineSize: 0
+crashDamageMultiplier: 2
+
+faceTarget: true
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 85
+            baseLength: 10
+            length: 35
+            particles: 11
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+        {
+            type: ParticleEffect
+            lifetime: 65
+            baseLength: 2
+            length: 12
+            particles: 4
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: e5aed7
+            colorTo: e5aed7a3
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 55
+            line: true
+            lenFrom: 5
+            lenTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+            sizeInterp: pow5In
+        }
+        {
+            type: WaveEffect
+            lifetime: 10
+            sizeFrom: 5
+            sizeTo: 35
+            strokeFrom: 5
+            strokeTo: 0
+            colorFrom: e5aed7
+            colorTo: ffffff
+        }
+    ]
+}
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		mirror: false
+		rotate: false
+		shootCone: 10
+		reload: 180
+		recoil: 0
+		inaccuracy: 5
+		shoot: {
+			shots: 1
+		}
+		shootSound: flame
+		shootStatus: slow
+		shootStatusDuration: 5
+		
+		parts: [
+			{
+				type: RegionPart
+				name: meld-pork-barrel
+				progress: reload
+                growProgress: reload
+				moveY: -8
+                growY: -0.25
+				layerOffset: -0.1
+			}
+		]
+
+		
+
+		bullet: {
+        sprite: missile
+        width: 8
+        height: 12
+            keepVelocity: false
+            scaleLife: false
+            lifetime: 45
+            speed: 3
+            fragBullets: 1
+            fragBullet: {
+                spawnUnit: EMP-small
+            }
+            shootEffect: {
+					type: ParticleEffect
+					cone: 5
+					lifetime: 30
+					baseLength: 0
+					particles: 35
+					length: 60
+					sizeFrom: 3.5
+					sizeTo: 0
+					colorFrom: feafea
+					colorTo: d26ab100
+					interp: pow5Out
+					sizeInterp: pow2In
+			}
+		}
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+            speed: 3
+            lifetime: 120
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+
+			rangeOverride: 125
+			hitEffect: none
+			speed: 0
+			splashDamageRadius: 25
+			instantDisappear: true
+			splashDamage: 35
+			killShooter: true
+			hittable: false
+		}
+	}
+]
+
+engines: [
+	{
+		x: -9.25
+		y: -9.5
+		radius: 3.2
+		rotation: 225
+	}
+	{
+		x: 9.25
+		y: -9.5
+		radius: 3.2
+		rotation: 315
+	}
+]
+//mechanical
+immunities: [
+    wildlife-a1-reconstitution
+    mangrove-d0-mercury-poisoning
+    lacerated
+]

@@ -1,0 +1,152 @@
+type: legs
+speed: 0.8
+
+health: 400
+armor: 45
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 12
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 4
+legLength: 24
+
+legBaseOffset: 4
+
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+legExtension: 4
+legLengthScl: 0.9
+legPairOffset: 5
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+aimDst: 0
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 75
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 1.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            baseLength: 10
+            particles: 2
+            length: 14
+            sizeFrom: 1.5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 1
+            sizeTo: 8
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+    //Actual weapon!
+    {
+        name: fletch-thruster
+        
+        y: -4
+        x: 8
+        shootY: 3.5
+		shootCone: 180
+		reload: 60
+        rotate: true
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		shootSound: torch
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 3
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 85
+			damage: 10
+			flareLength: 0
+			length: 60
+			rangeOverride: 60
+			width: 2.5
+			knockback: 1
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+    }
+]
+abilities: [
+    {
+        type: ShieldRegenFieldAbility
+        range: -5
+        amount: 240
+        max: 240
+        reload: 300
+        activeEffect: none
+        parentizeEffects: true
+        applyEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: circle
+            sizeFrom: 4.5
+            sizeTo: 0
+            colorFrom: ffd37f00
+            colorTo: ffd37f
+            length: -55
+            baseLength: 55
+            particles: 7
+            interp: pow10In
+            sizeInterp: pow10In
+        }
+    }
+    {
+        type: ForceFieldAbility
+        sides: 8
+        max: 240
+        radius: 36
+        regen: 0.1
+        cooldown: 240
+    }
+]
+
+immunities: [
+	wildlife-a1-reconstitution
+    mangrove-d0-mercury-poisoning
+	lacerated
+]

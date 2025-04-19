@@ -20,7 +20,6 @@ effect: {
 			sizeFrom: 24
 			sizeTo: 30
 			interp: pow4In
-			sizeInterp: pow5Out
 			length: 0
 			baseLength: 0
 		}
@@ -33,7 +32,6 @@ effect: {
 			sizeFrom: 24
 			sizeTo: 30
 			interp: pow4In
-			sizeInterp: pow5Out
 			length: 0
 			baseLength: 0
 		}
@@ -46,7 +44,6 @@ effect: {
 			sizeFrom: 24
 			sizeTo: 30
 			interp: pow4In
-			sizeInterp: pow5Out
 			length: 0
 			baseLength: 0
 		}
@@ -59,7 +56,7 @@ effect: {
 			strokeTo: 3
 			colorFrom: ffd37f
 			colorTo: d4816b00
-			sizeInterp: pow2Out
+			interp:  pow2Out
 		}
 	]
 }

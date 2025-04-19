@@ -1,6 +1,5 @@
 type: Wall
 size: 1
-range: 2
 health: 400
 armor: 500000
 

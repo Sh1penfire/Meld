@@ -1,0 +1,246 @@
+type: legs
+speed: 0.8
+
+health: 860
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 26
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 4
+legLength: 20
+
+legBaseOffset: 8
+
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+legExtension: 3
+legLengthScl: 0.9
+legPairOffset: 5
+legForwardScl: 1.5
+
+legMoveSpace: 2
+allowLegStep: true
+legPhysicsLayer: false
+
+aimDst: 0
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 75
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 1.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            baseLength: 10
+            particles: 2
+            length: 14
+            sizeFrom: 1.5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 1
+            sizeTo: 8
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		name: "inator-gun"
+		x: 6
+		y: -2
+		shootY: 4
+		rotateSpeed: 4.5
+		reload: 100
+		shootCone: 60
+		rotate: true
+		mirror: true
+        top: true
+		alternate: true
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 25
+		inaccuracy: 1
+        shoot: {
+            shots: 5
+            shotDelay: 5
+        }
+		bullet: {
+			sprite: "meld-clump"
+			damage: 8
+			speed: 4
+			lifetime: 30
+            
+			pierce: true
+			pierceCap: 2
+			width: 5
+			height: 10
+			knockback: 3
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+        parts: [
+            {
+                suffix: ""
+                progress: reload
+            }
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+	}
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+        hidden: true
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragBullets: 12
+            fragLifeMin: 0.5
+            fragBullet: {
+                sprite: "meld-clump"
+                pierce: true
+                pierceCap: 1
+                speed: 6.5
+                drag: 0.008
+                lifetime: 65
+                width: 5
+                height: 12
+                damage: 5
+                splashDamage: 12
+                splashDamageRadius: 25
+                knockback: 2.5
+                trailEffect: smoke
+                shootEffect: shootBig
+                hitEffect: explosion
+            }
+
+			rangeOverride: 10
+			speed: 0
+			splashDamageRadius: 35
+			instantDisappear: true
+			splashDamage: 120
+			hittable: false
+            hitEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 125
+                        baseLength: 10
+                        length: 65
+                        particles: 8
+                        sizeFrom: 3
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 45
+                        baseLength: 10
+                        particles: 12
+                        length: 85
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 85
+                        baseLength: 10
+                        particles: 9
+                        line: true
+                        strokeFrom: 1.2
+                        strokeTo: 0.5
+                        lenFrom: 7
+                        lenTo: 4
+                        length: 45
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 15
+                        sizeFrom: 15
+                        sizeTo: 35
+                        strokeFrom: 2
+                        strokeTo: 1.2
+                        colorFrom: e5aed7
+                        colorTo: e5aed7
+                    }
+                ]
+            }
+		}
+	}
+]
+
+
+immunities: [
+	wildlife-a1-reconstitution
+    mangrove-d0-mercury-poisoning
+	lacerated
+]
