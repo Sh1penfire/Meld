@@ -1,3 +1,6 @@
+# The mod is being ported to v147!
+All existing content will be broken after the update, you can find out how to keep up with the mod's dev further in the README to know when this change is being pushed out.
+
 # Damit it's another one of those huge scope mindustry mod projects made by some guy in school isn't it.
 
 As with most mods, Meld is more of a combat sim than a pure RTS/TDS/factory building mod.
@@ -41,9 +44,10 @@ Meld is **currently** a unique blend of: <br />
  - Fishes. A lot of fishes. Don't forget the bugs. <br />
  - Lots more that sleep-deprived me decided not to put on here for fear of making this section too lengthy. Go play the mod ya goob.
 
-
 This is **all in the mod, right now**, and is **available to be played, r i g h t  n o w**.
 
-Meld is planned to also be
+# Where can I keep up with the mod's development
+I post the ocasional video on youtube, though im more active in the mod's fourm post on the Mindustry discord server.
+I've also started a server for the mod on discord. It's quite new so there isn't much there, but im open to talk about dev 
+https://discord.gg/NdWMm73H79
 
--A Metroidvania
