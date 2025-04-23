@@ -190,7 +190,6 @@ abilities: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
-	aspect-burn
 	shattered
 	lacerated
 ]
