@@ -1,8 +1,8 @@
 type: SteamVent
 variants: 0
 
-blendGroup: fringe-plating-meldlogged
-parent: fringe-plating-meldlogged
+blendGroup: fringe-plating-meld
+parent: fringe-plating-meld
 isLiquid: true
 cacheLayer: water
 effectSpacing: 240

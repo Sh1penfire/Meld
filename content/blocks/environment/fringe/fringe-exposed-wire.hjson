@@ -1,7 +1,7 @@
 type: Floor
 variants: 0
 
-blendGroup: fringe-plating-dry
+blendGroup: fringe-plating
 
 emitLight: true
 lightColor: 9ccaed2c

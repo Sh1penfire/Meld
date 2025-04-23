@@ -4,7 +4,7 @@ variants: 0
 itemDrop: b0-1a-grating-chunk
 playerUnmineable: true
 
-blendGroup: fringe-plating-dry
+blendGroup: fringe-plating
 
 emitLight: true
 lightColor: 9ccaed4c

@@ -1,8 +1,8 @@
 type: SteamVent
 variants: 0
 
-blendGroup: fringe-plating-dry
-parent: fringe-plating-dry
+blendGroup: fringe-plating
+parent: fringe-plating
 allowCorePlacement: true
 effectSpacing: 240
 

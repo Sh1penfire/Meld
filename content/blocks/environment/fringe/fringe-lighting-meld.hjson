@@ -6,7 +6,7 @@ walkSoundPitchMin: 0.4
 walkSoundPitchMax: 0.6
 cacheLayer: water
 isLiquid: true
-blendGroup: fringe-plating-meldlogged
+blendGroup: fringe-plating-meld
 
 liquidDrop: z0-1a-waste
 
