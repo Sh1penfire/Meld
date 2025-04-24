@@ -1,0 +1,18 @@
+type: Conduit
+size: 1
+
+placeableLiquid: true
+leaks: false
+
+liquidCapacity: 120
+liquidPressure: 5
+
+junctionReplacement: pipeline-crossing
+rotBridgeReplacement: pipeline-overpass
+
+botColor: 282b34
+
+category: liquid
+requirements: [
+	larval-plating/5
+]

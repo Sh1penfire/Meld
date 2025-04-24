@@ -1,0 +1,29 @@
+type: CoreBlock
+health: 4000
+size: 3
+
+unitType: a-strata-a0-3a-outcast
+solid: false
+squareSprite: false
+buildVisibility: shown
+placeableDeep: true
+
+itemCapacity : 900
+unitCapModifier: 6
+
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		
+	]
+}
+
+requirements: [
+	silver/600
+	electrum-sheet/350
+	vitric-mesh/240
+	riplom/150
+]
+
+researchCostMultiplier: 0
+category: effect

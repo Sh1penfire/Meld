@@ -1,5 +1,0 @@
-type: AttributeCrafter
-buildVisibility: debugOnly
-inEditor: false
-
-attribute: data

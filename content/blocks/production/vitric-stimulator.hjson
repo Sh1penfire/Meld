@@ -1,0 +1,132 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: production
+
+
+attribute: rift
+baseEfficiency: 0
+minEfficiency: 8.9
+maxBoost: 2
+boostScale: 0.111111111111111111111111111111111111
+
+liquidCapacity: 300
+itemCapacity: 60
+
+placeableLiquid: true
+floating: true
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 120
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -bottom1
+        layer: 29
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: ichor
+        padding: 1.5
+    }
+    {
+        type: DrawRegion
+        suffix: -bottom2
+    }
+
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        padRight: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        padLeft: 2
+        padBottom: 2
+
+        padTop: 17.75
+        padRight: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        padRight: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padLeft: 17.75
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        padLeft: 2
+        padTop: 2
+
+        padBottom: 17.75
+        padRight: 17.75
+    }
+
+    {
+        type: DrawRegion
+    }
+    {
+        type: DrawRegion
+        suffix: -tops
+    }
+    {
+        type: DrawSideRegion
+    }
+    {
+        type: DrawLiquidOutputs
+    }
+]
+
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+consumes: {
+	power: 2
+	items: [
+		vitric-mesh/2
+	]
+}
+
+outputItem: shiny-globule/16
+
+outputLiquids: [
+	rift/1.5
+]
+
+requirements: [
+ 	debris/60
+]
+
+research: {
+	parent: earthbound-infuser
+	objectives: [
+		ichor
+		rift
+	]
+}
+
+researchCost: [
+	debris/17
+]

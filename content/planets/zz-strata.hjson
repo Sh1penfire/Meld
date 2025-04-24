@@ -12,7 +12,7 @@ allowSectorInvasion: false
 hasAtmosphere: true
 visible: true
 updateLighting: false
-defaultCore: h-a0-0a-core-raft-dormant
+defaultCore: core-raft-dormant
 sectorSize: 1
 radius: 1.2
 bloom: false

@@ -1,0 +1,12 @@
+type: OverflowDuct
+size: 1
+
+category: distribution
+requirements: [
+	debris/7
+]
+
+research: chute-router
+researchCost: [
+	debris/20
+]

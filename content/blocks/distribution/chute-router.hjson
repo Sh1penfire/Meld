@@ -1,0 +1,12 @@
+type: DuctRouter
+size: 1
+
+category: distribution
+requirements: [
+	debris/4
+]
+
+research: chute
+researchCost: [
+	debris/20
+]

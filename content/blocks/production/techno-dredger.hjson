@@ -1,0 +1,81 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: production
+
+
+attribute: tech
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.04
+
+liquidCapacity: 300
+scaleLiquidConsumption: true
+
+consumes: {
+	liquid: {
+		liquid: aspect
+		amount: 6.66666666667
+		booster: false
+	}
+}
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 6
+
+drawer: [
+	{
+		type: DrawSpikes
+		color: ccebfa
+		stroke: 2.5
+		rotateSpeed: 1.5
+		layers: 2
+		radius: 10
+		amount: 4
+	}
+	{
+		type: DrawGlowRegion
+		color: ccebfa
+	}
+	{
+		type: DrawMultiWeave
+		glowColor: ccebfa
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+outputItem: technoscrap/2
+
+requirements: [
+ 	debris/120
+	carbolith/150
+	silver/80
+]
+
+research: {
+	parent: elemental-blaster
+	objectives: [
+	]
+}
+
+researchCost: [
+	debris/1200
+	carbolith/1600
+	silver/800
+]

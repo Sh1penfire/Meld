@@ -1,0 +1,28 @@
+type: PowerNode
+size: 3
+
+laserRange: 25
+maxNodes: 3
+
+fogRadius: 2
+
+laserColor2: e5aed7
+
+consumesPower: true
+outputsPower: true
+
+consumes: {
+    powerBuffered: 300
+}
+
+requirements: [
+    silver/25
+    resonarum/5
+	electrum-sheet/30
+]
+
+research: {
+	parent: connector
+}
+
+category: power
