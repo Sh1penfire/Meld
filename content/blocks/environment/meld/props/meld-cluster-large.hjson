@@ -1,0 +1,19 @@
+type: GenericCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+
+targetable: false
+liquidCapacity: 3600
+
+requirements: [
+	debris/200
+	meld-shard/150
+]
+
+outputLiquid: {
+	liquid: aether
+	amount: 1
+}

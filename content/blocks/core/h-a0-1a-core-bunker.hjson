@@ -19,10 +19,10 @@ research: {
 }
 
 requirements: [
-	a2-0a-silver/600
-	a2-1a-electrum-sheet/350
-	a3-0a-vitric-mesh/240
-	a4-2a-riplom/150
+	silver/600
+	electrum-sheet/350
+	vitric-mesh/240
+	riplom/150
 ]
 
 researchCostMultiplier: 0

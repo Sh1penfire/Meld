@@ -27,7 +27,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0b-aspect
+		drawLiquid: aspect
 		padding: 1.5
 	}
 	{
@@ -53,17 +53,17 @@ drawer: [
 
 consumes: {
 	items: [
-		a0-0a-debris/10
+		debris/10
 	]
 	liquids: [
-		a0-0b-aspect/3.3333333333333333333333333333333
+		aspect/3.3333333333333333333333333333333
 	]
 }
 
-outputItem: a1-0a-carbolith/5
+outputItem: carbolith/5
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 research: {
@@ -73,6 +73,6 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

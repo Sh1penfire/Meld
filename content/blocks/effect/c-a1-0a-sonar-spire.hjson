@@ -11,15 +11,15 @@ polyColor: 00000000
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/3.33333333333333333
+		aspect/3.33333333333333333
 	]
 }
 
 
 category: effect
 requirements: [
-	a0-0a-debris/10
-	a2-0a-silver/15
+	debris/10
+	silver/15
 ]
 
 research: {
@@ -27,6 +27,6 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/30
-	a2-0a-silver/20
+	debris/30
+	silver/20
 ]

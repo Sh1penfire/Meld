@@ -79,7 +79,7 @@ shootEffect: [
 ]
 
 ammoTypes: {
-    a0-0b-aspect: {
+    aspect: {
         type: ArtilleryBulletType
         smokeEffect: none
         lifetime: 60
@@ -173,10 +173,10 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/150
-	b0-0a-technoscrap/80
-	b2-0a-bioscrap-graft/60
-	b0-1a-grating-chunk/35
+	debris/150
+	technoscrap/80
+	bioscrap-graft/60
+	grating-chunk/35
 ]
 
 category: effect

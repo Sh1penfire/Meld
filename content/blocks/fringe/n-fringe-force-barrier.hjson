@@ -19,12 +19,12 @@ drawTeamOverlay: false
 
 consumes: {
 	liquids: [
-		a1-0a-liquid-data/1
+		liquid-data/1
 	]
 }
 
 requirements: [
-	b1-0a-fragment/0
+	fragment/0
 ]
 
 squareSprite: false

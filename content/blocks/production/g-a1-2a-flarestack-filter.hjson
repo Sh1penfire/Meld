@@ -31,7 +31,7 @@ drawer: [
     }
     {
         type: DrawLiquidTile
-        drawLiquid: d0-1a-ichor
+        drawLiquid: ichor
         padding: 1.5
     }
     {
@@ -41,7 +41,7 @@ drawer: [
 
     {
         type: DrawLiquidTile
-        drawLiquid: c0-0a-rift
+        drawLiquid: rift
         padRight: 2
         padBottom: 2
 
@@ -50,7 +50,7 @@ drawer: [
     }
     {
         type: DrawLiquidTile
-        drawLiquid: c0-0a-rift
+        drawLiquid: rift
         padLeft: 2
         padBottom: 2
 
@@ -59,7 +59,7 @@ drawer: [
     }
     {
         type: DrawLiquidTile
-        drawLiquid: c0-0a-rift
+        drawLiquid: rift
         padRight: 2
         padTop: 2
 
@@ -68,7 +68,7 @@ drawer: [
     }
     {
         type: DrawLiquidTile
-        drawLiquid: c0-0a-rift
+        drawLiquid: rift
         padLeft: 2
         padTop: 2
 
@@ -104,32 +104,32 @@ craftEffect: {
 
 consumes: {
 	items: [
-		a4-0a-resonarum/1
-		a4-2a-riplom/3
+		resonarum/1
+		riplom/3
 	]
 }
 
 
 outputLiquids: [
-	c0-0a-rift/1
+	rift/1
 ]
 
 outputItems: [
-	a4-3a-riploko/4
+	riploko/4
 ]
 
 requirements: [
- 	a0-0a-debris/60
+ 	debris/60
 ]
 
 research: {
 	parent: a-a0-0a-earthbound-infuser
 	objectives: [
-		d0-1a-ichor
-		c0-0a-rift
+		ichor
+		rift
 	]
 }
 
 researchCost: [
-	a0-0a-debris/17
+	debris/17
 ]

@@ -21,7 +21,7 @@ liquidCapacity: 120
 itemCapacity: 2
 
 ammoTypes: {
-	h1-0a-larva: {
+	larva: {
 		ammoMultiplier: 1
 		spawnUnit: gilla-cluster
 	}
@@ -30,7 +30,7 @@ ammoTypes: {
 
 consumes: {
 	liquids: [
-		a0-0a-aether/2
+		aether/2
 	]
 }
 
@@ -620,8 +620,8 @@ destroyBullet: {
 }
 
 requirements: [
-	e0-0a-meld-shard/600
-	e1-0a-larval-plating/4500
+	meld-shard/600
+	larval-plating/4500
 ]
 
 category: units

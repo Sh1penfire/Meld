@@ -4,7 +4,7 @@ health: 400
 armor: 500000
 
 requirements: [
-	e2-0a-stony-particulate/24
+	stony-particulate/24
 ]
 
 customShadow: true

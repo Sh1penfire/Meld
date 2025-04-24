@@ -15,7 +15,7 @@ scaleLiquidConsumption: true
 
 consumes: {
 	liquid: {
-		liquid: a0-0b-aspect
+		liquid: aspect
 		amount: 6.66666666667
 		booster: false
 	}
@@ -60,12 +60,12 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputItem: b0-0a-technoscrap/2
+outputItem: technoscrap/2
 
 requirements: [
- 	a0-0a-debris/120
-	a1-0a-carbolith/150
-	a2-0a-silver/80
+ 	debris/120
+	carbolith/150
+	silver/80
 ]
 
 research: {
@@ -75,7 +75,7 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/1200
-	a1-0a-carbolith/1600
-	a2-0a-silver/800
+	debris/1200
+	carbolith/1600
+	silver/800
 ]

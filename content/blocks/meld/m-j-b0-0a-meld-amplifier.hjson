@@ -15,7 +15,7 @@ squareSprite: false
 
 shootY: 0
 ammoTypes: {
-	a0-5a-meld: {
+	meld: {
 		type: MissileBulletType
 		spawnUnit: meld-amplifier-power
 		shootEffect: none
@@ -34,8 +34,8 @@ drawer: {
 }
 
 requirements: [
-	e0-0a-meld-shard/2500
-	e1-0a-larval-plating/3000
+	meld-shard/2500
+	larval-plating/3000
 ]
 
 category: effect

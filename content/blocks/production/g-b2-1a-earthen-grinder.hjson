@@ -12,12 +12,12 @@ liquidCapacity: 300
 
 consumes: {
 	liquids: [
-		c0-0a-rift/1
-		b0-0a-nectar/1
+		rift/1
+		nectar/1
 	]
 }
 
-output: a1-2a-stony-gloop
+output: stony-gloop
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -25,7 +25,7 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 requirements: [
- 	a0-0a-debris/40
+ 	debris/40
 ]
 
 research: {
@@ -33,5 +33,5 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/13
+	debris/13
 ]

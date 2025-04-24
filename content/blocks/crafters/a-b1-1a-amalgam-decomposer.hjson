@@ -27,12 +27,12 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0b-aspect
+		drawLiquid: aspect
 		padTop: 14.25
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: d0-1a-ichor
+		drawLiquid: ichor
 		padBottom: 8.25
 	}
 	{
@@ -45,18 +45,18 @@ drawer: [
 
 consumes: {
 	items: [
-		a2-1a-electrum-sheet/20
+		electrum-sheet/20
 	]
 	liquids: [
-		a0-0b-aspect/3.3333333333333333333333333333333
+		aspect/3.3333333333333333333333333333333
 	]
 }
 
 outputItems: [
-		a0-0a-debris/10
+		debris/10
 ]
 
-outputLiquid: d0-1a-ichor/2
+outputLiquid: ichor/2
 
 research: {
 	parent: a-a1-0a-heating-basin
@@ -65,7 +65,7 @@ research: {
 }
 
 requirements: [
-	a0-0a-debris/25
-	a2-0a-silver/85
-	a4-1a-dissonitre/60
+	debris/25
+	silver/85
+	dissonitre/60
 ]

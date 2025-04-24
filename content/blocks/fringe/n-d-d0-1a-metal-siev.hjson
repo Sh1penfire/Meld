@@ -36,7 +36,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: b1-0a-mercury
+		drawLiquid: mercury
 		alpha: 0.75
 	}
 	{
@@ -59,7 +59,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: b1-0a-mercury
+		drawLiquid: mercury
 		alpha: 0.35
 	}
 	{
@@ -74,22 +74,22 @@ drawer: [
 
 consumes: {
 	items: [
-		d0-0a-industrial-rubble-cracked/4
+		industrial-rubble-cracked/4
 	]
 	liquids: [
-		b1-0a-mercury/1
+		mercury/1
 	]
 }
 
 outputItems: [
-	a2-0a-silver/3
-	a2-1a-electrum-sheet/1
-	f1-1a-starving-masses/2
+	silver/3
+	electrum-sheet/1
+	starving-masses/2
 ]
 
 requirements: [
- 	a0-0a-debris/85
-	a1-0a-carbolith/45
-	b0-0a-technoscrap/350
-	b0-1a-grating-chunk/120
+ 	debris/85
+	carbolith/45
+	technoscrap/350
+	grating-chunk/120
 ]

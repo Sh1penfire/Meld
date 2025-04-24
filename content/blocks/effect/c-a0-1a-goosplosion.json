@@ -168,16 +168,16 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/350
-	b0-0a-technoscrap/150
-	f0-0a-bramble-vine/400
-	f1-0a-compacted-masses/150
-    	a4-0a-resonarum/95
+	debris/350
+	technoscrap/150
+	bramble-vine/400
+	compacted-masses/150
+    	resonarum/95
 ]
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/1
+		aspect/1
 	]
 }
 
@@ -185,5 +185,5 @@ category: effect
 
 research: h-a0-0a-core-raft
 researchCost: [
-    a4-0a-resonarum/50
+    resonarum/50
 ]

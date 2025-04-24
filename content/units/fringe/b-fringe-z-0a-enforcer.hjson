@@ -336,7 +336,7 @@ abilities: [
     }
     {
         type: LiquidRegenAbility
-        liquid: b0-0a-nectar
+        liquid: nectar
         regenPerSlurp: 0.3
         slurpSpeed: 90
     }

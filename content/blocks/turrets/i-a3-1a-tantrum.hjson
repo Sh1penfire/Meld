@@ -51,7 +51,7 @@ drawer: {
 }
 
 ammoTypes: {
-	a2-0a-silver: {
+	silver: {
         type: BulletType
 		damage: 0
 		pierce: true
@@ -324,15 +324,15 @@ ammoTypes: {
 
 consumes: {
     liquids: [
-        a0-0b-aspect/3.33333333333
-        c0-0a-rift/1
+        aspect/3.33333333333
+        rift/1
     ]
 }
 
 requirements: [
-	a0-0a-debris/250
-	a2-0a-silver/180
-	a2-1a-electrum-sheet/120
+	debris/250
+	silver/180
+	electrum-sheet/120
 ]
 
 
@@ -347,8 +347,8 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/1400
-	a1-0a-carbolith/600
-	a2-0a-silver/1600
-	a2-1a-electrum-sheet/130
+	debris/1400
+	carbolith/600
+	silver/1600
+	electrum-sheet/130
 ]

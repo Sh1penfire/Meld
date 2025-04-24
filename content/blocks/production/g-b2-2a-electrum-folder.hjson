@@ -10,11 +10,11 @@ liquidCapacity: 300
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/0.8333333333333333
+		aspect/0.8333333333333333
 	]
 }
 
-output: a2-1a-electrum-sheet
+output: electrum-sheet
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -22,8 +22,8 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 requirements: [
- 	a0-0a-debris/40
-	a2-0a-silver/25
+ 	debris/40
+	silver/25
 ]
 
 research: {
@@ -31,5 +31,5 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/13
+	debris/13
 ]

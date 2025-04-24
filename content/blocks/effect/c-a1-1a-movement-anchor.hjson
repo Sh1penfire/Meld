@@ -15,7 +15,7 @@ squareSprite: false
 
 shootY: 0
 ammoTypes: {
-	a0-0b-aspect: {
+	aspect: {
 		type: MissileBulletType
 		spawnUnit: anchor-power
 		shootEffect: none
@@ -33,12 +33,12 @@ drawer: {
 }
 
 consumes: {
-	liquid: a0-0b-aspect/0.33333333333333333333333333333333333333
+	liquid: aspect/0.33333333333333333333333333333333333333
 }
 
 requirements: [
-	a0-0a-debris/80
-	a1-0a-carbolith/120
+	debris/80
+	carbolith/120
 ]
 
 category: effect

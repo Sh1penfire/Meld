@@ -44,7 +44,7 @@ shoot: {
 inaccuracy: 3
 
 ammoTypes: {
-    b0-0a-nectar: {
+    nectar: {
         type: ArtilleryBulletType
         scaleLife: false
         damage: 0
@@ -61,7 +61,7 @@ ammoTypes: {
         despawnHit: true
         puddles: 3
         puddleRange: 8
-        puddleLiquid: b0-0a-nectar
+        puddleLiquid: nectar
         puddleAmount: 5
         ammoMultiplier: 0.003
         despawnEffect: none
@@ -72,7 +72,7 @@ ammoTypes: {
             lifetime: 15
             speed: 0.5
             drag: 0.03
-            liquid: b0-0a-nectar
+            liquid: nectar
             orbSize: 1.5
             puddleSize: 2
             healAmount: 5
@@ -86,7 +86,7 @@ ammoTypes: {
             lifetime: 15
             speed: 1.2
             drag: 0.03
-            liquid: b0-0a-nectar
+            liquid: nectar
             orbSize: 1.5
             puddleSize: 0.5
             healAmount: 5
@@ -120,7 +120,7 @@ ammoTypes: {
             ]
         }
     }
-    b1-0a-mercury: {
+    mercury: {
         type: ArtilleryBulletType
         scaleLife: false
         damage: 0
@@ -136,7 +136,7 @@ ammoTypes: {
         despawnHit: true
         puddles: 3
         puddleRange: 8
-        puddleLiquid: b1-0a-mercury
+        puddleLiquid: mercury
         puddleAmount: 5
         ammoMultiplier: 0.003
         despawnEffect: none
@@ -147,7 +147,7 @@ ammoTypes: {
             lifetime: 15
             speed: 0.5
             drag: 0.03
-            liquid: b1-0a-mercury
+            liquid: mercury
             orbSize: 1.5
             puddleSize: 4
             collidesTeam: true
@@ -160,7 +160,7 @@ ammoTypes: {
             lifetime: 15
             speed: 1.2
             drag: 0.03
-            liquid: b1-0a-mercury
+            liquid: mercury
             orbSize: 1.5
             puddleSize: 2
             collidesTeam: true
@@ -193,7 +193,7 @@ ammoTypes: {
             ]
         }
     }
-    b2-0a-blood: {
+    blood: {
         type: ArtilleryBulletType
         scaleLife: false
         damage: 0
@@ -209,7 +209,7 @@ ammoTypes: {
         despawnHit: true
         puddles: 3
         puddleRange: 8
-        puddleLiquid: b2-0a-blood
+        puddleLiquid: blood
         puddleAmount: 5
         ammoMultiplier: 0.003
         despawnEffect: none
@@ -220,7 +220,7 @@ ammoTypes: {
             lifetime: 15
             speed: 0.5
             drag: 0.03
-            liquid: b2-0a-blood
+            liquid: blood
             orbSize: 1.5
             puddleSize: 2
             collidesTeam: true
@@ -233,7 +233,7 @@ ammoTypes: {
             lifetime: 15
             speed: 1.2
             drag: 0.03
-            liquid: b2-0a-blood
+            liquid: blood
             orbSize: 1.5
             puddleSize: 0.5
             collidesTeam: true
@@ -266,7 +266,7 @@ ammoTypes: {
             ]
         }
     }
-    b3-0a-ooze: {
+    ooze: {
         type: ArtilleryBulletType
         scaleLife: false
         damage: 0
@@ -282,7 +282,7 @@ ammoTypes: {
         despawnHit: true
         puddles: 3
         puddleRange: 8
-        puddleLiquid: b3-0a-ooze
+        puddleLiquid: ooze
         puddleAmount: 5
         ammoMultiplier: 0.003
         despawnEffect: none
@@ -293,7 +293,7 @@ ammoTypes: {
             lifetime: 15
             speed: 0.5
             drag: 0.03
-            liquid: b3-0a-ooze
+            liquid: ooze
             orbSize: 1.5
             puddleSize: 4
             collidesTeam: true
@@ -306,7 +306,7 @@ ammoTypes: {
             lifetime: 15
             speed: 1.2
             drag: 0.03
-            liquid: b3-0a-ooze
+            liquid: ooze
             orbSize: 1.5
             puddleSize: 2
             collidesTeam: true
@@ -418,8 +418,8 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/80
-	a1-0a-carbolith/120
+	debris/80
+	carbolith/120
 ]
 
 category: effect

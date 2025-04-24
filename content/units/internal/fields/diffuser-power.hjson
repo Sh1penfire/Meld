@@ -90,7 +90,7 @@ weapons: [
 			puddles: 2
 			puddleRange: 40
 			puddleAmount: 5
-			puddleLiquid: b1-0a-mercury
+			puddleLiquid: mercury
 		}
 	}
 	{

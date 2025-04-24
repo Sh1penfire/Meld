@@ -34,28 +34,28 @@ drawer: [
 
 consumes: {
 	items: [
-		a4-1a-dissonitre/12
-		a4-2a-riplom/60
+		dissonitre/12
+		riplom/60
 	]
 	liquids: [
-		c0-0a-rift/4
+		rift/4
 	]
 }
 
 outputLiquids: [
-	a0-0a-aether/4
+	aether/4
 ]
 
 outputItems: [
-	a3-0a-vitric-mesh/24
+	vitric-mesh/24
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

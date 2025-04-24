@@ -16,8 +16,8 @@ firstTier: true
 research: h-a0-0a-core-raft-dormant
 
 requirements: [
-	a0-0a-debris/125
-	b0-0a-technoscrap/250
+	debris/125
+	technoscrap/250
 ]
 
 buildCostMultiplier: 0.1

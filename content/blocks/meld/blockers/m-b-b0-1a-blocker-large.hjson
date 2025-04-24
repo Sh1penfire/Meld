@@ -10,7 +10,7 @@ hasPower: false
 hasItems: false
 
 requirements: [
-	e0-0a-meld-shard/120
+	meld-shard/120
 ]
 
 squareSprite: false

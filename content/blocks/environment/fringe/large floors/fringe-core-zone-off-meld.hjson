@@ -8,7 +8,7 @@ isLiquid: true
 cacheLayer: water
 effectSpacing: 240
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 emitLight: true
 lightColor: f292d338

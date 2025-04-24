@@ -10,10 +10,10 @@ laserColor2: e5aed7
 
 
 requirements: [
-	a1-1a-compacted-brick/800
-	a1-2a-stony-gloop/650
-    	a4-0a-resonarum/450
-	a2-1a-electrum-sheet/800
+	compacted-brick/800
+	stony-gloop/650
+    	resonarum/450
+	electrum-sheet/800
 ]
 
 research: {

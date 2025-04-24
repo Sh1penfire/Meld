@@ -471,7 +471,7 @@ drawer: {
 }
 
 ammoTypes: {
-	a4-0a-resonarum: {
+	resonarum: {
 		type: BasicBulletType
 		damage: 160
 		sprite: meld-sawblade-large
@@ -659,13 +659,13 @@ ammoTypes: {
 }
 
 consumes: {
-    liquid: a0-0b-aspect/3.33333333333
+    liquid: aspect/3.33333333333
 }
 
 requirements: [
-	a0-0a-debris/200
-	a2-0a-silver/240
-	a4-0a-resonarum/60
+	debris/200
+	silver/240
+	resonarum/60
 ]
 
 
@@ -680,8 +680,8 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/1400
-	a1-0a-carbolith/600
-	a2-0a-silver/1600
-	a4-0a-resonarum/750
+	debris/1400
+	carbolith/600
+	silver/1600
+	resonarum/750
 ]

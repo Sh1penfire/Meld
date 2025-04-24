@@ -32,22 +32,22 @@ drawer: [
 
 consumes: {
 	items: [
-		f0-0a-bramble-vine/2
+		bramble-vine/2
 	]
 	liquids: [
-		b1-0a-mercury/0
+		mercury/0
 	]
 }
 
 outputLiquids: [
-	b1-0a-mercury/12
-	b3-0a-ooze/0.5
+	mercury/12
+	ooze/0.5
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a1-1a-compacted-brick/120
-	a1-2a-stony-gloop/120
+ 	debris/80
+	compacted-brick/120
+	stony-gloop/120
 ]
 
 research: {
@@ -55,6 +55,6 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

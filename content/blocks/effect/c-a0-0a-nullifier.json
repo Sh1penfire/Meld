@@ -807,15 +807,15 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/350
-	a1-0a-carbolith/450
-	a2-0a-silver/350
-    a4-0a-resonarum/150
+	debris/350
+	carbolith/450
+	silver/350
+    resonarum/150
 ]
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/1
+		aspect/1
 	]
 }
 
@@ -826,5 +826,5 @@ research: {
 }
 
 researchCost: [
-    a4-0a-resonarum/50
+    resonarum/50
 ]

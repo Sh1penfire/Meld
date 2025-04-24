@@ -1,7 +1,7 @@
 type: Floor
 variants: 0
 
-itemDrop: b0-1a-grating-chunk
+itemDrop: grating-chunk
 playerUnmineable: true
 
 blendGroup: fringe-plating

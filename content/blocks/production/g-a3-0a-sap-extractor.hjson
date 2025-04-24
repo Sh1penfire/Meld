@@ -21,7 +21,7 @@ solid: false
 drawer: [
 	{
 		type: DrawLiquidTile
-		drawLiquid: b0-0a-nectar
+		drawLiquid: nectar
 		alpha: 1
 	}
 	{
@@ -45,25 +45,25 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		zzzz-1-valid/0
+		valid/0
 	]
 }
 
-outputLiquid: b0-0a-nectar/0.1666666666666667
+outputLiquid: nectar/0.1666666666666667
 
 category: production
 requirements: [
-	a0-0a-debris/12
+	debris/12
 ]
 
 research: {
 	parent: fissure-tapping
 	objectives: [
-		b0-0a-nectar
+		nectar
 	]
 }
 
 
 researchCost: [
-    a0-0a-debris/15
+    debris/15
 ]

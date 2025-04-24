@@ -30,7 +30,7 @@ shootY: 5
 shootEffect: shootSmall
 
 ammoTypes: {
-	a0-5a-meld: {
+	meld: {
 		type: RailBulletType
 		pierceDamageFactor: 1
 		damage: 5
@@ -51,9 +51,9 @@ ammoTypes: {
 }
 
 requirements: [
-	e0-0a-meld-shard/65
-	e1-1a-metalic-chunk/25
-	e1-2a-metalic-globule/45
+	meld-shard/65
+	metalic-chunk/25
+	metalic-globule/45
 ]
 
 squareSprite: false

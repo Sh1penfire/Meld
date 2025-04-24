@@ -7,12 +7,12 @@ solid: false
 category: distribution
 
 requirements: [
-	a0-0a-debris/12
-	b0-0a-technoscrap/20
+	debris/12
+	technoscrap/20
 ]
 
 research: storage-hubs
 researchCost: [
-	a0-0a-debris/100
-	b0-0a-technoscrap/80
+	debris/100
+	technoscrap/80
 ]

@@ -126,7 +126,7 @@ drawer: {
 ammoPerShot: 10
 
 ammoTypes: {
-	a4-0a-resonarum: {
+	resonarum: {
         ammoMultiplier: 1
         //Primary Bullet
         
@@ -309,7 +309,7 @@ ammoTypes: {
 		}
     }
     //Dissonitre ammo
-	a4-1a-dissonitre: {
+	dissonitre: {
         ammoMultiplier: 4
         //Primary Bullet
         
@@ -484,7 +484,7 @@ ammoTypes: {
 		}
     }
     //Vitric Mesh ammo
-	a3-0a-vitric-mesh: {
+	vitric-mesh: {
         ammoMultiplier: 2
         reloadMultiplier: 2
         //Primary Bullet
@@ -657,7 +657,7 @@ research: {
 }
 
 requirements: [
-    a0-0a-debris/20
-    a2-1a-electrum-sheet/45
-    a3-0a-vitric-mesh/12
+    debris/20
+    electrum-sheet/45
+    vitric-mesh/12
 ]

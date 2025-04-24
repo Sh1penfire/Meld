@@ -9,10 +9,10 @@ placeableLiquid: true
 
 category: liquid
 requirements: [
-	a0-0a-debris/2
+	debris/2
 ]
 
 research: liquid-logistics
 researchCost: [
-	a0-0a-debris/10
+	debris/10
 ]

@@ -155,14 +155,14 @@ shootEffect: {
 
 
 ammoTypes: {
-	d0-1a-ichor: {
+	ichor: {
 		spawnUnit: scorcher
 	}
 }
 
 consumes: {
     liquid: {
-        liquid: d0-1a-ichor
+        liquid: ichor
         amount: 0.01
     }
 }
@@ -175,8 +175,8 @@ coolant: {
 }
 
 requirements: [
-	e1-0a-larval-plating/45
-	a1-0a-carbolith/35
+	larval-plating/45
+	carbolith/35
 ]
 
 category: turret

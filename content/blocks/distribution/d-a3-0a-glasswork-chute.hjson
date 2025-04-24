@@ -18,12 +18,12 @@ consumes: {
 }
 
 requirements: [
-	a2-1a-electrum-sheet/1
-	a3-0a-vitric-mesh/1
+	electrum-sheet/1
+	vitric-mesh/1
 ]
 
 research: item-logistics
 
 researchCost: [
-	a0-0a-debris/5
+	debris/5
 ]

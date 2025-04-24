@@ -18,15 +18,15 @@ plans: [
 ]
 
 consumes: {
-	liquid: a0-0b-aspect/3.3333333333333333
+	liquid: aspect/3.3333333333333333
 }
 
 configurable: false
 
 requirements: [
- 	a0-0a-debris/60
-	a1-0a-carbolith/65
-	a2-0a-silver/80
+ 	debris/60
+	carbolith/65
+	silver/80
 ]
 
 category: units
@@ -38,6 +38,6 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/1200
-	a1-0a-carbolith/1300
+	debris/1200
+	carbolith/1300
 ]

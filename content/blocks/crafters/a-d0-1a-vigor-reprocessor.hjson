@@ -26,28 +26,28 @@ drawer: [
 
 consumes: {
 	items: [
-		f5-0a-homunculus-chunk/2
+		homunculus-chunk/2
 	]
 	liquids: [
-		b0-0a-nectar/0.25
-		c0-0a-rift/0.125
+		nectar/0.25
+		rift/0.125
 	]
 }
 
 outputLiquids: [
-	b2-0a-blood/0.25
+	blood/0.25
 ]
 
 outputItems: [
-	f3-0a-coagulated-vigor/3
+	coagulated-vigor/3
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

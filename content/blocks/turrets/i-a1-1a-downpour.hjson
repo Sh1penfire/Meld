@@ -31,7 +31,7 @@ inaccuracy: 2
 
 ammoPerShot: 40
 ammoTypes: {
-	a2-0a-silver: {
+	silver: {
         sprite: meld-thorn
 		speed: 8.5
 		damage: 45
@@ -136,7 +136,7 @@ ammoTypes: {
                     fragRandomSpread: 15
                     fragBullet: {
                         type: LiquidBulletType
-                        liquid: b1-0a-mercury
+                        liquid: mercury
                         status: mangrove-d1-slippery
                         statusDuration: 25
                         orbSize: 2
@@ -152,15 +152,15 @@ ammoTypes: {
             puddles: 1
             puddleRange: 3
             puddleAmount: 2
-            puddleLiquid: b1-0a-mercury
+            puddleLiquid: mercury
 		}
 	}
 }
 
 consumes: {
     liquids: [
-        a0-0b-aspect/1.666666666666666666666666666
-        b1-0a-mercury/2
+        aspect/1.666666666666666666666666666
+        mercury/2
     ]
 }
 
@@ -170,10 +170,10 @@ shootCone: 5
 category: turret
 
 requirements: [
-	a1-1a-compacted-brick/240
-	a1-2a-stony-gloop/240
-	a2-0a-silver/260
-	a4-0a-resonarum/35
+	compacted-brick/240
+	stony-gloop/240
+	silver/260
+	resonarum/35
 ]
 
 research: {

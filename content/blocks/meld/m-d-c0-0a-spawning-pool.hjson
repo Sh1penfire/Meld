@@ -7,8 +7,8 @@ solid: true
 liquidCapacity: 100
 
 requirements: [
-	e1-0a-larval-plating/200
-	e0-0a-meld-shard/150
+	larval-plating/200
+	meld-shard/150
 ]
 
 craftTime: 720
@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: d0-1a-ichor
+		drawLiquid: ichor
 		alpha: 1
 		padding: 5.5
 	}
@@ -42,10 +42,10 @@ drawer: [
 ]
 
 consumes: {
-	liquid: d0-1a-ichor/6
+	liquid: ichor/6
 }
 
-outputItem: h1-0a-larva/8
+outputItem: larva/8
 
 craftEffect: {
 	type: ParticleEffect

@@ -7,8 +7,8 @@ solid: true
 liquidCapacity: 100
 
 requirements: [
-	e1-0a-larval-plating/200
-	e0-0a-meld-shard/150
+	larval-plating/200
+	meld-shard/150
 ]
 
 craftTime: 5
@@ -23,7 +23,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-5a-meld
+		drawLiquid: meld
 		alpha: 1
 		padding: 1.5
 	}
@@ -33,7 +33,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0a-aether
+		drawLiquid: aether
 		alpha: 0.2
 		padding: 1.5
 	}
@@ -50,11 +50,11 @@ drawer: [
 ]
 
 consumes: {
-	liquid: a0-5a-meld/2
+	liquid: meld/2
 }
 
 outputLiquid: {
-	liquid: a0-0a-aether
+	liquid: aether
 	amount: 1
 }
 

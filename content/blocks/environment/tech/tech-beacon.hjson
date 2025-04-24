@@ -1,0 +1,24 @@
+type: SwitchBlock
+size: 5
+
+targetable: false
+configurable: false
+privileged: true
+solid: true
+underBullets: true
+
+buildVisibility: editorOnly
+category: logic
+
+liquidCapacity: 50
+consumes: {
+	liquids: [
+		liquid-data/0
+	]
+}
+
+requirements: [
+	technoscrap/230
+	fragment/50
+	debris/120
+]

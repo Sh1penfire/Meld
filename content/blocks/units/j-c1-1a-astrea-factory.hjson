@@ -6,8 +6,8 @@ plans: [
 	{
 	unit: a-strata-d0-0a-astrea
 	requirements: [
-		a0-0a-debris/75
-		a2-1a-electrum-sheet/50
+		debris/75
+		electrum-sheet/50
     	]
     	time: 540
   	}
@@ -15,17 +15,17 @@ plans: [
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/10
-		b1-0a-mercury/2
+		aspect/10
+		mercury/2
 	]
 }
 
 configurable: false
 
 requirements: [
- 	a0-0a-debris/180
-	a2-0a-silver/120
-	a2-1a-electrum-sheet/210
+ 	debris/180
+	silver/120
+	electrum-sheet/210
 ]
 
 category: units
@@ -33,8 +33,8 @@ category: units
 research: h-a0-0a-core-raft
 
 researchCost: [
-	a0-0a-debris/80
-	a1-0a-carbolith/45
-	a2-0a-silver/35
+	debris/80
+	carbolith/45
+	silver/35
 ]
 

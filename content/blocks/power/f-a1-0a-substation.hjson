@@ -16,9 +16,9 @@ consumes: {
 }
 
 requirements: [
-    a2-0a-silver/25
-    a4-0a-resonarum/5
-	a2-1a-electrum-sheet/30
+    silver/25
+    resonarum/5
+	electrum-sheet/30
 ]
 
 research: {

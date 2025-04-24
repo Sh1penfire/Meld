@@ -26,7 +26,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0a-aether
+		drawLiquid: aether
 		padding: 1.5
 	}
 	{
@@ -67,26 +67,26 @@ craftEffect: {
 
 consumes: {
 	items: [
-		a4-1a-dissonitre/1
+		dissonitre/1
 	]
 }
 
-outputLiquid: a0-0a-aether/0.3333333333333334
+outputLiquid: aether/0.3333333333333334
 
 requirements: [
- 	a0-0a-debris/15
-	a4-1a-dissonitre/10
+ 	debris/15
+	dissonitre/10
 ]
 
 research: liquid-logistics
 
 researchCost: [
-	a0-0a-debris/17
+	debris/17
 ]
 
 
 
 researchCost: [
- 	a0-0a-debris/240
-	a1-0a-carbolith/450
+ 	debris/240
+	carbolith/450
 ]

@@ -11,9 +11,9 @@ plans: [
 	{
 	unit: a-strata-c0-0a-narwhal
 	requirements: [
-		a1-1a-compacted-brick/40
-		a1-2a-stony-gloop/60
-		a1-0a-carbolith/30
+		compacted-brick/40
+		stony-gloop/60
+		carbolith/30
     	]
     	time: 900
   	}
@@ -21,18 +21,18 @@ plans: [
 
 consumes: {
 	liquids: [
-		a0-0b-aspect/10
-		d0-1a-ichor/2
+		aspect/10
+		ichor/2
 	]
 }
 
 configurable: false
 
 requirements: [
- 	a0-0a-debris/500
-	a1-0a-carbolith/200
-	a1-1a-compacted-brick/250
-	a1-2a-stony-gloop/250
+ 	debris/500
+	carbolith/200
+	compacted-brick/250
+	stony-gloop/250
 ]
 
 category: units
@@ -40,8 +40,8 @@ category: units
 research: h-a0-0a-core-raft
 
 researchCost: [
-	a0-0a-debris/80
-	a1-0a-carbolith/45
-	a2-0a-silver/35
+	debris/80
+	carbolith/45
+	silver/35
 ]
 

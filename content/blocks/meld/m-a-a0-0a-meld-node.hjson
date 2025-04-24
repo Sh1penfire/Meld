@@ -67,7 +67,7 @@ destroyEffect: {
 }
 
 requirements: [
-	e0-0a-meld-shard/600
-	e1-0a-larval-plating/4500
+	meld-shard/600
+	larval-plating/4500
 ]
 category: effect

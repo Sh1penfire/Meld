@@ -16,7 +16,7 @@ elevation: 0
 
 shootY: 0
 ammoTypes: {
-	b1-0a-mercury: {
+	mercury: {
 		type: MissileBulletType
 		spawnUnit: diffuser-power
 		shootEffect: none
@@ -33,8 +33,8 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/80
-	a1-0a-carbolith/120
+	debris/80
+	carbolith/120
 ]
 
 research: {

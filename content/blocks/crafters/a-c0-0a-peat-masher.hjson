@@ -27,27 +27,27 @@ drawer: [
 
 consumes: {
 	items: [
-		f1-0a-compacted-masses/4
+		compacted-masses/4
 	]
 	liquids: [
-		b1-0a-mercury/0.5
-		a0-0b-aspect/1.66666666
+		mercury/0.5
+		aspect/1.66666666
 	]
 }
 
 outputLiquids: [
-	b1-0a-mercury/0.5
-	a0-0b-aspect/0
+	mercury/0.5
+	aspect/0
 ]
 
 outputItems: [
-	f0-0a-bramble-vine/3
-	f1-1a-starving-masses/3
+	bramble-vine/3
+	starving-masses/3
 ]
 
 requirements: [
- 	a0-0a-debris/65
-	a1-0a-carbolith/45
+ 	debris/65
+	carbolith/45
 ]
 
 research: {
@@ -58,6 +58,6 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

@@ -14,28 +14,28 @@ category: liquid
 explodeOnFull: true
 
 requirements: [
-	a1-1a-compacted-brick/60
-	a1-2a-stony-gloop/180
-	a2-0a-silver/85
-	f3-0a-coagulated-vigor/5
+	compacted-brick/60
+	stony-gloop/180
+	silver/85
+	coagulated-vigor/5
 ]
 
 consumes: {
 	items: [
-		f2-0a-elderflesh/1
+		elderflesh/1
 	]
 	liquids: [
-		b1-0a-mercury/0.5
-		b2-0a-blood/0.5
+		mercury/0.5
+		blood/0.5
 	]
 }
 
-outputLiquid: b2-0a-blood/0.25
+outputLiquid: blood/0.25
 
 research: {
 	parent: f-d0-0a-purification-chamber
 }
 
 researchCost: [
-    a0-0a-debris/20
+    debris/20
 ]

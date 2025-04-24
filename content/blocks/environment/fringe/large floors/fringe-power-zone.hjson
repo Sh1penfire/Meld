@@ -5,7 +5,7 @@ blendGroup: fringe-plating
 parent: fringe-plating
 effectSpacing: 240
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 emitLight: true
 lightColor: 9ccaed4c

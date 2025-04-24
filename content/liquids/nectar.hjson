@@ -1,0 +1,38 @@
+type: CellLiquid
+
+viscosity: 0.95
+temperature: 0.15
+heatCapacity: 2
+
+spreadTarget: mercury
+
+capPuddles: false
+
+maxSpread: 0.5
+spreadConversion: 0.85
+spreadDamage: 0
+removeScaling: 0.5
+
+effect: mangrove-a0-refreshed
+
+color: 55391b
+
+colorFrom: 7d642c
+colorTo: b89f47
+
+moveThroughBlocks: true
+incinerable: false
+
+canStayOn: [
+	mercury
+	ichor
+	ooze
+	waste
+]
+
+research: {
+	parent:	debris
+	objectives: [
+		nectar
+	]
+}

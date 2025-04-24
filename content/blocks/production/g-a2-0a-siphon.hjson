@@ -41,40 +41,40 @@ drawer: [
 
 consumes: {
 	liquids: [
-		zzzz-2-deposit/0
-		b0-0a-nectar/0
-		b1-0a-mercury/0
-		b2-0a-blood/0
-		b3-0a-ooze/0
+		deposit/0
+		nectar/0
+		mercury/0
+		blood/0
+		ooze/0
 	]
 	items: [
-		a1-1a-compacted-brick/1
-		a1-2a-stony-gloop/1
+		compacted-brick/1
+		stony-gloop/1
 	]
 }
 
 
 outputLiquids: [
-	b0-0a-nectar/0
-	b1-0a-mercury/0
-	b2-0a-blood/0
-	b3-0a-ooze/0
+	nectar/0
+	mercury/0
+	blood/0
+	ooze/0
 ]
 
 outputItems: [
-	d0-0a-industrial-rubble-cracked/1
+	industrial-rubble-cracked/1
 ]
 
 
 requirements: [
- 	a0-0a-debris/120
-	a1-0a-carbolith/250
+ 	debris/120
+	carbolith/250
 ]
 
 research: h-a0-0a-core-raft
 
 research: pressure-control
 researchCost: [
- 	a0-0a-debris/240
-	a1-0a-carbolith/450
+ 	debris/240
+	carbolith/450
 ]

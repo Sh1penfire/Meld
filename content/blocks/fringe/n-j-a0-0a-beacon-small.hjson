@@ -30,7 +30,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a1-0a-liquid-data
+		drawLiquid: liquid-data
 	}
 	{
 		type: DrawRegion
@@ -71,18 +71,18 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		a1-0a-liquid-data/0
+		liquid-data/0
 	]
 }
 
 outputLiquids: [
-	a1-0a-liquid-data/0.1
-	a1-1a-null/0
+	liquid-data/0.1
+	null/0
 ]
 
 category: liquid
 
 requirements: [
-	a0-0a-debris/2
-	b0-0a-technoscrap/5
+	debris/2
+	technoscrap/5
 ]

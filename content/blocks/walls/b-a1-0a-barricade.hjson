@@ -10,13 +10,13 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/2000
-	a2-0a-silver/1200
-	b1-0a-fragment/300
+	debris/2000
+	silver/1200
+	fragment/300
 ]
 
 requirements: [
-	a1-1a-compacted-brick/18
-	a1-2a-stony-gloop/18
+	compacted-brick/18
+	stony-gloop/18
 ]
 category: defense

@@ -9,7 +9,7 @@ drownTime: 95
 cacheLayer: water
 isLiquid: true
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 emitLight: true
 lightColor: ca3fba11

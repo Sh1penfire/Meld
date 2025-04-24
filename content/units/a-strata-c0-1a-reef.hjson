@@ -25,9 +25,9 @@ controller: MinerAI
 defaultController: MinerAI
 
 mineItems: [
-	f1-0a-compacted-masses
-	f2-0a-elderflesh
-	f2-1a-blossoming-elderflesh
+	compacted-masses
+	elderflesh
+	blossoming-elderflesh
 ]
 
 weapons: [
@@ -62,7 +62,7 @@ weapons: [
 			instantDisappear: true
 			hitEffect: none
 			shootEffect: {
-				region: meld-b2-0a-blood
+				region: meld-blood
                 length: 0
                 baseLength: 35
                 sizeFrom: 3

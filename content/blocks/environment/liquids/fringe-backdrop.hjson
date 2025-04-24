@@ -10,7 +10,7 @@ drownTime: 60
 
 status: blackout
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 cacheLayer: water
 placeableOn: false

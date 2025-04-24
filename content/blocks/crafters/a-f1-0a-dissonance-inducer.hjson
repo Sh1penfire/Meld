@@ -27,28 +27,28 @@ drawer: [
 
 consumes: {
 	items: [
-		a4-0a-resonarum/30
+		resonarum/30
 	]
 	liquids: [
-		c0-0a-rift/2
-		a0-5a-meld/3
+		rift/2
+		meld/3
 	]
 }
 
 outputLiquids: [
-	a0-0a-aether/0.5
+	aether/0.5
 ]
 
 outputItems: [
-	a4-1a-dissonitre/30
+	dissonitre/30
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

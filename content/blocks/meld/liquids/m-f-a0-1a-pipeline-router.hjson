@@ -8,5 +8,5 @@ liquidPressure: 50
 
 category: liquid
 requirements: [
-	e1-0a-larval-plating/5
+	larval-plating/5
 ]

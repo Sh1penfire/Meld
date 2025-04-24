@@ -1,0 +1,9 @@
+type: Liquid
+gas: true
+color: cbdbfc
+explosiveness: 2
+flammability: 10
+temperature: 3
+alwaysUnlocked: true
+
+research: aether

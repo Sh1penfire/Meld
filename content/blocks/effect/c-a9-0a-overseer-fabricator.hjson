@@ -19,7 +19,7 @@ shootY: 0
 liquidCapacity: 400
 
 ammoTypes: {
-	a0-0a-debris: {
+	debris: {
         ammoMultiplier: 1
         type: ArtilleryBulletType
         scaleLife: false
@@ -52,7 +52,7 @@ shoot: {
 }
 
 consumes: {
-	liquid: a0-0b-aspect/10
+	liquid: aspect/10
 }
 
 
@@ -128,8 +128,8 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/80
-	b0-0a-technoscrap/100
+	debris/80
+	technoscrap/100
 ]
 
 research: {

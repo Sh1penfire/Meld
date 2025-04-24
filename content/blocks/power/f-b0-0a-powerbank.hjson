@@ -41,10 +41,10 @@ drawer: [
 ]
 
 requirements: [
-    a0-0a-debris/300
-    a2-0a-silver/80
-	a2-1a-electrum-sheet/250
-    a4-1a-dissonitre/120
+    debris/300
+    silver/80
+	electrum-sheet/250
+    dissonitre/120
 ]
 
 research: {

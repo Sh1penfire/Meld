@@ -6,7 +6,7 @@ parent: fringe-plating
 allowCorePlacement: true
 effectSpacing: 240
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 effect: {
 	type: MultiEffect
@@ -65,4 +65,4 @@ effect: {
 }
 
 isLiquid: true
-liquidDrop: z0-1a-waste
+liquidDrop: waste

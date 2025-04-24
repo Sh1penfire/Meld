@@ -1,0 +1,9 @@
+type: Prop
+solid: true
+variants: 2
+
+instantDeconstruct: false
+requirements: [
+	debris/12
+	technoscrap/15
+]

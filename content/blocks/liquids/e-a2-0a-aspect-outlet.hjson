@@ -19,7 +19,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0b-aspect
+		drawLiquid: aspect
 		alpha: 1
 	}
 	{
@@ -43,18 +43,18 @@ craftEffect: {
 
 consumes: {
 	liquids: [
-		a0-0a-aether/0.166666666
+		aether/0.166666666
 	]
 }
 
-outputLiquid: a0-0b-aspect/1.6666666666
+outputLiquid: aspect/1.6666666666
 
 category: liquid
 requirements: [
-	a0-0a-debris/7
+	debris/7
 ]
 
 research: e-a1-0a-channel-node
 researchCost: [
-	a0-0a-debris/35
+	debris/35
 ]

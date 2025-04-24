@@ -86,7 +86,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0b-aspect
+		drawLiquid: aspect
 		padding: 3
 	}
 	{
@@ -124,22 +124,22 @@ drawer: [
 
 consumes: {
 	items: [
-		d0-0a-industrial-rubble-cracked/5
+		industrial-rubble-cracked/5
 	]
 	liquids: [
-		a0-0b-aspect/1.6666666666
+		aspect/1.6666666666
 	]
 }
 
 outputItems: [
-	a0-0a-debris/10
-	a1-0a-carbolith/1
-	a2-0a-silver/3
+	debris/10
+	carbolith/1
+	silver/3
 ]
 
 requirements: [
- 	a0-0a-debris/50
-	a2-0a-silver/85
-	b0-0a-technoscrap/350
-	b0-1a-grating-chunk/210
+ 	debris/50
+	silver/85
+	technoscrap/350
+	grating-chunk/210
 ]

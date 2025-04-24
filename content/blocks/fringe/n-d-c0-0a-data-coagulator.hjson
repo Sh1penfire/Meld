@@ -34,7 +34,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a1-0a-liquid-data
+		drawLiquid: liquid-data
 	}
 	{
 		type: DrawRegion
@@ -44,30 +44,30 @@ drawer: [
 
 consumes: {
 	items: [
-		b0-0a-technoscrap/20
+		technoscrap/20
 	]
 	liquids: [
-		a1-0a-liquid-data/10
+		liquid-data/10
 	]
 }
 
-outputItem: b1-0a-fragment/2
+outputItem: fragment/2
 outputLiquids: [
-		a1-1a-null/0
-		a1-0a-liquid-data/0
+		null/0
+		liquid-data/0
 ]
 
 requirements: [
- 	a0-0a-debris/30
-	a2-0a-silver/60
-	b0-0a-technoscrap/120
-	b0-1a-grating-chunk/75
+ 	debris/30
+	silver/60
+	technoscrap/120
+	grating-chunk/75
 ]
 
 research: c-effect-a2-0a-data-miner
 
 researchCost: [
-	a0-0a-debris/300
-	a2-0a-silver/150
-	b0-0a-technoscrap/450
+	debris/300
+	silver/150
+	technoscrap/450
 ]

@@ -15,8 +15,8 @@ liquidCapacity: 200
 squareSprite: false
 
 requirements: [
-	e1-0a-larval-plating/200
-	e0-0a-meld-shard/150
+	larval-plating/200
+	meld-shard/150
 ]
 
 drawer: [
@@ -27,7 +27,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: d0-1a-ichor
+		drawLiquid: ichor
 		alpha: 0.6
 		padding: 1.5
 	}
@@ -52,6 +52,6 @@ drawer: [
 ]
 
 outputLiquid: {
-	liquid: d0-1a-ichor
+	liquid: ichor
 	amount: 2
 }

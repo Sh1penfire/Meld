@@ -35,25 +35,25 @@ drawer: [
 consumes: {
 	power: 8
 	items: [
-		a3-1a-shiny-globule/20
-		a4-2a-riplom/8
+		shiny-globule/20
+		riplom/8
 	]
 }
 
 outputLiquids: [
-	a0-0a-aether/3
+	aether/3
 ]
 
 outputItems: [
-	a3-0a-vitric-mesh/24
+	vitric-mesh/24
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

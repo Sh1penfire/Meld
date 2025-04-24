@@ -7,7 +7,7 @@ walkSoundPitchMax: 0.6
 cacheLayer: water
 isLiquid: true
 
-liquidDrop: z0-1a-waste
+liquidDrop: waste
 
 emitLight: true
 lightColor: d26ab11c

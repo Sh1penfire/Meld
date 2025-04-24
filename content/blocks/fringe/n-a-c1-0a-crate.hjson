@@ -11,7 +11,7 @@ targetable: false
 research: fringe
 
 requirements: [
-	b0-0a-technoscrap/35
+	technoscrap/35
 ]
 
 category: effect

@@ -1,0 +1,4 @@
+type: TallBlock
+variants: 2
+itemDrop: debris
+playerUnmineable: true

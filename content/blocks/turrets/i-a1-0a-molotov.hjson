@@ -11,13 +11,13 @@ shootSound: bang
 shootEffect: shootBig
 
 requirements: [
-	a1-0a-carbolith/40
-	a2-0a-silver/70
+	carbolith/40
+	silver/70
 ]
 
 ammoPerShot: 2
 ammoTypes: {
-	a2-0a-silver: {
+	silver: {
 		type: ArtilleryBulletType
 		speed: 3.5
 		damage: 1
@@ -107,7 +107,7 @@ ammoTypes: {
 }
 
 consumes: {
-    liquid: a0-0b-aspect/1.666666666666666666666666666
+    liquid: aspect/1.666666666666666666666666666
 }
 
 coolant: {

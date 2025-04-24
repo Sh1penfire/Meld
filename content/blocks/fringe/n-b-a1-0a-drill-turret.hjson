@@ -91,7 +91,7 @@ shootEffect: [
 ]
 
 ammoTypes: {
-    a0-0b-aspect: {
+    aspect: {
         smokeEffect: none
         type: RailBulletType
         lifetime: 1
@@ -291,9 +291,9 @@ drawer: {
 }
 
 requirements: [
-	a0-0a-debris/80
-	a1-0a-carbolith/120
-	b0-1a-grating-chunk/45
+	debris/80
+	carbolith/120
+	grating-chunk/45
 ]
 
 category: turret

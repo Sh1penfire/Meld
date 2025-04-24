@@ -19,7 +19,7 @@ recoil: 0
 
 ammoPerShot: 3
 ammoTypes: {
-	h1-0a-larva: {
+	larva: {
 		ammoMultiplier: 1
 		spawnUnit: craig-cluster
 	}
@@ -584,13 +584,13 @@ destroyBullet: {
 
 consumes: {
 	liquids: [
-		d0-1a-ichor/1
+		ichor/1
 	]
 }
 
 requirements: [
-	e0-0a-meld-shard/600
-	e1-0a-larval-plating/4500
+	meld-shard/600
+	larval-plating/4500
 ]
 
 category: units

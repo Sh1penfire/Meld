@@ -15,20 +15,20 @@ category: power
 itemDuration: 60
 
 requirements: [
-	a0-0a-debris/120
-	a2-0a-silver/80
-	a2-1a-electrum-sheet/75
+	debris/120
+	silver/80
+	electrum-sheet/75
 ]
 
 
 consumes: {
 	items: [
-		a3-0a-vitric-mesh/2
-		a4-2a-riplom/4
+		vitric-mesh/2
+		riplom/4
 	]
 }
 
-outputLiquid: c0-0a-rift/0.25
+outputLiquid: rift/0.25
 
 powerProduction: 2
 
@@ -37,5 +37,5 @@ research: {
 }
 
 researchCost: [
-    a0-0a-debris/20
+    debris/20
 ]

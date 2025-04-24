@@ -14,13 +14,13 @@ optionalBoostIntensity: 2
 
 consumes: {
 	liquid: {
-		liquid: a0-0b-aspect
+		liquid: aspect
 		amount: 1.6666666666
         optional: false
 	}
     liquids: {
 		liquids: [
-            a0-5a-meld/1
+            meld/1
         ]
 		booster: true
         optional: true
@@ -28,7 +28,7 @@ consumes: {
 }
 
 drillMultipliers: {
-	a2-1a-electrum-sheet: 2
+	electrum-sheet: 2
 }
 
 sparkColor: 8cc7ee
@@ -45,10 +45,10 @@ ambientSoundVolume: 0.08
 squareSprite: false
 
 requirements: [
- 	a0-0a-debris/40
+ 	debris/40
 ]
 
 research: item-logistics
 researchCost: [
-	a0-0a-debris/13
+	debris/13
 ]

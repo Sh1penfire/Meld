@@ -32,7 +32,7 @@ drawer: [
 	//Rightmost mercury fixture
 	{
 		type: DrawLiquidTile
-		drawLiquid: b1-0a-mercury
+		drawLiquid: mercury
 		padLeft: 21.25
 		padBottom: 10.25
 		padRight: 1.75
@@ -41,7 +41,7 @@ drawer: [
 	//Pipe with mercury
 	{
 		type: DrawLiquidTile
-		drawLiquid: b1-0a-mercury
+		drawLiquid: mercury
 		padLeft: 2.25
 		padBottom: 8.75
 		padRight: 11.25
@@ -50,7 +50,7 @@ drawer: [
 
 	{
 		type: DrawLiquidTile
-		drawLiquid: b1-0a-mercury
+		drawLiquid: mercury
 		padLeft: 10.25
 		padBottom: 21.25
 		padRight: 10.25
@@ -59,7 +59,7 @@ drawer: [
 
 	{
 		type: DrawLiquidTile
-		drawLiquid: b0-0a-nectar
+		drawLiquid: nectar
 		padLeft: 4.5
 		padBottom: 4.5
 		padTop: 16.75
@@ -77,33 +77,33 @@ drawer: [
 
 consumes: {
 	items: [
-		a1-0a-carbolith/1
+		carbolith/1
 	]
 	liquids: [
-		b0-0a-nectar/1
+		nectar/1
 	]
 }
 
 outputLiquids: [
-	b1-0a-mercury/1
+	mercury/1
 ]
 
 outputItems: [
-	a0-0a-debris/3
+	debris/3
 ]
 
 requirements: [
- 	a0-0a-debris/80
+ 	debris/80
 ]
 
 research: {
 	parent: mercurial-extraction
 	objectives: [
-		b0-0a-nectar
+		nectar
 	]
 }
 
 researchCost: [
-	a0-0a-debris/200
-	a1-0a-carbolith/300
+	debris/200
+	carbolith/300
 ]

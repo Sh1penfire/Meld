@@ -41,22 +41,22 @@ drawer: [
 
 consumes: {
 	items: [
-		a0-0a-debris/1
+		debris/1
 	]
 	liquids: [
-		a0-0b-aspect/3.3333333333333333333333333333333
+		aspect/3.3333333333333333333333333333333
 	]
 }
 
 requirements: [
-	a0-0a-debris/35
-	a1-1a-compacted-brick/85
-	a1-2a-stony-gloop/35
+	debris/35
+	compacted-brick/85
+	stony-gloop/35
 ]
 
 research: fluid-extraction
 researchCost: [
-	a0-0a-debris/750
-	a1-1a-compacted-brick/850
-	a1-2a-stony-gloop/250
+	debris/750
+	compacted-brick/850
+	stony-gloop/250
 ]

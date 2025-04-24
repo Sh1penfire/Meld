@@ -27,7 +27,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0a-aether
+		drawLiquid: aether
 		padding: 1.5
 	}
 	{
@@ -73,14 +73,14 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputLiquid: a0-0a-aether/1
+outputLiquid: aether/1
 
 requirements: [
- 	a0-0a-debris/40
+ 	debris/40
 ]
 
 research: liquid-logistics
 
 researchCost: [
-	a0-0a-debris/17
+	debris/17
 ]

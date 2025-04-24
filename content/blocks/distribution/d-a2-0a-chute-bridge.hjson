@@ -5,10 +5,10 @@ range: 2
 solid: false
 category: distribution
 requirements: [
-	a0-0a-debris/6
+	debris/6
 ]
 
 research: d-a0-0a-chute
 researchCost: [
-	a0-0a-debris/25
+	debris/25
 ]

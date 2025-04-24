@@ -34,28 +34,28 @@ drawer: [
 
 consumes: {
 	items: [
-		a3-0a-vitric-mesh/1
+		vitric-mesh/1
 	]
 	liquids: [
-		zzzz-4-charge/1
-		zzzz-5-dissonance/1
+		charge/1
+		dissonance/1
 	]
 }
 
 outputLiquids: [
-	a0-0a-aether/0.1666666666666667
+	aether/0.1666666666666667
 ]
 
 outputItems: [
-	a4-1a-dissonitre/1
+	dissonitre/1
 ]
 
 requirements: [
- 	a0-0a-debris/80
-	a2-0a-silver/60
+ 	debris/80
+	silver/60
 ]
 
 researchCost: [
-	a0-0a-debris/200
-	a2-0a-silver/150
+	debris/200
+	silver/150
 ]

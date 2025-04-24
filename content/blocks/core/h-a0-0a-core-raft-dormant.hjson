@@ -19,10 +19,10 @@ research: {
 }
 
 requirements: [
-	a0-0a-debris/450
-	b0-0a-technoscrap/250
+	debris/450
+	technoscrap/250
 #:3
-	a1-0a-carbolith/350
+	carbolith/350
 ]
 
 researchCostMultiplier: 0

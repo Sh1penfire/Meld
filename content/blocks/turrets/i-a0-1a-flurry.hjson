@@ -57,7 +57,7 @@ drawer: {
 }
 
 ammoTypes: {
-	a1-0a-carbolith: {
+	carbolith: {
 		type: BasicBulletType
         sprite: meld-electrode
         frontColor: ebf6ff
@@ -189,9 +189,9 @@ coolant: {
 
 
 requirements: [
-	a0-0a-debris/35
-	a1-0a-carbolith/75
-	a2-1a-electrum-sheet/40
+	debris/35
+	carbolith/75
+	electrum-sheet/40
 ]
 
 category: turret
@@ -201,6 +201,6 @@ research: {
 }
 
 researchCost: [
-    a0-0a-debris/120
-    a1-0a-carbolith/80
+    debris/120
+    carbolith/80
 ]

@@ -40,7 +40,7 @@ shoot: {
 shootEffect: shootSmall
 
 ammoTypes: {
-	a0-5a-meld: {
+	meld: {
         ammoMultiplier: 0.25
         sprite: "meld-clump"
         pierce: true
@@ -59,10 +59,10 @@ ammoTypes: {
 }
 
 requirements: [
-	e0-0a-meld-shard/120
-	e1-0a-larval-plating/85
-	e1-1a-metalic-chunk/210
-	e1-2a-metalic-globule/65
+	meld-shard/120
+	larval-plating/85
+	metalic-chunk/210
+	metalic-globule/65
 ]
 
 squareSprite: false

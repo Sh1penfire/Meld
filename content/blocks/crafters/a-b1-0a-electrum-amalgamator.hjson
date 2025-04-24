@@ -29,17 +29,17 @@ drawer: [
 
 consumes: {
 	items: [
-		a0-0a-debris/4
-		a2-0a-silver/10
+		debris/4
+		silver/10
 	]
 	liquids: [
-		a0-0b-aspect/3.3333333333333333333333333333333
-		b1-0a-mercury/5
+		aspect/3.3333333333333333333333333333333
+		mercury/5
 	]
 }
 
-outputItem: a2-1a-electrum-sheet/16
-outputLiquid: d0-1a-ichor/2
+outputItem: electrum-sheet/16
+outputLiquid: ichor/2
 
 research: {
 	parent: a-a1-0a-heating-basin
@@ -48,6 +48,6 @@ research: {
 }
 
 requirements: [
- 	a0-0a-debris/80
-	a1-0a-carbolith/85
+ 	debris/80
+	carbolith/85
 ]

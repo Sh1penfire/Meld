@@ -39,12 +39,12 @@ destroyBullet: {
 
 
 requirements: [
-	a1-0a-carbolith/4
-	f2-0a-elderflesh/2
+	carbolith/4
+	elderflesh/2
 ]
 
 research: pressure-control
 researchCost: [
-	a1-0a-carbolith/100
-	f2-0a-elderflesh/120
+	carbolith/100
+	elderflesh/120
 ]

@@ -59,7 +59,7 @@ drawer: {
 }
 
 ammoTypes: {
-	a0-0a-debris: {
+	debris: {
 		type: FlakBulletType
 		speed: 6
 		damage: 2
@@ -139,14 +139,14 @@ coolant: {
 
 
 requirements: [
-	a0-0a-debris/45
-	a1-0a-carbolith/35
+	debris/45
+	carbolith/35
 ]
 
 category: turret
 
 research: strata
 researchCost: [
-    a0-0a-debris/120
-    a1-0a-carbolith/80
+    debris/120
+    carbolith/80
 ]

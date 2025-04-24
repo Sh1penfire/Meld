@@ -3,10 +3,10 @@ size: 1
 
 category: distribution
 requirements: [
-	a0-0a-debris/4
+	debris/4
 ]
 
 research: d-a0-0a-chute
 researchCost: [
-	a0-0a-debris/20
+	debris/20
 ]

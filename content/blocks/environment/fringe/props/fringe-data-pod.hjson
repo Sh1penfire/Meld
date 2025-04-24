@@ -7,7 +7,7 @@ customShadow: true
 instantDeconstruct: false
 
 requirements: [
-	a0-0a-debris/12
+	debris/12
 ]
 
 emitLight: true

@@ -1,8 +1,0 @@
-type: TreeBlock
-variants: 2
-
-emitLight: true
-lightColor: 13237152
-lightRadius: 35
-
-itemDrop: f2-1a-blossoming-elderflesh

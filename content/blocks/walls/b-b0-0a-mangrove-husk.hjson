@@ -18,7 +18,7 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: a0-0b-aspect
+		drawLiquid: aspect
 	}
 	{
 		type: DrawDefault
@@ -27,7 +27,7 @@ drawer: [
 
 consumes: {
 	liquids: [
-		b2-0a-blood/0.5
+		blood/0.5
 	]
 }
 
@@ -42,13 +42,13 @@ research: {
 }
 
 researchCost: [
-	a0-0a-debris/2000
-	a2-0a-silver/1200
-	b1-0a-fragment/300
+	debris/2000
+	silver/1200
+	fragment/300
 ]
 
 requirements: [
-	a0-0a-debris/15
-	f2-0a-elderflesh/8
+	debris/15
+	elderflesh/8
 ]
 category: defense

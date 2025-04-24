@@ -1,5 +1,5 @@
 type: Floor
 variants: 2
 
-itemDrop: b0-1a-grating-chunk
+itemDrop: grating-chunk
 playerUnmineable: true
