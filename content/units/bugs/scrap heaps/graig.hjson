@@ -352,7 +352,7 @@ abilities: [
 	{
 		type: SpawnDeathAbility
 		amount: 4
-		unit: c-meld-d1-0a-braig
+		unit: braig
 	}
 ]
 

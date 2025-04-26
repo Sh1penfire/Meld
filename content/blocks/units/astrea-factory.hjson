@@ -4,7 +4,7 @@ size: 5
 
 plans: [
 	{
-	unit: a-strata-d0-0a-astrea
+	unit: astrea
 	requirements: [
 		debris/75
 		electrum-sheet/50
@@ -30,7 +30,7 @@ requirements: [
 
 category: units
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 researchCost: [
 	debris/80

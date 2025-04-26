@@ -2,18 +2,18 @@ type: missile
 lifetime: 900
 flying: true
 shadowElevation: 0.1
-speed: 4.5
+speed: 3.2
 
-health: 120
+health: 210
 
 drag: 0.12
 accel: 0.1
 
 hitSize: 16
 
-mineSpeed: 10
-mineTier: 5
-itemCapacity: 45
+mineSpeed: 8
+mineTier: 3
+itemCapacity: 15
 
 fogRadius: 0
 lightRadius: 45
@@ -34,7 +34,20 @@ mineItems: [
 ]
 
 weapons: [
-//Death explosion to spawn puddles
+//Death explosion to spawn next unit
+    {
+        x: 0
+        y: 0
+        mirror: false
+        shootCone: 180
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        bullet: {
+            spawnUnit: forlorn-reef
+        }
+    }
+//Death explosion
     {
         x: 0
         y: 0
@@ -50,14 +63,13 @@ weapons: [
             hittable: false
             fragBullets: 15
             fragLifeMin: 0.6
-            puddles: 12
-            puddleRange: 12
-            puddleAmount: 5.5
+            puddles: 4
+            puddleRange: 4
+            puddleAmount: 2.5
             puddleLiquid: blood
-            fragBullets: 25
+            fragBullets: 9
             fragBullet: {
                 sprite: meld-thorn
-                lifetime: 85
                 width: 3
                 height: 9
                 status: mangrove-a1-infested
@@ -72,16 +84,16 @@ weapons: [
 		y: 0
 		shootY: 0
 		alwaysShooting: true
-		reload: 15
+		reload: 3610
+		shoot: {
+			firstShotDelay: 0
+            shotDelay: 15
+            shots: 120
+		}
         shootSound: none
 		bullet: {
 			instantDisappear: true
 			hitEffect: none
-            despawnHit: true
-            puddles: 1
-            puddleRange: 3
-            puddleAmount: 1.5
-            puddleLiquid: blood
 			shootEffect: {
 				region: meld-blood
                 length: 0
@@ -293,5 +305,5 @@ abilities: [
 	}
 ]
 
-research: j-b1-0a-drone-bay
+research: b1-0a-drone-bay
 researchCostMultiplier: 0

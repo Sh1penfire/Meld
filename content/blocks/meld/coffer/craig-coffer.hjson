@@ -12,7 +12,7 @@ destroyBullet: {
 	despawnEffect: false
 	fragBullets: 3
 	fragBullet: {
-		spawnUnit: c-meld-d0-0a-craig
+		spawnUnit: craig
 	}
 }
 

@@ -5,7 +5,7 @@ placeableLiquid: true
 category: crafting
 
 baseEfficiency: 0
-itemCapacity: 60
+itemCapacity: 30
 
 attribute: steam
 baseEfficiency: 0
@@ -20,34 +20,101 @@ craftTime: 60
 liquidCapacity: 80
 
 drawer: [
+#Left section
 	{
 		type: DrawRegion
-		suffix: -bottom
+		suffix: -bottom2
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: ichor
+		padRight: 13.5
+		padBottom: 4.75
+		padTop: 4.75
+		padLeft: 3
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder-large
+		y: 5
+		x: -4.5
+		spinSprite: true
+		rotateSpeed: -10
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder-large
+		y: -5
+		x: -4.5
+		spinSprite: true
+		rotateSpeed: 10
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: ichor
+		alpha: 0.3
+		padRight: 13.5
+		padBottom: 4.75
+		padTop: 4.75
+		padLeft: 3
+	}
+#Right section
+	{
+		type: DrawRegion
+		suffix: -bottom1
 		layer: 29
 	}
 	{
 		type: DrawLiquidTile
 		drawLiquid: aspect
 		padding: 1.5
-	}
-	{
-		type: DrawCircles
-		amount: 3
-		color: cbdbfc
-		radius: 10
-	}
-	{
-		type: DrawRegion
+		padLeft: 12
+		padBottom: 3
+		padTop: 3
+		padRight: 3
 	}
 	{
 		type: DrawRegion
-		suffix: -mixer
+		suffix: -grinder
+		y: -6
+		x: 2
 		spinSprite: true
-		rotateSpeed: 2.5
+		rotateSpeed: 30
 	}
 	{
 		type: DrawRegion
-		suffix: -top
+		suffix: -grinder
+		y: -2
+		x: 5
+		spinSprite: true
+		rotateSpeed: -30
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder
+		y: 2
+		x: 2
+		spinSprite: true
+		rotateSpeed: 30
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder
+		y: 6
+		x: 5
+		spinSprite: true
+		rotateSpeed: -30
+	}
+#End of sections
+	{
+		type: DrawParticles
+		color: 6b4e4eb1
+		x: 3
+		alpha: 0.15
+	}
+	{
+		type: DrawRegion
 	}
 ]
 

@@ -32,14 +32,14 @@ weapons: [
 			type: BulletType
 			spawnBullets: [
 				{
-					spawnUnit: c-meld-d0-1a-afraig
+					spawnUnit: afraig
 				}
 			]
 			instantDisappear: true
 			killShooter: true
 			fragBullets: 3
 			fragBullet: {
-				spawnUnit: c-meld-d0-0a-craig
+				spawnUnit: craig
 			}
 			hitEffect: none
 			shootEffect: none

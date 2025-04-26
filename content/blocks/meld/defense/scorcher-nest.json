@@ -40,7 +40,7 @@ destroyBullet: {
         hittable: false
         hitEffect: false
         despawnEffect: false
-		despawnUnit: c-meld-c0-1a-scorcher
+		despawnUnit: scorcher
 	}
 }
 
@@ -156,7 +156,7 @@ shootEffect: {
 
 ammoTypes: {
 	ichor: {
-		spawnUnit: scorcher
+		spawnUnit: scorcher-nest-crystal
 	}
 }
 

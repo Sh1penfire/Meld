@@ -12,7 +12,7 @@ destroyBullet: {
 	despawnEffect: false
 	fragBullets: 2
 	fragBullet: {
-		spawnUnit: c-meld-d1-2a-pointago
+		spawnUnit: pointago
 	}
 }
 

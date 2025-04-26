@@ -1,20 +1,18 @@
 type: flying
 flying: true
 shadowElevation: 0.1
-speed: 1.8
+speed: 2.2
 
-health: 620
+health: 250
 
-drag: 0.08
-accel: 0.15
+drag: 0.03
+accel: 0.05
 
-hitSize: 21
-rotateSpeed: 5.5
+hitSize: 16
+rotateSpeed: 4.5
 engineOffset: 13
 engineSize: 0
 crashDamageMultiplier: 2
-maxRange: 145
-range: 150
 
 faceTarget: true
 deathExplosionEffect: {
@@ -73,70 +71,70 @@ deathExplosionEffect: {
 
 weapons: [
 	{
-		name: spillway-weapon
 		x: 0
 		y: 0
-		top: false
 		mirror: false
-		rotate: true
-		rotateSpeed: 0
-		shootCone: 180
+		rotate: false
+		shootCone: 10
 		reload: 180
 		recoil: 0
 		inaccuracy: 5
-		shootSound: flame
-		shootStatus: unmoving
-		shootStatusDuration: 45
-		linearWarmup: true
-		shootWarmupSpeed: 0.01
-		minWarmup: 1
-		
 		shoot: {
-			firstShotDelay: 25
+			shots: 3
+			shotDelay: 5
 		}
+		shootSound: flame
+		shootStatus: slow
+		shootStatusDuration: 5
+		
 		parts: [
 			{
 				type: RegionPart
-				name: meld-spillway-side
-				mirror: true
-				moveRot: -30
-				progress: {
-					type: warmup
-					ops: [
-						{
-							op: curve
-							interp: pow5Out
-						}
-					]
-				}
+				name: meld-pester-gel
+				progress: smoothReload
+				color: ffffff
+				colorTo: ffffff00
+				outline: false
 			}
 			{
 				type: RegionPart
-				name: meld-spillway-projectile
-				moveY: 10
-				layer: 114
-				color: ffffff00
-				colorTo: ffffff
-				outline: false
-				progress: {
-					type: charge
-					ops: [
-						{
-							op: curve
-							interp: pow5In
-						}
-					]
-				}
+				name: meld-pester-barrel
+				progress: recoil
+				moveY: -3
+				layerOffset: -0.1
 			}
 		]
 
 		
 
 		bullet: {
-			spawnUnit: spillway-projectile
-			rangeOverride: 200
-			recoil: 5
-			killShooter: true
+			type: BulletType
+			damage: 35
+			pierce: true
+			pierceBuilding: true
+			scaleLife: false
+			speed: 2.8
+			lifetime: 15
+			smokeEffect: none
+			recoil: 1.5
+			lightRadius: 0
+			despawnEffect: none
+            		status: dissolving
+            		statusDuration: 15
+			shootEffect: {
+					type: ParticleEffect
+					cone: 5
+					lifetime: 30
+					baseLength: 0
+					particles: 35
+					length: 60
+					sizeFrom: 3.5
+					sizeTo: 0
+					colorFrom: feafea
+					colorTo: d26ab100
+					interp: pow5Out
+					sizeInterp: pow2In
+			}
 		}
 	}
 	{
@@ -171,25 +169,70 @@ weapons: [
 			hittable: false
 		}
 	}
+	{
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 6
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		bullet: {
+			type: BulletType
+			collides: false
+			collidesAir: false
+			collidesTiles: true
+			hitSound: none
+
+			rangeOverride: 10
+			hitEffect: none
+			speed: 0
+			splashDamageRadius: 25
+			instantDisappear: true
+			splashDamage: 1
+			hittable: false
+            smokeEffect: none
+            shootEffect: none
+            despawnEffect: none
+            hitEffect: [
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 45
+                    length: 35
+                    sizeFrom: 2
+                    sizeTo: 3.5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+                }
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 35
+                    length: 65
+                    sizeFrom: 1
+                    sizeTo: 2.5
+					colorFrom: e5aed7
+					colorTo: e5aed700
+                }
+            ]
+		}
+	}
 ]
 
 abilities: [
 	{
-		type: SpawnDeathAbility
-		amount: 2
-		unit: c-meld-d0-0a-craig
-	}
-	{
-		type: SpawnDeathAbility
-		amount: 1
-		unit: c-meld-g0-0a-wuba
-	}
-	{
 		type: MoveEffectAbility
-		x: 10
+		x: 0
 		y: -9
 		rotateEffect: true
-		rotation: 225
+		rotation: 180
 		effect: {
 			type: MultiEffect
 			effects: [
@@ -233,17 +276,17 @@ abilities: [
 	}
 	{
 		type: MoveEffectAbility
-		x: -10
+		x: 0
 		y: -9
 		rotateEffect: true
-		rotation: 135
+		rotation: 180
+		minVelocity: 0
 		effect: {
 			type: MultiEffect
 			effects: [
 				{
 					type: ParticleEffect
-					cone: 45
-					lifetime: 15
+					lifetime: 35
 					baseLength: 0
 					particles: 2
 					length: 15
@@ -254,8 +297,7 @@ abilities: [
 				}
 				{
 					type: ParticleEffect
-					cone: 45
-					lifetime: 15
+					lifetime: 35
 					baseLength: -5
 					particles: 3
 					length: 15
@@ -263,17 +305,6 @@ abilities: [
 					sizeTo: 0
 					colorFrom: e5aed700
 					colorTo: e5aed7
-				}
-				{
-					type: ParticleEffect
-					cone: 45
-					lifetime: 25
-					length: 25
-					particles: 2
-					sizeFrom: 0
-					sizeTo: 4
-					colorFrom: e5aed7
-					colorTo: e5aed700
 				}
 			]
 		}

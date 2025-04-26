@@ -29,6 +29,7 @@ consumes: {
 
 drillMultipliers: {
 	electrum-sheet: 2
+	resonarum: 0.5
 }
 
 sparkColor: 8cc7ee

@@ -810,7 +810,7 @@ requirements: [
 	debris/350
 	carbolith/450
 	silver/350
-    resonarum/150
+	resonarum/450
 ]
 
 consumes: {

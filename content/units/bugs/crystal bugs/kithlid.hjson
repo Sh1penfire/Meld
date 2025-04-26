@@ -492,22 +492,22 @@ abilities: [
     {
         type: SpawnDeathAbility
         amount: 20
-        unit: c-meld-c0-0a-jilla
+        unit: jilla
     }
     {
         type: SpawnDeathAbility
         amount: 15
-        unit: c-meld-d0-0a-craig
+        unit: craig
     }
     {
         type: SpawnDeathAbility
         amount: 8
-        unit: c-meld-c1-0a-gilla
+        unit: gilla
     }
     {
         type: SpawnDeathAbility
         amount: 5
-        unit: c-meld-d1-0a-braig
+        unit: braig
     }
     {
         type: SpawnDeathAbility

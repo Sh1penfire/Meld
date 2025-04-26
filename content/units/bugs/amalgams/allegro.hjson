@@ -415,17 +415,17 @@ abilities: [
     {
         type: SpawnDeathAbility
         amount: 8
-        unit: c-meld-c0-1a-scorcher
+        unit: scorcher
     }
     {
         type: SpawnDeathAbility
         amount: 4
-        unit: c-meld-d0-0a-craig
+        unit: craig
     }
     {
         type: SpawnDeathAbility
         amount: 1
-        unit: c-meld-d1-0a-braig
+        unit: braig
     }
 ]
 

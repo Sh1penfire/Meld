@@ -183,7 +183,7 @@ consumes: {
 
 category: effect
 
-research: h-a0-0a-core-raft
+research: core-raft
 researchCost: [
     resonarum/50
 ]

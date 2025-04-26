@@ -23,6 +23,8 @@ inaccuracy: 8
 
 shootY: 7
 
+ammoPerShot: 3
+
 drawer: {
 	type: DrawTurret
 	parts: [

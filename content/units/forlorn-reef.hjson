@@ -1,28 +1,31 @@
 type: missile
-lifetime: 3600
+lifetime: 900
 flying: true
 shadowElevation: 0.1
-speed: 2.5
+speed: 4.5
 
-health: 250
+health: 120
 
 drag: 0.12
 accel: 0.1
 
 hitSize: 16
 
-mineSpeed: 4
-mineTier: 3
-itemCapacity: 10
+mineSpeed: 10
+mineTier: 4
+itemCapacity: 45
 
 fogRadius: 0
 lightRadius: 45
 lightOpacity: 1
 rotateSpeed: 6
 
+drawCell: false
+
 faceTarget: false
 controller: MinerAI
 defaultController: MinerAI
+playerControllable: false
 
 mineItems: [
 	compacted-masses
@@ -41,7 +44,39 @@ weapons: [
         aiControllable: false
         shootOnDeath: true
         bullet: {
-            spawnUnit: a-strata-c0-1b-bloodied-reef
+            spawnUnit: shambling-reef
+        }
+    }
+//Death explosion to spawn puddles
+    {
+        x: 0
+        y: 0
+        shootCone: 180
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        bullet: {
+            instantDisappear: true
+            hitEffect: none
+            collides: false
+            absorbable: false
+            hittable: false
+            fragBullets: 7
+            fragLifeMin: 0.6
+            puddles: 5
+            puddleRange: 9
+            puddleAmount: 3.5
+            puddleLiquid: blood
+            fragBullets: 25
+            fragBullet: {
+                sprite: meld-thorn
+                lifetime: 85
+                width: 3
+                height: 9
+                status: mangrove-a1-infested
+                statusDuration: 60
+                despawnEffect: none
+            }
         }
     }
 //Blood particles
@@ -49,18 +84,17 @@ weapons: [
 		x: 0
 		y: 0
 		shootY: 0
-        mirror: false
 		alwaysShooting: true
-		reload: 3610
-		shoot: {
-			firstShotDelay: 2700
-            shotDelay: 15
-            shots: 120
-		}
+		reload: 15
         shootSound: none
 		bullet: {
 			instantDisappear: true
 			hitEffect: none
+            despawnHit: true
+            puddles: 1
+            puddleRange: 3
+            puddleAmount: 0.5
+            puddleLiquid: blood
 			shootEffect: {
 				region: meld-blood
                 length: 0
@@ -72,26 +106,6 @@ weapons: [
                 interp: slope
                 useRotation: false
 			}
-		}
-	}
-	{
-        type: PointDefenseWeapon
-		name: reef-blaster
-		mirror: false
-		rotate: true
-		x: 0
-		y: 1.5
-		reload: 15
-		rotateSpeed: 28.5
-		recoil: 1.25
-        targetInterval: 4
-        targetSwitchInterval: 4
-        shootSound: lasershoot
-		bullet: {
-            shootEffect: sparkShoot
-            hitEffect: pointHit
-            maxRange: 32
-            damage: 8
 		}
 	}
 ]
@@ -166,7 +180,6 @@ parts: [
 	}
         radius: 32
 	radiusTo: 4
-	stroke: 0
 	strokeTo: 5
         circle: true
         hollow: true
@@ -178,21 +191,21 @@ parts: [
 //Circle + halo
     {
         type: ShapePart
-        progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-                {
-                    op: curve
-                    interp: sine
-                }
-            ]
-        }
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
         radius: 32
-	   radiusTo: 4
+	radiusTo: 4
         circle: true
         hollow: true
         stroke: 1
@@ -201,21 +214,21 @@ parts: [
     }
     {
         type: HaloPart
-        progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-                {
-                    op: curve
-                    interp: sine
-                }
-            ]
-        }
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
         haloRadius: 32
-        haloRadiusTo: 4
+	haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -226,21 +239,21 @@ parts: [
     }
     {
         type: HaloPart
-            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-                {
-                    op: curve
-                    interp: sine
-                }
-            ]
-        }
+	progress: {
+		type: life
+		ops: [
+			{
+				op: curve
+				interp: pow5In
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
         haloRadius: 32
-        haloRadiusTo: 4
+	haloRadiusTo: 4
         radius: 3
         shapes: 2
         triLength: 10
@@ -250,7 +263,7 @@ parts: [
         haloRotateSpeed: 1.5
         shapeRotation: 180
     }
-    //Flare
+//Flare
 	{
                 type: FlarePart
                 radius: 0
@@ -291,17 +304,7 @@ abilities: [
 		color: bf92f9
 		teamColor: true
 	}
-    {
-        type: RegenAbility
-        amount: 0.15
-    }
 ]
 
-immunities: [
-	mangrove-d0-mercury-poisoning
-	shattered
-	lacerated
-]
-
-research: j-b1-0a-drone-bay
+research: b1-0a-drone-bay
 researchCostMultiplier: 0

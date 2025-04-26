@@ -553,7 +553,7 @@ destroyBulletSameTeam: true
 destroyBullet: {
     spawnBullets: [
         {
-            spawnUnit: c-meld-c1-0a-gilla
+            spawnUnit: gilla
         }
     ]
     instantDisappear: true
@@ -563,7 +563,7 @@ destroyBullet: {
     absorbable: false
     fragBullets: 2
     fragBullet: {
-        spawnUnit: c-meld-c1-1a-killa
+        spawnUnit: killa
     }
 }
 

@@ -21,28 +21,21 @@ requirements: [
 
 drawer: [
 	{
-		type: DrawRegion
-		layer: 29
-		suffix: -base
-	}
-	{
 		type: DrawLiquidTile
 		drawLiquid: ichor
 		alpha: 0.6
 		padding: 1.5
 	}
 	{
-		type: DrawCells
-		range: 10
-		color: 9e2e7b
-		particleColorFrom: 892a6b
-		particleColorTo: e5aed7
-		particles: 15
+		type: DrawRegion
+		layer: 29
+		suffix: -groves
+		rotateSpeed: -3
+		spinSprite: true
 	}
 	{
 		type: DrawRegion
-		layer: 29
-		suffix: -gum
+		suffix: -middle
 	}
 	{
 		type: DrawRegion

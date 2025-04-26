@@ -2,7 +2,7 @@ type: CoreBlock
 health: 800
 size: 3
 
-unitType: a-strata-a0-1a-omega
+unitType: omega
 solid: false
 squareSprite: false
 buildVisibility: shown

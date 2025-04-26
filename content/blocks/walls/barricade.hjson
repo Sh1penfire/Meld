@@ -4,7 +4,7 @@ health: 120
 armor: 45
 
 research: {
-	parent: h-a0-0a-core-raft
+	parent: core-raft
 	objectives: [
 	]
 }

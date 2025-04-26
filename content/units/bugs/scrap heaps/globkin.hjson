@@ -332,17 +332,17 @@ abilities: [
     {
         type: SpawnDeathAbility
         amount: 2
-        unit: c-meld-d0-0a-craig
+        unit: craig
     }
     {
         type: SpawnDeathAbility
         amount: 2
-        unit: c-meld-d1-0a-braig
+        unit: braig
     }
 	{
 		type: SpawnDeathAbility
 		amount: 1
-		unit: c-meld-d0-1a-afraig
+		unit: afraig
 	}
 ]
 

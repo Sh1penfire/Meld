@@ -12,7 +12,7 @@ accel: 0.1
 hitSize: 16
 
 mineSpeed: 10
-mineTier: 4
+mineTier: 5
 itemCapacity: 45
 
 fogRadius: 0
@@ -34,19 +34,6 @@ mineItems: [
 ]
 
 weapons: [
-//Death explosion to spawn next unit
-    {
-        x: 0
-        y: 0
-        mirror: false
-        shootCone: 180
-        controllable: false
-        aiControllable: false
-        shootOnDeath: true
-        bullet: {
-            spawnUnit: a-strata-c0-1d-shambling-reef
-        }
-    }
 //Death explosion to spawn puddles
     {
         x: 0
@@ -61,11 +48,11 @@ weapons: [
             collides: false
             absorbable: false
             hittable: false
-            fragBullets: 7
+            fragBullets: 15
             fragLifeMin: 0.6
-            puddles: 5
-            puddleRange: 9
-            puddleAmount: 3.5
+            puddles: 12
+            puddleRange: 12
+            puddleAmount: 5.5
             puddleLiquid: blood
             fragBullets: 25
             fragBullet: {
@@ -93,7 +80,7 @@ weapons: [
             despawnHit: true
             puddles: 1
             puddleRange: 3
-            puddleAmount: 0.5
+            puddleAmount: 1.5
             puddleLiquid: blood
 			shootEffect: {
 				region: meld-blood
@@ -306,5 +293,5 @@ abilities: [
 	}
 ]
 
-research: j-b1-0a-drone-bay
+research: b1-0a-drone-bay
 researchCostMultiplier: 0

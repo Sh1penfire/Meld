@@ -23,7 +23,7 @@ deathExplosionEffect: {
     effects: [
         {
             type: ParticleEffect
-            region: meld-c-meld-c0-0a-jilla-segment1
+            region: meld-jilla-segment1
             layer: 65
             lifetime: 180
             length: 450

@@ -66,7 +66,9 @@ outputItems: [
 ]
 
 requirements: [
- 	debris/60
+ 	debris/120
+	silver/35
+	riplom/120
 ]
 
 research: {

@@ -40,7 +40,7 @@ destroyBullet: {
         hittable: false
         hitEffect: false
         despawnEffect: false
-		despawnUnit: c-meld-d0-1a-afraig
+		despawnUnit: afraig
 	}
 }
 

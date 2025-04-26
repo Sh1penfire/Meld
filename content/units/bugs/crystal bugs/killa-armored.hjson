@@ -56,7 +56,7 @@ abilities: [
 	{
 		type: SpawnDeathAbility
 		amount: 1
-		unit: c-meld-c1-1a-killa
+		unit: killa
 	}
 ]
 

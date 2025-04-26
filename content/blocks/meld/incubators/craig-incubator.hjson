@@ -567,7 +567,7 @@ destroyBullet: {
             absorbable: false
             fragBullets: 3
             fragBullet: {
-                spawnUnit: c-meld-d0-1a-afraig
+                spawnUnit: afraig
             }
         }
     ]
@@ -578,7 +578,7 @@ destroyBullet: {
     absorbable: false
     fragBullets: 2
     fragBullet: {
-        spawnUnit: c-meld-d0-0a-craig
+        spawnUnit: craig
     }
 }
 

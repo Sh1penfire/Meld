@@ -8,7 +8,7 @@ hasPower: false
 
 plans: [
 	{
-	unit: a-strata-b0-0a-shark
+	unit: shark
 	requirements: [
 		silver/40
 		carbolith/30
@@ -31,7 +31,7 @@ requirements: [
 
 category: units
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 researchCost: [
 	debris/80

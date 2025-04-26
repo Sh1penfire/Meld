@@ -14,7 +14,7 @@ destroyBullet: {
 	despawnEffect: false
 	fragBullets: 2
 	fragBullet: {
-		spawnUnit: c-meld-c0-0a-jilla
+		spawnUnit: jilla
 	}
 }
 

@@ -22,6 +22,7 @@
   minGameVersion: 146
   contentOrder:
   [
+#Attributes
     attribute-aether
     attribute-data
     attribute-data-power
@@ -38,6 +39,195 @@
     attribute-nectar
     attribute-rift
     attribute-soil
+#Crafters
+    earthbound-infuser
+    heating-basin
+    amalgam-decomposer
+    brick-conglomerator
+    electrum-amalgamator
+#Turrets
+    sunder
+    molotov
+    vivisection
+    tantrum
+    vivalo
+    flurry
+    downpour
+#Liquid distrib
+    channel-face
+    channel-node
+    channel-hub
+    channel-director
+    channel-director-pressurized
+    blossoming-channel
+    aspect-outlet
+    filtration-unit
+#Item distrib
+    chute
+    chute-router
+    chute-bridge
+    chute-overflow
+    chute-unloader
+    glasswork-chute
+#Unit blocks
+    shark-factory
+    remora-factory
+    astrea-factory
+    narwhal-factory
+#Effect
+    core-raft-dormant
+    core-raft
+    pad-omega
+    core-bunker
+    buffer
+    nullifier
+    movement-anchor
+    sonar-spire
+#Items
+    debris
+    carbolith
+    compacted-brick
+    stony-gloop
+    silver
+    electrum-sheet
+    vitric-mesh
+    shiny-globule
+    stormstruck-shell
+    resonarum
+    dissonitre
+    riplom
+    riploko
+    technoscrap
+    grating-chunk
+    fragment
+    memory-shard
+    bioscrap-graft
+    industrial-rubble
+    industrial-rubble-cracked
+    astral-fulgurite
+    meld-shard
+    larval-plating
+    metalic-chunk
+    metalic-globule
+    stony-particulate
+    bramble-vine
+    compacted-masses
+    starving-masses
+    elderflesh
+    blossoming-elderflesh
+    coagulated-vigor
+    homunculus-chunk
+    larva
+#fluids
+    aether
+    aspect
+    meld
+    liquid-data
+    "null"
+    nectar
+    mercury
+    blood
+    ooze
+    rift
+    warp
+    ichor
+    lumeniz
+    waste
+    cold-waste
+    valid
+    deposit
+    progress
+    charge
+    dissonance
+    EMP-small
+#Strata units
+    bulbhead
+    omega
+    outcast
+    shark
+    narwhal
+    reef
+    bloodied-reef
+    forlorn-reef
+    shambling-reef
+    astrea
+    remora
+    allegro-repair
+    anchor-power
+#Fringe units
+    enforcer
+    impaler
+    time-keeper
+    blob
+    bulbhead-sonar
+#Meld units
+    jilla
+    scorcher
+    gilla
+    killa
+    killa-armored
+    craig
+    afraig
+    braig
+    poisag
+    pointago
+    graig
+    pester
+    spillway
+    zip
+    gala
+    wuba
+    globkin
+    allegro
+    tracker
+    fletch
+    bulwark
+    inator
+    stoner
+    kathid
+    kithlid
+    craig-cluster
+    diffuser-power
+    dragonfly
+    enforcer-missile
+    flarestack-light
+    gilla-cluster
+    goosplosion-lance
+    graig-projectile
+    impaler-autoturret
+    invis template
+    jilla-cluster
+    killa-cluster
+    kithlid-amplifier-death
+    kithlid-projectile
+    meld-amplifier-power
+    meld-beacon-power
+    music-box
+    narwhal-payload
+    narwhal-strike
+    nullifier-lance
+    nullifier-weapons
+    observer
+    overseer-assistant
+    overseer-top
+    poisag-projector
+    pork
+    rapid-enemy-mobalization
+    scorcher
+    scorcher-cluster
+    soontm
+    spectre
+    spectre-spawn
+    spillway-projectile
+    spire-sonar
+    splurger
+    tracker-projectile
+    tracker-projectile
+    vision-giver
+    wuba-exploding
+    z-the-grater-good
+
+#Environmental tiles
     aether-growth
     aspect-soil
     electrum-deposit
@@ -54,8 +244,8 @@
     silver-deposit
     soft-sand
     vitric-weave
-    carbolith-wall
-    carbolith-wall-depleted
+    carbolith-deposit
+    carbolith-deposit-depleted
     carbonic-vent
     carbonic-vent-ichor
     carbonic-wall
@@ -68,8 +258,8 @@
     ichor-earth
     mercury-deposit
     mercury-suroundings
-    mixture-stone
     carbonic-plates
+    mixture-stone
     debris-deposit
     debris-nodule
     large-debris-deposit
@@ -133,6 +323,7 @@
     meld-swampland
     meld-trenchland
     meld-wall
+    silver-deposit-meld
     databank
     dissonant-fragments
     dissonant-shale
@@ -148,7 +339,7 @@
     gale-shale-wall
     gale-wall
     heated-growth
-    plates
+    gale-plates
     resonant-stone
     resonant-stone-wall
     resonarum-crystal
@@ -197,59 +388,5 @@
     tech-weave-alt
     tech-weave-alt-meld
     tech-weave-meld
-    debris
-    carbolith
-    compacted-brick
-    stony-gloop
-    silver
-    electrum-sheet
-    vitric-mesh
-    shiny-globule
-    stormstruck-shell
-    resonarum
-    dissonitre
-    riplom
-    riploko
-    technoscrap
-    grating-chunk
-    fragment
-    memory-shard
-    bioscrap-graft
-    industrial-rubble
-    industrial-rubble-cracked
-    astral-fulgurite
-    meld-shard
-    larval-plating
-    metalic-chunk
-    metalic-globule
-    stony-particulate
-    bramble-vine
-    compacted-masses
-    starving-masses
-    elderflesh
-    blossoming-elderflesh
-    coagulated-vigor
-    homunculus-chunk
-    larva
-    aether
-    aspect
-    meld
-    liquid-data
-    "null"
-    nectar
-    mercury
-    blood
-    ooze
-    rift
-    warp
-    ichor
-    lumeniz
-    waste
-    cold-waste
-    valid
-    deposit
-    progress
-    charge
-    dissonance
   ]
 }

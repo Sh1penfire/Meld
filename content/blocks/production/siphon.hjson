@@ -71,7 +71,7 @@ requirements: [
 	carbolith/250
 ]
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 research: pressure-control
 researchCost: [

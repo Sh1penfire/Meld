@@ -40,7 +40,7 @@ destroyBullet: {
         hittable: false
         hitEffect: false
         despawnEffect: false
-		despawnUnit: c-meld-i0-0a-tracker
+		despawnUnit: tracker
 	}
 }
 

@@ -194,5 +194,5 @@ immunities: [
 	lacerated
 ]
 
-research: j-constructor-c0-0a-ship-factory
+research: constructor-ship-factory
 researchCostMultiplier: 0

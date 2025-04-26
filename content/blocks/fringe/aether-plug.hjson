@@ -54,7 +54,7 @@ requirements: [
  	debris/40
 ]
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 researchCost: [
 	debris/17

@@ -6,7 +6,7 @@ liquidCapacity: 200
 
 plans: [
 	{
-	unit: a-strata-e0-0a-remora
+	unit: remora
 	requirements: [
 		debris/120
 		electrum-sheet/40
@@ -30,7 +30,7 @@ requirements: [
 
 category: units
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 researchCost: [
 	debris/80

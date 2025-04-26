@@ -9,7 +9,7 @@ hasPower: false
 
 plans: [
 	{
-	unit: a-strata-c0-0a-narwhal
+	unit: narwhal
 	requirements: [
 		compacted-brick/40
 		stony-gloop/60
@@ -37,7 +37,7 @@ requirements: [
 
 category: units
 
-research: h-a0-0a-core-raft
+research: core-raft
 
 researchCost: [
 	debris/80

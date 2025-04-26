@@ -99,7 +99,7 @@ weapons: [
                         }
                     ]
                 }
-                name: meld-a-strata-a0-1a-omega-dash-glow
+                name: meld-omega-dash-glow
                 outline: false
                 blending: additive
                 color: ffffff00
@@ -153,7 +153,7 @@ weapons: [
                         }
                     ]
                 }
-                name: meld-a-strata-a0-1a-omega-dash-glow
+                name: meld-omega-dash-glow
                 outline: false
                 blending: additive
                 color: ffffff00
@@ -325,7 +325,7 @@ weapons: [
                         }
                     ]
                 }
-                name: meld-a-strata-a0-1a-omega-dash-glow
+                name: meld-omega-dash-glow
                 outline: false
                 blending: additive
                 color: e6b47f00
@@ -731,4 +731,4 @@ immunities: [
 	mangrove-d0-mercury-poisoning
 ]
 
-research: h-a0-0a-core-raft
+research: core-raft
