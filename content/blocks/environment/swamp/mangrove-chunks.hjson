@@ -1,0 +1,4 @@
+type: Floor
+variants: 3
+itemDrop: elderflesh
+blendGroup: peat

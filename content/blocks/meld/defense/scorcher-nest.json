@@ -1,0 +1,182 @@
+type: LiquidTurret
+size: 4
+health: 1280
+range: 80
+
+shootWarmupSpeed : 0.09
+
+reload: 360
+rotateSpeed: 0
+shootCone: 180
+
+recoil: 0.25
+
+recoil: 0
+inaccuracy: 0
+
+liquidCapacity: 150
+
+shootY: 0
+
+squareSprite: false
+
+loopSound: none
+shootSound: mediumCannon
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 12
+    fragLifeMin: 0.2
+	fragBullet: {
+        lifetime: 12
+        absorbable: false
+        collides: false
+        hittable: false
+        hitEffect: false
+        despawnEffect: false
+		despawnUnit: scorcher
+	}
+}
+
+shoot: {
+    firstShotDelay: 60
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -blob-bottom
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: compress
+                        start: 0
+                        end: 0.5
+                    }
+                    {
+                        op: curve
+                        interp: slope
+                    }
+                ]
+            }
+            color: ffffff00
+            colorTo: ffffff
+			mirror: false
+			under: false
+            outline: false
+            layerOffset: 1
+		}
+		{
+			type: RegionPart
+			suffix: -blob
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: compress
+                        start: 0.2
+                        end: 0.8
+                    }
+                    {
+                        op: curve
+                        interp: slope
+                    }
+                ]
+            }
+            color: ffffff00
+            colorTo: ffffff
+			mirror: false
+			under: false
+            outline: false
+            layerOffset: 1
+		}
+		{
+			type: RegionPart
+			suffix: -crystal
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: compress
+                        start: 0.5
+                        end: 1
+                    }
+                ]
+            }
+            color: ffffff00
+            colorTo: ffffff
+			mirror: false
+			under: false
+            outline: false
+            layerOffset: 1
+		}
+	]
+}
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+
+
+
+ammoTypes: {
+	ichor: {
+		spawnUnit: scorcher-nest-crystal
+	}
+}
+
+consumes: {
+    liquid: {
+        liquid: ichor
+        amount: 0.01
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+requirements: [
+	larval-plating/45
+	carbolith/35
+]
+
+category: turret

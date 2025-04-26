@@ -1,0 +1,8 @@
+type: Floor
+variants: 0
+
+blendGroup: fringe-plating
+
+attributes: {
+	killswitch: 1
+}

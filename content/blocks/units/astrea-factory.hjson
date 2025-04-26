@@ -1,0 +1,40 @@
+type: UnitFactory
+health: 1100
+size: 5
+
+plans: [
+	{
+	unit: astrea
+	requirements: [
+		debris/75
+		electrum-sheet/50
+    	]
+    	time: 540
+  	}
+]
+
+consumes: {
+	liquids: [
+		aspect/10
+		mercury/2
+	]
+}
+
+configurable: false
+
+requirements: [
+ 	debris/180
+	silver/120
+	electrum-sheet/210
+]
+
+category: units
+
+research: core-raft
+
+researchCost: [
+	debris/80
+	carbolith/45
+	silver/35
+]
+

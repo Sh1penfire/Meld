@@ -1,0 +1,86 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: production
+
+
+attribute: aether
+baseEfficiency: 0
+minEfficiency: 8.9
+maxBoost: 2
+boostScale: 0.111111111111111111111111111111111111
+
+liquidCapacity: 300
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 8
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aether
+		padding: 1.5
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 2
+		flameRadiusScl: 4
+		flameRadiusMag: 1
+	}
+	{
+		type: DrawPistons
+		angleOffset: 45
+		sinMag: 2.25
+		sinScl: 12
+		lenOffset: 0.35
+		sides: 2
+	}
+	{
+		type: DrawPistons
+		suffix: -piston-d
+		angleOffset: -45
+		sinMag: 2.25
+		sinScl: 12
+		lenOffset: 0.35
+		sides: 2
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+		layer: 30
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+outputLiquid: aether/1
+
+requirements: [
+ 	debris/40
+]
+
+research: liquid-logistics
+
+researchCost: [
+	debris/17
+]

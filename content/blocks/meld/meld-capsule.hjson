@@ -1,0 +1,31 @@
+type: ForceProjector
+size: 3
+
+customShadow: true
+
+phaseUseTime: 540
+phaseRadiusBoost: 5
+radius: 80
+shieldHealth: 45
+health: 540
+armor: 3
+
+consumes: {
+	liquids: [
+		meld/1
+	]
+  	items: {
+    		items: [
+      			meld-shard/1
+    		]
+    		optional: true
+  	}
+}
+
+requirements: [
+	meld-shard/30
+]
+
+squareSprite: false
+category: effect
+floating: true

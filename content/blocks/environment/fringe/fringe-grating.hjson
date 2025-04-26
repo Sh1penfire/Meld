@@ -1,0 +1,6 @@
+type: Floor
+variants: 0
+itemDrop: grating-chunk
+playerUnmineable: true
+
+blendGroup: fringe-plating

@@ -1,0 +1,45 @@
+type: ConsumeGenerator
+size: 5
+
+health: 540
+
+itemCapacity: 40
+liquidCapacity: 100
+powerProduction: 8
+
+placeableLiquid: true
+floating: true
+
+category: power
+
+itemDuration: 120
+
+explodeOnFull: true
+
+requirements: [
+	debris/200
+	compacted-brick/200
+	stony-gloop/140
+	silver/120
+]
+
+
+consumes: {
+	items: [
+		starving-masses/20
+	]
+	liquids: [
+		aspect/6.6666666664
+		mercury/0.25
+	]
+}
+
+outputLiquid: blood/1
+
+research: {
+	parent: murk-handling
+}
+
+researchCost: [
+    debris/20
+]

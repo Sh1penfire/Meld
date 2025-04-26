@@ -19,5 +19,5 @@ liquidCapacity: 60
 craftTime: 360
 
 requirements: [
-	b0-0a-technoscrap/50
+	technoscrap/50
 ]

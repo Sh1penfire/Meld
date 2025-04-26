@@ -18,34 +18,34 @@ category: liquid
 
 consumes: {
 	items: [
-		f2-0a-elderflesh/1
-		f3-0a-coagulated-vigor/1
+		elderflesh/1
+		coagulated-vigor/1
 	]
 	liquids: [
-		c0-0a-rift/1.6666666666
-		b0-0a-nectar/0.5
-		b1-0a-mercury/1.2
-		b2-0a-blood/0.1
-		b3-0a-ooze/5
+		rift/1.6666666666
+		nectar/0.5
+		mercury/1.2
+		blood/0.1
+		ooze/5
 	]
 }
 
 outputItems: [
-	f2-1a-blossoming-elderflesh/2
+	blossoming-elderflesh/2
 ]
 
 outputLiquids: [
-	b0-0a-nectar/0
-	b1-0a-mercury/0
-	b2-0a-blood/0
-	b3-0a-ooze/0
+	nectar/0
+	mercury/0
+	blood/0
+	ooze/0
 ]
 
 requirements: [
-	a0-0a-debris/120
-	a2-0a-silver/200
-	f0-0a-bramble-vine/150
-	f2-0a-elderflesh/230
-	f2-1a-blossoming-elderflesh/40
-	f3-0a-coagulated-vigor/120
+	debris/120
+	silver/200
+	bramble-vine/150
+	elderflesh/230
+	blossoming-elderflesh/40
+	coagulated-vigor/120
 ]

@@ -1,0 +1,17 @@
+type: SeaBush
+variants: 0
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+itemDrop: resonarum
+
+lobesMin: 3
+lobesMax: 4
+sclMin: 85
+sclMax: 135
+
+emitLight: true
+lightColor: 9dcdad7b
+lightRadius: 24

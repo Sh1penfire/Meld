@@ -1,0 +1,92 @@
+type: AttributeCrafter
+size: 2
+
+placeableLiquid: true
+category: production
+
+
+attribute: soil
+baseEfficiency: 0
+minEfficiency: 1
+maxBoost: 1
+
+liquidCapacity: 20
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aether
+		padding: 1.5
+	}
+	{
+		type: DrawArcSmelt
+		drawCenter: false
+	}
+	{
+		type: DrawParticles
+		y: 4
+		particles: 6
+		color: e899646a
+		particleSize: 2
+	}
+	{
+		type: DrawParticles
+		y: -4
+		particles: 6
+		color: e899646a
+		particleSize: 2
+	}
+    	{
+        	type: DrawGlowRegion
+    	}
+	{
+		type: DrawRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+consumes: {
+	items: [
+		dissonitre/1
+	]
+}
+
+outputLiquid: aether/0.3333333333333334
+
+requirements: [
+ 	debris/15
+	dissonitre/10
+]
+
+research: liquid-logistics
+
+researchCost: [
+	debris/17
+]
+
+
+
+researchCost: [
+ 	debris/240
+	carbolith/450
+]

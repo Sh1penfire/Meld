@@ -2,7 +2,7 @@ type: legs
 speed: 0.8
 
 health: 400
-armor: 45
+armor: 12
 
 drag: 0.12
 accel: 0.2

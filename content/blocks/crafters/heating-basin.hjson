@@ -1,0 +1,109 @@
+type: AttributeCrafter
+size: 3
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 50
+
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 0.00000001
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+dumpExtraLiquid: true
+
+craftTime: 30
+itemCapacity: 12
+liquidCapacity: 30
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	//Rightmost mercury fixture
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		padLeft: 21.25
+		padBottom: 10.25
+		padRight: 1.75
+		padTop: 10.25
+	}
+	//Pipe with mercury
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		padLeft: 2.25
+		padBottom: 8.75
+		padRight: 11.25
+		padTop: 13.25
+	}
+
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		padLeft: 10.25
+		padBottom: 21.25
+		padRight: 10.25
+		padTop: 1.75
+	}
+
+	{
+		type: DrawLiquidTile
+		drawLiquid: nectar
+		padLeft: 4.5
+		padBottom: 4.5
+		padTop: 16.75
+		padRight: 16.75
+	}
+	{
+		type: DrawRegion
+		suffix: -piping
+	}
+	{
+		type: DrawRegion
+		suffix: -towers
+	}
+]
+
+consumes: {
+	items: [
+		carbolith/1
+	]
+	liquids: [
+		nectar/1
+	]
+}
+
+outputLiquids: [
+	mercury/1
+]
+
+outputItems: [
+	debris/3
+]
+
+requirements: [
+ 	debris/80
+]
+
+research: {
+	parent: mercurial-extraction
+	objectives: [
+		nectar
+	]
+}
+
+researchCost: [
+	debris/200
+	carbolith/300
+]

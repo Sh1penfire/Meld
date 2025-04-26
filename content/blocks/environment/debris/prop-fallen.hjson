@@ -1,0 +1,8 @@
+type: WobbleProp
+variants: 4
+
+instantDeconstruct: false
+requirements: [
+	debris/5
+	technoscrap/7
+]

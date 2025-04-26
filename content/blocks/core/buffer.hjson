@@ -1,0 +1,18 @@
+type: StorageBlock
+health: 320
+size: 2
+
+solid: true
+itemCapacity: 200
+
+squareSprite: false
+coreMerge: false
+
+research: storage-hubs
+
+requirements: [
+	debris/65
+	technoscrap/85
+]
+
+category: effect

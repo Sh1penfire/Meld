@@ -1,0 +1,5 @@
+type: StaticWall
+variants: 2
+
+itemDrop: resonarum
+playerUnmineable: true

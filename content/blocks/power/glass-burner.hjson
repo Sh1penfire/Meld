@@ -1,0 +1,41 @@
+type: ConsumeGenerator
+size: 3
+
+health: 540
+
+itemCapacity: 12
+liquidCapacity: 100
+
+
+placeableLiquid: true
+floating: true
+
+category: power
+
+itemDuration: 60
+
+requirements: [
+	debris/120
+	silver/80
+	electrum-sheet/75
+]
+
+
+consumes: {
+	items: [
+		vitric-mesh/2
+		riplom/4
+	]
+}
+
+outputLiquid: rift/0.25
+
+powerProduction: 2
+
+research: {
+	parent: murk-handling
+}
+
+researchCost: [
+    debris/20
+]

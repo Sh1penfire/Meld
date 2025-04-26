@@ -1,0 +1,60 @@
+type: AttributeCrafter
+size: 5
+
+armor: 12
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 1
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+rotate: true
+quickRotate: true
+
+craftTime: 30
+itemCapacity: 60
+liquidCapacity: 600
+
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		bramble-vine/2
+	]
+	liquids: [
+		mercury/0
+	]
+}
+
+outputLiquids: [
+	mercury/12
+	ooze/0.5
+]
+
+requirements: [
+ 	debris/80
+	compacted-brick/120
+	stony-gloop/120
+]
+
+research: {
+	parent: peat-masher
+}
+
+researchCost: [
+	debris/200
+	silver/150
+]

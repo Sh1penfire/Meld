@@ -7,7 +7,7 @@ walkSoundPitchMax: 0.6
 cacheLayer: water
 isLiquid: true
 
-liquidDrop: a0-5a-meld
+liquidDrop: meld
 
 attributes: {
 	meld: 0.5

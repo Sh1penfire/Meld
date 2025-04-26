@@ -7,7 +7,7 @@ walkSoundPitchMax: 0.4
 
 isLiquid: true
 
-liquidDrop: a0-5a-meld
+liquidDrop: meld
 
 attributes: {
 	meld: 2

@@ -1,8 +1,0 @@
-type: Liquid
-gas: true
-temperature: 0.65
-
-color: cb8650
-alwaysUnlocked: true
-
-research: a0-0a-debris

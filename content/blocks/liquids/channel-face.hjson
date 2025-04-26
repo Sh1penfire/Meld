@@ -1,0 +1,18 @@
+type: LiquidJunction
+size: 1
+
+health: 80
+
+enableDrawStatus: false
+solid: false
+placeableLiquid: true
+
+category: liquid
+requirements: [
+	debris/2
+]
+
+research: liquid-logistics
+researchCost: [
+	debris/10
+]

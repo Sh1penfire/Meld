@@ -1,0 +1,9 @@
+type: LiquidJunction
+size: 1
+
+placeableLiquid: true
+
+category: liquid
+requirements: [
+	larval-plating/5
+]

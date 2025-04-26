@@ -1,0 +1,73 @@
+type: AttributeCrafter
+size: 2
+
+baseEfficiency: 0
+minEfficiency: 0.00000000000001
+attribute: data-power
+
+placeableLiquid: true
+category: effect
+
+dumpExtraLiquid: true
+
+liquidCapacity: 600
+itemCapacity: 60
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -ring
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -ring-glow1
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -ring-glow2
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: liquid-data
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		technoscrap/20
+	]
+	liquids: [
+		liquid-data/10
+	]
+}
+
+outputItem: fragment/2
+outputLiquids: [
+		null/0
+		liquid-data/0
+]
+
+requirements: [
+ 	debris/30
+	silver/60
+	technoscrap/120
+	grating-chunk/75
+]
+
+research: c-effect-a2-0a-data-miner
+
+researchCost: [
+	debris/300
+	silver/150
+	technoscrap/450
+]

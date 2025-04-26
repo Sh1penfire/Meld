@@ -1,0 +1,185 @@
+type: legs
+speed: 1.35
+strafePenalty: 0
+
+health: 420
+aimDst: 10
+range: 50
+drag: 0.8
+accel: 1.1
+hitSize: 16
+
+lightRadius: 80
+lightOpacity: 0.9
+range: 240
+rotateSpeed: 4.85
+
+buildBeamOffset: 6.75
+fogRadius: 10
+
+alwaysUnlocked: true
+
+legMoveSpace: 1.5
+legLength: 30
+legMaxLength: 2.25
+
+
+weapons: [
+    //main weapon
+    {
+        name: astrea-launcher
+        x: 0
+        y: -4.5
+        shootY: 4
+		mirror: false
+		alternate: false
+		rotate: true
+		rotateSpeed: 4.5
+		top: true
+		shootCone: 25
+		reload: 145
+		recoil: 6.25
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 25
+            shots: 1
+        }
+        
+		inaccuracy: 7
+        velocityRnd: 0.1
+		shootSound: saw-hit
+        parentizeEffects: false
+
+		parts: [
+            {
+                type: RegionPart
+                suffix: -back
+            }
+            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: 83a5be
+                color2: cae4ec
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow5In
+                }
+            }
+			{
+                type: RegionPart
+                suffix: -spike
+                mirror: false
+                outline: false
+                moveX: 4
+                growX: 0
+                color: ffffff
+                colorTo: ffffff00
+                growProgress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+			}
+            {
+                type: RegionPart
+                suffix: -door
+                mirror: false
+                outline: false
+                y: -4
+                moveY: 4
+                color: ffffff00
+                colorTo: ffffff
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: "-handle"
+                mirror: true
+
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+		]				
+
+        bullet: {
+            sprite: meld-thorn
+            scaleLife: false
+            speed: 8
+            lifetime: 30
+            shrinkY: 0.8
+            width: 6
+            height: 16
+            frontColor: cae4ec
+            backColor: 83a5be
+            damage: 65
+            keepVelocity: false
+            hitSound: bang
+            trailWidth: 2.2
+            trailLength: 7
+            trailColor: 83a5be
+            fragBullets: 4
+            fragRandomSpread: 25
+            fragLifeMin: 0
+            fragVelocityMin: 0.7
+            fragVelocityMax: 1
+            pierce: true
+            pierceCap: 2
+            knockback: 5
+            pierceArmor: true
+            fragOnHit: false
+            fragBullet: {
+                speed: 12.85
+                lifetime: 65
+                width: 4
+                height: 8
+                damage: 1
+                status: impaled
+                statusDuration: 10
+                pierce: true
+                pierceCap: 5
+                homingPower: 0.04
+                knockback: 6
+                drag: 0.07
+                keepVelocity: false
+                impact: true
+            }
+            rangeOverride: 240
+        }
+    }
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+	lacerated
+	wildlife-a1-reconstitution
+]
+
+research: core-raft

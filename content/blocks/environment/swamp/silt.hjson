@@ -1,0 +1,7 @@
+type: Floor
+variants: 3
+
+liquidDrop: ooze
+
+cacheLayer: water
+isLiquid: true

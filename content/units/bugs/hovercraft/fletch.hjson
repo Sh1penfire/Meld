@@ -1,0 +1,198 @@
+type: hover
+hovering: true
+
+speed: 2.25
+
+health: 290
+
+range: 80
+drag: 0.08
+accel: 0.1
+
+hitSize: 16
+
+rotateSpeed: 6
+
+omniMovement: false
+
+useEngineElevation: false
+faceTarget: false
+
+alwaysShootWhenMoving: true
+
+weapons: [
+	{
+		name: fletch-thruster
+		x: 5
+		y: -10
+        shootY: 3.5
+        
+		mirror: true
+		alternate: false
+		reload: 90
+
+		baseRotation: -165
+        shoot: {
+            type: ShootBarrel
+            barrels: [
+                0, 0, -180
+            ]
+        }
+
+		shootSound: none
+		alwaysShooting: true
+		continuous: true
+        
+        aiControllable: false
+		alwaysContinuous: true
+
+        shootSound: none
+        
+		bullet: {
+			type: ContinuousFlameBulletType
+            lifetime: 85
+			damage: 10
+			flareLength: 0
+			length: 8
+			rangeOverride: 40
+			width: 2.5
+			knockback: 1
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+            recoil: -0.0025
+		}
+	}
+    {
+        name: fletch-cannon
+        x: 0
+        y: 3
+        shootY: 2
+        
+        rotate: true
+        mirror: false
+        reload: 240
+        
+        velocityRnd: 0.2
+        
+        shootStatus: wildlife-b0-sentry
+        shootStatusDuration: 130
+        
+        bullet: {
+            type: ArtilleryBulletType
+            damage: 0
+            collides: true
+            speed: 4.7
+            lifetime: 52
+            knockback: 12
+            width: 16
+            height: 19
+            fragBullets: 1
+            status: stunned
+            statusDuration: 12
+            fragBullet: {
+                spawnUnit: blob
+            }
+            keepVelocity: false
+            spawnBullets:[
+                {
+                    type: BulletType
+                    instantDisappear: true
+                    collides: false
+                    absorbable: false
+                    hittable: false
+                    
+                    fragRandomSpread: 45
+                    recoil: 4.5
+                    fragBullets: 5
+                    fragBullet: {
+                        status: stunned
+                        statusDuration: 5
+                        sprite: "meld-clump"
+                        pierce: true
+                        pierceCap: 1
+                        speed: 8.5
+                        drag: 0.01
+                        lifetime: 45
+                        width: 5
+                        height: 9
+                        damage: 1.5
+                        shrinkX: 1
+                        shrinkY: 1
+                        splashDamage: 12
+                        splashDamageRadius: 25
+                        status: stunned
+                        statusDuration: 5
+                        knockback: 5.5
+                        trailEffect: smoke
+                        shootEffect: shootBig
+                        hitEffect: explosion
+                        despawnEffect: none
+                        keepVelocity: false
+                    }
+                    keepVelocity: false
+                    rangeOverride: 160
+                }
+            ]
+		}
+        
+        parts: [
+            {
+                type: RegionPart
+                suffix: "-base"
+            }
+            {
+                type: RegionPart
+                suffix: "-blob"
+                growY: -1
+                moveY: 4
+                progress: {
+                    type: reload
+                }
+                growProgress: {
+                    type: reload
+                }
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+            {
+                type: RegionPart
+                suffix: "-barrel"
+                mirror: true
+                moveRot: 15
+                moveY: 1
+                moveX: -1
+                x: 1
+                y: -1
+                rotation: -15
+                progress: {
+                    type: reload
+                }
+            }
+        ]
+    }
+        
+]
+
+parts: [
+]
+
+abilities: [
+
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+	shattered
+	lacerated
+]
+
+research: constructor-ship-factory
+researchCostMultiplier: 0

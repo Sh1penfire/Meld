@@ -9,11 +9,11 @@ targetable: false
 liquidCapacity: 3600
 
 requirements: [
-	a0-0a-debris/200
-	e0-0a-meld-shard/150
+	debris/200
+	meld-shard/150
 ]
 
 outputLiquid: {
-	liquid: a0-0a-aether
+	liquid: aether
 	amount: 1
 }

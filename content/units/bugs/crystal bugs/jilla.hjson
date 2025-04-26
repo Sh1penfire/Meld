@@ -1,0 +1,121 @@
+type: crawl
+speed: 1.2
+
+health: 200
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 16
+rotateSpeed: 6
+faceTarget: true
+
+segments: 3
+segmentMag: 0.5
+drawCell: false
+drawBody: false
+
+controller: HugAI
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-jilla-segment1
+            layer: 65
+            lifetime: 180
+            length: 450
+            baseLength: 4
+            particles: 1
+            sizeFrom: 10
+            sizeTo: 10
+            spin: 21
+            colorFrom: ffffff
+            colorTo: ffffff00
+            lightColor: ffffff00
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            baseLength: 10
+            particles: 2
+            length: 27
+            sizeFrom: 2.5
+            sizeTo: 0
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 12
+            sizeFrom: 2
+            sizeTo: 20
+            strokeFrom: 1
+            strokeTo: 4
+            colorFrom: e5aed7d5
+            colorTo: ffffff00
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 3
+            sizeTo: 15
+            strokeFrom: 3
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 8
+		shootCone: 180
+		reload: 60
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		shootSound: torch
+		
+		bullet: {
+			type: ContinuousFlameBulletType
+			damage: 8
+			flareLength: 0
+			length: 8
+			rangeOverride: 40
+			width: 1.5
+			knockback: 1
+			pierceCap: 1
+			colors: [
+				f9e1f343,
+				f1ace994,
+				ef85e3a9,
+				ee5de9e3,
+				d22fee
+			]
+		}
+	}
+]
+
+immunities: [
+	aspect-burn
+	shattered
+]

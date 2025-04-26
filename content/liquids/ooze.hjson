@@ -1,0 +1,66 @@
+type: CellLiquid
+
+explosiveness: 0.15
+flammability: 0.7
+temperature: 0.00
+
+spreadTarget: blood
+
+capPuddles: false
+
+maxSpread: 0.12
+spreadConversion: 1
+spreadDamage: 5
+removeScaling: 1
+
+color: 43201e
+
+colorFrom: 663931
+colorTo: 45283c
+
+moveThroughBlocks: true
+incinerable: false
+
+particleEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            particles: 1
+            lifetime: 240
+            sizeInterp: slope
+            length: 25
+            sizeFrom: 0
+            sizeTo: 2
+            colorFrom: 43201eb1
+            colorTo: 43201e60
+            layer: 60
+            spin: 12
+        }
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            particles: 1
+            lifetime: 240
+            sizeInterp: slope
+            length: 35
+            sizeFrom: 0
+            sizeTo: 4
+            colorFrom: 43201eb1
+            colorTo: 43201e60
+            layer: 60
+            spin: 12
+        }
+    ]
+}
+
+canStayOn: [
+	meld
+	nectar
+	ichor
+	ooze
+	waste
+]
+
+research: bramble-vine

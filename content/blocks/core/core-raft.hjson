@@ -1,0 +1,28 @@
+type: CoreBlock
+health: 4000
+size: 3
+
+unitType: bulbhead
+solid: false
+squareSprite: false
+buildVisibility: shown
+placeableDeep: true
+
+itemCapacity : 900
+unitCapModifier: 6
+
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		
+	]
+}
+
+requirements: [
+	debris/600
+	carbolith/350
+	electrum-sheet/350
+]
+
+researchCostMultiplier: 0
+category: effect

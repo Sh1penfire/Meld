@@ -1,0 +1,10 @@
+type: Floor
+variants: 3
+cacheLayer: water
+isLiquid: true
+
+liquidDrop: meld
+
+attributes: {
+	meld: 0.5
+}

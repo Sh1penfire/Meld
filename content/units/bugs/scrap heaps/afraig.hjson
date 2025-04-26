@@ -1,0 +1,323 @@
+type: legs
+speed: 1.4
+
+health: 120
+armor: 45
+
+drag: 0.14
+accel: 0.24
+range: 40
+
+hitSize: 19
+rotateSpeed: 6
+faceTarget: false
+
+drawCell: false
+
+legCount: 4
+legLength: 16
+legForwardScl: 1.25
+legMaxLength: 2.2
+legBaseOffset: 2.5
+baseLegStraightness: 0.35
+legStraightness: 0.15
+legContinuousMove: true
+lockLegBase: true
+legGroupSize: 2
+
+legMoveSpace: 1.5
+allowLegStep: true
+legPhysicsLayer: false
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 35
+            baseLength: 10
+            length: 55
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 2.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+    ]
+}
+
+weapons: [
+    {
+        name: "afraig-spurter"
+        x: 1.25
+        y: -4.5
+        shootY: 4.5
+        rotateSpeed: 15
+        reload: 20
+        shootCone: 60
+        rotate: true
+        shootStatus: wildlife-b0-sentry
+        shootStatusDuration: 8.5
+        mirror: false
+        alternate: false
+        shoot: {
+            shots: 2
+            shotDelay: 7
+        }
+        shootSound: flame
+        bullet: {
+            type: BulletType
+            keepVelocity: false
+            damage: 9
+            speed: 3
+            lifetime: 15
+            knockback: 1
+            pierce: true
+            smokeEffect: none
+            recoil: -0.5
+            lightRadius: 0
+            status: dissolving
+            statusDuration: 15
+            despawnEffect: none
+            hitEffect: {
+                type: ParticleEffect
+                lifetime: 24
+                particles: 3
+                baseLength: 2
+                length: 12
+                line: true
+                strokeFrom: 1.75
+                strokeTo: 0
+                lenFrom: 3
+                lenTo: 1
+                colorFrom: feafea
+                colorTo: d26ab100
+            }
+            shootEffect:{
+                type: MultiEffect
+                effects: [
+                    {
+                            type: ParticleEffect
+                            cone: 5
+                            lifetime: 15
+                            baseLength: 0
+                            particles: 14
+                            length: 45
+                            sizeFrom: 0
+                            sizeTo: 4.2
+                            colorFrom: feafea
+                            colorTo: d26ab100
+                            interp: pow3Out
+                            sizeInterp: pow2In
+                            followParent: false
+                    }
+                    {
+                            type: ParticleEffect
+                            cone: 5
+                            lifetime: 24
+                            baseLength: 0
+                            particles: 12
+                            length: 55
+                            sizeFrom: 3.3
+                            sizeTo: 0
+                            colorFrom: feafea
+                            colorTo: d26ab100
+                            interp: pow3Out
+                            sizeInterp: pow2Out
+                            followParent: false
+                    }
+                ]
+            }
+        }
+    }
+    //Death giblits
+    {
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        mirror: false
+        rotate: false
+        hidden: true
+        x: 0
+        y: 0
+        reload: 60
+        shootCone: 180
+        recoil: 0
+        shootSound: none
+        inaccuracy: 25
+        velocityRnd: 0.05
+        cooldownTime: 60000
+        bullet: {
+            type: BulletType
+            collidesTiles: false
+            collides: false
+            collidesAir: true
+            hitSound: explosion
+            fragBullets: 6
+            fragLifeMin: 0.5
+            fragSpread: 60
+            fragRandomSpread: 25
+            fragBullet: {
+                sprite: "meld-chunk2"
+                speed: 5
+                drag: 0.008
+                lifetime: 45
+                width: 8
+                height: 8
+                shrinkX: 0.2
+                shrinkY: 0.2
+                damage: 3
+                splashDamage: 2
+                splashDamageRadius: 25
+                knockback: 2.5
+                shootEffect: shootBig
+                hitEffect: none
+            }
+
+            rangeOverride: 10
+            speed: 0
+            splashDamageRadius: 35
+            instantDisappear: true
+            splashDamage: 15
+            hittable: false
+            hitEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 125
+                        baseLength: 10
+                        length: 65
+                        particles: 8
+                        sizeFrom: 3
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 35
+                        baseLength: 10
+                        length: 55
+                        particles: 1
+                        sizeFrom: 1
+                        sizeTo: 2.5
+                        sizeInterp: pow5Out
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 32
+                        sizeFrom: 2
+                        sizeTo: 12
+                        strokeFrom: 1
+                        strokeTo: 3
+                        colorFrom: e5aed7d5
+                        colorTo: ffffff00
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 25
+                        sizeFrom: 3
+                        sizeTo: 25
+                        strokeFrom: 2
+                        strokeTo: 1.2
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                ]
+            }
+        }
+    }
+    {
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        mirror: false
+        rotate: false
+        hidden: true
+        x: 0
+        y: 0
+        reload: 60
+        shootCone: 180
+        recoil: 0
+        shootSound: none
+        inaccuracy: 25
+        velocityRnd: 0.05
+        cooldownTime: 60000
+        bullet: {
+            type: BulletType
+            collides: false
+            hittable: false
+            absorbable: false
+
+            hitSound: none
+            fragBullets: 4
+            fragLifeMin: 0.5
+            fragSpread: 90
+            fragRandomSpread: 55
+            fragBullet: {
+                sprite: "meld-stone-fragment1"
+                pierce: true
+                pierceCap: 3
+                speed: 7.5
+                drag: 0.008
+                lifetime: 65
+                width: 7
+                height: 12
+                damage: 24
+                knockback: 2.5
+                shootEffect: shootBig
+                despawnEffect: none
+                shrinkX: 1
+                shrinkY: 0.2
+                hitEffect: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 60
+                        region: meld-diamond
+                        colorFrom: 4a626d
+                        colorTo: 3c4448
+                        particles: 8
+                        baseLength: 16
+                        length: 5
+                        sizeFrom: 5
+                        sizeTo: 2
+                        lightScl: 0
+                        cone: 85
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 25
+                        region: meld-diamond
+                        colorFrom: 4a626d
+                        colorTo: 3c4448
+                        particles: 6
+                        length: 45
+                        sizeFrom: 4
+                        sizeTo: 0
+                        sizeInterp: pow2In
+                        lightScl: 0
+                        cone: 25
+                    }
+                ]
+            }
+
+            rangeOverride: 10
+            speed: 0
+            instantDisappear: true
+            splashDamage: 0
+
+            hitEffect: none
+        }
+    }
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

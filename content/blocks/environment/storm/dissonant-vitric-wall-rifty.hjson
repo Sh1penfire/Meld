@@ -1,0 +1,4 @@
+type: StaticWall
+variants: 2
+
+itemDrop: shiny-globule

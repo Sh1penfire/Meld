@@ -1,0 +1,40 @@
+type: CellLiquid
+
+temperature: 0.2
+heatCapacity: 1
+
+cells: 2
+
+spreadTarget: ooze
+
+capPuddles: false
+
+maxSpread: 0.00025
+spreadConversion: 0
+spreadDamage: 0
+removeScaling: 0
+
+color: 89828c
+
+effect: mangrove-d1-slippery
+
+colorFrom: 454545
+colorTo: 89828c
+
+moveThroughBlocks: true
+incinerable: false
+
+canStayOn: [
+	mercury
+	ichor
+	ooze
+	blood
+	waste
+]
+
+research: {
+	parent: nectar
+	objectives: [
+		mangrove-d1-slippery
+	]
+}

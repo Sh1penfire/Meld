@@ -1,0 +1,32 @@
+type: ForceProjector
+size: 1
+range: 1
+sides: 8
+radius: 12
+
+health: 800
+
+hasItems: false
+hasPower: false
+hasLiquids: true
+liquidCapacity: 600
+
+buildVisibility: sandboxOnly
+buildCostMultiplier: 0
+
+targetable: false
+drawTeamOverlay: false
+
+consumes: {
+	liquids: [
+		liquid-data/1
+	]
+}
+
+requirements: [
+	fragment/0
+]
+
+squareSprite: false
+category: effect
+floating: true
