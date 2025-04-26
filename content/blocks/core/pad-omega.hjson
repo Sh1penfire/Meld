@@ -1,0 +1,25 @@
+type: CoreBlock
+health: 800
+size: 3
+
+unitType: omega
+solid: false
+squareSprite: false
+buildVisibility: shown
+placeableLiquid: false
+
+itemCapacity : 0
+unitCapModifier: 0
+
+alwaysUnlocked: true
+firstTier: true
+research: core-raft-dormant
+
+requirements: [
+	debris/125
+	technoscrap/250
+]
+
+buildCostMultiplier: 0.1
+researchCostMultiplier: 0
+category: effect

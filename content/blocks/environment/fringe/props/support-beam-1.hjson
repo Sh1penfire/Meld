@@ -1,0 +1,8 @@
+type: TallBlock
+variants: 0
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+itemDrop: technoscrap

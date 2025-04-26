@@ -1,0 +1,69 @@
+type: AttributeCrafter
+size: 1
+
+floating: true
+placeableLiquid: true
+liquidOutputDirections: [0]
+rotate: true
+quickRotate: true
+
+attribute: nectar
+baseEfficiency: 0
+minEfficiency: 0.01
+maxBoost: 2
+
+craftTime: 30
+liquidCapacity: 100
+liquidPressure: 50
+
+solid: false
+
+drawer: [
+	{
+		type: DrawLiquidTile
+		drawLiquid: nectar
+		alpha: 1
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawSideRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	baseLength: 3
+	length: 15
+	sizeFrom: 2
+	sizeTo: 0
+	colorFrom: 935b2900
+	colorTo: cb8650ff
+}
+
+consumes: {
+	liquids: [
+		valid/0
+	]
+}
+
+outputLiquid: nectar/0.1666666666666667
+
+category: production
+requirements: [
+	debris/12
+]
+
+research: {
+	parent: fissure-tapping
+	objectives: [
+		nectar
+	]
+}
+
+
+researchCost: [
+    debris/15
+]

@@ -1,0 +1,21 @@
+type: LiquidRouter
+size: 1
+
+health: 60
+
+placeableLiquid: true
+
+liquidCapacity: 80
+liquidPressure: 50
+
+solid: false
+
+category: liquid
+requirements: [
+	debris/5
+]
+
+research: channel-face
+researchCost: [
+	debris/25
+]

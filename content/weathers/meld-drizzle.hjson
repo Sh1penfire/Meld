@@ -2,12 +2,12 @@ type: ParticleWeather
 color: b13e98
 noiseColor: b13e98
 drawNoise: true
-particleRegion: particle
+particleRegion: circle
 useWindVector: true
 sizeMax: 140
 sizeMin: 70
 minAlpha: 0.0
-maxAlpha: 0.2
+maxAlpha: 0.1
 density: 1200
 baseSpeed: 3.4
 opacityMultiplier: 0.55

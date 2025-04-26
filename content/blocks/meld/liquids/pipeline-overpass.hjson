@@ -1,0 +1,17 @@
+type: DirectionLiquidBridge
+size: 1
+
+placeableLiquid: true
+
+range: 8
+
+speed: 10
+hasPower: false
+
+liquidCapacity: 120
+liquidPressure: 5
+
+category: liquid
+requirements: [
+	larval-plating/5
+]

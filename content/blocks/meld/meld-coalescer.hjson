@@ -1,0 +1,50 @@
+type: AttributeCrafter
+health: 2400
+armor: 8
+
+size: 5
+configurable: false
+variants: 0
+solid: true
+
+attribute: meld
+minEfficiency: 1
+baseEfficiency: 0
+boostScale: 0.04
+displayEfficiency: false
+
+liquidCapacity: 6000
+squareSprite: false
+
+requirements: [
+	meld-shard/150
+	metalic-chunk/450
+	metalic-globule/120
+	stony-particulate/240
+]
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: meld
+		alpha: 0.6
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+        suffix: top-base
+        
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+outputLiquid: {
+	liquid: meld
+	amount: 12
+}

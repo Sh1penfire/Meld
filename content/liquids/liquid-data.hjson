@@ -1,0 +1,11 @@
+type: Liquid
+gas: true
+color: a6d7fc
+lightColor: 31a2f966
+
+research: {
+	parent:	technoscrap
+	objectives: [
+		meld-liquid-data
+	]
+}

@@ -1,0 +1,22 @@
+type: Wall
+size: 1
+health: 120
+armor: 45
+
+research: {
+	parent: core-raft
+	objectives: [
+	]
+}
+
+researchCost: [
+	debris/2000
+	silver/1200
+	fragment/300
+]
+
+requirements: [
+	compacted-brick/18
+	stony-gloop/18
+]
+category: defense

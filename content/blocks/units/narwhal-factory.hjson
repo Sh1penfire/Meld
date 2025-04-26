@@ -1,0 +1,47 @@
+type: UnitFactory
+health: 720
+size: 5
+armor: 18
+
+liquidCapacity: 200
+
+hasPower: false
+
+plans: [
+	{
+	unit: narwhal
+	requirements: [
+		compacted-brick/40
+		stony-gloop/60
+		carbolith/30
+    	]
+    	time: 900
+  	}
+]
+
+consumes: {
+	liquids: [
+		aspect/10
+		ichor/2
+	]
+}
+
+configurable: false
+
+requirements: [
+ 	debris/500
+	carbolith/200
+	compacted-brick/250
+	stony-gloop/250
+]
+
+category: units
+
+research: core-raft
+
+researchCost: [
+	debris/80
+	carbolith/45
+	silver/35
+]
+

@@ -1,0 +1,50 @@
+type: AttributeCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+attribute: ichor-vent
+minEfficiency: 9
+baseEfficiency: 0
+boostScale: 0.111111111111111111111111111111111111
+displayEfficiency: false
+
+liquidCapacity: 200
+
+squareSprite: false
+
+requirements: [
+	larval-plating/200
+	meld-shard/150
+]
+
+drawer: [
+	{
+		type: DrawLiquidTile
+		drawLiquid: ichor
+		alpha: 0.6
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -groves
+		rotateSpeed: -3
+		spinSprite: true
+	}
+	{
+		type: DrawRegion
+		suffix: -middle
+	}
+	{
+		type: DrawRegion
+		layer: 31
+		suffix: -top
+	}
+]
+
+outputLiquid: {
+	liquid: ichor
+	amount: 2
+}

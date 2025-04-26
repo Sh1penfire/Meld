@@ -1,0 +1,5 @@
+type: Floor
+variants: 2
+
+itemDrop: grating-chunk
+playerUnmineable: true

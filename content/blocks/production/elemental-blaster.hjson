@@ -1,0 +1,55 @@
+type: BeamDrill
+size: 3
+category: production
+
+placeableLiquid: true
+
+drillTime: 90
+
+tier: 2
+
+liquidCapacity: 300
+
+optionalBoostIntensity: 2
+
+consumes: {
+	liquid: {
+		liquid: aspect
+		amount: 1.6666666666
+        optional: false
+	}
+    liquids: {
+		liquids: [
+            meld/1
+        ]
+		booster: true
+        optional: true
+    }
+}
+
+drillMultipliers: {
+	electrum-sheet: 2
+	resonarum: 0.5
+}
+
+sparkColor: 8cc7ee
+heatColor: e88b64
+boostHeatColor: ecb6eb
+
+sparks: 24
+sparkLife: 15
+sparkSpread: 25
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	debris/40
+]
+
+research: item-logistics
+researchCost: [
+	debris/13
+]

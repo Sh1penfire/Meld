@@ -1,0 +1,10 @@
+type: Liquid
+gas: true
+color: 3b2970
+
+research: {
+	parent:	aether
+	objectives: [
+		rift
+	]
+}

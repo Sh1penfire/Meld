@@ -1,0 +1,12 @@
+type: SwitchBlock
+size: 3
+
+targetable: false
+
+buildVisibility: editorOnly
+category: logic
+
+requirements: [
+	silver/35
+	technoscrap/75
+]

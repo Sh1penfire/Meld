@@ -14,7 +14,7 @@ fogRadius: 12.5
 parts: [
 	{
 		type: RegionPart
-		name: meld-c-a0-0a-nullifier-center
+		name: meld-nullifier-center
 	}
 	{
 		type: HaloPart

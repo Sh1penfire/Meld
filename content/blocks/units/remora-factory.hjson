@@ -1,0 +1,40 @@
+type: UnitFactory
+health: 1100
+size: 5
+
+liquidCapacity: 200
+
+plans: [
+	{
+	unit: remora
+	requirements: [
+		debris/120
+		electrum-sheet/40
+		vitric-mesh/30
+    	]
+    	time: 480
+  	}
+]
+
+consumes: {
+	liquid: aspect/20
+}
+
+configurable: false
+
+requirements: [
+ 	debris/180
+	silver/120
+	electrum-sheet/210
+]
+
+category: units
+
+research: core-raft
+
+researchCost: [
+	debris/80
+	carbolith/45
+	silver/35
+]
+

@@ -1,0 +1,12 @@
+type: Prop
+variants: 0
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+itemDrop: technoscrap
+
+emitLight: true
+lightColor: 9ccaed8e
+lightRadius: 32

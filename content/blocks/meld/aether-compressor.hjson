@@ -1,0 +1,71 @@
+type: GenericCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+liquidCapacity: 100
+
+requirements: [
+	larval-plating/200
+	meld-shard/150
+]
+
+craftTime: 5
+
+squareSprite: false
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: meld
+		alpha: 1
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+		suffix: -middle
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aether
+		alpha: 0.2
+		padding: 1.5
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+	}
+	{
+		type: DrawParticles
+		particles: 8
+		particleRad: 7
+		particleLife: 85
+	}
+]
+
+consumes: {
+	liquid: meld/2
+}
+
+outputLiquid: {
+	liquid: aether
+	amount: 1
+}
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	particles: 3
+	baseLength: 4
+	length: 12
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}

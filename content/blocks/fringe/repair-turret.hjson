@@ -1,0 +1,182 @@
+type: LiquidTurret
+health: 820
+size: 3
+
+rotateSpeed: 2.5
+reload: 280
+recoil: 0.5
+
+range: 120
+fogRadiusMultiplier: 0
+
+squareSprite: false
+
+targetGround: false
+targetAir: false
+targetHealing: true
+
+shootCone: 12
+shootY: 8
+
+liquidCapacity: 80
+
+chargeSound: laserbig
+moveWhileCharging: false
+
+shoot: {
+    firstShotDelay: 1
+    shots: 2
+    shotDelay: 12
+}
+inaccuracy: 4
+
+loopSound: none
+shootEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 3
+        particles: 1
+        length: 12
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 0.5
+        colorFrom: ffffff
+    }
+    {
+        type: ParticleEffect
+        layer: 100
+        lifetime: 3
+        particles: 1
+        length: 14
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 1
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 15
+        baseLength: 10
+        length: 45
+        cone: 35
+        line: true
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 45
+        particles: 1
+        baseLength: 10
+        length: 5
+        cone: 35
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: cbdbfc
+        colorTo: cbdbfc00
+    }
+]
+
+ammoTypes: {
+    aspect: {
+        type: ArtilleryBulletType
+        smokeEffect: none
+        lifetime: 60
+	speed: 2
+        damage: 0
+        knockback: 2.5
+	status: stunned
+	statusDuration: 15
+
+        hitColor: fda981
+        pointEffectSpace: 7.75
+        
+        pierceEffect: none
+	fragBullets: 1
+        healAmount: 1
+        collidesTeam: true
+
+	fragBullet: {
+        	healAmount: 180
+        	collidesTeam: true
+	}
+        trailEffect: {
+            type: MultiEffect
+                effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    baseLength: 12
+                    particles: 1
+                    length: 25
+                    line: true
+                    lenFrom: 4
+                    lenTo: 0
+                    colorFrom: cbdbfca0
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    region: meld-nullifier-laser-beam
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    cone: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    interp: pow5Out
+                    sizeInterp: pow10In
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    region: meld-nullifier-laser-beam-back
+                    layer: 109
+                    lifetime: 15
+                    particles: 1
+                    length: 0
+                    cone: 0
+                    sizeFrom: 4
+                    sizeTo: 0
+                    interp: pow5Out
+                    sizeInterp: pow10In
+                    colorTo: ffffff00
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 150
+                    layer: 100
+                    offset: 0
+                    cone: 90
+                    lifetime: 15
+                    particles: 2
+                    baseLength: -4
+                    length: 45
+                    sizeFrom: 3
+                    sizeTo: 0
+                    length: 9
+                    colorFrom: fda98100
+                    colorTo: fda98100
+                    interp: pow3Out
+                    sizeInterp: pow3In
+                }
+            ]
+        }
+    }
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+	]
+}
+
+requirements: [
+	debris/150
+	technoscrap/80
+	bioscrap-graft/60
+	grating-chunk/35
+]
+
+category: effect

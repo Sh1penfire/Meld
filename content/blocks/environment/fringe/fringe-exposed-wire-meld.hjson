@@ -1,0 +1,19 @@
+type: Floor
+variants: 0
+walkSound: splash
+walkSoundVolume: 0.02
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.6
+cacheLayer: water
+isLiquid: true
+blendGroup: fringe-plating-meld
+
+liquidDrop: waste
+
+emitLight: true
+lightColor: f6b6e24d
+lightRadius: 11
+
+attributes: {
+	data-power: 0.15
+}

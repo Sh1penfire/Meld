@@ -1,0 +1,73 @@
+type: CoreBlock
+health: 200
+armor: 15
+size: 3
+
+squareSprite: false
+
+destroyEffect: {
+	type: MultiEffect
+	effects: [
+//"DESTROID" text
+		{
+			type: ParticleEffect
+			region: meld-destroyed
+			layer: 170
+			lifetime: 180
+			cone: 0
+			particles: 1
+			length: 1
+			sizeFrom: 50
+			sizeTo: 100
+			colorFrom: ffffff
+			colorTo: ffffff00
+			sizeInterp: pow5Out
+			interp: pow5Out
+			spin: 0.2
+		}
+//Natural death effect
+		{
+			type: ParticleEffect
+			lifetime: 150
+			region: meld-sparkle
+			spin: 5
+			colorTo: ffffff00
+			particles: 5
+			sizeFrom: 4
+			sizeTo: 4
+			interp: pow4Out
+			length: 85
+		}
+		{
+			type: ParticleEffect
+			layer: 90
+			lifetime: 35
+			particles: 15
+			sizeFrom: 3
+			sizeTo: 0
+			baseLength: 12
+			length: 35
+			interp: pow2In
+			colorFrom: ffaaffff
+			colorTo: ffaaff00
+		}
+		{
+			type: ParticleEffect
+			lifetime: 20
+			particles: 6
+			sizeFrom: 4
+			sizeTo: 2
+			baseLength: 5
+			length: 35
+			line: true
+			colorFrom: f6e096
+			colorTo: f68021
+		}
+	]
+}
+
+requirements: [
+	meld-shard/600
+	larval-plating/4500
+]
+category: effect

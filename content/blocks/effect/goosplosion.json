@@ -1,0 +1,189 @@
+type: PowerTurret
+size: 4
+health: 840
+range: 100
+reload: 180
+shootSound: bang
+shootEffect: shootBig
+rotateSpeed: 0
+reload: 170
+recoil: 0
+shootCone: 180
+shootY: 0
+linearWarmup: true
+alwaysShooting: true
+minWarmup: 1
+shootWarmupSpeed: 0.0016666666
+cooldownTime: 160
+
+shoot: {
+	type: ShootSpread
+	shots: 1
+}
+
+shootType: {
+	type: BulletType
+	lifetime: 0
+	bulletInterval: 0
+	intervalRandomSpread: 0
+	intervalBullet: {
+		type: MissileBulletType
+		spawnUnit: goosplosion-lance
+	}
+
+	absorbable: false
+	hittable: false
+	despawnEffect: none
+	collides: false
+	fragBullets: 1
+	fragBullet: {
+		type: BulletType
+        	killShooter: true
+		absorbable: false
+		hittable: false
+		collides: false
+		despawnEffect: none
+		fragBullets: 1
+		lifetime: 160
+		absorbable: false
+		hittable: false
+	}
+}
+
+destroyBullet: {
+	type: BulletType
+	speed: 0
+	lifetime: 0
+	splashDamage: 45
+	splashDamageRadius: 100
+	instantDisappear: true
+	hitEffect: none
+	despawnEffect: none
+	hittable: false
+	absorbable: false
+	collides: false
+	fragBullets: 50
+	fragBullet: {
+		type: RailBulletType
+		pierceCap: 3
+		damage: 15
+		knockback: 1.5
+		status: impaled
+	}
+}
+
+destroyEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: WaveEffect
+            lifetime: 14
+            layer: 101
+            sizeFrom: 4
+            sizeTo: 120
+            strokeFrom: 3
+            strokeTo: 1
+            colorFrom: f68021
+            colorTo: db661c
+        }
+        {
+            type: ParticleEffect
+            lifetime: 120
+            layer: 101
+            interp: pow3
+            baseLength: 10
+            length: 55
+            particles: 11
+            sizeFrom: 23
+            sizeTo: 0
+            colorFrom: 6e7080
+            colorTo: 565666
+        }
+        {
+            type: ParticleEffect
+            lifetime: 85
+            layer: 101
+            interp: pow5Out
+            sizeInterp: pow5In
+            baseLength: 14
+            length: 85
+            particles: 25
+            sizeFrom: 12
+            sizeTo: 0
+            colorFrom: 6e7080
+            colorTo: 565666
+        }
+        {
+            type: ParticleEffect
+            lifetime: 35
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow5In
+            baseLength: 24
+            length: 95
+            particles: 14
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: ffffff
+            colorTo: ffb855
+        }
+        {
+            type: ParticleEffect
+            lifetime: 25
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 95
+            line: true
+            particles: 25
+            strokeFrom: 4
+            strokeTo: 0
+            lenFrom: 7
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            layer: 101
+            interp: pow2Out
+            sizeInterp: pow2In
+            baseLength: 2
+            length: 75
+            line: true
+            particles: 15
+            strokeFrom: 5
+            strokeTo: 0
+            lenFrom: 8
+            lenTo: 0
+            colorFrom: ffd2ae
+            colorTo: e58956
+        }
+    ]
+}
+
+drawer: {
+}
+
+requirements: [
+	debris/350
+	technoscrap/150
+	bramble-vine/400
+	compacted-masses/150
+    	resonarum/95
+]
+
+consumes: {
+	liquids: [
+		aspect/1
+	]
+}
+
+category: effect
+
+research: core-raft
+researchCost: [
+    resonarum/50
+]

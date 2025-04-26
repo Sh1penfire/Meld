@@ -1,0 +1,25 @@
+type: LiquidRouter
+size: 4
+
+health: 720
+armor: 5
+
+placeableLiquid: true
+
+liquidCapacity: 8000
+liquidPressure: 1
+
+solid: false
+
+category: liquid
+
+requirements: [
+	debris/550
+	technoscrap/250
+]
+
+research: pressure-control
+researchCost: [
+	debris/250
+	technoscrap/600
+]

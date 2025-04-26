@@ -1,0 +1,53 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: crafting
+
+baseEfficiency: 0
+itemCapacity: 20
+
+attribute: filtration
+baseEfficiency: 0
+minEfficiency: 0.00000001
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 15
+liquidCapacity: 230
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	items: [
+		homunculus-chunk/2
+	]
+	liquids: [
+		nectar/0.25
+		rift/0.125
+	]
+}
+
+outputLiquids: [
+	blood/0.25
+]
+
+outputItems: [
+	coagulated-vigor/3
+]
+
+requirements: [
+ 	debris/80
+	silver/60
+]
+
+researchCost: [
+	debris/200
+	silver/150
+]

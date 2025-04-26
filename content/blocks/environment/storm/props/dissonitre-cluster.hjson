@@ -1,0 +1,208 @@
+type: AttributeCrafter
+size: 1
+configurable: false
+
+breakSound: shatter-deep
+
+buildCostMultiplier: 0
+
+solid: true
+
+attribute: dissonate-frags
+baseEfficiency: 0
+minEfficiency: 1
+
+customShadow: true
+squareSprite: false
+
+targetable: false
+liquidCapacity: 30
+
+drawer: [
+	{
+		type: DrawDefault
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow-heat
+	}
+]
+
+requirements: [
+	dissonitre/300
+	shiny-globule/120
+]
+
+breakEffect: [
+    {
+        type: RadialEffect
+        effect: {
+            type: ParticleEffect
+            lifetime: 160
+            particles: 1
+            region: meld-glass-shard1
+            length: 24
+            lightOpacity: 0
+            spin: 0.1
+            sizeFrom: 1.8125
+            sizeTo: 0
+            layer: 41
+            colorFrom: ffffff
+            colorTo: ffffff
+            interp: pow10Out
+            sizeInterp: pow10In
+            offset: 125
+        }
+        rotationSpacing: 72
+        amount: 5
+    }
+    {
+        type: RadialEffect
+        effect: {
+            type: ParticleEffect
+            lifetime: 160
+            particles: 1
+            region: meld-glass-shard2
+            length: 24
+            lightOpacity: 0
+            spin: 0.1
+            sizeFrom: 1.875
+            sizeTo: 0
+            layer: 41
+            colorFrom: ffffff
+            colorTo: ffffff
+            interp: pow10Out
+            sizeInterp: pow10In
+            offset: 125
+        }
+        rotationSpacing: 120
+        amount: 3
+    }
+    {
+        type: RadialEffect
+        effect: {
+            type: ParticleEffect
+            lifetime: 120
+            particles: 1
+            region: meld-glass-shard1
+            length: 24
+            lightOpacity: 0
+            spin: 0.1
+            sizeFrom: 1.8125
+            sizeTo: 0
+            layer: 41
+            colorFrom: ffffff
+            colorTo: ffffff
+            interp: pow10Out
+            sizeInterp: pow10In
+            offset: 125
+        }
+        rotationSpacing: 72
+        amount: 20
+    }
+    {
+        type: RadialEffect
+        effect: {
+            type: ParticleEffect
+            lifetime: 120
+            particles: 1
+            region: meld-glass-shard2
+            length: 24
+            lightOpacity: 0
+            spin: 0.1
+            sizeFrom: 1.875
+            sizeTo: 0
+            layer: 41
+            colorFrom: ffffff
+            colorTo: ffffff
+            interp: pow10Out
+            sizeInterp: pow10In
+            offset: 125
+        }
+        rotationSpacing: 120
+        amount: 12
+    }
+    {
+        type: ParticleEffect
+        lifetime: 75
+        particles: 4
+        region: meld-diamond
+        length: 11
+        spin: 0.1
+        sizeFrom: 2.5
+        sizeTo: 0.2
+        colorFrom: cb8650
+        colorTo: cb865000
+        interp: pow3Out
+        sizeInterp: pow2In
+    }
+    {
+        type: ParticleEffect
+        lifetime: 32
+        particles: 5
+        length: 35
+        line: true
+        lightOpacity: 0
+        lenFrom: 3
+        lenTo: 0.1
+        colorFrom: fddfc9
+        colorTo: e8996400
+        sizeInterp: pow2In
+    }
+    {
+        type: ParticleEffect
+        region: meld-swirl
+        lifetime: 125
+        sizeInterp: slope
+        length: 25
+        baseLength: 4
+        sizeFrom: 1
+        sizeTo: 3
+        colorFrom: 935b29b1
+        colorTo: 67301900
+        layer: 61.7
+        spin: 12
+        baseRotation: 32.5
+    }
+    {
+        type: ParticleEffect
+        lifetime: 240
+        sizeInterp: slope
+        length: 65
+        baseLength: 4
+        sizeFrom: 4
+        sizeTo: 8
+        colorFrom: 935b29b1
+        colorTo: 67301900
+        layer: 61.8
+        cone: 45
+        baseRotation: 30
+    }
+    {
+        type: ParticleEffect
+        lifetime: 195
+        sizeInterp: slope
+        length: 65
+        baseLength: 4
+        sizeFrom: 4
+        sizeTo: 8
+        colorFrom: cb8650b1
+        colorTo: 935b2900
+        layer: 61.9
+        cone: 35
+        baseRotation: 30
+    }
+]
+
+consumes: {
+	liquid: aether/0
+}
+
+outputLiquid: {
+	liquid: aether
+	amount: 0.083333333
+}

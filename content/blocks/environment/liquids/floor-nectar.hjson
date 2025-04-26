@@ -1,0 +1,21 @@
+type: Floor
+variants: 0
+walkSound: splash
+walkSoundVolume: 0.02
+walkSoundPitchMin: 0.4
+walkSoundPitchMax: 0.6
+
+speedMultiplier: 1
+
+attributes: {
+	nectar: 1
+}
+
+cacheLayer: mud
+
+liquidDrop: nectar
+
+status: mangrove-a0-refreshed
+statusDuration: 5
+
+isLiquid: true

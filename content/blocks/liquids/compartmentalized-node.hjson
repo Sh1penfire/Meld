@@ -1,0 +1,83 @@
+type: GenericCrafter
+size: 1
+
+health: 40
+
+liquidCapacity: 40
+
+placeableLiquid: true
+floating: true
+solid: false
+
+category: liquid
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: nectar
+		alpha: 1
+		padRight: 4
+		padBottom: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		alpha: 1
+		padLeft: 4
+		padBottom: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: blood
+		alpha: 1
+		padRight: 4
+		padTop: 4
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: ooze
+		alpha: 1
+		padLeft: 4
+		padTop: 4
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+requirements: [
+	debris/6
+	silver/4
+	starving-masses/6
+]
+
+consumes: {
+	liquids: [
+		nectar/0.1
+		mercury/0.1
+		blood/0.1
+		ooze/0.1
+	]
+	items: [
+		debris/1
+	]
+}
+
+outputLiquids: [
+	nectar/0
+	mercury/0
+	blood/0
+	ooze/0
+]
+
+research: {
+	parent: murk-handling
+}
+
+researchCost: [
+    debris/20
+]

@@ -13,12 +13,12 @@ category: logic
 liquidCapacity: 50
 consumes: {
 	liquids: [
-		a1-0a-liquid-data/0
+		liquid-data/0
 	]
 }
 
 requirements: [
-	b0-0a-technoscrap/230
-	b1-0a-fragment/50
-	a0-0a-debris/120
+	technoscrap/230
+	fragment/50
+	debris/120
 ]

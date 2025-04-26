@@ -1,0 +1,61 @@
+type: LiquidTurret
+size: 2
+health: 480
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 3
+	fragBullet: {
+		spawnUnit: craig
+	}
+}
+
+loopSound: none
+shootSound: pew
+
+shootCone: 15
+
+reload: 5
+recoil: 1.5
+rotateSpeed: 6
+range: 60
+shootY: 5
+
+shootEffect: shootSmall
+
+ammoTypes: {
+	meld: {
+		type: RailBulletType
+		pierceDamageFactor: 1
+		damage: 5
+		length: 60
+		knockback: 1.5
+		smokeEffect: {
+			type: ParticleEffect
+			region: "meld-globule"
+			particles: 2
+			length: 35
+			sizeFrom: 5
+			sizeTo: 0
+			colorFrom: f9e1f300
+			colorTo: f9e1f3
+			sizeInterp: pow5Out
+		}
+	}
+}
+
+requirements: [
+	meld-shard/65
+	metalic-chunk/25
+	metalic-globule/45
+]
+
+squareSprite: false
+category: effect
+floating: true

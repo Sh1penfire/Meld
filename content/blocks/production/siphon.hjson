@@ -1,0 +1,80 @@
+type: AttributeCrafter
+size: 5
+
+placeableLiquid: true
+category: production
+
+attribute: deposit
+baseEfficiency: 0
+minEfficiency: 24.9
+maxBoost: 2
+boostScale: 0.04
+
+liquidPressure: 5
+liquidCapacity: 200
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawRegion
+	}
+]
+
+consumes: {
+	liquids: [
+		deposit/0
+		nectar/0
+		mercury/0
+		blood/0
+		ooze/0
+	]
+	items: [
+		compacted-brick/1
+		stony-gloop/1
+	]
+}
+
+
+outputLiquids: [
+	nectar/0
+	mercury/0
+	blood/0
+	ooze/0
+]
+
+outputItems: [
+	industrial-rubble-cracked/1
+]
+
+
+requirements: [
+ 	debris/120
+	carbolith/250
+]
+
+research: core-raft
+
+research: pressure-control
+researchCost: [
+ 	debris/240
+	carbolith/450
+]

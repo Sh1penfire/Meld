@@ -1,0 +1,88 @@
+type: AttributeCrafter
+size: 1
+
+placeableLiquid: true
+category: effect
+
+attribute: beacon-slot
+dumpExtraLiquid: true
+
+hasLiquids: true
+
+solid: true
+
+maxBoost: 1
+
+baseEfficiency: 0
+minEfficiency: 1
+liquidCapacity: 50
+
+ambientSound: glow
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 5
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: liquid-data
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 1
+		flameRadiusScl: 5
+		flameRadiusMag: 0.5
+		flameColor: 547dc0
+		flameMidColor: 9ccaed
+		particleRad: -7
+	}
+]
+
+craftEffect: {
+	type: MultiEffect
+	effects: [
+		{
+			type: ParticleEffect
+			lifetime: 35
+			particles: 3
+			baseLength: 35
+			length: -35
+			sizeFrom: 3
+			sizeTo: 0
+			lightScl: 3.5
+			colorFrom: 547dc000
+			colorTo: 547dc0ff
+			clip: 35
+			interp: pow5In
+			sizeInterp: pow2In
+			layer: 29
+		}
+	]
+
+}
+
+consumes: {
+	liquids: [
+		liquid-data/0
+	]
+}
+
+outputLiquids: [
+	liquid-data/0.1
+	null/0
+]
+
+category: liquid
+
+requirements: [
+	debris/2
+	technoscrap/5
+]

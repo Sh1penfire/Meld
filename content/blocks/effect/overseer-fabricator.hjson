@@ -1,0 +1,139 @@
+type: ItemTurret
+health: 600
+size: 5
+
+rotateSpeed: 0
+reload: 90
+recoil: 0
+alwaysShooting: true
+outlineIcon: false
+
+range: 120
+fogRadiusMultiplier: 0
+
+squareSprite: false
+elevation: 0
+
+shootY: 0
+
+liquidCapacity: 400
+
+ammoTypes: {
+	debris: {
+        ammoMultiplier: 1
+        type: ArtilleryBulletType
+        scaleLife: false
+        speed: 0.19
+        lifetime: 60
+        collides: false
+        fragOnHit: false
+        
+        despawnEffect: none
+        hitEffect: none
+        lightningLength: 3
+        lightning: 1
+        lightningType: {
+            type: MissileBulletType
+            spawnUnit: overseer-top
+        }
+        shootEffect: none
+	}
+}
+
+shoot: {
+    type: ShootBarrel
+    firstShotDelay: 180
+    barrels: [
+        0, 0, 315,
+        0, 0, 135,
+        0, 0, 45,
+        0, 0, 225
+    ]
+}
+
+consumes: {
+	liquid: aspect/10
+}
+
+
+loopSound: none
+
+drawer: {
+	type: DrawTurret
+    parts: [
+        {
+            type: ShapePart
+            circle: true
+            hollow: true
+            radius: 120
+            radiusTo: 0
+            layer: 110
+            stroke: 6
+            strokeTo: 10
+            color: ffd37f00
+            colorTo: ffd37fff
+            progress: {
+                type: charge
+                ops: [
+                    {
+                        op: curve
+                        interp: pow5In
+                    }
+                ]
+            }
+        }
+        {
+            type: ShapePart
+            circle: true
+            hollow: true
+            radius: 120
+            radiusTo: 0
+            layer: 110
+            stroke: 6
+            strokeTo: 10
+            color: ffd37f00
+            colorTo: ffd37fff
+            progress: {
+                type: charge
+                ops: [
+                    {
+                        op: curve
+                        interp: pow5In
+                    }
+                ]
+            }
+        }
+        {
+            type: ShapePart
+            circle: true
+            hollow: true
+            radius: 120
+            radiusTo: 0
+            layer: 110
+            stroke: 6
+            strokeTo: 12
+            color: ffd37f00
+            colorTo: ffd37fff
+            progress: {
+                type: charge
+                ops: [
+                    {
+                        op: curve
+                        interp: pow10In
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+requirements: [
+	debris/80
+	technoscrap/100
+]
+
+research: {
+	parent: pressurized-dispersion
+}
+
+category: effect

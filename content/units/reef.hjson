@@ -1,0 +1,307 @@
+type: missile
+lifetime: 3600
+flying: true
+shadowElevation: 0.1
+speed: 2.5
+
+health: 250
+
+drag: 0.12
+accel: 0.1
+
+hitSize: 16
+
+mineSpeed: 4
+mineTier: 3
+itemCapacity: 10
+
+fogRadius: 0
+lightRadius: 45
+lightOpacity: 1
+rotateSpeed: 6
+
+faceTarget: false
+controller: MinerAI
+defaultController: MinerAI
+
+mineItems: [
+	compacted-masses
+	elderflesh
+	blossoming-elderflesh
+]
+
+weapons: [
+//Death explosion to spawn next unit
+    {
+        x: 0
+        y: 0
+        mirror: false
+        shootCone: 180
+        controllable: false
+        aiControllable: false
+        shootOnDeath: true
+        bullet: {
+            spawnUnit: bloodied-reef
+        }
+    }
+//Blood particles
+	{
+		x: 0
+		y: 0
+		shootY: 0
+        mirror: false
+		alwaysShooting: true
+		reload: 3610
+		shoot: {
+			firstShotDelay: 2700
+            shotDelay: 15
+            shots: 120
+		}
+        shootSound: none
+		bullet: {
+			instantDisappear: true
+			hitEffect: none
+			shootEffect: {
+				region: meld-blood
+                length: 0
+                baseLength: 35
+                sizeFrom: 3
+                sizeTo: 5
+                colorFrom: ffffff00
+                colorTo: ffffff
+                interp: slope
+                useRotation: false
+			}
+		}
+	}
+	{
+        type: PointDefenseWeapon
+		name: reef-blaster
+		mirror: false
+		rotate: true
+		x: 0
+		y: 1.5
+		reload: 15
+		rotateSpeed: 28.5
+		recoil: 1.25
+        targetInterval: 4
+        targetSwitchInterval: 4
+        shootSound: lasershoot
+		bullet: {
+            shootEffect: sparkShoot
+            hitEffect: pointHit
+            maxRange: 32
+            damage: 8
+		}
+	}
+]
+
+parts: [
+//Circles which colapse inwards
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.9
+				end: 1
+			}
+			{
+				op: curve
+				interp: pow10In
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.95
+				end: 1
+			}
+			{
+				op: curve
+				interp: pow10In
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+    {
+        type: ShapePart
+	progress: {
+		type: life
+		ops: [
+			{
+				op: compress
+				start: 0.98
+				end: 1
+			}
+			{
+				op: curve
+				interp: sine
+			}
+		]
+	}
+        radius: 32
+	radiusTo: 4
+	stroke: 0
+	strokeTo: 5
+        circle: true
+        hollow: true
+        stroke: 1
+	color: ffd37f00
+        colorTo: ffd37f
+        layer: 110
+    }
+//Circle + halo
+    {
+        type: ShapePart
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
+        radius: 32
+	   radiusTo: 4
+        circle: true
+        hollow: true
+        stroke: 1
+        color: ffd37f
+        layer: 110
+    }
+    {
+        type: HaloPart
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
+        haloRadius: 32
+        haloRadiusTo: 4
+        radius: 3
+        shapes: 2
+        triLength: 10
+        tri: true
+        color: ffd37f
+        layer: 110
+        haloRotateSpeed: 1.5
+    }
+    {
+        type: HaloPart
+            progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+                {
+                    op: curve
+                    interp: sine
+                }
+            ]
+        }
+        haloRadius: 32
+        haloRadiusTo: 4
+        radius: 3
+        shapes: 2
+        triLength: 10
+        tri: true
+        color: ffd37f
+        layer: 110
+        haloRotateSpeed: 1.5
+        shapeRotation: 180
+    }
+    //Flare
+	{
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd37f
+                rotation: 45
+                rotMove: 125
+                followRotation: false
+		progress: {
+			type: life
+			ops: [
+				{
+					op: compress
+					start: 0.9
+					end: 1
+				}
+				{
+					op: curve
+					interp: pow5Out
+				}
+				{
+					op: curve
+					interp: sine
+				}
+			]
+		}
+	}
+]
+
+abilities: [
+	{
+		type: MoveEffectAbility
+		x: 0
+		y: -6.75
+		effect: missileTrailShort
+		interval: 5
+		color: bf92f9
+		teamColor: true
+	}
+    {
+        type: RegenAbility
+        amount: 0.15
+    }
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+	lacerated
+	wildlife-a1-reconstitution
+]
+
+research: b1-0a-drone-bay
+researchCostMultiplier: 0

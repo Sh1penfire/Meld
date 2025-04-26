@@ -1,0 +1,41 @@
+type: UnitFactory
+health: 720
+size: 5
+
+liquidCapacity: 200
+
+hasPower: false
+
+plans: [
+	{
+	unit: shark
+	requirements: [
+		silver/40
+		carbolith/30
+    	]
+    	time: 300
+  	}
+]
+
+consumes: {
+	liquid: aspect/20
+}
+
+configurable: false
+
+requirements: [
+ 	debris/500
+	carbolith/200
+	silver/120
+]
+
+category: units
+
+research: core-raft
+
+researchCost: [
+	debris/80
+	carbolith/45
+	silver/35
+]
+

@@ -1,0 +1,11 @@
+type: CoreBlock
+health: 600000
+armor: 300
+size: 5
+
+requirements: [
+	meld-shard/4000
+	larval-plating/12000
+]
+
+category: effect

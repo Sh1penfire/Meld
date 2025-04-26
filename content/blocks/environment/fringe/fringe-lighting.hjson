@@ -1,0 +1,11 @@
+type: Floor
+variants: 0
+
+itemDrop: grating-chunk
+playerUnmineable: true
+
+blendGroup: fringe-plating
+
+emitLight: true
+lightColor: 9ccaed4c
+lightRadius: 20

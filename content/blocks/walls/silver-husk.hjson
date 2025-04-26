@@ -1,0 +1,50 @@
+type: RegenProjector
+size: 1
+range: 1
+healPercent: 0.05
+health: 450
+armor: 3
+
+effectChance: 0.05
+baseColor: f0f5fe
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: "-bottom"
+		layer: 29
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aspect
+	}
+	{
+		type: DrawDefault
+	}
+]
+
+consumes: {
+	liquid: aspect/0.33333333333333333333333333333333333333
+}
+
+hasPower: false
+hasItems: false
+
+
+research: {
+	parent: aspect-channeling
+	objectives: [
+	]
+}
+
+researchCost: [
+	debris/2000
+	silver/1200
+	fragment/300
+]
+
+requirements: [
+	debris/15
+	silver/8
+]
+category: defense

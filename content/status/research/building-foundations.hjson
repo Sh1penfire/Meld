@@ -3,8 +3,8 @@ research: {
 	parent: fissure-tapping
 	objectives: [
 		building-foundations
-		d0-1a-ichor
-		c0-0a-rift
-		b0-0a-nectar
+		ichor
+		rift
+		nectar
 	]
 }

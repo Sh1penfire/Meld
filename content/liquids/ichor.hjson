@@ -1,0 +1,18 @@
+type: Liquid
+color: 948a00
+viscosity: 0.45
+temperature: 1.25
+heatCapacity: 0.85
+
+canStayOn: [
+	nectar
+	ichor
+	waste
+]
+
+research: {
+	parent:	aether
+	objectives: [
+		meld-ichor
+	]
+}

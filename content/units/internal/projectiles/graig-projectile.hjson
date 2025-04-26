@@ -100,7 +100,7 @@ abilities: [
 	{
 		type: SpawnDeathAbility
 		amount: 2
-		unit: c-meld-d0-0a-craig
+		unit: craig
 	}
 	{
 		type: MoveEffectAbility

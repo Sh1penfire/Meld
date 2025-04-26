@@ -3,6 +3,6 @@ variants: 3
 breakSound: splash
 instantDeconstruct: false
 requirements: [
-	e0-0a-meld-shard/40
+	meld-shard/40
 ]
 buildVisibility: sandboxOnly

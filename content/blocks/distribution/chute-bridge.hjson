@@ -1,0 +1,14 @@
+type: DuctBridge
+size: 1
+range: 2
+
+solid: false
+category: distribution
+requirements: [
+	debris/6
+]
+
+research: chute
+researchCost: [
+	debris/25
+]

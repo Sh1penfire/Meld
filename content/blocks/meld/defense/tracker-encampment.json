@@ -1,0 +1,234 @@
+type: LiquidTurret
+size: 3
+health: 3600
+armor: 300
+range: 450
+
+shootWarmupSpeed : 0.09
+
+reload: 160
+
+recoil: 0.25
+
+recoil: 3.5
+inaccuracy: 0
+shootCone: 5
+
+liquidCapacity: 150
+
+shootY: 8.5
+
+loopSound: none
+shootSound: mediumCannon
+
+squareSprite: false
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 1
+    fragLifeMin: 1
+	fragBullet: {
+        lifetime: 8
+        absorbable: false
+        collides: false
+        hittable: false
+        hitEffect: false
+        despawnEffect: false
+		despawnUnit: tracker
+	}
+}
+
+drawer: {
+    type: DrawTurret
+    parts: [
+        {
+            type: RegionPart
+            name: meld-tracker-encampment-under
+            mirror: false
+            under: false
+            outline: false
+        }
+        {
+            type: RegionPart
+            name: meld-tracker-encampment-projectile-undeveloped
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: curve
+                        interp: reverse
+                    }
+                    {
+                        op: compress
+                        start: 0
+                        end: 0.5
+                    }
+                    {
+                        op: curve
+                        interp: pow2In
+                    }
+                ]
+            }
+            y: -4
+            moves: [
+                {
+                    y: 4.5
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: curve
+                                interp: reverse
+                            }
+                            {
+                                op: curve
+                                interp: pow2Out
+                            }
+                        ]
+                    }
+                }
+                {
+                    gx: -1
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                }
+            ]
+            mirror: false
+            under: false
+            outline: false
+            color: ffffff00
+            colorTo: ffffff
+        }
+        {
+            type: RegionPart
+            name: meld-tracker-encampment-projectile
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: curve
+                        interp: reverse
+                    }
+                    {
+                        op: compress
+                        start: 0.4
+                        end: 1
+                    }
+                    {
+                        op: curve
+                        interp: pow2In
+                    }
+                ]
+            }
+            y: -4
+            moves: [
+                {
+                    y: 4.5
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: curve
+                                interp: reverse
+                            }
+                            {
+                                op: curve
+                                interp: pow2Out
+                            }
+                        ]
+                    }
+                }
+                {
+                    gx: -1
+                    progress: {
+                        type: reload
+                        ops: [
+                            {
+                                op: curve
+                                interp: pow2In
+                            }
+                        ]
+                    }
+                }
+            ]
+            mirror: false
+            under: false
+            outline: false
+            color: ffffff00
+            colorTo: ffffff
+        }
+    ]
+}
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+
+
+
+ammoTypes: {
+	ichor: {
+		speed: 0.2
+		spawnUnit: tracker-projectile
+	}
+}
+
+consumes: {
+    liquid: {
+        liquid: ichor
+        amount: 1
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+requirements: [
+	larval-plating/45
+	carbolith/35
+]
+
+category: turret

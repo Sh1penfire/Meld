@@ -34,7 +34,7 @@ weapons: [
 			killShooter: true
 			fragBullets: 2
 			fragBullet: {
-				spawnUnit: c-meld-c1-1a-killa
+				spawnUnit: killa
 			}
 			hitEffect: none
 			shootEffect: none

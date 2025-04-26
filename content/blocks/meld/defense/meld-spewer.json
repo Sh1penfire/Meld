@@ -1,0 +1,226 @@
+type: LiquidTurret
+size: 3
+health: 1280
+range: 200
+
+shootWarmupSpeed : 0.09
+minWarmup: 0.8
+
+reload: 160
+
+recoil: 0.25
+
+recoil: 3.5
+inaccuracy: 0
+shootCone: 5
+
+liquidCapacity: 150
+
+shootY: 20
+
+loopSound: none
+shootSound: mediumCannon
+
+targetAir: false
+
+squareSprite: false
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -nossel-tip
+			progress: warmup
+			mirror: false
+			under: true
+			moveY: 10
+            moves: [
+                {
+                    y: -4.25
+                    progress: recoil
+                }
+                {
+                    y: 4
+                    progress: reload
+                }
+            ]
+		}
+		{
+			type: RegionPart
+			suffix: -nossel
+			progress: warmup
+			mirror: false
+			under: true
+			moveY: 10
+            moves: [
+                {
+                    y: -1.25
+                    progress: recoil
+                }
+            ]
+		}
+	]
+}
+
+shoot: {
+    type: ShootMulti
+    source: {
+        shots: 30
+        shotDelay: 3
+    }
+    dest: [
+        {
+            type: ShootSpread
+            shots: 3
+            spread: 2
+        }
+        {
+            type: ShootSpread
+            shots: 2
+            spread: 15
+        }
+    ]
+}
+
+velocityRnd: 0.5
+inaccuracy: 3
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: dbd400
+            colorTo: 948a00a0
+            length: 85
+            sizeFrom: 4
+            sizeTo: 0
+            interp: pow5Out
+            layer: 62
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: dbd400
+            colorTo: 948a00a0
+            length: 85
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+            layer: 62
+        }
+    ]
+}
+
+
+
+ammoTypes: {
+	ichor: {
+        type: LiquidBulletType
+        liquid: ichor
+        speed: 12
+        damage: 1
+        knockback: 5
+        splashDamage: 25
+        splashDamageRadius: 50
+        
+        healAmount: 15
+        collidesTeam: true
+        collidesAir: false
+    
+        layer: 61
+
+        weaveScale: 50
+        weaveMag: 0.5
+        homingPower: 0.015
+    
+        lifetime: 20
+        impact: true
+    
+        trailChance: 0.75
+        trailRotation: true
+        trailEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 1
+                    particles: 4
+                    sizeTo: 0
+                    colorFrom: fcf69c
+                    colorTo: 948a0060
+                    layer: 61
+                    cone: 25
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 2.5
+                    particles: 2
+                    sizeTo: 0
+                    colorFrom: fcf69c
+                    colorTo: 948a00a0
+                    layer: 61
+                    cone: 25
+                }
+            ]
+        }
+        hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    length: 5
+                    sizeFrom: 2
+                    sizeTo: 0
+                    colorFrom: fcf69c
+                    colorTo: 948a0060
+                    layer: 60
+                    cone: 25
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    length: 13
+                    sizeFrom: 4
+                    sizeTo: 0
+                    colorFrom: fcf69c
+                    colorTo: 948a00a0
+                    layer: 60
+                    cone: 25
+                }
+            ]
+        }
+    }
+}
+
+consumes: {
+    liquid: {
+        liquid: ichor
+        amount: 1.75
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+requirements: [
+	larval-plating/45
+	carbolith/35
+]
+
+category: turret

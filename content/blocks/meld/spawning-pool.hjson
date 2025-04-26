@@ -1,0 +1,63 @@
+type: GenericCrafter
+size: 5
+configurable: false
+variants: 0
+solid: true
+
+liquidCapacity: 100
+
+requirements: [
+	larval-plating/200
+	meld-shard/150
+]
+
+craftTime: 720
+
+squareSprite: false
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: ichor
+		alpha: 1
+		padding: 5.5
+	}
+	{
+		type: DrawFrames
+		frames: 6
+		interval: 10
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -top
+	}
+]
+
+consumes: {
+	liquid: ichor/6
+}
+
+outputItem: larva/8
+
+craftEffect: {
+	type: ParticleEffect
+	region: meld-m-a-larva1
+	layer: 20
+	lifetime: 120
+	particles: 120
+	baseLength: 4
+	length: 50
+	sizeFrom: 5
+	sizeTo: 2
+	spin: 1.5
+	colorFrom: ffffff
+	colorTo: ffffff00
+}

@@ -1,0 +1,208 @@
+type: ItemTurret
+size: 3
+health: 1160
+range: 200
+fogRadiusMultiplier: 0.25
+reload: 85
+shootEffect: shootBig
+shootWarmupSpeed : 0.09
+minWarmup: 0.7
+
+recoil: 0.25
+
+recoil: 1.5
+inaccuracy: 7
+shootCone: 5
+
+shoot: {
+	shots: 3
+    shotDelay: 5
+}
+
+inaccuracy: 8
+
+shootY: 7
+
+ammoPerShot: 3
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -plate
+			progress: warmup
+			mirror: true
+			under: false
+			moveX: 1
+			moveY: -1.55
+			moveRot: -15
+
+		},
+		{
+			name: clear
+			progress: warmup
+			y: -1.5
+			moveY: 1
+			children: [
+				{
+					type: RegionPart
+					suffix: -barrel
+					progress: recoil
+					mirror: false
+					under: true
+					moveY: -1.25
+				}
+			]
+		}
+	]
+}
+
+ammoTypes: {
+	carbolith: {
+		type: BasicBulletType
+        sprite: meld-electrode
+        frontColor: ebf6ff
+        backColor: a9d8ff
+        lightColor: a9d8ff4b
+		speed: 6
+		damage: 20
+		lifetime: 33
+		width: 6
+		height: 9
+		knockback: 1
+		collidesGround: true
+		despawnEffect: none
+		hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: WaveEffect
+                    lifetime: 6
+                    sizeFrom: 12
+                    sizeTo: 3
+                    strokeFrom: 0
+                    strokeTo: 4
+                    colorFrom: a9d8ff
+                    colorTo: a9d8ff00
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 6
+                    sizeFrom: 7
+                    sizeTo: 20
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    particles: 3
+                    length: 15
+                    sizeFrom: 3
+                    sizeTo: 0
+                    sizeInterp: pow2In
+                    colorFrom: 7f7f7f
+                    colorTo: 7f7f7f
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 12
+                    line: true
+                    particles: 4
+                    baseLength: 26
+                    length: 13
+                    lenFrom: 0
+                    lenTo: 4
+                    strokeFrom: 0.5
+                    strokeTo: 1.2
+                    interp: pow2Out
+                    sizeInterp: pow2In
+                    colorFrom: f6e096
+                    colorTo: f6802a00
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 17
+                    line: true
+                    particles: 2
+                    baseLength: 32
+                    length: 13
+                    lenFrom: 4
+                    lenTo: 7
+                    strokeFrom: 0.7
+                    strokeTo: 1.5
+                    interp: pow2Out
+                    sizeInterp: pow2In
+                    colorFrom: f6e096
+                    colorTo: f6802a00
+                }
+            ]
+        }
+        fragBullets: 2
+        shrinkY: 0.2
+        fragBullet: {
+            type: LightningBulletType
+            absorbable: false
+            lightningLength: 9
+            damage: 12
+            hitEffect: none
+            despawnEffect: none
+            lightningType: {
+                type: BulletType
+                speed: 0
+                lifetime: 10
+                despawnEffect: none
+                hitEffect: {
+                    type: ParticleEffect
+                    lifetime: 13
+                    line: true
+                    particles: 2
+                    baseLength: 3
+                    length: 13
+                    strokeFrom: 0.7
+                    strokeTo: 1.5
+                    interp: pow3Out
+                    sizeInterp: pow2In
+                    colorFrom: a9d8ff
+                    colorTo: f6802a00
+                }
+                hittable: false
+                reflectable: false
+                lightColor: a9d8ff
+            }
+        }
+        ammoMultiplier: 1
+	}
+}
+
+
+consumes: {
+    power: 3.33333333333
+}
+
+coolantMultiplier: 2
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  maxTemp: 0.20
+  amount: 0.15
+}
+
+
+requirements: [
+	debris/35
+	carbolith/75
+	electrum-sheet/40
+]
+
+category: turret
+
+research: {
+	parent: i-a0-0a-sunder
+}
+
+researchCost: [
+    debris/120
+    carbolith/80
+]

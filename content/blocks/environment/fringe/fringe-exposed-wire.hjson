@@ -1,0 +1,12 @@
+type: Floor
+variants: 0
+
+blendGroup: fringe-plating
+
+emitLight: true
+lightColor: 9ccaed2c
+lightRadius: 6
+
+attributes: {
+	data: 0.25
+}

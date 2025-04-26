@@ -1,0 +1,72 @@
+type: LiquidTurret
+size: 3
+health: 650
+
+destroyBulletSameTeam: true
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	fragBullets: 2
+	fragBullet: {
+		spawnUnit: pointago
+	}
+}
+
+loopSound: none
+shootSound: bang
+
+shootCone: 15
+
+reload: 480
+recoil: 3
+rotateSpeed: 5
+range: 330
+shootY: 8
+
+moveWhileCharging: false
+predictTarget: false
+
+inaccuracy: 1
+shoot: {
+    firstShotDelay: 35
+    shotDelay: 8
+    shots: 3
+}
+
+shootEffect: shootSmall
+
+ammoTypes: {
+	meld: {
+        ammoMultiplier: 0.0625
+        sprite: "meld-clump"
+        damage: 85
+        drag: -0.01
+        speed: 6
+        lifetime: 55
+
+        pierce: true
+        pierceCap: 3
+        width: 3
+        height: 32
+        knockback: 25
+        impact: true
+        trailEffect: smoke
+        shootEffect: shootBig
+        hitEffect: explosion
+    }
+}
+
+requirements: [
+	meld-shard/85
+	larval-plating/240
+	metalic-chunk/120
+	metalic-globule/95
+]
+
+squareSprite: false
+category: effect
+floating: true

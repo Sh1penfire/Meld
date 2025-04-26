@@ -48,7 +48,7 @@ weapons: [
 		bullet: {
 			type: LiquidBulletType
 			speed: 0.35
-			liquid: a1-0a-liquid-data
+			liquid: liquid-data
 		}
 	}
 	{
@@ -70,7 +70,7 @@ weapons: [
 		bullet: {
 			type: LiquidBulletType
 			speed: 0.35
-			liquid: a1-0a-liquid-data
+			liquid: liquid-data
 		}
 	}
 ]
