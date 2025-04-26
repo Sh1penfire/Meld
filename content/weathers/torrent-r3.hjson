@@ -1,8 +1,8 @@
 type: RainWeather
 color: dc65c8
-xspeed: 2.5
-yspeed: 3.5
-stroke: 0.95
+xspeed: 3.5
+yspeed: 5.5
+stroke: 1.4
 density: 950
 sizeMin: 12
 sizeMax: 60
