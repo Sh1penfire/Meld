@@ -393,8 +393,8 @@ engines: [
 immunities: [
 	strata-a0-rally
 	mangrove-d0-mercury-poisoning
-	shattered
 	lacerated
+	wildlife-a1-reconstitution
 ]
 
 research: core-raft

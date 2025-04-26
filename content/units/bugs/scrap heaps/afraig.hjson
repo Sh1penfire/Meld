@@ -138,6 +138,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
+        hidden: true
         x: 0
         y: 0
         reload: 60
@@ -238,6 +239,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
+        hidden: true
         x: 0
         y: 0
         reload: 60
@@ -259,7 +261,7 @@ weapons: [
             fragSpread: 90
             fragRandomSpread: 55
             fragBullet: {
-                sprite: "meld-fragment1"
+                sprite: "meld-stone-fragment1"
                 pierce: true
                 pierceCap: 3
                 speed: 7.5

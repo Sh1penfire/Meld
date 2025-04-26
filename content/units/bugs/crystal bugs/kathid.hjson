@@ -93,7 +93,7 @@ weapons: [
             fragBullets: 13
             fragLifeMin: 0.5
             fragBullet: {
-                sprite: "meld-fragment1"
+                sprite: "meld-stone-fragment1"
                 pierce: true
                 pierceCap: 3
                 speed: 7.5
@@ -170,7 +170,7 @@ weapons: [
             fragBullets: 6
             fragLifeMin: 0.5
             fragBullet: {
-                sprite: "meld-fragment2"
+                sprite: "meld-stone-fragment2"
                 pierce: false
                 speed: 4.5
                 drag: 0.008

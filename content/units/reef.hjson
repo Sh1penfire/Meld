@@ -299,8 +299,8 @@ abilities: [
 
 immunities: [
 	mangrove-d0-mercury-poisoning
-	shattered
 	lacerated
+	wildlife-a1-reconstitution
 ]
 
 research: b1-0a-drone-bay
