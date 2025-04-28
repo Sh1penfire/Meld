@@ -86,11 +86,10 @@ weapons: [
 			despawnEffect: none
 			shootEffect: none
 			smokeEffect: none
-			despawnHit: true
-			puddles: 2
-			puddleRange: 40
-			puddleAmount: 5
-			puddleLiquid: mercury
+			splashDamage: 0
+			splashDamageRadius: 40
+			status: mangrove-d0-mercury-poisoning
+			statusDuration: 8
 		}
 	}
 	{
@@ -105,6 +104,9 @@ weapons: [
 		controllable: false
 		aiControllable: false
 		alwaysShooting: true
+		shoot: {
+			shots: 5
+		}
 		bullet: {
 			instantDisappear: true
 			collides: false
@@ -114,10 +116,11 @@ weapons: [
 			despawnEffect: none
 			shootEffect: none
 			smokeEffect: none
-			splashDamage: 0
-			splashDamageRadius: 40
-			status: mangrove-d0-mercury-poisoning
-			statusDuration: 8
+			despawnHit: true
+			puddles: 2
+			puddleRange: 40
+			puddleAmount: 2.5
+			puddleLiquid: mercury
 		}
 	}
 ]

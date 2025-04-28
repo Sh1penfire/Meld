@@ -11,13 +11,11 @@ baseEfficiency: 0
 attribute: heat
 baseEfficiency: 0
 minEfficiency: 1
+maxBoost: 2
 
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
-
-rotate: true
-quickRotate: true
 
 craftTime: 30
 itemCapacity: 60
@@ -40,7 +38,7 @@ consumes: {
 }
 
 outputLiquids: [
-	mercury/12
+	mercury/6
 	ooze/0.5
 ]
 

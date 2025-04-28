@@ -16,7 +16,7 @@ ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 60
+craftTime: 30
 liquidCapacity: 80
 
 drawer: [
@@ -120,15 +120,15 @@ drawer: [
 
 consumes: {
 	items: [
-		carbolith/5
+		carbolith/2
 	]
 	liquids: [
 		aspect/3.3333333333333333333333333333333
-		ichor/0.5
+		ichor/1
 	]
 }
 
-outputItem: compacted-brick/10
+outputItem: compacted-brick/4
 
 requirements: [
  	debris/80

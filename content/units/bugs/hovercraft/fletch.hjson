@@ -17,6 +17,7 @@ omniMovement: false
 
 useEngineElevation: false
 faceTarget: false
+canDrown: false
 
 alwaysShootWhenMoving: true
 

@@ -32,9 +32,13 @@ drawer: {
 	]
 }
 
+consumes: {
+	liquid: mercury/0.5
+}
+
 requirements: [
-	debris/80
-	carbolith/120
+	debris/75
+	carbolith/25
 ]
 
 research: {

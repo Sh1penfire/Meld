@@ -1,2 +1,6 @@
 type: Floor
 variants: 2
+
+attributes: {
+	riplom: 0.5
+}

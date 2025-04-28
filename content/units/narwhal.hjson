@@ -21,6 +21,7 @@ rotateSpeed: 6
 
 useEngineElevation: false
 faceTarget: false
+canDrown: false
 
 weapons: [
     //Primed activation
