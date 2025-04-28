@@ -22,74 +22,6 @@ squareSprite: false
 
 craftTime: 60
 
-drawer: [
-    {
-        type: DrawRegion
-        suffix: -bottom1
-        layer: 29
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: ichor
-        padding: 1.5
-    }
-    {
-        type: DrawRegion
-        suffix: -bottom2
-    }
-
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padRight: 2
-        padBottom: 2
-
-        padTop: 17.75
-        padLeft: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padLeft: 2
-        padBottom: 2
-
-        padTop: 17.75
-        padRight: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padRight: 2
-        padTop: 2
-
-        padBottom: 17.75
-        padLeft: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padLeft: 2
-        padTop: 2
-
-        padBottom: 17.75
-        padRight: 17.75
-    }
-
-    {
-        type: DrawRegion
-    }
-    {
-        type: DrawRegion
-        suffix: -tops
-    }
-    {
-        type: DrawSideRegion
-    }
-    {
-        type: DrawLiquidOutputs
-    }
-]
-
 
 craftEffect: {
 	type: ParticleEffect
@@ -111,7 +43,7 @@ consumes: {
 outputItem: riplom/1
 
 outputLiquids: [
-	rift/0.1
+	mercury/0
 ]
 
 requirements: [

@@ -22,8 +22,62 @@ squareSprite: false
 craftTime: 120
 
 drawer: [
+    {
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawArcSmelt
+		flameRad: 2
+		flameRadiusScl: 4
+		flameRadiusMag: 1
+	}
 	{
 		type: DrawRegion
+		suffix: -bottom2
+	}
+	{
+		type: DrawPistons
+		sides: 1
+		suffix: -piston2
+		angleOffset: 90
+		sinMag: 8
+		sinScl: 6
+		lenOffset: -3.5
+		sinOffset: 25
+	}
+	{
+		type: DrawPistons
+		sides: 1
+		suffix: -piston1
+		angleOffset: 90
+		sinMag: 8
+		sinScl: 6
+		lenOffset: -3.5
+		sinOffset: 50
+	}
+	{
+		type: DrawRegion
+		suffix: -pistons-box
+	}
+	{
+		type: DrawRegion
+		suffix: -bottom3
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aspect
+		padTop: 14.25
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawRegion
+		suffix: -slurry-box
+	}
+	{
+		type: DrawGlowRegion
 	}
 ]
 
@@ -48,6 +102,7 @@ research: {
 }
 
 requirements: [
- 	debris/80
+ 	debris/35
 	carbolith/85
+	silver/85
 ]

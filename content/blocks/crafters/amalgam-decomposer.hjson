@@ -12,7 +12,7 @@ attribute: soil
 baseEfficiency: 0
 minEfficiency: 0.01
 maxBoost: 2.25
-boostScale: 0.4
+boostScale: 0.4444444444444444
 
 ambientSound: drill
 ambientSoundVolume: 0.08
