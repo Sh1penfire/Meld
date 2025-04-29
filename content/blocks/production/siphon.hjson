@@ -42,10 +42,7 @@ drawer: [
 consumes: {
 	liquids: [
 		deposit/0
-		nectar/0
 		mercury/0
-		blood/0
-		ooze/0
 	]
 	items: [
 		compacted-brick/1
@@ -55,10 +52,7 @@ consumes: {
 
 
 outputLiquids: [
-	nectar/0
 	mercury/0
-	blood/0
-	ooze/0
 ]
 
 outputItems: [

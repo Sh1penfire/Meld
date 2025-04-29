@@ -1,12 +1,12 @@
 type: RainWeather
-color: dc65c8
-xspeed: 3.5
-yspeed: 5.5
+color: e382d3
+xspeed: 4.5
+yspeed: 12
 stroke: 1.4
-density: 950
+density: 920
 sizeMin: 12
 sizeMax: 60
-splashTimeScale: 8
+splashTimeScale: 9
 liquid: meld
 force: 0
 status: dissolving

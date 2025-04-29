@@ -1,10 +1,11 @@
 type: RainWeather
 color: dc65c8
-density: 520
-xspeed: 0.8
-yspeed: 1.5
+density: 320
+xspeed: 0.4
+yspeed: 0.6
+stroke: 0.5
 sizeMin: 6
 sizeMax: 12
-splashTimeScale: 35
+splashTimeScale: 45
 liquid: meld
 force: 0

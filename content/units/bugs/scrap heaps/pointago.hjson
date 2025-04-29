@@ -561,4 +561,5 @@ abilities: [
 immunities: [
 	aspect-burn
 	shattered
+	dissolving
 ]

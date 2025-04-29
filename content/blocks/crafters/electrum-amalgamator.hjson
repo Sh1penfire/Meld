@@ -27,6 +27,10 @@ drawer: [
 		suffix: -bottom
 	}
 	{
+		type: DrawLiquidTile
+		drawLiquid: ichor
+	}
+	{
 		type: DrawArcSmelt
 		flameRad: 2
 		flameRadiusScl: 4
@@ -35,6 +39,16 @@ drawer: [
 	{
 		type: DrawRegion
 		suffix: -bottom2
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		padRight: 18
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: mercury
+		padLeft: 18
 	}
 	{
 		type: DrawPistons

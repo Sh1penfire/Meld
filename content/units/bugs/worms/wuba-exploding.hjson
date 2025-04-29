@@ -177,3 +177,7 @@ weapons: [
         }
     }
 ]
+
+immunities: [
+	dissolving
+]

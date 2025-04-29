@@ -3,7 +3,7 @@ size: 1
 
 floating: true
 placeableLiquid: true
-liquidOutputDirections: [0]
+liquidOutputDirections: [2]
 rotate: true
 quickRotate: true
 

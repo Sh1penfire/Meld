@@ -176,6 +176,15 @@ weapons: [
     }
 ]
 
+abilities: [
+    {
+        type: LiquidRegenAbility
+        liquid: nectar
+        regenPerSlurp: 1
+        slurpSpeed: 90
+    }
+]
+
 immunities: [
 	mangrove-d0-mercury-poisoning
 	lacerated

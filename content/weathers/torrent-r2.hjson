@@ -3,7 +3,7 @@ color: dc65c8
 xspeed: 2.5
 yspeed: 3.5
 stroke: 0.95
-density: 950
+density: 475
 sizeMin: 12
 sizeMax: 32
 splashTimeScale: 14

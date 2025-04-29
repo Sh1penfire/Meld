@@ -1,5 +1,5 @@
 type: ParticleWeather
-color: a432805a
+color: b3428f5a
 noiseColor: 892a6b
 drawNoise: true
 noiseLayers: 1

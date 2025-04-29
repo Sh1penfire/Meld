@@ -118,4 +118,5 @@ weapons: [
 immunities: [
 	aspect-burn
 	shattered
+	dissolving
 ]
