@@ -70,6 +70,7 @@ deathExplosionEffect: {
 }
 
 weapons: [
+    #Main weapon
 	{
 		x: 0
 		y: 0
@@ -137,12 +138,14 @@ weapons: [
 			}
 		}
 	}
+    //Explosion
 	{
 		controllable: false
 		aiControllable: false
 		shootOnDeath: true
 		mirror: false
 		rotate: false
+        hidden: true
 		x: 0
 		y: 0
 		reload: 60
@@ -169,6 +172,7 @@ weapons: [
 			hittable: false
 		}
 	}
+    //Wake
 	{
 		controllable: false
 		aiControllable: false

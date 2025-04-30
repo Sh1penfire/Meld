@@ -38,6 +38,32 @@ weapons: [
         y: 0
         alwaysShooting: true
         shootCone: 180
+        reload: 50000000
+        shootSound: none
+        bullet: {
+            shootEffect: none
+            smokeEffect: none
+            
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+            
+            splashDamageRadius: 150
+            splashDamage: 0
+            status: dissolving
+            statusDuration: 20
+            
+            hitEffect: false
+            despawnEffect: false
+            healAmount: 50
+        }
+    }
+    {
+        x: 0
+        y: 0
+        alwaysShooting: true
+        shootCone: 180
         reload: 30
         shootSound: none
         shoot: {
@@ -46,8 +72,6 @@ weapons: [
             spread: 1
             shotDelay: 8
         }
-        shootEffect: none
-        smokeEffect: none
         bullet: {
             shootEffect: none
             smokeEffect: none
@@ -79,10 +103,11 @@ weapons: [
                 hittable: false
                 instantDisappear: true
                 
-                damage: 0.01
-                buildingDamageMultiplier: 400
+                damage: 0.1
+                buildingDamageMultiplier: 40
                 pierce: true
                 pierceBuilding: true
+                pierceArmor: true
                 
                 pierceEffect: {
                     type: ParticleEffect

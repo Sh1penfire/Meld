@@ -1,0 +1,121 @@
+type: crawl
+speed: 0.75
+
+health: 240
+armor: 75
+
+drag: 0.12
+accel: 0.2
+range: 40
+
+hitSize: 10
+rotateSpeed: 3.5
+faceTarget: true
+omniMovement: false
+
+segments: 3
+segmentMag: 1.5
+segmentMaxRot: 40
+segmentScl: 12
+drawCell: false
+drawBody: false
+crushDamage: 2
+
+targetAir: false
+controller: HugAI
+
+weapons: [
+//Dissolving fumes
+	{
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		mirror: true
+		rotate: true
+        rotateSpeed: 0
+        baseRotation: -12
+		x: 4
+		y: 10
+		reload: 15
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+        shoot: {
+            type: ShootBarrel
+            shots: 6
+            shotDelay: 5
+            barrels: [
+                0, 0, -12
+                0, 1, -8
+                0, 2, -4
+                0, 3, 0
+                0, 2, -4
+                0, 1, -8
+            ]
+        }
+		bullet: {
+			type: BulletType
+			collides: true
+			collidesAir: false
+			collidesTiles: true
+			hitSound: none
+
+			rangeOverride: 25
+			hitEffect: none
+			speed: 0.25
+            lifetime: 25
+            damage: 1
+			splashDamageRadius: 15
+			splashDamage: 3
+			hittable: false
+            smokeEffect: none
+            shootEffect: none
+            despawnEffect: none
+            status: dissolving
+            statusDuration: 60
+            shootEffect: [
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 15
+                    length: 15
+                    sizeFrom: 2
+                    sizeTo: 0
+					colorFrom: e5aed700
+					colorTo: e5aed7
+                    cone: 25
+                    followParent: false
+                }
+                {
+                    type: ParticleEffect
+                    particles: 4
+                    lifetime: 25
+                    length: 25
+                    sizeFrom: 0
+                    sizeTo: 2
+					colorFrom: e5aed7
+					colorTo: e5aed700
+                    cone: 25
+                    followParent: false
+                }
+            ]
+		}
+	}
+]
+
+
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: wuba-exploding
+	}
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+]

@@ -38,6 +38,7 @@
     attribute-meld
     attribute-nectar
     attribute-rift
+    attribute-riplom
     attribute-soil
 #Crafters
     earthbound-infuser
@@ -69,6 +70,11 @@
     chute-overflow
     chute-unloader
     glasswork-chute
+#Power
+    connector
+    substation
+    powerbank
+    continental-link
 #Unit blocks
     shark-factory
     remora-factory
@@ -83,6 +89,7 @@
     nullifier
     movement-anchor
     sonar-spire
+    mercurial-diffuser
 #Items
     debris
     carbolith
@@ -177,6 +184,8 @@
     zip
     gala
     wuba
+    wuba-exploding
+    uwubba
     globkin
     allegro
     tracker
@@ -224,7 +233,6 @@
     tracker-projectile
     tracker-projectile
     vision-giver
-    wuba-exploding
     z-the-grater-good
 
 #Environmental tiles

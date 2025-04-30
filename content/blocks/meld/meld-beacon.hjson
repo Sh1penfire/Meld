@@ -9,7 +9,7 @@ alwaysShooting: true
 
 range: 150
 
-liquidCapacity: 100
+liquidCapacity: 10
 
 squareSprite: false
 
@@ -19,8 +19,11 @@ ammoTypes: {
 		type: MissileBulletType
 		spawnUnit: meld-beacon-power
 		shootEffect: none
-		ammoMultiplier: 0.01
 	}
+}
+
+consume: {
+	liquid: aether/0.2
 }
 
 loopSound: spray
