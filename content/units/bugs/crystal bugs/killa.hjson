@@ -3,8 +3,8 @@ speed: 0.3
 
 health: 340
 
-drag: 0.05
-accel: 0.03
+drag: 0.1
+accel: 0.08
 drownTimeMultiplier: 0.25
 
 hitSize: 20
@@ -46,7 +46,7 @@ weapons: [
 			width: 1.5
 			knockback: 2.5
 			pierceCap: 1
-			recoil: 0.075
+			recoil: 0
 			colors: [
 				f9e1f343,
 				f1ace994,
@@ -360,4 +360,5 @@ immunities: [
 	aspect-burn
 	shattered
 	dissolving
+    sliding
 ]

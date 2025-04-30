@@ -16,10 +16,10 @@ shootCone: 5
 
 shoot: {
 	shots: 3
-    shotDelay: 5
+    shotDelay: 30
 }
 
-inaccuracy: 8
+inaccuracy: 0
 
 shootY: 7
 
@@ -59,18 +59,166 @@ drawer: {
 }
 
 ammoTypes: {
-	carbolith: {
+    carbolith: {
+        type: BasicBulletType
+        damage: 40
+        
+        sprite: meld-electrode
+		width: 6
+		height: 9
+        shrinkY: 0
+        frontColor: ebf6ff
+        backColor: a9d8ff
+        lightColor: a9d8ff4b
+        
+		hitEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: WaveEffect
+                    lifetime: 6
+                    sizeFrom: 12
+                    sizeTo: 3
+                    strokeFrom: 0
+                    strokeTo: 4
+                    colorFrom: a9d8ff
+                    colorTo: a9d8ff00
+                }
+                {
+                    type: WaveEffect
+                    lifetime: 6
+                    sizeFrom: 7
+                    sizeTo: 20
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 15
+                    particles: 3
+                    length: 15
+                    sizeFrom: 3
+                    sizeTo: 0
+                    sizeInterp: pow2In
+                    colorFrom: 7f7f7f
+                    colorTo: 7f7f7f
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 12
+                    line: true
+                    particles: 4
+                    baseLength: 26
+                    length: 13
+                    lenFrom: 0
+                    lenTo: 4
+                    strokeFrom: 0.5
+                    strokeTo: 1.2
+                    interp: pow2Out
+                    sizeInterp: pow2In
+                    colorFrom: f6e096
+                    colorTo: f6802a00
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 17
+                    line: true
+                    particles: 2
+                    baseLength: 32
+                    length: 13
+                    lenFrom: 4
+                    lenTo: 7
+                    strokeFrom: 0.7
+                    strokeTo: 1.5
+                    interp: pow2Out
+                    sizeInterp: pow2In
+                    colorFrom: f6e096
+                    colorTo: f6802a00
+                }
+            ]
+        }
+        
+        lifetime: 10
+        speed: 6
+        
+        hittable: false
+        shootEffect: none
+        despawnEffect: none
+        
+        fragBullets: 6
+        fragRandomSpread: 45
+        fragSpread: 5
+        fragLifeMin: 0.7
+        fragBullet: {
+            damage: 0
+            speed: 7
+            drag: 0.05
+            lifetime: 60
+            
+            width: 3
+            height: 3
+            shrinkX: 1
+            shrinkY: 1
+            shrinkInterp: pow10Out
+            spin: 3
+            
+            sticky: true
+            stickyExtraLifetime: 120
+            sprite: meld-diamond
+            frontColor: ebf6ff
+            backColor: a9d8ff
+            lightColor: a9d8ff4b
+            
+            fragBullets: 2
+            fragBullet: {
+                type: LightningBulletType
+                absorbable: false
+                lightningLength: 9
+                damage: 6
+                hitEffect: none
+                despawnEffect: none
+                lightningType: {
+                    type: BulletType
+                    speed: 0
+                    lifetime: 10
+                    despawnEffect: none
+                    hitEffect: {
+                        type: ParticleEffect
+                        lifetime: 13
+                        line: true
+                        particles: 2
+                        baseLength: 3
+                        length: 13
+                        strokeFrom: 0.7
+                        strokeTo: 1.5
+                        interp: pow3Out
+                        sizeInterp: pow2In
+                        colorFrom: a9d8ff
+                        colorTo: f6802a00
+                    }
+                    hittable: false
+                    reflectable: false
+                    lightColor: a9d8ff
+                }
+            }
+            setDefaults: false
+            despawnHit: true
+            fragOnAbsorb: true
+            despawnEffect: none
+        }
+        ammoMultiplier: 5
+    }
+	compacted-brick: {
 		type: BasicBulletType
         sprite: meld-electrode
         frontColor: ebf6ff
         backColor: a9d8ff
         lightColor: a9d8ff4b
 		speed: 6
-		damage: 20
+		damage: 120
+        reloadMultiplier: 0.2
 		lifetime: 33
 		width: 6
 		height: 9
-		knockback: 1
+		knockback: 20
 		collidesGround: true
 		despawnEffect: none
 		hitEffect: {
@@ -137,42 +285,62 @@ ammoTypes: {
                 }
             ]
         }
-        fragBullets: 2
         shrinkY: 0.2
+        fragBullets: 5
+        fragRandomSpread: 15
+        fragSpread: 5
+        rangeChange: 90
         fragBullet: {
-            type: LightningBulletType
-            absorbable: false
-            lightningLength: 9
-            damage: 12
-            hitEffect: none
+            sprite: "meld-stone-fragment1"
+            pierce: true
+            pierceCap: 3
+            speed: 7.5
+            drag: 0.008
+            lifetime: 15
+            width: 7
+            height: 12
+            damage: 24
+            knockback: 2.5
+            shootEffect: shootBig
             despawnEffect: none
-            lightningType: {
-                type: BulletType
-                speed: 0
-                lifetime: 10
-                despawnEffect: none
-                hitEffect: {
+            shrinkX: 1
+            shrinkY: 0.2
+            hitEffect: [
+                {
                     type: ParticleEffect
-                    lifetime: 13
-                    line: true
-                    particles: 2
-                    baseLength: 3
-                    length: 13
-                    strokeFrom: 0.7
-                    strokeTo: 1.5
-                    interp: pow3Out
-                    sizeInterp: pow2In
-                    colorFrom: a9d8ff
-                    colorTo: f6802a00
+                    lifetime: 60
+                    region: meld-diamond
+                    colorFrom: 4a626d
+                    colorTo: 3c4448
+                    particles: 8
+                    baseLength: 16
+                    length: 5
+                    sizeFrom: 5
+                    sizeTo: 2
+                    lightScl: 0
+                    cone: 85
                 }
-                hittable: false
-                reflectable: false
-                lightColor: a9d8ff
-            }
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    region: meld-diamond
+                    colorFrom: 4a626d
+                    colorTo: 3c4448
+                    particles: 6
+                    length: 45
+                    sizeFrom: 4
+                    sizeTo: 0
+                    sizeInterp: pow2In
+                    lightScl: 0
+                    cone: 25
+                }
+            ]
         }
         ammoMultiplier: 1
 	}
 }
+
+ammoPerShot: 5
 
 
 consumes: {
