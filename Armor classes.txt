@@ -1,0 +1,4 @@
+1-15: Plated
+15-30: Lightly armored
+30-60: Armored
+60+: Heavly Armored

@@ -165,8 +165,6 @@
     enforcer
     impaler
     time-keeper
-    blob
-    bulbhead-sonar
 #Meld units
     jilla
     scorcher
@@ -181,8 +179,10 @@
     graig
     pester
     spillway
+    spillway-projectile
     zip
     gala
+    blob
     wuba
     wuba-exploding
     uwubba
@@ -221,20 +221,20 @@
     overseer-top
     poisag-projector
     pork
-    rapid-enemy-mobalization
     scorcher
     scorcher-cluster
     soontm
     spectre
     spectre-spawn
-    spillway-projectile
     spire-sonar
     splurger
-    tracker-projectile
-    tracker-projectile
     vision-giver
     z-the-grater-good
 
+    bulbhead-sonar
+    rapid-enemy-mobalization
+    tracker-projectile
+    
 #Environmental tiles
     aether-growth
     aspect-soil
