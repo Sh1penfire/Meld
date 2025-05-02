@@ -11,17 +11,18 @@ minWarmup: 0.7
 recoil: 0.25
 
 recoil: 1.5
-inaccuracy: 7
+inaccuracy: 0
 shootCone: 5
 
 shoot: {
+type: ShootBarrel
 	shots: 3
-    shotDelay: 30
+    shotDelay: 5
 }
 
 inaccuracy: 0
 
-shootY: 7
+shootY: 16
 
 ammoPerShot: 3
 
@@ -42,16 +43,48 @@ drawer: {
 		{
 			name: clear
 			progress: warmup
-			y: -1.5
-			moveY: 1
+			moveY: 8
+			children: [
+				{
+					type: RegionPart
+					suffix: -barrel3
+					progress: reload
+					mirror: false
+					under: true
+					moveY: -5
+                    y: 5
+				}
+			]
+		},
+		{
+			name: clear
+			progress: warmup
+			moveY: 4
+			children: [
+				{
+					type: RegionPart
+					suffix: -barrel2
+					progress: reload
+					mirror: false
+					under: true
+					moveY: -5
+                    y: 5
+				}
+			]
+		},
+		{
+			name: clear
+			progress: warmup
+			moveY: 4
 			children: [
 				{
 					type: RegionPart
 					suffix: -barrel
-					progress: recoil
+					progress: reload
 					mirror: false
 					under: true
-					moveY: -1.25
+					moveY: -3
+                    y: 3
 				}
 			]
 		}
@@ -153,8 +186,9 @@ ammoTypes: {
             drag: 0.05
             lifetime: 60
             
-            width: 3
-            height: 3
+            sprite: meld-diamond
+            width: 5
+            height: 5
             shrinkX: 1
             shrinkY: 1
             shrinkInterp: pow10Out
@@ -162,7 +196,6 @@ ammoTypes: {
             
             sticky: true
             stickyExtraLifetime: 120
-            sprite: meld-diamond
             frontColor: ebf6ff
             backColor: a9d8ff
             lightColor: a9d8ff4b
@@ -199,6 +232,7 @@ ammoTypes: {
                     lightColor: a9d8ff
                 }
             }
+            
             setDefaults: false
             despawnHit: true
             fragOnAbsorb: true
@@ -359,8 +393,9 @@ coolant: {
 
 
 requirements: [
-	debris/35
-	carbolith/75
+	debris/95
+	compacted-brick/80
+	stony-gloop/80
 	electrum-sheet/40
 ]
 

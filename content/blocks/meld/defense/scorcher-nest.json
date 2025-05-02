@@ -40,7 +40,10 @@ destroyBullet: {
         hittable: false
         hitEffect: false
         despawnEffect: false
-		despawnUnit: scorcher
+		fragBullets: 1
+		fragBullet: {
+		spawnUnit: scorcher
+		}
 	}
 }
 
