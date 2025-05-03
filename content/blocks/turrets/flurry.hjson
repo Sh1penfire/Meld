@@ -1,9 +1,11 @@
 type: ItemTurret
 size: 3
-health: 1160
+health: 450
+armor: 45
+
 range: 200
 fogRadiusMultiplier: 0.25
-reload: 85
+reload: 120
 shootEffect: shootBig
 shootWarmupSpeed : 0.09
 minWarmup: 0.7
@@ -16,78 +18,189 @@ shootCone: 5
 
 shoot: {
 type: ShootBarrel
-	shots: 3
+	shots: 4
     shotDelay: 5
+    firstShotDelay: 30
 }
 
 inaccuracy: 0
 
-shootY: 16
-
-ammoPerShot: 3
+shootY: 9
 
 drawer: {
 	type: DrawTurret
 	parts: [
-		{
-			type: RegionPart
-			suffix: -plate
-			progress: warmup
-			mirror: true
-			under: false
-			moveX: 1
-			moveY: -1.55
-			moveRot: -15
-
-		},
+        {
+            type: RegionPart
+            mirror: true
+            suffix: -wing
+            moves: [
+                {
+                    x: -2
+                    y: -2
+                    progress: {
+                        type: recoil
+                        ops: [
+                            {
+                                op: mul
+                                amount: 1.5
+                            }
+                        ]
+                    }
+                }
+                {
+                    moveY: -2
+                    rot: 90
+                    progress: {
+                        type: charge
+                        ops: [
+                            {
+                                op: delay
+                                amount: 0.25
+                            }
+                            {
+                                op: curve
+                                interp: slope
+                            }
+                            {
+                                op: curve
+                                interp: sineOut
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: -bottom
+        }
+        {
+            type: RegionPart
+            suffix: -body
+            growX: -0.25
+            growProgress: {
+                type: recoil
+                ops: [
+                    {
+                        op: mul
+                        amount: 1.5
+                    }
+                ]
+            }
+        }
 		{
 			name: clear
 			progress: warmup
-			moveY: 8
-			children: [
-				{
-					type: RegionPart
-					suffix: -barrel3
-					progress: reload
-					mirror: false
-					under: true
-					moveY: -5
-                    y: 5
-				}
-			]
-		},
-		{
-			name: clear
-			progress: warmup
-			moveY: 4
-			children: [
-				{
-					type: RegionPart
-					suffix: -barrel2
-					progress: reload
-					mirror: false
-					under: true
-					moveY: -5
-                    y: 5
-				}
-			]
-		},
-		{
-			name: clear
-			progress: warmup
-			moveY: 4
+			moveY: -1
 			children: [
 				{
 					type: RegionPart
 					suffix: -barrel
-					progress: reload
+                    recoilIndex: 1
+					progress: recoil
 					mirror: false
-					under: true
-					moveY: -3
-                    y: 3
+					moveY: -2
 				}
 			]
 		}
+        {
+            type: RegionPart
+            suffix: "-mag"
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: add
+                        amount: -0.5
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: curve
+                        interp: pow2Out
+                    }
+                ]
+            }
+            growProgress: {
+                type: reload
+                ops: [
+                    {
+                        op: add
+                        amount: -0.5
+                    }
+                    {
+                        op: mul
+                        amount: 2
+                        
+                    }
+                    {
+                        op: curve
+                        interp: pow2Out
+                    }
+                ]
+            }
+            
+            moveY: -3.25
+            growY: -1
+        }
+        {
+            type: RegionPart
+            suffix: "-bar"
+            outline: false
+            progress: {
+                type: reload
+                ops: [
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: curve
+                        interp: pow2In
+                    }
+                ]
+            }
+            growProgress: {
+                type: smoothReload
+                ops: [
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: curve
+                        interp: pow2In
+                    }
+                ]
+            }
+            moveY: -2.5
+            growY: 7
+        }
+        {
+            type: RegionPart
+            suffix: "-mag-top"
+            progress: {
+                type: smoothReload
+                ops: [
+                    {
+                        op: mul
+                        amount: 2
+                    }
+                    {
+                        op: curve
+                        interp: pow2In
+                    }
+                ]
+            }
+            moveY: -6
+        }
+        {
+            type: RegionPart
+            suffix: -top
+        }
 	]
 }
 
@@ -238,7 +351,6 @@ ammoTypes: {
             fragOnAbsorb: true
             despawnEffect: none
         }
-        ammoMultiplier: 5
     }
 	compacted-brick: {
 		type: BasicBulletType
@@ -370,12 +482,11 @@ ammoTypes: {
                 }
             ]
         }
-        ammoMultiplier: 1
 	}
 }
 
-ammoPerShot: 5
-
+ammoPerShot: 6
+ammoCapacity: 24
 
 consumes: {
     power: 3.33333333333
