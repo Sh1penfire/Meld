@@ -11,7 +11,7 @@ If you're looking for a mod where hundreds upon hundreds of enemies get vaporize
 If you're looking for a mod which encourages tactical positioning, unit micro and dynamic encounters, Meld does that too.
 
 
-I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout.
+I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout. I've decided to keep things "simple" this time.
 
 What you'll find here might be surprising. <br />
 "It's all Hjson?" <br />
@@ -25,7 +25,7 @@ I've used python to generate hjson for turret parts, feel free to look through t
 I want to put a catchy slogan like "Meld puts the strategy in RTS". But no.
 
 This isn't a very formal mod. It's a goofy experience which makes me want to chew my nails off when I lose to the damm bugs during playtesting.
-The gamelpay style has pretty much solidified during the course of its months long development time.
+The gamelpay style has pretty much solidified during the course of its months long development time, incorperating or revising elements that I personally found fun about Mindustry like the core unit.
 
 Meld is **currently** a unique blend of: <br />
  - Pure PVE-focused design <br />
@@ -51,3 +51,5 @@ I post the ocasional video on youtube, though im more active in the mod's fourm 
 I've also started a server for the mod on discord. It's quite new so there isn't much there, but im open to talk about dev 
 https://discord.gg/NdWMm73H79
 
+Im currently working towards polishing content up until the electrum phase, then adding more maps.
+Mapping help would be much appreciated, theres a lot of maps to make ;~:
