@@ -1,5 +1,5 @@
-# The mod is being ported to v147!
-All existing content will be broken after the update, you can find out how to keep up with the mod's dev further in the README to know when this change is being pushed out.
+# Meld works on v147+!
+I forgot to put this here after the content port, Meld is workin on the BE versions but there is currently a shortage of playable maps.
 
 # Damit it's another one of those huge scope mindustry mod projects made by some guy in school isn't it.
 
