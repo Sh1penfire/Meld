@@ -1,4 +1,5 @@
 type: TallBlock
 
+shadowOffset: -1
 variants: 2
 clipSize: 96

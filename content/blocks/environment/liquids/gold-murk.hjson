@@ -11,6 +11,7 @@ speedMultiplier: 1
 
 attributes: {
 	gold: 0.05555555555
+	ichor: 2
 }
 
 cacheLayer: mud

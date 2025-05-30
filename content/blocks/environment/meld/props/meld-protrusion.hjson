@@ -1,10 +1,8 @@
-type: WobbleProp
+type: Prop
 variants: 2
 breakSound: rock-crush
 instantDeconstruct: false
 requirements: [
-	debris/30
-	riplom/25
-	meld-shard/10
+	debris/40
 ]
 buildVisibility: sandboxOnly

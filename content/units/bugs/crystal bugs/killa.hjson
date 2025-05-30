@@ -360,5 +360,6 @@ immunities: [
 	aspect-burn
 	shattered
 	dissolving
-    sliding
+	lacerated
+    	sliding
 ]

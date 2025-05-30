@@ -152,7 +152,7 @@ weapons: [
         shootY: 0
         
         minWarmup: 0.8
-        shootWarmupSpeed: 0.05
+        shootWarmupSpeed: 0.025
         bullet: {
             rangeOverride: 240
             instantDisappear: true
@@ -337,7 +337,7 @@ weapons: [
         shootY: 0
         
         minWarmup: 0.8
-        shootWarmupSpeed: 0.05
+        shootWarmupSpeed: 0.025
         bullet: {
             type: PointBulletType
             lifetime: 240
@@ -403,6 +403,7 @@ weapons: [
             }
             fragBullets: 1
             fragRandomSpread: 0
+            collidesTiles: false
             
             despawnEffect: none
             hitEffect: {

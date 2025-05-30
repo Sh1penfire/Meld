@@ -39,9 +39,11 @@ shoot: {
 
 shootEffect: shootSmall
 
+liquidCapacity: 400
+
 ammoTypes: {
 	meld: {
-        ammoMultiplier: 0.0625
+        ammoMultiplier: 0.0025
         sprite: "meld-clump"
         damage: 85
         drag: -0.01

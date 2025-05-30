@@ -1,0 +1,45 @@
+type: Wall
+size: 3
+health: 950
+
+breakSound: shatter-deep
+
+buildCostMultiplier: 0
+
+drawTeamOverlay: false
+customShadow: true
+
+destroyBulletSameTeam: false
+destroyBullet: {
+	instantDisappear: true
+	absorbable: false
+	collides: false
+	hittable: false
+	hitEffect: false
+	despawnEffect: false
+	splashDamage: 160
+	splashDamageRadius: 160
+	fragBullets: 60
+	status: shattered
+	statusDuration: 36000
+	fragBullet: {
+		type: RailBulletType
+		damage: 15
+		buildingDamageMultiplier: 3
+		length: 160
+		trailEffect: none
+		status: shattered
+		statusDuration: 36000
+	}
+}
+
+loopSound: none
+shootSound: bang
+
+requirements: [
+	dissonitre/45
+]
+
+squareSprite: false
+category: effect
+floating: true

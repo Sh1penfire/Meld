@@ -1,0 +1,62 @@
+type: AttributeCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+attribute: rift
+baseEfficiency: 0
+minEfficiency: 8.9
+boostScale: 0.111111111111111111111111111111111111
+displayEfficiency: false
+
+liquidOutputDirections: [3, 1]
+rotate: true
+quickRotate: true
+placeableLiquid: true
+floating: true
+
+liquidCapacity: 200
+squareSprite: false
+
+requirements: [
+	larval-plating/200
+	meld-shard/150
+]
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -base
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: meld
+		alpha: 0.6
+		padding: 1.5
+	}
+	{
+		type: DrawCells
+		range: 10
+		color: 9e2e7b
+		particleColorFrom: 892a6b
+		particleColorTo: e5aed7
+		particles: 15
+	}
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -gum
+	}
+	{
+		type: DrawRegion
+		layer: 31
+		suffix: -top
+	}
+]
+
+outputLiquids: [
+	warp/3
+	rift/1.5
+]

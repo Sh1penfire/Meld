@@ -39,9 +39,11 @@ shoot: {
 
 shootEffect: shootSmall
 
+liquidCapacity: 200
+
 ammoTypes: {
 	meld: {
-        ammoMultiplier: 0.25
+        ammoMultiplier: 0.005
         sprite: "meld-clump"
         pierce: true
         pierceCap: 2

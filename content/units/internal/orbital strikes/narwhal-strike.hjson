@@ -350,46 +350,147 @@ weapons: [
                 ]
                 
                 fragBullets: 3
-                
-                //Preparation to spawn cluster to avoid spawning over force projectors
+                fragVelocityMin: 1
+                fragRandomSpread: 15
+                fragSpread: 120
+
+                //large explosive cluster, absorbed by force projectors and doesn't collide
                 fragBullet: {
-                    type: BulletType
-                    damage: 0
-                    collidesTiles: false
-                    lifetime: 2
-                    hitEffect: none
+                    type: BasicBulletType
+                    sprite: shell
+                    collides: false
+                    lifetime: 20
+                    damage: 0.25
+
+                    splashDamage: 65
+                    splashDamageRadius: 25
+
+                    collidesAir: false
+
+                    speed: 3.5
+                    drag: 0.027
+
+                    pierce: false
+
+                    width: 20
+                    height: 24
+                    trailChance: 0.8
+
+                    trailChance: 0.08
+                    trailEffect: {
+                        type: ParticleEffect
+                        lifetime: 35
+                        baseRotation: 180
+                        cone: 35
+                        particles: 2
+                        length: 3
+                        colorFrom: cae4ec
+                        colorTo: cae4ec
+                    }
+
+                    shrinkX: 1
+                    shrinkY: 1
+                    trailLength: 5
+                    trailWidth: 8
+                    trailSinScl: 35
+                    trailInterp: reverse
+
+                    frontColor: cae4ec
+                    backColor: cae4ec
+                    trailColor: cae4ec
+                    hitEffect: [
+                        {
+                            type: ParticleEffect
+                            lifetime: 17
+                            line: true
+                            particles: 8
+                            lenFrom: 4
+                            lenTo: 2
+                            length: 85
+                            strokeFrom: 2
+                            strokeTo: 0.5
+                            interp: pow2Out
+                            sizeInterp: pow2In
+                            colorFrom: cae4ec
+                            colorTo: cae4ec00
+                        }
+                        {
+                            type: ParticleEffect
+                            lifetime: 22
+                            line: true
+                            particles: 12
+                            lenFrom: 4
+                            lenTo: 2
+                            length: 35
+                            strokeFrom: 3
+                            strokeTo: 1
+                            interp: pow2Out
+                            sizeInterp: pow2In
+                            colorFrom: cae4ec
+                            colorTo: cae4ec00
+                        }
+                        {
+                            type: ParticleEffect
+                            lifetime: 32
+                            line: true
+                            particles: 12
+                            lenFrom: 4
+                            lenTo: 2
+                            length: 24
+                            strokeFrom: 1
+                            strokeTo: 2
+                            interp: pow2Out
+                            sizeInterp: pow2In
+                            colorFrom: cae4ec
+                            colorTo: cae4ec00
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 15
+                            sizeFrom: 0
+                            sizeTo: 35
+                            colorFrom: ffffff
+                            colorTo: ffffff
+                            strokeFrom: 3
+                            strokeTo: 0
+                        }
+                        {
+                            type: WaveEffect
+                            lifetime: 5
+                            sizeFrom: 0
+                            sizeTo: 28
+                            colorFrom: ffffff
+                            colorTo: ffffff00
+                            strokeFrom: 1
+                            strokeTo: 5
+                        }
+                    ]
+
                     despawnEffect: none
-                    pierce: true
+
                     fragOnAbsorb: false
+                    fragBullets: 3
+                    fragRandomSpread: 15
+                    fragSpread: 15
+                    fragAngle: 180
+                    fragLifeMin: 0.8
 
-                    homingPower: 10
-                    homingRange: 2
-                    fragBullets: 1
-                    fragLifeMin: 0.75
-                    fragLifeMax: 1.25
-                    fragRandomSpread: 0
-
-                    //large explosive cluster
+                    //Small explosive
                     fragBullet: {
                         type: BasicBulletType
-                        lifetime: 25
+                        lifetime: 30
                         damage: 0.25
 
-                        splashDamage: 65
+                        splashDamage: 35
                         splashDamageRadius: 25
 
                         collidesAir: false
 
-                        speed: 3.5
-                        drag: -0.027
-                        homingPower: 0.25
-
-                        pierce: false
-                        weaveMag: 7.5
-                        weaveScale: 75
+                        speed: 8.5
+                        drag: 0.02
 
                         width: 12
-                        height: 16
+                        height: 14
 
                         trailChance: 0.08
                         trailEffect: {
@@ -406,7 +507,7 @@ weapons: [
                         shrinkX: 1
                         shrinkY: 1
                         trailLength: 5
-                        trailWidth: 1.75
+                        trailWidth: 3
                         trailSinScl: 35
                         trailInterp: reverse
 
@@ -418,7 +519,7 @@ weapons: [
                                 type: ParticleEffect
                                 lifetime: 17
                                 line: true
-                                particles: 8
+                                particles: 2
                                 lenFrom: 4
                                 lenTo: 2
                                 length: 85
@@ -433,11 +534,11 @@ weapons: [
                                 type: ParticleEffect
                                 lifetime: 22
                                 line: true
-                                particles: 12
+                                particles: 5
                                 lenFrom: 4
                                 lenTo: 2
                                 length: 35
-                                strokeFrom: 3
+                                strokeFrom: 2
                                 strokeTo: 1
                                 interp: pow2Out
                                 sizeInterp: pow2In
@@ -448,12 +549,12 @@ weapons: [
                                 type: ParticleEffect
                                 lifetime: 32
                                 line: true
-                                particles: 12
+                                particles: 4
                                 lenFrom: 4
                                 lenTo: 2
                                 length: 24
-                                strokeFrom: 1
-                                strokeTo: 2
+                                strokeFrom: 0.5
+                                strokeTo: 1.5
                                 interp: pow2Out
                                 sizeInterp: pow2In
                                 colorFrom: cae4ec
@@ -461,155 +562,39 @@ weapons: [
                             }
                             {
                                 type: WaveEffect
-                                lifetime: 14
+                                lifetime: 9
                                 sizeFrom: 0
-                                sizeTo: 25
+                                sizeTo: 15
                                 colorFrom: ffffff
                                 colorTo: ffffff
-                                strokeFrom: 3
+                                strokeFrom: 2
                                 strokeTo: 0
                             }
                             {
                                 type: WaveEffect
-                                lifetime: 7
+                                lifetime: 4
                                 sizeFrom: 0
-                                sizeTo: 28
+                                sizeTo: 19
                                 colorFrom: ffffff
                                 colorTo: ffffff00
                                 strokeFrom: 1
-                                strokeTo: 5
+                                strokeTo: 3
                             }
                         ]
 
-                        despawnEffect: none
+                        fragBullets: 12
+                        fragSpread: 30
 
-                        fragBullets: 3
-                        
-                        //Small explosive
+                        //Small bullet hit damage
                         fragBullet: {
-                            type: BasicBulletType
-                            lifetime: 25
-                            damage: 0.25
-
-                            splashDamage: 35
-                            splashDamageRadius: 25
-
-                            collidesAir: false
-
-                            speed: 6.5
-                            homingPower: 0.7
-
+                            type: RailBulletType
+                            damage: 15
+                            length: 8
+                            buildingDamageMultiplier: 0.5
                             pierce: false
-                            weaveMag: 9.5
-                            weaveScale: 35
-
-                            width: 8
-                            height: 12
-
-                            trailChance: 0.08
-                            trailEffect: {
-                                type: ParticleEffect
-                                lifetime: 35
-                                baseRotation: 180
-                                cone: 35
-                                particles: 2
-                                length: 3
-                                colorFrom: cae4ec
-                                colorTo: cae4ec
-                            }
-
-                            shrinkX: 1
-                            shrinkY: 1
-                            trailLength: 5
-                            trailWidth: 1.75
-                            trailSinScl: 35
-                            trailInterp: reverse
-
-                            frontColor: cae4ec
-                            backColor: cae4ec
-                            trailColor: cae4ec
-                            hitEffect: [
-                                {
-                                    type: ParticleEffect
-                                    lifetime: 17
-                                    line: true
-                                    particles: 2
-                                    lenFrom: 4
-                                    lenTo: 2
-                                    length: 85
-                                    strokeFrom: 2
-                                    strokeTo: 0.5
-                                    interp: pow2Out
-                                    sizeInterp: pow2In
-                                    colorFrom: cae4ec
-                                    colorTo: cae4ec00
-                                }
-                                {
-                                    type: ParticleEffect
-                                    lifetime: 22
-                                    line: true
-                                    particles: 5
-                                    lenFrom: 4
-                                    lenTo: 2
-                                    length: 35
-                                    strokeFrom: 3
-                                    strokeTo: 1
-                                    interp: pow2Out
-                                    sizeInterp: pow2In
-                                    colorFrom: cae4ec
-                                    colorTo: cae4ec00
-                                }
-                                {
-                                    type: ParticleEffect
-                                    lifetime: 32
-                                    line: true
-                                    particles: 4
-                                    lenFrom: 4
-                                    lenTo: 2
-                                    length: 24
-                                    strokeFrom: 1
-                                    strokeTo: 2
-                                    interp: pow2Out
-                                    sizeInterp: pow2In
-                                    colorFrom: cae4ec
-                                    colorTo: cae4ec00
-                                }
-                                {
-                                    type: WaveEffect
-                                    lifetime: 14
-                                    sizeFrom: 0
-                                    sizeTo: 8
-                                    colorFrom: ffffff
-                                    colorTo: ffffff
-                                    strokeFrom: 3
-                                    strokeTo: 0
-                                }
-                                {
-                                    type: WaveEffect
-                                    lifetime: 7
-                                    sizeFrom: 0
-                                    sizeTo: 12
-                                    colorFrom: ffffff
-                                    colorTo: ffffff00
-                                    strokeFrom: 1
-                                    strokeTo: 5
-                                }
-                            ]
-                            
-                            fragBullets: 12
-                            fragSpread: 30
-                            
-                            //Small bullet hit damage
-                            fragBullet: {
-                                type: RailBulletType
-                                damage: 15
-                                length: 8
-                                buildingDamageMultiplier: 0.5
-                                pierce: false
-                                hitEffect: none
-                                trailEffect: none
-                                pierceEffect: none
-                            }
+                            hitEffect: none
+                            trailEffect: none
+                            pierceEffect: none
                         }
                     }
                 }

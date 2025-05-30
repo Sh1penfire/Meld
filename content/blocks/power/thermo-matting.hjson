@@ -1,0 +1,33 @@
+type: ThermalGenerator
+health: 60
+armor: 15
+
+attribute: ichor
+minEfficiency: 0.01
+
+solid: false
+under: true
+
+size: 1
+
+displayEfficiency: true
+
+liquidCapacity: 20
+
+outputsPower: true
+
+powerProduction: 0.25
+
+requirements: [
+	meld-shard/1
+	riplom/5
+	electrum-sheet/5
+]
+
+outputLiquid: ichor/0.05
+
+research: {
+	parent: power-transmission
+}
+
+category: power
