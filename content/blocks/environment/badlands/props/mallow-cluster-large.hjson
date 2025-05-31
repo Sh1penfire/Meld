@@ -18,7 +18,7 @@ destroyBullet: {
 	hitEffect: false
 	despawnEffect: false
 	splashDamage: 160
-	splashDamageRadius: 160
+	splashDamageRadius: 80
 	fragBullets: 60
 	status: shattered
 	statusDuration: 36000
@@ -26,7 +26,7 @@ destroyBullet: {
 		type: RailBulletType
 		damage: 15
 		buildingDamageMultiplier: 3
-		length: 160
+		length: 80
 		trailEffect: none
 		status: shattered
 		statusDuration: 36000
@@ -37,7 +37,7 @@ loopSound: none
 shootSound: bang
 
 requirements: [
-	dissonitre/45
+	dissonitre/85
 ]
 
 squareSprite: false

@@ -1,0 +1,13 @@
+type: Wall
+size: 2
+health: 9600
+armor: -60
+
+requirements: [
+	stony-particulate/96
+]
+
+customShadow: true
+squareSprite: false
+category: effect
+floating: true

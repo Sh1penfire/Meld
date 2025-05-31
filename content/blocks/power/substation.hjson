@@ -17,8 +17,8 @@ consumes: {
 
 requirements: [
     silver/25
-    resonarum/5
-	electrum-sheet/30
+    electrum-sheet/30
+    dissonitre/40
 ]
 
 research: {

@@ -117,6 +117,7 @@ outputLiquids: [
 
 requirements: [
  	debris/60
+	resonarum/180
 ]
 
 research: {

@@ -2,6 +2,7 @@ type: AttributeCrafter
 size: 5
 
 placeableLiquid: true
+hasLiquids: true
 category: production
 
 attribute: meld
@@ -27,16 +28,43 @@ craftTime: 60
 drawer: [
     {
         type: DrawRegion
-        suffix: -bottom
+        suffix: -filter
         layer: 29
     }
     {
         type: DrawLiquidTile
-        drawLiquid: ichor
-        padding: 1.5
+        drawLiquid: meld
+        padding: 2
     }
     {
         type: DrawRegion
+        suffix: -rig-edges
+        layer: 30
+    }
+    {
+        type: DrawRegion
+        suffix: -edges
+        layer: 30
+    }
+    {
+        type: DrawRegion
+        suffix: -bars
+        layer: 30
+    }
+    {
+        type: DrawRegion
+        suffix: -rig-frame
+        layer: 30
+    }
+    {
+        type: DrawRegion
+        suffix: -rig-tanks
+        layer: 30
+    }
+    {
+        type: DrawLiquidRegion
+        suffix: -tanks-liquid
+        drawLiquid: ichor
     }
 ]
 
@@ -68,7 +96,8 @@ outputItems: [
 requirements: [
  	debris/120
 	silver/35
-	riplom/120
+	electrum-sheet/120
+	vitric-mesh/240
 ]
 
 research: {

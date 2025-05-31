@@ -1,0 +1,197 @@
+type: tank
+hovering: true
+shadowElevation: 0.1
+
+speed: 1.55
+strafePenalty: 0
+
+health: 920
+aimDst: 10
+range: 50
+drag: 0.8
+accel: 1.1
+hitSize: 16
+
+range: 100
+rotateSpeed: 8.5
+
+useEngineElevation: false
+faceTarget: false
+canDrown: false
+
+weapons: [
+    //main weapon
+	{
+		name: hammerhead-shotgun
+        x: 0
+        y: 3
+        shootY: 4
+        mirror: false
+        alternate: false
+        rotate: true
+        rotateSpeed: 6
+        top: true
+        shootCone: 15
+        reload: 120
+        recoil: 6.25
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 25
+        }
+
+        inaccuracy: 7
+        velocityRnd: 0.1
+        shootStatusDuration: 55
+        shootSound: pipe-launcher
+        parentizeEffects: false
+
+        parts: [
+            {
+                type: RegionPart
+                suffix: -back
+            }
+            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd2ae
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow5In
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -capsule
+                mirror: false
+                outline: false
+                moveX: 4
+                growX: 0
+                color: ffffff
+                colorTo: ffffff00
+                growProgress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -door
+                mirror: false
+                outline: false
+                y: -4
+                moveY: 4
+                color: ffffff00
+                colorTo: ffffff
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+        ]
+
+		bullet: {
+			type: BulletType
+			collides: false
+			collidesAir: false
+			collidesTiles: true
+			hitSound: none
+
+			hitEffect: none
+			speed: 0
+            
+			splashDamageRadius: 25
+			instantDisappear: true
+			splashDamage: 1
+            status: impaled
+            statusDuration: 180
+            
+			hittable: false
+            
+			fragBullets: 12
+			fragRandomSpread: 8
+            fragSpread: 5
+			fragLifeMin: 0.7
+			fragVelocityMin: 0.7
+			fragVelocityMax: 1
+            
+			rangeOverride: 168
+			keepVelocity: false
+            
+            shootEffect: []
+			fragBullet: {
+				speed: 12.5
+				lifetime: 35
+				width: 8
+				height: 14
+				damage: 6
+				status: impaled
+				statusDuration: 10
+				pierce: true
+				pierceCap: 2
+				knockback: 12
+				drag: 0.09
+                keepVelocity: false
+                impact: true
+                
+                trailWidth: 3
+                trailLength: 3
+                trailColor: f84c49
+                
+                splashDamageRadius: 15
+                splashDamage: 4
+                
+                fragOnAbsorb: false
+                fragBullets: 1
+                fragRandomSpread: 0
+                fragBullet: {
+                    type: RailBulletType
+                    damage: 3
+                    length: 5
+                    trailEffect: none
+                }
+			}
+		}
+	}
+]
+
+
+immunities: [
+	blackout
+]
+
+abilities: [
+    {
+        type: RegenAbility
+        amount: 0.01
+    }
+]
+
+research: core-raft

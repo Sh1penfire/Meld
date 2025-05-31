@@ -1,0 +1,274 @@
+type: missile
+shadowElevation: 0.0
+
+controller: MissileAI
+
+lifetime: 360
+speed: 0
+
+engineSize: 0
+
+flying: true
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: true
+hovering: true
+
+faceTarget: false
+targetable: false
+health: 120
+
+drawMinimap: false
+
+fogRadius: 10
+lightRadius: 80
+lightOpacity: 1
+
+deathSound: none
+deathExplosionEffect: none
+
+drawCell: false
+drawBody: false
+
+parts: [
+    //Body of the overseer
+    {
+        type: ShapePart
+        x: 0
+        y: 0
+        circle: true
+        radius: 4
+        radiusTo: 0
+        layer: 110
+        color: ffd37f
+        colorTo: ffd37f00
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 8
+        radius: 4
+        radiusTo: 0
+        triLength: 8
+        triLengthTo: 0
+        shapes: 3
+        color: ffd37f
+        haloRotateSpeed: 2
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: compress
+                    start: 0.5
+                    end: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    {
+        type: HaloPart
+        tri: true
+        haloRadius: 14
+        radius: 4
+        radiusTo: 0
+        triLength: 6
+        triLengthTo: 0
+        shapes: 3
+        color: ffd37f
+        haloRotateSpeed: 1
+        layer: 110
+        progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.8
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+    }
+    //Sonar pulses
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 80
+		stroke: 6
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10Out
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 80
+		stroke: 8
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 80
+		stroke: 6
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10In
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 80
+		stroke: 4
+		strokeTo: 0
+		layer: 122
+		color: ffd37f
+	}
+]
+
+weapons: [
+	{
+		mirror: false
+		rotate: true
+		rotateSpeed: 0
+		x: 0
+		y: 0
+		shootY: 2.5
+		beamWidth: 0.5
+        
+        continuous: true
+        alwaysContinuous: true
+        alwaysShooting: true
+
+		reload: 20
+		controllable: false
+		laserColor: ffd37f
+		healColor: ffd37f
+        
+		bullet:{
+            width: 3.5
+            drawFlare: false
+            hitColor: e2cf7aCC
+            type: ContinuousFlameBulletType
+            optimalLifeFract: 0.25
+            damage: 3
+            length: 144
+            knockback: -15
+            pierceCap: 4
+            colors: [b7a76180, e2cf7aB3, ffffffCC, ffffff]
+            lightColor: e2cf7aCC
+          }
+	}
+	{
+		reload: 400
+		alwaysShooting: true
+		aiControllable: false
+		shootSound: sonar
+		bullet: {
+			collides: false
+			hittable: false
+			absorbable: false
+			instantDisappear: true
+			shootEffect: none
+			hitSound: none
+		}
+	}
+    {
+        reload: 400
+        
+        rotate: true
+        rotateSpeed: 0
+        alwaysShooting: true
+        
+        shoot: {
+            firstShotDelay: 60
+        }
+        bullet: {
+            killShooter: true
+            spawnUnit: iguana-sapper
+        }
+    }
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 80
+		reload: 0
+		effect: strata-a0-rally
+		duration: 15
+		activeEffect: none
+		applyEffect: none
+	}
+]
+
+immunities: [
+	strata-a0-rally
+]

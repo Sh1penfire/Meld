@@ -1,0 +1,66 @@
+type: AttributeCrafter
+size: 3
+configurable: false
+variants: 0
+solid: true
+
+attribute: soil
+baseEfficiency: 0
+minEfficiency: 1
+boostScale: 0.444444444444444444444444444444444444
+displayEfficiency: true
+
+liquidOutputDirections: [3, 1]
+rotate: true
+quickRotate: true
+placeableLiquid: true
+floating: true
+
+liquidCapacity: 200
+squareSprite: false
+
+requirements: [
+	larval-plating/200
+	meld-shard/150
+]
+
+drawer: [
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -base
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: meld
+		alpha: 0.6
+		padding: 1.5
+	}
+	{
+		type: DrawCells
+		range: 10
+		color: 9e2e7b
+		particleColorFrom: 892a6b
+		particleColorTo: e5aed7
+		particles: 15
+	}
+	{
+		type: DrawRegion
+		layer: 29
+		suffix: -gum
+	}
+	{
+		type: DrawRegion
+		layer: 31
+		suffix: -top
+	}
+]
+
+consumes: {
+    liquid: warp/3
+}
+
+outputLiquids: [
+    rift/1.5
+    aether/1.5
+]

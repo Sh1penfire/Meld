@@ -1,0 +1,45 @@
+type: UnitFactory
+health: 720
+size: 5
+
+liquidCapacity: 200
+
+hasPower: false
+
+plans: [
+	{
+	unit: hammerhead
+	requirements: [
+		silver/65
+		riplom/180
+		resonarum/30
+    	]
+    	time: 360
+  	}
+]
+
+consumes: {
+	liquids: [
+		rift/10
+		aspect/5
+	]
+}
+
+configurable: false
+
+requirements: [
+ 	debris/500
+	carbolith/200
+	silver/120
+]
+
+category: units
+
+research: core-raft
+
+requirements: [
+ 	debris/65
+	silver/160
+	riplom/450
+]
+

@@ -18,6 +18,20 @@ outputsPower: true
 
 powerProduction: 0.25
 
+drawer: [
+    {
+        type: DrawRegion
+        suffix: -matting
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: ichor
+    }
+    {
+        type: DrawRegion
+    }
+]
+
 requirements: [
 	meld-shard/1
 	riplom/5

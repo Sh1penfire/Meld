@@ -2,7 +2,7 @@ type: CoreBlock
 health: 4000
 size: 3
 
-unitType: outcast
+unitType: iguana
 solid: false
 squareSprite: false
 buildVisibility: shown

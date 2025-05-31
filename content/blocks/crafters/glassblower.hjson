@@ -36,12 +36,12 @@ consumes: {
 	power: 8
 	items: [
 		shiny-globule/20
-		riplom/8
+		riplom/16
 	]
 }
 
 outputLiquids: [
-	aether/3
+	aether/1
 ]
 
 outputItems: [
@@ -49,8 +49,10 @@ outputItems: [
 ]
 
 requirements: [
- 	debris/80
-	silver/60
+ 	debris/160
+	silver/240
+	vitric-mesh/220
+	resonarum/160
 ]
 
 researchCost: [

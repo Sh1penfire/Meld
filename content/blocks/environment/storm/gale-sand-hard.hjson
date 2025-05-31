@@ -6,4 +6,5 @@ playerUnmineable: true
 
 attributes: {
 	riplom: 0.25
+	meld: -0.25
 }

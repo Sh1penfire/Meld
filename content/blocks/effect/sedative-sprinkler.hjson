@@ -1,0 +1,48 @@
+type: LiquidTurret
+health: 600
+size: 2
+
+rotateSpeed: 0
+reload: 180
+recoil: 0
+alwaysShooting: true
+outlineIcon: false
+
+range: 40
+fogRadiusMultiplier: 0
+
+squareSprite: false
+elevation: 0
+
+shootY: 0
+ammoTypes: {
+	mercury: {
+		type: MissileBulletType
+		spawnUnit: sprinkler-power
+		shootEffect: none
+	}
+}
+
+loopSound: none
+
+drawer: {
+	type: DrawTurret
+	parts: [
+
+	]
+}
+
+consumes: {
+	liquid: mercury/0.5
+}
+
+requirements: [
+	debris/75
+	carbolith/25
+]
+
+research: {
+	parent: pressurized-dispersion
+}
+
+category: effect

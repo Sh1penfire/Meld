@@ -3,4 +3,5 @@ variants: 2
 
 attributes: {
 	riplom: 0.5
+	meld: -0.15
 }
