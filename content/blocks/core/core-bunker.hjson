@@ -19,9 +19,8 @@ research: {
 }
 
 requirements: [
-	silver/600
-	electrum-sheet/350
-	vitric-mesh/240
+    debris/320
+	silver/500
 	riplom/150
 ]
 

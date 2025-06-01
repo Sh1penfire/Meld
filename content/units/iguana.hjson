@@ -3,14 +3,14 @@ speed: 5
 strafePenalty: 0
 shadowElevation: 0.1
 
-health: 250
-armor: 2
+health: 210
+armor: 35
 
 aimDst: 10
 range: 50
 drag: 0.15
 accel: 0.2
-hitSize: 16
+hitSize: 8
 
 lightRadius: 120
 lightOpacity: 0.65
@@ -94,19 +94,21 @@ weapons: [
         reload: 180
         shootCone: 180
         
+        
 		shootSound: mineDeploy
         bullet: {
 			type: BasicBulletType
 			sprite: mine-bullet
             
             speed: 2
+			lifetime: 60
+            scaleLife: true
 
             knockback: 50
             impact: true
             
             keepVelocity: false
 
-			lifetime: 60
 			damage: 12
 
 			width: 24
@@ -134,6 +136,34 @@ weapons: [
             }
         }
 	}
+    {
+        shootCone: 180
+        reload: 0
+        x: 0
+        y: 0
+        
+        mirror: false
+        alternate: false
+        
+        continuous: true
+        alwaysContinous: true
+        shootSound: none
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        
+        bullet: {
+            type: BulletType
+            lightRadius: 0
+            despawnEffect: none
+            shootEffect: none
+            
+            collides: false
+            reflectable: false
+            hittable: false
+            absorbable: false
+        }
+    }
 ]
 
 parts: [

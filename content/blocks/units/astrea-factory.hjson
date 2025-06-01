@@ -2,6 +2,10 @@ type: UnitFactory
 health: 1100
 size: 5
 
+liquidCapacity: 200
+
+hasPower: false
+
 plans: [
 	{
 	unit: astrea

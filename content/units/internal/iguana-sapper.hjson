@@ -214,7 +214,7 @@ weapons: [
         
 		bullet:{
             width: 1.7
-            drawFlare: false
+            drawFlare: true
             hitColor: e2cf7aCC
             type: ContinuousFlameBulletType
             damage: 3
@@ -223,6 +223,7 @@ weapons: [
             pierceCap: 4
             colors: [b7a76180, e2cf7aB3, ffffffCC, ffffff]
             lightColor: e2cf7aCC
+            buildingDamageMultiplier: 0
           }
 	}
 	{
@@ -270,6 +271,7 @@ weapons: [
 				knockback: -5
 				color: bf92f9
                 status: none
+                buildingDamageMultiplier: 0
 			}
 	}
 	{

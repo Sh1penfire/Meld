@@ -4,6 +4,8 @@ size: 5
 
 liquidCapacity: 200
 
+hasPower: false
+
 plans: [
 	{
 	unit: remora

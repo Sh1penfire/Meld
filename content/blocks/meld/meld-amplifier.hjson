@@ -25,6 +25,13 @@ ammoTypes: {
 loopSound: spellLoop
 loopSoundVolume: 0.5
 
+consumes: {
+    liquid: {
+        liquid: meld
+        amount: 0.01
+    }
+}
+
 drawer: {
 	type: DrawTurret
 	parts: [

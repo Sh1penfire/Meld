@@ -212,6 +212,7 @@ weapons: [
 		laserColor: ffd37f
 		healColor: ffd37f
         
+        //I yoinked this from Asthosus
 		bullet:{
             width: 3.5
             drawFlare: false
@@ -221,9 +222,10 @@ weapons: [
             damage: 3
             length: 144
             knockback: -15
-            pierceCap: 4
+            pierceCap: 1
             colors: [b7a76180, e2cf7aB3, ffffffCC, ffffff]
             lightColor: e2cf7aCC
+            buildingDamageMultiplier: 0
           }
 	}
 	{

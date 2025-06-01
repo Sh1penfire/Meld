@@ -1,0 +1,235 @@
+type: LiquidTurret
+size: 3
+health: 1280
+range: 200
+
+shootWarmupSpeed : 0.09
+
+reload: 160
+
+recoil: 0.25
+
+rotateSpeed: 180
+
+recoil: 3.5
+inaccuracy: 0
+shootCone: 5
+
+liquidCapacity: 150
+
+shootY: 8.5
+
+loopSound: none
+shootSound: mediumCannon
+
+squareSprite: false
+predictTarget: false
+
+drawer: {
+	type: DrawTurret
+	parts: [
+		{
+			type: RegionPart
+			suffix: -wing
+			progress: warmup
+			mirror: true
+			under: false
+			moveX: 1
+			moveY: -1.55
+			moveRot: -15
+            moves: [
+                {
+                    x: -1
+                    y: -1.25
+                    rotation: 15
+                    progress: recoil
+                }
+            ]
+		}
+	]
+}
+
+shootEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 25
+            cone: 8
+            particles: 25
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 7
+            sizeTo: 0
+            interp: pow5Out
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            cone: 5
+            particles: 12
+            colorFrom: cb8650
+            colorTo: cb865000
+            length: 55
+            sizeFrom: 12
+            sizeTo: 0
+            interp: pow5Out
+        }
+    ]
+}
+
+ammoTypes: {
+    rift: {
+        type: PointBulletType
+        speed: 1
+        lifetime: 200
+        rangeOverride: 200
+
+        fragBullets: 1
+        fragRandomSPread: 0
+        trailEffect: smoke
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        status: stunned
+        statusDuration: 15
+
+        fragBullet: {
+            speed: 0
+            sprite: meld-glob-round
+            width: 18
+            height: 18
+            
+            frontColor: 7b5fb4
+            backColor: 43225a
+            
+            shrinkY: 0
+            shrinkX: 0
+            
+            sticky: true
+            lifetime: 60
+            absorbable: true
+            collides: true
+            reflectable: false
+            hittable: false
+            fragBullets: 1
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            hitSize: 16
+            layer: 110
+            
+            fragOnAbsorb: false
+            
+            trailEffect: [
+                {
+                    type: ParticleEffect
+                    lifetime: 120
+                    sizeInterp: slope
+                    length: 92
+                    baseLength: 4
+                    randLength: false
+                    sizeFrom: 2
+                    sizeTo: 3.5
+                    colorFrom: 8872daa1
+                    colorTo: 3b297000
+                    layer: 61.8
+                    cone: 15
+                    baseRotation: 55
+                }
+            ]
+            trailChance: 0.8
+            
+            hitEffect: [
+                {
+                    type: WaveEffect
+                    lifetime: 20
+                    sizeFrom: 40
+                    sizeTo: 15
+                    strokeFrom: 3
+                    strokeTo: 0
+                    colorFrom: 8872da00
+                    colorTo: 3b2970
+                }
+            ]
+            
+            fragBullet: {
+                speed: 0
+                damage: 0
+                lifetime: 20
+                sticky: true
+                absorbable: true
+                fragBullets: 1
+                
+                fragOffsetMin: 0
+                fragOffsetMax: 0
+                hitSize: 16
+                fragOnAbsorb: false
+                
+                hitEffect: [
+                    {
+						type: ParticleEffect
+						lifetime: 24
+						baseLength: 10
+						length: 45
+						line: true
+						lenFrom: 4
+						lenTo: 0
+						colorFrom: a393feff
+						colorTo: 665c9fff
+					}
+					{
+						type: WaveEffect
+						lifetime: 12
+						sizeFrom: 5
+						sizeTo: 24
+						strokeFrom: 3
+						strokeTo: 1
+						colorFrom: a393feff
+						colorTo: 665c9fff
+					}
+					{
+						type: WaveEffect
+						lifetime: 12
+						sizeFrom: 12
+						sizeTo: 35
+						strokeFrom: 1
+						strokeTo: 4
+						colorFrom: a393feff
+						colorTo: 665c9fff00
+					}
+                ]
+                
+                fragBullet: {
+                    speed: 0
+                    lifetime: 10
+                    damage: 65
+                    pierceArmor: true
+                    splashDamage: 360
+                    splashDamageRadius: 16
+                    hitSize: 16
+                }
+            }
+        }
+    }
+}
+
+consumes: {
+    liquid: {
+        liquid: rift
+        amount: 0.01
+    }
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+requirements: [
+	larval-plating/45
+	carbolith/35
+]
+
+category: turret
