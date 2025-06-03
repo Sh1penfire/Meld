@@ -24,39 +24,6 @@ launchMusic: stellar-walkways
 
 accessible: true
 alwaysUnlocked: true
-itemWhitelist: [
-	debris
-	carbolith
-	compacted-brick
-	stony-gloop
-	silver
-	electrum-sheet
-	vitric-mesh
-	shiny-globule
-	stormstruck-shell
-	resonarum
-	dissonitre
-	riplom
-	riploko
-	technoscrap
-	grating-chunk
-	fragment
-	memory-shard
-	industrial-rubble
-	industrial-rubble-cracked
-	meld-shard
-	larval-plating
-	metalic-chunk
-	metalic-globule
-	stony-particulate
-	bramble-vine
-	compacted-masses
-	starving-masses
-	elderflesh
-	blossoming-elderflesh
-	coagulated-vigor
-	homunculus-chunk
-]
 
 mesh: [
 	{
