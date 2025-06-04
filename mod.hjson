@@ -14,8 +14,11 @@
 
     [accent[]]*Campaign will not be worked on till sufficient content is finished. There are custom game maps to play though!
 
-    This type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D[[]]
-
+    This type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D
+    
+    Alternatively, join the Meld discord server!
+    https://discord.gg/NdWMm73H79[[]]
+    
     '''
   subtitle: "[[]#ea9ad6]Godhome awaits... You coming?[]"
   "version\"": 1
@@ -46,6 +49,7 @@
     amalgam-decomposer
     brick-conglomerator
     electrum-amalgamator
+    crush-weaver
 #Turrets
     sunder
     molotov
@@ -75,6 +79,10 @@
     substation
     powerbank
     continental-link
+    dissonance-discharger
+    glass-burner
+    thermo-matting
+    
 #Unit blocks
     shark-factory
     remora-factory
@@ -97,13 +105,21 @@
     stony-gloop
     silver
     electrum-sheet
+    clay-mallow
+    dissonitre
     vitric-mesh
     shiny-globule
     stormstruck-shell
     resonarum
-    dissonitre
     riplom
     riploko
+    bramble-vine
+    compacted-masses
+    starving-masses
+    elderflesh
+    blossoming-elderflesh
+    coagulated-vigor
+    homunculus-chunk
     technoscrap
     grating-chunk
     fragment
@@ -117,13 +133,6 @@
     metalic-chunk
     metalic-globule
     stony-particulate
-    bramble-vine
-    compacted-masses
-    starving-masses
-    elderflesh
-    blossoming-elderflesh
-    coagulated-vigor
-    homunculus-chunk
     larva
 #fluids
     aether
@@ -204,7 +213,6 @@
     goosplosion-lance
     graig-projectile
     impaler-autoturret
-    invis template
     jilla-cluster
     killa-cluster
     kithlid-amplifier-death
@@ -215,7 +223,6 @@
     narwhal-payload
     narwhal-strike
     nullifier-lance
-    nullifier-weapons
     observer
     overseer-assistant
     overseer-top
@@ -230,7 +237,6 @@
     splurger
     vision-giver
     z-the-grater-good
-
     bulbhead-sonar
     rapid-enemy-mobalization
     tracker-projectile
@@ -246,11 +252,13 @@
     pillow-wall
     red-sand
     red-sand-meld
+    cracked-sand
     red-sand-weave
-    sand-meld
+    crackstone-wall
     sandstone-wall
     silver-deposit
     soft-sand
+    sand-meld
     vitric-weave
     carbolith-deposit
     carbolith-deposit-depleted
@@ -319,6 +327,7 @@
     meld-cluster
     meld-cluster-blobs
     meld-cluster-large
+    meld-protrusion
     meld-core-zone
     meld-crystal
     meld-crystal-floor
