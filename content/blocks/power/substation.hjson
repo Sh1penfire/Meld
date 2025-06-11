@@ -1,12 +1,13 @@
 type: PowerNode
-size: 3
+size: 5
 
 laserRange: 25
 maxNodes: 3
 
 fogRadius: 2
 
-laserColor2: e5aed7
+laserColor1: ffffff
+laserColor2: 646461
 
 consumesPower: true
 outputsPower: true
@@ -16,8 +17,8 @@ consumes: {
 }
 
 requirements: [
-    silver/25
-    electrum-sheet/30
+    silver/180
+    electrum-sheet/80
     dissonitre/40
 ]
 
