@@ -41,8 +41,4 @@ requirements: [
 	carbolith/25
 ]
 
-research: {
-	parent: pressurized-dispersion
-}
-
 category: effect

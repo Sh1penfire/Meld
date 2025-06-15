@@ -79,7 +79,7 @@ requirements: [
  	debris/40
 ]
 
-research: liquid-logistics
+research: channel-face
 
 researchCost: [
 	debris/17

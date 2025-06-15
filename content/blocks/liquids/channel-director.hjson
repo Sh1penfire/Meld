@@ -42,7 +42,7 @@ requirements: [
 	debris/5
 ]
 
-research: channel-face
+research: channel-node
 researchCost: [
 	debris/5
 	carbolith/8

@@ -4,7 +4,7 @@ health: 120
 armor: 45
 
 research: {
-	parent: core-raft
+	parent: building-foundations
 	objectives: [
 	]
 }

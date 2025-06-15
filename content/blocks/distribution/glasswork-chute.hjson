@@ -22,7 +22,7 @@ requirements: [
 	vitric-mesh/1
 ]
 
-research: item-logistics
+research: chute
 
 researchCost: [
 	debris/5

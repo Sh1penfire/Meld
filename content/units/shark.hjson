@@ -214,5 +214,5 @@ immunities: [
 	wildlife-a1-reconstitution
 ]
 
-research: constructor-ship-factory
+research: shark-factory
 researchCostMultiplier: 0

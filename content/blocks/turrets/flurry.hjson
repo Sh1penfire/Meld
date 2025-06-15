@@ -513,7 +513,7 @@ requirements: [
 category: turret
 
 research: {
-	parent: i-a0-0a-sunder
+	parent: sunder
 }
 
 researchCost: [

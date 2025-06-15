@@ -177,7 +177,7 @@ requirements: [
 ]
 
 research: {
-    parent: i-a0-0a-molotov
+    parent: vivisection
     objectives: [
 	pressurized-dispersion
     ]

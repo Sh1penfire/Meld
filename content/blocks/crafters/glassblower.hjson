@@ -1,5 +1,5 @@
 type: AttributeCrafter
-size: 5
+size: 7
 
 placeableLiquid: true
 category: crafting
@@ -14,15 +14,11 @@ boostScale: 0.2
 
 scaleLiquidConsumption: true
 
-liquidOutputDirections: [0]
-rotate: true
-quickRotate: true
-
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 120
+craftTime: 60
 liquidCapacity: 240
 itemCapacity: 120
 
@@ -41,7 +37,7 @@ consumes: {
 }
 
 outputLiquids: [
-	aether/1
+	aether/2
 ]
 
 outputItems: [
@@ -51,8 +47,10 @@ outputItems: [
 requirements: [
  	debris/160
 	silver/240
+	electrum-sheet/150
 	vitric-mesh/220
 	resonarum/160
+	riplom/60
 ]
 
 researchCost: [

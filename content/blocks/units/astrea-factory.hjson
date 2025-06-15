@@ -34,7 +34,7 @@ requirements: [
 
 category: units
 
-research: core-raft
+research: shark-factory
 
 researchCost: [
 	debris/80

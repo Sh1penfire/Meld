@@ -5,5 +5,5 @@ research: {
 	planet: ikaru
 	root: true
 	requiresUnlock: false
-	name: "Ikaru Sectors"
+	name: "Ikaru Areas"
 }

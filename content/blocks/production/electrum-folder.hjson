@@ -27,7 +27,7 @@ requirements: [
 ]
 
 research: {
-	parent: building-foundations
+	parent: conglomeration-rig
 }
 
 researchCost: [

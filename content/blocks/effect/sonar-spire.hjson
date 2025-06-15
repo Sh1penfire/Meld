@@ -23,7 +23,7 @@ requirements: [
 ]
 
 research: {
-	parent: aspect-channeling
+	parent: silver-husk
 }
 
 researchCost: [

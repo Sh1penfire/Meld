@@ -50,14 +50,6 @@ requirements: [
  	debris/60
 ]
 
-research: {
-	parent: earthbound-infuser
-	objectives: [
-		ichor
-		rift
-	]
-}
-
 researchCost: [
 	debris/17
 ]

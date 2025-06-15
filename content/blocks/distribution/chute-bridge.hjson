@@ -8,7 +8,7 @@ requirements: [
 	debris/6
 ]
 
-research: chute
+research: chute-router
 researchCost: [
 	debris/25
 ]

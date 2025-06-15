@@ -31,6 +31,7 @@ drillMultipliers: {
 	electrum-sheet: 2
 	resonarum: 0.5
 	riplom: 1.5
+	clay-mallow: 0.25
 }
 
 sparkColor: 8cc7ee
@@ -50,7 +51,7 @@ requirements: [
  	debris/40
 ]
 
-research: item-logistics
+research: chute
 researchCost: [
 	debris/13
 ]

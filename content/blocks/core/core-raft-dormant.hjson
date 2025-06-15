@@ -27,3 +27,10 @@ requirements: [
 
 researchCostMultiplier: 0
 category: effect
+
+research: {
+	planet: ikaru
+	root: true
+	requiresUnlock: false
+	name: "Ikaru [accent](Strata)[]"
+}

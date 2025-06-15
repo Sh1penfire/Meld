@@ -23,7 +23,7 @@ requirements: [
 ]
 
 research: {
-	parent: connector
+	parent: power-transmission
 }
 
 category: power
