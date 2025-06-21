@@ -4,7 +4,6 @@ size: 3
 placeableLiquid: true
 category: production
 
-
 attribute: rift
 baseEfficiency: 0
 minEfficiency: 8.9
@@ -26,81 +25,168 @@ craftTime: 120
 drawer: [
     {
         type: DrawRegion
-        suffix: -bottom1
+        suffix: -bottom
         layer: 29
     }
     {
         type: DrawLiquidTile
-        drawLiquid: ichor
+        drawLiquid: rift
         padding: 1.5
     }
-    {
-        type: DrawRegion
-        suffix: -bottom2
-    }
-
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padRight: 2
-        padBottom: 2
-
-        padTop: 17.75
-        padLeft: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padLeft: 2
-        padBottom: 2
-
-        padTop: 17.75
-        padRight: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padRight: 2
-        padTop: 2
-
-        padBottom: 17.75
-        padLeft: 17.75
-    }
-    {
-        type: DrawLiquidTile
-        drawLiquid: rift
-        padLeft: 2
-        padTop: 2
-
-        padBottom: 17.75
-        padRight: 17.75
-    }
 
     {
         type: DrawRegion
     }
     {
+        type: DrawParticles
+        color: 8872da
+    }
+	{
+		type: DrawArcSmelt
+		flameRad: 0
+		flameRadiusScl: 0
+		flameRadiusMag: 1
+        particleRad: -7
+        flameColor: fcf69c
+        midColor: dbd400
+	}
+    {
         type: DrawRegion
-        suffix: -tops
+	   suffix: -top
     }
     {
-        type: DrawSideRegion
+        type: DrawGlowRegion
+        suffix: "-glow"
+        color: 91dda8
     }
     {
-        type: DrawLiquidOutputs
+        type: DrawParticles
+        color: 8872da
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: -8
+        y: -8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: 8
+        y: -8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: -8
+        y: 8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: 8
+        y: 8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
     }
 ]
 
 
-craftEffect: {
-	type: ParticleEffect
-	lifetime: 120
-	particles: 3
-	sizeFrom: 5
-	sizeTo: 0
-	colorFrom: cb865000
-	colorTo: 935b29ff
+craftEffect: [
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 3
+    sizeTo: 6
+    colorFrom: 8872daa1
+    colorTo: 3b297000
+    layer: 61.8
+    cone: 25
+    baseRotation: 25
 }
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: 1.9646048635
+    offsetY: 11.1418278451
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: 11.1418278451
+    offsetY: -1.9646048635
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: -11.1418278451
+    offsetY: 1.9646048635
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: -1.9646048635
+    offsetY: -11.1418278451
+}
+]
 
 consumes: {
 	power: 2

@@ -1,0 +1,67 @@
+type: BeamDrill
+size: 3
+category: production
+
+placeableLiquid: true
+
+drillTime: 180
+
+tier: 4
+
+liquidCapacity: 300
+
+optionalBoostIntensity: 2
+
+consumes: {
+	liquid: {
+		liquid: warp
+		amount: 0.25
+        optional: true
+        booster: true
+	}
+    liquids: {
+        liquids: [
+                aspect/1.6666666666
+                rift/0.5
+        ]
+	   booster: false
+       optional: false
+    }
+}
+
+drillMultipliers: {
+    electrum-sheet: 8
+    resonarum: 0.5
+    riplom: 4.5
+    clay-mallow: 4
+    stony-gloop: 8
+    meld-shard: 1
+}
+
+blacklistedItems: [
+    resonarum
+]
+
+sparkColor: 8cc7ee
+heatColor: e88b64
+boostHeatColor: ecb6eb
+
+sparks: 30
+sparkLife: 60
+sparkSpread: -45
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+
+squareSprite: false
+
+requirements: [
+ 	debris/40
+	resonarum/60
+]
+
+research: elemental-blaster
+
+researchCost: [
+	debris/13
+]

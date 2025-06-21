@@ -5,7 +5,7 @@ health: 40
 speed: 0.1
 itemCapacity: 5
 
-outputRouter: false
+outputRouter: true
 hasPower: true
 consumesPower: true
 conductivePower: true

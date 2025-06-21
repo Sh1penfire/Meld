@@ -111,7 +111,7 @@ consumes: {
 
 
 outputLiquids: [
-	rift/1
+	rift/2
 ]
 
 outputItems: [

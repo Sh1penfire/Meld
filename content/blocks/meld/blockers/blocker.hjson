@@ -3,7 +3,7 @@ size: 1
 range: 2
 healPercent: 100
 health: 2500
-armor: 500000
+armor: 80
 targetable: false
 baseColor: f9e1f3
 hasPower: false

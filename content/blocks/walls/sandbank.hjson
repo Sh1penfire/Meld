@@ -1,0 +1,24 @@
+type: Wall
+size: 1
+health: 900
+armor: -45
+
+variants: 3
+
+research: {
+	parent: building-foundations
+	objectives: [
+	]
+}
+
+researchCost: [
+	riplom/2000
+	clay-mallow/1200
+	fragment/300
+]
+
+requirements: [
+	riplom/20
+	clay-mallow/35
+]
+category: defense
