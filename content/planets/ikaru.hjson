@@ -3,7 +3,6 @@ solarSystem: sun
 parent: sun
 orbitRadius: 72.31
 
-startSector: 5
 clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchToNumbered: false
@@ -22,7 +21,7 @@ iconColor: f3c3e7
 
 launchMusic: stellar-walkways
 
-accessible: true
+accessible: false
 alwaysUnlocked: true
 
 mesh: [

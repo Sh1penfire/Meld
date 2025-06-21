@@ -1,6 +1,11 @@
 type: ConsumeGenerator
 size: 3
 
+placeableLiquid: true
+liquidOutputDirections: [0]
+rotate: true
+quickRotate: true
+
 health: 540
 
 itemCapacity: 2
@@ -15,6 +20,35 @@ category: power
 itemDuration: 60
 
 explodeOnFull: true
+
+drawer: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	}
+	{
+		type: DrawLiquidTile
+		drawLiquid: aspect
+		alpha: 1
+	}
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawSideRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	baseLength: 3
+	length: 15
+	sizeFrom: 2
+	sizeTo: 0
+	colorFrom: 935b2900
+	colorTo: cb8650ff
+}
 
 consumes: {
 	items: [

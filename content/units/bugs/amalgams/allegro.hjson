@@ -71,7 +71,7 @@ weapons: [
         name: allegro-spewer
 		x: 14.25
 		y: 3.25
-		shootY: 11
+		shootY: 9
 		reload: 125
 		shootCone: 15
         
@@ -90,8 +90,8 @@ weapons: [
 		layerOffset: -0.01
 		predictTarget: false
 		shoot: {
-            shots: 15
-            shotDelay: 5
+            shots: 30
+            shotDelay: 2.5
 			firstShotDelay: 5
 		}
         
@@ -104,26 +104,113 @@ weapons: [
 			pierce: true
 			pierceBuilding: true
 			scaleLife: false
-			speed: 2.8
-			lifetime: 35
+			speed: 5.6
+			lifetime: 16
 			smokeEffect: none
-			recoil: 0.55
+			recoil: 0.275
 			lightRadius: 0
 			despawnEffect: none
-			shootEffect: {
-					type: ParticleEffect
-					cone: 5
-					lifetime: 30
-					baseLength: 0
-					particles: 35
-					length: 120
-					sizeFrom: 3.5
-					sizeTo: 0
-					colorFrom: feafea
-					colorTo: d26ab100
-					interp: pow5Out
-					sizeInterp: pow2In
-			}
+            keepVelocity: false
+            
+            hitEffect: [
+                {
+                    type: ParticleEffect
+                    cone: 35
+                    lifetime: 12
+                    particles: 4
+                    baseLength: 2
+                    length: 25
+                    line: true
+                    strokeFrom: 2.75
+                    strokeTo: 0
+                    lenFrom: 3
+                    lenTo: 1
+                    colorFrom: feafea
+                    colorTo: d26ab1
+                        
+                    layer: 101
+                }
+                {
+                    type: ParticleEffect
+                    cone: 45
+                    lifetime: 9
+                    particles: 4
+                    baseLength: 2
+                    length: 35
+                    line: true
+                    strokeFrom: 1.75
+                    strokeTo: 0
+                    lenFrom: 5
+                    lenTo: 2
+                    colorFrom: feafea
+                    colorTo: d26ab1
+                        
+                    layer: 101
+                }
+            ]
+            
+			shootEffect: [
+                {
+                    type: ParticleEffect
+                    cone: 45
+                    lifetime: 9
+                    particles: 4
+                    baseLength: 2
+                    length: 35
+                    line: true
+                    strokeFrom: 1.75
+                    strokeTo: 0
+                    lenFrom: 5
+                    lenTo: 2
+                    colorFrom: feafea
+                    colorTo: d26ab1
+                        
+                    layer: 101
+                }
+                {
+                        type: ParticleEffect
+                        lifetime: 45
+                        baseLength: 0
+                        particles: 3
+                        length: 15
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab1a0
+                        interp: pow2Out
+                        sizeInterp: pow3In
+                }
+                {
+                        type: ParticleEffect
+                        cone: 5
+                        lifetime: 25
+                        baseLength: 0
+                        particles: 15
+                        length: 120
+                        sizeFrom: 3.5
+                        sizeTo: 0
+                        colorFrom: feafea
+                        colorTo: d26ab1a0
+                        interp: pow2Out
+                        sizeInterp: pow3In
+                        layer: 109
+                }
+                {
+                        type: ParticleEffect
+                        cone: 5
+                        lifetime: 45
+                        baseLength: 0
+                        particles: 15
+                        length: 120
+                        sizeFrom: 0
+                        sizeTo: 3.5
+                        colorFrom: feafea
+                        colorTo: d26ab100
+                        interp: pow2Out
+                        sizeInterp: pow5Out
+                        layer: 109
+                }
+            ]
 		}
 	}
 	{

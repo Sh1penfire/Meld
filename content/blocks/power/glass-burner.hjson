@@ -12,11 +12,46 @@ floating: true
 
 category: power
 
-itemDuration: 60
+itemDuration: 240
+
+drawer: [
+    {
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+    {
+        type: DrawRegion
+        suffix: "-coils"
+    }
+    {
+        type: DrawGlowRegion
+        suffix: "-coil-glow"
+        layer: 30
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        alpha: 5
+    }
+    {
+        type: DrawRegion
+        suffix: "-piping"
+    }
+    {
+        type: DrawRegion
+    }
+    {
+        type: DrawRegion
+        suffix: "-top"
+    }
+    {
+        type: DrawGlowRegion
+        suffix: "-glow-bleed"
+    }
+]
 
 requirements: [
 	debris/120
-	silver/80
 	electrum-sheet/75
 ]
 
