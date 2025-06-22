@@ -1,5 +1,7 @@
 type: PowerNode
 size: 5
+health: 2100
+armor: 15
 
 laserRange: 25
 maxNodes: 3

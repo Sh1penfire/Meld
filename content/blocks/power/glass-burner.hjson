@@ -12,7 +12,7 @@ floating: true
 
 category: power
 
-itemDuration: 240
+itemDuration: 120
 
 drawer: [
     {
@@ -61,9 +61,10 @@ consumes: {
 		vitric-mesh/2
 		riplom/4
 	]
+    liquid: rift/0.25
 }
 
-outputLiquid: rift/0.25
+outputLiquid: rift/0
 
 powerProduction: 2
 

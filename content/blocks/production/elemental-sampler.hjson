@@ -15,7 +15,7 @@ optionalBoostIntensity: 2
 consumes: {
 	liquid: {
 		liquid: warp
-		amount: 0.25
+		amount: 0.5
         optional: true
         booster: true
 	}
@@ -33,9 +33,9 @@ drillMultipliers: {
     electrum-sheet: 8
     resonarum: 0.5
     riplom: 4.5
-    clay-mallow: 4
+    clay-mallow: 6
     stony-gloop: 8
-    meld-shard: 1
+    meld-shard: 2
 }
 
 blacklistedItems: [
@@ -57,7 +57,7 @@ squareSprite: false
 
 requirements: [
  	debris/40
-	resonarum/60
+	resonarum/20
 ]
 
 research: elemental-blaster

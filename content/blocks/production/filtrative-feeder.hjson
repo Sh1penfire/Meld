@@ -1,5 +1,6 @@
 type: AttributeCrafter
 size: 5
+health: 1240
 
 placeableLiquid: true
 hasLiquids: true
@@ -94,9 +95,9 @@ outputItems: [
 ]
 
 requirements: [
- 	debris/120
-	silver/35
-	electrum-sheet/120
+ 	debris/85
+	silver/90
+	electrum-sheet/45
 	vitric-mesh/240
 ]
 

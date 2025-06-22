@@ -10,7 +10,7 @@ itemCapacity: 20
 attribute: soil
 baseEfficiency: 0
 minEfficiency: 1
-boostScale: 0.2
+boostScale: 0.125
 
 scaleLiquidConsumption: true
 
@@ -45,7 +45,7 @@ outputItems: [
 ]
 
 requirements: [
- 	debris/160
+ 	debris/360
 	silver/240
 	electrum-sheet/150
 	vitric-mesh/220

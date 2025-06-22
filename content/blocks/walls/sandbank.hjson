@@ -1,7 +1,9 @@
 type: Wall
 size: 1
-health: 900
+health: 1200
 armor: -45
+
+buildTime: 30
 
 variants: 3
 

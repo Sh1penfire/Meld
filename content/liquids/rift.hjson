@@ -1,6 +1,6 @@
 type: Liquid
 gas: true
-color: 3b2970
+color: 683cc0
 
 research: {
 	parent:	aether

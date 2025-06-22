@@ -1,0 +1,8 @@
+type: Wall
+variants: 0
+
+customShadow: true
+requirements: [
+	debris/25
+	resonarum/15
+]

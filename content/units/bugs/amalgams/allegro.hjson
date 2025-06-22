@@ -211,6 +211,36 @@ weapons: [
                         layer: 109
                 }
             ]
+            
+            #Flame splash effects
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            fragBullet: {
+                spawnBullets: [
+                    {
+                        type: RailBulletType
+                        hitEffect: none
+                        trailEffect: none
+                        length: 12
+                        damage: 0
+                        splashDamageRadius: 16
+                        splashDamage: 0
+                        status: dissolving
+                        statusDuration: 60
+                    }
+                ]
+                type: RailBulletType
+                hitEffect: none
+                trailEffect: none
+                length: 12
+                damage: 0
+                splashDamageRadius: 16
+                splashDamage: 0
+                status: wildlife-a1-reconstitution
+                statusDuration: 70
+            }
 		}
 	}
 	{
@@ -263,7 +293,7 @@ weapons: [
 					interp: pow5Out
 					sizeInterp: pow2In
 			}
-		}
+        }
 	}
 	{
 		x: 0
