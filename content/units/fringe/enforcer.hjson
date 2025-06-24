@@ -156,6 +156,7 @@ weapons: [
                     reflectable: false
                     fragBullets: 5
                     fragLifeMin: 0.8
+                    fragVelMin: 0.9
                     fragRandomSpread: 6
                     speed: 10
                     fragBullet: {
@@ -186,7 +187,6 @@ weapons: [
             fragLifeMin: 0.2
             fragRandomSpread: 3
             fragSpread: 75
-            fragAngle: 37.5
             hitEffect: none
             despawnEffect: none
             fragBullet: {

@@ -94,18 +94,29 @@ weapons: [
             shotDelay: 2.5
 			firstShotDelay: 5
 		}
+        inaccuracy: 6
         
 		bullet: {
-			type: BulletType
+			type: BasicBulletType
+            sprite: "particle"
+            width: 12
+            height: 12
+            mixColorFrom: feafea
+            mixColorTo: d26ab1
 			damage: 12
             status: dissolving
             statusDuration: 15
             knockback: 2
+            shrinkX: 1
+            shrinkY: 1
+            shrinkInterp: pow5In
+            
 			pierce: true
 			pierceBuilding: true
 			scaleLife: false
 			speed: 5.6
-			lifetime: 16
+			lifetime: 45
+            drag: 0.04
 			smokeEffect: none
 			recoil: 0.275
 			lightRadius: 0
@@ -117,7 +128,7 @@ weapons: [
                     type: ParticleEffect
                     cone: 35
                     lifetime: 12
-                    particles: 4
+                    particles: 8
                     baseLength: 2
                     length: 25
                     line: true
@@ -134,7 +145,7 @@ weapons: [
                     type: ParticleEffect
                     cone: 45
                     lifetime: 9
-                    particles: 4
+                    particles: 7
                     baseLength: 2
                     length: 35
                     line: true
@@ -147,9 +158,61 @@ weapons: [
                         
                     layer: 101
                 }
+                {
+                    type: ParticleEffect
+                    cone: 65
+                    lifetime: 9
+                    particles: 5
+                    baseLength: 2
+                    length: 25
+                    line: true
+                    strokeFrom: 1.75
+                    strokeTo: 0
+                    lenFrom: 5
+                    lenTo: 2
+                    colorFrom: feafea
+                    colorTo: d26ab1
+                    
+                    layer: 101
+                }
             ]
             
+            #Flame shoot effects
 			shootEffect: [
+                    #Lingering smoke clouds
+                {
+                    type: ParticleEffect
+                    region: "meld-particle-ring"
+                    lifetime: 35
+                    particles: 2
+                    length: 95
+                    cone: 3
+                    sizeFrom: 0
+                    sizeTo: 12
+                    colorFrom: feafea
+                    colorTo: e5aed700
+                    sizeInterp: pow3Out
+                    interp: pow2Out
+                    randLength: false
+                    followParrent: false
+                }
+                {
+                    type: ParticleEffect
+                    region: "particle"
+                    lifetime: 42
+                    particles: 3
+                    length: 95
+                    cone: 7
+                    sizeFrom: 0
+                    sizeTo: 8
+                    colorFrom: feafeaa3
+                    colorTo: e5aed700
+                    sizeInterp: pow3Out
+                    interp: pow2Out
+                    randLength: true
+                    followParrent: false
+                }
+                #Sparks
                 {
                     type: ParticleEffect
                     cone: 45
@@ -167,6 +230,7 @@ weapons: [
                         
                     layer: 101
                 }
+                #Smoke around gun
                 {
                         type: ParticleEffect
                         lifetime: 45
@@ -180,6 +244,7 @@ weapons: [
                         interp: pow2Out
                         sizeInterp: pow3In
                 }
+                #Smoke from thrower
                 {
                         type: ParticleEffect
                         cone: 5
@@ -189,7 +254,7 @@ weapons: [
                         length: 120
                         sizeFrom: 3.5
                         sizeTo: 0
-                        colorFrom: feafea
+                        colorFrom: fe77dc
                         colorTo: d26ab1a0
                         interp: pow2Out
                         sizeInterp: pow3In
@@ -197,6 +262,7 @@ weapons: [
                 }
                 {
                         type: ParticleEffect
+                        region: "particle"
                         cone: 5
                         lifetime: 45
                         baseLength: 0
@@ -204,7 +270,7 @@ weapons: [
                         length: 120
                         sizeFrom: 0
                         sizeTo: 3.5
-                        colorFrom: feafea
+                        colorFrom: fe77dc
                         colorTo: d26ab100
                         interp: pow2Out
                         sizeInterp: pow5Out
@@ -213,6 +279,9 @@ weapons: [
             ]
             
             #Flame splash effects
+            setDefaults: false
+            fragOnAbsorb: false
+            despawnHit: false
             fragBullets: 1
             fragRandomSpread: 0
             fragOffsetMin: 0

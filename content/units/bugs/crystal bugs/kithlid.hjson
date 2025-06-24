@@ -26,7 +26,7 @@ legSpeed: 0.005
 drownTimeMultiplier: 5
 
 allowLegStep: true
-
+legPhysicsLayer: true
 singleTarget: true
 
 deathExplosionEffect: {
