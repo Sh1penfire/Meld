@@ -48,8 +48,8 @@ This is **all in the mod, right now**, and is **available to be played, r i g h 
 
 # Where can I keep up with the mod's development
 I post the ocasional video on youtube, though im more active in the mod's fourm post on the Mindustry discord server.
-I've also started a server for the mod on discord. It's quite new so there isn't much there, but im open to talk about dev 
-https://discord.gg/NdWMm73H79
+I've also started a server for the mod on discord. It's quite new so there isn't much there, but im open to talk about dev.
+Invites are currently on hold, DM me if you'd like to join. You can find me through the Mindustry discord server.
 
-Im currently working towards polishing content up until the electrum phase, then adding more maps.
+Im currently working towards finishing off spritework for the storm planes, then adding more maps.
 Mapping help would be much appreciated, theres a lot of maps to make ;~:
