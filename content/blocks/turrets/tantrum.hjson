@@ -108,6 +108,519 @@ drawer: {
         }
         {
             type: RegionPart
+            suffix: "-shaft"
+            mirror: true
+            #Offset this further down and right to match the piston
+            x: 2.13093
+            y: -2.13093
+            moveX: 0
+            moveY: 0
+            clampProgress: false
+            #Are you ready to transcend this mortal plane?
+            #No?
+            #Ok then
+            moves: [
+                {
+                    x: 1
+                    progress: {
+                        type: reload
+                        ops: [
+                            #Add the x offset from the arm the arm joint is at
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount: -0.76579283254
+                            }
+                            {
+                                #Offset into a cos wave
+                                op: add
+                                amount: 1.57079632679
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                            #Multiply by the radius
+                            {
+                                op: mul
+                                amount: 9.01734439844
+                            }
+                            #Add the x that the arm is centered on
+                            {
+                                op: add
+                                amount: 3.25
+                            }
+                            
+                            #Add the x that the shaft joint will occupy
+                            {
+                                op: add
+                                amount: 3.75
+                            }
+                            
+                            #Average the two positions
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                        ]
+                    }
+                }
+                {
+                    
+                    rot: 1
+                    progress: {
+                        type: reload
+                        ops: [
+                            #YEET
+                            {
+                                op: mul
+                                amount: 0
+                            }
+                            #Get the current angle of the shaft
+
+                            #Aproximate the arcos function + some jank, but with a period of 2pi and no modulus jank
+                            #Add on the cos waves
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                         #please don't smite me, I swear this is just for consistiency's sake
+                                        {
+                                            op: mul
+                                            amount: 1
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.763845684934
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 2
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.0645692297549
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 3
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.033239742455
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                #Average of the function
+                                amount: 1.9121800551
+                            }
+
+                            #Translate back into base function
+                            {
+                                op: add
+                                amount: -1.57079632679
+                            }
+
+                            #reflect and offset
+                            {
+                                op: mul
+                                amount: -1
+                            }
+                            {
+                                op: add
+                                amount: 1.57079632679
+                            }
+                            
+                            #Take radiants, turn into degrees
+                            {
+                                op: mul
+                                amount: 57.2957795131
+                            }
+                            
+                            #Offset by 45 deg to account for the shaft's sprite being on a slant
+                            {
+                                op: add
+                                amount: -45
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 1
+                    progress: {
+                        type: reload
+                        #Oh boy...
+                        ops: [
+                            #Add the y offset from the arm the arm joint is at
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount: -0.76579283254
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                            #Multiply by the radius
+                            {
+                                op: mul
+                                amount: 9.01734439844
+                            }
+                            #Add the y that the arm is centered on
+                            {
+                                op: add
+                                amount: 7.75
+                            }
+                            
+                            #Add the y that the shaft joint will occupy
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #YEET
+                                        {
+                                            op: mul
+                                            amount: 0
+                                        }
+                                        #Get the current angle of the shaft
+
+                                        #Aproximate the arcos function + some jank, but with a period of 2pi and no modulus jank
+                                        #Add on the cos waves
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                     #please don't smite me, I swear this is just for consistiency's sake
+                                                    {
+                                                        op: mul
+                                                        amount: 1
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.763845684934
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 2
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.0645692297549
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 3
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.033239742455
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            #Average of the function
+                                            amount: 1.9121800551
+                                        }
+
+                                        #Translate back into base function
+                                        {
+                                            op: add
+                                            amount: -1.57079632679
+                                        }
+
+                                        #reflect and offset
+                                        {
+                                            op: mul
+                                            amount: -1
+                                        }
+                                        {
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+
+                                        #Use the shaft's angle to determine the position of the piston
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: -14
+                                        }
+
+                                        #Translate based on arm's center
+                                        {
+                                            op: add
+                                            #This is where the rotating arm is centered on
+                                            amount: 3.25
+                                        }
+                                        #Translate based on arm's joint
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 9.01734439844
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                            
+                            #Average the two positions
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
             suffix: "-piston"
             mirror: false
             #Offset it slightly upwards
@@ -300,27 +813,10 @@ drawer: {
                         amount: 1.9121800551
                     }
                     
-                    #Transform back into base function
+                    #Translate back into base function
                     {
                         op: add
                         amount: -1.57079632679
-                    }
-                    #absolute value jank
-                    {
-                        op: add
-                        amount: 0.5
-                    }
-                    {
-                        op: curve
-                        interp: slope
-                    }
-                    {
-                        op: curve
-                        interp: reverse
-                    }
-                    {
-                        op: mul
-                        amount: 0.5
                     }
                     
                     #reflect and offset
@@ -465,6 +961,9 @@ drawer: {
             y: 3.25
             moveRot: 360
             progress: reload
+        }
+        {
+            
         }
     ]
 }

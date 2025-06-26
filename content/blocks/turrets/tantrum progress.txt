@@ -107,12 +107,11 @@ drawer: {
                     }
                     
                     
-                    #Transform back into base function
+                    #Translate back into base function
                     {
                         op: add
                         amount: -m2
                     }
-                    abs
                     {
                         op: curve
                         interp: reverse
