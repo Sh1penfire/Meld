@@ -49,63 +49,6 @@ shootSound: mediumCannon
 drawer: {
 	type: DrawTurret
     parts: [
-            {
-            name: "clear"
-            moveX: 10
-            moveY: 0
-            progress: reload
-            #The plotter
-            children: [
-                {
-                    type: EffectSpawnerPart
-                    y: -19.42649
-                    effectChance: 1
-                    useProgress: false
-                    effect: {
-                        type: ParticleEffect
-                        lifetime: 240
-                        length: 0
-                        particles: 1
-                        sizeFrom: 1
-                        sizeTo: 1
-                        colorFrom: ee0000
-                        colorTo: ee0000
-                    }
-                }
-                {
-                    type: EffectSpawnerPart
-                    y: -12.13093
-                    effectChance: 1
-                    useProgress: false
-                    effect: {
-                        type: ParticleEffect
-                        lifetime: 240
-                        length: 0
-                        particles: 1
-                        sizeFrom: 1
-                        sizeTo: 1
-                        colorFrom: 00ee00
-                        colorTo: 00ee00
-                    }
-                }
-                {
-                    type: EffectSpawnerPart
-                    y: 0.25859
-                    effectChance: 1
-                    useProgress: false
-                    effect: {
-                        type: ParticleEffect
-                        lifetime: 240
-                        length: 0
-                        particles: 1
-                        sizeFrom: 1
-                        sizeTo: 1
-                        colorFrom: 0000ee
-                        colorTo: 0000ee
-                    }
-                }
-            ]
-        }
         {
             type: RegionPart
             suffix: "-shaft"
@@ -628,30 +571,6 @@ drawer: {
             moveY: 1
             clampProgress: false
             children: [
-                {
-                    name: "clear"
-                    moveX: 10
-                    moveY: 0
-                    progress: reload
-                    #The plotter
-                    children: [
-                        {
-                            type: EffectSpawnerPart 
-                            effectChance: 1
-                            useProgress: false
-                            effect: {
-                                type: ParticleEffect
-                                lifetime: 240
-                                length: 0
-                                particles: 1
-                                sizeFrom: 1
-                                sizeTo: 1
-                                layer: 140
-                            }
-                            moveX: 20
-                        }
-                    ]
-                }
                 {
                     name: "meld-tantrum-joint-shaft"
                     x: 3.25
