@@ -1,0 +1,155 @@
+type: ItemTurret
+health: 820
+size: 3
+
+rotateSpeed: 6
+reload: 280
+recoil: 0.5
+
+range: 120
+fogRadiusMultiplier: 0
+
+squareSprite: false
+
+#Can target enemies, but will always prioritise healing
+targetGround: true
+targetAir: false
+targetHealing: true
+
+shootCone: 360
+shootY: 8
+
+liquidCapacity: 80
+
+chargeSound: laserbig
+moveWhileCharging: false
+
+shoot: {
+    type: ShootBarrel
+    barrels: [
+        0, 0, 60,
+        0, 0, 180,
+        0, 0, 300
+    ]
+    shots: 3
+    spread: 120
+    shotDelay: 0
+    
+}
+inaccuracy: 0
+
+loopSound: none
+shootEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 3
+        particles: 1
+        length: 12
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 0.5
+        colorFrom: ffffff
+    }
+    {
+        type: ParticleEffect
+        layer: 100
+        lifetime: 3
+        particles: 1
+        length: 14
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 1
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 15
+        baseLength: 10
+        length: 45
+        cone: 35
+        line: true
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 45
+        particles: 1
+        baseLength: 10
+        length: 5
+        cone: 35
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: cbdbfc
+        colorTo: cbdbfc00
+    }
+]
+
+ammoTypes: {
+    #Main sticher bullet
+    resonarum: {
+        lifetime: 85
+        speed: 1
+        scaleLife: false
+        damage: 0
+        collides: false
+        collidesTeam: true
+        
+        healAmount: 180
+        splashDamage: 0
+        splashDamageRadius: 180
+        bulletInterval: 8
+        
+        intervalBullets: 2
+        intervalRandomSpread: 0
+        intervalSpread: 180
+        
+        weaveRandom: false
+        
+        intervalBullet: {
+            type: LaserBulletType
+            lifetime: 60
+            width: 2
+            length: 120
+            healAmount: 15
+            fragRandomSpread: 0
+            fragOffsetMax: 0
+            fragBullets: 1
+            fragVelocityMin: 1
+            fragBullet: {
+                lifetime: 30
+                speed: 4
+                scaleLife: false
+                damage: 0
+                collides: true
+                collidesTeam: true
+
+                healAmount: 25
+                splashDamage: 0
+                splashDamageRadius: 30
+            }
+        }
+    }
+}
+
+consumes: {
+    liquids: [
+        warp/1.5
+    ]
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+	]
+}
+
+requirements: [
+	debris/35
+	electrum-sheet/60
+	resonarum/80
+	riplom/150
+]
+
+category: effect
