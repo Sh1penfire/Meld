@@ -21,7 +21,7 @@ iconColor: f3c3e7
 
 launchMusic: stellar-walkways
 
-accessible: false
+accessible: true
 alwaysUnlocked: true
 
 mesh: [
