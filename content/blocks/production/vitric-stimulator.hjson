@@ -11,7 +11,7 @@ maxBoost: 2
 boostScale: 0.111111111111111111111111111111111111
 
 liquidCapacity: 300
-itemCapacity: 60
+itemCapacity: 40
 
 placeableLiquid: true
 floating: true

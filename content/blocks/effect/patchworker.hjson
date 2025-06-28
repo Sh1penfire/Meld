@@ -3,10 +3,10 @@ health: 820
 size: 3
 
 rotateSpeed: 6
-reload: 280
+reload: 20
 recoil: 0.5
 
-range: 120
+range: 180
 fogRadiusMultiplier: 0
 
 squareSprite: false
@@ -25,16 +25,13 @@ chargeSound: laserbig
 moveWhileCharging: false
 
 shoot: {
-    type: ShootBarrel
-    barrels: [
-        0, 0, 60,
-        0, 0, 180,
-        0, 0, 300
-    ]
-    shots: 3
-    spread: 120
-    shotDelay: 0
-    
+    type: ShootSummon
+    shots: 8
+    shotDelay: 10
+    x: 0
+    y: 4
+    radius: 4
+    spread: 18
 }
 inaccuracy: 0
 
@@ -89,47 +86,8 @@ shootEffect: [
 ammoTypes: {
     #Main sticher bullet
     resonarum: {
-        lifetime: 85
-        speed: 1
-        scaleLife: false
-        damage: 0
-        collides: false
+        healAmount: 40
         collidesTeam: true
-        
-        healAmount: 180
-        splashDamage: 0
-        splashDamageRadius: 180
-        bulletInterval: 8
-        
-        intervalBullets: 2
-        intervalRandomSpread: 0
-        intervalSpread: 180
-        
-        weaveRandom: false
-        
-        intervalBullet: {
-            type: LaserBulletType
-            lifetime: 60
-            width: 2
-            length: 120
-            healAmount: 15
-            fragRandomSpread: 0
-            fragOffsetMax: 0
-            fragBullets: 1
-            fragVelocityMin: 1
-            fragBullet: {
-                lifetime: 30
-                speed: 4
-                scaleLife: false
-                damage: 0
-                collides: true
-                collidesTeam: true
-
-                healAmount: 25
-                splashDamage: 0
-                splashDamageRadius: 30
-            }
-        }
     }
 }
 
@@ -137,6 +95,7 @@ consumes: {
     liquids: [
         warp/1.5
     ]
+    power: 2
 }
 
 drawer: {
