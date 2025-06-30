@@ -78,13 +78,16 @@ requirements: [
 	dissonitre/10
 ]
 
-research: aether-accumulator
+research: {
+	parent: crude-crackers
+	objectives: [
+		dissonitre
+	]
+}
 
 researchCost: [
 	debris/17
 ]
-
-
 
 researchCost: [
  	debris/240

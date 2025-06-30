@@ -3,16 +3,16 @@ health: 820
 size: 3
 
 rotateSpeed: 6
-reload: 20
+reload: 180
 recoil: 0.5
 
-range: 180
+range: 270
 fogRadiusMultiplier: 0
 
 squareSprite: false
 
 #Can target enemies, but will always prioritise healing
-targetGround: true
+targetGround: false
 targetAir: false
 targetHealing: true
 
@@ -25,13 +25,7 @@ chargeSound: laserbig
 moveWhileCharging: false
 
 shoot: {
-    type: ShootSummon
-    shots: 8
-    shotDelay: 10
-    x: 0
-    y: 4
-    radius: 4
-    spread: 18
+    shots: 1
 }
 inaccuracy: 0
 
@@ -86,8 +80,29 @@ shootEffect: [
 ammoTypes: {
     #Main sticher bullet
     resonarum: {
-        healAmount: 40
+        type: LaserBulletType
+        layer: 122
+        length: 270
+        
+        fragOffsetMax: 0
+        fragRandomSpread: 0
+        healAmount: 45
         collidesTeam: true
+        colors: [
+            91dda8
+        ]
+        
+        setDefaults: false
+        despawnHit: true
+        fragOnHit: false
+        
+        fragBullets: 1
+        fragVelMax: 0
+        
+        fragBullet: {
+            spawnUnit: resonant-overseer-rocket
+            collidesTeam: true
+        }
     }
 }
 

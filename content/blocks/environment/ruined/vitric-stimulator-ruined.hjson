@@ -1,8 +1,193 @@
-type: Wall
-variants: 0
+type: AttributeCrafter
+size: 3
 
-customShadow: true
+placeableLiquid: true
+category: production
+
+attribute: rift
+baseEfficiency: 0
+minEfficiency: 8.9
+maxBoost: 2
+boostScale: 0.111111111111111111111111111111111111
+
+liquidCapacity: 300
+itemCapacity: 40
+
+placeableLiquid: true
+floating: true
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 120
+
+drawer: [
+    {
+        type: DrawLiquidTile
+        drawLiquid: rift
+        padding: 1.5
+    }
+
+    {
+        type: DrawRegion
+    }
+    {
+        type: DrawParticles
+        color: 8872da
+    }
+	{
+		type: DrawArcSmelt
+		flameRad: 0
+		flameRadiusScl: 0
+		flameRadiusMag: 1
+        particleRad: -7
+        flameColor: fcf69c
+        midColor: dbd400
+	}
+    {
+        type: DrawParticles
+        color: 8872da
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: -8
+        y: -8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: 8
+        y: -8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: -8
+        y: 8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+    {
+        type: DrawParticles
+        color: d2dae9
+        x: 8
+        y: 8
+        particleRad: 5
+        particleLife: 120
+        particleSize: 1.2
+        reverse: true
+    }
+]
+
+
+craftEffect: [
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 3
+    sizeTo: 6
+    colorFrom: 8872daa1
+    colorTo: 3b297000
+    layer: 61.8
+    cone: 25
+    baseRotation: 25
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: 1.9646048635
+    offsetY: 11.1418278451
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: 11.1418278451
+    offsetY: -1.9646048635
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: -11.1418278451
+    offsetY: 1.9646048635
+}
+{
+    type: ParticleEffect
+    lifetime: 190
+    sizeInterp: slope
+    length: 45
+    baseLength: 4
+    sizeFrom: 0
+    sizeTo: 2.5
+    colorFrom: dee4f0
+    colorTo: acbfe300
+    layer: 61.8
+    cone: 25
+    baseRotation: 55
+    offsetX: -1.9646048635
+    offsetY: -11.1418278451
+}
+]
+
+consumes: {
+	power: 0.75
+	items: [
+		vitric-mesh/1
+	]
+}
+
+outputItem: shiny-globule/3
+
+outputLiquids: [
+	rift/0.5
+]
+
 requirements: [
-	debris/25
-	resonarum/15
+ 	debris/30
+	resonarum/60
 ]

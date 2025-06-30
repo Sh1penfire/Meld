@@ -48,18 +48,15 @@ consumes: {
 	items: [
 		shiny-globule/32
 	]
-	liquids: [
-		aether/0.1666666666666667
-	]
 }
 
 outputLiquids: [
-	warp/0.1666666666666667
+	warp/0.5
 ]
 
 outputItems: [
-	vitric-mesh/1
-	dissonitre/16
+	vitric-mesh/3
+	dissonitre/20
 ]
 
 requirements: [

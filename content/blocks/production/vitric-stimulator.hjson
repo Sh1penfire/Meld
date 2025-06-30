@@ -207,10 +207,9 @@ requirements: [
 ]
 
 research: {
-	parent: earthbound-infuser
+	parent: fissure-tapping
 	objectives: [
-		ichor
-		rift
+		electrum-sheet
 	]
 }
 

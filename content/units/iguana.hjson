@@ -1,5 +1,5 @@
 type: tank
-speed: 5
+speed: 4.5
 strafePenalty: 0
 shadowElevation: 0.1
 
@@ -8,8 +8,8 @@ armor: 35
 
 aimDst: 10
 range: 50
-drag: 0.15
-accel: 0.2
+drag: 0.2
+accel: 0.225
 hitSize: 8
 
 lightRadius: 120

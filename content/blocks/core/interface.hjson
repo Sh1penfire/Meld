@@ -1,0 +1,19 @@
+type: StorageBlock
+health: 320
+size: 3
+
+solid: false
+itemCapacity: 300
+
+squareSprite: false
+coreMerge: true
+
+research: buffer
+
+requirements: [
+	debris/35
+	technoscrap/65
+    clay-mallow/85
+]
+
+category: effect
