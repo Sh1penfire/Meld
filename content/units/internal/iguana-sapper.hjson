@@ -23,7 +23,7 @@ hoverable: true
 hovering: true
 
 faceTarget: false
-targetable: false
+targetable: true
 health: 120
 
 drawMinimap: false
@@ -223,7 +223,6 @@ weapons: [
             pierceCap: 4
             colors: [b7a76180, e2cf7aB3, ffffffCC, ffffff]
             lightColor: e2cf7aCC
-            buildingDamageMultiplier: 0
           }
 	}
 	{
@@ -271,7 +270,6 @@ weapons: [
 				knockback: -5
 				color: bf92f9
                 status: none
-                buildingDamageMultiplier: 0
 			}
 	}
 	{

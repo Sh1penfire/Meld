@@ -59,8 +59,9 @@ outputItems: [
 outputLiquid: ichor/2
 
 research: {
-	parent: heating-basin
+	parent: crude-crackers
 	objectives: [
+		electrum-sheet
 	]
 }
 

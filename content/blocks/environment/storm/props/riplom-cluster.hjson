@@ -4,7 +4,7 @@ breakSound: rock-crush
 instantDeconstruct: false
 requirements: [
 	debris/30
-	riplom/25
+	riplom/45
 	meld-shard/10
 ]
 buildVisibility: sandboxOnly

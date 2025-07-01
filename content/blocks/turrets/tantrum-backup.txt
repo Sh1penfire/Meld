@@ -1,0 +1,1226 @@
+type: ItemTurret
+size: 5
+health: 2100
+
+liquidCapacity: 400
+
+range: 220
+fogRadiusMultiplier: 0.25
+
+reload: 85
+
+recoil: 0.25
+
+recoil: 0
+inaccuracy: 2
+shootCone: 25
+
+ammoPerShot: 12
+shootY: 8
+
+targetAir: false
+
+shoot: {
+    type: ShootMulti
+    source: {
+        type: ShootBarrel
+        shots: 3
+        barrels: [
+            -12,0,60,
+            0,12,0,
+            12,0,-60
+        ]
+    }
+	dest: [
+        {
+            
+        }
+        {
+            type: ShootHelix
+            shots: 1
+            scl: 20
+            mag: 3
+        }
+    ]
+}
+
+shootSound: mediumCannon
+
+drawer: {
+	type: DrawTurret
+    parts: [
+        {
+            type: RegionPart
+            suffix: "-shaft"
+            mirror: true
+            #Offset this further down and right to match the piston
+            x: 2.13093
+            y: -2.13093
+            moveX: 0
+            moveY: 0
+            clampProgress: false
+            #Are you ready to transcend this mortal plane?
+            #No?
+            #Ok then
+            moves: [
+                {
+                    x: 1
+                    progress: {
+                        type: reload
+                        ops: [
+                            #Interp goes here
+
+                            #Add the x offset from the arm the arm joint is at
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount: -0.76579283254
+                            }
+                            {
+                                #Offset into a cos wave
+                                op: add
+                                amount: 1.57079632679
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                            #Multiply by the radius
+                            {
+                                op: mul
+                                amount: 9.01734439844
+                            }
+                            #Add the x that the arm is centered on
+                            {
+                                op: add
+                                amount: 3.25
+                            }
+                            
+                            #Add the x that the shaft joint will occupy
+                            {
+                                op: add
+                                amount: 3.75
+                            }
+                            
+                            #Average the two positions
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                        ]
+                    }
+                }
+                {
+                    
+                    rot: 1
+                    progress: {
+                        type: reload
+                        ops: [
+                            #YEET
+                            {
+                                op: mul
+                                amount: 0
+                            }
+                            #Get the current angle of the shaft
+
+                            #Aproximate the arcos function + some jank, but with a period of 2pi and no modulus jank
+                            #Add on the cos waves
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Interp goes here
+                                        
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                         #please don't smite me, I swear this is just for consistiency's sake
+                                        {
+                                            op: mul
+                                            amount: 1
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.763845684934
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Interp goes here
+
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 2
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.0645692297549
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #Interp goes here
+
+                                        #Make the prog go from 0 to 2pi
+                                        {
+                                            op: mul
+                                            amount: 6.28318530718
+                                        }
+                                        {
+                                            op: add
+                                            #Add the rotation offset
+                                            amount: -0.76579283254
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 3
+                                        }
+                                        #The cos
+                                        {
+                                            #Offset into a cos wave
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: 0.033239742455
+                                        }
+                                    ]
+                                }
+                            }
+                            {
+                                op: add
+                                #Average of the function
+                                amount: 1.9121800551
+                            }
+
+                            #Translate back into base function
+                            {
+                                op: add
+                                amount: -1.57079632679
+                            }
+
+                            #reflect and offset
+                            {
+                                op: mul
+                                amount: -1
+                            }
+                            {
+                                op: add
+                                amount: 1.57079632679
+                            }
+                            
+                            #Take radiants, turn into degrees
+                            {
+                                op: mul
+                                amount: 57.2957795131
+                            }
+                            
+                            #Offset by 45 deg to account for the shaft's sprite being on a slant
+                            {
+                                op: add
+                                amount: -45
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 1
+                    progress: {
+                        type: reload
+                        #Oh boy...
+                        ops: [
+                            #Interp goes here
+
+                            #Add the y offset from the arm the arm joint is at
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount: -0.76579283254
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                            #Multiply by the radius
+                            {
+                                op: mul
+                                amount: 9.01734439844
+                            }
+                            #Add the y that the arm is centered on
+                            {
+                                op: add
+                                amount: 7.75
+                            }
+                            
+                            #Add the y that the shaft joint will occupy
+                            {
+                                op: add
+                                other: {
+                                    type: reload
+                                    ops: [
+                                        #YEET
+                                        {
+                                            op: mul
+                                            amount: 0
+                                        }
+                                        #Get the current angle of the shaft
+
+                                        #Aproximate the arcos function + some jank, but with a period of 2pi and no modulus jank
+                                        #Add on the cos waves
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Interp goes here
+                                                    
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                     #please don't smite me, I swear this is just for consistiency's sake
+                                                    {
+                                                        op: mul
+                                                        amount: 1
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.763845684934
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Interp goes here
+                                                    
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 2
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.0645692297549
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Interp goes here
+                                                    
+                                                    #Make the prog go from 0 to 2pi
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        #Add the rotation offset
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 3
+                                                    }
+                                                    #The cos
+                                                    {
+                                                        #Offset into a cos wave
+                                                        op: add
+                                                        amount: 1.57079632679
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 0.033239742455
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                        {
+                                            op: add
+                                            #Average of the function
+                                            amount: 1.9121800551
+                                        }
+
+                                        #Translate back into base function
+                                        {
+                                            op: add
+                                            amount: -1.57079632679
+                                        }
+
+                                        #reflect and offset
+                                        {
+                                            op: mul
+                                            amount: -1
+                                        }
+                                        {
+                                            op: add
+                                            amount: 1.57079632679
+                                        }
+
+                                        #Use the shaft's angle to determine the position of the piston
+                                        {
+                                            op: mul
+                                            #Divide by pi/2 to offset the dialation from sineIn
+                                            amount: 0.63661977236
+                                        }
+                                        {
+                                            op: curve
+                                            #Use sineIn because it's cleaner
+                                            interp: sineOut
+                                        }
+                                        {
+                                            op: mul
+                                            amount: -14
+                                        }
+
+                                        #Translate based on arm's center
+                                        {
+                                            op: add
+                                            #This is where the rotating arm is centered on
+                                            amount: 3.25
+                                        }
+                                        #Translate based on arm's joint
+                                        {
+                                            op: add
+                                            other: {
+                                                type: reload
+                                                ops: [
+                                                    #Interp goes here
+                                                    
+                                                    {
+                                                        op: mul
+                                                        amount: 6.28318530718
+                                                    }
+                                                    {
+                                                        op: add
+                                                        amount: -0.76579283254
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        #Divide by pi/2 to offset the dialation from sineIn
+                                                        amount: 0.63661977236
+                                                    }
+                                                    {
+                                                        op: curve
+                                                        #Use sineIn because it's cleaner
+                                                        interp: sineOut
+                                                    }
+                                                    {
+                                                        op: mul
+                                                        amount: 9.01734439844
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                            
+                            #Average the two positions
+                            {
+                                op: mul
+                                amount: 0.5
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: "-piston"
+            mirror: false
+            #Offset it slightly upwards
+            y: 2.13093
+            moveY: 1
+            clampProgress: false
+            children: [
+                {
+                    name: "meld-tantrum-joint-shaft"
+                    x: 3.25
+                    y: -3.75
+                    mirror: false
+                }
+                {
+                    name: "meld-tantrum-joint-shaft"
+                    x: -3.25
+                    y: -3.75
+                    mirror: false
+                }
+            ]
+            #Did you know I have to copy this entire thing and take its average just so I can position the shaft?
+            #probably not
+            progress: {
+                type: reload
+                ops: [
+                    #YEET
+                    {
+                        op: mul
+                        amount: 0
+                    }
+                    #Get the current angle of the shaft
+
+                    #Aproximate the arcos function + some jank, but with a period of 2pi and no modulus jank
+                    #Add on the cos waves
+                    {
+                        op: add
+                        other: {
+                            type: reload
+                            ops: [
+                                #Interp goes here
+
+                                #Make the prog go from 0 to 2pi
+                                {
+                                    op: mul
+                                    amount: 6.28318530718
+                                }
+                                {
+                                    op: add
+                                    #Add the rotation offset
+                                    amount: -0.76579283254
+                                }
+                                 #please don't smite me, I swear this is just for consistiency's sake
+                                {
+                                    op: mul
+                                    amount: 1
+                                }
+                                #The cos
+                                {
+                                    #Offset into a cos wave
+                                    op: add
+                                    amount: 1.57079632679
+                                }
+                                {
+                                    op: mul
+                                    #Divide by pi/2 to offset the dialation from sineIn
+                                    amount: 0.63661977236
+                                }
+                                {
+                                    op: curve
+                                    #Use sineIn because it's cleaner
+                                    interp: sineOut
+                                }
+                                {
+                                    op: mul
+                                    amount: 0.763845684934
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        op: add
+                        other: {
+                            type: reload
+                            ops: [
+                                #Interp goes here
+                                
+                                #Make the prog go from 0 to 2pi
+                                {
+                                    op: mul
+                                    amount: 6.28318530718
+                                }
+                                {
+                                    op: add
+                                    #Add the rotation offset
+                                    amount: -0.76579283254
+                                }
+                                {
+                                    op: mul
+                                    amount: 2
+                                }
+                                #The cos
+                                {
+                                    #Offset into a cos wave
+                                    op: add
+                                    amount: 1.57079632679
+                                }
+                                {
+                                    op: mul
+                                    #Divide by pi/2 to offset the dialation from sineIn
+                                    amount: 0.63661977236
+                                }
+                                {
+                                    op: curve
+                                    #Use sineIn because it's cleaner
+                                    interp: sineOut
+                                }
+                                {
+                                    op: mul
+                                    amount: 0.0645692297549
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        op: add
+                        other: {
+                            type: reload
+                            ops: [
+                                #Interp goes here
+                                
+                                #Make the prog go from 0 to 2pi
+                                {
+                                    op: mul
+                                    amount: 6.28318530718
+                                }
+                                {
+                                    op: add
+                                    #Add the rotation offset
+                                    amount: -0.76579283254
+                                }
+                                {
+                                    op: mul
+                                    amount: 3
+                                }
+                                #The cos
+                                {
+                                    #Offset into a cos wave
+                                    op: add
+                                    amount: 1.57079632679
+                                }
+                                {
+                                    op: mul
+                                    #Divide by pi/2 to offset the dialation from sineIn
+                                    amount: 0.63661977236
+                                }
+                                {
+                                    op: curve
+                                    #Use sineIn because it's cleaner
+                                    interp: sineOut
+                                }
+                                {
+                                    op: mul
+                                    amount: 0.033239742455
+                                }
+                            ]
+                        }
+                    }
+                    {
+                        op: add
+                        #Average of the function
+                        amount: 1.9121800551
+                    }
+                    
+                    #Translate back into base function
+                    {
+                        op: add
+                        amount: -1.57079632679
+                    }
+                    
+                    #reflect and offset
+                    {
+                        op: mul
+                        amount: -1
+                    }
+                    {
+                        op: add
+                        amount: 1.57079632679
+                    }
+                    
+                    #Use the shaft's angle to determine the position of the piston
+                    {
+                        op: mul
+                        #Divide by pi/2 to offset the dialation from sineIn
+                        amount: 0.63661977236
+                    }
+                    {
+                        op: curve
+                        #Use sineIn because it's cleaner
+                        interp: sineOut
+                    }
+                    {
+                        op: mul
+                        amount: -14
+                    }
+                    
+                    #Translate based on arm's center
+                    {
+                        op: add
+                        #This is where the rotating arm is centered on
+                        amount: 3.25
+                    }
+                    #Translate based on arm's joint
+                    {
+                        op: add
+                        other: {
+                            type: reload
+                            ops: [
+                                #Interp goes here
+                                
+                                {
+                                    op: mul
+                                    amount: 6.28318530718
+                                }
+                                {
+                                    op: add
+                                    amount: -0.76579283254
+                                }
+                                {
+                                    op: mul
+                                    #Divide by pi/2 to offset the dialation from sineIn
+                                    amount: 0.63661977236
+                                }
+                                {
+                                    op: curve
+                                    #Use sineIn because it's cleaner
+                                    interp: sineOut
+                                }
+                                {
+                                    op: mul
+                                    amount: 9.01734439844
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+        {
+            type: RegionPart
+            suffix: "-joint-arm"
+            mirror: true
+            x: 7.75
+            y: 3.25
+            clampProgress: false
+            moves: [
+            #Emulate the circular movement without rotating the sprite itself
+                {
+                    x: 9.01734439844
+                    progress: {
+                        type: reload
+                        ops: [
+                                #Interp goes here
+                                
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount: -0.76579283254
+                            }
+                            {
+                                #Offset into a cos wave
+                                op: add
+                                amount: 1.57079632679
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                        ]
+                    }
+                }
+                {
+                    y: 9.01734439844
+                    progress: {
+                        type: reload
+                        ops: [
+                                #Interp goes here
+                                
+                            {
+                                op: mul
+                                amount: 6.28318530718
+                            }
+                            {
+                                op: add
+                                amount:-0.76579283254
+                            }
+                            {
+                                op: mul
+                                #Divide by pi/2 to offset the dialation from sineIn
+                                amount: 0.63661977236
+                            }
+                            {
+                                op: curve
+                                #Use sineIn because it's cleaner
+                                interp: sineOut
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+        {
+            type: RegionPart
+            suffix: "-arm"
+            mirror: true
+            x: 7.75
+            y: 3.25
+            moveRot: 360
+            progress: {
+                type: reload
+                ops: [
+                    #Interp goes here
+
+                ]
+            }
+        }
+        {
+            
+        }
+    ]
+}
+
+ammoTypes: {
+	silver: {
+        type: BulletType
+		damage: 0
+		pierce: true
+        hittable: false
+        removeAfterPierce: false
+        collidesAir: false
+		speed: 7.5
+        drag: 0.05
+		lifetime: 30
+		hitSize: 10.75
+		bulletInterval: 13
+		intervalBullets: 1
+        intervalRandomSpread: 0
+		ammoMultiplier: 1
+        trailChance: 0.15
+        trailEffect: {
+            type: ParticleEffect
+            lifetime: 45
+            colorFrom: 8872da00
+            colorTo: 3b2970
+            sizeFrom: 10
+            sizeTo: 0
+            length: 35
+            particles: 3
+            interp: pow5Out
+            sizeInterp: pow5In
+            layer: 109.8
+        }
+        despawnEffect: none
+        intervalBullet: {
+            instantDisappear: true
+            hitEffect: none
+            despawnEffect: none
+            despawnHit: true
+            spawnBullets: [
+                {
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 0.5
+                    fragAngle: 90
+                    instantDisappear: true
+                    hitEffect: none
+                    despawnHit: true
+                    collides: false
+                    fragBullet: {
+                        type: BulletType
+                        speed: 1.1
+                        drag: 0.01
+                        lifetime: 17
+                        pierce: true
+                        collidesAir: false
+                        hittable: false
+                        despawnEffect: none
+                        intervalRandomSpread: 15
+                        bulletInterval: 4
+                        intervalAngle: -90
+                        intervalBullet: {
+                            type: BulletType
+                            speed: 3.5
+                            lifetime: 20
+                            pierce: true
+                            collidesAir: false
+                            hittable: false
+                            knockback: 5
+                            impact: true
+                            hitEffect: {
+                                type: MultiEffect
+                                effects: [
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 65
+                                        particles: 3
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        spin: 45
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 25
+                                        particles: 2
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        cone: 50
+                                        spin: 35
+                                    }
+                                ]
+                            }
+                            despawnEffect: none
+                            despawnHit: true
+                            intervalRandomSpread: 15
+                            bulletInterval: 4
+                            intervalBullet:{
+                                type: RailBulletType
+                                pierce: true
+                                collidesAir: false
+                                damage: 0.01
+                                knockback: 3.25
+                                length: 15
+                                trailEffect: none
+                                shootEffect: none
+                                pierceEffect: none
+                                status: impaled
+                                statusDuration: 15
+                                endEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 45
+                                    line: true
+                                    strokeFrom: 2.5
+                                    length: 35
+                                    lenTo: 0
+                                    particles: 3
+                                    interp: pow2In
+                                    sizeInterp: pow2Out
+                                    colorFrom: 8872da
+                                    colorTo: 8872da00
+                                    cone: 120
+                                }
+                                hitEffect: none
+                                despawnEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 25
+                                    colorFrom: 8872da00
+                                    colorTo: 3b2970
+                                    sizeFrom: 4
+                                    sizeTo: 0
+                                    length: 65
+                                    particles: 4
+                                    interp: pow5Out
+                                    sizeInterp: pow5In
+                                    layer: 69.9
+                                    cone: 80
+                                }
+                            }
+                        }
+                    }
+                }
+                {
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragVelocityMin: 0.5
+                    fragAngle: -90
+                    instantDisappear: true
+                    hitEffect: none
+                    despawnHit: true
+                    collides: false
+                    fragBullet: {
+                        type: BulletType
+                        speed: 1.1
+                        drag: 0.01
+                        lifetime: 17
+                        pierce: true
+                        collidesAir: false
+                        hittable: false
+                        despawnEffect: none
+                        intervalRandomSpread: 15
+                        bulletInterval: 4
+                        intervalAngle: 90
+                        intervalBullet: {
+                            type: BulletType
+                            speed: 3.5
+                            lifetime: 20
+                            pierce: true
+                            collidesAir: false
+                            hittable: false
+                            knockback: 5
+                            impact: true
+                            hitEffect: {
+                                type: MultiEffect
+                                effects: [
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 65
+                                        particles: 3
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        spin: 45
+                                    }
+                                    {
+                                        type: ParticleEffect
+                                        region: meld-swirl
+                                        lifetime: 45
+                                        colorFrom: 8872da00
+                                        colorTo: 3b2970
+                                        sizeFrom: 4
+                                        sizeTo: 0
+                                        length: 25
+                                        particles: 2
+                                        interp: pow5Out
+                                        sizeInterp: pow5In
+                                        layer: 69.8
+                                        cone: 50
+                                        spin: 35
+                                    }
+                                ]
+                            }
+                            despawnEffect: none
+                            despawnHit: true
+                            intervalRandomSpread: 15
+                            bulletInterval: 4
+                            intervalBullet:{
+                                type: RailBulletType
+                                pierce: true
+                                collidesAir: false
+                                damage: 0.01
+                                knockback: 3.25
+                                length: 15
+                                trailEffect: none
+                                shootEffect: none
+                                pierceEffect: none
+                                status: impaled
+                                statusDuration: 15
+                                endEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 45
+                                    line: true
+                                    strokeFrom: 2.5
+                                    length: 35
+                                    lenTo: 0
+                                    particles: 3
+                                    interp: pow2In
+                                    sizeInterp: pow2Out
+                                    colorFrom: 8872da
+                                    colorTo: 8872da00
+                                    cone: 120
+                                }
+                                hitEffect: none
+                                despawnEffect: {
+                                    type: ParticleEffect
+                                    lifetime: 25
+                                    colorFrom: 8872da00
+                                    colorTo: 3b2970
+                                    sizeFrom: 4
+                                    sizeTo: 0
+                                    length: 65
+                                    particles: 4
+                                    interp: pow5Out
+                                    sizeInterp: pow5In
+                                    layer: 69.9
+                                    cone: 80
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+	}
+}
+
+consumes: {
+    liquids: [
+        aspect/3.33333333333
+        rift/1
+    ]
+}
+
+requirements: [
+	debris/250
+	silver/180
+	electrum-sheet/120
+]
+
+
+
+category: turret
+
+research: {
+    parent: molotov
+    objectives: [
+    ]
+    
+}
+
+researchCost: [
+	debris/1400
+	carbolith/600
+	silver/1600
+	electrum-sheet/130
+]

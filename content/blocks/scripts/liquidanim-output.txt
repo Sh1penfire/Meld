@@ -1,0 +1,1261 @@
+
+			{
+				type: RegionPart
+				name: fluid-gas-0
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.1111111111111111
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-5
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.2222222222222222
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-10
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.3333333333333333
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-15
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.4444444444444444
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-20
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.5555555555555556
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-25
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.6666666666666667
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-30
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.7777777777777777
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-35
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.8888888888888888
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-40
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.0
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-45
+				x: 0
+				y: -7.5
+				outline: false
+				color: cb865000
+				colorTo: cb8650aa
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.1111111111111112
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-0
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.1111111111111111
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-5
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.2222222222222222
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-10
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.3333333333333333
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-15
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.4444444444444444
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-20
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.5555555555555556
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-25
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.6666666666666667
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-30
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.7777777777777777
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-35
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.8888888888888888
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-40
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.0
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-45
+				x: 0
+				y: 0.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.1111111111111112
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-0
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.1111111111111111
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-5
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.2222222222222222
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-10
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.3333333333333333
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-15
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.4444444444444444
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-20
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.5555555555555556
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-25
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.6666666666666667
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-30
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.7777777777777777
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-35
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -0.8888888888888888
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-40
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.0
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}
+			{
+				type: RegionPart
+				name: fluid-gas-45
+				x: 0
+				y: 8.5
+				outline: false
+				color: cbdbfc00
+				colorTo: cbdbfccc
+				progress: {
+					type: time
+					ops: [
+						{
+							op: mul
+							amount: 0.005263157894736842
+						}
+						{
+							op: add
+							amount: -1.1111111111111112
+						}
+						{
+							op: loop
+							time: 1
+						}
+						{
+							op: compress
+							start: 0.6666666666666667
+							end: 1
+						}
+						{
+							op: curve
+							interp: slope
+						}
+						{
+							op: mul
+							amount: 1.5
+						}
+						{
+							op: clamp
+						}
+					]
+				}
+			}

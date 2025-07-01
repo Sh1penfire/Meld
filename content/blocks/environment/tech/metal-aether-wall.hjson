@@ -1,0 +1,10 @@
+type: Prop
+variants: 3
+solid: true
+
+breakable: false
+alwaysReplace: false
+
+emitLight: true
+lightColor: c47b42b4
+lightRadius: 45

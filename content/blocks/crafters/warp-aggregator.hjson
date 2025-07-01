@@ -7,20 +7,19 @@ category: crafting
 baseEfficiency: 0
 itemCapacity: 20
 
-attribute: rift
+attribute: heat
 baseEfficiency: 0
-minEfficiency: 8.9
+minEfficiency: 1
 maxBoost: 2
-boostScale: 0.111111111111111111111111111111111111
+boostScale: 1
 
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 
-craftTime: 30
+craftTime: 120
 liquidCapacity: 240
 
-liquidOutputDirections: [3, 1]
 itemCapacity: 60
 rotate: true
 quickRotate: true
@@ -30,31 +29,39 @@ floating: true
 drawer: [
 	{
 		type: DrawRegion
+        suffix: "-riplom"
+	}
+    {
+        type: DrawLiquidTile
+        drawLiquid: aether
+    }
+    {
+        type: DrawLiquidTile
+        drawLiquid: warp
+    }
+	{
+		type: DrawRegion
 	}
 ]
 
 consumes: {
 	items: [
-		shiny-globule/20
-	]
-	liquids: [
-		aether/1
+		shiny-globule/32
 	]
 }
 
 outputLiquids: [
-	rift/1.5
 	warp/0.5
 ]
 
 outputItems: [
-	vitric-mesh/1
-	dissonitre/2
+	vitric-mesh/3
+	dissonitre/20
 ]
 
 requirements: [
- 	debris/80
-	silver/60
+	silver/240
+    riplom/150
 ]
 
 researchCost: [

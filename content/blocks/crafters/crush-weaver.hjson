@@ -2,7 +2,7 @@ type: AttributeCrafter
 size: 2
 
 placeableLiquid: true
-category: production
+category: crafting
 
 
 attribute: soil
@@ -10,7 +10,7 @@ baseEfficiency: 0
 minEfficiency: 1
 maxBoost: 1
 
-liquidCapacity: 20
+liquidCapacity: 100
 
 ambientSound: drill
 ambientSoundVolume: 0.08
@@ -26,12 +26,28 @@ drawer: [
 	}
 	{
 		type: DrawLiquidTile
-		drawLiquid: aether
+		drawLiquid: aspect
 		padding: 1.5
 	}
 	{
 		type: DrawArcSmelt
 		drawCenter: false
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder
+		y: -3
+		x: -2
+		spinSprite: true
+		rotateSpeed: -30
+	}
+	{
+		type: DrawRegion
+		suffix: -grinder
+		y: 3
+		x: 2
+		spinSprite: true
+		rotateSpeed: -30
 	}
 	{
 		type: DrawParticles
@@ -47,9 +63,9 @@ drawer: [
 		color: e899646a
 		particleSize: 2
 	}
-    	{
-        	type: DrawGlowRegion
-    	}
+    {
+        type: DrawGlowRegion
+    }
 	{
 		type: DrawRegion
 	}
@@ -69,16 +85,20 @@ consumes: {
 	items: [
 		dissonitre/1
 	]
+	liquids: [
+		aspect/1.666666666
+	]
 }
 
-outputLiquid: aether/0.3333333333333334
+outputItem: vitric-mesh/1
 
 requirements: [
- 	debris/15
+ 	debris/8
+	silver/20
 	dissonitre/10
 ]
 
-research: aether-accumulator
+research: crystal-cracker
 
 researchCost: [
 	debris/17

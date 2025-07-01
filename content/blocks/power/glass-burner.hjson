@@ -58,13 +58,17 @@ requirements: [
 
 consumes: {
 	items: [
-		vitric-mesh/2
 		riplom/4
 	]
+    	itemList: {
+        itemMultipliers: {
+            vitric-mesh: 1.5
+            dissonitre: 1
+            shiny-globule: 0.35
+        }
+    }
     liquid: rift/0.25
 }
-
-outputLiquid: rift/0
 
 powerProduction: 2
 

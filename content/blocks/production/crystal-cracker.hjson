@@ -2,7 +2,7 @@ type: AttributeCrafter
 size: 2
 
 placeableLiquid: true
-category: crafting
+category: production
 
 
 attribute: soil
@@ -69,25 +69,25 @@ consumes: {
 	items: [
 		dissonitre/1
 	]
-	liquids: [
-		aspect/1.6666666666
-	]
 }
 
-outputItem: vitric-mesh/4
+outputLiquid: aether/0.3333333333333334
 
 requirements: [
  	debris/15
 	dissonitre/10
 ]
 
-research: liquid-logistics
+research: {
+	parent: crude-crackers
+	objectives: [
+		dissonitre
+	]
+}
 
 researchCost: [
 	debris/17
 ]
-
-
 
 researchCost: [
  	debris/240

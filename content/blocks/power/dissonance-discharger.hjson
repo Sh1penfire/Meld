@@ -68,7 +68,7 @@ requirements: [
 ]
 
 research: {
-	parent: murk-handling
+	parent: crystal-cracker
 }
 
 researchCost: [

@@ -38,6 +38,7 @@ shootSound: bang
 
 requirements: [
 	dissonitre/85
+	clay-mallow/120
 ]
 
 squareSprite: false
