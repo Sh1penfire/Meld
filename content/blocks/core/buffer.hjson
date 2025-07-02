@@ -8,7 +8,12 @@ itemCapacity: 200
 squareSprite: false
 coreMerge: false
 
-research: storage-hubs
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		storage-hubs
+	]
+}
 
 requirements: [
 	debris/65

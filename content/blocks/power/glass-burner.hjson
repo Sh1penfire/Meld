@@ -73,7 +73,10 @@ consumes: {
 powerProduction: 2
 
 research: {
-	parent: murk-handling
+	parent: conductive-pile
+	objectives: [
+		riplom
+	]
 }
 
 researchCost: [

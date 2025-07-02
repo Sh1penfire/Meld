@@ -133,7 +133,10 @@ requirements: [
 ]
 
 research: {
-	parent: pressurized-dispersion
+	parent: sunder
+	objectives: [
+		pressurized-dispersion
+	] 
 }
 
 category: effect

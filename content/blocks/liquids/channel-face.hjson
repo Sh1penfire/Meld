@@ -12,7 +12,13 @@ requirements: [
 	debris/2
 ]
 
-research: liquid-logistics
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		liquid-logistics
+	]
+}
+
 researchCost: [
 	debris/10
 ]

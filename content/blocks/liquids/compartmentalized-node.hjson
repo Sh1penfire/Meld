@@ -75,7 +75,10 @@ outputLiquids: [
 ]
 
 research: {
-	parent: murk-handling
+	parent: channel-node
+	objectives:[
+		murk-handling
+	]
 }
 
 researchCost: [

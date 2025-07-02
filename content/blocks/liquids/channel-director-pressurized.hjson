@@ -43,7 +43,14 @@ requirements: [
 	elderflesh/2
 ]
 
-research: pressure-control
+
+research: {
+	parent: channel-director
+	objectives: [
+		pressure-control
+	]
+}
+
 researchCost: [
 	carbolith/100
 	elderflesh/120

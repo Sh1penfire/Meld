@@ -32,8 +32,9 @@ hasItems: false
 
 
 research: {
-	parent: aspect-channeling
+	parent: core-raft-dormant
 	objectives: [
+		aspect-channeling
 	]
 }
 

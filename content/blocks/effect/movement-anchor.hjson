@@ -41,4 +41,11 @@ requirements: [
 	carbolith/120
 ]
 
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		movement-anchor
+	]
+}
+
 category: effect

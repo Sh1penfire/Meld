@@ -97,8 +97,9 @@ requirements: [
 ]
 
 research: {
-	parent: mercurial-extraction
+	parent: earthbound-infuser
 	objectives: [
+		mercurial-extraction
 		nectar
 	]
 }

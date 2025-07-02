@@ -36,8 +36,9 @@ hasItems: false
 
 
 research: {
-	parent: core-raft
+	parent: silver-husk
 	objectives: [
+		murk-handling
 	]
 }
 

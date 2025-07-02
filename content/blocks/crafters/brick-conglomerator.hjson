@@ -136,7 +136,10 @@ requirements: [
 ]
 
 research: {
-	parent: building-foundations
+	parent: earthbound-infuser
+	objectives: [
+		building-foundations
+	]
 }
 
 researchCost: [

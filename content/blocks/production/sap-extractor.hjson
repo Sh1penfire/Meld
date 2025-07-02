@@ -57,9 +57,9 @@ requirements: [
 ]
 
 research: {
-	parent: fissure-tapping
+	parent: aether-accumulator
 	objectives: [
-		nectar
+		fissure-tapping
 	]
 }
 

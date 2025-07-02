@@ -59,9 +59,9 @@ outputItems: [
 outputLiquid: ichor/2
 
 research: {
-	parent: crude-crackers
+	parent: elemental-blaster
 	objectives: [
-		electrum-sheet
+		crude-crackers
 	]
 }
 

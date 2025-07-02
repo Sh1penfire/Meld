@@ -67,8 +67,9 @@ requirements: [
 ]
 
 research: {
-	parent: fissure-tapping
+	parent: elemental-blaster
 	objectives: [
+		fissure-tapping
 	]
 }
 

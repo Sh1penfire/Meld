@@ -79,7 +79,12 @@ requirements: [
  	debris/40
 ]
 
-research: channel-face
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		liquid-logistics
+	]
+}
 
 researchCost: [
 	debris/17

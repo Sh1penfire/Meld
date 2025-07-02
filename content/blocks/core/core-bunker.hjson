@@ -12,7 +12,7 @@ itemCapacity : 900
 unitCapModifier: 6
 
 research: {
-	parent: core-raft-dormant
+	parent: core-raft
 	objectives: [
 		
 	]

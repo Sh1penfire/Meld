@@ -18,7 +18,13 @@ requirements: [
 	technoscrap/250
 ]
 
-research: pressure-control
+research: {
+	parent: channel-node
+	objectives: [
+		pressure-control
+	]
+}
+
 researchCost: [
 	debris/250
 	technoscrap/600

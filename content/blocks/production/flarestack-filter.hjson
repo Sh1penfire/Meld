@@ -123,11 +123,7 @@ requirements: [
 ]
 
 research: {
-	parent: earthbound-infuser
-	objectives: [
-		ichor
-		rift
-	]
+	parent: vitric-stimulator
 }
 
 researchCost: [

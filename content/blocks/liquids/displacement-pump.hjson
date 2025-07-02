@@ -54,7 +54,13 @@ requirements: [
 	stony-gloop/35
 ]
 
-research: fluid-extraction
+
+research: {
+	parent: channel-face
+	objectives:[
+		fluid-extraction
+	]
+}
 researchCost: [
 	debris/750
 	compacted-brick/850

@@ -8,8 +8,9 @@ buildTime: 30
 variants: 3
 
 research: {
-	parent: building-foundations
+	parent: silver-husk
 	objectives: [
+		building-foundations
 	]
 }
 

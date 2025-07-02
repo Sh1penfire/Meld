@@ -41,7 +41,10 @@ requirements: [
 outputLiquid: ichor/0.05
 
 research: {
-	parent: power-transmission
+	parent: conductive-pile
+	objectives: [
+		crude-crackers
+	]
 }
 
 category: power

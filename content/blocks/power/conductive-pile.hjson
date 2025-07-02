@@ -1,0 +1,35 @@
+type: Battery
+size: 1
+
+health: 400
+armor: -80
+
+solid: false
+
+fogRadius: 0
+
+consumes: {
+	powerBuffered: 1
+}
+
+drawer: [
+    {
+        type: DrawDefault
+    }
+    {
+        type: DrawGlowRegion
+    }
+]
+
+requirements: [
+	electrum-sheet/12
+]
+
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		power-transmission
+	]
+}
+
+category: power

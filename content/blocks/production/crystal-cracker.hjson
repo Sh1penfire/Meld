@@ -79,9 +79,9 @@ requirements: [
 ]
 
 research: {
-	parent: crude-crackers
+	parent: aether-accumulator
 	objectives: [
-		dissonitre
+		crude-crackers
 	]
 }
 

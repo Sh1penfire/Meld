@@ -408,7 +408,10 @@ requirements: [
 ]
 
 research: {
-	parent: pressurized-dispersion
+	parent: channel-director
+	objectives: [
+		pressurized-dispersion
+	]
 }
 
 category: effect

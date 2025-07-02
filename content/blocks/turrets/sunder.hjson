@@ -145,7 +145,8 @@ requirements: [
 
 category: turret
 
-research: strata
+research: core-raft-dormant
+
 researchCost: [
     debris/120
     carbolith/80

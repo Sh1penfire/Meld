@@ -207,8 +207,9 @@ requirements: [
 ]
 
 research: {
-	parent: fissure-tapping
+	parent: aether-accumulator
 	objectives: [
+		fissure-tapping
 		electrum-sheet
 	]
 }

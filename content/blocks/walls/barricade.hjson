@@ -4,8 +4,9 @@ health: 120
 armor: 45
 
 research: {
-	parent: building-foundations
+	parent: silver-husk
 	objectives: [
+		building-foundations
 	]
 }
 

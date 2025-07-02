@@ -67,7 +67,14 @@ requirements: [
 
 research: core-raft
 
-research: pressure-control
+
+research: {
+	parent: aether-accumulator
+	objectives: [
+		pressure-control
+	]
+}
+
 researchCost: [
  	debris/240
 	carbolith/450

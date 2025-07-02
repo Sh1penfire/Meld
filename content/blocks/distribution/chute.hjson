@@ -9,6 +9,15 @@ requirements: [
 ]
 
 research: item-logistics
+
+research: {
+	parent: core-raft-dormant
+	objectives: [
+		item-logistics
+	]
+}
+
+
 researchCost: [
 	debris/5
 ]

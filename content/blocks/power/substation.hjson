@@ -25,7 +25,7 @@ requirements: [
 ]
 
 research: {
-	parent: power-transmission
+	parent: conductive-pile
 }
 
 category: power
