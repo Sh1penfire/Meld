@@ -39,7 +39,7 @@ shoot: {
 
 shootEffect: shootSmall
 
-liquidCapacity: 200
+liquidCapacity: 450
 
 ammoTypes: {
 	meld: {

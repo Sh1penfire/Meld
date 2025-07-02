@@ -1621,6 +1621,33 @@ weapons: [
     }
 ]
 
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 80
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 78
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
 
 abilities: [
     {

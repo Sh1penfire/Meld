@@ -2,6 +2,7 @@ type: legs
 speed: 0.4
 
 health: 160
+drownTimeMultiplier: 0.35
 
 drag: 0.08
 accel: 0.15

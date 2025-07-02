@@ -3,6 +3,7 @@ speed: 0.9
 
 health: 650
 armor: 20
+drownTimeMultiplier: 0.75
 
 drag: 0.12
 accel: 0.2
