@@ -2,7 +2,7 @@ type: AttributeCrafter
 size: 3
 
 placeableLiquid: true
-category: production
+category: crafting
 
 
 attribute: ichor-vent

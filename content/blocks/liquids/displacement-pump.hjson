@@ -14,7 +14,7 @@ solid: true
 placeableLiquid: true
 floating: true
 
-category: production
+category: liquid
 
 
 drawer: [

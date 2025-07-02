@@ -20,6 +20,8 @@ itemCapacity: 20
 placeableLiquid: true
 floating: true
 
+solid: false
+
 ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
