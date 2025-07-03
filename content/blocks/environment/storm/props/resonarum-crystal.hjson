@@ -1,7 +1,5 @@
 type: TallBlock
 variants: 0
-shadowOffset: -3
-customShadow: true
 
 itemDrop: resonarum
 

@@ -2,7 +2,9 @@ type: mech
 speed: 1.85
 strafePenalty: 0
 
-health: 420
+drownTimeMultiplier: 4
+
+health: 520
 aimDst: 10
 range: 50
 drag: 0.65

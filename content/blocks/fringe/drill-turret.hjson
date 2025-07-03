@@ -15,7 +15,7 @@ shootCone: 1
 shootY: 10
 velocityRnd: 0.3
 
-liquidCapacity: 5
+liquidCapacity: 4500
 
 chargeSound: laserbig
 moveWhileCharging: false
@@ -92,6 +92,7 @@ shootEffect: [
 
 ammoTypes: {
     aspect: {
+        ammoMultiplier: 0.0005
         smokeEffect: none
         type: RailBulletType
         lifetime: 1
