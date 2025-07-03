@@ -1,4 +1,7 @@
 type: TallBlock
+shadowOffset: -3
+customShadow: true
+
 variants: 2
 itemDrop: debris
 playerUnmineable: true
