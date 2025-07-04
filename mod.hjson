@@ -46,12 +46,17 @@
     attribute-soil
     attribute-tech
 #Crafters
+#Resource balancers
     earthbound-infuser
     heating-basin
+    aether-cracker
     amalgam-decomposer
+    crush-weaver
+#transformers
     brick-conglomerator
     electrum-amalgamator
-    crush-weaver
+    glassblower
+    warp-aggregator
 #Turrets
     sunder
     molotov
@@ -59,6 +64,13 @@
     tantrum
     vivalo
     flurry
+#Item distrib
+    chute
+    chute-router
+    chute-bridge
+    chute-overflow
+    chute-unloader
+    glasswork-chute
     downpour
 #Liquid distrib
     channel-face
@@ -68,15 +80,12 @@
     channel-director-pressurized
     blossoming-channel
     aspect-outlet
+    displacement-pump
+    compartmentalized-node
     filtration-unit
-#Item distrib
-    chute
-    chute-router
-    chute-bridge
-    chute-overflow
-    chute-unloader
-    glasswork-chute
+    
 #Power
+    conductive-pile
     connector
     substation
     powerbank
@@ -84,7 +93,12 @@
     dissonance-discharger
     glass-burner
     thermo-matting
-    
+#Production
+    aether-accumulator
+    crystal-cracker
+    elemental-blaster
+    elemental-sampler
+    filtrative-feeder
 #Unit blocks
     shark-factory
     remora-factory
@@ -94,12 +108,22 @@
     core-raft-dormant
     core-raft
     pad-omega
+    pad-psi
     core-bunker
     buffer
+    interface
     nullifier
     movement-anchor
     sonar-spire
     mercurial-diffuser
+    fluid-sprayer
+    overseer-fabricator
+    patchworker
+#Defense
+    silver-husk
+    sandbank
+    mangrove-husk
+    barricade
 #Items
     debris
     carbolith
@@ -127,6 +151,7 @@
     fragment
     memory-shard
     bioscrap-graft
+    abberation-core
     industrial-rubble
     industrial-rubble-cracked
     astral-fulgurite
@@ -161,6 +186,8 @@
 #Strata units
     bulbhead
     omega
+    psi
+    iguana
     outcast
     shark
     narwhal
@@ -314,7 +341,6 @@
     fringe-lighting-wall-off
     fringe-marker-killswitch-dry
     fringe-marker-transport-dry
-    fringe-planter
     fringe-plating
     fringe-plating-hole
     fringe-plating-hole-meld
@@ -407,5 +433,6 @@
     tech-weave-alt
     tech-weave-alt-meld
     tech-weave-meld
+    fringe-planter
   ]
 }

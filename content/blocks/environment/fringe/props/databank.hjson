@@ -36,6 +36,8 @@ destroyBullet: {
 	}
 }
 
+buildVisibility: sandboxOnly
+
 requirements: []
 emitLight: true
 lightColor: 9ccaed
