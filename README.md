@@ -19,6 +19,7 @@ What you'll find here might be surprising. <br />
 "Wh-"
 
 I've used python to generate hjson for turret parts, feel free to look through the files if you're unsure.
+Im going to port the mod off hjson eventually, world processors have proven to be a pain to maintain and I just have bigger ideas than hjson can provide currently.
 
 # Onto the actual reason you're reading these obnoxiously long headers
 
