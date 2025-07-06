@@ -8,7 +8,7 @@ category: production
 attribute: tech
 baseEfficiency: 0
 minEfficiency: 1
-boostScale: 0.04
+boostScale: 0.038
 
 liquidCapacity: 300
 scaleLiquidConsumption: true
@@ -16,7 +16,7 @@ scaleLiquidConsumption: true
 consumes: {
 	liquid: {
 		liquid: aspect
-		amount: 6.66666666667
+		amount: 13.3333333333
 		booster: false
 	}
 }
@@ -60,7 +60,7 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputItem: technoscrap/2
+outputItem: technoscrap/4
 
 requirements: [
  	debris/120

@@ -1,0 +1,49 @@
+type: AttributeCrafter
+size: 1
+
+placeableLiquid: true
+category: effect
+
+attribute: decryption
+dumpExtraLiquid: true
+
+maxBoost: 5
+
+baseEfficiency: 0
+minEfficiency: 1
+liquidCapacity: 50
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawGlowRegion
+	}
+]
+
+
+
+outputLiquids: [
+	liquid-data/0.25
+	null/0
+]
+
+requirements: [
+ 	carbolith/30
+	technoscrap/25
+    fragment/10
+]
+
+research: techno-dredger
+
+researchCost: [
+	carbolith/120
+	technoscrap/150
+]

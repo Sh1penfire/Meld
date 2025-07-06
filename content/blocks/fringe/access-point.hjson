@@ -1,0 +1,70 @@
+type: AttributeCrafter
+size: 1
+
+floating: true
+placeableLiquid: true
+liquidOutputDirections: [0, 0]
+rotate: true
+quickRotate: true
+
+baseEfficiency: 0
+minEfficiency: 0.01
+attribute: data-power
+boostScale: 4
+
+craftTime: 30
+liquidCapacity: 100
+liquidPressure: 50
+
+solid: false
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawSideRegion
+	}
+]
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 45
+	baseLength: 3
+	length: 15
+	sizeFrom: 2
+	sizeTo: 0
+	colorFrom: 935b2900
+	colorTo: cb8650ff
+}
+
+consumes: {
+	items: [
+		technoscrap/1
+	]
+}
+
+outputLiquids: [
+    cold-waste/1
+    lumeniz/1
+]
+
+category: production
+requirements: [
+	debris/12
+]
+
+research: {
+    parent: fringe
+	objectives: [
+		{
+			type: SectorComplete
+			preset: coming-soon
+		}
+	]
+}
+
+
+researchCost: [
+    debris/15
+]

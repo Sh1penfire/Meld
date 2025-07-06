@@ -1,0 +1,58 @@
+type: AttributeCrafter
+size: 1
+
+placeableLiquid: true
+category: effect
+
+attribute: data
+dumpExtraLiquid: true
+
+maxBoost: 5
+
+baseEfficiency: 0
+minEfficiency: 0.01
+boostScale: 4
+liquidCapacity: 50
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+drawer: [
+	{
+		type: DrawRegion
+	}
+	{
+		type: DrawGlowRegion
+	}
+]
+
+
+consumes: {
+	items: [
+		technoscrap/1
+	]
+	liquids: [
+		liquid-data/0.25
+	]
+}
+
+outputLiquids: [
+	liquid-data/1
+	null/0
+]
+
+requirements: [
+ 	silver/45
+	technoscrap/30
+	memory-shard/15
+]
+
+research: data-miner
+
+researchCost: [
+	silver/240
+	technoscrap/100
+]

@@ -14,3 +14,7 @@ supportsOverlay: true
 emitLight: true
 lightColor: 71b2ffee
 lightRadius: 85
+
+attributes: {
+	decryption: 1
+}

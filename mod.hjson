@@ -31,6 +31,7 @@
     attribute-data
     attribute-data-power
     attribute-deposit
+    attribute-decryption
     attribute-dissonate-frags
     attribute-electrum
     attribute-filtration
@@ -351,6 +352,27 @@
     fringe-power-zone-meld
     fringe-solid-grating
     fringe-vent-locked-meld
+    
+    meld-swampland-tech
+    metal-mesh-wall
+    metal-mesh-wall-meld
+    metal-weave-aether
+    metal-weave-floor
+    metal-weave-floor-glow
+    metal-weave-floor-hole
+    tech-beacon
+    tech-floor-glow-meld
+    tech-floor1
+    tech-floor2
+    tech-floor2-glow
+    tech-vent
+    tech-wall
+    tech-wall-glow
+    tech-weave
+    tech-weave-alt
+    tech-weave-alt-meld
+    tech-weave-meld
+    
     meld-blobs
     meld-cluster
     meld-cluster-blobs
@@ -414,25 +436,6 @@
     root-b-dormant
     silt
     silt-thick
-    meld-swampland-tech
-    metal-mesh-wall
-    metal-mesh-wall-meld
-    metal-weave-aether
-    metal-weave-floor
-    metal-weave-floor-glow
-    metal-weave-floor-hole
-    tech-beacon
-    tech-floor-glow-meld
-    tech-floor1
-    tech-floor2
-    tech-floor2-glow
-    tech-vent
-    tech-wall
-    tech-wall-glow
-    tech-weave
-    tech-weave-alt
-    tech-weave-alt-meld
-    tech-weave-meld
     fringe-planter
   ]
 }

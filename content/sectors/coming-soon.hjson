@@ -1,0 +1,13 @@
+sector: 18
+planet: ikaru
+difficulty: 10
+
+research: {
+	parent: ikaru
+	objectives: [
+		{
+			type: OnPlanet
+			planet: sun
+		}
+	]
+}

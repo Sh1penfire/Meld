@@ -8,5 +8,5 @@ lightColor: 9ccaed2c
 lightRadius: 6
 
 attributes: {
-	data: 0.25
+	data-power: 0.25
 }

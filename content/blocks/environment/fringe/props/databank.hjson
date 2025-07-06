@@ -1,5 +1,5 @@
 type: Wall
-size: 2
+size: 1
 solid: true
 variants: 0
 
@@ -38,6 +38,10 @@ destroyBullet: {
 
 buildVisibility: sandboxOnly
 
-requirements: []
+requirements: [
+    technoscrap/5
+    fragment/30
+]
+
 emitLight: true
 lightColor: 9ccaed
