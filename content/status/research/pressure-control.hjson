@@ -1,7 +1,12 @@
 show: false
 research: {
 	parent: liquid-logistics
+    
 	objectives: [
-		pressure-control
+		nectar
 	]
+    
+    requirements: [
+        fragment/80
+    ]
 }

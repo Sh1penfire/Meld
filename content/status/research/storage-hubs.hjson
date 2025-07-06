@@ -8,13 +8,10 @@ researchRequirements: [
 research: {
 	parent: item-logistics
 	objectives: [
-		storage-hubs
+		technoscrap
 	]
+    
+    requirements: [
+        fragment/120
+    ]
 }
-
-
-researchCost: [
-    debris/140
-	technoscrap/100
-    fragment/140
-]

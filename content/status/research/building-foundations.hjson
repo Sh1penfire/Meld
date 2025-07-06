@@ -2,9 +2,13 @@ show: false
 research: {
 	parent: fissure-tapping
 	objectives: [
-		building-foundations
 		ichor
 		rift
 		nectar
 	]
+    
+    requirements: [
+        memory-shard/530
+        fragment/150
+    ]
 }

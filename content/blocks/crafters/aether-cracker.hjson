@@ -126,10 +126,6 @@ requirements: [
 
 research: {
 	parent: earthbound-infuser
-	objectives: [
-		ichor
-		rift
-	]
 }
 
 researchCost: [

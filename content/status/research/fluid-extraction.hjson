@@ -2,6 +2,11 @@ show: false
 research: {
 	parent: pressure-control
 	objectives: [
-		fluid-extraction
+		compacted-brick
+        stony-gloop
 	]
+    
+    requirements: [
+        fragment/85
+    ]
 }
