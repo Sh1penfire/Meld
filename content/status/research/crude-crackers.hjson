@@ -7,7 +7,15 @@ researchRequirements: [
 
 research: {
 	parent: liquid-logistics
-	objectives: [
-		crude-crackers
-	]
+	#objectives: [
+	#	crude-crackers
+	#]
 }
+
+
+
+researchCost: [
+    debris/140
+	silver/100
+    fragment/140
+]

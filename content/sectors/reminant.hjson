@@ -1,0 +1,13 @@
+sector: 18
+captureWave: 26
+planet: ikaru
+difficulty: 8
+research: {
+	parent: hedge
+	objectives: [
+		{
+			type: SectorComplete
+			preset: hedge
+		}
+	]
+}

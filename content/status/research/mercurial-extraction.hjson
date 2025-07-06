@@ -1,7 +1,15 @@
 show: false
 research: {
 	parent: fissure-tapping
-	objectives: [
-		mercurial-extraction
-	]
+	#objectives: [
+	#	mercurial-extraction
+	#]
 }
+
+
+//TODO: Change this later
+researchCost: [
+    debris/140
+	technoscrap/100
+    fragment/140
+]

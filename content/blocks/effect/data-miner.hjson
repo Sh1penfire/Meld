@@ -41,7 +41,7 @@ requirements: [
     fragment/10
 ]
 
-research: techno-dredger
+research: encrypter
 
 researchCost: [
 	carbolith/120

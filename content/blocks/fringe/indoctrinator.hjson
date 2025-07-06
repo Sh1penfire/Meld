@@ -126,6 +126,7 @@ drawer: [
 	}
 ]
 
+research: data-coagulator
 
 consumes: {
 	items: [
@@ -133,12 +134,12 @@ consumes: {
 	]
 	liquids: [
 		aspect/1.6666666666
-        liquid-data/6
+        	liquid-data/6
 	]
 }
 
 outputItems: [
-	grating-chunk/1
+	grating-chunk/5
 ]
 
 requirements: [

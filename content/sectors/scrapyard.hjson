@@ -1,0 +1,13 @@
+sector: 46
+captureWave: 15
+planet: ikaru
+difficulty: 3
+research: {
+	parent: creek
+	objectives: [
+		{
+			type: SectorComplete
+			preset: creek
+		}
+	]
+}

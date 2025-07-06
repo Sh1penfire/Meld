@@ -65,7 +65,7 @@ requirements: [
     memory-shard/85
 ]
 
-research: c-effect-a2-0a-data-miner
+research: data-miner
 
 researchCost: [
 	debris/300

@@ -11,3 +11,10 @@ research: {
 		storage-hubs
 	]
 }
+
+
+researchCost: [
+    debris/140
+	technoscrap/100
+    fragment/140
+]
