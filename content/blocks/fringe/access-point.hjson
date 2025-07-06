@@ -56,12 +56,6 @@ requirements: [
 
 research: {
     parent: fringe
-	objectives: [
-		{
-			type: SectorComplete
-			preset: coming-soon
-		}
-	]
 }
 
 
