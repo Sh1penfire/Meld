@@ -1676,14 +1676,6 @@ abilities: [
         applyEffect: none
     }
     {
-        type: ForceFieldAbility
-        sides: 8
-        max: 1000
-        radius: 36
-        regen: 0
-        cooldown: 240
-    }
-    {
         type: ShieldRegenFieldAbility
         range: -7
         amount: 8
