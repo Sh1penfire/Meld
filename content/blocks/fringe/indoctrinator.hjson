@@ -126,7 +126,7 @@ drawer: [
 	}
 ]
 
-research: data-coagulator
+research: encrypter
 
 consumes: {
 	items: [
