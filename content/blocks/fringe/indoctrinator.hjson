@@ -148,3 +148,10 @@ requirements: [
 	technoscrap/350
     memory-shard/100
 ]
+
+researchCost: [
+ 	debris/30
+	silver/40
+	technoscrap/140
+    	memory-shard/50
+]

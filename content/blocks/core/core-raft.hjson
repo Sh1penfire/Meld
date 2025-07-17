@@ -12,10 +12,10 @@ itemCapacity : 900
 unitCapModifier: 6
 
 research: {
-	parent: core-raft-dormant
-	objectives: [
-		
-	]
+	planet: ikaru
+	root: true
+	requiresUnlock: false
+	name: "Ikaru [accent](Strata)[]"
 }
 
 requirements: [
