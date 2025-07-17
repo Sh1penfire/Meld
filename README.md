@@ -1,5 +1,6 @@
 # Meld works on v147+!
-I forgot to put this here after the content port, Meld is workin on the BE versions but there is currently a shortage of playable maps.
+I forgot to put this here after the content port, Meld is workin on the BE versions and the old maps have been ported over and been playtested
+the campaign is also working, Reminant is still a WIP though
 
 # Damit it's another one of those huge scope mindustry mod projects made by some guy in school isn't it.
 
@@ -11,7 +12,7 @@ If you're looking for a mod where hundreds upon hundreds of enemies get vaporize
 If you're looking for a mod which encourages tactical positioning, unit micro and dynamic encounters, Meld does that too.
 
 
-I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout. I've decided to keep things "simple" this time.
+I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout. I've decided to start "simple" this time.
 
 What you'll find here might be surprising. <br />
 "It's all Hjson?" <br />
@@ -19,7 +20,7 @@ What you'll find here might be surprising. <br />
 "Wh-"
 
 I've used python to generate hjson for turret parts, feel free to look through the files if you're unsure.
-Im going to port the mod off hjson eventually, world processors have proven to be a pain to maintain and I just have bigger ideas than hjson can provide currently.
+Im planning to port the mod off hjson after I finish up some spritework and give the current version some extra QoL tweaks, world processors have proven to be a pain to maintain and I just have bigger ideas than hjson can provide currently.
 
 # Onto the actual reason you're reading these obnoxiously long headers
 
@@ -50,7 +51,7 @@ This is **all in the mod, right now**, and is **available to be played, r i g h 
 # Where can I keep up with the mod's development
 I post the ocasional video on youtube, though im more active in the mod's fourm post on the Mindustry discord server.
 I've also started a server for the mod on discord. It's quite new so there isn't much there, but im open to talk about dev.
-Invites are currently on hold, DM me if you'd like to join. You can find me through the Mindustry discord server.
+[The invite link is a temp one while I get things sorted](https://discord.gg/aTeTBtfqaS)
 
-Im currently working towards finishing off spritework for the storm planes, then adding more maps.
+Im currently working towards finalizing this version of the mod in hjson before I take a break, then move it to a java mod
 Mapping help would be much appreciated, theres a lot of maps to make ;~:
