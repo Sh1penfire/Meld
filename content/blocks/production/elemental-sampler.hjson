@@ -60,7 +60,12 @@ requirements: [
 	resonarum/20
 ]
 
-research: elemental-blaster
+research: {
+    parent: elemental-blaster
+    objectives: [
+        rift
+    ]
+}
 
 researchCost: [
 	debris/13

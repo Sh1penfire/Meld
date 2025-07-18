@@ -31,6 +31,16 @@ deathExplosionEffect: none
 drawCell: false
 drawBody: false
 
+weapons: [
+	{
+		shootSound: stellar-walkways
+		alwaysShooting: true
+		reload: 5760
+		soundPitchMin: 1
+		soundPitchMax: 1
+	}
+]
+
 immunities: [
 	meld-strata-a0-rally
 ]

@@ -2,7 +2,10 @@ show: false
 research: {
 	parent: strata
 	objectives: [
-		aspect-channeling
+		{
+			type: SectorComplete
+			preset: creek
+		}
 	]
 }
 

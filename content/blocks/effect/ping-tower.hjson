@@ -199,7 +199,10 @@ requirements: [
 ]
 
 research: {
-	parent: pressurized-dispersion
+	parent: silver-husk
+	objectives: [
+		pressurized-dispersion
+	]
 }
 
 category: effect

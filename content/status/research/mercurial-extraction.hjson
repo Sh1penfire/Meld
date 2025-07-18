@@ -1,15 +1,185 @@
 show: false
 research: {
 	parent: fissure-tapping
-	#objectives: [
-	#	mercurial-extraction
-	#]
+	objectives: [
+		{
+			type: SectorComplete
+			preset: tempest-in-a-teacup
+		}
+	]
 }
 
 
-//TODO: Change this later
-researchCost: [
-    debris/140
-	technoscrap/100
-    fragment/140
+applyEffect: [
+    {
+        type: SeqEffect
+        layer: 160
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                region: meld-locked
+                particles: 1
+                length: 0
+                sizeFrom: 18
+                sizeTo: 0
+                colorFrom: ffffff00
+                colorTo: ffffff
+                interp: pow2Out
+                sizeInterp: pow10In
+            }
+            {
+                type: ParticleEffect
+                lifetime: 240
+                region: meld-mercurial-extraction
+                particles: 1
+                length: 0
+                sizeFrom: 0
+                sizeTo: 18
+                colorFrom: ffffff
+                colorTo: ffffff00
+                interp: pow10In
+                sizeInterp: pow10Out
+            }
+        ]
+    }
+    {
+        type: SeqEffect
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                particles: 0
+            }
+            {
+                type: ParticleEffect
+                region: meld-chain
+                particles: 5
+                length: 85
+                sizeFrom: 8
+                sizeTo: 0
+                spin: 2
+                colorFrom: ffffff
+                colorTo: ffffff00
+            }
+        ]
+    }
+    {
+        type: SeqEffect
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                particles: 0
+            }
+            {
+                type: ParticleEffect
+                layer: 119
+                lifetime: 78
+                region: meld-mercury
+                particles: 12
+                length: 85
+                sizeFrom: 8
+                sizeTo: 0
+                colorFrom: ffffff
+                colorTo: ffffff
+                interp: pow2Out
+                sizeInterp: pow2In
+                spin: 0.45
+            }
+        ]
+    }
+    {
+        type: SeqEffect
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                particles: 0
+            }
+            {
+                type: ParticleEffect
+                layer: 119
+                lifetime: 96
+                particles: 8
+                length: 85
+                sizeFrom: 8
+                sizeTo: 2
+                colorFrom: ffffff00
+                colorTo: 89828c
+                interp: pow5Out
+            }
+        ]
+    }
+
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 60
+        region: meld-heating-basin-full
+        particles: 4
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: ffffff00
+        colorTo: ffffff
+        sizeInterp: pow2In
+        spin: 0.7
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 78
+        region: meld-nectar
+        particles: 12
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: ffffff00
+        colorTo: ffffff
+        interp: pow2In
+        sizeInterp: pow2In
+        spin: 0.45
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 75
+        particles: 8
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: b89f4700
+        colorTo: b89f47
+        interp: pow2In
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 96
+        particles: 8
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: b89f4700
+        colorTo: b89f47
+        interp: pow2In
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 119
+        particles: 8
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: b89f4700
+        colorTo: b89f47
+        interp: pow5In
+    }
 ]

@@ -1,0 +1,24 @@
+type: Turret
+health: 600000
+targetable: false
+armor: 600000000
+size: 1
+
+rotateSpeed: 0
+alwaysShooting: true
+
+range: 5656
+
+squareSprite: false
+
+drawer: {
+	type: DrawTurret
+	parts: [
+
+	]
+}
+
+requirements: [
+]
+
+category: logic

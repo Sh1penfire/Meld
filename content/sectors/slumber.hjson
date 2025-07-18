@@ -1,13 +1,12 @@
-sector: 18
-captureWave: 26
+sector: 37
 planet: ikaru
-difficulty: 10
+difficulty: 0
 research: {
-	parent: hedge
+	parent: creek
 	objectives: [
 		{
 			type: SectorComplete
-			preset: hedge
+			preset: tempest-in-a-teacup
 		}
 	]
 }

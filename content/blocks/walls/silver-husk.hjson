@@ -41,7 +41,6 @@ research: {
 researchCost: [
 	debris/2000
 	silver/1200
-	fragment/300
 ]
 
 requirements: [

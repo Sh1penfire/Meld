@@ -3,7 +3,10 @@ show: false
 research: {
 	parent: strata
 	objectives: [
-		liquid-logistics
+		{
+			type: SectorComplete
+			preset: creek
+		}
 	]
 }
 

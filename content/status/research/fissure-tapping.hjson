@@ -2,7 +2,10 @@ show: false
 research: {
 	parent: item-logistics
 	objectives: [
-		fissure-tapping
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
 	]
 }
 

@@ -1,7 +1,7 @@
-sector: 18
-captureWave: 26
+sector: 26
+captureWave: 16
 planet: ikaru
-difficulty: 10
+difficulty: 8
 research: {
 	parent: hedge
 	objectives: [

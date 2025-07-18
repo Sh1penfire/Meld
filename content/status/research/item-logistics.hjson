@@ -4,7 +4,10 @@ research: strata
 research: {
 	parent: strata
 	objectives: [
-		item-logistics
+		{
+			type: SectorComplete
+			preset: creek
+		}
 	]
 }
 

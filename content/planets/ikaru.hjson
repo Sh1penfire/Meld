@@ -79,6 +79,20 @@ mesh: [
 		mag: 0.3
 		scl: 7
 	}
+    {
+        //Backdrop?
+		//Meld stone
+		type: NoiseMesh
+		planet: ikaru
+		divisions: 5
+		radius: 0.9
+		color1: 22222205
+		color2: 222222a0
+		octaves: 4
+		persistence: 0.4
+		mag: 2.5
+		scl: 14
+    }
 ]
 cloudMesh: [
  {
