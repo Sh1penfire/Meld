@@ -3,6 +3,7 @@ solarSystem: sun
 parent: sun
 orbitRadius: 72.31
 
+allowCampaignRules: false
 clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchToNumbered: false
