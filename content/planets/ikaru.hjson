@@ -25,6 +25,11 @@ launchMusic: stellar-walkways
 accessible: true
 alwaysUnlocked: true
 
+campaignRuleDefaults: {
+	fog: true
+	showSpawns: true
+}
+
 mesh: [
 	{
 	//sand/desert
