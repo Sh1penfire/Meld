@@ -1,13 +1,13 @@
-sector: 26
-captureWave: 16
+sector: 43
+captureWave: 43
 planet: ikaru
-difficulty: 8
+difficulty: 5
 research: {
-	parent: scrapyard
+	parent: creek
 	objectives: [
 		{
 			type: SectorComplete
-			preset: hedge
+			preset: scrapyard
 		}
 	]
 }

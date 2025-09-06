@@ -50,6 +50,23 @@ effect:{
             cone: 35
             baseRotation: 30
         }
+        #Swirl over FoW
+        
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 250
+            sizeInterp: slope
+            length: 35
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: 935b29b1
+            colorTo: 67301900
+            layer: 161.7
+            spin: 12
+            baseRotation: 32.5
+        }
     ]
 }
 

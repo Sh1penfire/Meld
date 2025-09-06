@@ -10,23 +10,6 @@ effect:{
     effects: [
         {
             type: ParticleEffect
-            region: meld-swirl
-            lifetime: 125
-            sizeInterp: slope
-            length: 25
-            baseLength: 4
-            sizeFrom: 1
-            sizeTo: 3
-            colorFrom: 8872dab1
-            colorTo: 3b297000
-            layer: 61.7
-            spin: 12
-            baseRotation: 55
-            offsetX: 3
-            offsetY: -4
-        }
-        {
-            type: ParticleEffect
             lifetime: 240
             sizeInterp: slope
             length: 95
@@ -181,6 +164,25 @@ effect:{
             particles: 1
             layer: 61.9
             cone: 5
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
+        
+        #Swirl over FoW
+        {
+            type: ParticleEffect
+            lifetime: 125
+            region: meld-particle-cloud
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 8872dab1
+            colorTo: 3b297000
+            layer: 161.8
+            cone: 15
             baseRotation: 85
             offsetX: 4
             offsetY: 3.35

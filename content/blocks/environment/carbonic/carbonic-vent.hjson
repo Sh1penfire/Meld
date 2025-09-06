@@ -10,21 +10,6 @@ effect:{
     effects: [
         {
             type: ParticleEffect
-            region: meld-swirl
-            lifetime: 125
-            sizeInterp: slope
-            length: 25
-            baseLength: 4
-            sizeFrom: 1
-            sizeTo: 3
-            colorFrom: 6b4e4eb1
-            colorTo: 3b2a2a00
-            layer: 61.7
-            spin: 12
-            baseRotation: 32.5
-        }
-        {
-            type: ParticleEffect
             lifetime: 240
             sizeInterp: slope
             length: 65
@@ -50,6 +35,23 @@ effect:{
             layer: 61.9
             cone: 35
             baseRotation: 30
+        }
+        #Spiral effects but shifted over FoW
+        
+        {
+            type: ParticleEffect
+            region: meld-swirl
+            lifetime: 125
+            sizeInterp: slope
+            length: 25
+            baseLength: 4
+            sizeFrom: 1
+            sizeTo: 3
+            colorFrom: 6b4e4eb1
+            colorTo: 3b2a2a00
+            layer: 161.7
+            spin: 12
+            baseRotation: 32.5
         }
     ]
 }

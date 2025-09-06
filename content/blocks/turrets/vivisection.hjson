@@ -550,8 +550,8 @@ ammoTypes: {
 		fragBullet: {
 			type: BasicBulletType
 			damage: 15
-			speed: 4.2
-			drag: 0.05
+			speed: 6.2
+			drag: 0.06
 			lifetime: 65
             homingPower: 0.05
 			sprite: meld-sparkle
@@ -566,7 +566,8 @@ ammoTypes: {
 			statusDuration: 15
 			hitEffect: none
 			despawnEffect: none
-            knockback: 2
+            knockback: 12
+            impact: true
             intervalBullet: {
                 splashDamage: 5
                 splashDamageRadius: 8

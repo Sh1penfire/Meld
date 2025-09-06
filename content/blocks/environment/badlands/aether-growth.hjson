@@ -185,6 +185,25 @@ effect:{
             offsetY: 3.35
             sizeInterp: slope
         }
+        
+        #Swirl over FoW
+        {
+            type: ParticleEffect
+            lifetime: 125
+            region: meld-swirl
+            sizeInterp: slope
+            length: 125
+            baseLength: 4
+            sizeFrom: 2
+            sizeTo: 3.5
+            colorFrom: 935b29a1
+            colorTo: 67301900
+            layer: 161.8
+            cone: 15
+            baseRotation: 85
+            offsetX: 4
+            offsetY: 3.35
+        }
     ]
 }
 

@@ -1,9 +1,9 @@
-sector: 18
-captureWave: 26
+sector: 28
+captureWave: 25
 planet: ikaru
 difficulty: 10
 research: {
-	parent: hedge
+	parent: scrapyard
 	objectives: [
 		{
 			type: SectorComplete
