@@ -1619,6 +1619,7 @@ category: turret
 research: {
     parent: molotov
     objectives: [
+	rift
     ]
     
 }
