@@ -1,7 +1,7 @@
 type: crawl
-speed: 0.75
+speed: 1
 
-health: 1450
+health: 850
 armor: 8
 drownTimeMultiplier: 0.15
 
@@ -35,7 +35,7 @@ weapons: [
 		x: 0
         y: 0
         shootY: 8.5
-		reload: 160
+		reload: 240
 		shootCone: 5
         
 		recoil: 3.5
