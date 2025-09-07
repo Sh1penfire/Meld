@@ -10,7 +10,7 @@ sizeMax: 25
 sizeMin: 7
 minAlpha: 0.0
 maxAlpha: 0.45
-density: 850
+density: 6800
 baseSpeed: 8
 opacityMultiplier: 1
 noiseLayerAlphaM: 1.5

@@ -3,7 +3,7 @@ color: e382d3
 xspeed: 4.5
 yspeed: 12
 stroke: 1.4
-density: 920
+density: 1840
 sizeMin: 12
 sizeMax: 60
 splashTimeScale: 9

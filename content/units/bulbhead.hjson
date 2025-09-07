@@ -345,6 +345,7 @@ immunities: [
 	mangrove-d0-mercury-poisoning
 	lacerated
 	wildlife-a1-reconstitution
+	wildlife-a0-amplified
 ]
 
 research: omega
