@@ -5,6 +5,12 @@ size: 3
 
 squareSprite: false
 
+destroyBullet: {
+    type: MissileBulletType
+    spawnUnit: meld-node-amplification
+    shootEffect: none
+}
+
 destroyEffect: {
 	type: MultiEffect
 	effects: [

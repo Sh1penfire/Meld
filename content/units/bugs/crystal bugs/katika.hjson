@@ -1,0 +1,123 @@
+type: legs
+shadowElevation: 0.1
+speed: 0.54
+
+health: 870
+drownTimeMultiplier: 0.75
+
+drag: 0.12
+accel: 0.2
+
+hitSize: 16
+rotateSpeed: 3.5
+
+useEngineElevation: false
+faceTarget: true
+
+legCount: 8
+legLength: 18
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+drawCell: false
+
+deathExplosionEffect: none
+
+weapons: [
+	{
+		x: 0
+		y: 0
+		shootY: 8.5
+		mirror: false
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		recoil: 0
+		shootCone: 10
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 5
+		shootSound: torch
+		bullet: {
+			type: ContinuousFlameBulletType
+            flareLength: 4
+			damage: 16
+			length: 25
+			width: 2
+			knockback: 1.5
+			pierceCap: 2
+            recoil: -0.05
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+		parts: [
+			{
+				type: RegionPart
+				name: "katika-crystal-heat"
+				progress: warmup
+				color: 11111100
+				colorTo: 111111
+				blending: additive
+				outline: false
+			}
+		]
+	}
+	{
+		x: 11
+		y: 1.5
+		shootY: 0
+		mirror: true
+		alternate: false
+		continuous: true
+		alwaysContinuous: true
+		recoil: 0
+		shootCone: 60
+		shootStatusDuration: 5
+		shootSound: torch
+        baseRotation: -45
+		bullet: {
+			type: ContinuousFlameBulletType
+            flareLength: 0
+			damage: 8
+			length: 65
+			width: 1.2
+			knockback: 1
+			pierceCap: 0
+            //Meld flame colours
+			colors: [
+				f9e1f343,
+				ee5de9a9,
+				ef85e3e3,
+				d22fee,
+				ffffff
+			]
+		}
+		parts: [
+			{
+				type: RegionPart
+				name: "katika-side-crystal-heat"
+				progress: warmup
+				color: 11111100
+				colorTo: 111111
+				blending: additive
+				outline: false
+			}
+		]
+	}
+    //Death giblits
+]
+
+immunities: [
+	aspect-burn
+    shattered
+]

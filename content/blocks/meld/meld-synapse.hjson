@@ -8,4 +8,10 @@ requirements: [
 	larval-plating/12000
 ]
 
+destroyBullet: {
+    type: MissileBulletType
+    spawnUnit: meld-synapse-amplification
+    shootEffect: none
+}
+
 category: effect

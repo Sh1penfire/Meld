@@ -1,0 +1,184 @@
+type: crawl
+speed: 0.75
+
+health: 1450
+armor: 8
+drownTimeMultiplier: 0.15
+
+drag: 0.45
+accel: 0.2
+range: 40
+
+hitSize: 18
+rotateSpeed: 3.5
+faceTarget: false
+omniMovement: true
+
+segments: 2
+segmentMag: 1.5
+segmentMaxRot: 40
+segmentScl: 12
+drawCell: false
+drawBody: true
+crushDamage: 20
+
+targetAir: false
+controller: HugAI
+
+weapons: [
+//Dissolving fumes
+	{
+        name: ontragga-blaster
+		mirror: false
+		rotate: true
+        rotateSpeed: 2
+		x: 0
+        y: 0
+        shootY: 8.5
+		reload: 160
+		shootCone: 5
+        
+		recoil: 3.5
+		shootSound: mediumCannon
+        
+		inaccuracy: 0
+		velocityRnd: 0.05
+        shootWarmupSpeed : 0.09
+        
+		bullet: {
+            type: ArtilleryBulletType
+            damage: 180
+            lifetime: 60
+            speed: 3.5
+            width: 24
+            height: 30
+
+            frontColor: cb8650
+            backColor: 935b29
+            hitEffect: blastExplosion
+            hitSound: bang
+            hitShake: 2.5
+
+            collidesGround: true
+            collidesTiles: true
+            collides: true
+
+            ammoMultiplier: 0.008
+
+            fragLifeMin: 0.4
+            fragVelocityMin: 0.5
+            fragBullets: 15
+            fragRandomSpread: 5
+            fragSpread: 20
+            fragBullet: {
+                speed: 3.5
+                damage: 50
+                lifetime: 30
+                width: 8
+                height: 13
+
+                splashDamage: 35
+                splashDamageRadius: 20
+                knockback: 1.5
+
+                frontColor: cb8650
+                backColor: 935b29
+                hitEffect: none
+                fragOnAbsorb: false
+
+                shrinkY: 0
+
+                hitEffect: explosion
+                hitSound: explosion
+                hitShake: 0.5
+                fragBullets: 2
+
+                fragBullet: {
+                    type: LiquidBulletType
+                    liquid: aether
+                    speed: 3
+                    damage: 1
+                    lifetime: 20
+                    splashDamage: 25
+                    splashDamageRadius: 50
+                    hitEffect: none
+                }
+            }
+            shootEffect: {
+            type: MultiEffect
+            effects: [
+                {
+                    type: ParticleEffect
+                    lifetime: 25
+                    cone: 8
+                    particles: 25
+                    colorFrom: cb8650
+                    colorTo: cb865000
+                    length: 55
+                    sizeFrom: 7
+                    sizeTo: 0
+                    interp: pow5Out
+                }
+                {
+                    type: ParticleEffect
+                    lifetime: 45
+                    cone: 5
+                    particles: 12
+                    colorFrom: cb8650
+                    colorTo: cb865000
+                    length: 55
+                    sizeFrom: 12
+                    sizeTo: 0
+                    interp: pow5Out
+                }
+            ]
+        }
+        }
+        parts: [
+            {
+                type: RegionPart
+                suffix: -liquid
+                progress: reload
+                outline: false
+                mirror: true
+                under: false
+                color: cb8650
+                colorTo: cb865000
+            }
+            {
+                type: RegionPart
+                suffix: -wing
+                progress: warmup
+                mirror: true
+                top: true
+                moveX: 1
+                moveY: -1.55
+                moveRot: -15
+                moves: [
+                    {
+                        x: -1
+                        y: -1.25
+                        rotation: 15
+                        progress: recoil
+                    }
+                ]
+            }
+        ]
+	}
+]
+
+
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 7
+		unit: wuba
+	}
+]
+
+immunities: [
+	lacerated
+	mangrove-d0-mercury-poisoning
+    wildlife-a1-reconstitution
+]

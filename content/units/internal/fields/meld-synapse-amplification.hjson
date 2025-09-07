@@ -1,0 +1,228 @@
+type: missile
+lifetime: 180
+
+speed: 0
+
+flying: false
+drawBody: false
+isEnemy: false
+useUnitCap: false
+createWreck: false
+createScorch: false
+allowedInPayloads: false
+physics: false
+bounded: false
+targetable: false
+hidden: true
+playerControllable: false
+canDrown: false
+
+hoverable: false
+hovering: true
+
+targetable: false
+
+drawMinimap: false
+
+//Same here
+deathSound: release
+deathExplosionEffect: none
+drawCell: false
+drawBody: false
+
+weapons: [
+    {
+        x: 0
+        y: 0
+        alwaysShooting: true
+        shootCone: 180
+        reload: 30
+        shootSound: none
+        shoot: {
+            type: ShootSpread
+            shots: 8
+            spread: 1
+            shotDelay: 8
+        }
+        bullet: {
+            shootEffect: none
+            smokeEffect: none
+            
+            instantDisappear: true
+            collides: false
+            absorbable: false
+            hittable: false
+            
+            splashDamageRadius: 150
+            splashDamage: 0
+            status: wildlife-a0-amplified
+            statusDuration: 20
+            
+            hitEffect: none
+            despawnEffect: none
+        }
+    }
+]
+
+parts: [
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 6
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10Out
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 8
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: life
+		circle: true
+		hollow: true
+		radius: 0
+		radiusTo: 150
+		stroke: 6
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+	{
+        clip: 150
+		x: 0
+		y: 0
+		type: ShapePart
+		progress: {
+			type: life
+			ops: [
+				{
+					op: curve
+					interp: pow10In
+				}
+			]
+		}
+		circle: true
+		hollow: true
+		radius: 150
+		stroke: 4
+		strokeTo: 0
+		layer: 110
+		color: e5aed7
+	}
+]
+
+abilities: [
+	{
+		type: StatusFieldAbility
+		range: 150
+		reload: 180
+		effect: wildlife-a0-amplified
+		duration: -1
+		activeEffect: {
+			type: MultiEffect
+			effects: [
+				{
+					type: WaveEffect
+					lifetime: 360
+					sizeFrom: 0
+					sizeTo: 150
+					strokeFrom: 3
+					strokeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed7
+					lightScl: 1
+					clip: 300
+				}
+				{
+					type: WaveEffect
+					lifetime: 360
+					sizeFrom: 150
+					sizeTo: 150
+					strokeFrom: 3
+					strokeTo: 0
+					colorFrom: e5aed7
+					colorTo: e5aed700
+					lightScl: 1
+					interp: pow5In
+					clip: 300
+				}
+			]
+		}
+    }
+    //Rim particle effects
+	{
+		type: StatusFieldAbility
+		range: 150
+		reload: 2
+		effect: wildlife-a0-amplified
+		duration: 20
+		activeEffect: [
+            {
+                clip: 300
+                type: ParticleEffect
+                region: meld-sparkle
+                lifetime: 45
+                baseLength: 6
+                particles: 12
+                baseLength: 150
+                length: -4
+                sizeFrom: 0
+                sizeTo: 7
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+                randLength: false
+            }
+            {
+                clip: 300
+                type: ParticleEffect
+                region: meld-sparkle
+                lifetime: 45
+                baseLength: 6
+                particles: 12
+                baseLength: 150
+                length: -4
+                sizeFrom: 0
+                sizeTo: 7
+                colorFrom: e5aed7
+                colorTo: e5aed700
+                interp: pow5Out
+                sizeInterp: slope
+                randLength: false
+            }
+		]
+	}
+]
+
+immunities: [
+    wildlife-a0-amplified
+]
