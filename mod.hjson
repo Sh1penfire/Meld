@@ -23,7 +23,7 @@
     '''
   subtitle: "[[]#ea9ad6]Godhome awaits... You coming?[]"
   "version\"": 1
-  minGameVersion: 149
+  minGameVersion: 151.1
   contentOrder:
   [
 #Attributes
@@ -225,6 +225,7 @@
     wuba
     wuba-exploding
     uwubba
+    ontragga
     globkin
     allegro
     tracker
@@ -233,6 +234,7 @@
     inator
     stoner
     kathid
+    katika
     kithlid
     craig-cluster
     diffuser-power
@@ -311,7 +313,6 @@
     large-debris-deposit
     prop-battered
     prop-fallen
-    fringe-backdrop
     fringe-beam-shadow
     fringe-core-zone
     fringe-core-zone-meld
@@ -437,5 +438,6 @@
     silt
     silt-thick
     fringe-planter
+    fringe-backdrop
   ]
 }
