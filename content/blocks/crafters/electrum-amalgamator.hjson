@@ -102,7 +102,7 @@ consumes: {
 	]
 	liquids: [
 		aspect/3.3333333333333333333333333333333
-		mercury/5
+		mercury/2
 	]
 }
 
