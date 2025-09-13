@@ -110,6 +110,7 @@
     core-raft
     pad-omega
     pad-psi
+    pad-phi
     core-bunker
     buffer
     interface
@@ -188,6 +189,7 @@
     bulbhead
     omega
     psi
+    phi
     iguana
     outcast
     shark
@@ -439,5 +441,12 @@
     silt-thick
     fringe-planter
     fringe-backdrop
+#Planets
+    ikaru,
+#Sector Groups
+    ruins,
+    lonely-creek,
+    barrens,
+    glacier,
   ]
 }

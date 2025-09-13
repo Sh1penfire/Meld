@@ -12,6 +12,8 @@ emitLight: true
 lightColor: 3936a16b
 lightRadius: 6
 
+liquidDrop: meld
+
 attributes: {
 	tech: 1
 }

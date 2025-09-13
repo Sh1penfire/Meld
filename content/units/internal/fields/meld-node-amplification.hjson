@@ -21,6 +21,7 @@ hoverable: false
 hovering: true
 
 targetable: false
+hittable: false
 
 drawMinimap: false
 
@@ -40,10 +41,11 @@ weapons: [
         shootSound: none
         shoot: {
             type: ShootSpread
-            shots: 8
+            shots: 5
             spread: 1
-            shotDelay: 8
+            shotDelay: 1
         }
+        shootStatus: invincible
         bullet: {
             shootEffect: none
             smokeEffect: none
@@ -116,7 +118,6 @@ parts: [
 		color: e5aed7
 	}
 	{
-        clip: 90
 		x: 0
 		y: 0
 		type: ShapePart
@@ -143,7 +144,7 @@ abilities: [
 	{
 		type: StatusFieldAbility
 		range: 90
-		reload: 180
+		reload: 210
 		effect: wildlife-a0-amplified
 		duration: -1
 		activeEffect: {

@@ -1,9 +1,9 @@
 show: false
 
 research: {
-	parent: zz-ruins
+	parent: ruins
 	objectives: [
-		zz-barrens
+		barrens
 	]
 }
 

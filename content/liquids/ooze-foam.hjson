@@ -1,0 +1,27 @@
+type: CellLiquid
+
+explosiveness: 0.15
+flammability: 0.05
+temperature: 0.00
+viscocity: 0.95
+
+capPuddles: false
+
+color: 462b257a
+
+colorFrom: 6b51446c
+colorTo: 5337375b
+
+effect: oozed
+
+moveThroughBlocks: true
+incinerable: false
+
+canStayOn: [
+	nectar
+	ichor
+	ooze
+	waste
+	meld
+]
+research: bramble-vine

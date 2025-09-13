@@ -1,0 +1,341 @@
+type: mech
+speed: 1.55
+strafePenalty: 0
+
+health: 250
+armor: 25
+drownTimeMultiplier: 0.45
+
+aimDst: 10
+range: 50
+drag: 0.8
+accel: 1.1
+hitSize: 16
+lightRadius: 80
+lightOpacity: 0.9
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 16
+itemCapacity: 120
+range: 100
+rotateSpeed: 6.85
+
+buildBeamOffset: 6.75
+rotateToBuilding: true
+buildRange: 80
+mineRange: 80
+fogRadius: 10
+
+targetAir: false
+
+useUnitCap: false
+
+alwaysUnlocked: true
+
+weapons: [
+    //main weapon
+	{
+		name: phi-launcher
+        x: 11
+        y: 3
+        shootY: 4
+        mirror: true
+        alternate: false
+        rotate: true
+        rotationLimit: 75
+        baseRotation: -25
+        rotateSpeed: 2.75
+        top: true
+        shootCone: 15
+        reload: 75
+        recoil: 6.25
+        shoot: {
+            type: ShootSpread
+            firstShotDelay: 15
+            shots: 1
+        }
+
+        inaccuracy: 0
+        shootSound: pipe-launcher
+        parentizeEffects: false
+
+        parts: [
+            {
+                type: RegionPart
+                suffix: -back
+            }
+            {
+                type: FlarePart
+                x: -1
+                y: 4
+                radius: 0
+                radiusTo: 15
+                stroke: 2
+                color1: ffd2ae
+                rotation: 45
+                rotMove: 75
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow5In
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -capsule
+                mirror: false
+                outline: false
+                moveX: 4
+                growX: 0
+                color: ffffff
+                colorTo: ffffff00
+                growProgress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+                progress: {
+                    type: reload
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5Out
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: -door
+                mirror: false
+                outline: false
+                y: -4
+                moveY: 4
+                color: ffffff00
+                colorTo: ffffff
+                progress: {
+                    type: recoil
+                    ops: [
+                        {
+                            op: curve
+                            interp: pow5In
+                        }
+                    ]
+                }
+            }
+            {
+                type: RegionPart
+                suffix: ""
+            }
+        ]
+
+		bullet: {
+			sprite: meld-thorn
+			scaleLife: true
+			speed: 8.5
+			lifetime: 20
+			shrinkX: 0.6
+			width: 12
+			height: 16
+            //Should not be able to oneshot a jilla/craig with raw damage
+			damage: 140
+            pierce: true
+            pierceCap: 4
+            
+            fragOnHit: false
+            despawnHit: true
+            pierceArmor: true
+            
+			fragBullets: 1
+			fragLifeMin: 1
+            
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            
+			rangeOverride: 135
+			recoil: 3
+			keepVelocity: false
+			hitSound: splash
+            status: impaled
+            statusDuration: 120
+            
+            trailWidth: 2.2
+            trailLength: 7
+            trailColor: cc967b
+            
+            shootEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 65
+                        interp: pow3
+                        baseLength: 10
+                        length: 55
+                        particles: 11
+                        sizeFrom: 8
+                        sizeTo: 0
+                        cone: 25
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 109
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 35
+                        interp: pow5Out
+                        sizeInterp: pow3
+                        baseLength: 10
+                        length: 55
+                        particles: 11
+                        sizeFrom: 5
+                        sizeTo: 0
+                        cone: 35
+                        colorFrom: 6e7080
+                        colorTo: 565666
+                        layer: 109
+                        followParent: false
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 45
+                        sizeInterp: pow5In
+                        baseLength: 2
+                        length: 125
+                        line: true
+                        particles: 25
+                        strokeFrom: 2.5
+                        strokeTo: 0
+                        lenFrom: 4
+                        lenTo: 0
+                        cone: 35
+                        colorFrom: ffd2ae
+                        colorTo: e58956
+                        followParent: false
+                    }
+                ]
+            }
+            
+			fragBullet: {
+                sticky: true
+                pierce: true
+				speed: 0
+				lifetime: 360
+				width: 8
+				height: 8
+				damage: 5
+                
+                keepVelocity: false
+                
+                
+                intervalBullets: 4
+                intervalSpread: 90
+                intervalRandomSpread: 45
+                bulletInterval: 20
+                intervalBullet: {
+                    type: LiquidBulletType
+                    pierce: true
+                    pierecCap: 3
+                    lifetime: 15
+                    speed: 1.2
+                    drag: 0.12
+                    liquid: ooze-foam
+                    orbSize: 1.5
+                    puddleSize: 12
+                    healAmount: 5
+                    collidesTeam: true
+                    despawnHit: true
+                    layer: 99.99
+                    despawnEffect: none
+                    despawnHit: true
+                    status: oozed
+                    statusDuration: 30
+                }
+                puddleLiquid: ooze-foam
+                puddleRange: 2
+                puddles: 5
+                puddleSize: 50
+			}
+		}
+	}
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 80
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 78
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 80
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+	{
+		type: RegenAbility
+		amount: 0.15
+	}
+    {
+        type: LiquidRegenAbility
+        liquid: nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+	lacerated
+	wildlife-a1-reconstitution
+    stunned
+]
+
+research: pad-omega

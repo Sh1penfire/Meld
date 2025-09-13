@@ -13,6 +13,8 @@ spreadConversion: 1
 spreadDamage: 5
 removeScaling: 1
 
+effect: oozed
+
 color: 43201e
 
 colorFrom: 663931

@@ -1,9 +1,9 @@
 show: false
 
 research: {
-	parent: zz-ruins
+	parent: ruins
 	objectives: [
-		zz-beginnings
+		glacier
 	]
 }
 
@@ -28,7 +28,7 @@ applyEffect: [
             {
                 type: ParticleEffect
                 lifetime: 240
-                region: meld-zz-beginnings
+                region: meld-zz-glacier
                 particles: 1
                 length: 0
                 sizeFrom: 0

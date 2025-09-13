@@ -3,3 +3,11 @@ color: 639bff
 viscosity: 0.45
 temperature: 0.35
 heatCapacity: 0
+
+canStayOn: [
+	nectar
+	ichor
+	ooze
+	waste
+	meld
+]
