@@ -4,6 +4,7 @@ explosiveness: 0.15
 flammability: 0.05
 temperature: 0.00
 viscocity: 0.95
+cells: 54
 
 capPuddles: false
 
