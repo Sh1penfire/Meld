@@ -22,7 +22,7 @@ drawCell: false
 drawBody: true
 crushDamage: 20
 
-targetAir: false
+targetAir: true
 controller: HugAI
 
 weapons: [
@@ -45,13 +45,19 @@ weapons: [
 		velocityRnd: 0.05
         shootWarmupSpeed : 0.09
         
+        shoot: {
+            type: ShootSpread
+            shots: 3
+            shotDelay: 10
+        }
+        
 		bullet: {
             type: ArtilleryBulletType
-            damage: 180
+            damage: 120
             lifetime: 60
             speed: 3.5
-            width: 24
-            height: 30
+            width: 16
+            height: 24
 
             frontColor: cb8650
             backColor: 935b29
@@ -67,17 +73,17 @@ weapons: [
 
             fragLifeMin: 0.4
             fragVelocityMin: 0.5
-            fragBullets: 15
+            fragBullets: 6
             fragRandomSpread: 5
-            fragSpread: 20
+            fragSpread: 12
             fragBullet: {
                 speed: 3.5
-                damage: 50
+                damage: 25
                 lifetime: 30
                 width: 8
                 height: 13
 
-                splashDamage: 35
+                splashDamage: 15
                 splashDamageRadius: 20
                 knockback: 1.5
 
@@ -137,20 +143,10 @@ weapons: [
         parts: [
             {
                 type: RegionPart
-                suffix: -liquid
-                progress: reload
-                outline: false
-                mirror: true
-                under: false
-                color: cb8650
-                colorTo: cb865000
-            }
-            {
-                type: RegionPart
                 suffix: -wing
                 progress: warmup
                 mirror: true
-                top: true
+                under: true
                 moveX: 1
                 moveY: -1.55
                 moveRot: -15
@@ -162,6 +158,16 @@ weapons: [
                         progress: recoil
                     }
                 ]
+            }
+            {
+                type: RegionPart
+                suffix: -liquid
+                progress: reload
+                outline: false
+                mirror: true
+                under: false
+                color: cb8650
+                colorTo: cb865000
             }
         ]
 	}

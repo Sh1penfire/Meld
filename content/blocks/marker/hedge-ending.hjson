@@ -1,0 +1,12 @@
+buildVisibility: hidden
+hidden: false
+
+research: {
+	parent: hedge
+	objectives: [
+		{
+            type: SectorComplete
+            preset: hedge
+        }
+	]
+}

@@ -1,0 +1,112 @@
+show: false
+
+research: {
+	parent: dead-end
+	objectives: [
+        hedge-and-shear
+	]
+}
+
+applyEffect: [
+    {
+        type: SeqEffect
+        layer: 160
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                region: meld-locked
+                particles: 1
+                length: 0
+                sizeFrom: 18
+                sizeTo: 0
+                colorFrom: ffffff00
+                colorTo: ffffff
+                interp: pow2Out
+                sizeInterp: pow10In
+            }
+            {
+                type: ParticleEffect
+                lifetime: 240
+                region: meld-dead-end
+                particles: 1
+                length: 0
+                sizeFrom: 0
+                sizeTo: 18
+                colorFrom: ffffff
+                colorTo: ffffff00
+                interp: pow10In
+                sizeInterp: pow10Out
+            }
+        ]
+    }
+    {
+        type: SeqEffect
+        effects: [
+            {
+                type: ParticleEffect
+                lifetime: 100
+                particles: 0
+            }
+            {
+                type: ParticleEffect
+                region: meld-chain
+                particles: 5
+                length: 85
+                sizeFrom: 8
+                sizeTo: 0
+                spin: 2
+                colorFrom: ffffff
+                colorTo: ffffff00
+            }
+        ]
+    }
+
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 60
+        region: meld-chute-top-4
+        particles: 6
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: ffffff00
+        colorTo: ffffff
+        sizeInterp: pow2In
+        spin: 0.7
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 78
+        region: meld-chute-top-0
+        particles: 12
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: ffffff00
+        colorTo: ffffff
+        interp: pow2In
+        sizeInterp: pow2In
+        spin: 0.45
+    }
+    {
+        type: ParticleEffect
+        layer: 119
+        lifetime: 96
+        region: meld-chute-bridge-bridge
+        particles: 8
+        length: -85
+        baseLength: 85
+        sizeFrom: 8
+        sizeTo: 2
+        colorFrom: ffffff00
+        colorTo: ffffff
+        interp: pow5In
+        sizeInterp: pow2In
+        spin: 0.35
+    }
+]

@@ -1,0 +1,12 @@
+buildVisibility: hidden
+hidden: false
+
+research: {
+	parent: shear
+	objectives: [
+		{
+            type: SectorComplete
+            preset: shear
+        }
+	]
+}

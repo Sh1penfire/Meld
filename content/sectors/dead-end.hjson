@@ -1,0 +1,13 @@
+sector: 58
+captureWave: 2
+planet: ikaru
+difficulty: 1
+research: {
+	parent: scrapyard
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}

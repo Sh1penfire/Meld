@@ -3,11 +3,11 @@ captureWave: 25
 planet: ikaru
 difficulty: 10
 research: {
-	parent: scrapyard
+	parent: hedge-and-shear
 	objectives: [
 		{
 			type: SectorComplete
-			preset: hedge
+			preset: dead-end
 		}
 	]
 }

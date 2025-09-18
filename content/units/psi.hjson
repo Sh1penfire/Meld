@@ -71,7 +71,7 @@ weapons: [
         }
         inaccuracy: 0
 
-        reload: 210
+        reload: 320
         
         recoil: 5
         shootY: 6
