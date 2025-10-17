@@ -54,5 +54,5 @@ I've also started a server for the mod on discord. It's quite new so there isn't
 The invite link isn't a temp one anymore!
 https://discord.gg/eNynvuJXud
 
-Im currently working towards finalizing this version of the mod in hjson before I take a break, then move it to a java mod
-Mapping help would be much appreciated, theres a lot of maps to make ;~:
+Im currently on break, going to move meld to a java mod when I get back
+The hjson version is pretty much finalised in terms of content but I'd encourage people to screw around with mapping if they finish the campaign or if you want to see what the different possibilities for 100 <x unit> could be
