@@ -280,6 +280,16 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: pester
+	objectives: [
+		{
+			type: SectorComplete
+			preset: tempest-in-a-teacup
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

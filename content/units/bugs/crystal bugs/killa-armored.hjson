@@ -263,6 +263,15 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: killa
+	objectives: [
+		{
+			type: SectorComplete
+			preset: tempest-in-a-teacup
+		}
+	]
+}
 immunities: [
 	lacerated
 	mangrove-d0-mercury-poisoning

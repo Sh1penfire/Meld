@@ -177,3 +177,13 @@ weapons: [
         }
     }
 ]
+
+research: {
+    parent: meld
+    objectives: [
+        {
+            type: SectorComplete
+            preset: scrapyard
+        }
+    ]
+}

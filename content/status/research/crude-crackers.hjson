@@ -1,21 +1,12 @@
 show: false
 
-researchRequirements: [
-	dissonitre/600
-	fragment/150
-]
-
 research: {
 	parent: liquid-logistics
 	#objectives: [
 	#	crude-crackers
 	#]
+    
+    requirements: [
+	   fragment/150
+    ]
 }
-
-
-
-researchCost: [
-    debris/140
-	silver/100
-    fragment/140
-]

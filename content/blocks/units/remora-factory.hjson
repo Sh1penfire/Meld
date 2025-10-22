@@ -32,6 +32,16 @@ requirements: [
 
 category: units
 
+research: {
+    parent: shark-factory
+    objectives: [
+        {
+            type: SectorComplete
+            preset: creek
+        }
+    ]
+}
+
 research: shark-factory
 
 researchCost: [

@@ -246,6 +246,12 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: craig
+	objectives: [
+		hedge-or-shear
+	]
+}
 
 abilities: [
 	{

@@ -1,5 +1,5 @@
 type: missile
-lifetime: 180
+lifetime: 300
 
 speed: 0
 

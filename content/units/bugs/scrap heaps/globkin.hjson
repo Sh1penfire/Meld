@@ -346,6 +346,16 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: craig
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}
+
 immunities: [
 	lacerated
 	mangrove-d0-mercury-poisoning

@@ -194,6 +194,16 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: pester
+	objectives: [
+		{
+			type: SectorComplete
+			preset: reminant
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

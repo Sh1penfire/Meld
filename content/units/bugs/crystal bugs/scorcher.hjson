@@ -126,6 +126,17 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: meld
+	objectives: [
+		{
+			type: SectorComplete
+			preset: creek
+		}
+	]
+}
+
+
 immunities: [
 	aspect-burn
 	shattered

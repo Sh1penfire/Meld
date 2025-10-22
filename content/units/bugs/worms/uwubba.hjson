@@ -106,7 +106,15 @@ weapons: [
 	}
 ]
 
-
+research: {
+	parent: wuba
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}
 
 abilities: [
 	{

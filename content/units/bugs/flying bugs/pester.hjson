@@ -315,6 +315,13 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: meld
+	objectives: [
+		hedge-or-shear
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

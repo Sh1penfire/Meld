@@ -192,6 +192,13 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: blob
+	objectives: [
+		hedge-or-shear
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

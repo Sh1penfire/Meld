@@ -178,6 +178,16 @@ weapons: [
     }
 ]
 
+research: {
+	parent: wuba
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}
+
 immunities: [
 	dissolving
 ]

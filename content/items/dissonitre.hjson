@@ -3,5 +3,7 @@ color: e89964
 
 flammability: 0.25
 explosiveness: 0.1
+alwaysUnlocked: true
+
 
 research: resonarum

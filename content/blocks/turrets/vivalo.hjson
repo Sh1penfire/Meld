@@ -654,6 +654,9 @@ category: turret
 
 research: {
 	parent: sunder
+    objectives: [
+        crude-crackers
+    ]
 }
 
 requirements: [

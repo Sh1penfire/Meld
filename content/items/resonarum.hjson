@@ -1,4 +1,6 @@
 cost: 0.5
 color: 4bb66b
+alwaysUnlocked: true
+
 
 research: debris

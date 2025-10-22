@@ -17,3 +17,18 @@ effect: {
 	lightOpacity: 1
 	lightScl: 4
 }
+applyEffect: {
+	type: ParticleEffect
+	lifetime: 65
+	region: meld-sparkle
+	sizeFrom: 4
+	sizeTo: 0
+	colorFrom: eed1fa
+	colorTo: eed1fa
+	length: 35
+	baseLength: 12
+	spin: 4
+	particles: 6
+	interp: pow10Out
+	sizeInterp: pow10In
+}

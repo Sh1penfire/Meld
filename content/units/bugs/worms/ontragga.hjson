@@ -173,7 +173,15 @@ weapons: [
 	}
 ]
 
-
+research: {
+	parent: wuba
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}
 
 abilities: [
 	{

@@ -193,6 +193,16 @@ weapons: [
     }
 ]
 
+research: {
+	parent: meld
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

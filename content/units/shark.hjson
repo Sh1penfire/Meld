@@ -21,6 +21,9 @@ useEngineElevation: false
 faceTarget: false
 canDrown: false
 
+deathExplosionEffect: [
+]
+
 weapons: [
 	{
 		name: shark-mount
@@ -139,6 +142,178 @@ weapons: [
 			}
 		}
 	}
+    #Symbol shooter
+    {
+        x: 0
+        y: 0
+        shootCone: 180
+        mirror: false
+        display: false
+        shootOnDeath: true
+        controllable: false
+        bullet: {
+            type: BulletType
+            lifetime: 10
+            speed: 0
+            lightRadius: 0
+            hitEffect: none
+            shootEffect: none
+            casingEffect: none
+            collides: false
+            hittable: false
+            absorbable: false
+            reflectable: false
+            keepVelocity: false
+            
+            despawnEffect: [
+                {
+                    type: SeqEffect
+                    clip: 2000000
+                    effects: [
+                        {
+                            type: ParticleEffect
+                            layer: 51
+                            lifetime: 36000
+                            particles: 1
+                            length: 0
+                            sizeFrom: 1
+                            sizeTo: 1
+                            colorFrom: bf92f9
+                            colorTo: bf92f9
+                        }
+                        {
+                            type: ParticleEffect
+                            layer: 51
+                            lifetime: 300
+                            particles: 1
+                            length: 0
+                            sizeFrom: 1
+                            sizeTo: 1
+                            colorFrom: bf92f9
+                            colorTo: bf92f900
+                            interp: pow5In
+                        }
+                    ]
+                }
+                {
+                    type: RadialEffect
+                    rotationOffset: 45
+                    followParent: false
+                    effect: {
+                        type: SeqEffect
+                        followParent: false
+                        layer: 51
+                        clip: 2000000
+                        effects: [
+                                {
+                                    lifetime: 115
+                                    particles: 1
+                                    cone: 0
+                                    line: true
+                                    strokeFrom: 0
+                                    strokeTo: 2
+                                    lenFrom: 6
+                                    lenTo: 6
+                                    length: 0.1
+                                    colorFrom: bf92f900
+                                    colorTo: bf92f9
+                                    sizeInterp: pow5Out
+                                    interp: pow5Out
+                                }
+                                {
+                                    lifetime: 140
+                                    particles: 1
+                                    cone: 0
+                                    line: true
+                                    strokeFrom: 2
+                                    strokeTo: 2
+                                    lenFrom: 6
+                                    lenTo: 6
+                                    length: 0.00001
+                                    colorFrom: bf92f9
+                                    colorTo: bf92f9
+                                }
+                                {
+                                    lifetime: 45
+                                    particles: 1
+                                    cone: 0
+                                    line: true
+                                    strokeFrom: 2
+                                    strokeTo: 0
+                                    lenFrom: 6
+                                    lenTo: 24
+                                    length: 0.1
+                                    colorFrom: bf92f9
+                                    colorTo: bf92f900
+                                    sizeInterp: pow5In
+                                }
+                        ]
+                    }
+                }
+                {
+                    type: SeqEffect
+                    layer: 160
+                    clip: 2000000
+                    effects: [
+                        #Grow the symbol
+                        {
+                            type: ParticleEffect
+                            lifetime: 60
+                            region: meld-shark-symbol
+                            particles: 1
+                            length: 0
+                            sizeFrom: 0
+                            sizeTo: 12
+                            colorFrom: ffffff
+                            colorTo: ffffff
+                            interp: pow10Out
+                            sizeInterp: pow10Out
+                            length: 16
+                            useRotation: false
+                            followParent: false
+                            cone: 0
+                            #I FORGOT ROTATION GOES COUNTERCLOCKWISE FROM 90 DEG CLOCKWISE FROM STRAIGHT UP WHY DOES IT DO THAT ANUKE FIX YOUR GAMEEEEEEEEEE
+                            baseRotation: 90
+                            offset: -90
+                            randLength: false
+                        }
+                        #Have the colour fade out
+                        {
+                            type: ParticleEffect
+                            lifetime: 240
+                            region: meld-shark-symbol
+                            particles: 1
+                            length: 0
+                            sizeFrom: 12
+                            sizeTo: 12
+                            colorFrom: ffffff
+                            colorTo: ffffff30
+                            interp: pow10In
+                            useRotation: false
+                            followParent: false
+                            offsetY: 16
+                        }
+                        #Linger for 10 minutes
+                        {
+                            type: ParticleEffect
+                            lifetime: 36000
+                            region: meld-shark-symbol
+                            particles: 1
+                            length: 0
+                            sizeFrom: 12
+                            sizeTo: 12
+                            colorFrom: ffffff30
+                            colorTo: ffffff00
+                            interp: pow10In
+                            useRotation: false
+                            followParent: false
+                            offsetY: 16
+                        }
+                    ]
+                }
+            ]
+        }
+    }
 ]
 
 parts: [

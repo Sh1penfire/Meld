@@ -293,6 +293,16 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: scorcher
+	objectives: [
+		{
+			type: SectorComplete
+			preset: scrapyard
+		}
+	]
+}
+
 immunities: [
 	lacerated
 	mangrove-d0-mercury-poisoning

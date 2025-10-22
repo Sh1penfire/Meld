@@ -117,6 +117,16 @@ weapons: [
     //Death giblits
 ]
 
+research: {
+	parent: jilla
+	objectives: [
+		{
+			type: SectorComplete
+			preset: reminant
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
     shattered

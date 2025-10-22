@@ -356,6 +356,16 @@ abilities: [
 	}
 ]
 
+research: {
+	parent: jilla
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

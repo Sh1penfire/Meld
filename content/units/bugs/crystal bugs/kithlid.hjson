@@ -517,6 +517,16 @@ abilities: [
     }
 ]
 
+research: {
+	parent: kathid
+	objectives: [
+		{
+			type: SectorComplete
+			preset: reminant
+		}
+	]
+}
+
 immunities: [
     blackout
 	lacerated

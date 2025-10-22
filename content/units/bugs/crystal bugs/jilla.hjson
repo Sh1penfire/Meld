@@ -115,6 +115,16 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: scorcher
+	objectives: [
+		{
+			type: SectorComplete
+			preset: creek
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered
