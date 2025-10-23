@@ -157,6 +157,7 @@
     industrial-rubble
     industrial-rubble-cracked
     astral-fulgurite
+    grazing-bar
     meld-shard
     larval-plating
     metalic-chunk
@@ -224,6 +225,7 @@
     zip
     gala
     blob
+    splurger
     wuba
     wuba-exploding
     uwubba
@@ -231,6 +233,7 @@
     globkin
     allegro
     tracker
+    tracker-projectile
     fletch
     bulwark
     inator
@@ -268,12 +271,10 @@
     spectre
     spectre-spawn
     spire-sonar
-    splurger
     vision-giver
     z-the-grater-good
     bulbhead-sonar
     rapid-enemy-mobalization
-    tracker-projectile
     
 #Environmental tiles
     aether-growth

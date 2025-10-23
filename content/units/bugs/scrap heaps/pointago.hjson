@@ -549,6 +549,15 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: craig
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}
 
 abilities: [
 	{

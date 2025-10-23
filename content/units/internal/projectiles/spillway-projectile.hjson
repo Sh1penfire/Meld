@@ -122,6 +122,16 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: spillway
+	objectives: [
+		{
+			type: SectorComplete
+			preset: tempest-in-a-teacup
+		}
+	]
+}
+
 abilities: [
 	{
 		type: SpawnDeathAbility

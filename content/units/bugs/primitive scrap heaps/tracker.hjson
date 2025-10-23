@@ -254,6 +254,16 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: scorcher
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}
+
 immunities: [
 	aspect-burn
 	shattered

@@ -1,5 +1,4 @@
 type: missile
-template: MissileUnitType
 
 speed: 3.5
 
@@ -18,6 +17,24 @@ drawCell: false
 hidden: false
 
 deathExplosionEffect: none
+
+playerControllable: false
+createWreck: false
+createScorch: false
+logicControllable: false
+isEnemy: false
+useUnitCap: false
+drawCell: false
+controller: MissileAI
+flying: true
+physics: false
+bounded: false
+hoverable: false
+targetPriority: -1
+outlineColor: 2d2f39
+fogRadius: 2
+drawMinimap: false
+
 weapons: [
 	{
 		shootOnDeath: true
@@ -150,3 +167,13 @@ abilities: [
 		}
 	}
 ]
+
+research: {
+	parent: tracker
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}

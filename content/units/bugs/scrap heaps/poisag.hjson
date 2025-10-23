@@ -315,6 +315,15 @@ weapons: [
 	}
 ]
 
+research: {
+	parent: afraig
+	objectives: [
+		{
+			type: SectorComplete
+			preset: shear
+		}
+	]
+}
 
 abilities: [
 	{
