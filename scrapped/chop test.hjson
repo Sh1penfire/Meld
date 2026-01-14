@@ -1,0 +1,567 @@
+type: mech
+speed: 1.85
+strafePenalty: 0
+
+drownTimeMultiplier: 4
+
+health: 520
+aimDst: 10
+range: 50
+drag: 0.65
+accel: 1.5
+hitSize: 18
+lightRadius: 80
+lightOpacity: 0.9
+buildSpeed: 1
+mineTier: 2
+mineSpeed: 16
+itemCapacity: 120
+range: 100
+
+buildBeamOffset: 6.75
+rotateToBuilding: true
+buildRange: 80
+mineRange: 80
+fogRadius: 10
+
+targetAir: true
+
+useUnitCap: false
+
+alwaysUnlocked: true
+
+rotateSpeed: 6.15
+
+weapons: [
+    {
+        name: purifier-launcher
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 0
+        minWarmup: 0
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 8
+        minWarmup: 0.1
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 16
+        minWarmup: 0.2
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 24
+        minWarmup: 0.3
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 32
+        minWarmup: 0.4
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 40
+        minWarmup: 0.5
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 48
+        minWarmup: 0.6
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 56
+        minWarmup: 0.7
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 64
+        minWarmup: 0.8
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+    {
+        x: 22.5
+        y: -0.5
+        alternate: false
+        rotate: true
+        
+        rotationLimit: 75
+        baseRotation: -25
+        
+        
+        rotateSpeed: 2.85
+        
+        shootStatus: slow
+        shootStatusDuration: 2
+        shootSound: laser
+        
+        shootCone: 25
+        
+        inaccuracy: 0
+
+        reload: 320
+        
+        recoil: 5
+        continuous: true
+        alwaysContinuous: true
+        
+        shootX: -2
+        shootY: 72
+        minWarmup: 0.9
+        shootWarmupSpeed: 0.00454545454545
+        linearWarmup: true
+        
+        
+        bullet: {
+            type: BulletType
+            lifetime: 1
+            bulletInterval: 20
+            despawnEffect: none
+            hitEffect: none
+            intervalRandomSpread: 0
+            intervalBullet: {
+                instantDisappear: true
+                despawnEffect: explosion
+            }
+        }
+    }
+]
+
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: 0
+		sides: 60
+		mirror: false
+		radius: 80
+		phase: 420
+		stroke: 3
+		circles: 2
+		minStroke: 0.5
+		layer: 122
+		color: ffd37f
+	}
+	{
+		x: 0
+		y: 0
+		type: ShapePart
+		circle: true
+		hollow: true
+		radius: 78
+		stroke: 4
+		layer: 122
+		color: ffd37f
+	}
+]
+
+abilities: [
+    {
+        type: StatusFieldAbility
+        range: 80
+        reload: 15
+        effect: strata-a0-rally
+        duration: 120
+        activeEffect: {
+            type: ParticleEffect
+            lifetime: 35
+            region: meld-diamond
+            colorFrom: ffd37f
+            colorTo: ffd37f
+            particles: 3
+            spin: 1
+            length: 120
+            sizeFrom: 0
+            sizeTo: 2
+            interp: one
+            sizeInterp: slope
+            lightScl: 0
+        }
+        applyEffect: none
+    }
+    {
+        type: LiquidRegenAbility
+        liquid: nectar
+        regenPerSlurp: 0.3
+        slurpSpeed: 90
+    }
+]
+
+immunities: [
+	strata-a0-rally
+	mangrove-d0-mercury-poisoning
+	lacerated
+	wildlife-a1-reconstitution
+    stunned
+]
+
+research: pad-psi
