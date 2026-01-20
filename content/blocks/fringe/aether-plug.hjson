@@ -54,7 +54,7 @@ requirements: [
  	debris/40
 ]
 
-research: core-raft
+research: fringe
 
 researchCost: [
 	debris/17

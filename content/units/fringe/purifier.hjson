@@ -4,16 +4,15 @@ strafePenalty: 0
 
 drownTimeMultiplier: 1.2
 
-health: 920
+health: 2400
 aimDst: 0
-range: 50
+range: 70
 drag: 0.7
 accel: 1.75
-hitSize: 18
+hitSize: 24
 lightRadius: 80
 lightOpacity: 0.9
 itemCapacity: 120
-range: 100
 
 fogRadius: 10
 
@@ -32,7 +31,6 @@ weapons: [
         alternate: false
         rotate: true
         rotationLimit: 75
-        baseRotation: -25
 
 
         rotateSpeed: 0.85
@@ -62,15 +60,15 @@ weapons: [
         rotate: true
 
         rotationLimit: 75
-        baseRotation: 25
 
 
         rotateSpeed: 0.85
 
-        shootStatus: slow
-        shootStatusDuration: 2
         shootSound: none
 
+        shootStatus: slow
+        shootStatusDuration: 60
+        
         shootCone: 25
 
         shoot: {

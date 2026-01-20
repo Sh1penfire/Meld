@@ -21,8 +21,6 @@ craftTime: 120
 liquidCapacity: 240
 
 itemCapacity: 60
-rotate: true
-quickRotate: true
 placeableLiquid: true
 floating: true
 
