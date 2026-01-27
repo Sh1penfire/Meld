@@ -26,7 +26,7 @@ requirements: [
 ]
 
 research: {
-	parent: core-raft-dormant
+	parent: core-raft
 	objectives: [
 		power-transmission
 	]

@@ -2,7 +2,7 @@ type: Duct
 size: 1
 bridgeReplacement: chute-bridge
 speed: 6
-
+placeSound: thump
 category: distribution
 requirements: [
 	debris/1
@@ -11,7 +11,7 @@ requirements: [
 research: item-logistics
 
 research: {
-	parent: core-raft-dormant
+	parent: core-raft
 	objectives: [
 		item-logistics
 	]

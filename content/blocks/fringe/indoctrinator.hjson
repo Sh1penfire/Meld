@@ -4,7 +4,7 @@ size: 5
 placeableLiquid: true
 category: effect
 
-liquidCapacity: 50
+liquidCapacity: 500
 itemCapacity: 250
 
 ambientSound: drill
@@ -14,7 +14,7 @@ squareSprite: false
 craftTime: 60
 
 attribute: data-power
-boostScale: 0.125
+boostScale: 0.4
 minEfficiency: 1
 baseEfficiency: 0
 

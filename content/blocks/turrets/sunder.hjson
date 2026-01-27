@@ -145,7 +145,7 @@ requirements: [
 
 category: turret
 
-research: core-raft-dormant
+research: core-raft
 
 researchCost: [
     debris/120

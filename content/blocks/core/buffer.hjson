@@ -9,7 +9,7 @@ squareSprite: false
 coreMerge: false
 
 research: {
-	parent: core-raft-dormant
+	parent: core-raft
 	objectives: [
 		storage-hubs
 	]

@@ -11,6 +11,8 @@ placeableDeep: true
 itemCapacity : 900
 unitCapModifier: 6
 
+alwaysUnlocked: true
+
 research: {
 	planet: ikaru
 	root: true

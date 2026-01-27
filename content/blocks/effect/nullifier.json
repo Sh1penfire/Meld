@@ -822,7 +822,7 @@ consumes: {
 category: effect
 
 research: {
-	parent: core-raft-dormant
+	parent: core-raft
 	objectives: [
 		aspect-channeling
 	]

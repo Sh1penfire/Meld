@@ -13,7 +13,7 @@ unitCapModifier: 0
 
 alwaysUnlocked: true
 firstTier: true
-research: core-raft-dormant
+research: core-raft
 
 requirements: [
 	debris/125

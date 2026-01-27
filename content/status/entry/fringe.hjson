@@ -1,3 +1,9 @@
-alwaysUnlocked: true
-show: false
-research: core-raft
+hidden: true
+
+research: {
+	parent: core-raft
+	objectives: [
+		reminant
+	]
+}
+researchCostMultiplier: 0
