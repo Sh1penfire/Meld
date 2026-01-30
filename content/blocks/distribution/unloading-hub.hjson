@@ -1,0 +1,47 @@
+type: Unloader
+size: 3
+health: 450
+armor: 60
+
+speed: 1
+
+solid: false
+category: distribution
+
+destroyBullet: {
+	type: BulletType
+	speed: 0
+	lifetime: 1
+	splashDamage: 25
+	splashDamageRadius: 12
+	hitEffect: none
+	despawnEffect: none
+	hittable: false
+	absorbable: false
+	collides: false
+	ignoreSpawnAngle: true
+	intervalBullets: 4
+	bulletInterval: 1
+	intervalSpread: 90
+	intervalRandomSpread: 0
+	intervalAngle: 45
+	intervalBullet: {
+		type: RailBulletType
+		length: 10
+		buildingDamageMultiplier: 200
+		damage: 1
+		collidesAir: false
+	}
+}
+
+requirements: [
+	debris/450
+	electrum-sheet/150
+]
+
+research: {
+	parent: chute
+}
+researchCost: [
+	debris/100
+]
