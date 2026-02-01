@@ -11,7 +11,7 @@ fogRadiusMultiplier: 0
 
 squareSprite: false
 
-shootCone: 360
+shootCone: 5
 shootY: 8
 
 liquidCapacity: 400
