@@ -1,0 +1,120 @@
+type: ItemTurret
+health: 820
+size: 4
+
+rotateSpeed: 6
+reload: 180
+recoil: 0.5
+
+range: 360
+fogRadiusMultiplier: 0
+
+squareSprite: false
+
+shootCone: 360
+shootY: 8
+
+liquidCapacity: 400
+
+shoot: {
+    shots: 1
+}
+inaccuracy: 0
+
+loopSound: none
+shootEffect: [
+    {
+        type: ParticleEffect
+        lifetime: 3
+        particles: 1
+        length: 12
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 0.5
+        colorFrom: ffffff
+    }
+    {
+        type: ParticleEffect
+        layer: 100
+        lifetime: 3
+        particles: 1
+        length: 14
+        cone: 35
+        sizeFrom: 2
+        sizeTo: 1
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 15
+        baseLength: 10
+        length: 45
+        cone: 35
+        line: true
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: cbdbfc
+    }
+    {
+        type: ParticleEffect
+        lifetime: 45
+        particles: 1
+        baseLength: 10
+        length: 5
+        cone: 35
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: cbdbfc
+        colorTo: cbdbfc00
+    }
+]
+
+ammoTypes: {
+    debris: {
+            speed: 4
+            lifetime: 60
+            spawnUnit: debris-lump
+    }
+    silver: {
+            speed: 8
+            lifetime: 45
+            spawnUnit: silver-lump
+    }
+}
+
+ammoPerShot: 40
+maxAmmo: 40
+
+consumes: {
+    liquid: aspect/13.33333333333333
+}
+
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+	]
+}
+
+requirements: [
+	debris/600
+    carbolith/350
+	silver/450
+]
+
+research: molotov
+
+researchCost: [
+    debris/60
+    carbolith/40
+]
+
+
+
+category: turret

@@ -1,0 +1,135 @@
+type: missile
+
+flying: true
+engineSize: 0
+
+speed: 3.5
+
+health: 600
+
+range: 80
+drag: 0.12
+accel: 0.2
+lifetime: 40
+fallSpeed: 0.028
+
+hitSize: 18
+rotateSpeed: 3.5
+
+drawCell: false
+controller: HugAI
+
+deathExplosionEffect: none
+weapons: [
+    //Kinetic barriers
+    {
+        x: 0
+        y: 0
+        mirror: false
+        alternate: false
+        rotate: false
+        reload: 2
+        shootY: 5
+        minShootVelocity: 1.7
+        alwaysShooting: true
+        shootSound: none
+        useAttackRange: false
+        shoot: {
+            type: ShootBarrel
+            shots: 5
+            barrels: [
+                0, 0, 0
+                0, 0, 15
+                0, 0, -15
+                0, 0, 30
+                0, 0, -30
+            
+            ]
+        }
+        bullet: {
+            type: RailBulletType
+            length: 5
+            damage: 35
+            knockback: 8
+            impact: true
+            buildingDamageMultiplier: 0.25
+            hittable: false
+            absorbable: false
+            pierceEffect: explosion
+            hitSound: explosion
+            shootEffect: none
+            smokeEffect: none
+            recoil: -0.1
+            status: impaled
+            statusDuration: 2
+        }
+    }
+    //Kinetic barriers 2: electric boogaloo
+    {
+        x: 0
+        y: 0
+        mirror: false
+        alternate: false
+        rotate: false
+        reload: 2
+        shootY: 5
+        minShootVelocity: 2.7
+        alwaysShooting: true
+        shootSound: none
+        useAttackRange: false
+        shoot: {
+            type: ShootBarrel
+            shots: 5
+            barrels: [
+                0, 0, 0
+                0, 0, 15
+                0, 0, -15
+                0, 0, 30
+                0, 0, -30
+            
+            ]
+        }
+        bullet: {
+            type: RailBulletType
+            length: 5
+            pierceArmor: true
+            damage: 5
+            knockback: 2
+            impact: true
+            buildingDamageMultiplier: 0.25
+            hittable: false
+            absorbable: false
+            pierceEffect: explosion
+            hitSound: explosion
+            shootEffect: none
+            smokeEffect: none
+            recoil: -0.1
+            status: impaled
+            statusDuration: 2
+        }
+    }
+	{
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+		x: 0
+		y: 0
+		reload: 180
+		shootCone: 180
+		recoil: 0
+		shootSound: bang
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		alwaysShooting: true
+		bullet: {
+			killShooter: true
+			instantDisappear: true
+			despawnEffect: none
+			absorbable: false
+			hittable: false
+			collides: false
+            recoil: -2
+		}
+	}
+]

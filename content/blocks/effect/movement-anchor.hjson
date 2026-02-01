@@ -42,10 +42,7 @@ requirements: [
 ]
 
 research: {
-	parent: core-raft
-	objectives: [
-		movement-anchor
-	]
+	parent: silver-husk
 }
 
 category: effect

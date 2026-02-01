@@ -63,9 +63,12 @@
     warp-aggregator
 #Turrets
     sunder
+    shredstorm
     molotov
+    grandeur
     vivisection
     tantrum
+    downpour
     vivalo
     flurry
 #Item distrib
@@ -74,8 +77,8 @@
     chute-bridge
     chute-overflow
     chute-unloader
+    unloading-hub
     glasswork-chute
-    downpour
 #Liquid distrib
     channel-face
     channel-node
@@ -210,6 +213,7 @@
     enforcer
     impaler
     time-keeper
+    purifier
 #Meld units
     jilla
     scorcher
