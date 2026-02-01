@@ -11,7 +11,7 @@ range: 80
 drag: 0.12
 accel: 0.2
 lifetime: 40
-fallSpeed: 0.032
+fallSpeed: 0.03
 
 hitSize: 18
 rotateSpeed: 3.5

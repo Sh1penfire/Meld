@@ -5,14 +5,15 @@ range: 160
 fogRadiusMultiplier: 0.25
 reload: 20
 shootEffect: shootBig
-shootWarmupSpeed : 0.09
+shootWarmupSpeed : 0.25
 minWarmup: 0.7
 
 recoil: 0.25
+rotateSpeed: 15
 
 velocityRnd: 0.2
 recoil: 1.5
-shootCone: 5
+shootCone: 25
 
 shoot: {
 	type: ShootBarrel
@@ -92,6 +93,579 @@ ammoTypes: {
         pierce: true
         pierceCap: 2
 	}
+	resonarum: {
+        hitEffect: none
+        despawnEffect: none
+        instantDisappear: true
+        shootEffect: none
+        smokeEffect: none
+        rangeOverride: 140
+        speed: 0
+
+        spawnBullets: [
+            //Stars
+            {
+                keepVelocity: false
+                hittable: false
+                absorbable: false
+                instantDisappear: true
+                hitEffect: none
+                despawnEffect: none
+                fragRandomSpread: 25
+                fragBullets: 2
+                fragVelocityMin: 0.5
+                fragBullet: {
+                    type: BulletType
+                    keepVelocity: false
+                    damage: 0.5
+                    speed: 8.5
+                    drag: 0.05
+                    lifetime: 25
+                    homingPower: 0.01
+                    pierce: true
+                    pierceBuilding: false
+                    status: lacerated
+                    statusDuration: 15
+                    hitEffect: none
+                    despawnEffect: none
+
+                    lightColor: 85c79945
+
+                    knockback: 0.15
+                    impact: true
+
+                    parts: [
+                        {
+                            type: RegionPart
+                            outline: false
+                            name: meld-sparkle-clump
+                            color: 85c79900
+                            colorTo: 85c79983
+                            moveRot: 1800
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 0.5
+                                    }
+                                    {
+                                        op: curve
+                                        interp: sine
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 2
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        other: {
+                                            type: life
+                                            ops: [
+                                                {
+                                                    op: curve
+                                                    interp: reverse
+                                                }
+                                                {
+                                                    op: curve
+                                                    interp: pow2In
+                                                }
+                                            ]
+                                        }
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 4.48802818482
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                            blending: additive
+                            xScl: -1
+                            yScl: -1
+                            growX: 2
+                            growY: 2
+                            growProgress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow2In
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+            //Lighter smaller sparkles
+            {
+                keepVelocity: false
+                hittable: false
+                absorbable: false
+                instantDisappear: true
+                hitEffect: none
+                despawnEffect: none
+                fragRandomSpread: 16
+                fragBullets: 2
+                fragVelocityMin: 0.5
+                fragBullet: {
+                    type: BulletType
+                    keepVelocity: false
+                    lightRadius: 0
+
+                    lifetime: 35
+                    speed: 5.6
+                    drag: 0.04
+                    layer: 99
+
+                    damage: 0.15
+                    splashDamage: 1
+                    splashDamageRadius: 17
+                    hittable: false
+                    hitEffect: none
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 8
+
+                    weaveMag: 2
+                    weaveScale: 15
+
+                    knockback: 0.12
+                    impact: true
+
+                    parts: [
+                        {
+                            type: RegionPart
+                            outline: false
+
+                            name: meld-sparkle
+
+                            moveRot: 1800
+
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow2In
+                                    }
+                                ]
+                            }
+
+                            blending: additive
+                            color: 8fdba683
+                            colorTo: 5ea37000
+                            growX: -1
+                            growY: -1
+                            growProgress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 0.5
+                                    }
+                                    {
+                                        op: curve
+                                        interp: sine
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 2
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        other: {
+                                            type: life
+                                            ops: [
+                                                {
+                                                    op: curve
+                                                    interp: reverse
+                                                }
+                                                {
+                                                    op: curve
+                                                    interp: pow2In
+                                                }
+                                            ]
+                                        }
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 4.48802818482
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+            //larger smoke
+            {
+                keepVelocity: false
+                hittable: false
+                absorbable: false
+                instantDisappear: true
+                hitEffect: none
+                despawnEffect: none
+                fragRandomSpread: 25
+                fragBullets: 3
+                fragVelocityMin: 0.5
+                fragBullet: {
+                    type: BulletType
+                    lightRadius: 0
+                    keepVelocity: false
+
+                    lifetime: 50
+                    speed: 7.2
+                    drag: 0.04
+                    layer: 98
+                    weaveMag: 1
+                    weaveScale: 100
+
+                    damage: 0.05
+                    splashDamage: 1
+                    splashDamageRadius: 17
+                    hittable: false
+                    hitEffect: none
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 5
+
+                    knockback: 0.08
+                    impact: true
+
+                    parts: [
+                        {
+                            type: RegionPart
+                            outline: false
+                            name: meld-particle-cloud
+
+                            moveRot: 1800
+
+                            color: 135317a0
+                            colorTo: 246b3000
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow2In
+                                    }
+                                ]
+                            }
+
+                            xScl: 0.75
+                            yScl: 0.75
+
+                            growX: -0.75
+                            growY: -0.75
+                            growProgress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 0.5
+                                    }
+                                    {
+                                        op: curve
+                                        interp: sine
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 2
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        other: {
+                                            type: life
+                                            ops: [
+                                                {
+                                                    op: curve
+                                                    interp: reverse
+                                                }
+                                                {
+                                                    op: curve
+                                                    interp: pow2In
+                                                }
+                                            ]
+                                        }
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 4.48802818482
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+            //Additional piece of large smoke which spreads out further and homes slightly
+            {
+                keepVelocity: false
+                hittable: false
+                absorbable: false
+                instantDisappear: true
+                hitEffect: none
+                despawnEffect: none
+                fragRandomSpread: 65
+                fragBullets: 2
+                fragVelocityMin: 0.8
+                fragBullet: {
+                    type: BulletType
+                    lightRadius: 0
+                    keepVelocity: false
+
+                    collideTerrain: true
+
+                    lifetime: 65
+                    speed: 8.2
+                    drag: 0.04
+                    layer: 98
+                    weaveMag: 1
+                    weaveScale: 100
+                    homingPower: 0.01
+
+                    damage: 0.05
+                    splashDamage: 1
+                    splashDamageRadius: 17
+                    hittable: false
+                    hitEffect: none
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 5
+
+                    knockback: 0.08
+                    impact: true
+
+                    parts: [
+                        {
+                            type: RegionPart
+                            outline: false
+                            name: meld-particle-cloud
+
+                            moveRot: 1800
+
+                            color: 135317a0
+                            colorTo: 246b3000
+
+                            blending: additive
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow2In
+                                    }
+                                ]
+                            }
+
+                            xScl: 0.75
+                            yScl: 0.75
+
+                            growX: -0.75
+                            growY: -0.75
+                            growProgress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 0.5
+                                    }
+                                    {
+                                        op: curve
+                                        interp: sine
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 2
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        other: {
+                                            type: life
+                                            ops: [
+                                                {
+                                                    op: curve
+                                                    interp: reverse
+                                                }
+                                                {
+                                                    op: curve
+                                                    interp: pow2In
+                                                }
+                                            ]
+                                        }
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 4.48802818482
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+            //Make the beginning look less... sparce
+            {
+                keepVelocity: false
+                hittable: false
+                absorbable: false
+                instantDisappear: true
+                hitEffect: none
+                despawnEffect: none
+                fragRandomSpread: 35
+                fragBullets: 4
+                fragVelocityMin: 0.0
+                fragBullet: {
+                    type: BulletType
+                    lightRadius: 0
+                    keepVelocity: false
+
+                    collideTerrain: true
+
+                    lifetime: 25
+                    speed: 4.2
+                    drag: 0.04
+                    layer: 98
+
+                    pierce: true
+                    pierceBuilding: true
+
+                    damage: 0.8
+                    hittable: false
+                    hitEffect: none
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 20
+
+                    knockback: 0.1
+                    impact: true
+
+                    parts: [
+                        {
+                            type: RegionPart
+                            outline: false
+                            name: meld-particle-cloud
+
+                            color: 135317a0
+                            colorTo: 246b3000
+                            progress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: pow2In
+                                    }
+                                ]
+                            }
+
+                            xScl: 0.75
+                            yScl: 0.75
+                            growX: -0.75
+                            growY: -0.75
+                            growProgress: {
+                                type: life
+                                ops: [
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 0.5
+                                    }
+                                    {
+                                        op: curve
+                                        interp: sine
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 2
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                    {
+                                        op: mul
+                                        other: {
+                                            type: life
+                                            ops: [
+                                                {
+                                                    op: curve
+                                                    interp: reverse
+                                                }
+                                                {
+                                                    op: curve
+                                                    interp: pow2In
+                                                }
+                                            ]
+                                        }
+                                    }
+                                    {
+                                        op: mul
+                                        amount: 4.48802818482
+                                    }
+                                    {
+                                        op: curve
+                                        interp: reverse
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
 }
 
 coolant: {
@@ -105,7 +679,7 @@ coolant: {
 
 requirements: [
 	debris/25
-	carbolith/15
+	silver/35
 ]
 
 category: turret

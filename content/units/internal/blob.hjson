@@ -8,7 +8,8 @@ useUnitCap: false
 isEnemy: false
 defaultController: HugAI
 
-health: 60
+health: 150
+armor: -25
 
 drag: 3
 

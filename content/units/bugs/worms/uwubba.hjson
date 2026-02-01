@@ -1,7 +1,7 @@
 type: crawl
 speed: 0.75
 
-health: 240
+health: 320
 armor: 75
 drownTimeMultiplier: 0.15
 

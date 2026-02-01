@@ -1,7 +1,7 @@
 type: crawl
 speed: 1.5
 
-health: 320
+health: 480
 
 drag: 0.12
 accel: 0.2

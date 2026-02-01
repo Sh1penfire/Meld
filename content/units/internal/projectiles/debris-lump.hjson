@@ -5,13 +5,13 @@ engineSize: 0
 
 speed: 3.5
 
-health: 600
+health: 1200
 
 range: 80
 drag: 0.12
 accel: 0.2
 lifetime: 40
-fallSpeed: 0.028
+fallSpeed: 0.026
 
 hitSize: 18
 rotateSpeed: 3.5
