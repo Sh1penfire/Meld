@@ -16,6 +16,6 @@ cacheLayer: mud
 liquidDrop: nectar
 
 status: mangrove-a0-refreshed
-statusDuration: 5
+statusDuration: 20
 
 isLiquid: true

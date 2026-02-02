@@ -45,7 +45,7 @@ weapons: [
 		bullet: {
 			type: ContinuousFlameBulletType
             flareLength: 4
-			damage: 16
+			damage: 36
 			length: 25
 			width: 2
 			knockback: 1.5
@@ -81,15 +81,15 @@ weapons: [
 		continuous: true
 		alwaysContinuous: true
 		recoil: 0
-		shootCone: 60
+		shootCone: 90
 		shootStatusDuration: 5
 		shootSound: torch
         baseRotation: -45
 		bullet: {
 			type: ContinuousFlameBulletType
             flareLength: 0
-			damage: 8
-			length: 65
+			damage: 16
+			length: 80
 			width: 1.2
 			knockback: 1
 			pierceCap: 0

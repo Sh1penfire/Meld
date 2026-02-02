@@ -11,7 +11,7 @@ minWarmup: 0.7
 recoil: 0.25
 rotateSpeed: 15
 
-velocityRnd: 0.2
+velocityRnd: 0.3
 recoil: 1.5
 shootCone: 25
 
@@ -27,7 +27,6 @@ shoot: {
         0, 0, -35
     ]
 	spread: 0
-    shotDelay: 5
 	shots: 7
 }
 
@@ -45,14 +44,25 @@ drawer: {
 			mirror: true
 			under: false
 			moveX: 1
-			moveY: -1.55
+			moveY: -2.55
 			moveRot: -15
+
+		},
+		{
+			type: RegionPart
+			suffix: -plate
+			progress: warmup
+			mirror: true
+			under: false
+			moveX: -1
+			moveY: -3.55
+			moveRot: 15
 
 		},
 		{
 			name: clear
 			progress: warmup
-			y: -1.5
+			y: 0
 			moveY: 1
 			children: [
 				{
@@ -71,10 +81,11 @@ drawer: {
 ammoTypes: {
 	debris: {
 		type: BasicBulletType
-		speed: 8
+		speed: 9
 		damage: 0.5
-		lifetime: 20
-		width: 3
+		lifetime: 21
+        drag: 0.01
+		width: 5
 		height: 8
         shrinkY: 1
         shrinkX: 0.7
@@ -86,12 +97,40 @@ ammoTypes: {
         
         hitEffect: none
         despawnEffect: none
+        setDefaults: false
         despawnHit: false
+        fragOnHit: true
         
         shrinkY: 0.2
         ammoMultiplier: 1
         pierce: true
         pierceCap: 2
+        
+        fragBullets: 3
+        fragRandomSpread: 60
+        fragAngle: 180
+        
+        fragBullet: {
+            type: BasicBulletType
+            speed: 9
+            damage: 0.5
+            lifetime: 8
+            drag: 0.002
+            width: 2
+            height: 6
+            shrinkY: 1
+            shrinkX: 1
+
+            hitEffect: none
+            despawnEffect: none
+            despawnHit: false
+
+            shrinkY: 0.2
+            pierce: true
+            pierceCap: 2
+            status: impaled
+            statusDuration: 5
+        }
 	}
 	resonarum: {
         hitEffect: none
@@ -102,6 +141,8 @@ ammoTypes: {
         rangeOverride: 140
         speed: 0
 
+        ammoMultiplier: 0.5
+        
         spawnBullets: [
             //Stars
             {
