@@ -62,7 +62,7 @@ deathExplosionEffect: {
 weapons: [
 	{
 		name: "poisag-launcher"
-		x: 0
+		x: 1
 		y: 15
 		shootY: 5
 		reload: 360

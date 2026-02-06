@@ -1,12 +1,12 @@
 type: ItemTurret
-health: 820
-size: 4
+health: 1200
+size: 9
 
 rotateSpeed: 6
 reload: 180
 recoil: 0.5
 
-range: 360
+range: 400
 fogRadiusMultiplier: 0
 
 squareSprite: false
@@ -71,9 +71,30 @@ shootEffect: [
 
 ammoTypes: {
     debris: {
-            speed: 4
-            lifetime: 60
-            spawnUnit: debris-lump
+        type: BulletType
+        speed: 0
+        instantDisappear: true
+        setDefaults: false
+
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: none
+
+        hittable: false
+        reflectable: false
+        absorbable: false
+        collides: false
+
+        puddles: 4
+        puddleLiquid: taint
+        puddleRange: 8
+        puddleAmount: 15
+
+        spawnBullets: [
+            {
+                spawnUnit: debris-lump
+            }
+        ]
     }
     silver: {
             speed: 8

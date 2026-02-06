@@ -1,0 +1,21 @@
+type: CellLiquid
+color: 948a00
+viscosity: 0.05
+temperature: 0
+heatCapacity: 0
+
+moveThroughBlocks: true
+spreadTarget: aspect
+spreadConversion: 0
+removeScaling: 0
+spreadDamage: 2
+
+canStayOn: [
+	nectar
+	ichor
+	ooze
+	waste
+	meld
+]
+
+research: liquid-data

@@ -49,7 +49,7 @@ weapons: [
         bullet: {
             type: RailBulletType
             length: 5
-            damage: 35
+            damage: 70
             knockback: 8
             impact: true
             buildingDamageMultiplier: 0.25
@@ -62,6 +62,7 @@ weapons: [
             recoil: -0.1
             status: impaled
             statusDuration: 2
+            hitUnder: true
         }
     }
     //Kinetic barriers 2: electric boogaloo
@@ -93,7 +94,7 @@ weapons: [
             type: RailBulletType
             length: 5
             pierceArmor: true
-            damage: 5
+            damage: 10
             knockback: 2
             impact: true
             buildingDamageMultiplier: 0.25
@@ -106,6 +107,7 @@ weapons: [
             recoil: -0.1
             status: impaled
             statusDuration: 2
+            hitUnder: true
         }
     }
 	{

@@ -1,0 +1,8 @@
+type: Prop
+solid: true
+variants: 3
+
+instantDeconstruct: false
+requirements: [
+	carbolith/12
+]

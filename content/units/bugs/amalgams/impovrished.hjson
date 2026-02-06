@@ -1,0 +1,660 @@
+type: legs
+speed: 0.8
+
+health: 3200
+armor: 3
+
+drag: 0.12
+accel: 0.2
+range: 200
+
+hitSize: 42
+rotateSpeed: 1.5
+faceTarget: true
+
+drawCell: false
+
+aimDst: 0
+
+legCount: 8
+legLength: 20
+lockLegBase: true
+legContinuousMove: true
+legGroupSize: 2
+legExtension: 4
+legLengthScl: 0.9
+legPairOffset: 5
+
+forceMultiTarget: true
+
+legMoveSpace: 3
+allowLegStep: true
+legPhysicsLayer: false
+
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 75
+            baseLength: 10
+            length: 35
+            particles: 1
+            sizeFrom: 1
+            sizeTo: 1.5
+            sizeInterp: pow5Out
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: ParticleEffect
+            lifetime: 45
+            baseLength: 10
+            particles: 2
+            length: 14
+            sizeFrom: 1.5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow2In
+            colorFrom: e5aed7
+            colorTo: e5aed700
+        }
+        {
+            type: WaveEffect
+            lifetime: 9
+            sizeFrom: 1
+            sizeTo: 8
+            strokeFrom: 2
+            strokeTo: 1.2
+            colorFrom: e5aed7
+            colorTo: e5aed7
+        }
+    ]
+}
+
+weapons: [
+    //Autocannons
+	{
+		name: "craig-gun"
+		x: -30.75
+		y: 2.75
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+	{
+		name: "craig-gun"
+		x: -31
+		y: -12.75
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+	{
+		name: "craig-gun"
+		x: -30
+		y: -26.75
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+	{
+		name: "craig-gun"
+		x: 30
+		y: 5.75
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+	{
+		name: "craig-gun"
+		x: 31.75
+		y: -14.25
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+	{
+		name: "craig-gun"
+		x: 27.75
+		y: -27.25
+		shootY: 5
+		rotateSpeed: 15
+		reload: 15
+		shootCone: 60
+		rotate: true
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 7.5
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		bullet: {
+			type: RailBulletType
+			pierceDamageFactor: 1
+			damage: 5
+			length: 60
+			knockback: 1
+			recoil: -0.1
+			smokeEffect: {
+				type: ParticleEffect
+				region: "meld-globule"
+				particles: 2
+				length: 35
+				sizeFrom: 5
+				sizeTo: 0
+				colorFrom: f9e1f300
+				colorTo: f9e1f3
+				sizeInterp: pow5Out
+			}
+		}
+	}
+    //Artillery
+	{
+		name: "braig-cannon"
+		x: -14.5
+		y: 20.25
+		shootY: 5
+		rotateSpeed: 15
+		reload: 360
+		shootCone: 60
+		rotate: true
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		shoot: {
+			type: ShootSpread
+			shots: 3
+			shotDelay: 7
+			spread: 1
+		}
+		inaccuracy: 5
+		bullet: {
+			sprite: "meld-clump"
+			pierce: true
+			pierceCap: 1
+			speed: 4
+			lifetime: 55
+			width: 11
+			height: 14
+			damage: 10
+			splashDamage: 25
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.125
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+	}
+	{
+		name: "braig-cannon"
+		x: 15
+		y: 23.25
+		shootY: 5
+		rotateSpeed: 15
+		reload: 360
+		shootCone: 60
+		rotate: true
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		shoot: {
+			type: ShootSpread
+			shots: 3
+			shotDelay: 7
+			spread: 1
+		}
+		inaccuracy: 5
+		bullet: {
+			sprite: "meld-clump"
+			pierce: true
+			pierceCap: 1
+			speed: 4
+			lifetime: 55
+			width: 11
+			height: 14
+			damage: 10
+			splashDamage: 25
+			splashDamageRadius: 25
+			knockback: 4
+			recoil: -0.125
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+	}
+    
+    //Snipers
+    
+    {
+		name: "pointago-sniper"
+		x: -13
+		y: -17.25
+		shootY: 8
+		rotateSpeed: 2.5
+		reload: 480
+		shootCone: 60
+		rotate: true
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		inaccuracy: 1
+        shoot: {
+            shots: 2
+            shotDelay: 25
+        }
+		bullet: {
+			sprite: "meld-clump"
+			damage: 85
+            drag: -0.01
+			speed: 6
+			lifetime: 55
+            
+			pierce: true
+			pierceCap: 2
+			width: 5
+			height: 24
+			knockback: 25
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+        parts: [
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+	}
+    {
+		name: "pointago-sniper"
+		x: 13.25
+		y: -17.25
+		shootY: 8
+		rotateSpeed: 2.5
+		reload: 480
+		shootCone: 60
+		rotate: true
+		mirror: false
+		alternate: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		inaccuracy: 1
+        shoot: {
+            shots: 2
+            shotDelay: 25
+        }
+		bullet: {
+			sprite: "meld-clump"
+			damage: 85
+            drag: -0.01
+			speed: 6
+			lifetime: 55
+            
+			pierce: true
+			pierceCap: 2
+			width: 5
+			height: 24
+			knockback: 25
+            impact: true
+			trailEffect: smoke
+			shootEffect: shootBig
+			hitEffect: explosion
+		}
+        parts: [
+            {
+                suffix: "-barrel"
+                progress: reload
+                moveY: -3
+                moves: [
+                    {
+                        progress: recoil
+                        moveY: -2
+                    }
+                ]
+            }
+            {
+                suffix: ""
+                progress: reload
+            }
+        ]
+	}
+    //Force proj deployer
+    {
+		name: "poisag-launcher"
+		x: -0.5
+		y: 13.75
+		shootY: 5
+		reload: 360
+		shootCone: 180
+		rotate: false
+		mirror: false
+		alternate: false
+		top: false
+		parentizeEffects: false
+		shootSound: bang
+		shootStatus: wildlife-b0-sentry
+		shootStatusDuration: 180
+		layerOffset: -0.01
+		shoot: {
+			type: ShootSpread
+			shots: 3
+			shotDelay: 35
+			spread: 15
+		}
+		inaccuracy: 25
+		bullet: {
+			type: FlakBulletType
+			explodeRange: 50
+			explodeDelay: 1
+			sprite: "meld-clump"
+			collidesGround: true
+			speed: 5
+			lifetime: 60
+			width: 11
+			height: 14
+			damage: 115
+			splashDamage: 45
+			splashDamageRadius: 25
+			knockback: 12
+			recoil: -0.125
+			shootEffect: shootBig
+			hitEffect: explosion
+			buildingDamageMultiplier: 0.25
+			fragBullets: 1
+			fragBullet: {
+				spawnUnit: poisag-projector
+			}
+		}
+	}
+    //Death giblits
+	{
+		controllable: false
+		aiControllable: false
+		shootOnDeath: true
+		mirror: false
+		rotate: false
+        display: false
+		x: 0
+		y: 0
+		reload: 60
+		shootCone: 180
+		recoil: 0
+		shootSound: none
+		inaccuracy: 25
+		velocityRnd: 0.05
+		cooldownTime: 60000
+		bullet: {
+			type: BulletType
+			collidesTiles: false
+			collides: false
+			collidesAir: true
+			hitSound: explosion
+            fragBullets: 12
+            fragLifeMin: 0.5
+            fragBullet: {
+                sprite: "meld-clump"
+                pierce: true
+                pierceCap: 1
+                speed: 6.5
+                drag: 0.008
+                lifetime: 65
+                width: 5
+                height: 9
+                damage: 5
+                splashDamage: 12
+                splashDamageRadius: 25
+                knockback: 2.5
+                shootEffect: shootBig
+                hitEffect: explosion
+            }
+
+			rangeOverride: 10
+			speed: 0
+			splashDamageRadius: 35
+			instantDisappear: true
+			splashDamage: 600
+			hittable: false
+            hitEffect: {
+                type: MultiEffect
+                effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 125
+                        baseLength: 10
+                        length: 65
+                        particles: 8
+                        sizeFrom: 3
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow5In
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 45
+                        baseLength: 10
+                        particles: 12
+                        length: 85
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 85
+                        baseLength: 10
+                        particles: 9
+                        line: true
+                        strokeFrom: 1.2
+                        strokeTo: 0.5
+                        lenFrom: 7
+                        lenTo: 4
+                        length: 45
+                        colorFrom: e5aed7
+                        colorTo: e5aed700
+                    }
+                    {
+                        type: WaveEffect
+                        lifetime: 15
+                        sizeFrom: 15
+                        sizeTo: 35
+                        strokeFrom: 2
+                        strokeTo: 1.2
+                        colorFrom: e5aed7
+                        colorTo: e5aed7
+                    }
+                ]
+            }
+		}
+	}
+]
+
+research: {
+	parent: craig
+	objectives: [
+		hedge-or-shear
+	]
+}
+
+abilities: [
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: braig
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 2
+		unit: pointago
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: poisag
+	}
+	{
+		type: SpawnDeathAbility
+		amount: 4
+		unit: craig
+	}
+]
+
+immunities: [
+	mangrove-d0-mercury-poisoning
+	lacerated
+	wildlife-a1-reconstitution
+]
