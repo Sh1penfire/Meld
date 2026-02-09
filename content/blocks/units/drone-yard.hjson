@@ -30,14 +30,3 @@ requirements: [
 ]
 
 category: units
-
-research: {
-	parent: ship-factory
-	objectives: [
-	]
-}
-
-researchCost: [
-	debris/1200
-	carbolith/1300
-]

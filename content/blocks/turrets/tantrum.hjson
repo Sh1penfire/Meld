@@ -646,7 +646,6 @@ drawer:[
                 color: 8872da3a
                 colorTo: ffd37f00
                 layer: 50
-                blending: additive
                 progress: {
                     type: reload
                     ops: [
@@ -941,9 +940,6 @@ drawer:[
                 outline: false
                 x: 0
                 y: 4.5
-                circle: true
-                radius: 4
-                radiusTo: 0
                 layer: 110
                 color: 8872da9a
                 colorTo: ffd37f00
@@ -1095,7 +1091,7 @@ drawer:[
             {
                 type: EffectSpawnerPart
                 y: 4.5
-                chance: 1
+                effectChance: 1
                 progress: {
                     type: recoil
                     ops: [
@@ -1164,14 +1160,15 @@ drawer:[
                     }
                 ]
             }
+            //Aspect smoke
             {
                 type: EffectSpawnerPart
-                x: 7
-                y: -4.25
-                effectRot: 215
+                x: 10
+                y: -3.75
+                effectRot: 225
                 debugDraw: true
                 mirror: true
-                chance: 10
+                effectChance: 10
                 progress: {
                     type: recoil
                     ops: [
@@ -1188,7 +1185,7 @@ drawer:[
                         lifetime: 15
                         baseLength: 0
                         particles: 3
-                        length: 25
+                        length: 35
                         sizeFrom: 0
                         sizeTo: 4.2
                         colorFrom: c4d7ff
@@ -1203,7 +1200,7 @@ drawer:[
                         lifetime: 24
                         baseLength: 0
                         particles: 5
-                        length: 35
+                        length: 45
                         sizeFrom: 3.3
                         sizeTo: 0
                         colorFrom: c4d7ff
@@ -1216,12 +1213,12 @@ drawer:[
             }
             {
                 type: EffectSpawnerPart
-                x: 7
-                y: -4.25
-                effectRot: 215
+                x: 10
+                y: -3.75
+                effectRot: 225
                 debugDraw: true
                 mirror: true
-                chance: 10
+                effectChance: 10
                 progress: {
                     type: recoil
                     ops: [
@@ -1242,7 +1239,7 @@ drawer:[
                         lifetime: 60
                         baseLength: 0
                         particles: 2
-                        length: 35
+                        length: 25
                         sizeFrom: 0
                         sizeTo: 4.2
                         colorFrom: c4d7ff8e
@@ -1257,7 +1254,7 @@ drawer:[
                         lifetime: 85
                         baseLength: 0
                         particles: 5
-                        length: 45
+                        length: 35
                         sizeFrom: 3.3
                         sizeTo: 0
                         colorFrom: c4d7ffa2
@@ -1270,12 +1267,12 @@ drawer:[
             }
             {
                 type: EffectSpawnerPart
-                x: 7
-                y: -4.25
-                effectRot: 215
+                x: 10
+                y: -3.75
+                effectRot: 225
                 debugDraw: true
                 mirror: true
-                chance: 10
+                effectChance: 0.1
                 progress: {
                     type: recoil
                     ops: [
@@ -1294,7 +1291,7 @@ drawer:[
                         type: ParticleEffect
                         cone: 7
                         sprite: "particle"
-                        lifetime: 360
+                        lifetime: 90
                         baseLength: 0
                         particles: 4
                         length: 35
@@ -1309,7 +1306,7 @@ drawer:[
                     {
                         type: ParticleEffect
                         cone: 10
-                        lifetime: 180
+                        lifetime: 45
                         baseLength: 0
                         particles: 7
                         length: 45
@@ -1488,6 +1485,7 @@ ammoTypes: {
                     hitEffect: none
                     despawnHit: true
                     collides: false
+                    despawnEffect: none
                     fragBullet: {
                         type: BulletType
                         speed: 1.1
