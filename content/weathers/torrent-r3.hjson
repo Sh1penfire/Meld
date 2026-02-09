@@ -8,5 +8,4 @@ sizeMin: 12
 sizeMax: 60
 splashTimeScale: 9
 liquid: meld
-force: 0
 status: dissolving

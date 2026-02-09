@@ -3,8 +3,8 @@ health: 1200
 size: 9
 
 rotateSpeed: 6
-reload: 180
-recoil: 0.5
+reload: 240
+recoil: 0
 
 range: 400
 fogRadiusMultiplier: 0
@@ -12,12 +12,16 @@ fogRadiusMultiplier: 0
 squareSprite: false
 
 shootCone: 5
-shootY: 8
+shootY: 16
+
+outlineColor: ffffff00
 
 liquidCapacity: 400
 
 shoot: {
+    type: ShootSpread
     shots: 1
+    firstShotDelay: 60
 }
 inaccuracy: 0
 
@@ -90,11 +94,12 @@ ammoTypes: {
         puddleRange: 8
         puddleAmount: 15
 
-        spawnBullets: [
-            {
-                spawnUnit: debris-lump
-            }
-        ]
+        fragRandomSpread: 2
+        fragSpread:  15
+        fragBullets: 5
+        fragBullet: {
+            spawnUnit: debris-lump
+        }
     }
     silver: {
             speed: 8
@@ -103,8 +108,8 @@ ammoTypes: {
     }
 }
 
-ammoPerShot: 40
-maxAmmo: 40
+ammoPerShot: 80
+maxAmmo: 80
 
 consumes: {
     liquid: aspect/13.33333333333333
@@ -120,6 +125,48 @@ coolant: {
 drawer: {
 	type: DrawTurret
 	parts: [
+		{
+			type: RegionPart
+			suffix: -slingshot
+			mirror: false
+			under: false
+			moveX: 0
+			moveY: 40
+            y: 40
+			progress: {
+                type: charge
+                ops: [
+                    {
+                        op: curve
+                        interp: pow5In
+                    }
+                ]
+            }
+            
+            moves: [
+                {
+                    y: -40
+                    progress: {
+                        type: recoil
+                        ops: [
+                            {
+                                op: curve
+                                interp: reverse
+                            }
+                            {
+                                op: curve
+                                interp: pow5Out
+                            }
+                        ]
+                    }
+                }
+            ]
+		}
+		{
+			type: RegionPart
+			suffix: -beam-over
+			mirror: false
+		}
 	]
 }
 

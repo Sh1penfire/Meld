@@ -28,7 +28,6 @@ shoot: {
         0, 0, 15
         0, 0, -35
     ]
-	spread: 0
     shotDelay: 1
 	shots: 7
 }
@@ -169,7 +168,7 @@ ammoTypes: {
                     intervalBullet: {
                         type: RailBulletType
                         damage: 0.5
-                        armorMultiplier: 0.01
+                        pierceArmor: true
                         pierceEffect: none
                         pointEffect: none
                         buildingDamageMultiplier: 0

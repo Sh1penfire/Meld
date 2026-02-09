@@ -305,6 +305,3 @@ abilities: [
 		teamColor: true
 	}
 ]
-
-research: b1-0a-drone-bay
-researchCostMultiplier: 0

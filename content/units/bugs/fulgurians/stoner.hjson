@@ -97,6 +97,7 @@ weapons: [
             despawnEffect: none
             shootEffect: none
             rangeOverride: 260
+            collidesAir: false
         }
     }
     //Actual weapon!

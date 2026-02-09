@@ -16,6 +16,7 @@ rotateSpeed: 3.5
 
 drawCell: false
 controller: HugAI
+useUnitCap: false
 
 deathExplosionEffect: none
 weapons: [
