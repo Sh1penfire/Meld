@@ -135,7 +135,6 @@ weapons: [
 		shootOnDeath: true
 		mirror: false
 		rotate: false
-        hidden: true
 		x: 0
 		y: 0
 		reload: 60

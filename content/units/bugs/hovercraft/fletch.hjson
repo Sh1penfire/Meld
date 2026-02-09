@@ -194,6 +194,3 @@ immunities: [
 	shattered
 	lacerated
 ]
-
-research: constructor-ship-factory
-researchCostMultiplier: 0

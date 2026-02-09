@@ -34,12 +34,3 @@ requirements: [
 ]
 
 category: units
-
-research: remorafactory
-
-requirements: [
- 	debris/65
-	silver/160
-	riplom/450
-]
-

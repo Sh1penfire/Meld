@@ -3,7 +3,7 @@ type: CellLiquid
 explosiveness: 0.15
 flammability: 0.05
 temperature: 0.00
-viscocity: 0.95
+viscosity: 0.45
 cells: 54
 
 capPuddles: false

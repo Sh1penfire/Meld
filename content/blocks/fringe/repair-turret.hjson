@@ -86,14 +86,12 @@ ammoTypes: {
 	speed: 2
         damage: 0
         knockback: 2.5
-	status: stunned
-	statusDuration: 15
+        status: stunned
+        statusDuration: 15
 
         hitColor: fda981
-        pointEffectSpace: 7.75
         
-        pierceEffect: none
-	fragBullets: 1
+        fragBullets: 1
         healAmount: 1
         collidesTeam: true
 

@@ -3,7 +3,8 @@ color: 91277f5a
 noiseColor: 892a6b
 drawNoise: true
 noiseLayers: 3
-noiseLayerSpeed: 2
+noiseLayerSpeedM: 2
+noiseLayerAlphaM: 0.3
 randomParticleRotation: true
 particleRegion: circle
 useWindVector: true

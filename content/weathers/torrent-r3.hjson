@@ -1,7 +1,7 @@
 type: RainWeather
 color: e382d3
-xspeed: 4.5
-yspeed: 12
+xspeed: 9
+yspeed: 36
 stroke: 1.4
 density: 1840
 sizeMin: 12
