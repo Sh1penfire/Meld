@@ -6,7 +6,8 @@ unitType: iguana
 solid: false
 squareSprite: false
 buildVisibility: shown
-placeableDeep: true
+placeableLiquid: true
+isFirstTier: true
 
 itemCapacity : 900
 unitCapModifier: 6

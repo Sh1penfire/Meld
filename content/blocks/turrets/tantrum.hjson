@@ -1290,7 +1290,7 @@ drawer:[
                     {
                         type: ParticleEffect
                         cone: 7
-                        sprite: "particle"
+                        region: "particle"
                         lifetime: 90
                         baseLength: 0
                         particles: 4

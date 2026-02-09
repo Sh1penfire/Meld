@@ -12,7 +12,7 @@ itemCapacity : 0
 unitCapModifier: 0
 
 alwaysUnlocked: true
-firstTier: true
+isFirstTier: true
 research: core-raft
 
 requirements: [

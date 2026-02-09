@@ -97,7 +97,6 @@ ammoTypes: {
         fragOnHit: false
         
         fragBullets: 1
-        fragVelMax: 0
         
         fragBullet: {
             spawnUnit: resonant-overseer-rocket
