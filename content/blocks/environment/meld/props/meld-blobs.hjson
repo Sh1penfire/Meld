@@ -1,5 +1,4 @@
 type: ShockMine
-drawShadow: false
 health: 10
 damage: 10
 tendrils: 0

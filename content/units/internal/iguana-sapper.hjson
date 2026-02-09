@@ -201,7 +201,6 @@ weapons: [
 		x: 0
 		y: 0
 		shootY: 2.5
-		beamWidth: 0.5
         
         continuous: true
         alwaysContinuous: true
@@ -209,8 +208,6 @@ weapons: [
 
 		reload: 20
 		controllable: false
-		laserColor: ffd37f
-		healColor: ffd37f
         
 		bullet:{
             width: 1.7
@@ -257,8 +254,6 @@ weapons: [
 
 		reload: 60
 		controllable: false
-		laserColor: ffd37f
-		healColor: ffd37f
         
 		bullet: {
 				type: SapBulletType

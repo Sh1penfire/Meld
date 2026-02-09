@@ -38,7 +38,7 @@ drillMultipliers: {
     meld-shard: 2
 }
 
-blacklistedItems: [
+blockedItems: [
     resonarum
 ]
 

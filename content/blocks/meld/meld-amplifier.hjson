@@ -28,7 +28,7 @@ loopSoundVolume: 0.5
 consumes: {
     liquid: {
         liquid: meld
-        amount: 0.01
+        amount: 0.05
     }
 }
 

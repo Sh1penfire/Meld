@@ -1,4 +1,4 @@
-hidden: true
+show: false
 
 research: {
 	parent: core-raft
@@ -6,4 +6,3 @@ research: {
 		reminant
 	]
 }
-researchCostMultiplier: 0

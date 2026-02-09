@@ -31,11 +31,3 @@ consumes: {
 }
 
 outputLiquid: blood/0.25
-
-research: {
-	parent: purification-chamber
-}
-
-researchCost: [
-    debris/20
-]

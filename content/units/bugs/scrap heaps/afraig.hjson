@@ -169,7 +169,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
-        hidden: true
+        display: false
         x: 0
         y: 0
         reload: 60
@@ -270,7 +270,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
-        hidden: true
+        display: false
         x: 0
         y: 0
         reload: 60

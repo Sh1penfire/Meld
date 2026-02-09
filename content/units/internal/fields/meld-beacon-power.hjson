@@ -208,7 +208,6 @@ parts: [
 		color: e5aed7
 	}
 	{
-        clip: 150
 		x: 0
 		y: 0
 		type: ShapePart

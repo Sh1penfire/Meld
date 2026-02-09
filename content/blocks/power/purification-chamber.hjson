@@ -35,12 +35,3 @@ consumes: {
 }
 
 outputLiquid: blood/1
-
-research: {
-	
-	parent: compartimentalized-node
-}
-
-researchCost: [
-    debris/20
-]

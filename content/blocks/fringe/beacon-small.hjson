@@ -41,7 +41,7 @@ drawer: [
 		flameRadiusScl: 5
 		flameRadiusMag: 0.5
 		flameColor: 547dc0
-		flameMidColor: 9ccaed
+		midColor: 9ccaed
 		particleRad: -7
 	}
 ]

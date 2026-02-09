@@ -87,7 +87,7 @@ ammoTypes: {
         rangeOverride: 200
 
         fragBullets: 1
-        fragRandomSPread: 0
+        fragRandomSpread: 0
         trailEffect: smoke
         fragOffsetMin: 0
         fragOffsetMax: 0

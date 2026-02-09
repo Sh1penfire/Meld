@@ -10,7 +10,7 @@ health: 120
 armor: 5
 
 useUnitCap: false
-isCounted: false
+isEnemy: false
 
 drag: 0.12
 accel: 0.2
@@ -143,7 +143,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
-        hidden: true
+        display: false
         x: 0
         y: 0
         reload: 60
@@ -244,7 +244,7 @@ weapons: [
         shootOnDeath: true
         mirror: false
         rotate: false
-        hidden: true
+        display: false
         x: 0
         y: 0
         reload: 60

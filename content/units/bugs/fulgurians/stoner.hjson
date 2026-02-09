@@ -112,7 +112,7 @@ weapons: [
         minWarmup: 1
         linearWarmup: true
         shootWarmupSpeed: 0.01
-        perdictTarget: false
+        predictTarget: false
         y: -5
         recoil: 0
         shootStatus: burning

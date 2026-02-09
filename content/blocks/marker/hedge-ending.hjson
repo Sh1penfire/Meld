@@ -1,5 +1,4 @@
 buildVisibility: hidden
-hidden: false
 
 research: {
 	parent: hedge

@@ -27,7 +27,6 @@ updateEffect: [
         line: true
         lenFrom: 3
         lenTo: 0
-        stroke: 2
         particles: 4
         colorFrom: f2d585ff
         colorTo: f2d58500

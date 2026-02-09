@@ -146,7 +146,6 @@ weapons: [
         alternate: false
         
         continuous: true
-        alwaysContinous: true
         shootSound: none
         
         shootStatus: slow

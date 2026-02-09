@@ -108,11 +108,3 @@ requirements: [
 	bramble-vine/15
 	compacted-masses/75
 ]
-
-research: {
-	parent: compartmentalized-node
-}
-
-researchCost: [
-    debris/20
-]

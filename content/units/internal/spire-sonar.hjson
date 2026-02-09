@@ -25,7 +25,7 @@ drawMinimap: false
 
 fogRadius: 28.5
 lightRadius: 220
-clip: 220
+clipSize: 220
 lightOpacity: 1
 
 deathSound: none

@@ -10,7 +10,7 @@ speed: 0
 health: 240
 
 useUnitCap: false
-isCounted: false
+isEnemy: false
 
 drag: 0.12
 accel: 0.2

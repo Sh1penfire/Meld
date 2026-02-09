@@ -54,7 +54,6 @@ drawer: [
 		particleLife: 150
 		particleRad: 10
 		reverse: true
-		rotScl: 1
 		color: f2d585a1
 	}
 	{

@@ -486,7 +486,7 @@ ammoTypes: {
 }
 
 ammoPerShot: 6
-ammoCapacity: 24
+maxAmmo: 24
 
 consumes: {
     power: 3.33333333333

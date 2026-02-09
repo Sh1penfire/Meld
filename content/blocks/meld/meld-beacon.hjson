@@ -19,12 +19,15 @@ ammoTypes: {
 		type: MissileBulletType
 		spawnUnit: meld-beacon-power
 		shootEffect: none
-        ammoMultiplier: 0.0075
+        	ammoMultiplier: 0.0075
 	}
 }
 
-consume: {
-	liquid: aether/0.2
+consumes: {
+    liquid: {
+        liquid: aether
+        amount: 0.01
+    }
 }
 
 loopSound: spray

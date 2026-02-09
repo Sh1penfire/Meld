@@ -1,7 +1,6 @@
 type: Duct
 size: 1
 bridgeReplacement: chute-bridge
-junctionReplacement: chute-crossing
 speed: 6
 placeSound: thump
 category: distribution

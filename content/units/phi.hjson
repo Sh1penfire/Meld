@@ -240,7 +240,7 @@ weapons: [
                 intervalBullet: {
                     type: LiquidBulletType
                     pierce: true
-                    pierecCap: 3
+                    pierceCap: 3
                     lifetime: 15
                     speed: 1.2
                     drag: 0.12
@@ -259,7 +259,7 @@ weapons: [
                 puddleLiquid: ooze-foam
                 puddleRange: 2
                 puddles: 5
-                puddleSize: 50
+                puddleAmount: 50
 			}
 		}
 	}

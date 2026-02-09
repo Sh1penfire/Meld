@@ -2,7 +2,6 @@ type: ConsumeGenerator
 size: 3
 
 placeableLiquid: true
-liquidOutputDirections: [0]
 rotate: true
 quickRotate: true
 
@@ -39,7 +38,7 @@ drawer: [
 	}
 ]
 
-craftEffect: {
+generateEffect: {
 	type: ParticleEffect
 	lifetime: 45
 	baseLength: 3

@@ -191,7 +191,6 @@ weapons: [
             lightRadius: 0
             hitEffect: none
             shootEffect: none
-            casingEffect: none
             collides: false
             hittable: false
             absorbable: false

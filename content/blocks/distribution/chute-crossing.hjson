@@ -1,20 +1,146 @@
 type: Junction
 size: 1
-bridgeReplacement: chute-bridge
-speed: 6
 placeSound: thump
 category: distribution
+
 requirements: [
-	debris/1
+	debris/4
 ]
 
-research: item-logistics
-
-research: {
-	parent: chute
+destroyBullet: {
+    type: BulletType
+    spawnBullets: [
+        {
+            speed: 0
+            lifetime: 0
+            instantDisappear: true
+            hitEffect: none
+            despawnEffect: none
+            hittable: false
+            absorbable: false
+            collides: false
+            fragBullets: 45
+            fragRandomSpread: 8
+            fragSpread: 8
+            fragVelocityMin: 0.8
+            fragBullet: {
+                type: BasicBulletType
+                damage: 18
+                speed: 4.5
+                drag: 0.02
+                lifetime: 55
+                homingPower: 0.05
+                sprite: meld-sparkle
+                frontColor: 85c799
+                spin: 60
+                width: 15
+                height: 15
+                pierce: true
+                shrinkX: 1
+                shrinkY: 1
+                shrinkInterp: pow5Out
+                status: lacerated
+                statusDuration: 15
+                hitEffect: none
+                despawnEffect: none
+                intervalBullet: {
+                    splashDamage: 5
+                    splashDamageRadius: 8
+                    instantDisappear: true
+                    hittable: false
+                    hitEffect: {
+                        type: ParticleEffect
+                        lifetime: 65
+                        sizeFrom: 1
+                        sizeTo: 2
+                        particles: 4
+                        lenFrom: 1
+                        lenTo: 3
+                        colorFrom: 85c7997b
+                        colorTo: 4bb66b00
+                    }
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 20
+                }
+                bulletInterval: 8
+            }
+        }
+        {
+            speed: 0
+            lifetime: 0
+            instantDisappear: true
+            hitEffect: none
+            despawnEffect: none
+            hittable: false
+            absorbable: false
+            collides: false
+            fragBullets: 90
+            fragRandomSpread: 8
+            fragSpread: 4
+            fragVelocityMin: 0.8
+            fragBullet: {
+                type: BasicBulletType
+                damage: 18
+                speed: 6.5
+                drag: 0.02
+                lifetime: 85
+                homingPower: 0.05
+                sprite: meld-sparkle
+                frontColor: 85c799
+                spin: 60
+                width: 15
+                height: 15
+                pierce: true
+                shrinkX: 1
+                shrinkY: 1
+                shrinkInterp: pow5Out
+                status: lacerated
+                statusDuration: 15
+                hitEffect: none
+                despawnEffect: none
+                intervalBullet: {
+                    splashDamage: 5
+                    splashDamageRadius: 8
+                    instantDisappear: true
+                    hittable: false
+                    hitEffect: {
+                        type: ParticleEffect
+                        lifetime: 65
+                        sizeFrom: 1
+                        sizeTo: 2
+                        particles: 4
+                        lenFrom: 1
+                        lenTo: 3
+                        colorFrom: 85c7997b
+                        colorTo: 4bb66b00
+                    }
+                    despawnEffect: none
+                    status: lacerated
+                    statusDuration: 20
+                }
+                bulletInterval: 8
+            }
+        }
+    ]
+    speed: 0
+    lifetime: 0
+    splashDamage: 180
+    splashDamageRadius: 100
+    instantDisappear: true
+    hitEffect: none
+    despawnEffect: none
+    hittable: false
+    absorbable: false
+    collides: false
+    fragBullets: 60
+    fragRandomSpread: 3
+    fragSpread: 6
+    fragBullet: {
+        type: RailBulletType
+        pierceCap: 3
+        damage: 50
+    }
 }
 
-
-researchCost: [
-	debris/5
-]
+buildVisibility: sandboxOnly

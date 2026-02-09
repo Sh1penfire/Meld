@@ -194,7 +194,7 @@ weapons: [
                     sizeInterp: pow3Out
                     interp: pow2Out
                     randLength: false
-                    followParrent: false
+                    followParent: false
                 }
                 {
                     type: ParticleEffect
@@ -210,7 +210,7 @@ weapons: [
                     sizeInterp: pow3Out
                     interp: pow2Out
                     randLength: true
-                    followParrent: false
+                    followParent: false
                 }
                 #Sparks
                 {

@@ -33,9 +33,6 @@ destroyBullet: {
 	}
 }
 
-loopSound: none
-shootSound: bang
-
 requirements: [
 	dissonitre/85
 	clay-mallow/120

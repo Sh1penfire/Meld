@@ -1,13 +1,13 @@
 show: false
 
-researchRequirements: [
-	shiny-globules/600
-	fragment/150
-]
-
 research: {
-	parent: crude-crackers
-	objectives: [
-		brutalisk-refining
-	]
+    parent: crude-crackers
+    objectives: [
+        brutalisk-refining
+    ]
+
+    requirements: [
+        shiny-globule/530
+        fragment/150
+    ]
 }

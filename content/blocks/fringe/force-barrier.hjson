@@ -1,6 +1,5 @@
 type: ForceProjector
 size: 1
-range: 1
 sides: 8
 radius: 12
 
