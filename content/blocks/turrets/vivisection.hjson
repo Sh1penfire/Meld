@@ -22,6 +22,10 @@ shootCone: 5
 ammoPerShot: 12
 shootY: 8
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
 	type: ShootSpread
 	shots: 1

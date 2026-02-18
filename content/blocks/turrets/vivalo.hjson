@@ -22,6 +22,10 @@ moveWhileCharging: true
 
 maxAmmo: 40
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
 	shots: 6
     shotDelay: 8

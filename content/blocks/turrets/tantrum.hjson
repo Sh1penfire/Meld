@@ -19,6 +19,10 @@ shootY: 8
 
 targetAir: false
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
     type: ShootMulti
     source: {

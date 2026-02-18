@@ -13,6 +13,10 @@ fogRadiusMultiplier: 0
 
 squareSprite: false
 
+// >-<
+rotate: false
+quickRotate: false
+
 shootY: 0
 ammoTypes: {
 	aspect: {

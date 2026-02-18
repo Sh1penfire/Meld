@@ -16,6 +16,10 @@ recoil: 1.5
 inaccuracy: 0
 shootCone: 5
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
 type: ShootBarrel
 	shots: 4

@@ -15,6 +15,10 @@ requirements: [
 	silver/70
 ]
 
+// >-<
+rotate: false
+quickRotate: false
+
 ammoPerShot: 2
 ammoTypes: {
 	silver: {

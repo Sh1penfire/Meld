@@ -1,0 +1,58 @@
+type: AttributeCrafter
+size: 5
+health: 1240
+
+placeableLiquid: true
+hasLiquids: true
+category: production
+
+attribute: meld
+baseEfficiency: 0
+minEfficiency: 1
+maxBoost: 10
+boostScale: 0.04
+
+scaleLiquidConsumption: true
+
+liquidCapacity: 300
+itemCapacity: 20
+
+placeableLiquid: true
+floating: true
+
+solid: false
+
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false
+
+craftTime: 60
+
+craftEffect: {
+	type: ParticleEffect
+	lifetime: 120
+	particles: 3
+	sizeFrom: 5
+	sizeTo: 0
+	colorFrom: cb865000
+	colorTo: 935b29ff
+}
+
+outputLiquid: meld/0.25
+
+requirements: [
+ 	debris/250
+    carbolith/150
+    resonarum/450
+]
+
+research: {
+	parent: core-raft
+	objectives: [
+		liquid-logistics
+	]
+}
+
+researchCost: [
+	debris/17
+]

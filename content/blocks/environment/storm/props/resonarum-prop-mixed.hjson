@@ -1,8 +1,8 @@
 type: Prop
 solid: true
-variants: 3
+variants: 2
 
 instantDeconstruct: false
 requirements: [
-	carbolith/25
+	resonarum/20
 ]

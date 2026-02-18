@@ -17,6 +17,10 @@ shootCone: 25
 
 shootSound: shootAltLong
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
 	type: ShootBarrel
     barrels: [

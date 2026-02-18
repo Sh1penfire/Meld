@@ -15,6 +15,10 @@ recoil: 1.5
 inaccuracy: 2
 shootCone: 5
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
 	type: ShootAlternate
 	spread: 4

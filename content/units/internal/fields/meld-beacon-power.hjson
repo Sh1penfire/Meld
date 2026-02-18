@@ -55,7 +55,7 @@ weapons: [
             status: dissolving
             statusDuration: 20
             
-            hitEffect: false
+            hitEffect: none
             despawnEffect: false
             healAmount: 50
         }
@@ -82,7 +82,7 @@ weapons: [
             status: wildlife-a1-reconstitution
             statusDuration: 20
             
-            hitEffect: false
+            hitEffect: none
             despawnEffect: false
         }
     }
@@ -113,7 +113,7 @@ weapons: [
             status: dissolving
             statusDuration: 20
             
-            hitEffect: false
+            hitEffect: none
             despawnEffect: false
             
             fragBullets: 45

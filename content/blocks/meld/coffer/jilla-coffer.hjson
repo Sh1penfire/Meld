@@ -10,7 +10,7 @@ destroyBullet: {
 	absorbable: false
 	collides: false
 	hittable: false
-	hitEffect: false
+	hitEffect: none
 	despawnEffect: false
 	fragBullets: 2
 	fragBullet: {

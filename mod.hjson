@@ -105,6 +105,7 @@
     crystal-cracker
     elemental-blaster
     elemental-sampler
+    harbinger-of-decay
     filtrative-feeder
 #Unit blocks
     shark-factory
@@ -329,7 +330,9 @@
     fringe-core-zone-off
     fringe-core-zone-off-meld
     fringe-data-pod
-    fringe-databank
+    databank
+    targeting-matrix
+    data-resonator
     fringe-datacell
     fringe-datacell-meld
     fringe-datacore
@@ -351,8 +354,8 @@
     fringe-lighting-off-meld
     fringe-lighting-wall
     fringe-lighting-wall-off
-    fringe-marker-killswitch-dry
-    fringe-marker-transport-dry
+    fringe-marker-killswitch
+    fringe-marker-transport
     fringe-plating
     fringe-plating-hole
     fringe-plating-hole-meld
@@ -402,7 +405,6 @@
     meld-trenchland
     meld-wall
     silver-deposit-meld
-    databank
     dissonant-fragments
     dissonant-shale
     dissonant-shale-scorched
@@ -441,10 +443,10 @@
     murk-dense
     nest-thorny
     peat
-    plant-thorn-crawler
+    thorn-crawler
     quicksilver
-    root-a-heart
-    root-b-dormant
+    root-heart
+    root-dormant
     silt
     silt-thick
     fringe-planter

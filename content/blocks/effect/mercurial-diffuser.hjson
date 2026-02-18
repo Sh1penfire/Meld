@@ -14,6 +14,10 @@ fogRadiusMultiplier: 0
 squareSprite: false
 elevation: 0
 
+// >-<
+rotate: false
+quickRotate: false
+
 shootY: 0
 ammoTypes: {
 	mercury: {

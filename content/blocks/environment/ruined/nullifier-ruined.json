@@ -16,10 +16,6 @@ minWarmup: 1
 shootWarmupSpeed: 0.0016666666
 cooldownTime: 160
 
-// >-<
-rotate: false
-quickRotate: false
-
 shoot: {
 	type: ShootSpread
 	shots: 1

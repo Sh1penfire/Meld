@@ -15,7 +15,7 @@ destroyBullet: {
 	absorbable: false
 	collides: false
 	hittable: false
-	hitEffect: false
+	hitEffect: none
 	despawnEffect: false
 	splashDamage: 160
 	splashDamageRadius: 80

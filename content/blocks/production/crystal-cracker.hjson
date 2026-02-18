@@ -1,9 +1,12 @@
 type: AttributeCrafter
 size: 2
 
+solid: false
+
 placeableLiquid: true
 category: production
 
+itemCapacity: 1
 
 attribute: soil
 baseEfficiency: 0
@@ -69,13 +72,17 @@ consumes: {
 	items: [
 		dissonitre/1
 	]
+    liquid: {
+        liquid: aether
+        amount: 0
+	optional: true
+    }
 }
 
 outputLiquid: aether/0.3333333333333334
 
 requirements: [
  	debris/15
-	dissonitre/10
 ]
 
 research: {

@@ -84,16 +84,16 @@ craftEffect: {
 
 consumes: {
 	power: 0.25
-	liquid: ichor/1
+	liquid: ichor/2
 }
 
 
 outputLiquids: [
-	meld/1
+	meld/2
 ]
 
 outputItems: [
-	debris/1
+	debris/2
 ]
 
 requirements: [

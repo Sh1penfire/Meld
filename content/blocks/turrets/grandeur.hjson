@@ -18,6 +18,10 @@ outlineColor: ffffff00
 
 liquidCapacity: 400
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
     type: ShootSpread
     shots: 1

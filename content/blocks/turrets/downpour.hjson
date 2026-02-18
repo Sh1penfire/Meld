@@ -16,6 +16,10 @@ shootEffect: shootBig
 
 maxAmmo : 100
 
+// >-<
+rotate: false
+quickRotate: false
+
 shoot: {
     type: ShootBarrel
     shots: 30

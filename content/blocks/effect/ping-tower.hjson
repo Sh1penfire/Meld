@@ -18,6 +18,10 @@ shootY: 0
 
 liquidCapacity: 400
 
+// >-<
+rotate: false
+quickRotate: false
+
 ammoTypes: {
 	debris: {
         instantDisappear: true

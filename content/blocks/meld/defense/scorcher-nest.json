@@ -29,7 +29,7 @@ destroyBullet: {
 	absorbable: false
 	collides: false
 	hittable: false
-	hitEffect: false
+	hitEffect: none
 	despawnEffect: false
 	fragBullets: 12
     fragLifeMin: 0.2
@@ -38,7 +38,7 @@ destroyBullet: {
         absorbable: false
         collides: false
         hittable: false
-        hitEffect: false
+        hitEffect: none
         despawnEffect: false
 		fragBullets: 1
 		fragBullet: {

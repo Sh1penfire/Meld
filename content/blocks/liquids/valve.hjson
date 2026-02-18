@@ -1,0 +1,70 @@
+type: LiquidTurret
+health: 600
+size: 2
+
+rotateSpeed: 3.5
+reload: 20
+recoil: 0.5
+alwaysShooting: true
+
+range: 120
+fogRadiusMultiplier: 0
+
+squareSprite: false
+targetGround: false
+targetAir: false
+targetHealing: true
+
+shootCone: 1
+shootY: 6.25
+velocityRnd: 0.3
+
+liquidCapacity: 500
+
+shoot: {
+    type: ShootBarrel
+    barrels: [
+        0, 0, 0,
+        0, 0, 180,
+        
+        0, 0, 45,
+        0, 0, 225,
+        
+        0, 0, 90,
+        0, 0, 270,
+        
+        0, 0, 135
+        0, 0, 315
+    ]
+    shots: 8
+}
+inaccuracy: 12
+
+loopSound: none
+
+ammoTypes: {
+    meld: {
+        type: LiquidBulletType
+        lifetime: 15
+        speed: 1.2
+        drag: 0.03
+        liquid: meld
+        orbSize: 1.5
+        puddleSize: 0.5
+        despawnHit: true
+        layer: 99.99
+        
+        ammoMultiplier: 0.0025
+    }
+}
+
+drawer: {
+	type: DrawTurret
+	parts: [
+	]
+}
+
+requirements: [
+	debris/80
+	silver/20
+]
