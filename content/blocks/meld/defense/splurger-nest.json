@@ -30,7 +30,7 @@ destroyBullet: {
 	collides: false
 	hittable: false
 	hitEffect: none
-	despawnEffect: false
+	despawnEffect: none
 	fragBullets: 4
     fragLifeMin: 0.2
 	fragBullet: {
@@ -39,7 +39,7 @@ destroyBullet: {
         collides: false
         hittable: false
         hitEffect: none
-        despawnEffect: false
+        despawnEffect: none
 		despawnUnit: afraig
 	}
 }

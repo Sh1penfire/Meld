@@ -9,7 +9,7 @@ destroyBullet: {
 	collides: false
 	hittable: false
 	hitEffect: none
-	despawnEffect: false
+	despawnEffect: none
 	fragBullets: 2
 	fragBullet: {
 		spawnUnit: braig
