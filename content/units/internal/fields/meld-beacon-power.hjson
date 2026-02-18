@@ -56,7 +56,7 @@ weapons: [
             statusDuration: 20
             
             hitEffect: none
-            despawnEffect: false
+            despawnEffect: none
             healAmount: 50
         }
     }
@@ -83,7 +83,7 @@ weapons: [
             statusDuration: 20
             
             hitEffect: none
-            despawnEffect: false
+            despawnEffect: none
         }
     }
     {
@@ -114,7 +114,7 @@ weapons: [
             statusDuration: 20
             
             hitEffect: none
-            despawnEffect: false
+            despawnEffect: none
             
             fragBullets: 45
             fragRandomSpread: 1
