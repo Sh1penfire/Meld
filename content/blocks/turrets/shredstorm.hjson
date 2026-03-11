@@ -84,8 +84,8 @@ drawer: {
 	]
 }
 
-ammoPerShot: 8
-maxAmmo: 24
+ammoPerShot: 4
+maxAmmo: 16
 
 ammoTypes: {
 	debris: {
@@ -101,6 +101,7 @@ ammoTypes: {
         despawnHit: true
         
         fragLifeMin: 0.6
+        ammoMultiplier: 2
         
         fragRandomSpread: 5
         fragBullets: 3
@@ -128,7 +129,6 @@ ammoTypes: {
             fragOnHit: true
 
             shrinkY: 0.2
-            ammoMultiplier: 2
             pierce: true
             pierceCap: 2
 
