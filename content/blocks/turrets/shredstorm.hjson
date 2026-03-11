@@ -84,8 +84,8 @@ drawer: {
 	]
 }
 
-ammoPerShot: 10
-maxAmmo: 30
+ammoPerShot: 8
+maxAmmo: 24
 
 ammoTypes: {
 	debris: {
