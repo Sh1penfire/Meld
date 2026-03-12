@@ -1,7 +1,7 @@
 type: ItemTurret
 size: 2
 health: 540
-range: 160
+range: 120
 fogRadiusMultiplier: 0.25
 reload: 120
 shootEffect: shootBig

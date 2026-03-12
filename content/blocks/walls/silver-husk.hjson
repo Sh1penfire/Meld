@@ -5,6 +5,8 @@ healPercent: 0.05
 health: 450
 armor: 3
 
+liquidCapacity: 200
+
 effectChance: 0.05
 baseColor: f0f5fe
 

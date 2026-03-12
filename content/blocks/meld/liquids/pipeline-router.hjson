@@ -3,7 +3,7 @@ size: 1
 
 placeableLiquid: true
 
-liquidCapacity: 200
+liquidCapacity: 120
 liquidPressure: 50
 
 category: liquid

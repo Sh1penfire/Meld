@@ -1,7 +1,7 @@
 type: legs
 speed: 1.1
 
-health: 1320
+health: 1800
 
 drag: 0.12
 accel: 0.2
@@ -85,7 +85,7 @@ weapons: [
 		parentizeEffects: false
 		shootSound: flame
 		shootStatus: wildlife-b0-sentry
-		shootStatusDuration: 45
+		shootStatusDuration: 60
         
 		layerOffset: -0.01
 		predictTarget: false
@@ -319,7 +319,7 @@ weapons: [
         
 		alwaysShooting: true
         
-		reload: 300
+		reload: 360
 		shootCone: 360
         
 		mirror: false

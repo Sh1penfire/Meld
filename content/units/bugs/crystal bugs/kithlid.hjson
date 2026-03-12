@@ -391,7 +391,7 @@ weapons: [
 		inaccuracy: 35
 		shoot: {
             type: ShootBarrel
-            barrels: [0, 36.25, -180]
+            barrels: [0, 36.25, 0]
 			shots: 24
             firstShotDelay: 120
 		}

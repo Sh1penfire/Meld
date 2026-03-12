@@ -41,7 +41,7 @@ consumes: {
 }
 
 requirements: [
-	debris/80
+	debris/40
 	carbolith/120
 ]
 

@@ -10,7 +10,7 @@ attribute: meld
 baseEfficiency: 0
 minEfficiency: 1
 maxBoost: 10
-boostScale: 0.04
+boostScale: 0.02
 
 scaleLiquidConsumption: true
 
@@ -38,7 +38,7 @@ craftEffect: {
 	colorTo: 935b29ff
 }
 
-outputLiquid: meld/0.25
+outputLiquid: meld/2
 
 requirements: [
  	debris/250

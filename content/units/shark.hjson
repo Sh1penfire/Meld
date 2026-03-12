@@ -3,9 +3,8 @@ hovering: true
 shadowElevation: 0.1
 speed: 2.5
 
-health: 320
+health: 420
 
-range: 80
 drag: 0.08
 accel: 0.1
 
@@ -14,7 +13,7 @@ fogRadius: 24
 
 lightRadius: 85
 lightOpacity: 0.35
-range: 100
+range: 145
 rotateSpeed: 6
 
 useEngineElevation: false
@@ -31,7 +30,7 @@ weapons: [
 		rotate: true
 		x: 0
 		y: -2
-		reload: 60
+		reload: 90
 		rotateSpeed: 3.5
 		recoil: 1.25
 		shootSound: bang
@@ -51,12 +50,12 @@ weapons: [
 		bullet: {
 			type: MissileBulletType
 			sprite: missile-large
-			speed: 3.5
+			speed: 4.5
 
 			keepVelocity: false
 			scaleLife: false
 
-			lifetime: 50
+			lifetime: 35
 			damage: 1
 			splashDamage: 25
 			splashDamageRadius: 25

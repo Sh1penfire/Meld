@@ -1,6 +1,5 @@
-speedMultiplier: 1.25
+speedMultiplier: 1.5
 reloadMultiplier: 2
-damageMultiplier: 1.5
 effectChance: 0.07
 parentizeEffect: true
 effect: {

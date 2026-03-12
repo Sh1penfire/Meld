@@ -3,11 +3,8 @@ captureWave: 15
 planet: ikaru
 difficulty: 3
 research: {
-	parent: creek
+	parent: creek-nullified
 	objectives: [
-		{
-			type: SectorComplete
-			preset: creek
-		}
+		creek-nullified
 	]
 }

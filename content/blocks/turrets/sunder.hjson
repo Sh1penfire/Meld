@@ -68,8 +68,8 @@ ammoTypes: {
 		speed: 6
 		damage: 2
 		lifetime: 34
-		width: 8
-		height: 12
+		width: 6
+		height: 10
 		splashDamage: 10
 		splashDamageRadius: 20
 		knockback: 1
@@ -82,6 +82,8 @@ ammoTypes: {
                     lifetime: 6
                     sizeFrom: 7
                     sizeTo: 20
+                    strokeFrom: 0.5
+                    strokeTo: 0
                 }
                 {
                     type: ParticleEffect

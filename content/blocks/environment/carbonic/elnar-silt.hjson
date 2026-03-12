@@ -1,0 +1,6 @@
+type: OreBlock
+variants: 4
+itemDrop: elnar-dust
+
+oreDefault: false
+needsSurface: false

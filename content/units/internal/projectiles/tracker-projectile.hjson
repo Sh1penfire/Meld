@@ -1,13 +1,13 @@
 type: missile
 
-speed: 3.5
+speed: 2.5
 
 health: 340
 
 range: 80
 drag: 0.12
-accel: 0.2
-lifetime: 240
+accel: 0.3
+lifetime: 336
 
 hitSize: 12
 rotateSpeed: 3.5

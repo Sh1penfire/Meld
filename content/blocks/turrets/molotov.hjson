@@ -6,7 +6,7 @@ liquidCapacity: 200
 range: 272
 fogRadiusMultiplier: 0.25
 
-reload: 100
+reload: 120
 shootSound: bang
 shootEffect: shootBig
 
@@ -86,7 +86,7 @@ ammoTypes: {
 			type: BasicBulletType
 			speed: 4.5
             drag: 0.02
-			damage: 6
+			damage: 4
 			lifetime: 20
 			pierce: true
 			pierceCap: 2

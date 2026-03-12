@@ -10,8 +10,8 @@ plans: [
 	{
 	unit: shark
 	requirements: [
-		silver/40
-		carbolith/30
+		silver/50
+		carbolith/40
     	]
     	time: 300
   	}

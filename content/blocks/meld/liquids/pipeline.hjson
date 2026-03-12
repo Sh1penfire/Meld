@@ -4,7 +4,7 @@ size: 1
 placeableLiquid: true
 leaks: false
 
-liquidCapacity: 120
+liquidCapacity: 30
 liquidPressure: 5
 
 junctionReplacement: pipeline-crossing
