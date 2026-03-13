@@ -1,6 +1,7 @@
-# Meld works on v147+!
-I forgot to put this here after the content port, Meld is workin on the BE versions and the old maps have been ported over and been playtested
-the campaign is also working, Reminant is still a WIP though
+# All is Done
+well... not quite
+I've decided to stop tweaking the hjson version but ill probably still help bugfix.
+I got inspired off watching a video about Factorio Seablock (specifically from Dosh, I love Dosh) to just embrace the beans and move on
 
 # Damit it's another one of those huge scope mindustry mod projects made by some guy in school isn't it.
 
@@ -10,7 +11,7 @@ As with most mods, Meld is more of a combat sim than a pure RTS/TDS/factory buil
 If you're looking for masochistic gregory levels of tech, Meld may stil scratch that itch, but not to the same level as Complicatedustry. <br />
 If you're looking for a mod where hundreds upon hundreds of enemies get vaporized, Meld can do that. <br />
 If you're looking for a mod which encourages tactical positioning, unit micro and dynamic encounters, Meld does that too.
-
+If you're looking for a mod which encourages macro then, uh... working on that in the java version:tm:
 
 I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout. I've decided to start "simple" this time.
 
@@ -19,8 +20,10 @@ What you'll find here might be surprising. <br />
 "no, got a bit of python too" <br />
 "Wh-"
 
-I've used python to generate hjson for turret parts, feel free to look through the files if you're unsure.
-Im planning to port the mod off hjson after I finish up some spritework and give the current version some extra QoL tweaks, world processors have proven to be a pain to maintain and I just have bigger ideas than hjson can provide currently.
+I've used python to generate hjson for *SOME* turret parts (Tantrum was done manually), feel free to look through the files if you're unsure.
+
+Im planning to port the mod off hjson after I finish up some spritework and give the current version some extra QoL tweaks.
+World processors have proven to be a pain to maintain across multiple maps, and I just have bigger ideas than hjson can provide currently.
 
 # Onto the actual reason you're reading these obnoxiously long headers
 
@@ -54,5 +57,4 @@ I've also started a server for the mod on discord. It's quite new so there isn't
 The invite link isn't a temp one anymore!
 https://discord.gg/eNynvuJXud
 
-Im currently on break, going to move meld to a java mod when I get back
-The hjson version is pretty much finalised in terms of content but I'd encourage people to screw around with mapping if they finish the campaign or if you want to see what the different possibilities for 100 <x unit> could be
+The hjson version is pretty much finalised in terms of content, but I'd encourage people to screw around with mapping if they finish the campaign or if you want to see what the different possibilities for 100 <x unit> could be.
