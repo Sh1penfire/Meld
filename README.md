@@ -10,7 +10,7 @@ As with most mods, Meld is more of a combat sim than a pure RTS/TDS/factory buil
 
 If you're looking for masochistic gregory levels of tech, Meld may stil scratch that itch, but not to the same level as Complicatedustry. <br />
 If you're looking for a mod where hundreds upon hundreds of enemies get vaporized, Meld can do that. <br />
-If you're looking for a mod which encourages tactical positioning, unit micro and dynamic encounters, Meld does that too.
+If you're looking for a mod which encourages tactical positioning, unit micro and dynamic encounters, Meld does that too. <br />
 If you're looking for a mod which encourages macro then, uh... working on that in the java version:tm:
 
 I've learned my lesson from working on huge scope Java mods, while I was still learning the language and dealing with burnout. I've decided to start "simple" this time.
