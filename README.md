@@ -2,6 +2,7 @@
 well... not quite <br />
 I've decided to stop tweaking the hjson version but ill probably still help bugfix. <br />
 I got inspired off watching a video about Factorio Seablock (specifically from Dosh, I love Dosh) to just embrace the beans and move on
+https://github.com/Sh1penfire/meld-java
 
 # Damit it's another one of those huge scope mindustry mod projects made by some guy in school isn't it.
 
