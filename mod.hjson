@@ -2,7 +2,7 @@
   name: meld
   displayName: "[[]#ea9ad6]Meld[[]]"
   author: Sh1penfire
-  version: hjson (finalised)
+  version: hjson (finalised:tm:)
   description:
     '''
     [accent[]]An experimental RTS mod. Features a rich environment and a unique cast of enemies to fight.[[]]
@@ -13,8 +13,14 @@
 
     [[]red]DEFEND, TAKE GROUND, HARVEST, REPEAT[[]]
 
-    [accent[]]Campaign is a demo for what's to come. Refer to the custom game maps once you've finished.[]
+    [accent[]]The Campaign may only be 5 maps long, but those 5 maps are designed with passion and care.
 
+    I tried to make each one memorable in their own right, and I hope it shows~
+
+    Ill be adding the custom game maps as optional challenges soon, but once you've learned the mod's basics and beaten the campaign, I'd reccomend you check them out![]
+
+    This type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D
+    
     This type of project takes lots of time to develop so if you wana know what's happening with the mod, join the Mindustry discord server and look for Meld in the fourm thread :D
     
     Alternatively, join the Meld discord server!
@@ -25,8 +31,7 @@
     
     '''
   subtitle: "[[]#ea9ad6]Godhome awaits... You coming?[]"
-  "version\"": 1
-  minGameVersion: 151.1
+  minGameVersion: 160.4
   contentOrder:
   [
 #Attributes
