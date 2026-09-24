@@ -1,0 +1,12 @@
+type: MessageBlock
+under: true
+solid: false
+
+category: logic
+
+requirements: [
+	debris/5
+]
+
+alwaysUnlocked: true
+research: core-raft

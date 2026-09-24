@@ -12,3 +12,4 @@ effect: {
 	interp: pow3In
 	layer: 59
 }
+outline: false

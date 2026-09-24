@@ -2,6 +2,9 @@ sector: 26
 captureWave: 16
 planet: ikaru
 difficulty: 8
+
+outline: false
+
 research: {
 	parent: hedge-or-shear
 	objectives: [

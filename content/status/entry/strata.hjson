@@ -1,3 +1,5 @@
 alwaysUnlocked: true
 show: false
+outline: false
+
 research: core-raft

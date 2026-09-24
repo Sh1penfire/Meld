@@ -1,3 +1,4 @@
 damage: 1.25
 dragMultiplier: 0.05
 speedMultiplier: 0.65
+outline: false

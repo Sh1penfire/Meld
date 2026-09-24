@@ -6,3 +6,4 @@ speedMultiplier: 0.85
 healthMultiplier: 0.8
 
 effectChance: 0
+outline: false

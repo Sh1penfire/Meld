@@ -20,3 +20,4 @@ effect: {
 }
 
 effectChance: 0.15
+outline: false

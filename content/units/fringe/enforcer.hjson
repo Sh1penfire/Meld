@@ -51,6 +51,13 @@ weapons: [
         
         predictTarget: false
         
+        shoot: {
+            type: ShootSpread
+            shots: 5
+            shotDelay: 5
+            spread: 1
+        }
+        
         parts: [
             {
                 type: RegionPart
@@ -147,81 +154,82 @@ weapons: [
         bullet: {
             speed: 6
             //big bullets
-            spawnBullets: [
-                {
-                    instantDisappear: true
-                    absorbable: false
-                    collides: false
-                    hittable: false
-                    reflectable: false
-                    fragBullets: 5
-                    fragLifeMin: 0.8
-                    fragVelocityMin: 0.9
-                    fragRandomSpread: 6
-                    speed: 10
-                    fragBullet: {
-                        type: BasicBulletType
-                        damage: 65
-                        lifetime: 30
-                        speed: 10
-                        knockback: 12
-                        impact: true
-                        splashDamage: 35
-                        splashDamageRadius: 8.5
-                        frontColor: eeb393
-                        backColor: a97567
-                        hitEffect: explosion
-                        despawnEffect: pulverizeRed
-                        width: 10
-                        height: 24
-                    }
-                }
-            ]
-            //small bullets
             instantDisappear: true
             absorbable: false
             collides: false
             hittable: false
             reflectable: false
-            fragBullets: 2
-            fragLifeMin: 0.2
-            fragRandomSpread: 3
-            fragSpread: 75
+            rangeOverride: 240
+            instantDisappear: true
+            
+            absorbable: false
+            collides: false
+            hittable: false
+            reflectable: false
+            fragBullets: 1
+            fragLifeMin: 0.8
+            fragVelocityMin: 0.9
+            fragRandomSpread: 6
+            speed: 10
             hitEffect: none
             despawnEffect: none
+            
             fragBullet: {
-                instantDisappear: true
-                absorbable: false
-                collides: false
-                hittable: false
-                reflectable: false
-                fragBullets: 24
+                type: BasicBulletType
+                damage: 65
+                lifetime: 30
+                speed: 10
+                knockback: 12
+                impact: true
+                splashDamage: 35
+                splashDamageRadius: 8.5
+                frontColor: eeb393
+                backColor: a97567
+                hitEffect: explosion
+                despawnEffect: pulverizeRed
+                width: 10
+                height: 24
+
+                fragBullets: 2
                 fragLifeMin: 0.2
-                fragRandomSpread: 12
-                fragSpread: 1
+                fragRandomSpread: 3
+                fragSpread: 75
                 hitEffect: none
                 despawnEffect: none
                 fragBullet: {
-                    type: BasicBulletType
-                    damage: 5
-                    lifetime: 30
-                    speed: 6
-                    knockback: 4
-                    impact: true
-                    splashDamage: 2.5
-                    splashDamageRadius: 8.5
-                    pierce: true
-                    pierceCap: 4
-                    frontColor: eeb393
-                    backColor: a97567
-                    hitEffect: pulverizeRed
-                    despawnEffect: pulverizeRed
-                    drag: -0.001
-                    width: 3
-                    height: 6
+                    instantDisappear: true
+                    absorbable: false
+                    collides: false
+                    hittable: false
+                    reflectable: false
+                    fragBullets: 6
+                    fragLifeMin: 0.2
+                    fragRandomSpread: 12
+                    fragSpread: 1
+                    hitEffect: none
+                    despawnEffect: none
+                    fragBullet: {
+                        type: BasicBulletType
+                        damage: 5
+                        lifetime: 15
+                        speed: 12
+                        knockback: 4
+                        impact: true
+                        splashDamage: 2.5
+                        splashDamageRadius: 8.5
+                        pierce: true
+                        pierceCap: 4
+                        frontColor: eeb393
+                        backColor: a97567
+                        hitEffect: pulverizeRed
+                        despawnEffect: pulverizeRed
+                        drag: -0.001
+                        width: 3
+                        height: 6
+                    }
                 }
             }
-            rangeOverride: 240
+            
         }
     }
     //kinetic missile launcher

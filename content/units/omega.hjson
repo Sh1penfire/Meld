@@ -195,8 +195,8 @@ weapons: [
                         sizeFrom: 8
                         sizeTo: 0
                         cone: 25
-                        colorFrom: 6e7080
-                        colorTo: 565666
+                        colorFrom: 92919c
+                        colorTo: 64647800
                         layer: 58
                         followParent: false
                     }
@@ -211,8 +211,8 @@ weapons: [
                         sizeFrom: 5
                         sizeTo: 0
                         cone: 35
-                        colorFrom: 6e7080
-                        colorTo: 565666
+                        colorFrom: 92919c
+                        colorTo: 64647800
                         layer: 58
                         followParent: false
                     }
@@ -295,8 +295,8 @@ weapons: [
                 length: 12
                 particles: 4
                 cone: 12
-                colorFrom: 6e7080
-                colorTo: 56566600
+                colorFrom: 92919c
+                colorTo: 64647800
                 followParent: false
             }
         }
@@ -338,8 +338,8 @@ weapons: [
                 particles: 2
                 cone: 4
                 sizeInterp: pow5In
-                colorFrom: 6e7080
-                colorTo: 565666
+                colorFrom: 92919c
+                colorTo: 64647800
                 followParent: false
             }
         }
@@ -515,8 +515,8 @@ weapons: [
                         sizeFrom: 8
                         sizeTo: 0
                         cone: 25
-                        colorFrom: 6e7080
-                        colorTo: 565666
+                        colorFrom: 92919c
+                        colorTo: 646478
                         layer: 109
                         followParent: false
                     }
@@ -531,8 +531,8 @@ weapons: [
                         sizeFrom: 5
                         sizeTo: 0
                         cone: 35
-                        colorFrom: 6e7080
-                        colorTo: 565666
+                        colorFrom: 92919c
+                        colorTo: 646478
                         layer: 109
                         followParent: false
                     }
@@ -549,7 +549,7 @@ weapons: [
                         lenFrom: 4
                         lenTo: 0
                         cone: 35
-                        colorFrom: ffd2ae
+                        colorFrom: 92919c
                         colorTo: e58956
                         followParent: false
                     }

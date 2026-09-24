@@ -1,3 +1,4 @@
 damage: 12
 reloadMultiplier: 0.5
 speedMultiplier: 0.75
+outline: false

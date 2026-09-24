@@ -1,5 +1,6 @@
 show: false
 alwaysUnlocked: true
+outline: false
 
 research: {
 	planet: ikaru

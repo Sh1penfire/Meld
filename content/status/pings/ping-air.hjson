@@ -1,4 +1,5 @@
 effectChance: 0.25
+outline: false
 
 effect: {
     lifetime: 120

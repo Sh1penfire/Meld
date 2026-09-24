@@ -44,6 +44,7 @@ weapons: [
 			hitSound: explosion
             setDefaults: false
             despawnHit: false
+            fragOnDespawn: false
             knockback: 250
             impact: true
             fragBullets: 1

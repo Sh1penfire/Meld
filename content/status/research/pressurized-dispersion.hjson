@@ -1,4 +1,6 @@
 show: false
+outline: false
+
 research: {
 	parent: pressure-control
 	objectives: [

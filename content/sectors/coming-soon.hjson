@@ -2,6 +2,8 @@ sector: 18
 planet: ikaru
 difficulty: 10
 
+outline: false
+
 research: {
 	parent: ikaru
 	objectives: [

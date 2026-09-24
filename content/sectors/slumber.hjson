@@ -1,6 +1,9 @@
 sector: 37
 planet: ikaru
 difficulty: 0
+
+outline: false
+
 research: {
 	parent: ikaru
 	objectives: [

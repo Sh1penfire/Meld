@@ -1,4 +1,5 @@
 show: false
+outline: false
 
 research: {
     parent: crude-crackers

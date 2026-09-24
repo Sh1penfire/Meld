@@ -31,3 +31,4 @@ applyEffect: {
 	interp: pow10Out
 	sizeInterp: pow10In
 }
+outline: false

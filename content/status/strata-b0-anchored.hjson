@@ -3,6 +3,7 @@ dragMultiplier: 4
 healthMultiplier: 1.5
 effectChance: 0
 parentizeApplyEffect: true
+outline: false
 
 applyEffect: {
 	type: MultiEffect

@@ -2,6 +2,9 @@ sector: 44
 captureWave: 16
 planet: ikaru
 difficulty: 5
+
+outline: false
+
 research: {
 	parent: creek
 	objectives: [

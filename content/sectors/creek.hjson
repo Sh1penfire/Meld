@@ -3,3 +3,5 @@ planet: ikaru
 alwaysUnlocked: true
 difficulty: 1
 research: ikaru
+
+outline: false

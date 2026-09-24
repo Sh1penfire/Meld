@@ -4,3 +4,4 @@ reloadMultiplier: 2
 healthMultiplier: 3
 
 effectChance: 0
+outline: false

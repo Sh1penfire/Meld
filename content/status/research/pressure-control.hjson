@@ -1,4 +1,6 @@
 show: false
+outline: false
+
 research: {
 	parent: liquid-logistics
     

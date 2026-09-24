@@ -2,6 +2,9 @@ sector: 58
 captureWave: 2
 planet: ikaru
 difficulty: 1
+
+outline: false
+
 research: {
 	parent: scrapyard
 	objectives: [

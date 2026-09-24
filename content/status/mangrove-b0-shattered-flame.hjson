@@ -8,3 +8,4 @@ dragMultiplier: 2.17
 healthMultiplier: 0.66
 
 effectChance: 0
+outline: false

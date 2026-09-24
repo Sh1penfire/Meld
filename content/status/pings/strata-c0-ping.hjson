@@ -1,6 +1,7 @@
 healthMultiplier: 0.85
 effectChance: 0
 parentizeApplyEffect: true
+outline: false
 
 
 applyEffect: {
